@@ -1,0 +1,6 @@
+{
+  "appId": "com.quizdo.ci",
+  "appName": "Quiz do CI",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,26 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Build and export ipa for release"
+  lane :build_ipa do
+    sh "npm run build:web"
+    sh "npx cap copy ios"
+    xcarchive(
+      workspace: "ios/App/App.xcworkspace",
+      scheme: "App",
+      configuration: "Release",
+      archive_path: "ios-build/App.xcarchive"
+    )
+    export_options = {
+      method: 'ad-hoc',
+      signingStyle: 'manual',
+      teamID: ENV['FASTLANE_TEAM_ID']
+    }
+    export_archive(
+      archive_path: "ios-build/App.xcarchive",
+      export_path: "ios-build/export",
+      export_method: export_options[:method],
+      export_options: export_options
+    )
+  end
+end

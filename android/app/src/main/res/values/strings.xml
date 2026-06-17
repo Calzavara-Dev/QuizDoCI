@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Quiz do CI</string>
+    <string name="title_activity_main">Quiz do CI</string>
+    <string name="package_name">com.quizdo.ci</string>
+    <string name="custom_url_scheme">com.quizdo.ci</string>
+</resources>

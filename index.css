@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme tokens */
+:root{
+	--bg-0: #05060b; /* slightly darker */
+	--bg-1: #0b1730; /* deeper blue for cards */
+	--card: #0f1724; /* solid card base for better contrast */
+	--glass: rgba(255,255,255,0.06);
+	--muted: #9fb0c8; /* slightly brighter muted text */
+	--accent: #00d1df; /* brighter cyan */
+	--accent-2: #8b5cf6; /* purple */
+	--bg-image: url('./assets/bg.jpg');
+}
+
+html,body,#root{height:100%}
+body{
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.08), transparent), linear-gradient(180deg,var(--bg-0),var(--bg-1));
+	color: #e6eef8;
+	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* Background image helper: set --bg-image to a URL to override the default gradient */
+.bg-app{
+	--bg-image: var(--bg-image, none);
+	background-color: var(--bg-0);
+	background-image: var(--bg-image), radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.08), transparent), linear-gradient(180deg,var(--bg-0),var(--bg-1));
+	background-size: cover, auto, auto;
+	background-position: center, 10% 10%, center;
+}
+
+/* Containers */
+.app-container{min-height:100vh;display:flex;flex-direction:column}
+.center-screen{min-height:calc(100vh - 96px);display:flex;align-items:center;justify-content:center;padding:1rem}
+
+/* Card */
+.card{
+	/* Opaque card: use a slightly lighter solid background for contrast */
+	background-color: var(--card);
+	border: 1px solid rgba(255,255,255,0.08);
+	color: #e6eef8; /* ensure text on card is bright */
+}
+
+/* Buttons */
+.primary-btn{
+	background: linear-gradient(90deg,var(--accent),var(--accent-2));
+	color: #071232; /* keep dark text on bright gradient for brand look */
+	font-weight: 700;
+	box-shadow: 0 8px 24px rgba(3,10,30,0.6);
+}
+.ghost-btn{
+	background: transparent;
+	border:1px solid rgba(255,255,255,0.10);
+	color:var(--muted);
+}
+
+/* Utilities */
+.muted{color:var(--muted)}
+.badge{background:rgba(255,255,255,0.04);padding:.25rem .5rem;border-radius:9999px;border:1px solid rgba(255,255,255,0.06);color:#dbe9fb}
+
+/* Responsive tweaks */
+@media (max-width:640px){
+	.text-5xl{font-size:2rem}
+	.text-4xl{font-size:1.6rem}
+}
+
+/* Small forms */
+.input-like{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:.5rem;border-radius:.5rem;color:inherit}
+
