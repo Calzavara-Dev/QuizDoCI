@@ -52,7 +52,7 @@ export default function App() {
 
 
   return (
-    <div className="app-container">
+    <div className="app-container bg-app">
       <AnimatePresence mode="wait">
         {gameState === "start" && (
           <StartScreen key="start" onStart={handleStart} onOpenSelector={openSelector} />
