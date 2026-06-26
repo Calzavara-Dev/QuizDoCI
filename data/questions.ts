@@ -804,6 +804,7 @@ export const quizTitles: Record<string, string> = {
   telefonia: "Telefonia",
   /* voip title removed */
   "eletronica-digital-2": "Eletrônica Digital 2",
+  "manutencao-dos-sistemas-telefonicos-2": "Manutenção dos Sistemas Telefônicos 2",
 };
 
 // Quiz de Eletrônica Digital II
@@ -1343,6 +1344,889 @@ quizzes["eletronica-digital-2"] = [
     question: "Descreva o tipo de matriz muito usado na estrutura de memórias.",
     options: ["Matriz de Duplo Encadeamento","Matriz de Simples Encadeamento","Matriz de Karnaugh","Matriz de Soma de Produto","Matriz de De Morgan"],
     answer: "Matriz de Duplo Encadeamento"
+  }
+];
+
+quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
+  {
+    question: "A central Impacta é destinada principalmente a:",
+    options: [
+      "Empresas que utilizam somente telefonia IP.",
+      "Empresas que necessitam atender de 16 a 336 ramais em um único local.",
+      "Empresas que possuem apenas linhas analógicas.",
+      "Residências com até 16 ramais.",
+      "Empresas que utilizam exclusivamente telefonia móvel."
+    ],
+    answer: "Empresas que necessitam atender de 16 a 336 ramais em um único local."
+  },
+  {
+    question: "A expansão da capacidade da central é realizada por meio de:",
+    options: [
+      "Atualização do firmware.",
+      "Instalação de novos gabinetes.",
+      "Inserção de placas de circuito até o limite permitido pelo fabricante.",
+      "Troca da fonte de alimentação.",
+      "Substituição da placa CPU."
+    ],
+    answer: "Inserção de placas de circuito até o limite permitido pelo fabricante."
+  },
+  {
+    question: "A quantidade máxima de placas Tronco Analógico, Ramal Analógico e Ramal Digital é, respectivamente:",
+    options: [
+      "2, 8 e 2.",
+      "4, 12 e 3.",
+      "3, 10 e 3.",
+      "3, 8 e 4.",
+      "5, 10 e 5."
+    ],
+    answer: "3, 8 e 4."
+  },
+  {
+    question: "A central Impacta suporta até:",
+    options: [
+      "24 terminais inteligentes.",
+      "32 terminais inteligentes.",
+      "48 terminais inteligentes.",
+      "64 terminais inteligentes.",
+      "96 terminais inteligentes."
+    ],
+    answer: "64 terminais inteligentes."
+  },
+  {
+    question: "O sistema pode se comunicar com o meio externo através de interfaces:",
+    options: [
+      "Apenas digitais.",
+      "Apenas analógicas.",
+      "Apenas VoIP.",
+      "Digitais, analógicas e VoIP.",
+      "Digitais e GSM apenas."
+    ],
+    answer: "Digitais, analógicas e VoIP."
+  },
+  {
+    question: "A placa Backplane é instalada:",
+    options: [
+      "Na placa CPU.",
+      "No rack principal.",
+      "No interior do gabinete metálico.",
+      "Na fonte de alimentação.",
+      "Na parte externa do equipamento."
+    ],
+    answer: "No interior do gabinete metálico."
+  },
+  {
+    question: "A placa Tronco GSM está disponível nas versões:",
+    options: [
+      "2 e 4 canais.",
+      "4 e 8 canais.",
+      "8 e 16 canais.",
+      "6 e 12 canais.",
+      "12 e 24 canais."
+    ],
+    answer: "8 e 16 canais."
+  },
+  {
+    question: "O conector SMA fêmea da placa GSM tem a função de:",
+    options: [
+      "Conectar o cabo Ethernet.",
+      "Alimentar a placa.",
+      "Conectar a antena para melhorar a recepção do sinal.",
+      "Programar a placa.",
+      "Interligar a placa CPU."
+    ],
+    answer: "Conectar a antena para melhorar a recepção do sinal."
+  },
+  {
+    question: "Um LED de canal GSM aceso indica que:",
+    options: [
+      "O canal está desligado.",
+      "O módulo apresenta defeito.",
+      "O canal está ocupado em uma chamada.",
+      "A placa está inicializando.",
+      "O SIM Card foi removido."
+    ],
+    answer: "O canal está ocupado em uma chamada."
+  },
+  {
+    question: "A chave de hardware ICIP possui:",
+    options: [
+      "2 posições.",
+      "3 posições.",
+      "4 posições.",
+      "5 posições.",
+      "8 posições."
+    ],
+    answer: "3 posições."
+  },
+  {
+    question: "As placas 1E1 e 2E1 têm como principal finalidade:",
+    options: [
+      "Expandir ramais IP.",
+      "Acrescentar canais GSM.",
+      "Conectar a central às companhias telefônicas que utilizam RS Digital ou RDSI.",
+      "Aumentar a memória da CPU.",
+      "Alimentar telefones digitais."
+    ],
+    answer: "Conectar a central às companhias telefônicas que utilizam RS Digital ou RDSI."
+  },
+  {
+    question: "O protocolo RS Digital ou RDSI é definido por:",
+    options: [
+      "Fabricante da central.",
+      "Técnico instalador.",
+      "Usuário administrador.",
+      "Concessionária telefônica.",
+      "Software Programador Web."
+    ],
+    answer: "Concessionária telefônica."
+  },
+  {
+    question: "Uma função típica de um telefone IP é:",
+    options: [
+      "Atualizar automaticamente o firmware da central.",
+      "Controlar a placa CPU.",
+      "Disponibilizar agenda, histórico de chamadas, conferências e lista de contatos.",
+      "Configurar protocolos E1.",
+      "Gerenciar placas GSM."
+    ],
+    answer: "Disponibilizar agenda, histórico de chamadas, conferências e lista de contatos."
+  },
+  {
+    question: "As teclas DSS são utilizadas para:",
+    options: [
+      "Reinicializar o telefone.",
+      "Linha, discagem rápida, intercom e BLF.",
+      "Programar ramais analógicos.",
+      "Configurar a placa ICIP.",
+      "Apenas realizar conferências."
+    ],
+    answer: "Linha, discagem rápida, intercom e BLF."
+  },
+  {
+    question: "A tecla Hold é utilizada para:",
+    options: [
+      "Transferir chamadas.",
+      "Encerrar ligações.",
+      "Colocar uma chamada em espera.",
+      "Reiniciar o terminal.",
+      "Acessar o correio de voz."
+    ],
+    answer: "Colocar uma chamada em espera."
+  },
+  {
+    question: "Utilizando dois módulos MOD 350 em conjunto, a capacidade máxima de programações será de:",
+    options: [
+      "16.",
+      "24.",
+      "32.",
+      "40.",
+      "48."
+    ],
+    answer: "32."
+  },
+  {
+    question: "A porta PC do telefone IP deve ser conectada:",
+    options: [
+      "Ao switch principal.",
+      "À placa CPU.",
+      "À torre (desktop) do computador.",
+      "Ao modem da operadora.",
+      "À placa ICIP."
+    ],
+    answer: "À torre (desktop) do computador."
+  },
+  {
+    question: "O módulo MOD 350 pode ser alimentado:",
+    options: [
+      "Apenas por fonte externa de 12 V.",
+      "Apenas pelo switch PoE.",
+      "Pelo telefone IP ou por fonte de 5 V ligada ao módulo.",
+      "Apenas pela central.",
+      "Exclusivamente pela placa ICIP."
+    ],
+    answer: "Pelo telefone IP ou por fonte de 5 V ligada ao módulo."
+  },
+  {
+    question: "O banco de dados utilizado pela central corresponde:",
+    options: [
+      "Ao sistema operacional da CPU.",
+      "Ao conjunto de informações organizadas em um arquivo \".FDB\".",
+      "Ao firmware das placas.",
+      "Ao histórico das ligações telefônicas.",
+      "Ao cadastro exclusivo de usuários VoIP."
+    ],
+    answer: "Ao conjunto de informações organizadas em um arquivo \".FDB\"."
+  },
+  {
+    question: "O submenu NTP permite configurar:",
+    options: [
+      "Os troncos analógicos.",
+      "Os ramais SIP.",
+      "Os servidores responsáveis por manter data e hora atualizadas.",
+      "A placa GSM.",
+      "O endereço IP LAN da central."
+    ],
+    answer: "Os servidores responsáveis por manter data e hora atualizadas."
+  },
+  {
+    question: "No submenu Numeração da placa ICIP, devem ser cadastrados:",
+    options: [
+      "Apenas os ramais analógicos.",
+      "Somente os troncos digitais.",
+      "Todos os ramais que irão gerar e receber ligações VoIP.",
+      "Apenas os ramais digitais.",
+      "Somente os terminais inteligentes."
+    ],
+    answer: "Todos os ramais que irão gerar e receber ligações VoIP."
+  },
+  {
+    question: "Qual das alternativas apresenta corretamente as portas padrão de comunicação dos softwares da Impacta?",
+    options: [
+      "Mesa Virtual (51001), Programador Web (7001), Bilhetador (53001), Monitor E1 (52001).",
+      "Mesa Virtual (52001), Programador Web (7001), Bilhetador (51001), Monitor E1 (53001).",
+      "Mesa Virtual (7001), Programador Web (51001), Bilhetador (52001), Monitor E1 (53001).",
+      "Mesa Virtual (53001), Programador Web (52001), Bilhetador (7001), Monitor E1 (51001).",
+      "Mesa Virtual (51000), Programador Web (7000), Bilhetador (52000), Monitor E1 (53000)."
+    ],
+    answer: "Mesa Virtual (51001), Programador Web (7001), Bilhetador (53001), Monitor E1 (52001)."
+  },
+  {
+    question: "A função Requisição de Senha permite:",
+    options: [
+      "Alterar automaticamente a senha do administrador.",
+      "Definir se a central exigirá senha para todas as programações.",
+      "Criar uma senha para cada ramal.",
+      "Bloquear chamadas internacionais.",
+      "Habilitar acesso remoto."
+    ],
+    answer: "Definir se a central exigirá senha para todas as programações."
+  },
+  {
+    question: "O comando para programar o Hotline em um ramal é:",
+    options: [
+      "* + 51 + senha + ramal + *",
+      "* + 13 + senha + tempo + *",
+      "* + 41 + senha + tempo + ramal + *",
+      "Flash + 41 + ramal + *",
+      "# + 41 + senha + *"
+    ],
+    answer: "* + 41 + senha + tempo + ramal + *"
+  },
+  {
+    question: "Para realizar uma transferência de chamada utilizando um telefone comum, deve-se:",
+    options: [
+      "Pressionar Hold e desligar.",
+      "Pressionar Flash, discar o número do ramal e colocar o fone no gancho.",
+      "Pressionar Conference.",
+      "Pressionar Flash + 7.",
+      "Pressionar apenas o número do ramal."
+    ],
+    answer: "Pressionar Flash, discar o número do ramal e colocar o fone no gancho."
+  },
+  {
+    question: "Para capturar uma chamada de um ramal específico utiliza-se:",
+    options: [
+      "57 + ramal.",
+      "Flash + 5.",
+      "# + 5 + número do ramal + *",
+      "Flash + 7 + ramal.",
+      "60993."
+    ],
+    answer: "# + 5 + número do ramal + *"
+  },
+  {
+    question: "O comando utilizado para ouvir o endereço IP WAN da central é:",
+    options: [
+      "60991",
+      "60992",
+      "60993",
+      "7001",
+      "53001"
+    ],
+    answer: "60993"
+  },
+  {
+    question: "O aterramento das proteções dos ramais e troncos é realizado através:",
+    options: [
+      "Da fonte de alimentação.",
+      "Do cabo de rede.",
+      "Dos parafusos de fixação dos perfis das placas.",
+      "Da placa CPU.",
+      "Do nobreak."
+    ],
+    answer: "Dos parafusos de fixação dos perfis das placas."
+  },
+  {
+    question: "O código destinado ao reset da senha de bilhetagem é:",
+    options: [
+      "96",
+      "97",
+      "95",
+      "99",
+      "87"
+    ],
+    answer: "97"
+  },
+  {
+    question: "O código utilizado para apagar apenas os bilhetes armazenados é:",
+    options: [
+      "95",
+      "96",
+      "97",
+      "99",
+      "87"
+    ],
+    answer: "96"
+  },
+  {
+    question: "Durante a substituição de uma placa da central, o procedimento correto é:",
+    options: [
+      "Inserir a placa com a central energizada.",
+      "Reiniciar apenas a CPU.",
+      "Desligar o PABX, instalar a placa, religar e configurar o slot no software.",
+      "Atualizar o firmware antes da instalação.",
+      "Remover a CPU antes da troca."
+    ],
+    answer: "Desligar o PABX, instalar a placa, religar e configurar o slot no software."
+  },
+  {
+    question: "A Impacta 300 é definida como:",
+    options: [
+      "Um modem para comunicação de dados.",
+      "Um roteador corporativo.",
+      "Uma solução de integração de redes de voz e dados para pequenas e médias empresas.",
+      "Um servidor dedicado para VoIP.",
+      "Um switch gerenciável."
+    ],
+    answer: "Uma solução de integração de redes de voz e dados para pequenas e médias empresas."
+  },
+  {
+    question: "Além das funções tradicionais de uma CPCT, a Impacta 300 também atua como:",
+    options: [
+      "Firewall.",
+      "Gateway entre redes, permitindo chamadas VoIP.",
+      "Switch Ethernet.",
+      "Servidor DHCP.",
+      "Access Point."
+    ],
+    answer: "Gateway entre redes, permitindo chamadas VoIP."
+  },
+  {
+    question: "Qual das alternativas representa corretamente uma configuração máxima da Impacta 300?",
+    options: [
+      "60 linhas e 180 ramais.",
+      "90 linhas e 336 ramais.",
+      "120 linhas e 240 ramais.",
+      "30 linhas e 180 ramais.",
+      "100 linhas e 300 ramais."
+    ],
+    answer: "90 linhas e 336 ramais."
+  },
+  {
+    question: "Na configuração máxima de 90 linhas e 336 ramais, a composição correta é:",
+    options: [
+      "30 linhas IP, 60 linhas digitais, 216 ramais analógicos e 120 ramais IP.",
+      "60 linhas IP, 30 linhas digitais, 120 ramais analógicos e 216 ramais IP.",
+      "90 linhas digitais e 336 ramais IP.",
+      "60 linhas digitais e 276 ramais analógicos.",
+      "30 linhas analógicas e 306 ramais digitais."
+    ],
+    answer: "60 linhas IP, 30 linhas digitais, 120 ramais analógicos e 216 ramais IP."
+  },
+  {
+    question: "A quantidade máxima de ramais (TDM + IP) suportada pela central é:",
+    options: [
+      "240.",
+      "300.",
+      "336.",
+      "360.",
+      "420."
+    ],
+    answer: "336."
+  },
+  {
+    question: "Qual das placas abaixo possui limite máximo de apenas uma unidade na central?",
+    options: [
+      "Ramal Analógico.",
+      "Tronco Analógico.",
+      "CPU.",
+      "Ramal Misto.",
+      "Tronco/Ramal."
+    ],
+    answer: "CPU."
+  },
+  {
+    question: "A fonte da Impacta 300 opera:",
+    options: [
+      "Somente em 110 V.",
+      "Somente em 220 V.",
+      "Em 110 ou 220 V com seleção automática.",
+      "Apenas em 127 V.",
+      "Exclusivamente em corrente contínua."
+    ],
+    answer: "Em 110 ou 220 V com seleção automática."
+  },
+  {
+    question: "A potência mínima recomendada para alimentação da central é:",
+    options: [
+      "100 W.",
+      "150 W.",
+      "Superior a 210 W.",
+      "300 W obrigatoriamente.",
+      "500 W."
+    ],
+    answer: "Superior a 210 W."
+  },
+  {
+    question: "Para evitar interrupções durante falta de energia elétrica recomenda-se utilizar:",
+    options: [
+      "Apenas um filtro de linha.",
+      "Um estabilizador comum.",
+      "Um nobreak (short break).",
+      "Uma extensão elétrica.",
+      "Um transformador isolador."
+    ],
+    answer: "Um nobreak (short break)."
+  },
+  {
+    question: "A principal função da placa Backplane é:",
+    options: [
+      "Gerenciar os ramais IP.",
+      "Armazenar os bilhetes das chamadas.",
+      "Funcionar como a placa-mãe da central, interligando todas as demais placas.",
+      "Alimentar os módulos GSM.",
+      "Converter sinais analógicos em digitais."
+    ],
+    answer: "Funcionar como a placa-mãe da central, interligando todas as demais placas."
+  },
+  {
+    question: "Quantos slots a placa Backplane possui?",
+    options: [
+      "8",
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    answer: "14"
+  },
+  {
+    question: "A placa CPU deve ser instalada:",
+    options: [
+      "No último slot da central.",
+      "Em qualquer slot disponível.",
+      "Na primeira posição do Backplane.",
+      "Apenas ao lado da placa E1.",
+      "No slot reservado aos módulos VoIP."
+    ],
+    answer: "Na primeira posição do Backplane."
+  },
+  {
+    question: "O processamento central da Impacta 300 está localizado:",
+    options: [
+      "Na placa E1.",
+      "Na placa CPU.",
+      "Na placa Backplane.",
+      "Na placa ICIP.",
+      "Na placa Tronco Analógico."
+    ],
+    answer: "Na placa CPU."
+  },
+  {
+    question: "A placa Tronco GSM tem como principal finalidade:",
+    options: [
+      "Expandir ramais digitais.",
+      "Integrar a telefonia móvel à telefonia fixa.",
+      "Criar novos ramais SIP.",
+      "Alimentar telefones IP.",
+      "Gerenciar o banco de dados da central."
+    ],
+    answer: "Integrar a telefonia móvel à telefonia fixa."
+  },
+  {
+    question: "O limite máximo de canais GSM suportados por uma única central é:",
+    options: [
+      "4",
+      "6",
+      "8",
+      "12",
+      "16"
+    ],
+    answer: "16"
+  },
+  {
+    question: "Quando o LED de status da placa GSM permanece apagado, significa que:",
+    options: [
+      "O canal está ocupado.",
+      "A placa está inicializada.",
+      "A placa ainda não foi inicializada.",
+      "O sistema está em manutenção.",
+      "Existe excesso de chamadas."
+    ],
+    answer: "A placa ainda não foi inicializada."
+  },
+  {
+    question: "Um LED piscando rapidamente na placa GSM indica que:",
+    options: [
+      "O canal está livre.",
+      "A placa está inicializando ou ainda não possui identificação válida.",
+      "Existe uma chamada em andamento.",
+      "A antena foi desconectada.",
+      "A placa foi bloqueada."
+    ],
+    answer: "A placa está inicializando ou ainda não possui identificação válida."
+  },
+  {
+    question: "O LED piscando lentamente indica que:",
+    options: [
+      "A placa foi desligada.",
+      "Existe falha de hardware.",
+      "A placa está inicializada e com identificação correta.",
+      "O canal está congestionado.",
+      "O firmware precisa ser atualizado."
+    ],
+    answer: "A placa está inicializada e com identificação correta."
+  },
+  {
+    question: "A placa ICIP adiciona à central:",
+    options: [
+      "30 ramais SIP e 120 troncos SIP.",
+      "120 ramais SIP e 30 troncos SIP.",
+      "Apenas 120 troncos SIP.",
+      "Apenas 30 ramais SIP.",
+      "240 ramais analógicos."
+    ],
+    answer: "120 ramais SIP e 30 troncos SIP."
+  },
+  {
+    question: "Uma das principais vantagens da utilização da placa ICIP é:",
+    options: [
+      "Aumentar a potência elétrica da central.",
+      "Eliminar a necessidade de ramais.",
+      "Reduzir os custos das ligações e permitir acesso WEB para configuração.",
+      "Substituir completamente a placa CPU.",
+      "Eliminação do uso de protocolos SIP."
+    ],
+    answer: "Reduzir os custos das ligações e permitir acesso WEB para configuração."
+  },
+  {
+    question: "O conjunto ICIP 30 é composto por:",
+    options: [
+      "CPU, Fonte e Backplane.",
+      "Placa Base ICIP 30, Placa CODEC ICIP 30 e Chave de Hardware.",
+      "Placa GSM, CPU e CODEC.",
+      "Dois módulos CODEC e uma CPU.",
+      "Backplane, CODEC e Fonte."
+    ],
+    answer: "Placa Base ICIP 30, Placa CODEC ICIP 30 e Chave de Hardware."
+  },
+  {
+    question: "Cada placa CODEC habilita:",
+    options: [
+      "20 canais VoIP e 20 ramais SIP.",
+      "30 canais VoIP e 30 ramais SIP.",
+      "10 canais VoIP e 40 ramais SIP.",
+      "40 canais VoIP e 10 ramais SIP.",
+      "60 canais VoIP e 30 ramais SIP."
+    ],
+    answer: "30 canais VoIP e 30 ramais SIP."
+  },
+  {
+    question: "A placa E1 (1E1 ou 2E1) deve ser instalada:",
+    options: [
+      "No slot 1.",
+      "No slot 5.",
+      "No slot 11, ao lado da placa CPU.",
+      "No último slot da central.",
+      "Em qualquer slot livre."
+    ],
+    answer: "No slot 11, ao lado da placa CPU."
+  },
+  {
+    question: "A principal diferença entre um telefone IP e um telefone digital convencional é:",
+    options: [
+      "O telefone IP utiliza apenas comunicação via rádio.",
+      "O telefone IP conecta-se através de uma interface Ethernet.",
+      "O telefone IP utiliza somente cabos seriais.",
+      "Telefones IP não utilizam endereços IP.",
+      "Telefones digitais possuem maior capacidade de ramais."
+    ],
+    answer: "O telefone IP conecta-se através de uma interface Ethernet."
+  },
+  {
+    question: "Um telefone IP normalmente possui:",
+    options: [
+      "Uma porta USB.",
+      "Duas portas Ethernet, sendo uma para a rede e outra para o computador.",
+      "Três portas RJ-11.",
+      "Apenas uma porta de alimentação.",
+      "Quatro portas Ethernet."
+    ],
+    answer: "Duas portas Ethernet, sendo uma para a rede e outra para o computador."
+  },
+  {
+    question: "O terminal TIP 200 suporta:",
+    options: [
+      "Até uma conta SIP.",
+      "Até duas contas SIP.",
+      "Até três contas SIP.",
+      "Até quatro contas SIP.",
+      "Até oito contas SIP."
+    ],
+    answer: "Até duas contas SIP."
+  },
+  {
+    question: "O terminal TIP 300 suporta:",
+    options: [
+      "Uma conta SIP.",
+      "Duas contas SIP.",
+      "Três contas SIP.",
+      "Cinco contas SIP.",
+      "Oito contas SIP."
+    ],
+    answer: "Cinco contas SIP."
+  },
+  {
+    question: "O módulo ATA GKM 2210 T é:",
+    options: [
+      "Um gateway GSM.",
+      "Um adaptador para telefone analógico que suporta duas contas SIP.",
+      "Uma placa E1.",
+      "Um telefone IP corporativo.",
+      "Um módulo de expansão DSS."
+    ],
+    answer: "Um adaptador para telefone analógico que suporta duas contas SIP."
+  },
+  {
+    question: "Os conectores utilizados nas placas da Impacta são:",
+    options: [
+      "RJ-45 e USB.",
+      "HDMI e RJ-11.",
+      "FM Plug 180° e conector CHAMP.",
+      "BNC e SC.",
+      "VGA e RJ-45."
+    ],
+    answer: "FM Plug 180° e conector CHAMP."
+  },
+  {
+    question: "O aterramento das proteções dos ramais e troncos é realizado por meio:",
+    options: [
+      "Da placa CPU.",
+      "Do cabo de alimentação.",
+      "Dos parafusos de fixação dos perfis das placas.",
+      "Do conector CHAMP.",
+      "Da placa Backplane."
+    ],
+    answer: "Dos parafusos de fixação dos perfis das placas."
+  },
+  {
+    question: "A Impacta 300 disponibiliza quais softwares de gerenciamento?",
+    options: [
+      "Mesa Virtual, Programador Web, Controller e Software de Gravação.",
+      "Apenas Controller e Bilhetador.",
+      "Apenas Programador Web e Mesa Virtual.",
+      "Monitor E1 e ICIP Manager.",
+      "Controller, DHCP Manager e Firewall."
+    ],
+    answer: "Mesa Virtual, Programador Web, Controller e Software de Gravação."
+  },
+  {
+    question: "O software Controller tem como principal finalidade:",
+    options: [
+      "Configurar ramais digitais.",
+      "Gerenciar placas GSM.",
+      "Realizar tarifação das chamadas, emitindo relatórios.",
+      "Atualizar automaticamente o firmware.",
+      "Configurar protocolos SIP."
+    ],
+    answer: "Realizar tarifação das chamadas, emitindo relatórios."
+  },
+  {
+    question: "A função do Bilhetador é:",
+    options: [
+      "Gravar ligações telefônicas.",
+      "Coletar e armazenar os registros (bilhetes) das chamadas.",
+      "Configurar ramais IP.",
+      "Gerenciar usuários.",
+      "Configurar troncos E1."
+    ],
+    answer: "Coletar e armazenar os registros (bilhetes) das chamadas."
+  },
+  {
+    question: "O endereço IP LAN padrão de fábrica da central é:",
+    options: [
+      "192.168.0.1",
+      "192.168.1.1",
+      "10.0.0.2",
+      "172.16.0.1",
+      "10.1.1.1"
+    ],
+    answer: "192.168.1.1"
+  },
+  {
+    question: "A porta padrão utilizada pelo servidor VoIP da central é:",
+    options: [
+      "80",
+      "443",
+      "7001",
+      "5060",
+      "51001"
+    ],
+    answer: "5060"
+  },
+  {
+    question: "A facilidade Hotline permite:",
+    options: [
+      "Gravar automaticamente todas as chamadas.",
+      "Efetuar uma chamada automática ao retirar o telefone do gancho.",
+      "Bloquear chamadas internacionais.",
+      "Encaminhar chamadas para outro PABX.",
+      "Configurar troncos SIP."
+    ],
+    answer: "Efetuar uma chamada automática ao retirar o telefone do gancho."
+  },
+  {
+    question: "O comando utilizado para bloquear um ramal (Cadeado) é:",
+    options: [
+      "* + 41 + senha + *",
+      "* + 13 + senha + *",
+      "* + 51 + senha + 1 + tipo + *",
+      "Flash + 5 + *",
+      "# + 5 + ramal + *"
+    ],
+    answer: "* + 51 + senha + 1 + tipo + *"
+  },
+  {
+    question: "A função Pêndulo permite:",
+    options: [
+      "Transferir uma ligação.",
+      "Alternar entre duas chamadas.",
+      "Estacionar chamadas.",
+      "Bloquear o ramal.",
+      "Gravar conversas."
+    ],
+    answer: "Alternar entre duas chamadas."
+  },
+  {
+    question: "O comando da função Pêndulo é:",
+    options: [
+      "Flash + 7",
+      "Flash + 5 + *",
+      "Flash + 9",
+      "57 + *",
+      "* + 51"
+    ],
+    answer: "Flash + 7"
+  },
+  {
+    question: "Para estacionar uma chamada deve-se utilizar:",
+    options: [
+      "Flash + 7",
+      "Flash + 5",
+      "Flash + 3",
+      "Flash + 8",
+      "# + 57"
+    ],
+    answer: "Flash + 5"
+  },
+  {
+    question: "Para capturar uma chamada estacionada utiliza-se:",
+    options: [
+      "Flash + 7",
+      "57 + número do estacionamento + *",
+      "Flash + 5 + *",
+      "* + 57",
+      "# + 7"
+    ],
+    answer: "57 + número do estacionamento + *"
+  },
+  {
+    question: "O comando para realizar o Reset Total da central é:",
+    options: [
+      "* + 95 + *",
+      "* + 13 + 1234 + * + 99 + *",
+      "Flash + 99",
+      "* + 96 + *",
+      "60993"
+    ],
+    answer: "* + 13 + 1234 + * + 99 + *"
+  },
+  {
+    question: "Em caso de falta de energia elétrica, ocorre:",
+    options: [
+      "Todos os ramais deixam de funcionar.",
+      "O primeiro tronco analógico é automaticamente acoplado a determinados ramais, permitindo comunicação.",
+      "Apenas os ramais IP permanecem ativos.",
+      "Apenas os troncos digitais continuam funcionando.",
+      "A CPU entra em modo de emergência."
+    ],
+    answer: "O primeiro tronco analógico é automaticamente acoplado a determinados ramais, permitindo comunicação."
+  },
+  {
+    question: "O comando 87 fornece:",
+    options: [
+      "O endereço IP WAN.",
+      "Informações de BINA e número do ramal.",
+      "A configuração da placa ICIP.",
+      "A versão do firmware.",
+      "A senha de programação."
+    ],
+    answer: "Informações de BINA e número do ramal."
+  },
+  {
+    question: "O comando 86 é utilizado para ouvir:",
+    options: [
+      "O endereço IP LAN.",
+      "A configuração do ramal.",
+      "A configuração da placa GSM.",
+      "Os bilhetes armazenados.",
+      "O estado da CPU."
+    ],
+    answer: "O estado da CPU."
+  },
+  {
+    question: "O comando 60991 informa:",
+    options: [
+      "O endereço IP WAN.",
+      "O endereço IP LAN.",
+      "O número do ramal.",
+      "O gateway padrão.",
+      "A máscara de rede."
+    ],
+    answer: "O endereço IP WAN."
+  },
+  {
+    question: "Durante o checklist de instalação de uma central IP, um dos aspectos mais importantes é:",
+    options: [
+      "O modelo do telefone utilizado.",
+      "A infraestrutura de cabeamento.",
+      "A cor do gabinete.",
+      "A quantidade de teclas DSS.",
+      "O tamanho do rack."
+    ],
+    answer: "A infraestrutura de cabeamento."
+  },
+  {
+    question: "O principal objetivo de uma central PBX-IP é:",
+    options: [
+      "Substituir completamente a rede Ethernet.",
+      "Permitir a comunicação entre telefones IP e analógicos.",
+      "Eliminar a necessidade de ramais.",
+      "Trabalhar apenas com telefonia móvel.",
+      "Funcionar exclusivamente com troncos digitais."
+    ],
+    answer: "Permitir a comunicação entre telefones IP e analógicos."
+  },
+  {
+    question: "A utilização da placa ICIP proporciona, entre outras vantagens:",
+    options: [
+      "Apenas aumento da potência elétrica.",
+      "Redução de custos, unificação da numeração e configuração via WEB.",
+      "Exclusivamente aumento da capacidade de ramais analógicos.",
+      "Eliminação da necessidade de placas CODEC.",
+      "Substituição da placa CPU."
+    ],
+    answer: "Redução de custos, unificação da numeração e configuração via WEB."
   }
 ];
 
