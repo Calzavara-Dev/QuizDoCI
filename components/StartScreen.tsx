@@ -11,13 +11,20 @@ interface StartScreenProps {
 export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
   const quizKeys = Object.keys(quizzes);
   const [selected, setSelected] = useState<string>(quizKeys[0] ?? "telefonia");
+  const [selectedApostila, setSelectedApostila] = useState("apostila-1");
   const selectedCount = quizzes[selected]?.length ?? 0;
   const totalQuestions = quizKeys.reduce((sum, k) => sum + (quizzes[k]?.length ?? 0), 0);
 
   const formatLabel = (key: string) => {
     return key.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   };
-  const apostilaUrl = new URL('../assets/apostila.pdf', import.meta.url).href;
+
+  const apostilas = [
+    { id: "apostila-1", label: "Apostila 1", url: new URL('../assets/apostila.pdf', import.meta.url).href },
+    { id: "apostila-2", label: "Apostila 2", url: new URL('../assets/apostila-2.pdf', import.meta.url).href },
+  ];
+  const selectedApostilaData = apostilas.find((apostila) => apostila.id === selectedApostila) ?? apostilas[0];
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -56,10 +63,25 @@ export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
         <div className="mb-6">
           <div className="rounded-xl p-4 card text-center max-w-md mx-auto">
             <p className="text-lg font-semibold text-white mb-2">Apostila para estudo</p>
-            <p className="text-slate-300 text-sm mb-3">Baixe ou abra a apostila em PDF para revisar o conteúdo.</p>
-            <div className="flex gap-3 justify-center">
+            <p className="text-slate-300 text-sm mb-3">Escolha a apostila e abra ou baixe o PDF desejado.</p>
+            <label htmlFor="apostila-select" className="block text-left text-sm text-slate-300 mb-2">
+              Selecione a apostila
+            </label>
+            <select
+              id="apostila-select"
+              value={selectedApostila}
+              onChange={(event) => setSelectedApostila(event.target.value)}
+              className="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-white outline-none focus:border-cyan-400"
+            >
+              {apostilas.map((apostila) => (
+                <option key={apostila.id} value={apostila.id}>
+                  {apostila.label}
+                </option>
+              ))}
+            </select>
+            <div className="flex gap-3 justify-center mt-3">
               <a
-                href={apostilaUrl}
+                href={selectedApostilaData.url}
                 target="_blank"
                 rel="noreferrer"
                 className="px-4 py-2 rounded-lg ghost-btn"
@@ -68,7 +90,7 @@ export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
                 Abrir apostila
               </a>
               <a
-                href={apostilaUrl}
+                href={selectedApostilaData.url}
                 download
                 className="px-4 py-2 rounded-lg primary-btn"
                 aria-label="Baixar apostila"
