@@ -20,8 +20,8 @@ export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
   };
 
   const apostilas = [
-    { id: "apostila-1", label: "Apostila 1", url: new URL('../assets/apostila.pdf', import.meta.url).href },
-    { id: "apostila-2", label: "Apostila 2", url: new URL('../assets/apostila-2.pdf', import.meta.url).href },
+    { id: "apostila-1", label: "apostila.pdf", url: new URL('../assets/apostila.pdf', import.meta.url).href },
+    { id: "apostila-2", label: "apostila-2.pdf", url: new URL('../assets/apostila-2.pdf', import.meta.url).href },
   ];
   const selectedApostilaData = apostilas.find((apostila) => apostila.id === selectedApostila) ?? apostilas[0];
 
