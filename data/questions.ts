@@ -1804,11 +1804,11 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
     options: [
       "8",
       "10",
-      "11",
+      "12",
       "14",
       "16"
     ],
-    answer: "11"
+    answer: "12"
   },
   {
     question: "A placa CPU deve ser instalada:",
@@ -1852,7 +1852,7 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
       "12",
       "16"
     ],
-    answer: "16"
+    answer: "8"
   },
   {
     question: "Quando o LED de status da placa GSM permanece apagado, significa que:",
@@ -1929,7 +1929,7 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
       "40 canais VoIP e 10 ramais SIP.",
       "60 canais VoIP e 30 ramais SIP."
     ],
-    answer: "30 canais VoIP e 30 ramais SIP."
+    answer: "10 canais VoIP e 40 ramais SIP."
   },
   {
     question: "A placa E1 (1E1 ou 2E1) deve ser instalada:",
@@ -2377,10 +2377,10 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
       "6",
       "8",
       "10",
-      "11",
+      "12",
       "14"
     ],
-    answer: "11"
+    answer: "12"
   },
   {
     question: "A potência máxima consumida pela Impacta 300R é:",
