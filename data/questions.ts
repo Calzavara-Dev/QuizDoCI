@@ -1379,7 +1379,7 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
       "3, 8 e 4.",
       "5, 10 e 5."
     ],
-    answer: "3, 8 e 4."
+    answer: "3, 10 e 3."
   },
   {
     question: "A central Impacta suporta até:",
@@ -1390,7 +1390,7 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
       "64 terminais inteligentes.",
       "96 terminais inteligentes."
     ],
-    answer: "64 terminais inteligentes."
+    answer: "48 terminais inteligentes."
   },
   {
     question: "O sistema pode se comunicar com o meio externo através de interfaces:",
@@ -1423,7 +1423,7 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
       "6 e 12 canais.",
       "12 e 24 canais."
     ],
-    answer: "8 e 16 canais."
+    answer: "4 e 8 canais."
   },
   {
     question: "O conector SMA fêmea da placa GSM tem a função de:",
@@ -1519,10 +1519,10 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
       "16.",
       "24.",
       "32.",
-      "40.",
+      "80.",
       "48."
     ],
-    answer: "32."
+    answer: "80"
   },
   {
     question: "A porta PC do telefone IP deve ser conectada:",
@@ -1804,11 +1804,11 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
     options: [
       "8",
       "10",
-      "12",
+      "11",
       "14",
       "16"
     ],
-    answer: "14"
+    answer: "11"
   },
   {
     question: "A placa CPU deve ser instalada:",
@@ -2227,7 +2227,888 @@ quizzes["manutencao-dos-sistemas-telefonicos-2"] = [
       "Substituição da placa CPU."
     ],
     answer: "Redução de custos, unificação da numeração e configuração via WEB."
+  },
+  {
+    question: "A central Impacta 300R é indicada para empresas que necessitam:",
+    options: [
+      "Atender até 94 ramais exclusivamente analógicos.",
+      "Atender de 16 a 336 ramais, permitindo integração entre telefonia analógica, digital e VoIP.",
+      "Operar somente com ramais IP.",
+      "Utilizar apenas troncos digitais E1.",
+      "Operar exclusivamente como gateway VoIP."
+    ],
+    answer: "Atender de 16 a 336 ramais, permitindo integração entre telefonia analógica, digital e VoIP."
+  },
+  {
+    question: "A expansão da capacidade da central Impacta 300R é realizada por meio da:",
+    options: [
+      "Atualização do firmware.",
+      "Substituição da placa CPU.",
+      "Instalação de placas nos slots disponíveis, respeitando a capacidade máxima do equipamento.",
+      "Alteração do banco de dados.",
+      "Troca da fonte de alimentação."
+    ],
+    answer: "Instalação de placas nos slots disponíveis, respeitando a capacidade máxima do equipamento."
+  },
+  {
+    question: "Segundo o manual da Impacta 300R, a quantidade máxima de placas suportadas é:",
+    options: [
+      "3 placas Tronco Analógico, 10 placas Ramal Analógico e 3 placas Ramal Digital.",
+      "4 placas Tronco Analógico, 8 placas Ramal Analógico e 4 placas Ramal Digital.",
+      "2 placas Tronco Analógico, 10 placas Ramal Analógico e 2 placas Ramal Digital.",
+      "3 placas Tronco Analógico, 8 placas Ramal Analógico e 3 placas Ramal Digital.",
+      "4 placas Tronco Analógico, 10 placas Ramal Analógico e 2 placas Ramal Digital."
+    ],
+    answer: "3 placas Tronco Analógico, 10 placas Ramal Analógico e 3 placas Ramal Digital."
+  },
+  {
+    question: "De acordo com o manual, a quantidade máxima de Terminais Inteligentes (TI NKT 4245) suportada pela Impacta 300R é:",
+    options: [
+      "32",
+      "40",
+      "48",
+      "64",
+      "96"
+    ],
+    answer: "48"
+  },
+  {
+    question: "A central Impacta permite comunicação com a rede pública utilizando:",
+    options: [
+      "Apenas troncos analógicos.",
+      "Apenas troncos digitais.",
+      "Apenas VoIP.",
+      "Troncos analógicos, digitais (E1) e VoIP.",
+      "Somente interfaces GSM."
+    ],
+    answer: "Troncos analógicos, digitais (E1) e VoIP."
+  },
+  {
+    question: "A placa Backplane da Impacta 300R tem como principal função:",
+    options: [
+      "Gerenciar os ramais IP.",
+      "Armazenar os bilhetes das chamadas.",
+      "Interligar eletricamente todas as placas da central, funcionando como a placa principal do sistema.",
+      "Alimentar os telefones digitais.",
+      "Controlar o protocolo SIP."
+    ],
+    answer: "Interligar eletricamente todas as placas da central, funcionando como a placa principal do sistema."
+  },
+  {
+    question: "Segundo o manual da Impacta 300R, a placa Tronco GSM está disponível nas versões:",
+    options: [
+      "2 ou 4 canais.",
+      "4 ou 8 canais.",
+      "8 ou 16 canais.",
+      "6 ou 12 canais.",
+      "12 ou 24 canais."
+    ],
+    answer: "4 ou 8 canais."
+  },
+  {
+    question: "O conector SMA fêmea presente na placa Tronco GSM é utilizado para:",
+    options: [
+      "Alimentar a placa.",
+      "Conectar o cabo Ethernet.",
+      "Conectar a antena GSM.",
+      "Programar a placa.",
+      "Ligar o cabo serial."
+    ],
+    answer: "Conectar a antena GSM."
+  },
+  {
+    question: "Na placa Tronco GSM, os LEDs de indicação têm como principal finalidade:",
+    options: [
+      "Mostrar a tensão da fonte.",
+      "Indicar o estado de funcionamento e utilização dos canais GSM.",
+      "Indicar apenas falhas na CPU.",
+      "Mostrar o endereço IP da placa.",
+      "Indicar o consumo de energia."
+    ],
+    answer: "Indicar o estado de funcionamento e utilização dos canais GSM."
+  },
+  {
+    question: "A chave de hardware utilizada na placa ICIP é responsável por:",
+    options: [
+      "Alimentar a placa CPU.",
+      "Liberar as licenças e recursos da placa ICIP.",
+      "Conectar os troncos E1.",
+      "Armazenar o banco de dados.",
+      "Atualizar o firmware."
+    ],
+    answer: "Liberar as licenças e recursos da placa ICIP."
+  },
+  {
+    question: "As placas 1E1 e 2E1 têm como principal finalidade:",
+    options: [
+      "Expandir ramais analógicos.",
+      "Expandir ramais digitais.",
+      "Permitir a conexão da central à rede telefônica digital E1.",
+      "Gerenciar telefones IP.",
+      "Aumentar a memória da CPU."
+    ],
+    answer: "Permitir a conexão da central à rede telefônica digital E1."
+  },
+  {
+    question: "A placa E1 da Impacta 300R deve ser instalada:",
+    options: [
+      "No Slot 1.",
+      "No Slot 5.",
+      "No Slot 6.",
+      "No Slot 11.",
+      "Em qualquer slot livre."
+    ],
+    answer: "No Slot 11."
+  },
+  {
+    question: "A CPU da Impacta 300R deve ser instalada:",
+    options: [
+      "No Slot 1.",
+      "No Slot 11.",
+      "No slot específico destinado à CPU.",
+      "No último slot disponível.",
+      "Em qualquer slot livre."
+    ],
+    answer: "No slot específico destinado à CPU."
+  },
+  {
+    question: "Na Impacta 300R, o número de slots destinados às placas de expansão é:",
+    options: [
+      "6",
+      "8",
+      "10",
+      "11",
+      "14"
+    ],
+    answer: "11"
+  },
+  {
+    question: "A potência máxima consumida pela Impacta 300R é:",
+    options: [
+      "150 W",
+      "180 W",
+      "200 W",
+      "210 W",
+      "250 W"
+    ],
+    answer: "210 W"
+  },
+  {
+    question: "A alimentação elétrica da Impacta 300R é:",
+    options: [
+      "Apenas 127 V.",
+      "Apenas 220 V.",
+      "90 a 240 V com seleção automática (Full Range).",
+      "Apenas 110 V.",
+      "Apenas corrente contínua."
+    ],
+    answer: "90 a 240 V com seleção automática (Full Range)."
+  },
+  {
+    question: "Para evitar a interrupção do funcionamento da central durante quedas de energia, recomenda-se utilizar:",
+    options: [
+      "Estabilizador.",
+      "Transformador isolador.",
+      "Filtro de linha.",
+      "No-break (Short Break).",
+      "Autotransformador."
+    ],
+    answer: "No-break (Short Break)."
+  },
+  {
+    question: "A resistência máxima recomendada para o aterramento da central é:",
+    options: [
+      "1 Ω",
+      "2 Ω",
+      "5 Ω",
+      "10 Ω",
+      "20 Ω"
+    ],
+    answer: "5 Ω"
+  },
+  {
+    question: "Na Impacta 300R, a proteção das programações é garantida porque:",
+    options: [
+      "Os dados ficam armazenados em HD.",
+      "As configurações são gravadas em memória Flash.",
+      "As configurações são armazenadas em RAM.",
+      "A CPU envia cópia para a nuvem.",
+      "O banco de dados fica no computador."
+    ],
+    answer: "As configurações são gravadas em memória Flash."
+  },
+  {
+    question: "A quantidade máxima de bilhetes que a Impacta pode armazenar é:",
+    options: [
+      "500",
+      "905",
+      "1.000",
+      "2.048",
+      "Ilimitada"
+    ],
+    answer: "905"
+  },
+  {
+    question: "No Programador Web, o submenu Numeração da placa ICIP é utilizado para:",
+    options: [
+      "Configurar o endereço IP da CPU.",
+      "Definir a numeração dos ramais e troncos SIP disponibilizados pela placa ICIP.",
+      "Alterar a senha do administrador.",
+      "Configurar a placa GSM.",
+      "Programar os troncos E1."
+    ],
+    answer: "Definir a numeração dos ramais e troncos SIP disponibilizados pela placa ICIP."
+  },
+  {
+    question: "A porta padrão utilizada para acesso ao Programador Web da Impacta é:",
+    options: [
+      "80",
+      "443",
+      "7001",
+      "51001",
+      "53001"
+    ],
+    answer: "7001"
+  },
+  {
+    question: "A opção Requisição de Senha tem como finalidade:",
+    options: [
+      "Exigir senha para determinadas programações e operações da central.",
+      "Alterar automaticamente todas as senhas.",
+      "Bloquear chamadas DDD.",
+      "Habilitar gravação de chamadas.",
+      "Liberar acesso remoto."
+    ],
+    answer: "Exigir senha para determinadas programações e operações da central."
+  },
+  {
+    question: "A facilidade Hotline permite que:",
+    options: [
+      "Todas as ligações sejam gravadas.",
+      "O ramal disque automaticamente para um número previamente programado ao retirar o monofone do gancho.",
+      "O usuário bloqueie chamadas externas.",
+      "O PABX realize conferências automáticas.",
+      "O telefone entre em modo de economia de energia."
+    ],
+    answer: "O ramal disque automaticamente para um número previamente programado ao retirar o monofone do gancho."
+  },
+  {
+    question: "Para transferir uma chamada utilizando um telefone analógico conectado à Impacta, o procedimento correto é:",
+    options: [
+      "Pressionar Hold.",
+      "Pressionar Flash, discar o número do ramal de destino e colocar o monofone no gancho.",
+      "Pressionar Conference.",
+      "Digitar *57.",
+      "Apenas desligar o telefone."
+    ],
+    answer: "Pressionar Flash, discar o número do ramal de destino e colocar o monofone no gancho."
+  },
+  {
+    question: "Para capturar uma ligação destinada a outro ramal específico utiliza-se:",
+    options: [
+      "Flash + 7",
+      "Código de captura seguido do número do ramal.",
+      "Flash + 5",
+      "Hold + Ramal",
+      "Conference"
+    ],
+    answer: "Código de captura seguido do número do ramal."
+  },
+  {
+    question: "O código 60993 permite ao usuário ouvir:",
+    options: [
+      "O endereço IP LAN.",
+      "O endereço IP WAN.",
+      "O Gateway.",
+      "A máscara de rede.",
+      "O DNS."
+    ],
+    answer: "O endereço IP WAN."
+  },
+  {
+    question: "Os parafusos de fixação das placas de ramais possuem também a função de:",
+    options: [
+      "Fixar apenas mecanicamente as placas.",
+      "Realizar o aterramento das proteções dos ramais.",
+      "Alimentar os ramais digitais.",
+      "Configurar a CPU.",
+      "Identificar os slots."
+    ],
+    answer: "Realizar o aterramento das proteções dos ramais."
+  },
+  {
+    question: "Ao instalar placas de ramais, o técnico deve:",
+    options: [
+      "Apertar apenas os parafusos superiores.",
+      "Deixar os parafusos frouxos para facilitar manutenção.",
+      "Certificar-se de que todos os parafusos estejam firmemente apertados.",
+      "Utilizar apenas um parafuso por placa.",
+      "Remover os parafusos após a instalação."
+    ],
+    answer: "Certificar-se de que todos os parafusos estejam firmemente apertados."
+  },
+  {
+    question: "Na instalação de ramais utilizando cabeamento estruturado, recomenda-se utilizar:",
+    options: [
+      "Cabo coaxial.",
+      "Cabo telefônico paralelo.",
+      "Patch Panel e cabo CAT5.",
+      "Cabo HDMI.",
+      "Cabo serial."
+    ],
+    answer: "Patch Panel e cabo CAT5."
+  },
+  {
+    question: "Antes de conectar um Terminal Inteligente ao sistema, deve-se verificar:",
+    options: [
+      "Se a fonte possui 220 V.",
+      "Se não há curto-circuito ou baixo isolamento entre os fios.",
+      "Apenas o endereço IP.",
+      "Apenas a polaridade da bateria.",
+      "O firmware do telefone."
+    ],
+    answer: "Se não há curto-circuito ou baixo isolamento entre os fios."
+  },
+  {
+    question: "Na instalação utilizando cabo CAT5, os ramais devem ser conectados:",
+    options: [
+      "Em qualquer par disponível.",
+      "Nos pares de fios entrelaçados entre si.",
+      "Apenas nos pares azul e branco.",
+      "Apenas nos pares verde.",
+      "Apenas utilizando cabo crossover."
+    ],
+    answer: "Nos pares de fios entrelaçados entre si."
+  },
+  {
+    question: "A distância máxima recomendada entre um Terminal Inteligente e a Impacta 300R utilizando cabo Multilan CAT5 é:",
+    options: [
+      "200 m",
+      "400 m",
+      "500 m",
+      "600 m",
+      "800 m"
+    ],
+    answer: "600 m"
+  },
+  {
+    question: "Utilizando fio telefônico de 0,5 mm, a distância máxima entre o Terminal Inteligente e a Impacta 300R é:",
+    options: [
+      "200 m",
+      "400 m",
+      "600 m",
+      "800 m",
+      "1000 m"
+    ],
+    answer: "800 m"
+  },
+  {
+    question: "Durante a instalação em cabeamento estruturado, não é permitida:",
+    options: [
+      "A utilização de cabo CAT5.",
+      "A instalação de extensões para ramais digitais.",
+      "A utilização de Patch Panel.",
+      "A utilização de RJ-45.",
+      "A utilização de cabo Multilan."
+    ],
+    answer: "A instalação de extensões para ramais digitais."
+  },
+  {
+    question: "A quantidade máxima de ramais (TDM + SIP) suportada pela Impacta 300R é:",
+    options: [
+      "240",
+      "300",
+      "336",
+      "360",
+      "480"
+    ],
+    answer: "336"
+  },
+  {
+    question: "Qual das placas abaixo possui limite máximo de uma unidade por central?",
+    options: [
+      "Tronco Analógico",
+      "Ramal Analógico",
+      "CPU",
+      "Ramal Digital",
+      "Tronco/Ramal"
+    ],
+    answer: "CPU"
+  },
+  {
+    question: "A entrada de alimentação AC da Impacta 300R é:",
+    options: [
+      "Apenas 127 V.",
+      "Apenas 220 V.",
+      "90 a 240 V (50/60 Hz) Full Range.",
+      "110/220 V com chave seletora.",
+      "Apenas corrente contínua."
+    ],
+    answer: "90 a 240 V (50/60 Hz) Full Range."
+  },
+  {
+    question: "A potência máxima consumida pela Impacta 300R é:",
+    options: [
+      "150 W",
+      "180 W",
+      "210 W",
+      "250 W",
+      "300 W"
+    ],
+    answer: "210 W"
+  },
+  {
+  question: "Para evitar interrupções durante quedas de energia recomenda-se utilizar:",
+  options: [
+    "Estabilizador",
+    "Filtro de linha",
+    "No-break (Short Break)",
+    "Transformador isolador",
+    "Autotransformador"
+  ],
+  answer: "No-break (Short Break)"
+},
+{
+  question: "A principal função da placa Backplane é:",
+    options: [
+      "Gerenciar chamadas VoIP.",
+      "Alimentar os ramais.",
+      "Interligar eletricamente todas as placas da central.",
+      "Armazenar bilhetes.",
+      "Configurar ramais."
+    ],
+    answer: "Interligar eletricamente todas as placas da central."
+  },
+  {
+    question: "Na Impacta 300R, a placa E1 é instalada:",
+    options: [
+      "Slot 5.",
+      "Slot 6.",
+      "Slot 8.",
+      "Slot 11.",
+      "Qualquer slot."
+    ],
+    answer: "Slot 11."
+  },
+  {
+    question: "A CPU da Impacta 300R:",
+    options: [
+      "Pode ser instalada em qualquer slot.",
+      "Deve ser instalada no slot 11.",
+      "Possui slot exclusivo na placa base.",
+      "É integrada ao Backplane.",
+      "Fica junto da placa GSM."
+    ],
+    answer: "Possui slot exclusivo na placa base."
+  },
+  {
+    question: "O processamento principal da Impacta 300R é realizado pela:",
+    options: [
+      "Backplane.",
+      "Placa GSM.",
+      "ICIP.",
+      "CPU.",
+      "E1."
+    ],
+    answer: "CPU."
+  },
+  {
+    question: "A placa Tronco GSM tem como finalidade:",
+    options: [
+      "Expandir ramais digitais.",
+      "Integrar linhas da telefonia celular ao PABX.",
+      "Gerenciar ramais SIP.",
+      "Alimentar telefones IP.",
+      "Gerenciar a CPU."
+    ],
+    answer: "Integrar linhas da telefonia celular ao PABX."
+  },
+  {
+    question: "Quanto às placas GSM, a Impacta 300R permite instalar:",
+    options: [
+      "Até quatro placas GSM.",
+      "Até duas placas GSM de 8 canais.",
+      "Duas placas GSM de 4 canais ou uma placa GSM de 8 canais.",
+      "Apenas uma placa GSM de 4 canais.",
+      "Até oito canais distribuídos em quatro placas."
+    ],
+    answer: "Duas placas GSM de 4 canais ou uma placa GSM de 8 canais."
+  },
+  {
+    question: "O LED de status da placa GSM é utilizado para:",
+    options: [
+      "Indicar tensão da fonte.",
+      "Indicar o estado de funcionamento da placa.",
+      "Mostrar o IP da central.",
+      "Mostrar o número do SIM Card.",
+      "Configurar o firmware."
+    ],
+    answer: "Indicar o estado de funcionamento da placa."
+  },
+  {
+    question: "O conector SMA presente na placa GSM destina-se à conexão:",
+    options: [
+      "USB.",
+      "Ethernet.",
+      "Serial.",
+      "Da antena GSM.",
+      "Fonte."
+    ],
+    answer: "Da antena GSM."
+  },
+  {
+    question: "Cada acesso externo da Impacta (analógico, VoIP ou digital) pertence:",
+    options: [
+      "A uma rota.",
+      "A um feixe de linhas.",
+      "A um grupo.",
+      "A uma categoria.",
+      "A um DDR."
+    ],
+    answer: "A um feixe de linhas."
+  },
+  {
+    question: "Na programação de fábrica da Impacta 300R:",
+    options: [
+      "Cada linha pertence a um feixe diferente.",
+      "Existem três rotas automáticas.",
+      "Todas as linhas pertencem ao feixe ANA e os ramais utilizam a rota automática (rota 0).",
+      "Não existe rota automática.",
+      "Todas as chamadas utilizam VoIP."
+    ],
+    answer: "Todas as linhas pertencem ao feixe ANA e os ramais utilizam a rota automática (rota 0)."
+  },
+  {
+    question: "A placa ICIP adiciona à Impacta 300R:",
+    options: [
+      "60 ramais SIP e 60 troncos SIP.",
+      "Apenas troncos SIP.",
+      "Apenas ramais SIP.",
+      "120 ramais SIP e até 30 troncos SIP.",
+      "240 ramais analógicos."
+    ],
+    answer: "120 ramais SIP e até 30 troncos SIP."
+  },
+  {
+    question: "O conjunto ICIP 30 é composto por:",
+    options: [
+      "CPU, Fonte e Backplane.",
+      "Placa Base ICIP, Placa CODEC ICIP e Chave de Hardware (Dongle).",
+      "Placa GSM e CPU.",
+      "Apenas Placa CODEC.",
+      "Backplane e CPU."
+    ],
+    answer: "Placa Base ICIP, Placa CODEC ICIP e Chave de Hardware (Dongle)."
+  },
+  {
+    question: "Cada placa CODEC ICIP disponibiliza:",
+    options: [
+      "20 canais VoIP.",
+      "30 canais VoIP.",
+      "40 canais VoIP.",
+      "60 canais VoIP.",
+      "120 canais VoIP."
+    ],
+    answer: "30 canais VoIP."
+  },
+  {
+    question: "A principal vantagem da placa ICIP é:",
+    options: [
+      "Aumentar a potência elétrica da central.",
+      "Substituir a CPU.",
+      "Eliminar a necessidade de ramais.",
+      "Permitir integração VoIP (SIP), reduzindo custos e possibilitando configuração via Web.",
+      "Alimentar telefones IP."
+    ],
+    answer: "Permitir integração VoIP (SIP), reduzindo custos e possibilitando configuração via Web."
+  },
+  {
+    question: "Os telefones IP Intelbras comunicam-se com a central através de:",
+    options: [
+      "Porta serial.",
+      "Interface USB.",
+      "Rede Ethernet (TCP/IP).",
+      "Cabo coaxial.",
+      "Interface RS-232."
+    ],
+    answer: "Rede Ethernet (TCP/IP)."
+  },
+  {
+    question: "Normalmente, um telefone IP Intelbras possui:",
+    options: [
+      "Apenas uma porta RJ-11.",
+      "Apenas uma porta USB.",
+      "Duas portas RJ-45 (LAN e PC).",
+      "Três portas Ethernet.",
+      "Quatro portas Ethernet."
+    ],
+    answer: "Duas portas RJ-45 (LAN e PC)."
+  },
+  {
+    question: "O terminal TIP 200 permite cadastrar:",
+    options: [
+      "Uma conta SIP.",
+      "Até duas contas SIP.",
+      "Quatro contas SIP.",
+      "Seis contas SIP.",
+      "Oito contas SIP."
+    ],
+    answer: "Até duas contas SIP."
+  },
+  {
+    question: "O terminal TIP 300 suporta:",
+    options: [
+      "Duas contas SIP.",
+      "Três contas SIP.",
+      "Até quatro contas SIP.",
+      "Seis contas SIP.",
+      "Oito contas SIP."
+    ],
+    answer: "Até quatro contas SIP."
+  },
+  {
+    question: "O equipamento ATA GKM 2210 T é:",
+    options: [
+      "Um Gateway GSM.",
+      "Uma placa E1.",
+      "Um telefone IP.",
+      "Um Adaptador Telefônico Analógico (ATA) com suporte a duas contas SIP.",
+      "Um módulo DSS."
+    ],
+    answer: "Um Adaptador Telefônico Analógico (ATA) com suporte a duas contas SIP."
+  },
+  {
+    question: "Os principais conectores utilizados nas placas da Impacta são:",
+    options: [
+      "RJ-45 e USB.",
+      "HDMI e VGA.",
+      "RJ-11 e USB.",
+      "Conector CHAMP e conectores do tipo FM Plug 180°.",
+      "Apenas RJ-45."
+    ],
+    answer: "Conector CHAMP e conectores do tipo FM Plug 180°."
+  },
+  {
+    question: "O software Programador Web permite:",
+    options: [
+      "Apenas visualizar alarmes.",
+      "Apenas atualizar firmware.",
+      "Programar e administrar toda a central através do navegador.",
+      "Somente configurar ramais IP.",
+      "Somente configurar troncos."
+    ],
+    answer: "Programar e administrar toda a central através do navegador."
+  },
+  {
+    question: "O software Mesa Virtual é utilizado para:",
+    options: [
+      "Configurar placas GSM.",
+      "Emitir relatórios de tarifação.",
+      "Operar o ramal pelo computador, simulando um telefone.",
+      "Atualizar firmware.",
+      "Configurar o banco de dados."
+    ],
+    answer: "Operar o ramal pelo computador, simulando um telefone."
+  },
+  {
+    question: "A principal função do software Controller é:",
+    options: [
+      "Configurar ramais digitais.",
+      "Atualizar firmware.",
+      "Realizar tarifação e gerenciamento dos bilhetes das chamadas.",
+      "Programar a CPU.",
+      "Configurar troncos SIP."
+    ],
+    answer: "Realizar tarifação e gerenciamento dos bilhetes das chamadas."
+  },
+  {
+    question: "O Bilhetador tem como função:",
+    options: [
+      "Gravar conversas.",
+      "Atualizar firmware.",
+      "Configurar ramais.",
+      "Coletar e armazenar os registros (bilhetes) das chamadas telefônicas.",
+      "Configurar a placa ICIP."
+    ],
+    answer: "Coletar e armazenar os registros (bilhetes) das chamadas telefônicas."
+  },
+  {
+    question: "O endereço IP LAN padrão da Impacta 300R é:",
+    options: [
+      "192.168.0.1",
+      "10.0.0.2",
+      "192.168.1.1",
+      "172.16.0.1",
+      "10.10.10.1"
+    ],
+    answer: "10.0.0.2"
+  },
+  {
+    question: "A porta padrão utilizada pelo serviço SIP da Impacta 300R é:",
+    options: [
+      "80",
+      "443",
+      "7001",
+      "5060",
+      "51001"
+    ],
+    answer: "5060"
+  },
+  {
+    question: "A facilidade Hotline permite que:",
+    options: [
+      "Todas as ligações sejam gravadas.",
+      "Ao retirar o monofone do gancho, o ramal realize automaticamente uma chamada para um número previamente programado.",
+      "O usuário bloqueie chamadas externas.",
+      "Seja criada uma conferência automaticamente.",
+      "O telefone entre em modo econômico."
+    ],
+    answer: "Ao retirar o monofone do gancho, o ramal realize automaticamente uma chamada para um número previamente programado."
+  },
+  {
+    question: "A função Cadeado permite:",
+    options: [
+      "Bloquear apenas chamadas internacionais.",
+      "Bloquear somente chamadas locais.",
+      "Bloquear o ramal para impedir chamadas não autorizadas mediante uso de senha.",
+      "Bloquear apenas chamadas VoIP.",
+      "Bloquear a programação da central."
+    ],
+    answer: "Bloquear o ramal para impedir chamadas não autorizadas mediante uso de senha."
+  },
+  {
+    question: "A facilidade Pêndulo permite:",
+    options: [
+      "Transferir chamadas automaticamente.",
+      "Alternar entre duas chamadas em atendimento.",
+      "Estacionar chamadas.",
+      "Gravar conversas.",
+      "Capturar chamadas de outro ramal."
+    ],
+    answer: "Alternar entre duas chamadas em atendimento."
+  },
+  {
+    question: "Para utilizar a facilidade Pêndulo durante uma ligação utiliza-se:",
+    options: [
+      "Flash + 7",
+      "Flash + 5",
+      "Flash + 8",
+      "Flash + 9",
+      "Flash + 0"
+    ],
+    answer: "Flash + 5"
+  },
+  {
+    question: "Para estacionar uma chamada na Impacta utiliza-se:",
+    options: [
+      "Flash + 7",
+      "Flash + 5",
+      "Flash + 3",
+      "Flash + 8",
+      "Flash + 9"
+    ],
+    answer: "Flash + 7"
+  },
+  {
+    question: "Para recuperar uma chamada estacionada utiliza-se:",
+    options: [
+      "Flash + 7",
+      "57 + número da posição de estacionamento",
+      "Flash + 5",
+      "Flash + 8",
+      "Flash + 9"
+    ],
+    answer: "57 + número da posição de estacionamento"
+  },
+  {
+    question: "O Reset Total da central:",
+    options: [
+      "Apaga somente os bilhetes.",
+      "Restaura a programação de fábrica, devendo ser utilizado apenas quando necessário.",
+      "Reinicia apenas a CPU.",
+      "Apaga somente a agenda.",
+      "Atualiza o firmware."
+    ],
+    answer: "Restaura a programação de fábrica, devendo ser utilizado apenas quando necessário."
+  },
+  {
+    question: "Na falta de energia elétrica, a Impacta 300R:",
+    options: [
+      "Desliga completamente.",
+      "Realiza o acoplamento de emergência do primeiro tronco analógico para ramais previamente definidos.",
+      "Mantém apenas os ramais IP funcionando.",
+      "Mantém apenas os troncos E1 ativos.",
+      "Continua funcionando normalmente."
+    ],
+    answer: "Realiza o acoplamento de emergência do primeiro tronco analógico para ramais previamente definidos."
+  },
+  {
+    question: "O código 87 permite ouvir:",
+    options: [
+      "Endereço IP WAN.",
+      "Número do ramal e informações de identificação (BINA).",
+      "Gateway.",
+      "Máscara de rede.",
+      "Firmware."
+    ],
+    answer: "Número do ramal e informações de identificação (BINA)."
+  },
+  {
+    question: "O código 86 permite ao usuário ouvir:",
+    options: [
+      "O endereço IP da WAN.",
+      "Informações referentes à configuração do ramal.",
+      "A programação da CPU.",
+      "Os bilhetes armazenados.",
+      "O estado das placas GSM."
+    ],
+    answer: "Informações referentes à configuração do ramal."
+  },
+  {
+    question: "O código 60991 informa:",
+    options: [
+      "O endereço IP WAN.",
+      "O endereço IP LAN da central.",
+      "O Gateway.",
+      "O DNS.",
+      "A versão do firmware."
+    ],
+    answer: "O endereço IP LAN da central."
+  },
+  {
+    question: "Durante o checklist de instalação da Impacta, um dos itens mais importantes é verificar:",
+    options: [
+      "A cor do gabinete.",
+      "A infraestrutura de cabeamento e o aterramento da instalação.",
+      "O modelo do monitor.",
+      "O comprimento do cabo USB.",
+      "A marca do computador."
+    ],
+    answer: "A infraestrutura de cabeamento e o aterramento da instalação."
+  },
+  {
+    question: "O principal objetivo da utilização da tecnologia PBX-IP na Impacta é:",
+    options: [
+      "Eliminar os ramais.",
+      "Integrar telefonia convencional e VoIP, reduzindo custos e ampliando os recursos de comunicação.",
+      "Trabalhar apenas com linhas analógicas.",
+      "Substituir a CPU.",
+      "Eliminar os troncos E1."
+    ],
+    answer: "Integrar telefonia convencional e VoIP, reduzindo custos e ampliando os recursos de comunicação."
+  },
+  {
+    question: "Entre as principais vantagens da placa ICIP estão:",
+    options: [
+      "Aumento da potência elétrica da central.",
+      "Integração SIP, redução de custos, acesso Web e unificação da comunicação IP.",
+      "Eliminação da CPU.",
+      "Eliminação das placas CODEC.",
+      "Conversão automática de linhas analógicas em digitais."
+    ],
+    answer: "Integração SIP, redução de custos, acesso Web e unificação da comunicação IP."
   }
+
 ];
 
 export const questions: Question[] = quizzes.telefonia;

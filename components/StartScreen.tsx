@@ -23,12 +23,12 @@ export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
     {
       id: "apostila-1",
       label: "MANUTENÇÃO DOS SISTEMAS TELEFÔNICOS.pdf",
-      url: new URL('../assets/MANUTENÇÃO DOS SISTEMAS TELEFÔNICOS.pdf', import.meta.url).href,
+      url: new URL('../assets/manutencao-sistemas-telefonicos.pdf', import.meta.url).href,
     },
     {
       id: "apostila-2",
       label: "Eletronica Digital 2.pdf",
-      url: new URL('../assets/Eletronica Digital 2.pdf', import.meta.url).href,
+      url: new URL('../assets/eletronica-digital-2.pdf', import.meta.url).href,
     },
   ];
   const selectedApostilaData = apostilas.find((apostila) => apostila.id === selectedApostila) ?? apostilas[0];
