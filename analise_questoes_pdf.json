@@ -1,0 +1,45 @@
+{
+  "questoes_incorretas": [],
+  "questoes_corretas": [
+    {
+      "numero_questao": "2",
+      "pergunta": "Qual a faixa de frequência transmissível da cápsula receptora?",
+      "resposta": "Até aproximadamente 3.500 Hz.",
+      "confirmacao_pdf": "Página 14 - Seção 1.2.5 Cápsula Receptora: 'A banda de frequência transmissível alcança até aproximadamente 3.500 Hz.'"
+    },
+    {
+      "numero_questao": "3",
+      "pergunta": "Qual a velocidade do som na água?",
+      "resposta": "Cerca de 1.500 metros por segundo.",
+      "confirmacao_pdf": "Página 11 - Seção 1.2.1: 'A velocidade do som na água é maior do que no ar - cerca de 1.500 metros por segundo'"
+    },
+    {
+      "numero_questao": "4",
+      "pergunta": "Qual a função da cápsula receptora?",
+      "resposta": "Converter a tensão alternada que chega em ondas sonoras.",
+      "confirmacao_pdf": "Página 14 - Seção 1.2.5 Cápsula Receptora: 'A cápsula receptora (telefone), em contraposição à cápsula microfônica, tem a função de converter a tensão alternada que chega em onda sonora.'"
+    },
+    {
+      "numero_questao": "5",
+      "pergunta": "Qual é a resposta correta sobre frequências DTMF para a tecla 5?",
+      "resposta": "A soma de uma senoide de 1336 Hz (coluna) com uma de 770 Hz (linha).",
+      "confirmacao_pdf": "Página 17 - Seção 1.2.7 Dispositivos de discagem (DTMF): 'para a tecla 5 o tom enviado é a soma de uma senoide na frequência de 1336Hz com uma outra senoide de 770Hz.'"
+    }
+  ],
+  "duvidas_ou_nao_encontradas": [
+    {
+      "numero_questao": "1",
+      "pergunta": "Qual a frequência fundamental média das cordas vocais para o homem e para a mulher?",
+      "resposta_informada": "Aproximadamente 125 Hz para o homem e 250 Hz para a mulher.",
+      "status": "NÃO ENCONTRADA NO PDF",
+      "motivo": "O PDF menciona que 'A voz humana é produzida pela vibração do ar que é expulso dos pulmões pelo diafragma e que passa pelas pregas vocais' (Página 13, Seção 1.2.2) mas não especifica os valores de frequência fundamental para homem e mulher. Esta informação não está presente no documento 'Manutenção dos Sistemas Telefônicos'."
+    }
+  ],
+  "resumo_analise": {
+    "total_questoes": 5,
+    "questoes_corretas": 4,
+    "questoes_incorretas": 0,
+    "nao_encontradas": 1,
+    "conclusao": "Das 5 questões analisadas, 4 estão COMPLETAMENTE CORRETAS e alinhadas com o conteúdo do PDF 'Manutenção dos Sistemas Telefônicos' da Marinha do Brasil (2024). Uma questão não pode ser verificada pois a informação não consta no documento."
+  }
+}
