@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import { quizzes } from "../data/questions";
-import sgciLogo from "../assets/SGCI.jpg";
+import sgciLogo from "../assets/SGCI.png";
 
 interface StartScreenProps {
   onStart: (quizId?: string) => void;
