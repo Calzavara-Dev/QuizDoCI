@@ -804,6 +804,7 @@ export const quizTitles: Record<string, string> = {
   telefonia: "Telefonia",
   /* voip title removed */
   "eletronica-digital-2": "Eletrônica Digital 2",
+  "exercicios-moodle-et-d2": "Exercicios Moodle ET.D2",
   "manutencao-dos-sistemas-telefonicos-2": "Manutenção dos Sistemas Telefônicos 2",
 };
 
@@ -1344,6 +1345,359 @@ quizzes["eletronica-digital-2"] = [
     question: "Descreva o tipo de matriz muito usado na estrutura de memórias.",
     options: ["Matriz de Duplo Encadeamento","Matriz de Simples Encadeamento","Matriz de Karnaugh","Matriz de Soma de Produto","Matriz de De Morgan"],
     answer: "Matriz de Duplo Encadeamento"
+  }
+];
+
+quizzes["exercicios-moodle-et-d2"] = [
+  {
+    question: "O que caracteriza a l�gica positiva?",
+    options: [
+      "O estado l�gico 1 � representado por tens�o negativa.",
+      "O estado l�gico 1 � superior ao estado l�gico 0 e � representado por uma tens�o positiva.",
+      "O estado l�gico 0 � representado por tens�o positiva e o estado 1 por 0 V.",
+      "Os estados l�gicos n�o dependem da tens�o."
+    ],
+    answer: "O estado l�gico 1 � superior ao estado l�gico 0 e � representado por uma tens�o positiva."
+  },
+  {
+    question: "Qual dos exemplos representa corretamente a l�gica positiva?",
+    options: [
+      "-5 V = 1 e 0 V = 0.",
+      "+5 V = 0 e 0 V = 1.",
+      "+5 V = 1 e 0 V = 0.",
+      "+12 V = 0 e -12 V = 1."
+    ],
+    answer: "+5 V = 1 e 0 V = 0."
+  },
+  {
+    question: "O que caracteriza a l�gica negativa?",
+    options: [
+      "O estado l�gico 1 � superior ao estado l�gico 0.",
+      "O estado l�gico 0 � superior ao estado l�gico 1 e o n�vel l�gico 1 � representado por tens�o negativa.",
+      "O estado l�gico 1 sempre corresponde a +5 V.",
+      "O estado l�gico 0 � representado por tens�o positiva obrigatoriamente."
+    ],
+    answer: "O estado l�gico 0 � superior ao estado l�gico 1 e o n�vel l�gico 1 � representado por tens�o negativa."
+  },
+  {
+    question: "O que determina as escalas de integra��o dos circuitos integrados?",
+    options: [
+      "O tipo de encapsulamento.",
+      "A tens�o de alimenta��o.",
+      "A quantidade de portas ou dispositivos contidos no chip.",
+      "O n�mero de pinos."
+    ],
+    answer: "A quantidade de portas ou dispositivos contidos no chip."
+  },
+  {
+    question: "Segundo a classifica��o GSI, um circuito integrado possui, no m�nimo, quantas portas?",
+    options: [
+      "10.000 portas.",
+      "100.000 portas.",
+      "500.000 portas.",
+      "1.000.000 de portas."
+    ],
+    answer: "1.000.000 de portas."
+  },
+  {
+    question: "Qual � a densidade da escala LSI (Large Scale Integration)?",
+    options: [
+      "10 a 99 portas por chip.",
+      "100 a 999 portas por chip.",
+      "1.000 a 9.999 portas por chip.",
+      "Acima de 1 milh�o de portas."
+    ],
+    answer: "100 a 999 portas por chip."
+  },
+  {
+    question: "Qual dispositivo � t�pico da escala ULSI?",
+    options: [
+      "Rel� eletromec�nico.",
+      "Microprocessador avan�ado.",
+      "Diodo Zener.",
+      "Transistor bipolar discreto."
+    ],
+    answer: "Microprocessador avan�ado."
+  },
+  {
+    question: "Qual � o tipo de configura��o de sa�da da maioria das portas l�gicas TTL?",
+    options: [
+      "Open Collector.",
+      "Tri-State.",
+      "Totem-Pole.",
+      "Push-Pull CMOS."
+    ],
+    answer: "Totem-Pole."
+  },
+  {
+    question: "Em uma porta NAND TTL, qual ser� o n�vel l�gico de sa�da quando a entrada estiver em aberto?",
+    options: [
+      "N�vel l�gico 1.",
+      "Alta imped�ncia.",
+      "N�vel l�gico 0.",
+      "Indeterminado."
+    ],
+    answer: "N�vel l�gico 0."
+  },
+  {
+    question: "Qual inova��o tecnol�gica foi utilizada na entrada dos circuitos TTL?",
+    options: [
+      "Transistores Darlington.",
+      "MOSFET de canal P.",
+      "Transistores bipolares multiemissores.",
+      "Amplificadores operacionais."
+    ],
+    answer: "Transistores bipolares multiemissores."
+  },
+  {
+    question: "A fam�lia TTL � derivada de qual fam�lia l�gica?",
+    options: [
+      "RTL.",
+      "CMOS.",
+      "DTL.",
+      "ECL."
+    ],
+    answer: "DTL."
+  },
+  {
+    question: "Qual � a tens�o m�nima de alimenta��o da s�rie TTL 74XXX?",
+    options: [
+      "4,0 V.",
+      "4,5 V.",
+      "4,75 V.",
+      "5,5 V."
+    ],
+    answer: "4,75 V."
+  },
+  {
+    question: "Qual � a faixa de alimenta��o da s�rie TTL 54XXX?",
+    options: [
+      "3,3 V a 5 V.",
+      "4,5 V a 5,5 V.",
+      "5 V a 6 V.",
+      "4,75 V a 5,25 V."
+    ],
+    answer: "4,5 V a 5,5 V."
+  },
+  {
+    question: "Qual � o fan-out t�pico da fam�lia TTL padr�o?",
+    options: [
+      "5 blocos.",
+      "8 blocos.",
+      "10 blocos.",
+      "20 blocos."
+    ],
+    answer: "10 blocos."
+  },
+  {
+    question: "Qual � o tempo m�dio de atraso de propaga��o da TTL padr�o?",
+    options: [
+      "1 ns.",
+      "5 ns.",
+      "10 ns.",
+      "100 ns."
+    ],
+    answer: "10 ns."
+  },
+  {
+    question: "Qual � a imunidade ao ru�do da fam�lia TTL?",
+    options: [
+      "0,2 V.",
+      "0,4 V.",
+      "1,0 V.",
+      "5,0 V."
+    ],
+    answer: "0,4 V."
+  },
+  {
+    question: "Qual bloco l�gico TTL n�o possui resistor de coletor ligado ao +VCC internamente?",
+    options: [
+      "Totem-Pole.",
+      "Tri-State.",
+      "Open Collector.",
+      "Buffer."
+    ],
+    answer: "Open Collector."
+  },
+  {
+    question: "Quem controla externamente a corrente de coletor em uma sa�da Open Collector?",
+    options: [
+      "Capacitor.",
+      "Diodo.",
+      "Resistor Pull-up.",
+      "Indutor."
+    ],
+    answer: "Resistor Pull-up."
+  },
+  {
+    question: "Qual a principal vantagem do aumento da corrente de coletor?",
+    options: [
+      "Reduz a tens�o de alimenta��o.",
+      "Aumenta a frequ�ncia de opera��o.",
+      "Permite aumentar o fan-out.",
+      "Reduz a temperatura do circuito."
+    ],
+    answer: "Permite aumentar o fan-out."
+  },
+  {
+    question: "Qual tipo de sa�da apresenta um terceiro estado de alta imped�ncia?",
+    options: [
+      "Totem-Pole.",
+      "Open Collector.",
+      "Tri-State.",
+      "Darlington."
+    ],
+    answer: "Tri-State."
+  },
+  {
+    question: "Ao selecionar uma fam�lia l�gica, quais caracter�sticas devem ser consideradas?",
+    options: [
+      "Peso e tamanho.",
+      "Velocidade e pot�ncia.",
+      "N�mero de pinos e cor.",
+      "Temperatura e encapsulamento."
+    ],
+    answer: "Velocidade e pot�ncia."
+  },
+  {
+    question: "Qual � a vers�o TTL mais r�pida?",
+    options: [
+      "74LS.",
+      "74ALS.",
+      "74AS.",
+      "74C."
+    ],
+    answer: "74AS."
+  },
+  {
+    question: "Quais subfam�lias TTL possuem menor consumo de pot�ncia?",
+    options: [
+      "74S e 74AS.",
+      "74LS e 74ALS.",
+      "74H e 74AS.",
+      "74F e 74S."
+    ],
+    answer: "74LS e 74ALS."
+  },
+  {
+    question: "Qual � o tipo de sa�da do CI 7406?",
+    options: [
+      "Totem-Pole.",
+      "Tri-State.",
+      "Coletor Aberto.",
+      "Buffer CMOS."
+    ],
+    answer: "Coletor Aberto."
+  },
+  {
+    question: "Onde normalmente s�o utilizados os CIs que cont�m buffers?",
+    options: [
+      "Em reguladores de tens�o.",
+      "Em interfaces para aumentar a capacidade de corrente.",
+      "Em fontes chaveadas.",
+      "Em osciladores."
+    ],
+    answer: "Em interfaces para aumentar a capacidade de corrente."
+  },
+  {
+    question: "Que tipo de transistor � utilizado na fam�lia CMOS?",
+    options: [
+      "Bipolar NPN.",
+      "Bipolar PNP.",
+      "MOS complementares (canal N e canal P).",
+      "JFET."
+    ],
+    answer: "MOS complementares (canal N e canal P)."
+  },
+  {
+    question: "Qual tipo de MOSFET � utilizado nos CIs digitais CMOS?",
+    options: [
+      "Deple��o.",
+      "Enriquecimento (modo de indu��o).",
+      "Canal duplo.",
+      "MOS de pot�ncia."
+    ],
+    answer: "Enriquecimento (modo de indu��o)."
+  },
+  {
+    question: "Quais s�o as s�ries comerciais da fam�lia CMOS?",
+    options: [
+      "74LS, 74ALS e 74AS.",
+      "54C/74C, 4000A e 4000B.",
+      "74HC e 74HCT apenas.",
+      "RTL e DTL."
+    ],
+    answer: "54C/74C, 4000A e 4000B."
+  },
+  {
+    question: "Qual � a faixa de temperatura t�pica dos CIs CMOS comuns?",
+    options: [
+      "0�C a 70�C.",
+      "-20�C a 80�C.",
+      "-40�C a +85�C.",
+      "-55�C a +125�C."
+    ],
+    answer: "-40�C a +85�C."
+  },
+  {
+    question: "Qual � a faixa de alimenta��o da s�rie CMOS 4000B?",
+    options: [
+      "1 V a 5 V.",
+      "3 V a 18 V.",
+      "5 V a 12 V.",
+      "10 V a 15 V."
+    ],
+    answer: "3 V a 18 V."
+  },
+  {
+    question: "Em um CI CMOS alimentado com VDD = 10 V, qual � o valor m�nimo aproximado de VOH?",
+    options: [
+      "5 V.",
+      "7 V.",
+      "9,95 V.",
+      "10,5 V."
+    ],
+    answer: "9,95 V."
+  },
+  {
+    question: "Qual melhoria foi introduzida na s�rie CMOS 4000B em rela��o � 4000?",
+    options: [
+      "Mem�ria interna.",
+      "Buffer na sa�da.",
+      "Alimenta��o dupla.",
+      "Oscilador interno."
+    ],
+    answer: "Buffer na sa�da."
+  },
+  {
+    question: "No c�digo MM74C192N, o n�mero 192 identifica:",
+    options: [
+      "O fabricante.",
+      "A s�rie CMOS.",
+      "A fun��o espec�fica do dispositivo.",
+      "A tens�o de alimenta��o."
+    ],
+    answer: "A fun��o espec�fica do dispositivo."
+  },
+  {
+    question: "Quando utilizamos um circuito Multiplexador (MUX)?",
+    options: [
+      "Quando desejamos dividir um sinal em v�rias sa�das.",
+      "Quando precisamos selecionar uma entre v�rias entradas e envi�-la para uma �nica sa�da.",
+      "Para amplificar sinais anal�gicos.",
+      "Para armazenar dados permanentemente."
+    ],
+    answer: "Quando precisamos selecionar uma entre v�rias entradas e envi�-la para uma �nica sa�da."
+  },
+  {
+    question: "Qual � a finalidade da entrada de sele��o em um MUX?",
+    options: [
+      "Alimentar o circuito.",
+      "Definir a frequ�ncia de opera��o.",
+      "Escolher qual entrada ser� conectada � sa�da.",
+      "Aumentar a corrente de sa�da."
+    ],
+    answer: "Escolher qual entrada ser� conectada � sa�da."
   }
 ];
 
