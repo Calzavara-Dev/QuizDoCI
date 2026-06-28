@@ -1350,17 +1350,17 @@ quizzes["eletronica-digital-2"] = [
 
 quizzes["exercicios-moodle-et-d2"] = [
   {
-    question: "O que caracteriza a l�gica positiva?",
+    question: "O que caracteriza a lógica positiva?",
     options: [
-      "O estado l�gico 1 � representado por tens�o negativa.",
-      "O estado l�gico 1 � superior ao estado l�gico 0 e � representado por uma tens�o positiva.",
-      "O estado l�gico 0 � representado por tens�o positiva e o estado 1 por 0 V.",
-      "Os estados l�gicos n�o dependem da tens�o."
+      "O estado lógico 1 é representado por tensão negativa.",
+      "O estado lógico 1 é superior ao estado lógico 0 e é representado por uma tensão positiva.",
+      "O estado lógico 0 é representado por tensão positiva e o estado 1 por 0 V.",
+      "Os estados lógicos não dependem da tensão."
     ],
-    answer: "O estado l�gico 1 � superior ao estado l�gico 0 e � representado por uma tens�o positiva."
+    answer: "O estado lógico 1 é superior ao estado lógico 0 e é representado por uma tensão positiva."
   },
   {
-    question: "Qual dos exemplos representa corretamente a l�gica positiva?",
+    question: "Qual dos exemplos representa corretamente a lógica positiva?",
     options: [
       "-5 V = 1 e 0 V = 0.",
       "+5 V = 0 e 0 V = 1.",
@@ -1370,27 +1370,27 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "+5 V = 1 e 0 V = 0."
   },
   {
-    question: "O que caracteriza a l�gica negativa?",
+    question: "O que caracteriza a lógica negativa?",
     options: [
-      "O estado l�gico 1 � superior ao estado l�gico 0.",
-      "O estado l�gico 0 � superior ao estado l�gico 1 e o n�vel l�gico 1 � representado por tens�o negativa.",
-      "O estado l�gico 1 sempre corresponde a +5 V.",
-      "O estado l�gico 0 � representado por tens�o positiva obrigatoriamente."
+      "O estado lógico 1 é superior ao estado lógico 0.",
+      "O estado lógico 0 é superior ao estado lógico 1 e o nível lógico 1 é representado por tensão negativa.",
+      "O estado lógico 1 sempre corresponde a +5 V.",
+      "O estado lógico 0 é representado por tensão positiva obrigatoriamente."
     ],
-    answer: "O estado l�gico 0 � superior ao estado l�gico 1 e o n�vel l�gico 1 � representado por tens�o negativa."
+    answer: "O estado lógico 0 é superior ao estado lógico 1 e o nível lógico 1 é representado por tensão negativa."
   },
   {
-    question: "O que determina as escalas de integra��o dos circuitos integrados?",
+    question: "O que determina as escalas de integração dos circuitos integrados?",
     options: [
       "O tipo de encapsulamento.",
-      "A tens�o de alimenta��o.",
+      "A tensão de alimentação.",
       "A quantidade de portas ou dispositivos contidos no chip.",
-      "O n�mero de pinos."
+      "O número de pinos."
     ],
     answer: "A quantidade de portas ou dispositivos contidos no chip."
   },
   {
-    question: "Segundo a classifica��o GSI, um circuito integrado possui, no m�nimo, quantas portas?",
+    question: "Segundo a classificação GSI, um circuito integrado possui, no mínimo, quantas portas?",
     options: [
       "10.000 portas.",
       "100.000 portas.",
@@ -1400,27 +1400,27 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "1.000.000 de portas."
   },
   {
-    question: "Qual � a densidade da escala LSI (Large Scale Integration)?",
+    question: "Qual é a densidade da escala LSI (Large Scale Integration)?",
     options: [
       "10 a 99 portas por chip.",
       "100 a 999 portas por chip.",
       "1.000 a 9.999 portas por chip.",
-      "Acima de 1 milh�o de portas."
+      "Acima de 1 milhão de portas."
     ],
     answer: "100 a 999 portas por chip."
   },
   {
-    question: "Qual dispositivo � t�pico da escala ULSI?",
+    question: "Qual dispositivo é típico da escala ULSI?",
     options: [
-      "Rel� eletromec�nico.",
-      "Microprocessador avan�ado.",
+      "Relé eletromecânico.",
+      "Microprocessador avançado.",
       "Diodo Zener.",
       "Transistor bipolar discreto."
     ],
-    answer: "Microprocessador avan�ado."
+    answer: "Microprocessador avançado."
   },
   {
-    question: "Qual � o tipo de configura��o de sa�da da maioria das portas l�gicas TTL?",
+    question: "Qual é o tipo de configuração de saída da maioria das portas lógicas TTL?",
     options: [
       "Open Collector.",
       "Tri-State.",
@@ -1430,17 +1430,17 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "Totem-Pole."
   },
   {
-    question: "Em uma porta NAND TTL, qual ser� o n�vel l�gico de sa�da quando a entrada estiver em aberto?",
+    question: "Em uma porta NAND TTL, qual será o nível lógico de saída quando a entrada estiver em aberto?",
     options: [
-      "N�vel l�gico 1.",
-      "Alta imped�ncia.",
-      "N�vel l�gico 0.",
+      "Nível lógico 1.",
+      "Alta impedância.",
+      "Nível lógico 0.",
       "Indeterminado."
     ],
-    answer: "N�vel l�gico 0."
+    answer: "Nível lógico 0."
   },
   {
-    question: "Qual inova��o tecnol�gica foi utilizada na entrada dos circuitos TTL?",
+    question: "Qual inovação tecnológica foi utilizada na entrada dos circuitos TTL?",
     options: [
       "Transistores Darlington.",
       "MOSFET de canal P.",
@@ -1450,7 +1450,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "Transistores bipolares multiemissores."
   },
   {
-    question: "A fam�lia TTL � derivada de qual fam�lia l�gica?",
+    question: "A família TTL é derivada de qual família lógica?",
     options: [
       "RTL.",
       "CMOS.",
@@ -1460,7 +1460,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "DTL."
   },
   {
-    question: "Qual � a tens�o m�nima de alimenta��o da s�rie TTL 74XXX?",
+    question: "Qual é a tensão mínima de alimentação da série TTL 74XXX?",
     options: [
       "4,0 V.",
       "4,5 V.",
@@ -1470,7 +1470,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "4,75 V."
   },
   {
-    question: "Qual � a faixa de alimenta��o da s�rie TTL 54XXX?",
+    question: "Qual é a faixa de alimentação da série TTL 54XXX?",
     options: [
       "3,3 V a 5 V.",
       "4,5 V a 5,5 V.",
@@ -1480,7 +1480,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "4,5 V a 5,5 V."
   },
   {
-    question: "Qual � o fan-out t�pico da fam�lia TTL padr�o?",
+    question: "Qual é o fan-out típico da família TTL padrão?",
     options: [
       "5 blocos.",
       "8 blocos.",
@@ -1490,7 +1490,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "10 blocos."
   },
   {
-    question: "Qual � o tempo m�dio de atraso de propaga��o da TTL padr�o?",
+    question: "Qual é o tempo médio de atraso de propagação da TTL padrão?",
     options: [
       "1 ns.",
       "5 ns.",
@@ -1500,7 +1500,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "10 ns."
   },
   {
-    question: "Qual � a imunidade ao ru�do da fam�lia TTL?",
+    question: "Qual é a imunidade ao ruído da família TTL?",
     options: [
       "0,2 V.",
       "0,4 V.",
@@ -1510,7 +1510,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "0,4 V."
   },
   {
-    question: "Qual bloco l�gico TTL n�o possui resistor de coletor ligado ao +VCC internamente?",
+    question: "Qual bloco lógico TTL não possui resistor de coletor ligado ao +VCC internamente?",
     options: [
       "Totem-Pole.",
       "Tri-State.",
@@ -1520,7 +1520,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "Open Collector."
   },
   {
-    question: "Quem controla externamente a corrente de coletor em uma sa�da Open Collector?",
+    question: "Quem controla externamente a corrente de coletor em uma saída Open Collector?",
     options: [
       "Capacitor.",
       "Diodo.",
@@ -1532,15 +1532,15 @@ quizzes["exercicios-moodle-et-d2"] = [
   {
     question: "Qual a principal vantagem do aumento da corrente de coletor?",
     options: [
-      "Reduz a tens�o de alimenta��o.",
-      "Aumenta a frequ�ncia de opera��o.",
+      "Reduz a tensão de alimentação.",
+      "Aumenta a frequência de operação.",
       "Permite aumentar o fan-out.",
       "Reduz a temperatura do circuito."
     ],
     answer: "Permite aumentar o fan-out."
   },
   {
-    question: "Qual tipo de sa�da apresenta um terceiro estado de alta imped�ncia?",
+    question: "Qual tipo de saída apresenta um terceiro estado de alta impedância?",
     options: [
       "Totem-Pole.",
       "Open Collector.",
@@ -1550,17 +1550,17 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "Tri-State."
   },
   {
-    question: "Ao selecionar uma fam�lia l�gica, quais caracter�sticas devem ser consideradas?",
+    question: "Ao selecionar uma família lógica, quais características devem ser consideradas?",
     options: [
       "Peso e tamanho.",
-      "Velocidade e pot�ncia.",
-      "N�mero de pinos e cor.",
+      "Velocidade e potência.",
+      "Número de pinos e cor.",
       "Temperatura e encapsulamento."
     ],
-    answer: "Velocidade e pot�ncia."
+    answer: "Velocidade e potência."
   },
   {
-    question: "Qual � a vers�o TTL mais r�pida?",
+    question: "Qual é a versão TTL mais rápida?",
     options: [
       "74LS.",
       "74ALS.",
@@ -1570,7 +1570,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "74AS."
   },
   {
-    question: "Quais subfam�lias TTL possuem menor consumo de pot�ncia?",
+    question: "Quais subfamílias TTL possuem menor consumo de potência?",
     options: [
       "74S e 74AS.",
       "74LS e 74ALS.",
@@ -1580,7 +1580,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "74LS e 74ALS."
   },
   {
-    question: "Qual � o tipo de sa�da do CI 7406?",
+    question: "Qual é o tipo de saída do CI 7406?",
     options: [
       "Totem-Pole.",
       "Tri-State.",
@@ -1590,9 +1590,9 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "Coletor Aberto."
   },
   {
-    question: "Onde normalmente s�o utilizados os CIs que cont�m buffers?",
+    question: "Onde normalmente são utilizados os CIs que contêm buffers?",
     options: [
-      "Em reguladores de tens�o.",
+      "Em reguladores de tensão.",
       "Em interfaces para aumentar a capacidade de corrente.",
       "Em fontes chaveadas.",
       "Em osciladores."
@@ -1600,7 +1600,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "Em interfaces para aumentar a capacidade de corrente."
   },
   {
-    question: "Que tipo de transistor � utilizado na fam�lia CMOS?",
+    question: "Que tipo de transistor é utilizado na família CMOS?",
     options: [
       "Bipolar NPN.",
       "Bipolar PNP.",
@@ -1610,17 +1610,17 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "MOS complementares (canal N e canal P)."
   },
   {
-    question: "Qual tipo de MOSFET � utilizado nos CIs digitais CMOS?",
+    question: "Qual tipo de MOSFET é utilizado nos CIs digitais CMOS?",
     options: [
-      "Deple��o.",
-      "Enriquecimento (modo de indu��o).",
+      "Depleção.",
+      "Enriquecimento (modo de indução).",
       "Canal duplo.",
-      "MOS de pot�ncia."
+      "MOS de potência."
     ],
-    answer: "Enriquecimento (modo de indu��o)."
+    answer: "Enriquecimento (modo de indução)."
   },
   {
-    question: "Quais s�o as s�ries comerciais da fam�lia CMOS?",
+    question: "Quais são as séries comerciais da família CMOS?",
     options: [
       "74LS, 74ALS e 74AS.",
       "54C/74C, 4000A e 4000B.",
@@ -1630,17 +1630,17 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "54C/74C, 4000A e 4000B."
   },
   {
-    question: "Qual � a faixa de temperatura t�pica dos CIs CMOS comuns?",
+    question: "Qual é a faixa de temperatura típica dos CIs CMOS comuns?",
     options: [
-      "0�C a 70�C.",
-      "-20�C a 80�C.",
-      "-40�C a +85�C.",
-      "-55�C a +125�C."
+      "0°C a 70°C.",
+      "-20°C a 80°C.",
+      "-40°C a +85°C.",
+      "-55°C a +125°C."
     ],
-    answer: "-40�C a +85�C."
+    answer: "-40°C a +85°C."
   },
   {
-    question: "Qual � a faixa de alimenta��o da s�rie CMOS 4000B?",
+    question: "Qual é a faixa de alimentação da série CMOS 4000B?",
     options: [
       "1 V a 5 V.",
       "3 V a 18 V.",
@@ -1650,7 +1650,7 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "3 V a 18 V."
   },
   {
-    question: "Em um CI CMOS alimentado com VDD = 10 V, qual � o valor m�nimo aproximado de VOH?",
+    question: "Em um CI CMOS alimentado com VDD = 10 V, qual é o valor mínimo aproximado de VOH?",
     options: [
       "5 V.",
       "7 V.",
@@ -1660,44 +1660,44 @@ quizzes["exercicios-moodle-et-d2"] = [
     answer: "9,95 V."
   },
   {
-    question: "Qual melhoria foi introduzida na s�rie CMOS 4000B em rela��o � 4000?",
+    question: "Qual melhoria foi introduzida na série CMOS 4000B em relação à 4000?",
     options: [
-      "Mem�ria interna.",
-      "Buffer na sa�da.",
-      "Alimenta��o dupla.",
+      "Memória interna.",
+      "Buffer na saída.",
+      "Alimentação dupla.",
       "Oscilador interno."
     ],
-    answer: "Buffer na sa�da."
+    answer: "Buffer na saída."
   },
   {
-    question: "No c�digo MM74C192N, o n�mero 192 identifica:",
+    question: "No código MM74C192N, o número 192 identifica:",
     options: [
       "O fabricante.",
-      "A s�rie CMOS.",
-      "A fun��o espec�fica do dispositivo.",
-      "A tens�o de alimenta��o."
+      "A série CMOS.",
+      "A função específica do dispositivo.",
+      "A tensão de alimentação."
     ],
-    answer: "A fun��o espec�fica do dispositivo."
+    answer: "A função específica do dispositivo."
   },
   {
     question: "Quando utilizamos um circuito Multiplexador (MUX)?",
     options: [
-      "Quando desejamos dividir um sinal em v�rias sa�das.",
-      "Quando precisamos selecionar uma entre v�rias entradas e envi�-la para uma �nica sa�da.",
-      "Para amplificar sinais anal�gicos.",
+      "Quando desejamos dividir um sinal em várias saídas.",
+      "Quando precisamos selecionar uma entre várias entradas e enviá-la para uma única saída.",
+      "Para amplificar sinais analógicos.",
       "Para armazenar dados permanentemente."
     ],
-    answer: "Quando precisamos selecionar uma entre v�rias entradas e envi�-la para uma �nica sa�da."
+    answer: "Quando precisamos selecionar uma entre várias entradas e enviá-la para uma única saída."
   },
   {
-    question: "Qual � a finalidade da entrada de sele��o em um MUX?",
+    question: "Qual é a finalidade da entrada de seleção em um MUX?",
     options: [
       "Alimentar o circuito.",
-      "Definir a frequ�ncia de opera��o.",
-      "Escolher qual entrada ser� conectada � sa�da.",
-      "Aumentar a corrente de sa�da."
+      "Definir a frequência de operação.",
+      "Escolher qual entrada será conectada à saída.",
+      "Aumentar a corrente de saída."
     ],
-    answer: "Escolher qual entrada ser� conectada � sa�da."
+    answer: "Escolher qual entrada será conectada à saída."
   }
 ];
 
