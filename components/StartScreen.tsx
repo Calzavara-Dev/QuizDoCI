@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Play } from "lucide-react";
+import { Play } from "lucide-react";
 import { quizzes } from "../data/questions";
+import sgciLogo from "../assets/SGCI.jpg";
 
 interface StartScreenProps {
   onStart: (quizId?: string) => void;
@@ -48,8 +49,12 @@ export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
         className="w-full max-w-md card rounded-3xl p-6"
       >
         <div className="mb-6 flex justify-center">
-          <div className="p-5 rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-400/10">
-            <Phone className="text-cyan-400" size={48} />
+          <div className="h-24 w-24 overflow-hidden rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-400/10 p-2">
+            <img
+              src={sgciLogo}
+              alt="SGCI"
+              className="h-full w-full rounded-full object-cover"
+            />
           </div>
         </div>
 
