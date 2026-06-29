@@ -814,12 +814,12 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Os circuitos integrados TTL, de uso geral, são dimensionados para operar na faixa de temperatura de:",
     options: ["-55°C a +125°C","-55°C a +85°C","-40°C a +85°C","-40°C a +80°C","0°C a +70°C"],
-    answer: "-55°C a +125°C"
+    answer: "0°C a +70°C"
   },
   {
     question: "A vantagem do CI TTL padrão sobre o CI MOS, padrão, é o(a):",
     options: ["FAN-OUT","dissipação de potência","imunidade ao ruído","larga faixa de alimentação de tensão","tempo de atraso de propagação"],
-    answer: "FAN-OUT"
+    answer: "tempo de atraso de propagação"
   },
   {
     question: "O tipo de lógica e a porta apresentada pelo circuito da Fig.100 são, respectivamente:",
@@ -859,7 +859,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "A menor tensão de entrada para que um circuito TTL STANDARD, reconheça como nível ALTO, é de quantos V?",
     options: ["0,4","0,8","2,0","2,4","3,5"],
-    answer: "2,4"
+    answer: "2,0"
   },
   {
     question: "A maior tensão de entrada, para que um circuito TTL STANDARD reconheça como nível BAIXO, é de:",
@@ -884,7 +884,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Um CI digital, contendo 150 portas, é classificado como:",
     options: ["SSI","MSI","LSI","ULSI","GSI"],
-    answer: "MSI"
+    answer: "LSI"
   },
   {
     question: "A família lógica pertencente a série 4000 e 4000B é:",
@@ -929,7 +929,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Das TTL, a que apresenta menor consumo de potência é a:",
     options: ["7400","74ALS00","74F00","74LS00","74S00"],
-    answer: "74LS00"
+    answer: "74ALS00"
   },
   {
     question: "Família que apresenta o maior FAN-OUT.",
@@ -974,7 +974,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "O valor de VIH de uma TTL padrão é:",
     options: ["0,4V","0,8V","2,0V","2,4V","2,8V"],
-    answer: "2,4V"
+    answer: "2,0V"
   },
   {
     question: "Quando uma saída TTL acionar mais cargas do que o normal, teremos:",
@@ -1029,7 +1029,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Uma CMOS 4000B é alimentada com valor máximo permitido de Vdd. O máximo valor de VIL será de:",
     options: ["12,6V","7,5V","5,4V","4,5V","0,05V"],
-    answer: "4,5V"
+    answer: "5,4V"
   },
   {
     question: "Quando uma TTL aciona uma CMOS, onde Vdd >>Vcc, devemos:",
