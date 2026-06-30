@@ -834,7 +834,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "De acordo com o circuito da Figura 105, para que a saída (S) tenha nível lógico 0, as suas entradas A, B e G deverão estar, respectivamente, nos seguintes níveis lógicos:",
     options: ["0,1 e 1","1,1 e 1","1,1 e 0","0,0 e 1","0,0 e 0"],
-    answer: "1, 1 e 0"
+    answer: "1,1 e 1"
   },
   {
     question: "Além dos blocos comuns (STANDARD), a família TTL possui outras versões de circuitos lógicos. A que fornece a maior velocidade é:",
@@ -939,7 +939,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Tipo de estrutura interna que nos permite a confecção de blocos lógicos em CIs.",
     options: ["Bloco lógico","Porta lógica","Circuito lógico","Família lógica","Circuito combinacional"],
-    answer: "Bloco lógico"
+    answer: "Família lógica"
   },
   {
     question: "A capacidade de um bloco lógico alimentar, blocos da mesma família, é chamada:",
@@ -979,7 +979,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Quando uma saída TTL acionar mais cargas do que o normal, teremos:",
     options: ["redução de IOL","perda do nível lógico","nenhuma alteração","redução de IOH","redução de VOL"],
-    answer: "redução de IOH"
+    answer: "perda do nível lógico"
   },
   {
     question: "Lógica que combina as melhores características da CMOS e Bipolar.",
@@ -1004,7 +1004,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "O consumo médio de um circuito integrado TTL, onde IccH=6mA e IccL = 12mA, é de:",
     options: ["90 mW","45 W","30 mW","45 mW","90 W"],
-    answer: "90 mW"
+    answer: "45 mW"
   },
   {
     question: "A margem de ruído no nível alto para uma TTL, onde VIH = 2V, VIL = 0,8V, VOH = 2,4V e VOL=0,4V, é de:",
@@ -1039,7 +1039,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "O número de portas E, necessárias para construir um gerador de produtos canônicos de 5 variáveis, que usa matriz de simples encadeamento, é:",
     options: ["60","256","508","512","1024"],
-    answer: "512"
+    answer: "60"
   },
   {
     question: "Valor de VIL de uma TTL padrão é:",
@@ -1054,12 +1054,12 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Circuito combinacional dedicado, cuja finalidade é selecionar qual das saídas deve receber a informação presente em sua entrada.",
     options: ["Memória","Demultiplex","Gerador de paridade","Multiplex","Gerador de produtos canônicos"],
-    answer: "Multiplex"
+    answer: "Demultiplex"
   },
   {
     question: "No circuito da figura 137, A = 1, B = 0, C=0, D = 1. Com estes níveis lógicos na entrada a porta ativa em nível um é:",
     options: ["P3","P6","P7","P10","P11"],
-    answer: "P7"
+    answer: "P10"
   },
   {
     question: "No circuito da figura 102, quando A=0 e B = 1, podemos afirmar que D1, D2 e S estarão nas seguintes situações:",
@@ -1069,7 +1069,7 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "De acordo com o circuito da figura 104, quando tivermos S em nível 0, os transistores estarão nas seguintes condições:",
     options: ["T2 e T4 saturados e T3 cortado","T2 e T4 cortados e T3 saturado","T3 e T4 saturados e T2 cortado","T3 e T2 saturados e T4 cortado","T2 e T3 cortados e T4 saturado"],
-    answer: "T3 e T4 saturados e T2 cortado"
+    answer: "T2 e T4 saturados e T3 cortado"
   },
   {
     question: "O bloco lógico que permite o controle externo da corrente de coletor é o:",
@@ -1078,8 +1078,8 @@ quizzes["eletronica-digital-2"] = [
   },
   {
     question: "Qual é a estrutura básica de entrada do bloco lógico TTL?",
-    options: ["Vários emissores","Porta XOR","Rede resistiva","Bloco injetor","Porta NOR"],
-    answer: "Vários emissores"
+    options: ["Transistor bipolar ou MULTIEMISSORES","Porta XOR","Rede resistiva","Bloco injetor","Porta NOR"],
+    answer: "Transistor bipolar ou MULTIEMISSORES"
   },
   {
     question: "Como é chamado o tempo que um bloco lógico leva para passar do estado ALTO para o estado BAIXO ou vice-versa?",
