@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import { quizzes } from "../data/questions";
@@ -9,12 +9,48 @@ interface StartScreenProps {
   onOpenSelector?: () => void;
 }
 
+type SavedQuizProgress = {
+  quizId: string;
+  currentIndex: number;
+  total: number;
+  correct: number;
+  answers: {
+    question: string;
+    isCorrect: boolean;
+    userAnswer: string;
+    correctAnswer: string;
+  }[];
+};
+
+const STORAGE_KEY = "quiz-progress";
+
 export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
   const quizKeys = Object.keys(quizzes);
   const [selected, setSelected] = useState<string>(quizKeys[0] ?? "telefonia");
   const [selectedApostila, setSelectedApostila] = useState("apostila-1");
-  const selectedCount = quizzes[selected]?.length ?? 0;
+  const [savedProgress, setSavedProgress] = useState<SavedQuizProgress | null>(null);
   const totalQuestions = quizKeys.reduce((sum, k) => sum + (quizzes[k]?.length ?? 0), 0);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+
+    try {
+      const parsed = JSON.parse(raw) as SavedQuizProgress;
+      if (
+        parsed?.quizId &&
+        typeof parsed.currentIndex === "number" &&
+        typeof parsed.total === "number" &&
+        typeof parsed.correct === "number" &&
+        Array.isArray(parsed.answers)
+      ) {
+        setSavedProgress(parsed);
+      }
+    } catch {
+      // ignore invalid storage data
+    }
+  }, []);
 
   const formatLabel = (key: string) => {
     return key.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -65,6 +101,21 @@ export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
         <p className="text-slate-300 text-sm mb-6 text-center">
           Teste seus conhecimentos.
         </p>
+
+        {savedProgress && (
+          <div className="mb-4 rounded-2xl border border-cyan-500/30 bg-slate-900/80 p-4 text-slate-200">
+            <p className="text-sm font-semibold text-cyan-300">Progresso salvo encontrado</p>
+            <p className="text-sm mt-1">
+              Continue o quiz <span className="font-semibold">{savedProgress.quizId.replace(/[-_]/g, " ")}</span> na questão <span className="font-semibold">{savedProgress.currentIndex + 1}</span>.
+            </p>
+            <button
+              onClick={() => onStart(savedProgress.quizId)}
+              className="mt-3 w-full primary-btn rounded-xl py-3 text-sm font-bold"
+            >
+              Continuar onde parou
+            </button>
+          </div>
+        )}
 
         <div className="mb-4">
           <div className="rounded-xl p-4 card text-center max-w-xs mx-auto">

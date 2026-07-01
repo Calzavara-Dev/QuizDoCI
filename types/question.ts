@@ -4,4 +4,6 @@ export interface Question {
   answer: string;
   // tópico/fonte na apostila (opcional)
   topic?: string;
+  // imagem associada à questão (opcional)
+  image?: string;
 }

@@ -1,4 +1,10 @@
 import type { Question } from "../types/question";
+import circuito100 from "../assets/circuitos/100.jpg";
+import circuito102 from "../assets/circuitos/102.jpg";
+import circuito104 from "../assets/circuitos/104.jpg";
+import circuito105 from "../assets/circuitos/105.jpg";
+import circuito109 from "../assets/circuitos/109.jpg";
+import circuito137 from "../assets/circuitos/137.jpg";
 
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -824,7 +830,8 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "O tipo de lógica e a porta apresentada pelo circuito da Fig.100 são, respectivamente:",
     options: ["positiva e OR","positiva e NAND","negativa e AND","positiva e AND","negativa e NOR"],
-    answer: "positiva e OR"
+    answer: "positiva e OR",
+    image: circuito100
   },
   {
     question: "Os níveis lógicos de entrada e saída em um circuito digital são representados por tensões referentes à sua fonte de alimentação; o valor máximo de um nível alto em circuitos TTL é de quantos Volts?",
@@ -834,7 +841,8 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "De acordo com o circuito da Figura 105, para que a saída (S) tenha nível lógico 0, as suas entradas A, B e G deverão estar, respectivamente, nos seguintes níveis lógicos:",
     options: ["0,1 e 1","1,1 e 1","1,1 e 0","0,0 e 1","0,0 e 0"],
-    answer: "1,1 e 1"
+    answer: "1,1 e 1",
+    image: circuito105
   },
   {
     question: "Além dos blocos comuns (STANDARD), a família TTL possui outras versões de circuitos lógicos. A que fornece a maior velocidade é:",
@@ -854,7 +862,8 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Ao analisarmos o funcionamento do circuito da Figura 109, concluímos que ele se comporta como uma porta do tipo:",
     options: ["NOR","AND","OR","NAND","OU Exclusivo"],
-    answer: "NOR"
+    answer: "NOR",
+    image: circuito109
   },
   {
     question: "A menor tensão de entrada para que um circuito TTL STANDARD, reconheça como nível ALTO, é de quantos V?",
@@ -874,7 +883,8 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "O funcionamento do circuito da Fig. 102, em lógica positiva, é de uma porta:",
     options: ["NOR","OR","NAND","AND","OU Exclusivo"],
-    answer: "NAND"
+    answer: "NAND",
+    image: circuito102
   },
   {
     question: "O circuito lógico básico da família TTL é composto por portas:",
@@ -1059,17 +1069,20 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "No circuito da figura 137, A = 1, B = 0, C=0, D = 1. Com estes níveis lógicos na entrada a porta ativa em nível um é:",
     options: ["P3","P6","P7","P10","P11"],
-    answer: "P10"
+    answer: "P10",
+    image: circuito137
   },
   {
     question: "No circuito da figura 102, quando A=0 e B = 1, podemos afirmar que D1, D2 e S estarão nas seguintes situações:",
     options: ["D1 conduzindo, D2 cortado e S = 0","D1 cortado, D2 conduzindo e S = 1","D1 conduzindo, D2 cortado e S = 0","D1 cortado, D2 conduzindo e S = 0","D1 conduzindo, D2 cortado e S = 1"],
-    answer: "D1 cortado, D2 conduzindo e S = 1"
+    answer: "D1 cortado, D2 conduzindo e S = 1",
+    image: circuito102
   },
   {
     question: "De acordo com o circuito da figura 104, quando tivermos S em nível 0, os transistores estarão nas seguintes condições:",
     options: ["T2 e T4 saturados e T3 cortado","T2 e T4 cortados e T3 saturado","T3 e T4 saturados e T2 cortado","T3 e T2 saturados e T4 cortado","T2 e T3 cortados e T4 saturado"],
-    answer: "T2 e T4 saturados e T3 cortado"
+    answer: "T2 e T4 saturados e T3 cortado",
+    image: circuito104
   },
   {
     question: "O bloco lógico que permite o controle externo da corrente de coletor é o:",
@@ -1329,7 +1342,8 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Descreva o funcionamento da porta NOR CMOS (Figura 109) quando as entradas A e B estão em nível 0.",
     options: ["Transistores P conduzem e N cortam resultando em saída 1","Transistores N conduzem e P cortam resultando em saída 0","Ambos conduzem resultando em curto","Nenhum conduz resultando em X","Transistores alternam estado"],
-    answer: "Transistores P conduzem e N cortam resultando em saída 1"
+    answer: "Transistores P conduzem e N cortam resultando em saída 1",
+    image: circuito109
   },
   {
     question: "Defina Tempo de Atraso de Propagação.",
