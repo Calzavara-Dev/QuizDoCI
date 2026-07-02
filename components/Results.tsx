@@ -1,17 +1,22 @@
 import { motion } from "framer-motion";
 import { RotateCcw, Trophy, Target, XCircle } from "lucide-react";
 import type { ResultData } from "../App";
+import { getRankName, type Rankings } from "../utils/rankings";
 import { useState } from "react";
 import { ConfirmModal } from "./ConfirmModal";
 
 interface ResultsProps {
   data: ResultData;
+  rankings: Rankings;
   onRestart: () => void;
   onBackToStart?: () => void;
 }
-export function Results({ data, onRestart, onBackToStart }: ResultsProps) {
+export function Results({ data, rankings, onRestart, onBackToStart }: ResultsProps) {
   const [showConfirm, setShowConfirm] = useState(false);
   const percentage = Math.round((data.correct / data.total) * 100);
+  const overallRankName = getRankName(rankings.overall.averagePercentage);
+  const quizRank = rankings.quizzes[data.quizId];
+  const quizRankName = quizRank ? getRankName(quizRank.averagePercentage) : "Sem histórico";
   
   let grade = "";
   let gradeColor = "";
@@ -58,6 +63,23 @@ export function Results({ data, onRestart, onBackToStart }: ResultsProps) {
           <h1 className="text-4xl font-bold text-white mb-2">Resultado</h1>
           <p className={`text-2xl font-bold ${gradeColor}`}>{grade}</p>
           <p className="text-slate-400 mt-2">{message}</p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-3 mb-6 sm:grid-cols-2">
+          <div className="rounded-2xl border border-slate-700 bg-slate-800 p-4 text-left">
+            <p className="text-sm text-slate-400 mb-2">Ranking Geral</p>
+            <p className="text-xl font-semibold text-white">{overallRankName}</p>
+            <p className="text-slate-300 text-sm mt-2">Média: {rankings.overall.averagePercentage}%</p>
+          </div>
+          <div className="rounded-2xl border border-slate-700 bg-slate-800 p-4 text-left">
+            <p className="text-sm text-slate-400 mb-2">Ranking do Quiz</p>
+            <p className="text-xl font-semibold text-white">{quizRankName}</p>
+            {quizRank ? (
+              <p className="text-slate-300 text-sm mt-2">Média: {quizRank.averagePercentage}%</p>
+            ) : (
+              <p className="text-slate-400 text-sm mt-2">Faça mais quizzes para começar a pontuar.</p>
+            )}
+          </div>
         </div>
 
   <div className="grid grid-cols-3 gap-4 mb-6">

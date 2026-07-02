@@ -802,6 +802,888 @@ export const quizzes: Record<string, Question[]> = {
     ],
     answer: "Cerca de 85 Kbps."
   }
+  ],
+  "manutencao-dos-sistemas-de-odometros": [
+    {
+      question: "Qual o princípio físico utilizado pelo odômetro SRD-331 para determinar a velocidade?",
+      options: [
+        "Indução Eletromagnética.",
+        "Efeito Doppler.",
+        "Pressão Hidrostática.",
+        "Reflexão de Luz."
+      ],
+      answer: "Efeito Doppler.",
+      topic: "Página: 1-1"
+    },
+    {
+      question: "O transdutor do SRD-331 contém quantas janelas transmissoras/receptoras?",
+      options: [
+        "Uma única janela central.",
+        "Três janelas (proa, popa e bombordo).",
+        "Duas janelas (proa e popa).",
+        "Quatro janelas direcionais."
+      ],
+      answer: "Duas janelas (proa e popa).",
+      topic: "Página: 1-1"
+    },
+    {
+      question: "Qual a finalidade de usar duas janelas de transmissão em direções opostas?",
+      options: [
+        "Aumentar o alcance do som.",
+        "Anular erros de arfagem (\"pitch\") ou içamento (\"heave\").",
+        "Economizar energia da bateria.",
+        "Detectar obstáculos à frente."
+      ],
+      answer: "Anular erros de arfagem (\"pitch\") ou içamento (\"heave\").",
+      topic: "Página: 1-1"
+    },
+    {
+      question: "O que é a \"Camada Limite\" (Boundary Layer) mencionada no sistema Doppler?",
+      options: [
+        "A profundidade máxima que o som atinge.",
+        "A camada de água perturbada colada ao casco.",
+        "O limite de velocidade do navio.",
+        "A espessura do casco do navio."
+      ],
+      answer: "A camada de água perturbada colada ao casco.",
+      topic: "Página: 1-1/1-2"
+    },
+    {
+      question: "Por que existe um \"atraso de tempo\" calculado após a transmissão do sinal?",
+      options: [
+        "Para resfriar o transdutor.",
+        "Para processar a distância.",
+        "Para ignorar sinais da camada limite e ler águas sem perturbações.",
+        "Para carregar as baterias de emergência."
+      ],
+      answer: "Para ignorar sinais da camada limite e ler águas sem perturbações.",
+      topic: "Página: 1-1/1-2"
+    },
+    {
+      question: "De acordo com o Efeito Doppler, quando a fonte se aproxima do observador, a frequência observada é:",
+      options: [
+        "Igual à emitida.",
+        "Menor do que a emitida.",
+        "Maior do que a emitida.",
+        "Nula."
+      ],
+      answer: "Maior do que a emitida.",
+      topic: "Página: 1-2"
+    },
+    {
+      question: "Qual a frequência de ultrassom emitida pelos cristais do SRD-331?",
+      options: [
+        "60 Hz.",
+        "2 MHz.",
+        "400 Hz.",
+        "10 kHz."
+      ],
+      answer: "2 MHz.",
+      topic: "Página: 1-2"
+    },
+    {
+      question: "Qual o tipo de cristal utilizado no transdutor para emitir energia ultrassônica?",
+      options: [
+        "Cristais de quartzo comum.",
+        "Cristais piezoelétricos.",
+        "Cristais de silício.",
+        "Cristais eletroluminescentes."
+      ],
+      answer: "Cristais piezoelétricos.",
+      topic: "Página: 1-2"
+    },
+    {
+      question: "Se o navio se move para VANTE (vante), o sinal de proa (FORE) terá sua frequência:",
+      options: [
+        "Diminuída.",
+        "Mantida constante.",
+        "Deslocada para uma frequência maior.",
+        "Cancelada."
+      ],
+      answer: "Deslocada para uma frequência maior.",
+      topic: "Página: 1-3"
+    },
+    {
+      question: "Por quanto tempo a bateria da Unidade Master Display retém os dados de distância em caso de queda de energia?",
+      options: [
+        "1 minuto.",
+        "5 minutos.",
+        "No mínimo 10 minutos.",
+        "1 hora."
+      ],
+      answer: "No mínimo 10 minutos.",
+      topic: "Página: 1-3"
+    },
+    {
+      question: "Como é fornecida a iluminação de fundo dos displays de cristal líquido?",
+      options: [
+        "Leds de alta potência.",
+        "Lâmpadas incandescentes.",
+        "Painéis de lâmpadas eletroluminescentes.",
+        "Luz solar refletida."
+      ],
+      answer: "Painéis de lâmpadas eletroluminescentes.",
+      topic: "Página: 1-4"
+    },
+    {
+      question: "Qual a potência de pico de saída do transdutor SRD-331?",
+      options: [
+        "1 Watt.",
+        "10 Watts.",
+        "100 Watts.",
+        "500 Watts."
+      ],
+      answer: "10 Watts.",
+      topic: "Página: 1-4"
+    },
+    {
+      question: "Sobre a manutenção do transdutor, é correto afirmar que:",
+      options: [
+        "Deve ser pintado com tinta anti-incrustante.",
+        "Pode ser lixado se houver cracas.",
+        "Nunca deve ser pintado, lixado ou limpo com ácidos.",
+        "Deve ser limpo com jatos de areia."
+      ],
+      answer: "Nunca deve ser pintado, lixado ou limpo com ácidos.",
+      topic: "Página: 1-5"
+    },
+    {
+      question: "Qual material é recomendado para a limpeza da lente do transdutor?",
+      options: [
+        "Ácido sulfúrico.",
+        "Detergente ou pasta de limpeza com esponja.",
+        "Palha de aço.",
+        "Thinner puro."
+      ],
+      answer: "Detergente ou pasta de limpeza com esponja.",
+      topic: "Página: 1-5"
+    },
+    {
+      question: "O fenômeno que pode bloquear a emissão de energia acústica por bolhas de ar é chamado:",
+      options: [
+        "Cavitação.",
+        "Aeração.",
+        "Indução.",
+        "Refração."
+      ],
+      answer: "Aeração.",
+      topic: "Página: 1-5"
+    },
+    {
+      question: "Qual o tipo de cabo utilizado para proteger o sinal contra interferências magnéticas (EMI)?",
+      options: [
+        "Cabo paralelo simples.",
+        "Cabo TTRS.",
+        "Fibra óptica.",
+        "Cabo coaxial de antena."
+      ],
+      answer: "Cabo TTRS.",
+      topic: "Página: 1-5"
+    },
+    {
+      question: "Qual a profundidade mínima necessária para a operação correta do transdutor?",
+      options: [
+        "0,5 metros.",
+        "1,6 metros.",
+        "5,0 metros.",
+        "10 metros."
+      ],
+      answer: "1,6 metros.",
+      topic: "Página: 1-5"
+    },
+    {
+      question: "Para resetar a distância acumulada (MILHAS), o operador deve:",
+      options: [
+        "Pressionar o botão \"RESET MILES\" uma única vez.",
+        "Manter o botão pressionado por 30 segundos.",
+        "Pressionar \"RESET MILES\" duas vezes dentro de 5 segundos.",
+        "Desligar a chave geral."
+      ],
+      answer: "Pressionar \"RESET MILES\" duas vezes dentro de 5 segundos.",
+      topic: "Página: 1-6"
+    },
+    {
+      question: "No modo de velocidade MANUAL, o que acontece com os dados recebidos pelo transdutor?",
+      options: [
+        "São somados à velocidade manual.",
+        "São ignorados pelo sistema.",
+        "São usados para calibração automática.",
+        "Causam o desligamento do odômetro."
+      ],
+      answer: "São ignorados pelo sistema.",
+      topic: "Página: 1-7"
+    },
+    {
+      question: "O microprocessador principal utilizado na Unidade Eletrônica do SRD-331 é o:",
+      options: [
+        "Intel Core i7.",
+        "8085.",
+        "Arduino Nano.",
+        "Motorola 68000."
+      ],
+      answer: "8085.",
+      topic: "Página: 1-8"
+    },
+    {
+      question: "Qual o período total do ciclo de temporização de transmissão/recepção?",
+      options: [
+        "1 segundo.",
+        "7.7 ms.",
+        "50 ms.",
+        "1 microsegundo."
+      ],
+      answer: "7.7 ms.",
+      topic: "Página: 1-8"
+    },
+    {
+      question: "O sinal \"WATER GATE\" (WTGTE) serve para:",
+      options: [
+        "Abrir a válvula de fundo.",
+        "Iniciar a contagem dos sinais ignorando a camada de demarcação.",
+        "Expulsar água do transdutor.",
+        "Ligar a refrigeração."
+      ],
+      answer: "Iniciar a contagem dos sinais ignorando a camada de demarcação.",
+      topic: "Página: 1-8"
+    },
+    {
+      question: "O potenciômetro \"PWR ADJ\" (R19) na placa A1 serve para:",
+      options: [
+        "Ajustar o brilho do display.",
+        "Ajustar a potência de transmissão.",
+        "Ajustar a sensibilidade do receptor.",
+        "Zerar a distância."
+      ],
+      answer: "Ajustar a potência de transmissão.",
+      topic: "Página: 1-9"
+    },
+    {
+      question: "O sinal que indica uma boa recepção e permite o funcionamento do contador é o:",
+      options: [
+        "Doppler High.",
+        "Threshold (Limiar).",
+        "Reset Gate.",
+        "Power OK."
+      ],
+      answer: "Threshold (Limiar).",
+      topic: "Página: 1-11"
+    },
+    {
+      question: "O circuito \"Doppler Gate\" interrompe a contagem quando atinge quantos cruzamentos em zero?",
+      options: [
+        "100.",
+        "1024.",
+        "2048.",
+        "5000."
+      ],
+      answer: "2048.",
+      topic: "Página: 1-12"
+    },
+    {
+      question: "Onde devem ser enviados os cartões ou módulos avariados do SRD-331 para reparo?",
+      options: [
+        "Para qualquer oficina de eletrônica.",
+        "Para o fabricante nos EUA.",
+        "Para o CMS (Centro de Manutenção de Sistemas da Marinha).",
+        "Devem ser descartados."
+      ],
+      answer: "Para o CMS (Centro de Manutenção de Sistemas da Marinha).",
+      topic: "Página: 1-13"
+    },
+    {
+      question: "Qual cuidado deve ser tomado com o transdutor antes do navio entrar em dique?",
+      options: [
+        "Deve ser pintado com graxa.",
+        "Deve ser içado para dentro da válvula de fundo e esta deve ser fechada.",
+        "Deve ser removido e guardado no COC.",
+        "Deve ser deixado na posição normal para medição."
+      ],
+      answer: "Deve ser içado para dentro da válvula de fundo e esta deve ser fechada.",
+      topic: "Página: 1-14"
+    },
+    {
+      question: "Qual a lei da física fundamental para o funcionamento do odômetro AGI?",
+      options: [
+        "Lei de Newton.",
+        "Lei de Ohm.",
+        "Lei de Faraday (Indução Eletromagnética).",
+        "Lei de Arquimedes."
+      ],
+      answer: "Lei de Faraday (Indução Eletromagnética).",
+      topic: "Página: 2-3"
+    },
+    {
+      question: "Qual a precisão de velocidade do sistema AGI para velocidades acima de 10 nós?",
+      options: [
+        "± 0,1 nó.",
+        "± 1%.",
+        "± 2%.",
+        "± 5%."
+      ],
+      answer: "± 2%.",
+      topic: "Página: 2-1"
+    },
+    {
+      question: "Qual a sensibilidade típica da haste fixa do AGI?",
+      options: [
+        "1 Volt por nó.",
+        "325 a 425 microvolts por nó.",
+        "10 milivolts por nó.",
+        "1 Ampere por nó."
+      ],
+      answer: "325 a 425 microvolts por nó.",
+      topic: "Página: 2-1"
+    },
+    {
+      question: "Onde normalmente se localiza a Unidade SDTU do sistema AGI?",
+      options: [
+        "Na Praça de Máquinas.",
+        "No Passadiço.",
+        "No COC (Centro de Operações de Combate).",
+        "Na proa."
+      ],
+      answer: "No COC (Centro de Operações de Combate).",
+      topic: "Página: 2-1"
+    },
+    {
+      question: "Qual a função do \"Falso Odômetro\" (Dummy Log)?",
+      options: [
+        "Testar a profundidade da água.",
+        "Suprir um sinal de velocidade estimado manualmente em caso de avaria na haste.",
+        "Enganar o inimigo sobre a posição do navio.",
+        "Calibrar o radar."
+      ],
+      answer: "Suprir um sinal de velocidade estimado manualmente em caso de avaria na haste.",
+      topic: "Página: 2-2"
+    },
+    {
+      question: "De qual material é constituída a haste fixa do AGI?",
+      options: [
+        "Plástico ABS.",
+        "Aço inoxidável puro.",
+        "Liga de bronze e alumínio.",
+        "Madeira tratada."
+      ],
+      answer: "Liga de bronze e alumínio.",
+      topic: "Página: 2-3"
+    },
+    {
+      question: "O que é o revestimento \"G.R.P.\" da haste?",
+      options: [
+        "Tinta comum.",
+        "Plástico reforçado com fibra de vidro.",
+        "Borracha isolante.",
+        "Camada de ouro."
+      ],
+      answer: "Plástico reforçado com fibra de vidro.",
+      topic: "Página: 2-3"
+    },
+    {
+      question: "Como é feita a remoção de uma haste fixa avariada?",
+      options: [
+        "É necessário docar o navio.",
+        "Por um mergulhador, por fora do navio.",
+        "Por dentro do navio, removendo o flange.",
+        "Não pode ser removida."
+      ],
+      answer: "Por um mergulhador, por fora do navio.",
+      topic: "Página: 2-2"
+    },
+    {
+      question: "O que é o sinal de \"Haste Zero\" (Rod Zero Signal)?",
+      options: [
+        "Velocidade zero do navio.",
+        "Sinal gerado por efeito de transformador mesmo com o navio parado.",
+        "Falta de energia na haste.",
+        "Sinal de profundidade zero."
+      ],
+      answer: "Sinal gerado por efeito de transformador mesmo com o navio parado.",
+      topic: "Página: 2-3"
+    },
+    {
+      question: "Qual potenciômetro é usado para eliminar o erro de \"Rod Zero\"?",
+      options: [
+        "RV-1.",
+        "RV-10.",
+        "RV-15.",
+        "RV-12."
+      ],
+      answer: "RV-10.",
+      topic: "Página: 2-3"
+    },
+    {
+      question: "Qual a condição ideal para calibrar o \"Rod Zero\"?",
+      options: [
+        "Navio em velocidade máxima.",
+        "Navio flutuando, parado e em águas paradas.",
+        "Navio em dique seco.",
+        "Navio realizando manobra de combate."
+      ],
+      answer: "Navio flutuando, parado e em águas paradas.",
+      topic: "Página: 2-3/2-4"
+    },
+    {
+      question: "Qual o comprimento máximo permitido para o cabo entre a haste e a SDTU?",
+      options: [
+        "10 metros.",
+        "45 metros.",
+        "100 metros.",
+        "1 quilômetro."
+      ],
+      answer: "45 metros.",
+      topic: "Página: 2-4"
+    },
+    {
+      question: "Qual ferramenta deve ser usada para limpar os eletrodos da haste sem danificá-los?",
+      options: [
+        "Lixa de ferro.",
+        "Raspas de plástico.",
+        "Escova de aço.",
+        "Chave de fenda afiada."
+      ],
+      answer: "Raspas de plástico.",
+      topic: "Página: 2-4"
+    },
+    {
+      question: "Qual a resistência de isolamento mínima aceitável para a haste?",
+      options: [
+        "1 Ω.",
+        "100 kΩ.",
+        "50 MΩ.",
+        "1 GΩ."
+      ],
+      answer: "50 MΩ.",
+      topic: "Página: 2-4"
+    },
+    {
+      question: "Por que a haste só deve ser alimentada quando mergulhada?",
+      options: [
+        "Para não gastar bateria.",
+        "Porque a água é necessária para fechar o circuito.",
+        "Para evitar superaquecimento da bobina de excitação.",
+        "Para evitar choques elétricos no convés."
+      ],
+      answer: "Para evitar superaquecimento da bobina de excitação.",
+      topic: "Página: 2-5"
+    },
+    {
+      question: "O display de distância na SDTU do AGI é do tipo:",
+      options: [
+        "Relógio analógico.",
+        "Digital.",
+        "Barra de Leds.",
+        "Tubo de raios catódicos."
+      ],
+      answer: "Digital.",
+      topic: "Página: 2-5"
+    },
+    {
+      question: "A indicação de velocidade na SDTU do AGI é dada por um:",
+      options: [
+        "Display de 7 segmentos.",
+        "Mostrador tipo relógio.",
+        "Computador de mão.",
+        "Indicador sonoro."
+      ],
+      answer: "Mostrador tipo relógio.",
+      topic: "Página: 2-5"
+    },
+    {
+      question: "Quantas saídas de sinais pulsados de distância a SDTU provê?",
+      options: [
+        "Uma única saída.",
+        "Duas saídas.",
+        "Três saídas (100, 200 e 400 pulsos/milha).",
+        "Dez saídas independentes."
+      ],
+      answer: "Três saídas (100, 200 e 400 pulsos/milha).",
+      topic: "Página: 2-6"
+    },
+    {
+      question: "Qual a leitura máxima do mostrador digital de distância do AGI?",
+      options: [
+        "1.000 milhas.",
+        "9.999,9 milhas.",
+        "99.999,99 milhas.",
+        "1.000.000 milhas."
+      ],
+      answer: "99.999,99 milhas.",
+      topic: "Página: 2-6"
+    },
+    {
+      question: "Qual a finalidade da Unidade de Retransmissão (R.T.U.)?",
+      options: [
+        "Aumentar a potência do rádio do navio.",
+        "Fornecer sinais de velocidade síncronos para múltiplos sistemas de bordo (armas, navegação).",
+        "Carregar as baterias do odômetro.",
+        "Funcionar como radar reserva."
+      ],
+      answer: "Fornecer sinais de velocidade síncronos para múltiplos sistemas de bordo (armas, navegação).",
+      topic: "Página: 2-2/2-11"
+    },
+    {
+      question: "O sinal de entrada da RTU provém de:",
+      options: [
+        "Um sensor acústico.",
+        "Um transmissor síncrono localizado na SDTU.",
+        "Direto da haste.",
+        "Do GPS do navio."
+      ],
+      answer: "Um transmissor síncrono localizado na SDTU.",
+      topic: "Página: 2-11"
+    },
+    {
+      question: "O instrumento de indicação visual \"VCS Tipo 84\" provê:",
+      options: [
+        "Apenas velocidade.",
+        "Apenas distância.",
+        "Velocidade (até 40 nós) e distância (até 999,99 milhas).",
+        "Pressão do óleo."
+      ],
+      answer: "Velocidade (até 40 nós) e distância (até 999,99 milhas).",
+      topic: "Página: 2-12"
+    },
+    {
+      question: "No VCS, o ponteiro de velocidade é acionado por um:",
+      options: [
+        "Motor de passo.",
+        "Receptor Síncrono (TR).",
+        "Ímã permanente.",
+        "Cabo de aço."
+      ],
+      answer: "Receptor Síncrono (TR).",
+      topic: "Página: 2-13"
+    },
+    {
+      question: "Quais potenciômetros corrigem a \"não linearidade\" do sinal de velocidade?",
+      options: [
+        "RV-10.",
+        "RV-11.",
+        "RV-1 a RV-9 e RV-15.",
+        "RV-18."
+      ],
+      answer: "RV-1 a RV-9 e RV-15.",
+      topic: "Página: 2-8"
+    },
+    {
+      question: "Quando é necessário realizar a calibragem de não linearidade?",
+      options: [
+        "Toda semana.",
+        "Na primeira instalação ou em mudanças no contorno das obras vivas do navio.",
+        "Sempre que trocar o fusível.",
+        "Somente quando o navio estiver em combate."
+      ],
+      answer: "Na primeira instalação ou em mudanças no contorno das obras vivas do navio.",
+      topic: "Página: 2-4"
+    },
+    {
+      question: "Como é chamado o procedimento de calibragem de não linearidade?",
+      options: [
+        "Teste de bancada.",
+        "\"Correr a milha\".",
+        "Ajuste de foco.",
+        "Reset mestre."
+      ],
+      answer: "\"Correr a milha\".",
+      topic: "Página: 2-4"
+    },
+    {
+      question: "Em quais intervalos de velocidade a calibragem \"correr a milha\" é feita?",
+      options: [
+        "De 1 em 1 nó.",
+        "De 10 em 10 nós.",
+        "De 6 em 6 nós (6-12-18-24-30).",
+        "Somente na velocidade máxima."
+      ],
+      answer: "De 6 em 6 nós (6-12-18-24-30).",
+      topic: "Página: 2-8"
+    },
+    {
+      question: "O conceito modular da SDTU AGI-LOG permite um tempo médio para reparo (MTTR) de:",
+      options: [
+        "5 minutos.",
+        "Aproximadamente 30 minutos.",
+        "24 horas.",
+        "1 semana."
+      ],
+      answer: "Aproximadamente 30 minutos.",
+      topic: "Página: 3-3"
+    },
+    {
+      question: "O que significa a sigla BITE no sistema AGI-LOG?",
+      options: [
+        "Busca de Interferência Técnica Eletrônica.",
+        "Circuito de Teste Integrado (Built-In Test Equipment).",
+        "Bateria de Indicadores de Tensão Elétrica.",
+        "Bloco de Informação de Tempo Estendido."
+      ],
+      answer: "Circuito de Teste Integrado (Built-In Test Equipment).",
+      topic: "Página: 3-1"
+    },
+    {
+      question: "Qual tipo de sensor AGI-LOG é projetado para operação em águas rasas?",
+      options: [
+        "Haste retrátil.",
+        "Sensor estilo OTAN.",
+        "Sensor Revés (nenhuma proteção para fora do casco).",
+        "Sensor de barbatana."
+      ],
+      answer: "Sensor Revés (nenhuma proteção para fora do casco).",
+      topic: "Página: 3-3"
+    },
+    {
+      question: "De que material é feita a caixa da SDTU do AGI-LOG?",
+      options: [
+        "Plástico de alta densidade.",
+        "Madeira compensada.",
+        "Alumínio robusto à prova d'água.",
+        "Ferro fundido."
+      ],
+      answer: "Alumínio robusto à prova d'água.",
+      topic: "Página: 3-3"
+    },
+    {
+      question: "Quantos módulos eletrônicos são fornecidos como padrão na SDTU?",
+      options: [
+        "3 módulos.",
+        "7 módulos eletrônicos.",
+        "20 módulos.",
+        "Apenas 1 placa integrada."
+      ],
+      answer: "7 módulos eletrônicos.",
+      topic: "Página: 3-3"
+    },
+    {
+      question: "Qual módulo é considerado o \"coração\" da SDTU no AGI-LOG?",
+      options: [
+        "Módulo 1 (Interface).",
+        "Módulo 2 (Cartão Microprocessador).",
+        "Módulo 8 (Fonte).",
+        "Módulo 10 (Display)."
+      ],
+      answer: "Módulo 2 (Cartão Microprocessador).",
+      topic: "Página: 3-4"
+    },
+    {
+      question: "Onde são armazenados os dados de calibração no AGI-LOG?",
+      options: [
+        "Em um disquete.",
+        "Em uma memória RAM não volátil (retém dados sem energia).",
+        "Escritos manualmente em um livro.",
+        "No GPS."
+      ],
+      answer: "Em uma memória RAM não volátil (retém dados sem energia).",
+      topic: "Página: 3-4"
+    },
+    {
+      question: "Qual o protocolo de saída digital serial utilizado para conexão com a barra de dados do navio?",
+      options: [
+        "USB 3.0.",
+        "RS422.",
+        "Bluetooth.",
+        "Wi-Fi."
+      ],
+      answer: "RS422.",
+      topic: "Página: 3-4"
+    },
+    {
+      question: "Como o sistema indica uma falha descoberta pelo BITE?",
+      options: [
+        "Toca uma sirene alta.",
+        "Os displays de NÓS e MILHAS piscam a 0,5 Hz.",
+        "O odômetro explode o fusível.",
+        "A tela fica preta."
+      ],
+      answer: "Os displays de NÓS e MILHAS piscam a 0,5 Hz.",
+      topic: "Página: 3-5/3-10"
+    },
+    {
+      question: "Qual nível de BITE está operativo durante a operação normal com a tampa fechada?",
+      options: [
+        "BITE Completo.",
+        "BITE Restrito.",
+        "BITE de Fábrica.",
+        "BITE Manual."
+      ],
+      answer: "BITE Restrito.",
+      topic: "Página: 3-12"
+    },
+    {
+      question: "Como se ativa o \"BITE Completo\" para diagnóstico detalhado?",
+      options: [
+        "Pressionando todas as teclas ao mesmo tempo.",
+        "Removendo a tampa dianteira da SDTU.",
+        "Digitando uma senha secreta.",
+        "Somente via satélite."
+      ],
+      answer: "Removendo a tampa dianteira da SDTU.",
+      topic: "Página: 3-12"
+    },
+    {
+      question: "No BITE Completo, onde aparece o código da falha MAIS provável?",
+      options: [
+        "No display de NÓS.",
+        "No display de MILHAS.",
+        "Na tela do radar.",
+        "Não aparece código."
+      ],
+      answer: "No display de NÓS.",
+      topic: "Página: 3-13"
+    },
+    {
+      question: "No BITE Completo, onde aparecem as outras falhas alternativas?",
+      options: [
+        "Em uma impressora externa.",
+        "No display de MILHAS NAVEGADAS.",
+        "No COC.",
+        "Em um LED verde."
+      ],
+      answer: "No display de MILHAS NAVEGADAS.",
+      topic: "Página: 3-13"
+    },
+    {
+      question: "Quantos pontos de calibração podem ser inseridos para cada sensor na faixa de 0 a 60 nós?",
+      options: [
+        "Apenas 1.",
+        "Até 5.",
+        "Até 14 pontos.",
+        "Pontos ilimitados."
+      ],
+      answer: "Até 14 pontos.",
+      topic: "Página: 3-6"
+    },
+    {
+      question: "Qual a resolução de velocidade do display do AGI-LOG?",
+      options: [
+        "1 nó.",
+        "0,1 nó.",
+        "0,01 nó.",
+        "0,001 nó."
+      ],
+      answer: "0,01 nó.",
+      topic: "Página: 3-7"
+    },
+    {
+      question: "Qual a faixa de exibição de velocidade em nós no display de LED?",
+      options: [
+        "0 a 30 nós.",
+        "-25 a +60 nós.",
+        "0 a 100 nós.",
+        "-10 a +10 nós."
+      ],
+      answer: "-25 a +60 nós.",
+      topic: "Página: 3-7"
+    },
+    {
+      question: "Quanto tempo o sistema leva para obter uma velocidade estável após ser ligado?",
+      options: [
+        "1 segundo.",
+        "30 segundos.",
+        "10 minutos.",
+        "1 hora."
+      ],
+      answer: "30 segundos.",
+      topic: "Página: 3-7"
+    },
+    {
+      question: "Qual a tensão de alimentação padrão fornecida aos sensores (hastes) no AGI-LOG?",
+      options: [
+        "12V DC.",
+        "115V AC.",
+        "57V 50/60Hz.",
+        "220V trifásico."
+      ],
+      answer: "57V 50/60Hz.",
+      topic: "Página: 3-9"
+    },
+    {
+      question: "Qual tecnologia de circuitos integrados exige cuidados contra eletricidade estática no manuseio das placas?",
+      options: [
+        "Tecnologia Válvula.",
+        "Tecnologia CMOS.",
+        "Tecnologia Relé.",
+        "Tecnologia de Mercúrio."
+      ],
+      answer: "Tecnologia CMOS.",
+      topic: "Página: 3-14"
+    },
+    {
+      question: "Qual a filosofia de manutenção corretiva da SDTU AGI-LOG?",
+      options: [
+        "Reparo de trilhas com solda de estanho.",
+        "Substituição de transistores individuais.",
+        "Reparo por substituição de módulos/cartões.",
+        "Trocar o aparelho inteiro sempre que falhar."
+      ],
+      answer: "Reparo por substituição de módulos/cartões.",
+      topic: "Página: 3-14"
+    },
+    {
+      question: "Com que frequência deve ser verificado o funcionamento dos segmentos do display?",
+      options: [
+        "Diariamente.",
+        "Semanalmente.",
+        "Trimestralmente (a cada 3 meses).",
+        "Anualmente."
+      ],
+      answer: "Trimestralmente (a cada 3 meses).",
+      topic: "Página: 3-15"
+    },
+    {
+      question: "Qual a velocidade máxima que deve aparecer no display durante o teste de segmentos?",
+      options: [
+        "30.00 nós.",
+        "60.99 nós.",
+        "99.99 nós.",
+        "120.00 nós."
+      ],
+      answer: "60.99 nós.",
+      topic: "Página: 3-15"
+    },
+    {
+      question: "O que deve ser feito antes de iniciar as rotinas de verificação preventiva?",
+      options: [
+        "Desligar o radar do navio.",
+        "Notificar o pessoal responsável pelos sistemas que recebem informação do odômetro.",
+        "Esvaziar os tanques de combustível.",
+        "Abandonar o navio."
+      ],
+      answer: "Notificar o pessoal responsável pelos sistemas que recebem informação do odômetro.",
+      topic: "Página: 3-15/3-16"
+    },
+    {
+      question: "No modo SIMULADO do AGI-LOG, quais teclas controlam a velocidade?",
+      options: [
+        "MODE e CURVE.",
+        "PROBE e RESET.",
+        "SIM UP e SIM DOWN.",
+        "ON e OFF."
+      ],
+      answer: "SIM UP e SIM DOWN.",
+      topic: "Página: 3-11"
+    },
+    {
+      question: "Qual o peso aproximado da Unidade SDTU do AGI-LOG?",
+      options: [
+        "5 Kg.",
+        "22 ± 1 Kg.",
+        "50 Kg.",
+        "100 Kg."
+      ],
+      answer: "22 ± 1 Kg.",
+      topic: "Página: 3-6"
+    },
+    {
+      question: "O terminal de calibração (módulo 12) possui processador próprio?",
+      options: [
+        "Não, depende totalmente da placa mãe.",
+        "Sim, para dar continuidade ao diagnóstico se o processador principal falhar.",
+        "Sim, mas serve apenas para jogos.",
+        "Não, é apenas um teclado mecânico."
+      ],
+      answer: "Sim, para dar continuidade ao diagnóstico se o processador principal falhar.",
+      topic: "Página: 3-13"
+    }
   ]
 };
 
@@ -812,6 +1694,7 @@ export const quizTitles: Record<string, string> = {
   "eletronica-digital-2": "Eletrônica Digital 2",
   "exercicios-moodle-et-d2": "Exercicios Moodle ET.D2",
   "manutencao-dos-sistemas-telefonicos-2": "Manutenção dos Sistemas Telefônicos 2",
+  "manutencao-dos-sistemas-de-odometros": "MANUTENÇÃO DOS SISTEMAS DE ODÔMETROS",
 };
 
 // Quiz de Eletrônica Digital II

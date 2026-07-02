@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { StartScreen } from "./components/StartScreen";
 import { Quiz } from "./components/Quiz";
 import { Results } from "./components/Results";
 import { QuizList } from "./components/QuizList";
+import { addQuizResult, loadRankings, type Rankings } from "./utils/rankings";
 
 export interface ResultData {
   correct: number;
   total: number;
+  quizId?: string;
   answers: {
     question: string;
     isCorrect: boolean;
@@ -22,6 +24,7 @@ export default function App() {
   const [gameState, setGameState] = useState<GameState>("start");
   const [resultData, setResultData] = useState<ResultData | null>(null);
   const [selectedQuiz, setSelectedQuiz] = useState<string>("telefonia");
+  const [rankings, setRankings] = useState<Rankings>(() => loadRankings());
 
   const handleStart = (quizId?: string) => {
     if (quizId) setSelectedQuiz(quizId);
@@ -36,7 +39,10 @@ export default function App() {
   };
 
   const handleFinish = (data: ResultData) => {
-    setResultData(data);
+    const resultWithQuiz = { ...data, quizId: selectedQuiz };
+    const nextRankings = addQuizResult(resultWithQuiz);
+    setRankings(nextRankings);
+    setResultData(resultWithQuiz);
     setGameState("results");
   };
 
@@ -55,7 +61,7 @@ export default function App() {
     <div className="app-container bg-app">
       <AnimatePresence mode="wait">
         {gameState === "start" && (
-          <StartScreen key="start" onStart={handleStart} onOpenSelector={openSelector} />
+          <StartScreen key="start" rankings={rankings} selectedQuiz={selectedQuiz} onStart={handleStart} onOpenSelector={openSelector} />
         )}
         {gameState === "select" && (
           <QuizList key="select" onSelect={handleSelect} onBack={() => setGameState("start")} />
@@ -64,7 +70,13 @@ export default function App() {
           <Quiz key={selectedQuiz} quizId={selectedQuiz} onFinish={handleFinish} onBackToStart={handleBackToStart} />
         )}
         {gameState === "results" && resultData && (
-          <Results key="results" data={resultData} onRestart={handleRestart} onBackToStart={handleBackToStart} />
+          <Results
+            key="results"
+            data={resultData}
+            rankings={rankings}
+            onRestart={handleRestart}
+            onBackToStart={handleBackToStart}
+          />
         )}
         
       </AnimatePresence>

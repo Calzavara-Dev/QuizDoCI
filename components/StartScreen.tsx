@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import { quizzes } from "../data/questions";
+import { quizzes, quizTitles } from "../data/questions";
+import { loadRankings, getRankName, type Rankings } from "../utils/rankings";
 import sgciLogo from "../assets/SGCI.png";
 
 interface StartScreenProps {
+  rankings?: Rankings;
+  selectedQuiz: string;
   onStart: (quizId?: string) => void;
   onOpenSelector?: () => void;
 }
@@ -24,9 +27,9 @@ type SavedQuizProgress = {
 
 const STORAGE_KEY = "quiz-progress";
 
-export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
+export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector }: StartScreenProps) {
   const quizKeys = Object.keys(quizzes);
-  const [selected, setSelected] = useState<string>(quizKeys[0] ?? "telefonia");
+  const [selected, setSelected] = useState<string>(selectedQuiz ?? (quizKeys[0] ?? "telefonia"));
   const [selectedApostila, setSelectedApostila] = useState("apostila-1");
   const [savedProgress, setSavedProgress] = useState<SavedQuizProgress | null>(null);
   const totalQuestions = quizKeys.reduce((sum, k) => sum + (quizzes[k]?.length ?? 0), 0);
@@ -67,7 +70,16 @@ export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
       label: "Eletronica Digital 2.pdf",
       url: new URL('../assets/eletronica-digital-2.pdf', import.meta.url).href,
     },
+    {
+      id: "apostila-3",
+      label: "MANUTENÇÃO DOS SISTEMAS DE ODÔMETROS.pdf",
+      url: new URL('../assets/Apostila EE-2112-0229 ODÔMETROS.pdf', import.meta.url).href,
+    },
   ];
+  const currentRankings = rankings ?? loadRankings();
+  const overallRankName = getRankName(currentRankings.overall.averagePercentage);
+  const quizRank = currentRankings.quizzes[selected] ?? null;
+  const quizRankName = quizRank ? getRankName(quizRank.averagePercentage) : "Sem histórico";
   const selectedApostilaData = apostilas.find((apostila) => apostila.id === selectedApostila) ?? apostilas[0];
 
   return (
@@ -101,6 +113,65 @@ export function StartScreen({ onStart, onOpenSelector }: StartScreenProps) {
         <p className="text-slate-300 text-sm mb-6 text-center">
           Teste seus conhecimentos.
         </p>
+
+        <div className="mb-6 grid gap-3 sm:grid-cols-2">
+          <div className="rounded-2xl border border-cyan-500/20 bg-slate-900/80 p-4 text-left">
+            <p className="text-sm text-slate-400 mb-2">Ranking Geral</p>
+            <p className="text-xl font-bold text-white">{overallRankName}</p>
+            <p className="text-slate-300 text-sm mt-2">
+              Média: {currentRankings.overall.averagePercentage}% • Melhor: {currentRankings.overall.bestPercentage}%
+            </p>
+            <p className="text-slate-300 text-sm">
+              Tentativas: {currentRankings.overall.attempts}
+            </p>
+          </div>
+          <div className="rounded-2xl border border-cyan-500/20 bg-slate-900/80 p-4 text-left">
+            <p className="text-sm text-slate-400 mb-2">Ranking do Quiz Selecionado</p>
+            <p className="text-xl font-bold text-white">{quizRankName}</p>
+            {quizRank ? (
+              <>
+                <p className="text-slate-300 text-sm mt-2">
+                  Média: {quizRank.averagePercentage}% • Melhor: {quizRank.bestPercentage}%
+                </p>
+                <p className="text-slate-300 text-sm">Última: {quizRank.lastPercentage}%</p>
+                <p className="text-slate-300 text-sm">Tentativas: {quizRank.attempts}</p>
+              </>
+            ) : (
+              <p className="text-slate-400 text-sm mt-2">Faça o quiz para começar a pontuar.</p>
+            )}
+          </div>
+        </div>
+
+        <div className="mb-6 overflow-x-auto rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
+          <h2 className="text-lg font-semibold text-white mb-4">Tabela de Ranking por Quiz</h2>
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="text-slate-400 text-left border-b border-slate-700">
+                <th className="py-2 pr-4">Quiz</th>
+                <th className="py-2 pr-4">Rank</th>
+                <th className="py-2 pr-4">Média</th>
+                <th className="py-2 pr-4">Melhor</th>
+                <th className="py-2 pr-4">Tentativas</th>
+              </tr>
+            </thead>
+            <tbody>
+              {quizKeys.map((key) => {
+                const quizData = currentRankings.quizzes[key];
+                const name = quizTitles[key] ?? key.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+                const rankName = quizData ? getRankName(quizData.averagePercentage) : "Sem histórico";
+                return (
+                  <tr key={key} className={key === selectedQuiz ? "bg-slate-800" : "bg-slate-900"}>
+                    <td className="py-3 pr-4 text-white">{name}</td>
+                    <td className="py-3 pr-4 text-slate-300">{rankName}</td>
+                    <td className="py-3 pr-4 text-slate-300">{quizData ? `${quizData.averagePercentage}%` : "-"}</td>
+                    <td className="py-3 pr-4 text-slate-300">{quizData ? `${quizData.bestPercentage}%` : "-"}</td>
+                    <td className="py-3 pr-4 text-slate-300">{quizData ? quizData.attempts : "-"}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
 
         {savedProgress && (
           <div className="mb-4 rounded-2xl border border-cyan-500/30 bg-slate-900/80 p-4 text-slate-200">
