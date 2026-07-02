@@ -4,6 +4,7 @@ import { StartScreen } from "./components/StartScreen";
 import { Quiz } from "./components/Quiz";
 import { Results } from "./components/Results";
 import { QuizList } from "./components/QuizList";
+import { Ranking } from "./components/Ranking";
 import { addQuizResult, loadRankings, type Rankings } from "./utils/rankings";
 
 export interface ResultData {
@@ -18,7 +19,7 @@ export interface ResultData {
   }[];
 }
 
-type GameState = "start" | "select" | "quiz" | "results";
+type GameState = "start" | "select" | "quiz" | "results" | "ranking";
 
 export default function App() {
   const [gameState, setGameState] = useState<GameState>("start");
@@ -32,6 +33,8 @@ export default function App() {
   };
 
   const openSelector = () => setGameState("select");
+
+  const openRanking = () => setGameState("ranking");
 
   const handleSelect = (quizId: string) => {
     setSelectedQuiz(quizId);
@@ -61,10 +64,13 @@ export default function App() {
     <div className="app-container bg-app">
       <AnimatePresence mode="wait">
         {gameState === "start" && (
-          <StartScreen key="start" rankings={rankings} selectedQuiz={selectedQuiz} onStart={handleStart} onOpenSelector={openSelector} />
+          <StartScreen key="start" rankings={rankings} selectedQuiz={selectedQuiz} onStart={handleStart} onOpenSelector={openSelector} onOpenRanking={openRanking} />
         )}
         {gameState === "select" && (
           <QuizList key="select" onSelect={handleSelect} onBack={() => setGameState("start")} />
+        )}
+        {gameState === "ranking" && (
+          <Ranking key="ranking" rankings={rankings} selectedQuiz={selectedQuiz} onBack={() => setGameState("start")} />
         )}
         {gameState === "quiz" && (
           <Quiz key={selectedQuiz} quizId={selectedQuiz} onFinish={handleFinish} onBackToStart={handleBackToStart} />

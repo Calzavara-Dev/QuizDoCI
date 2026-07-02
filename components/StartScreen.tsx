@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import { quizzes, quizTitles } from "../data/questions";
-import { loadRankings, getRankName, type Rankings } from "../utils/rankings";
 import sgciLogo from "../assets/SGCI.png";
 
 interface StartScreenProps {
-  rankings?: Rankings;
+  rankings?: any;
   selectedQuiz: string;
   onStart: (quizId?: string) => void;
   onOpenSelector?: () => void;
+  onOpenRanking?: () => void;
 }
 
 type SavedQuizProgress = {
@@ -76,10 +76,8 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector }:
       url: new URL('../assets/Apostila EE-2112-0229 ODÔMETROS.pdf', import.meta.url).href,
     },
   ];
-  const currentRankings = rankings ?? loadRankings();
-  const overallRankName = getRankName(currentRankings.overall.averagePercentage);
-  const quizRank = currentRankings.quizzes[selected] ?? null;
-  const quizRankName = quizRank ? getRankName(quizRank.averagePercentage) : "Sem histórico";
+  // rankings moved to separate screen; StartScreen keeps minimal state
+  const currentRankings = rankings ?? null;
   const selectedApostilaData = apostilas.find((apostila) => apostila.id === selectedApostila) ?? apostilas[0];
 
   return (
@@ -114,32 +112,10 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector }:
           Teste seus conhecimentos.
         </p>
 
-        <div className="mb-6 grid gap-3 sm:grid-cols-2">
-          <div className="rounded-2xl border border-cyan-500/20 bg-slate-900/80 p-4 text-left">
-            <p className="text-sm text-slate-400 mb-2">Ranking Geral</p>
-            <p className="text-xl font-bold text-white">{overallRankName}</p>
-            <p className="text-slate-300 text-sm mt-2">
-              Média: {currentRankings.overall.averagePercentage}% • Melhor: {currentRankings.overall.bestPercentage}%
-            </p>
-            <p className="text-slate-300 text-sm">
-              Tentativas: {currentRankings.overall.attempts}
-            </p>
-          </div>
-          <div className="rounded-2xl border border-cyan-500/20 bg-slate-900/80 p-4 text-left">
-            <p className="text-sm text-slate-400 mb-2">Ranking do Quiz Selecionado</p>
-            <p className="text-xl font-bold text-white">{quizRankName}</p>
-            {quizRank ? (
-              <>
-                <p className="text-slate-300 text-sm mt-2">
-                  Média: {quizRank.averagePercentage}% • Melhor: {quizRank.bestPercentage}%
-                </p>
-                <p className="text-slate-300 text-sm">Última: {quizRank.lastPercentage}%</p>
-                <p className="text-slate-300 text-sm">Tentativas: {quizRank.attempts}</p>
-              </>
-            ) : (
-              <p className="text-slate-400 text-sm mt-2">Faça o quiz para começar a pontuar.</p>
-            )}
-          </div>
+        <div className="mb-6 flex justify-center">
+          <button onClick={() => (onOpenRanking ? onOpenRanking() : undefined)} className="ghost-btn px-4 py-2 rounded-lg">
+            Ver Ranking
+          </button>
         </div>
 
         <div className="mb-6 overflow-x-auto rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
