@@ -27,7 +27,7 @@ type SavedQuizProgress = {
 
 const STORAGE_KEY = "quiz-progress";
 
-export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector }: StartScreenProps) {
+export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, onOpenRanking }: StartScreenProps) {
   const quizKeys = Object.keys(quizzes);
   const [selected, setSelected] = useState<string>(selectedQuiz ?? (quizKeys[0] ?? "telefonia"));
   const [selectedApostila, setSelectedApostila] = useState("apostila-1");
@@ -118,36 +118,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector }:
           </button>
         </div>
 
-        <div className="mb-6 overflow-x-auto rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
-          <h2 className="text-lg font-semibold text-white mb-4">Tabela de Ranking por Quiz</h2>
-          <table className="w-full border-collapse text-sm">
-            <thead>
-              <tr className="text-slate-400 text-left border-b border-slate-700">
-                <th className="py-2 pr-4">Quiz</th>
-                <th className="py-2 pr-4">Rank</th>
-                <th className="py-2 pr-4">Média</th>
-                <th className="py-2 pr-4">Melhor</th>
-                <th className="py-2 pr-4">Tentativas</th>
-              </tr>
-            </thead>
-            <tbody>
-              {quizKeys.map((key) => {
-                const quizData = currentRankings.quizzes[key];
-                const name = quizTitles[key] ?? key.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-                const rankName = quizData ? getRankName(quizData.averagePercentage) : "Sem histórico";
-                return (
-                  <tr key={key} className={key === selectedQuiz ? "bg-slate-800" : "bg-slate-900"}>
-                    <td className="py-3 pr-4 text-white">{name}</td>
-                    <td className="py-3 pr-4 text-slate-300">{rankName}</td>
-                    <td className="py-3 pr-4 text-slate-300">{quizData ? `${quizData.averagePercentage}%` : "-"}</td>
-                    <td className="py-3 pr-4 text-slate-300">{quizData ? `${quizData.bestPercentage}%` : "-"}</td>
-                    <td className="py-3 pr-4 text-slate-300">{quizData ? quizData.attempts : "-"}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+        {/* Ranking moved to separate screen */}
 
         {savedProgress && (
           <div className="mb-4 rounded-2xl border border-cyan-500/30 bg-slate-900/80 p-4 text-slate-200">
