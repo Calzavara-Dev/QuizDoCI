@@ -7,7 +7,7 @@ import sgciLogo from "../assets/SGCI.png";
 interface StartScreenProps {
   rankings?: any;
   selectedQuiz: string;
-  onStart: (quizId?: string) => void;
+  onStart: (quizId?: string, playerName?: string) => void;
   onOpenSelector?: () => void;
   onOpenRanking?: () => void;
 }
@@ -32,6 +32,10 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
   const [selected, setSelected] = useState<string>(selectedQuiz ?? (quizKeys[0] ?? "telefonia"));
   const [selectedApostila, setSelectedApostila] = useState("apostila-1");
   const [savedProgress, setSavedProgress] = useState<SavedQuizProgress | null>(null);
+  const [playerName, setPlayerName] = useState<string>(() => {
+    if (typeof window === "undefined") return "";
+    return window.localStorage.getItem("player-name") ?? "";
+  });
   const totalQuestions = quizKeys.reduce((sum, k) => sum + (quizzes[k]?.length ?? 0), 0);
 
   useEffect(() => {
@@ -54,6 +58,11 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
       // ignore invalid storage data
     }
   }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    window.localStorage.setItem("player-name", playerName);
+  }, [playerName]);
 
   const formatLabel = (key: string) => {
     return key.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -127,13 +136,23 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
               Continue o quiz <span className="font-semibold">{savedProgress.quizId.replace(/[-_]/g, " ")}</span> na questão <span className="font-semibold">{savedProgress.currentIndex + 1}</span>.
             </p>
             <button
-              onClick={() => onStart(savedProgress.quizId)}
+              onClick={() => onStart(savedProgress.quizId, playerName)}
               className="mt-3 w-full primary-btn rounded-xl py-3 text-sm font-bold"
             >
               Continuar onde parou
             </button>
           </div>
         )}
+
+        <div className="mb-4">
+          <label className="block text-sm text-slate-300 mb-2">Seu nome (aparecerá no ranking)</label>
+          <input
+            value={playerName}
+            onChange={(e) => setPlayerName(e.target.value)}
+            placeholder="Digite seu nome"
+            className="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-white outline-none focus:border-cyan-400"
+          />
+        </div>
 
         <div className="mb-4">
           <div className="rounded-xl p-4 card text-center max-w-xs mx-auto">
@@ -188,7 +207,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => (onOpenSelector ? onOpenSelector() : onStart(selected))}
+          onClick={() => (onOpenSelector ? onOpenSelector() : onStart(selected, playerName))}
           className="w-full py-3 rounded-xl primary-btn font-bold text-center flex items-center justify-center gap-3"
         >
           <Play size={20} />

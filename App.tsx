@@ -6,6 +6,7 @@ import { Results } from "./components/Results";
 import { QuizList } from "./components/QuizList";
 import { Ranking } from "./components/Ranking";
 import { addQuizResult, loadRankings, type Rankings } from "./utils/rankings";
+import { saveResultRemote } from "./utils/supabase";
 
 export interface ResultData {
   correct: number;
@@ -26,9 +27,11 @@ export default function App() {
   const [resultData, setResultData] = useState<ResultData | null>(null);
   const [selectedQuiz, setSelectedQuiz] = useState<string>("telefonia");
   const [rankings, setRankings] = useState<Rankings>(() => loadRankings());
+  const [playerName, setPlayerName] = useState<string>("");
 
-  const handleStart = (quizId?: string) => {
+  const handleStart = (quizId?: string, name?: string) => {
     if (quizId) setSelectedQuiz(quizId);
+    if (name) setPlayerName(name);
     setGameState("quiz");
   };
 
@@ -47,6 +50,20 @@ export default function App() {
     setRankings(nextRankings);
     setResultData(resultWithQuiz);
     setGameState("results");
+    // attempt to save remotely (Supabase) but don't block UI
+    try {
+      saveResultRemote({
+        name: playerName || "Anônimo",
+        quiz_id: selectedQuiz,
+        correct: data.correct,
+        total: data.total,
+        percentage: Math.round((data.correct / data.total) * 100),
+      }).catch(() => {
+        // ignore remote errors
+      });
+    } catch {
+      // ignore
+    }
   };
 
   const handleRestart = () => {

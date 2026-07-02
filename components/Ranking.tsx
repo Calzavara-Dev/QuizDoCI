@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { quizzes, quizTitles } from "../data/questions";
 import { getRankName, type Rankings } from "../utils/rankings";
+import { fetchRemoteResults } from "../utils/supabase";
+import { useEffect, useState } from "react";
 
 interface RankingProps {
   rankings: Rankings;
@@ -11,6 +13,18 @@ interface RankingProps {
 
 export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
   const quizKeys = Object.keys(quizzes);
+  const [remote, setRemote] = useState<any[] | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    fetchRemoteResults(200).then((res) => {
+      if (!mounted) return;
+      setRemote(res);
+    });
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   return (
     <motion.div
@@ -88,6 +102,31 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
             </tbody>
           </table>
         </div>
+        {remote && remote.length > 0 && (
+          <div className="mb-6 overflow-x-auto rounded-2xl border border-slate-700 bg-slate-900/80 p-4">
+            <h3 className="text-lg font-semibold text-white mb-4">Últimos resultados (Servidor)</h3>
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr className="text-slate-400 text-left border-b border-slate-700">
+                  <th className="py-2 pr-4">Nome</th>
+                  <th className="py-2 pr-4">Quiz</th>
+                  <th className="py-2 pr-4">%</th>
+                  <th className="py-2 pr-4">Data</th>
+                </tr>
+              </thead>
+              <tbody>
+                {remote.map((r, i) => (
+                  <tr key={i} className={i % 2 === 0 ? "bg-slate-800" : "bg-slate-900"}>
+                    <td className="py-3 pr-4 text-white">{r.name}</td>
+                    <td className="py-3 pr-4 text-slate-300">{quizTitles[r.quiz_id] ?? r.quiz_id}</td>
+                    <td className="py-3 pr-4 text-slate-300">{r.percentage}%</td>
+                    <td className="py-3 pr-4 text-slate-300">{new Date(r.created_at).toLocaleString()}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
       </motion.div>
     </motion.div>
   );
