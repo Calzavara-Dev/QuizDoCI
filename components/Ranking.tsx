@@ -16,7 +16,7 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
   const [remote, setRemote] = useState<any[] | null>(null);
   const [loadingRemote, setLoadingRemote] = useState(true);
   const [remoteError, setRemoteError] = useState(false);
-  const [autoRefresh, setAutoRefresh] = useState(false);
+  const [autoRefresh, setAutoRefresh] = useState(true);
   const [intervalSeconds, setIntervalSeconds] = useState<number>(30);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
 
