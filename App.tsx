@@ -45,7 +45,8 @@ export default function App() {
   };
 
   const handleFinish = (data: ResultData) => {
-    const resultWithQuiz = { ...data, quizId: selectedQuiz };
+    const sanitizedAnswers = data.answers.filter((answer) => answer != null) as ResultData["answers"];
+    const resultWithQuiz = { ...data, quizId: selectedQuiz, answers: sanitizedAnswers };
     const nextRankings = addQuizResult(resultWithQuiz);
     setRankings(nextRankings);
     setResultData(resultWithQuiz);

@@ -36,6 +36,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
     if (typeof window === "undefined") return "";
     return window.localStorage.getItem("player-name") ?? "";
   });
+  const hasName = playerName.trim().length > 0;
   const totalQuestions = quizKeys.reduce((sum, k) => sum + (quizzes[k]?.length ?? 0), 0);
 
   useEffect(() => {
@@ -121,10 +122,15 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
           Teste seus conhecimentos.
         </p>
 
-        <div className="mb-6 flex justify-center">
+        <div className="mb-6 flex flex-col sm:flex-row justify-center gap-3">
           <button onClick={() => (onOpenRanking ? onOpenRanking() : undefined)} className="ghost-btn px-4 py-2 rounded-lg">
             Ver Ranking
           </button>
+          {onOpenSelector && (
+            <button onClick={onOpenSelector} className="ghost-btn px-4 py-2 rounded-lg">
+              Selecionar Quiz
+            </button>
+          )}
         </div>
 
         {/* Ranking moved to separate screen */}
@@ -137,10 +143,14 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
             </p>
             <button
               onClick={() => onStart(savedProgress.quizId, playerName)}
-              className="mt-3 w-full primary-btn rounded-xl py-3 text-sm font-bold"
+              disabled={!hasName}
+              className={`mt-3 w-full rounded-xl py-3 text-sm font-bold transition ${hasName ? "primary-btn" : "bg-slate-600 text-slate-300 cursor-not-allowed"}`}
             >
               Continuar onde parou
             </button>
+            {!hasName && (
+              <p className="text-xs text-rose-400 mt-2">Digite seu nome para continuar e aparecer no ranking.</p>
+            )}
           </div>
         )}
 
@@ -207,12 +217,16 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => (onOpenSelector ? onOpenSelector() : onStart(selected, playerName))}
-          className="w-full py-3 rounded-xl primary-btn font-bold text-center flex items-center justify-center gap-3"
+          onClick={() => onStart(selected, playerName)}
+          disabled={!hasName}
+          className={`w-full py-3 rounded-xl font-bold text-center flex items-center justify-center gap-3 transition ${hasName ? "primary-btn" : "bg-slate-600 text-slate-300 cursor-not-allowed"}`}
         >
           <Play size={20} />
           Iniciar Quiz
         </motion.button>
+        {!hasName && (
+          <p className="text-xs text-rose-400 mt-2 text-center">Digite seu nome para aparecer no ranking.</p>
+        )}
         
       </motion.div>
     </motion.div>

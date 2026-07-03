@@ -49,18 +49,39 @@ interface QuizProps {
 
 export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProps) {
   const savedProgress = loadSavedProgress(quizId);
-  const [shuffledQuestions] = useState<Question[]>(() => savedProgress?.shuffledQuestions ?? getShuffledQuestions(quizId));
-  const [currentIndex, setCurrentIndex] = useState(savedProgress?.currentIndex ?? 0);
-  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(
-    savedProgress?.answers?.[savedProgress.currentIndex]?.userAnswer ?? null
-  );
-  const [showResult, setShowResult] = useState(Boolean(savedProgress?.answers?.[savedProgress.currentIndex]));
+  const [shuffledQuestions] = useState<Question[]>(() => {
+    const questions = savedProgress?.shuffledQuestions ?? getShuffledQuestions(quizId);
+    return Array.isArray(questions) ? questions : [];
+  });
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    const index = savedProgress?.currentIndex ?? 0;
+    return typeof index === "number" && index >= 0 && index < shuffledQuestions.length ? index : 0;
+  });
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(() => {
+    if (!shuffledQuestions.length || !savedProgress?.answers) return null;
+    const answer = savedProgress.answers[savedProgress.currentIndex];
+    return answer?.userAnswer ?? null;
+  });
+  const [showResult, setShowResult] = useState<boolean>(() => {
+    if (!shuffledQuestions.length || !savedProgress?.answers) return false;
+    return Boolean(savedProgress.answers[savedProgress.currentIndex]);
+  });
   const [correct, setCorrect] = useState(savedProgress?.correct ?? 0);
   const [answers, setAnswers] = useState<ResultData["answers"]>(savedProgress?.answers ?? []);
   const [showConfirm, setShowConfirm] = useState(false);
 
   const currentQuestion = shuffledQuestions[currentIndex];
-  const progress = ((currentIndex + 1) / shuffledQuestions.length) * 100;
+  const progress = shuffledQuestions.length ? ((currentIndex + 1) / shuffledQuestions.length) * 100 : 0;
+
+  useEffect(() => {
+    if (!shuffledQuestions.length) {
+      setCurrentIndex(0);
+      return;
+    }
+    if (currentIndex >= shuffledQuestions.length) {
+      setCurrentIndex(0);
+    }
+  }, [currentIndex, shuffledQuestions.length]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

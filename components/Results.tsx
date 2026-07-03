@@ -103,7 +103,7 @@ export function Results({ data, rankings, onRestart, onBackToStart }: ResultsPro
         <div className="bg-slate-800 rounded-xl p-5 border border-slate-700 mb-6 card">
           <h3 className="text-lg font-semibold text-white mb-4">Resumo das Respostas</h3>
           <div className="space-y-3 max-h-64 overflow-y-auto">
-            {data.answers.map((answer, index) => (
+            {data.answers.filter(Boolean).map((answer, index) => (
               <div
                 key={index}
                 className={`p-3 rounded-lg ${
