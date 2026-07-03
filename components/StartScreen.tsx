@@ -8,6 +8,7 @@ interface StartScreenProps {
   rankings?: any;
   selectedQuiz: string;
   onStart: (quizId?: string, playerName?: string) => void;
+  onOpenSelector?: () => void;
   onOpenRanking?: () => void;
 }
 
@@ -26,7 +27,7 @@ type SavedQuizProgress = {
 
 const STORAGE_KEY = "quiz-progress";
 
-export function StartScreen({ rankings, selectedQuiz, onStart, onOpenRanking }: StartScreenProps) {
+export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, onOpenRanking }: StartScreenProps) {
   const quizKeys = Object.keys(quizzes);
   const [selectedApostila, setSelectedApostila] = useState("apostila-1");
   const [savedProgress, setSavedProgress] = useState<SavedQuizProgress | null>(null);
@@ -208,7 +209,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenRanking }: 
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => onStart(selectedQuiz, playerName)}
+          onClick={() => onOpenSelector ? onOpenSelector() : onStart(selectedQuiz, playerName)}
           disabled={!hasName}
           className={`w-full py-3 rounded-xl font-bold text-center flex items-center justify-center gap-3 transition ${hasName ? "primary-btn" : "bg-slate-600 text-slate-300 cursor-not-allowed"}`}
         >
