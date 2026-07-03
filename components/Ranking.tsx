@@ -14,12 +14,27 @@ interface RankingProps {
 export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
   const quizKeys = Object.keys(quizzes);
   const [remote, setRemote] = useState<any[] | null>(null);
+  const [loadingRemote, setLoadingRemote] = useState(true);
+  const [remoteError, setRemoteError] = useState(false);
 
   useEffect(() => {
     let mounted = true;
+    setLoadingRemote(true);
+    setRemoteError(false);
     fetchRemoteResults(200).then((res) => {
       if (!mounted) return;
-      setRemote(res);
+      if (res === null) {
+        setRemote(null);
+        setRemoteError(true);
+      } else {
+        setRemote(res);
+      }
+      setLoadingRemote(false);
+    }).catch(() => {
+      if (!mounted) return;
+      setRemote(null);
+      setRemoteError(true);
+      setLoadingRemote(false);
     });
     return () => {
       mounted = false;
@@ -125,6 +140,36 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
                 ))}
               </tbody>
             </table>
+          </div>
+        )}
+        {loadingRemote && (
+          <div className="mb-6 rounded-2xl border border-slate-700 bg-slate-900/80 p-4 text-slate-400 text-sm">
+            Carregando ranking remoto...
+          </div>
+        )}
+        {remoteError && (
+          <div className="mb-6 rounded-2xl border border-rose-700 bg-slate-900/80 p-4 text-rose-300 text-sm">
+            Não foi possível carregar o ranking remoto. Verifique a conexão ou a configuração do Supabase.
+            <div className="mt-2">
+              <button
+                onClick={() => {
+                  setLoadingRemote(true);
+                  setRemoteError(false);
+                  fetchRemoteResults(200).then((res) => {
+                    setRemote(res);
+                    setLoadingRemote(false);
+                    setRemoteError(res === null);
+                  }).catch(() => {
+                    setRemote(null);
+                    setLoadingRemote(false);
+                    setRemoteError(true);
+                  });
+                }}
+                className="mt-2 px-3 py-2 rounded bg-rose-500 text-white"
+              >
+                Tentar novamente
+              </button>
+            </div>
           </div>
         )}
       </motion.div>
