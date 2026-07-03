@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
-import { quizzes, quizTitles } from "../data/questions";
+import { quizzes } from "../data/questions";
 import sgciLogo from "../assets/SGCI.png";
 
 interface StartScreenProps {
   rankings?: any;
   selectedQuiz: string;
   onStart: (quizId?: string, playerName?: string) => void;
-  onOpenSelector?: () => void;
   onOpenRanking?: () => void;
 }
 
@@ -27,9 +26,8 @@ type SavedQuizProgress = {
 
 const STORAGE_KEY = "quiz-progress";
 
-export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, onOpenRanking }: StartScreenProps) {
+export function StartScreen({ rankings, selectedQuiz, onStart, onOpenRanking }: StartScreenProps) {
   const quizKeys = Object.keys(quizzes);
-  const [selected, setSelected] = useState<string>(selectedQuiz ?? (quizKeys[0] ?? "telefonia"));
   const [selectedApostila, setSelectedApostila] = useState("apostila-1");
   const [savedProgress, setSavedProgress] = useState<SavedQuizProgress | null>(null);
   const [playerName, setPlayerName] = useState<string>(() => {
@@ -86,8 +84,6 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
       url: new URL('../assets/Apostila EE-2112-0229 ODÔMETROS.pdf', import.meta.url).href,
     },
   ];
-  // rankings moved to separate screen; StartScreen keeps minimal state
-  const currentRankings = rankings ?? null;
   const selectedApostilaData = apostilas.find((apostila) => apostila.id === selectedApostila) ?? apostilas[0];
 
   return (
@@ -126,11 +122,6 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
           <button onClick={() => (onOpenRanking ? onOpenRanking() : undefined)} className="ghost-btn px-4 py-2 rounded-lg">
             Ver Ranking
           </button>
-          {onOpenSelector && (
-            <button onClick={onOpenSelector} className="ghost-btn px-4 py-2 rounded-lg">
-              Selecionar Quiz
-            </button>
-          )}
         </div>
 
         {/* Ranking moved to separate screen */}
@@ -217,7 +208,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => onStart(selected, playerName)}
+          onClick={() => onStart(selectedQuiz, playerName)}
           disabled={!hasName}
           className={`w-full py-3 rounded-xl font-bold text-center flex items-center justify-center gap-3 transition ${hasName ? "primary-btn" : "bg-slate-600 text-slate-300 cursor-not-allowed"}`}
         >
