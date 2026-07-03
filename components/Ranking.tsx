@@ -16,30 +16,43 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
   const [remote, setRemote] = useState<any[] | null>(null);
   const [loadingRemote, setLoadingRemote] = useState(true);
   const [remoteError, setRemoteError] = useState(false);
+  const [autoRefresh, setAutoRefresh] = useState(false);
+  const [intervalSeconds, setIntervalSeconds] = useState<number>(30);
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
+
+  const doFetch = async () => {
+    setLoadingRemote(true);
+    setRemoteError(false);
+    try {
+      const res = await fetchRemoteResults(200);
+      setRemote(res);
+      setRemoteError(res === null);
+      setLastUpdated(res ? new Date() : lastUpdated);
+    } catch (e) {
+      setRemote(null);
+      setRemoteError(true);
+    } finally {
+      setLoadingRemote(false);
+    }
+  };
 
   useEffect(() => {
     let mounted = true;
-    setLoadingRemote(true);
-    setRemoteError(false);
-    fetchRemoteResults(200).then((res) => {
-      if (!mounted) return;
-      if (res === null) {
-        setRemote(null);
-        setRemoteError(true);
-      } else {
-        setRemote(res);
-      }
-      setLoadingRemote(false);
-    }).catch(() => {
-      if (!mounted) return;
-      setRemote(null);
-      setRemoteError(true);
-      setLoadingRemote(false);
-    });
+    if (mounted) doFetch();
     return () => {
       mounted = false;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    if (!autoRefresh) return;
+    const id = setInterval(() => {
+      doFetch();
+    }, intervalSeconds * 1000);
+    return () => clearInterval(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoRefresh, intervalSeconds]);
 
   return (
     <motion.div
@@ -84,6 +97,29 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
             ) : (
               <p className="text-slate-400 text-sm mt-2">Sem histórico para este quiz.</p>
             )}
+          </div>
+        </div>
+
+        <div className="mb-4 flex items-center justify-between gap-3">
+          <div className="text-slate-300 text-sm">
+            <label className="inline-flex items-center gap-2">
+              <input type="checkbox" checked={autoRefresh} onChange={(e) => setAutoRefresh(e.target.checked)} />
+              <span className="ml-1">Auto-refresh</span>
+            </label>
+            <span className="ml-4">Intervalo:</span>
+            <select
+              value={intervalSeconds}
+              onChange={(e) => setIntervalSeconds(Number(e.target.value))}
+              className="ml-2 bg-slate-800 text-slate-200 rounded px-2 py-1"
+            >
+              <option value={15}>15s</option>
+              <option value={30}>30s</option>
+              <option value={60}>60s</option>
+            </select>
+            {lastUpdated && <span className="ml-4 text-slate-400">Última: {lastUpdated.toLocaleTimeString()}</span>}
+          </div>
+          <div>
+            <button onClick={() => doFetch()} className="ghost-btn px-3 py-2 rounded">Atualizar agora</button>
           </div>
         </div>
 
@@ -151,22 +187,7 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
           <div className="mb-6 rounded-2xl border border-rose-700 bg-slate-900/80 p-4 text-rose-300 text-sm">
             Não foi possível carregar o ranking remoto. Verifique a conexão ou a configuração do Supabase.
             <div className="mt-2">
-              <button
-                onClick={() => {
-                  setLoadingRemote(true);
-                  setRemoteError(false);
-                  fetchRemoteResults(200).then((res) => {
-                    setRemote(res);
-                    setLoadingRemote(false);
-                    setRemoteError(res === null);
-                  }).catch(() => {
-                    setRemote(null);
-                    setLoadingRemote(false);
-                    setRemoteError(true);
-                  });
-                }}
-                className="mt-2 px-3 py-2 rounded bg-rose-500 text-white"
-              >
+              <button onClick={() => doFetch()} className="mt-2 px-3 py-2 rounded bg-rose-500 text-white">
                 Tentar novamente
               </button>
             </div>
