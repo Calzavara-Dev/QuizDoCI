@@ -1,13 +1,18 @@
 -- Cria tabela para armazenar resultados dos quizzes
 -- Execute este SQL no SQL Editor do Supabase (ou via psql)
 
+-- Necessário para gen_random_uuid()
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
 CREATE TABLE IF NOT EXISTS public.quiz_results (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   name text NOT NULL,
   quiz_id text NOT NULL,
   correct integer NOT NULL,
   total integer NOT NULL,
-  percentage integer NOT NULL,
+  percentage integer NOT NULL CHECK (percentage >= 0 AND percentage <= 100),
+  -- garante consistência entre acertos e total
+  CONSTRAINT chk_correct_total CHECK (correct >= 0 AND total > 0 AND correct <= total),
   created_at timestamp with time zone DEFAULT now()
 );
 
