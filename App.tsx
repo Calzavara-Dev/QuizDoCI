@@ -35,7 +35,10 @@ export default function App() {
     setGameState("quiz");
   };
 
-  const openSelector = () => setGameState("select");
+  const openSelector = (name?: string) => {
+    if (name) setPlayerName(name);
+    setGameState("select");
+  };
 
   const openRanking = () => setGameState("ranking");
 
@@ -54,7 +57,7 @@ export default function App() {
     // attempt to save remotely (Supabase) but don't block UI
     try {
       saveResultRemote({
-        name: playerName || "Anônimo",
+        name: playerName,
         quiz_id: selectedQuiz,
         correct: data.correct,
         total: data.total,

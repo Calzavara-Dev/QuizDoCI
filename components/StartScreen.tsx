@@ -8,7 +8,7 @@ interface StartScreenProps {
   rankings?: any;
   selectedQuiz: string;
   onStart: (quizId?: string, playerName?: string) => void;
-  onOpenSelector?: () => void;
+  onOpenSelector?: (playerName?: string) => void;
   onOpenRanking?: () => void;
 }
 
@@ -209,7 +209,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         <motion.button
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => onOpenSelector ? onOpenSelector() : onStart(selectedQuiz, playerName)}
+          onClick={() => onOpenSelector ? onOpenSelector(playerName) : onStart(selectedQuiz, playerName)}
           disabled={!hasName}
           className={`w-full py-3 rounded-xl font-bold text-center flex items-center justify-center gap-3 transition ${hasName ? "primary-btn" : "bg-slate-600 text-slate-300 cursor-not-allowed"}`}
         >
