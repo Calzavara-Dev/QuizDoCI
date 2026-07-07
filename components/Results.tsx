@@ -77,7 +77,7 @@ export function Results({ data, rankings, onRestart, onBackToStart }: ResultsPro
             {quizRank ? (
               <p className="text-slate-300 text-sm mt-2">Média: {quizRank.averagePercentage}%</p>
             ) : (
-              <p className="text-slate-400 text-sm mt-2">Faça mais quizzes para começar a pontuar.</p>
+              <p className="text-slate-400 text-sm mt-2">Faça mais testes de Quiz para começar a pontuar.</p>
             )}
           </div>
         </div>

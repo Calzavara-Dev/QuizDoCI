@@ -10,6 +10,7 @@ interface StartScreenProps {
   onStart: (quizId?: string, playerName?: string) => void;
   onOpenSelector?: (playerName?: string) => void;
   onOpenRanking?: () => void;
+  onOpenAdmin?: () => void;
 }
 
 type SavedQuizProgress = {
@@ -27,7 +28,7 @@ type SavedQuizProgress = {
 
 const STORAGE_KEY = "quiz-progress";
 
-export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, onOpenRanking }: StartScreenProps) {
+export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, onOpenRanking, onOpenAdmin }: StartScreenProps) {
   const quizKeys = Object.keys(quizzes);
   const [selectedApostila, setSelectedApostila] = useState("apostila-1");
   const [savedProgress, setSavedProgress] = useState<SavedQuizProgress | null>(null);
@@ -123,6 +124,11 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
           <button onClick={() => (onOpenRanking ? onOpenRanking() : undefined)} className="ghost-btn px-4 py-2 rounded-lg">
             Ver Ranking
           </button>
+          {onOpenAdmin && (
+            <button onClick={onOpenAdmin} className="ghost-btn px-3 py-2 rounded-lg text-sm opacity-80 hover:opacity-100 flex items-center justify-center gap-1.5" title="Modo Administração e Edição">
+              ⚙️ Admin
+            </button>
+          )}
         </div>
 
         {/* Ranking moved to separate screen */}

@@ -1,4 +1,4 @@
--- Cria tabela para armazenar resultados dos quizzes
+-- Cria tabela para armazenar resultados do Quiz
 -- Execute este SQL no SQL Editor do Supabase (ou via psql)
 
 -- Necessário para gen_random_uuid()
@@ -20,27 +20,23 @@ CREATE TABLE IF NOT EXISTS public.quiz_results (
 CREATE INDEX IF NOT EXISTS idx_quiz_results_quiz_id ON public.quiz_results (quiz_id);
 CREATE INDEX IF NOT EXISTS idx_quiz_results_percentage ON public.quiz_results (percentage DESC);
 
--- Example RLS policies
--- RECOMENDADO: habilitar RLS e permitir apenas usuários autenticados inserirem resultados
--- Habilitar RLS:
--- ALTER TABLE public.quiz_results ENABLE ROW LEVEL SECURITY;
+-- Segurança RLS (Row Level Security) - CRÍTICO
+-- Habilita o RLS na tabela para evitar acesso irrestrito
+ALTER TABLE public.quiz_results ENABLE ROW LEVEL SECURITY;
 
--- Política para permitir inserção apenas para usuários autenticados:
--- CREATE POLICY "Allow authenticated inserts" ON public.quiz_results
---   FOR INSERT
---   TO authenticated
---   WITH (true);
+-- Remove políticas antigas se existirem (para reexecução segura)
+DROP POLICY IF EXISTS "Permitir leitura publica do ranking" ON public.quiz_results;
+DROP POLICY IF EXISTS "Permitir insercao de resultados" ON public.quiz_results;
 
--- Se quiser permitir leitura pública (por exemplo para ranking público):
--- CREATE POLICY "Allow public select" ON public.quiz_results
---   FOR SELECT
---   USING (true);
+-- 1. Política de Leitura (SELECT): Permite leitura pública para exibição dos placares e ranking
+CREATE POLICY "Permitir leitura publica do ranking" ON public.quiz_results
+  FOR SELECT USING (true);
 
--- ATENÇÃO: Se optar por permitir INSERT para anon (pubblico), isso permite qualquer pessoa
--- gravar resultados. Use com cautela. Exemplo (não recomendado sem validação adicional):
--- CREATE POLICY "Allow public insert" ON public.quiz_results
---   FOR INSERT
---   USING (true);
-
--- Se seu projeto usar Regras RLS avançadas, crie policies que validem o conteúdo ou
--- verifiquem claims do JWT antes de permitir escrita.
+-- 2. Política de Gravação (INSERT): Permite que jogadores enviem seus resultados,
+-- garantindo a validação de integridade nos valores enviados
+CREATE POLICY "Permitir insercao de resultados" ON public.quiz_results
+  FOR INSERT WITH CHECK (
+    name IS NOT NULL AND length(trim(name)) > 0 AND
+    correct >= 0 AND total > 0 AND correct <= total AND
+    percentage >= 0 AND percentage <= 100
+  );

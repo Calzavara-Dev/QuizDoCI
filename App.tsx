@@ -5,6 +5,7 @@ import { Quiz } from "./components/Quiz";
 import { Results } from "./components/Results";
 import { QuizList } from "./components/QuizList";
 import { Ranking } from "./components/Ranking";
+import { Admin } from "./components/Admin";
 import { addQuizResult, loadRankings, type Rankings } from "./utils/rankings";
 import { saveResultRemote } from "./utils/supabase";
 
@@ -20,7 +21,7 @@ export interface ResultData {
   }[];
 }
 
-type GameState = "start" | "select" | "quiz" | "results" | "ranking";
+type GameState = "start" | "select" | "quiz" | "results" | "ranking" | "admin";
 
 export default function App() {
   const [gameState, setGameState] = useState<GameState>("start");
@@ -41,6 +42,7 @@ export default function App() {
   };
 
   const openRanking = () => setGameState("ranking");
+  const openAdmin = () => setGameState("admin");
 
   const handleSelect = (quizId: string) => {
     setSelectedQuiz(quizId);
@@ -85,7 +87,10 @@ export default function App() {
     <div className="app-container bg-app">
       <AnimatePresence mode="wait">
         {gameState === "start" && (
-          <StartScreen key="start" rankings={rankings} selectedQuiz={selectedQuiz} onStart={handleStart} onOpenSelector={openSelector} onOpenRanking={openRanking} />
+          <StartScreen key="start" rankings={rankings} selectedQuiz={selectedQuiz} onStart={handleStart} onOpenSelector={openSelector} onOpenRanking={openRanking} onOpenAdmin={openAdmin} />
+        )}
+        {gameState === "admin" && (
+          <Admin key="admin" onClose={() => setGameState("start")} />
         )}
         {gameState === "select" && (
           <QuizList key="select" onSelect={handleSelect} onBack={() => setGameState("start")} />

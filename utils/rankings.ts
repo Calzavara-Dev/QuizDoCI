@@ -103,5 +103,5 @@ export const getRankDescription = (percentage: number) => {
   if (percentage >= 75) return "Desempenho muito bom. Continue assim.";
   if (percentage >= 60) return "Bom desempenho. Estude para subir mais.";
   if (percentage >= 45) return "Desempenho razoável. Treine mais.";
-  return "Hora de estudar e refazer quizzes para melhorar.";
+  return "Hora de estudar e refazer o Quiz para melhorar.";
 };
