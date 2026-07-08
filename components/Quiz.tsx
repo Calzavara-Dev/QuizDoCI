@@ -189,10 +189,10 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
 
       {/* ── UNIFIED PREMIUM NAV + PROGRESS HEADER ── */}
       <div className="w-full max-w-3xl mx-auto mb-4 sm:mb-6">
-        <div className="card rounded-2xl border border-slate-700/80 p-3 sm:p-4 shadow-xl">
+        <div className="card rounded-2xl border border-slate-700/80 p-3 sm:p-4 shadow-xl overflow-hidden">
 
-          {/* Row 1: actions + quiz title */}
-          <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+          {/* Row 1: actions + quiz title (desktop center) */}
+          <div className="flex items-center justify-between gap-2 mb-2.5 sm:mb-4 w-full">
 
             {/* Left: back to home */}
             <button
@@ -203,10 +203,10 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
               <span className="hidden sm:inline">Início</span>
             </button>
 
-            {/* Centre: quiz name */}
-            <div className="flex-1 text-center px-1.5 min-w-0">
+            {/* Centre: quiz name (Desktop only) */}
+            <div className="hidden sm:block flex-1 text-center px-2 min-w-0">
               <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-0.5">Módulo</p>
-              <h2 className="text-xs sm:text-sm md:text-base font-extrabold text-white truncate">
+              <h2 className="text-sm md:text-base font-extrabold text-white truncate">
                 {quizTitles[quizId] ?? quizId.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
               </h2>
             </div>
@@ -234,35 +234,43 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
             </div>
           </div>
 
+          {/* Mobile Quiz Title Row (Mobile only) */}
+          <div className="block sm:hidden text-center mb-3 px-1">
+            <p className="text-[9px] font-bold uppercase tracking-widest text-slate-500 mb-0.5">Módulo</p>
+            <h2 className="text-xs font-extrabold text-white leading-snug break-words">
+              {quizTitles[quizId] ?? quizId.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+            </h2>
+          </div>
+
           {/* Row 2: stat chips */}
-          <div className="grid grid-cols-4 gap-1.5 sm:flex sm:flex-wrap sm:justify-start items-center sm:gap-2 mb-3">
+          <div className="grid grid-cols-4 gap-1 sm:gap-2 sm:flex sm:flex-wrap sm:justify-start items-center mb-3">
             {/* Question counter */}
-            <div className="flex items-center justify-center sm:justify-start gap-1 bg-slate-900/80 rounded-xl px-2 py-1.5 sm:px-3 sm:py-2 border border-slate-800 text-center">
-              <span className="text-[10px] sm:text-xs text-slate-400 font-semibold hidden xs:inline">Q.</span>
-              <span className="font-black text-white text-xs sm:text-sm tabular-nums">{currentIndex + 1}</span>
-              <span className="text-slate-600">/</span>
-              <span className="text-slate-400 text-xs sm:text-sm tabular-nums">{shuffledQuestions.length}</span>
+            <div className="flex items-center justify-center sm:justify-start gap-0.5 sm:gap-1 bg-slate-900/80 rounded-xl px-1.5 py-1.5 sm:px-3 sm:py-2 border border-slate-800 text-center overflow-hidden">
+              <span className="text-[9px] sm:text-xs text-slate-400 font-semibold hidden xs:inline">Q.</span>
+              <span className="font-black text-white text-[11px] sm:text-sm tabular-nums">{currentIndex + 1}</span>
+              <span className="text-slate-600 text-[10px]">/</span>
+              <span className="text-slate-400 text-[11px] sm:text-sm tabular-nums">{shuffledQuestions.length}</span>
             </div>
 
             {/* Correct chip */}
-            <div className="flex items-center justify-center sm:justify-start gap-1 bg-emerald-500/10 border border-emerald-500/25 rounded-xl px-2 py-1.5 sm:px-3 sm:py-2">
-              <Check size={12} className="text-emerald-400 shrink-0" />
-              <span className="text-emerald-300 text-xs sm:text-sm font-black tabular-nums">{correct}</span>
-              <span className="text-emerald-600 text-[10px] sm:text-xs hidden sm:inline">certas</span>
+            <div className="flex items-center justify-center sm:justify-start gap-1 bg-emerald-500/10 border border-emerald-500/25 rounded-xl px-1.5 py-1.5 sm:px-3 sm:py-2 overflow-hidden">
+              <Check size={11} className="text-emerald-400 shrink-0 hidden xs:block" />
+              <span className="text-emerald-300 text-[11px] sm:text-sm font-black tabular-nums">{correct}</span>
+              <span className="text-emerald-600 text-[9px] sm:text-xs hidden sm:inline">certas</span>
             </div>
 
             {/* Wrong chip */}
-            <div className="flex items-center justify-center sm:justify-start gap-1 bg-rose-500/10 border border-rose-500/25 rounded-xl px-2 py-1.5 sm:px-3 sm:py-2">
-              <X size={12} className="text-rose-400 shrink-0" />
-              <span className="text-rose-300 text-xs sm:text-sm font-black tabular-nums">
+            <div className="flex items-center justify-center sm:justify-start gap-1 bg-rose-500/10 border border-rose-500/25 rounded-xl px-1.5 py-1.5 sm:px-3 sm:py-2 overflow-hidden">
+              <X size={11} className="text-rose-400 shrink-0 hidden xs:block" />
+              <span className="text-rose-300 text-[11px] sm:text-sm font-black tabular-nums">
                 {answers.filter(Boolean).filter(a => !a.isCorrect).length}
               </span>
-              <span className="text-rose-600 text-[10px] sm:text-xs hidden sm:inline">erradas</span>
+              <span className="text-rose-600 text-[9px] sm:text-xs hidden sm:inline">erradas</span>
             </div>
 
             {/* Percentage chip */}
-            <div className="flex items-center justify-center sm:justify-start gap-1 bg-cyan-500/10 border border-cyan-500/25 rounded-xl px-2 py-1.5 sm:px-3 sm:py-2">
-              <span className="text-cyan-300 text-xs sm:text-sm font-black tabular-nums">{Math.round(progress)}%</span>
+            <div className="flex items-center justify-center sm:justify-start gap-1 bg-cyan-500/10 border border-cyan-500/25 rounded-xl px-1.5 py-1.5 sm:px-3 sm:py-2 overflow-hidden">
+              <span className="text-cyan-300 text-[11px] sm:text-sm font-black tabular-nums">{Math.round(progress)}%</span>
             </div>
           </div>
 
