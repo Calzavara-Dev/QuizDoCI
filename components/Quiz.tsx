@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X, ArrowRight } from "lucide-react";
+import { Check, X, ArrowRight, RotateCcw } from "lucide-react";
 import { getShuffledQuestions } from "../data/questions";
 import type { ResultData } from "../App";
 import type { Question } from "../types/question";
@@ -69,6 +69,7 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   const [correct, setCorrect] = useState(savedProgress?.correct ?? 0);
   const [answers, setAnswers] = useState<ResultData["answers"]>(savedProgress?.answers ?? []);
   const [showConfirm, setShowConfirm] = useState(false);
+  const [showRestartConfirm, setShowRestartConfirm] = useState(false);
 
   const currentQuestion = shuffledQuestions[currentIndex];
   const progress = shuffledQuestions.length ? ((currentIndex + 1) / shuffledQuestions.length) * 100 : 0;
@@ -169,30 +170,70 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
     onBackToStart && onBackToStart();
   };
 
+  const handleRestartQuiz = () => {
+    clearProgress();
+    const fresh = getShuffledQuestions(quizId);
+    setCurrentIndex(0);
+    setCorrect(0);
+    setAnswers([]);
+    setSelectedAnswer(null);
+    setShowResult(false);
+    setShowRestartConfirm(false);
+    // Force the question list to update by mutating via ref trick isn't needed:
+    // shuffledQuestions is a useState initialised once, so we replace its contents in-place
+    shuffledQuestions.splice(0, shuffledQuestions.length, ...fresh);
+  };
+
   return (
     <div className="min-h-screen flex flex-col p-4 md:p-6">
-      <div className="max-w-md w-full mx-auto mb-6 flex justify-between items-center gap-3">
+      <div className="max-w-3xl w-full mx-auto mb-4 flex justify-between items-center gap-3">
+        {/* Left: back button */}
         <button
           onClick={() => setShowConfirm(true)}
-          className="text-slate-300 hover:text-white text-sm"
+          className="text-slate-400 hover:text-white text-sm flex items-center gap-1.5 transition-colors"
         >
-          Voltar ao Início
+          ← Início
         </button>
-        {currentIndex > 0 && (
+
+        {/* Centre: restart current quiz */}
+        <button
+          onClick={() => setShowRestartConfirm(true)}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-cyan-500/50 text-xs font-semibold transition-all"
+          title="Reiniciar este quiz do zero"
+        >
+          <RotateCcw size={14} />
+          Reiniciar Quiz
+        </button>
+
+        {/* Right: previous question */}
+        {currentIndex > 0 ? (
           <button
             onClick={handlePrevious}
-            className="text-slate-300 hover:text-white text-sm"
+            className="text-slate-400 hover:text-white text-sm transition-colors"
           >
-            ← Questão Anterior
+            ← Anterior
           </button>
+        ) : (
+          <span className="w-16" />
         )}
       </div>
+
+      {/* Exit confirmation */}
       <ConfirmModal
         open={showConfirm}
         title="Voltar ao Início"
         message="Tem certeza que deseja voltar ao início? Seu progresso atual será salvo e você poderá retomar depois."
         onConfirm={handleExitQuiz}
         onCancel={() => setShowConfirm(false)}
+      />
+
+      {/* Restart confirmation */}
+      <ConfirmModal
+        open={showRestartConfirm}
+        title="Reiniciar Quiz"
+        message="Tem certeza que deseja reiniciar este quiz do zero? Seu progresso atual será perdido e as questões serão embaralhadas novamente."
+        onConfirm={handleRestartQuiz}
+        onCancel={() => setShowRestartConfirm(false)}
       />
       <div className="max-w-3xl w-full mx-auto mb-6">
         <div className="flex justify-between items-center mb-3">
