@@ -100,7 +100,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.15, type: "spring" }}
-        className="w-full max-w-md card rounded-3xl p-6"
+        className="w-full max-w-md card rounded-3xl p-4 sm:p-6"
       >
         <div className="mb-6 flex justify-center">
           <div className="h-24 w-24 overflow-hidden rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-400/10 p-2">
@@ -188,12 +188,12 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
                 </option>
               ))}
             </select>
-            <div className="flex gap-3 justify-center mt-3">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mt-3">
               <a
                 href={selectedApostilaData.url}
                 target="_blank"
                 rel="noreferrer"
-                className="px-4 py-2 rounded-lg ghost-btn"
+                className="px-4 py-2 rounded-lg ghost-btn w-full sm:w-auto text-center"
                 aria-label="Abrir apostila em nova aba"
               >
                 Abrir apostila
@@ -201,7 +201,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
               <a
                 href={selectedApostilaData.url}
                 download
-                className="px-4 py-2 rounded-lg primary-btn"
+                className="px-4 py-2 rounded-lg primary-btn w-full sm:w-auto text-center"
                 aria-label="Baixar apostila"
               >
                 Baixar PDF

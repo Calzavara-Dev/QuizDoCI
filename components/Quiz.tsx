@@ -235,37 +235,37 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
           </div>
 
           {/* Row 2: stat chips */}
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2 mb-4">
             {/* Question counter */}
-            <div className="flex items-center gap-2 bg-slate-900/70 rounded-xl px-3 py-2 border border-slate-800">
-              <span className="text-xs text-slate-400 font-semibold">Questão</span>
-              <span className="font-black text-white text-sm tabular-nums">{currentIndex + 1}</span>
+            <div className="flex items-center gap-1.5 bg-slate-900/70 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2 border border-slate-800">
+              <span className="text-[10px] sm:text-xs text-slate-400 font-semibold">Questão</span>
+              <span className="font-black text-white text-xs sm:text-sm tabular-nums">{currentIndex + 1}</span>
               <span className="text-slate-600">/</span>
-              <span className="text-slate-400 text-sm tabular-nums">{shuffledQuestions.length}</span>
+              <span className="text-slate-400 text-xs sm:text-sm tabular-nums">{shuffledQuestions.length}</span>
             </div>
 
             {/* Spacer */}
-            <div className="flex-1" />
+            <div className="flex-1 hidden sm:block" />
 
             {/* Correct chip */}
-            <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/25 rounded-xl px-3 py-2">
-              <Check size={13} className="text-emerald-400 shrink-0" />
-              <span className="text-emerald-300 text-sm font-black tabular-nums">{correct}</span>
-              <span className="text-emerald-600 text-xs hidden sm:inline">certas</span>
+            <div className="flex items-center gap-1 sm:gap-1.5 bg-emerald-500/10 border border-emerald-500/25 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2">
+              <Check size={12} className="text-emerald-400 shrink-0" />
+              <span className="text-emerald-300 text-xs sm:text-sm font-black tabular-nums">{correct}</span>
+              <span className="text-emerald-600 text-[10px] sm:text-xs hidden xs:inline">certas</span>
             </div>
 
             {/* Wrong chip */}
-            <div className="flex items-center gap-1.5 bg-rose-500/10 border border-rose-500/25 rounded-xl px-3 py-2">
-              <X size={13} className="text-rose-400 shrink-0" />
-              <span className="text-rose-300 text-sm font-black tabular-nums">
+            <div className="flex items-center gap-1 sm:gap-1.5 bg-rose-500/10 border border-rose-500/25 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2">
+              <X size={12} className="text-rose-400 shrink-0" />
+              <span className="text-rose-300 text-xs sm:text-sm font-black tabular-nums">
                 {answers.filter(Boolean).filter(a => !a.isCorrect).length}
               </span>
-              <span className="text-rose-600 text-xs hidden sm:inline">erradas</span>
+              <span className="text-rose-600 text-[10px] sm:text-xs hidden xs:inline">erradas</span>
             </div>
 
             {/* Percentage chip */}
-            <div className="flex items-center gap-1.5 bg-cyan-500/10 border border-cyan-500/25 rounded-xl px-3 py-2">
-              <span className="text-cyan-300 text-sm font-black tabular-nums">{Math.round(progress)}%</span>
+            <div className="flex items-center gap-1 sm:gap-1.5 bg-cyan-500/10 border border-cyan-500/25 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2">
+              <span className="text-cyan-300 text-xs sm:text-sm font-black tabular-nums">{Math.round(progress)}%</span>
             </div>
           </div>
 

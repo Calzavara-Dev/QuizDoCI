@@ -125,7 +125,7 @@ export function Results({ data, rankings, onRestart, onRestartSameQuiz, onBackTo
         </div>
 
         {/* 3-Column Highlights Grid */}
-        <div className="grid grid-cols-3 gap-3 md:gap-4 mb-6 relative z-10">
+        <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 mb-6 relative z-10">
           <div className="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-emerald-500/20 text-center shadow-lg hover:border-emerald-500/40 transition-colors">
             <CheckCircle2 className="text-emerald-400 mx-auto mb-2 shrink-0" size={28} />
             <p className="text-2xl md:text-3xl font-black text-white">{data.correct}</p>
@@ -189,7 +189,7 @@ export function Results({ data, rankings, onRestart, onRestartSameQuiz, onBackTo
             </div>
 
             {/* Filter Buttons */}
-            <div className="inline-flex bg-slate-900 p-1 rounded-xl border border-slate-800 self-start sm:self-center">
+            <div className="flex flex-wrap gap-1 bg-slate-900 p-1 rounded-xl border border-slate-800 self-start sm:self-center">
               <button
                 onClick={() => setFilterType('all')}
                 className={`px-3 py-1 rounded-lg text-xs font-bold transition-all ${

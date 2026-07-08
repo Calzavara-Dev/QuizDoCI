@@ -121,9 +121,9 @@ export default function App() {
         
       </AnimatePresence>
       <footer className="w-full mt-auto p-4 text-center text-slate-400 text-xs">
-        <div className="max-w-5xl mx-auto flex items-center justify-center gap-2 muted">
+        <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 muted">
           <span>© 3SG-CI CALZAVARA</span>
-          <span className="text-slate-600">•</span>
+          <span className="text-slate-600 hidden sm:inline">•</span>
           <span>Todos os direitos reservados.</span>
         </div>
       </footer>
