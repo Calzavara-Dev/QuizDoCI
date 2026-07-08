@@ -14,6 +14,7 @@ interface ResultsProps {
   data: ResultData;
   rankings: Rankings;
   onRestart: () => void;
+  onRestartSameQuiz: () => void;
   onBackToStart?: () => void;
 }
 
@@ -25,7 +26,7 @@ const getRankBadgeStyle = (percentage: number) => {
   return { name: "Iniciante", color: "text-rose-300 bg-rose-500/10 border-rose-500/30", icon: "🌱", glow: "", gradient: "from-rose-500/20 via-red-600/10 to-transparent" };
 };
 
-export function Results({ data, rankings, onRestart, onBackToStart }: ResultsProps) {
+export function Results({ data, rankings, onRestart, onRestartSameQuiz, onBackToStart }: ResultsProps) {
   const [showConfirm, setShowConfirm] = useState(false);
   const [copied, setCopied] = useState(false);
   const [filterType, setFilterType] = useState<'all' | 'correct' | 'incorrect'>('all');
@@ -274,13 +275,14 @@ export function Results({ data, rankings, onRestart, onBackToStart }: ResultsPro
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            onClick={onRestart}
+            onClick={onRestartSameQuiz}
             className="w-full primary-btn font-bold py-3.5 rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20"
+            title={`Reiniciar este quiz com as questões embaralhadas novamente`}
           >
             <RotateCcw size={18} />
-            <span>Jogar Novamente</span>
+            <span>Tentar Novamente</span>
           </motion.button>
-          
+
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -300,6 +302,16 @@ export function Results({ data, rankings, onRestart, onBackToStart }: ResultsPro
             <Home size={18} />
             <span>Início</span>
           </motion.button>
+        </div>
+
+        {/* Secondary: swap quiz link */}
+        <div className="mt-3 text-center relative z-10">
+          <button
+            onClick={onRestart}
+            className="text-xs text-slate-500 hover:text-cyan-400 transition-colors underline underline-offset-2"
+          >
+            Escolher outro quiz
+          </button>
         </div>
 
         <ConfirmModal

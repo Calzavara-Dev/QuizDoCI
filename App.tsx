@@ -29,6 +29,7 @@ export default function App() {
   const [selectedQuiz, setSelectedQuiz] = useState<string>("telefonia");
   const [rankings, setRankings] = useState<Rankings>(() => loadRankings());
   const [playerName, setPlayerName] = useState<string>("");
+  const [quizKey, setQuizKey] = useState<number>(0);
 
   const handleStart = (quizId?: string, name?: string) => {
     if (quizId) setSelectedQuiz(quizId);
@@ -77,6 +78,12 @@ export default function App() {
     setGameState("start");
   };
 
+  const handleRestartSameQuiz = () => {
+    setResultData(null);
+    setQuizKey((k) => k + 1);
+    setGameState("quiz");
+  };
+
   const handleBackToStart = () => {
     setResultData(null);
     setGameState("start");
@@ -99,7 +106,7 @@ export default function App() {
           <Ranking key="ranking" rankings={rankings} selectedQuiz={selectedQuiz} onBack={() => setGameState("start")} />
         )}
         {gameState === "quiz" && (
-          <Quiz key={selectedQuiz} quizId={selectedQuiz} onFinish={handleFinish} onBackToStart={handleBackToStart} />
+          <Quiz key={`${selectedQuiz}-${quizKey}`} quizId={selectedQuiz} onFinish={handleFinish} onBackToStart={handleBackToStart} />
         )}
         {gameState === "results" && resultData && (
           <Results
@@ -107,6 +114,7 @@ export default function App() {
             data={resultData}
             rankings={rankings}
             onRestart={handleRestart}
+            onRestartSameQuiz={handleRestartSameQuiz}
             onBackToStart={handleBackToStart}
           />
         )}
