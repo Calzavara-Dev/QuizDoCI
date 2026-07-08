@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, X, ArrowRight } from "lucide-react";
 import { getShuffledQuestions } from "../data/questions";
@@ -48,7 +48,7 @@ interface QuizProps {
 }
 
 export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProps) {
-  const savedProgress = loadSavedProgress(quizId);
+  const savedProgress = useMemo(() => loadSavedProgress(quizId), [quizId]);
   const [shuffledQuestions] = useState<Question[]>(() => {
     const questions = savedProgress?.shuffledQuestions ?? getShuffledQuestions(quizId);
     return Array.isArray(questions) ? questions : [];
@@ -94,13 +94,16 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   }, [showResult]);
 
   useEffect(() => {
-    saveProgress({
-      quizId,
-      currentIndex,
-      correct,
-      answers,
-      shuffledQuestions,
-    });
+    const timer = setTimeout(() => {
+      saveProgress({
+        quizId,
+        currentIndex,
+        correct,
+        answers,
+        shuffledQuestions,
+      });
+    }, 300);
+    return () => clearTimeout(timer);
   }, [quizId, currentIndex, correct, answers, shuffledQuestions]);
 
   useEffect(() => {
