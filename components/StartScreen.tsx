@@ -102,8 +102,8 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         transition={{ delay: 0.15, type: "spring" }}
         className="w-full max-w-md card rounded-3xl p-4 sm:p-6"
       >
-        <div className="mb-6 flex justify-center">
-          <div className="h-24 w-24 overflow-hidden rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-400/10 p-2">
+        <div className="mb-4 sm:mb-6 flex justify-center">
+          <div className="h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-400/10 p-1.5 sm:p-2">
             <img
               src={sgciLogo}
               alt="SGCI"
@@ -112,20 +112,20 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
           </div>
         </div>
 
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-3 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-2 sm:mb-3 text-center tracking-tight">
           QUIZ DO <span className="text-cyan-400">CI</span>
         </h1>
 
-        <p className="text-slate-300 text-sm mb-6 text-center">
+        <p className="text-slate-300 text-xs sm:text-sm mb-5 text-center">
           Teste seus conhecimentos.
         </p>
 
-        <div className="mb-6 flex flex-col sm:flex-row justify-center gap-3">
-          <button onClick={() => (onOpenRanking ? onOpenRanking() : undefined)} className="ghost-btn px-4 py-2 rounded-lg">
+        <div className="mb-5 grid grid-cols-2 gap-2.5 max-w-xs mx-auto">
+          <button onClick={() => (onOpenRanking ? onOpenRanking() : undefined)} className="ghost-btn px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold">
             Ver Ranking
           </button>
           {onOpenAdmin && (
-            <button onClick={onOpenAdmin} className="ghost-btn px-3 py-2 rounded-lg text-sm opacity-80 hover:opacity-100 flex items-center justify-center gap-1.5" title="Modo Administração e Edição">
+            <button onClick={onOpenAdmin} className="ghost-btn px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold opacity-90 hover:opacity-100 flex items-center justify-center gap-1.5" title="Modo Administração e Edição">
               ⚙️ Admin
             </button>
           )}
@@ -134,53 +134,53 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         {/* Ranking moved to separate screen */}
 
         {savedProgress && (
-          <div className="mb-4 rounded-2xl border border-cyan-500/30 bg-slate-900/80 p-4 text-slate-200">
-            <p className="text-sm font-semibold text-cyan-300">Progresso salvo encontrado</p>
-            <p className="text-sm mt-1">
+          <div className="mb-4 rounded-2xl border border-cyan-500/30 bg-slate-900/80 p-3.5 sm:p-4 text-slate-200">
+            <p className="text-xs sm:text-sm font-semibold text-cyan-300">Progresso salvo encontrado</p>
+            <p className="text-xs sm:text-sm mt-1">
               Continue o quiz <span className="font-semibold">{savedProgress.quizId.replace(/[-_]/g, " ")}</span> na questão <span className="font-semibold">{savedProgress.currentIndex + 1}</span>.
             </p>
             <button
               onClick={() => onStart(savedProgress.quizId, playerName)}
               disabled={!hasName}
-              className={`mt-3 w-full rounded-xl py-3 text-sm font-bold transition ${hasName ? "primary-btn" : "bg-slate-600 text-slate-300 cursor-not-allowed"}`}
+              className={`mt-3 w-full rounded-xl py-3 text-xs sm:text-sm font-bold transition ${hasName ? "primary-btn" : "bg-slate-600 text-slate-300 cursor-not-allowed"}`}
             >
               Continuar onde parou
             </button>
             {!hasName && (
-              <p className="text-xs text-rose-400 mt-2">Digite seu nome para continuar e aparecer no ranking.</p>
+              <p className="text-[11px] text-rose-400 mt-2">Digite seu nome para continuar e aparecer no ranking.</p>
             )}
           </div>
         )}
 
         <div className="mb-4">
-          <label className="block text-sm text-slate-300 mb-2">Seu nome (aparecerá no ranking)</label>
+          <label className="block text-xs sm:text-sm text-slate-300 mb-1.5">Seu nome (aparecerá no ranking)</label>
           <input
             value={playerName}
             onChange={(e) => setPlayerName(e.target.value)}
             placeholder="Digite seu nome"
-            className="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-white outline-none focus:border-cyan-400"
+            className="w-full rounded-xl border border-slate-700 bg-slate-900/80 px-3.5 py-2.5 text-xs sm:text-sm text-white outline-none focus:border-cyan-400"
           />
         </div>
 
         <div className="mb-4">
-          <div className="rounded-xl p-4 card text-center max-w-xs mx-auto">
-            <p className="text-3xl font-bold text-cyan-400">{totalQuestions}</p>
-            <p className="text-slate-300 text-sm">Total de Questões</p>
+          <div className="rounded-xl p-3.5 sm:p-4 card text-center max-w-xs mx-auto">
+            <p className="text-2xl sm:text-3xl font-bold text-cyan-400">{totalQuestions}</p>
+            <p className="text-slate-300 text-xs sm:text-sm">Total de Questões</p>
           </div>
         </div>
 
         <div className="mb-6">
-          <div className="rounded-xl p-4 card text-center max-w-md mx-auto">
-            <p className="text-lg font-semibold text-white mb-2">Apostila para estudo</p>
-            <p className="text-slate-300 text-sm mb-3">Escolha a apostila e abra ou baixe o PDF desejado.</p>
-            <label htmlFor="apostila-select" className="block text-left text-sm text-slate-300 mb-2">
+          <div className="rounded-2xl p-3.5 sm:p-4 bg-slate-900/60 border border-slate-800 text-center max-w-md mx-auto">
+            <p className="text-base sm:text-lg font-semibold text-white mb-1">Apostila para estudo</p>
+            <p className="text-slate-300 text-xs sm:text-sm mb-3">Escolha a apostila e abra ou baixe o PDF desejado.</p>
+            <label htmlFor="apostila-select" className="block text-left text-xs sm:text-sm text-slate-300 mb-1.5">
               Selecione a apostila
             </label>
             <select
               id="apostila-select"
               value={selectedApostila}
               onChange={(event) => setSelectedApostila(event.target.value)}
-              className="w-full rounded-lg border border-slate-700 bg-slate-900/80 px-3 py-2 text-sm text-white outline-none focus:border-cyan-400"
+              className="w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2 text-xs sm:text-sm text-white outline-none focus:border-cyan-400"
             >
               {apostilas.map((apostila) => (
                 <option key={apostila.id} value={apostila.id}>
@@ -188,12 +188,12 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
                 </option>
               ))}
             </select>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mt-3">
+            <div className="grid grid-cols-2 gap-2 mt-3">
               <a
                 href={selectedApostilaData.url}
                 target="_blank"
                 rel="noreferrer"
-                className="px-4 py-2 rounded-lg ghost-btn w-full sm:w-auto text-center"
+                className="px-3 py-2.5 rounded-xl ghost-btn text-xs sm:text-sm text-center flex items-center justify-center font-semibold"
                 aria-label="Abrir apostila em nova aba"
               >
                 Abrir apostila
@@ -201,7 +201,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
               <a
                 href={selectedApostilaData.url}
                 download
-                className="px-4 py-2 rounded-lg primary-btn w-full sm:w-auto text-center"
+                className="px-3 py-2.5 rounded-xl primary-btn text-xs sm:text-sm text-center flex items-center justify-center font-semibold"
                 aria-label="Baixar apostila"
               >
                 Baixar PDF

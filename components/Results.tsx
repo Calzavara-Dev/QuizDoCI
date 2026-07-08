@@ -87,61 +87,61 @@ export function Results({ data, rankings, onRestart, onRestartSameQuiz, onBackTo
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen flex flex-col items-center justify-start p-4 md:p-6 bg-app"
+      className="min-h-screen flex flex-col items-center justify-start p-3 sm:p-4 md:p-6 bg-app"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0, y: 15 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         transition={{ delay: 0.1, type: "spring", stiffness: 100 }}
-        className="w-full max-w-3xl card rounded-3xl p-6 md:p-8 mt-2 md:mt-4 shadow-2xl border border-slate-700/80 relative overflow-hidden"
+        className="w-full max-w-3xl card rounded-3xl p-4 sm:p-6 md:p-8 mt-2 md:mt-4 shadow-2xl border border-slate-700/80 relative overflow-hidden"
       >
         {/* Background Atmosphere Glow */}
         <div className={`absolute -top-24 -left-24 w-96 h-96 rounded-full bg-gradient-to-br ${badge.gradient} blur-3xl pointer-events-none opacity-60`} />
         
         {/* Header Section */}
-        <div className="text-center mb-8 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/80 border border-slate-700/80 text-xs font-bold text-slate-300 mb-6 shadow-sm">
-            <BookOpen size={14} className="text-cyan-400" />
-            <span>Módulo: <strong className="text-white">{quizName}</strong></span>
+        <div className="text-center mb-6 sm:mb-8 relative z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/80 border border-slate-700/80 text-xs font-bold text-slate-300 mb-4 sm:mb-6 shadow-sm">
+            <BookOpen size={14} className="text-cyan-400 shrink-0" />
+            <span className="truncate max-w-[220px] sm:max-w-none">Módulo: <strong className="text-white">{quizName}</strong></span>
           </div>
 
-          <div className="mb-6 flex justify-center">
+          <div className="mb-4 sm:mb-6 flex justify-center">
             <motion.div 
               initial={{ scale: 0.5, rotate: -15 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ type: "spring", delay: 0.2 }}
-              className={`p-6 rounded-3xl border ${badge.color} ${badge.glow} bg-slate-900/90 shadow-2xl relative`}
+              className={`p-4 sm:p-6 rounded-3xl border ${badge.color} ${badge.glow} bg-slate-900/90 shadow-2xl relative`}
             >
-              <span className="text-6xl md:text-7xl block select-none">{badge.icon}</span>
+              <span className="text-5xl sm:text-6xl md:text-7xl block select-none">{badge.icon}</span>
             </motion.div>
           </div>
 
-          <span className={`inline-block px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest border mb-3 ${badge.color}`}>
+          <span className={`inline-block px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest border mb-2.5 ${badge.color}`}>
             Nível {badge.name}
           </span>
-          <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-2 tracking-tight">Resultado Final</h1>
-          <p className={`text-xl md:text-2xl font-black ${gradeColor}`}>{grade}</p>
-          <p className="text-slate-300 text-sm md:text-base mt-2 max-w-lg mx-auto leading-relaxed">{message}</p>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-2 tracking-tight">Resultado Final</h1>
+          <p className={`text-lg sm:text-xl md:text-2xl font-black ${gradeColor}`}>{grade}</p>
+          <p className="text-slate-300 text-xs sm:text-sm md:text-base mt-2 max-w-lg mx-auto leading-relaxed">{message}</p>
         </div>
 
         {/* 3-Column Highlights Grid */}
         <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-4 mb-6 relative z-10">
-          <div className="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-emerald-500/20 text-center shadow-lg hover:border-emerald-500/40 transition-colors">
-            <CheckCircle2 className="text-emerald-400 mx-auto mb-2 shrink-0" size={28} />
-            <p className="text-2xl md:text-3xl font-black text-white">{data.correct}</p>
-            <p className="text-slate-400 text-xs md:text-sm font-semibold mt-0.5">Acertos</p>
+          <div className="bg-slate-900/80 rounded-2xl p-3 sm:p-4 md:p-5 border border-emerald-500/20 text-center shadow-lg hover:border-emerald-500/40 transition-colors">
+            <CheckCircle2 className="text-emerald-400 mx-auto mb-1 sm:mb-2 shrink-0" size={24} />
+            <p className="text-xl sm:text-2xl md:text-3xl font-black text-white">{data.correct}</p>
+            <p className="text-slate-400 text-[11px] sm:text-xs md:text-sm font-semibold mt-0.5">Acertos</p>
           </div>
           
-          <div className="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-rose-500/20 text-center shadow-lg hover:border-rose-500/40 transition-colors">
-            <XCircle className="text-rose-400 mx-auto mb-2 shrink-0" size={28} />
-            <p className="text-2xl md:text-3xl font-black text-white">{data.total - data.correct}</p>
-            <p className="text-slate-400 text-xs md:text-sm font-semibold mt-0.5">Erros</p>
+          <div className="bg-slate-900/80 rounded-2xl p-3 sm:p-4 md:p-5 border border-rose-500/20 text-center shadow-lg hover:border-rose-500/40 transition-colors">
+            <XCircle className="text-rose-400 mx-auto mb-1 sm:mb-2 shrink-0" size={24} />
+            <p className="text-xl sm:text-2xl md:text-3xl font-black text-white">{data.total - data.correct}</p>
+            <p className="text-slate-400 text-[11px] sm:text-xs md:text-sm font-semibold mt-0.5">Erros</p>
           </div>
           
-          <div className="bg-slate-900/80 rounded-2xl p-4 md:p-5 border border-cyan-500/20 text-center shadow-lg hover:border-cyan-500/40 transition-colors">
-            <Target className="text-cyan-400 mx-auto mb-2 shrink-0" size={28} />
-            <p className="text-2xl md:text-3xl font-black text-white">{percentage}%</p>
-            <p className="text-slate-400 text-xs md:text-sm font-semibold mt-0.5">Aproveitamento</p>
+          <div className="bg-slate-900/80 rounded-2xl p-3 sm:p-4 md:p-5 border border-cyan-500/20 text-center shadow-lg hover:border-cyan-500/40 transition-colors">
+            <Target className="text-cyan-400 mx-auto mb-1 sm:mb-2 shrink-0" size={24} />
+            <p className="text-xl sm:text-2xl md:text-3xl font-black text-white">{percentage}%</p>
+            <p className="text-slate-400 text-[11px] sm:text-xs md:text-sm font-semibold mt-0.5">Aproveitamento</p>
           </div>
         </div>
 

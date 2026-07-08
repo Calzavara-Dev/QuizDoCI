@@ -121,48 +121,48 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen flex flex-col items-center justify-start p-4 md:p-6 bg-app"
+      className="min-h-screen flex flex-col items-center justify-start p-3 sm:p-4 md:p-6 bg-app"
     >
       <motion.div
         initial={{ scale: 0.96, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.1, type: "spring", stiffness: 100 }}
-        className="w-full max-w-5xl card rounded-3xl p-4 sm:p-5 md:p-8 mt-2 md:mt-4 shadow-2xl border border-slate-700/80"
+        className="w-full max-w-5xl card rounded-3xl p-3.5 sm:p-5 md:p-8 mt-2 md:mt-4 shadow-2xl border border-slate-700/80"
       >
         {/* Top Navigation Bar */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-800">
-          <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6 pb-4 sm:pb-6 border-b border-slate-800">
+          <div className="flex items-center gap-2.5 sm:gap-3">
             <button 
               onClick={onBack} 
-              className="ghost-btn p-2.5 rounded-xl flex items-center gap-2 hover:bg-slate-800 text-slate-300 hover:text-white transition-all"
+              className="ghost-btn p-2 sm:p-2.5 rounded-xl flex items-center gap-1.5 hover:bg-slate-800 text-slate-300 hover:text-white transition-all shrink-0"
               title="Voltar"
             >
-              <ArrowLeft size={18} />
-              <span className="text-sm font-semibold">Voltar</span>
+              <ArrowLeft size={16} />
+              <span className="text-xs sm:text-sm font-semibold">Voltar</span>
             </button>
-            <div>
-              <h1 className="text-2xl md:text-3xl font-extrabold text-white flex items-center gap-2.5">
-                <Trophy className="text-amber-400 shrink-0" size={28} />
-                <span>Central de Ranking</span>
+            <div className="min-w-0">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white flex items-center gap-2 truncate">
+                <Trophy className="text-amber-400 shrink-0" size={24} />
+                <span className="truncate">Central de Ranking</span>
               </h1>
-              <p className="text-xs md:text-sm text-slate-400">Acompanhe seu progresso individual e compare resultados com toda a turma</p>
+              <p className="text-[11px] sm:text-xs md:text-sm text-slate-400 line-clamp-1">Acompanhe seu progresso individual e compare com toda a turma</p>
             </div>
           </div>
 
           {/* Live Indicator / Auto-refresh Toggle */}
-          <div className="flex items-center gap-3 bg-slate-950/70 border border-slate-800 rounded-2xl p-2 px-3 self-start sm:self-center">
-            <div className="flex items-center gap-2">
-              <span className="relative flex h-2.5 w-2.5">
+          <div className="flex items-center gap-2 sm:gap-3 bg-slate-950/70 border border-slate-800 rounded-2xl p-1.5 px-3 self-start sm:self-center">
+            <div className="flex items-center gap-1.5">
+              <span className="relative flex h-2 w-2">
                 {autoRefresh && <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />}
-                <span className={`relative inline-flex rounded-full h-2.5 w-2.5 ${autoRefresh ? 'bg-emerald-500' : 'bg-slate-600'}`} />
+                <span className={`relative inline-flex rounded-full h-2 w-2 ${autoRefresh ? 'bg-emerald-500' : 'bg-slate-600'}`} />
               </span>
-              <span className="text-xs font-semibold text-slate-300">Ao vivo</span>
+              <span className="text-[11px] sm:text-xs font-semibold text-slate-300">Ao vivo</span>
             </div>
-            <div className="h-4 w-[1px] bg-slate-800" />
+            <div className="h-3.5 w-[1px] bg-slate-800" />
             <select
               value={intervalSeconds}
               onChange={(e) => setIntervalSeconds(Number(e.target.value))}
-              className="bg-transparent border-0 text-xs font-semibold text-cyan-400 cursor-pointer focus:outline-none py-0.5 pr-6"
+              className="bg-transparent border-0 text-[11px] sm:text-xs font-semibold text-cyan-400 cursor-pointer focus:outline-none py-0.5 pr-5"
               title="Tempo para atualização automática"
             >
               <option value={15}>15s</option>
@@ -175,83 +175,83 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
               className="p-1 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white transition-colors disabled:opacity-50"
               title="Atualizar agora"
             >
-              <RefreshCw size={14} className={loadingRemote ? "animate-spin text-cyan-400" : ""} />
+              <RefreshCw size={13} className={loadingRemote ? "animate-spin text-cyan-400" : ""} />
             </button>
           </div>
         </div>
 
         {/* 3-Column Summary Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-6">
           {/* Card 1: Geral */}
-          <div className="relative overflow-hidden rounded-2xl border border-cyan-500/20 bg-gradient-to-br from-slate-900/90 to-slate-950/90 p-5 shadow-lg">
+          <div className="relative overflow-hidden rounded-2xl border border-cyan-500/20 bg-gradient-to-br from-slate-900/90 to-slate-950/90 p-4 sm:p-5 shadow-lg">
             <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="flex items-center justify-between mb-3">
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+            <div className="flex items-center justify-between mb-2 sm:mb-3">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                 <BarChart3 size={14} className="text-cyan-400" /> Média Geral
               </span>
-              <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full border ${overallBadge.color}`}>
+              <span className={`text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded-full border ${overallBadge.color}`}>
                 {overallBadge.icon} {overallBadge.name}
               </span>
             </div>
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-black text-white">{rankings.overall.averagePercentage}%</span>
+              <span className="text-2xl sm:text-3xl font-black text-white">{rankings.overall.averagePercentage}%</span>
               <span className="text-xs text-slate-400">aproveitamento</span>
             </div>
-            <div className="mt-4 pt-3 border-t border-slate-800/80 flex justify-between text-xs text-slate-300">
+            <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex justify-between text-xs text-slate-300">
               <span>Melhor: <strong className="text-emerald-400 font-bold">{rankings.overall.bestPercentage}%</strong></span>
               <span>Tentativas: <strong className="text-white font-bold">{rankings.overall.attempts}</strong></span>
             </div>
           </div>
 
           {/* Card 2: Selected Quiz */}
-          <div className="relative overflow-hidden rounded-2xl border border-amber-500/20 bg-gradient-to-br from-slate-900/90 to-slate-950/90 p-5 shadow-lg">
+          <div className="relative overflow-hidden rounded-2xl border border-amber-500/20 bg-gradient-to-br from-slate-900/90 to-slate-950/90 p-4 sm:p-5 shadow-lg">
             <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
-            <div className="flex items-center justify-between mb-3">
-              <span className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 truncate pr-2">
+            <div className="flex items-center justify-between mb-2 sm:mb-3">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 truncate pr-2">
                 <Target size={14} className="text-amber-400 shrink-0" /> {selectedQuizName}
               </span>
-              <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full border shrink-0 ${selectedQuizBadge.color}`}>
+              <span className={`text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded-full border shrink-0 ${selectedQuizBadge.color}`}>
                 {selectedQuizBadge.icon} {selectedQuizBadge.name}
               </span>
             </div>
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-black text-white">{selectedQuizData.averagePercentage}%</span>
+              <span className="text-2xl sm:text-3xl font-black text-white">{selectedQuizData.averagePercentage}%</span>
               <span className="text-xs text-slate-400">neste quiz</span>
             </div>
-            <div className="mt-4 pt-3 border-t border-slate-800/80 flex justify-between text-xs text-slate-300">
+            <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex justify-between text-xs text-slate-300">
               <span>Melhor: <strong className="text-amber-400 font-bold">{selectedQuizData.bestPercentage}%</strong></span>
               <span>Tentativas: <strong className="text-white font-bold">{selectedQuizData.attempts}</strong></span>
             </div>
           </div>
 
           {/* Card 3: Servidor / Comunidade */}
-          <div className="relative overflow-hidden rounded-2xl border border-purple-500/20 bg-gradient-to-br from-slate-900/90 to-slate-950/90 p-5 shadow-lg flex flex-col justify-between">
+          <div className="relative overflow-hidden rounded-2xl border border-purple-500/20 bg-gradient-to-br from-slate-900/90 to-slate-950/90 p-4 sm:p-5 shadow-lg flex flex-col justify-between">
             <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl pointer-events-none" />
             <div>
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
+              <div className="flex items-center justify-between mb-2 sm:mb-3">
+                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                   <Globe size={14} className="text-purple-400" /> Placar da Turma
                 </span>
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20">
-                  {remote ? `${remote.length} registros` : "Offline"}
+                <span className="text-[11px] sm:text-xs font-semibold px-2 py-0.5 rounded-full bg-purple-500/10 text-purple-300 border border-purple-500/20">
+                  {remote ? `${remote.length} reg.` : "Offline"}
                 </span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
                 Compare sua pontuação com colegas em tempo real no servidor na nuvem.
               </p>
             </div>
-            <div className="mt-4 pt-3 border-t border-slate-800/80 flex justify-between items-center text-xs text-slate-400">
-              <span>Última sincronização:</span>
+            <div className="mt-3 pt-2.5 border-t border-slate-800/80 flex justify-between items-center text-xs text-slate-400">
+              <span>Última sinc.:</span>
               <span className="text-white font-mono">{lastUpdated ? lastUpdated.toLocaleTimeString() : "Buscando..."}</span>
             </div>
           </div>
         </div>
 
         {/* Tab Selection Buttons */}
-        <div className="flex border-b border-slate-800 mb-6 gap-1 sm:gap-2">
+        <div className="flex border-b border-slate-800 mb-5 gap-1 sm:gap-2">
           <button
             onClick={() => setActiveTab('local')}
-            className={`flex-1 flex items-center justify-center gap-1.5 px-3 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-bold rounded-t-2xl transition-all border-b-2 ${
+            className={`flex-1 flex items-center justify-center gap-1.5 px-2.5 sm:px-5 py-2.5 text-xs sm:text-sm font-bold rounded-t-2xl transition-all border-b-2 ${
               activeTab === 'local'
                 ? 'bg-slate-800/90 text-cyan-400 border-cyan-500 shadow-lg'
                 : 'text-slate-400 hover:text-white border-transparent hover:bg-slate-800/40'
@@ -265,7 +265,7 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
           </button>
           <button
             onClick={() => setActiveTab('remote')}
-            className={`flex-1 flex items-center justify-center gap-1.5 px-3 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-bold rounded-t-2xl transition-all border-b-2 ${
+            className={`flex-1 flex items-center justify-center gap-1.5 px-2.5 sm:px-5 py-2.5 text-xs sm:text-sm font-bold rounded-t-2xl transition-all border-b-2 ${
               activeTab === 'remote'
                 ? 'bg-slate-800/90 text-cyan-400 border-cyan-500 shadow-lg'
                 : 'text-slate-400 hover:text-white border-transparent hover:bg-slate-800/40'
@@ -292,8 +292,8 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
               transition={{ duration: 0.2 }}
               className="space-y-4"
             >
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-950/60 p-4 rounded-2xl border border-slate-800">
-                <div className="text-sm text-slate-300">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-950/60 p-3.5 sm:p-4 rounded-2xl border border-slate-800">
+                <div className="text-xs sm:text-sm text-slate-300">
                   Exibindo <span className="font-bold text-white">{paginatedLocalKeys.length}</span> de <span className="font-bold text-white">{quizKeys.length}</span> módulos de Quiz
                 </div>
                 {totalLocalPages > 1 && (
@@ -319,16 +319,16 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
                 )}
               </div>
 
-              <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/50 shadow-inner">
-                <table className="w-full border-collapse text-left text-sm">
+              <div className="-mx-2 sm:mx-0 overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/50 shadow-inner">
+                <table className="w-full border-collapse text-left text-xs sm:text-sm">
                   <thead>
-                    <tr className="bg-slate-900/90 text-slate-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800">
-                      <th className="py-3 px-4">Matéria / Módulo</th>
-                      <th className="py-3 px-4">Nível</th>
-                      <th className="py-3 px-4 text-center">Média</th>
-                      <th className="py-3 px-4 text-center">Melhor</th>
-                      <th className="py-3 px-4 text-center">Última</th>
-                      <th className="py-3 px-4 text-center">Tentativas</th>
+                    <tr className="bg-slate-900/90 text-slate-400 font-bold text-[11px] sm:text-xs uppercase tracking-wider border-b border-slate-800">
+                      <th className="py-3 px-3 sm:px-4">Matéria / Módulo</th>
+                      <th className="py-3 px-3 sm:px-4">Nível</th>
+                      <th className="py-3 px-3 sm:px-4 text-center">Média</th>
+                      <th className="py-3 px-3 sm:px-4 text-center">Melhor</th>
+                      <th className="py-3 px-3 sm:px-4 text-center">Última</th>
+                      <th className="py-3 px-3 sm:px-4 text-center">Tentativas</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-800/80">
@@ -537,16 +537,16 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
                   )}
                 </div>
               ) : (
-                <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/50 shadow-inner">
-                  <table className="w-full border-collapse text-left text-sm">
+                <div className="-mx-2 sm:mx-0 overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/50 shadow-inner">
+                  <table className="w-full border-collapse text-left text-xs sm:text-sm">
                     <thead>
-                      <tr className="bg-slate-900/90 text-slate-400 font-bold text-xs uppercase tracking-wider border-b border-slate-800">
-                        <th className="py-3 px-4 w-16 text-center">Pos</th>
-                        <th className="py-3 px-4">Aluno / Jogador</th>
-                        <th className="py-3 px-4">Módulo de Quiz</th>
-                        <th className="py-3 px-4 text-center">Nota (%)</th>
-                        <th className="py-3 px-4 text-center">Nível</th>
-                        <th className="py-3 px-4 text-right">Data / Hora</th>
+                      <tr className="bg-slate-900/90 text-slate-400 font-bold text-[11px] sm:text-xs uppercase tracking-wider border-b border-slate-800">
+                        <th className="py-3 px-2 sm:px-4 w-12 sm:w-16 text-center">Pos</th>
+                        <th className="py-3 px-2 sm:px-4">Aluno / Jogador</th>
+                        <th className="py-3 px-2 sm:px-4">Módulo de Quiz</th>
+                        <th className="py-3 px-2 sm:px-4 text-center">Nota (%)</th>
+                        <th className="py-3 px-2 sm:px-4 text-center">Nível</th>
+                        <th className="py-3 px-2 sm:px-4 text-right">Data / Hora</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-800/80">

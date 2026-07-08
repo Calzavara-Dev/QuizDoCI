@@ -185,37 +185,37 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   };
 
   return (
-    <div className="min-h-screen flex flex-col p-4 md:p-6 bg-app">
+    <div className="min-h-screen flex flex-col p-3 sm:p-4 md:p-6 bg-app">
 
       {/* ── UNIFIED PREMIUM NAV + PROGRESS HEADER ── */}
-      <div className="w-full max-w-3xl mx-auto mb-6">
-        <div className="card rounded-2xl border border-slate-700/80 p-4 shadow-xl">
+      <div className="w-full max-w-3xl mx-auto mb-4 sm:mb-6">
+        <div className="card rounded-2xl border border-slate-700/80 p-3 sm:p-4 shadow-xl">
 
           {/* Row 1: actions + quiz title */}
-          <div className="flex items-center justify-between gap-2 mb-4">
+          <div className="flex items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
 
             {/* Left: back to home */}
             <button
               onClick={() => setShowConfirm(true)}
-              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-xs font-semibold transition-all shrink-0"
+              className="flex items-center gap-1 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-xs font-semibold transition-all shrink-0"
             >
               <ChevronLeft size={15} />
               <span className="hidden sm:inline">Início</span>
             </button>
 
             {/* Centre: quiz name */}
-            <div className="flex-1 text-center px-2">
-              <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-0.5">Módulo</p>
-              <h2 className="text-sm md:text-base font-extrabold text-white truncate">
+            <div className="flex-1 text-center px-1.5 min-w-0">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-0.5">Módulo</p>
+              <h2 className="text-xs sm:text-sm md:text-base font-extrabold text-white truncate">
                 {quizTitles[quizId] ?? quizId.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
               </h2>
             </div>
 
             {/* Right: restart + previous */}
-            <div className="flex items-center gap-2 shrink-0">
+            <div className="flex items-center gap-1.5 shrink-0">
               <button
                 onClick={() => setShowRestartConfirm(true)}
-                className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-amber-400 hover:border-amber-500/40 text-xs font-semibold transition-all"
+                className="flex items-center gap-1 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-amber-400 hover:border-amber-500/40 text-xs font-semibold transition-all"
                 title="Reiniciar quiz do zero"
               >
                 <RotateCcw size={14} />
@@ -225,7 +225,7 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
               <button
                 onClick={handlePrevious}
                 disabled={currentIndex === 0}
-                className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-xs font-semibold transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                className="flex items-center gap-1 px-2.5 py-1.5 sm:px-3 sm:py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-xs font-semibold transition-all disabled:opacity-30 disabled:cursor-not-allowed"
                 title="Questão anterior"
               >
                 <ChevronLeft size={14} />
@@ -235,42 +235,39 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
           </div>
 
           {/* Row 2: stat chips */}
-          <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2 mb-4">
+          <div className="grid grid-cols-4 gap-1.5 sm:flex sm:flex-wrap sm:justify-start items-center sm:gap-2 mb-3">
             {/* Question counter */}
-            <div className="flex items-center gap-1.5 bg-slate-900/70 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2 border border-slate-800">
-              <span className="text-[10px] sm:text-xs text-slate-400 font-semibold">Questão</span>
+            <div className="flex items-center justify-center sm:justify-start gap-1 bg-slate-900/80 rounded-xl px-2 py-1.5 sm:px-3 sm:py-2 border border-slate-800 text-center">
+              <span className="text-[10px] sm:text-xs text-slate-400 font-semibold hidden xs:inline">Q.</span>
               <span className="font-black text-white text-xs sm:text-sm tabular-nums">{currentIndex + 1}</span>
               <span className="text-slate-600">/</span>
               <span className="text-slate-400 text-xs sm:text-sm tabular-nums">{shuffledQuestions.length}</span>
             </div>
 
-            {/* Spacer */}
-            <div className="flex-1 hidden sm:block" />
-
             {/* Correct chip */}
-            <div className="flex items-center gap-1 sm:gap-1.5 bg-emerald-500/10 border border-emerald-500/25 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2">
+            <div className="flex items-center justify-center sm:justify-start gap-1 bg-emerald-500/10 border border-emerald-500/25 rounded-xl px-2 py-1.5 sm:px-3 sm:py-2">
               <Check size={12} className="text-emerald-400 shrink-0" />
               <span className="text-emerald-300 text-xs sm:text-sm font-black tabular-nums">{correct}</span>
-              <span className="text-emerald-600 text-[10px] sm:text-xs hidden xs:inline">certas</span>
+              <span className="text-emerald-600 text-[10px] sm:text-xs hidden sm:inline">certas</span>
             </div>
 
             {/* Wrong chip */}
-            <div className="flex items-center gap-1 sm:gap-1.5 bg-rose-500/10 border border-rose-500/25 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2">
+            <div className="flex items-center justify-center sm:justify-start gap-1 bg-rose-500/10 border border-rose-500/25 rounded-xl px-2 py-1.5 sm:px-3 sm:py-2">
               <X size={12} className="text-rose-400 shrink-0" />
               <span className="text-rose-300 text-xs sm:text-sm font-black tabular-nums">
                 {answers.filter(Boolean).filter(a => !a.isCorrect).length}
               </span>
-              <span className="text-rose-600 text-[10px] sm:text-xs hidden xs:inline">erradas</span>
+              <span className="text-rose-600 text-[10px] sm:text-xs hidden sm:inline">erradas</span>
             </div>
 
             {/* Percentage chip */}
-            <div className="flex items-center gap-1 sm:gap-1.5 bg-cyan-500/10 border border-cyan-500/25 rounded-xl px-2.5 py-1.5 sm:px-3 sm:py-2">
+            <div className="flex items-center justify-center sm:justify-start gap-1 bg-cyan-500/10 border border-cyan-500/25 rounded-xl px-2 py-1.5 sm:px-3 sm:py-2">
               <span className="text-cyan-300 text-xs sm:text-sm font-black tabular-nums">{Math.round(progress)}%</span>
             </div>
           </div>
 
           {/* Row 3: animated gradient progress bar */}
-          <div className="h-2.5 bg-slate-800/80 rounded-full overflow-hidden border border-slate-700/50">
+          <div className="h-2 sm:h-2.5 bg-slate-800/80 rounded-full overflow-hidden border border-slate-700/50">
             <motion.div
               className="h-full rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500"
               initial={{ width: 0 }}
@@ -305,64 +302,66 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.28 }}
-            className="card rounded-2xl p-5 md:p-6 border border-slate-700 flex-1"
+            className="card rounded-2xl p-4 sm:p-5 md:p-6 border border-slate-700 flex-1 flex flex-col justify-between"
           >
-            <h2 className="text-xl md:text-2xl font-semibold text-white mb-6 leading-relaxed">
-              {currentQuestion.topic && (
-                <div className="text-xs text-slate-400 mb-2">{currentQuestion.topic}</div>
+            <div>
+              <h2 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-4 sm:mb-6 leading-relaxed">
+                {currentQuestion.topic && (
+                  <div className="text-xs text-slate-400 mb-1.5">{currentQuestion.topic}</div>
+                )}
+                {currentQuestion.question}
+              </h2>
+
+              {currentQuestion.image && (
+                <div className="mb-4 sm:mb-6 rounded-2xl border border-slate-700 bg-slate-900/70 p-1 md:p-2 max-w-[380px] mx-auto">
+                  <img
+                    src={currentQuestion.image}
+                    alt={`Figura relacionada à pergunta ${currentIndex + 1}`}
+                    className="w-full h-auto max-h-56 sm:max-h-80 object-contain rounded-xl"
+                  />
+                </div>
               )}
-              {currentQuestion.question}
-            </h2>
 
-            {currentQuestion.image && (
-              <div className="mb-6 rounded-2xl border border-slate-700 bg-slate-900/70 p-1 md:p-2 max-w-[420px] mx-auto">
-                <img
-                  src={currentQuestion.image}
-                  alt={`Figura relacionada à pergunta ${currentIndex + 1}`}
-                  className="w-full h-auto max-h-80 object-contain rounded-xl"
-                />
-              </div>
-            )}
-
-            <div className="space-y-3">
-              {currentQuestion.options.map((option, index) => {
-                const isSelected = selectedAnswer === option;
-                const isCorrectAnswer = currentQuestion.answer === option;
-                
-                let buttonStyle = "bg-slate-700 border-slate-600 hover:border-cyan-500 text-white";
-                
-                if (showResult) {
-                  if (isCorrectAnswer) {
-                    buttonStyle = "bg-emerald-500/20 border-emerald-500 text-emerald-300";
-                  } else if (isSelected && !isCorrectAnswer) {
-                    buttonStyle = "bg-red-500/20 border-red-500 text-red-300";
-                  } else {
-                    buttonStyle = "bg-slate-700/50 border-slate-600 text-slate-500";
+              <div className="space-y-2.5 sm:space-y-3">
+                {currentQuestion.options.map((option, index) => {
+                  const isSelected = selectedAnswer === option;
+                  const isCorrectAnswer = currentQuestion.answer === option;
+                  
+                  let buttonStyle = "bg-slate-700 border-slate-600 hover:border-cyan-500 text-white";
+                  
+                  if (showResult) {
+                    if (isCorrectAnswer) {
+                      buttonStyle = "bg-emerald-500/20 border-emerald-500 text-emerald-300";
+                    } else if (isSelected && !isCorrectAnswer) {
+                      buttonStyle = "bg-red-500/20 border-red-500 text-red-300";
+                    } else {
+                      buttonStyle = "bg-slate-700/50 border-slate-600 text-slate-500";
+                    }
                   }
-                }
 
-                return (
-                  <motion.button
-                    key={option}
-                    onClick={() => handleAnswer(option)}
-                    disabled={showResult}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.08 }}
-                    className={`w-full text-left p-3 rounded-xl border-2 transition-all duration-200 ${buttonStyle}`}
-                  >
-                    <div className="flex items-center justify-between">
-                      <span className="flex-1">{option}</span>
-                      {showResult && isCorrectAnswer && (
-                        <Check className="text-emerald-400 ml-2" size={20} />
-                      )}
-                      {showResult && isSelected && !isCorrectAnswer && (
-                        <X className="text-red-400 ml-2" size={20} />
-                      )}
-                    </div>
-                  </motion.button>
-                );
-              })}
+                  return (
+                    <motion.button
+                      key={option}
+                      onClick={() => handleAnswer(option)}
+                      disabled={showResult}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.08 }}
+                      className={`w-full text-left p-3 sm:p-3.5 rounded-xl border-2 transition-all duration-200 text-xs sm:text-sm md:text-base leading-snug break-words ${buttonStyle}`}
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="flex-1">{option}</span>
+                        {showResult && isCorrectAnswer && (
+                          <Check className="text-emerald-400 shrink-0" size={18} />
+                        )}
+                        {showResult && isSelected && !isCorrectAnswer && (
+                          <X className="text-red-400 shrink-0" size={18} />
+                        )}
+                      </div>
+                    </motion.button>
+                  );
+                })}
+              </div>
             </div>
 
             {showResult && (

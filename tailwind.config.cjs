@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '375px',
+        'xs': '340px',
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
