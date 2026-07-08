@@ -103,11 +103,11 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         className="w-full max-w-md card rounded-3xl p-4 sm:p-6"
       >
         <div className="mb-4 sm:mb-6 flex justify-center">
-          <div className="h-24 w-24 sm:h-28 sm:w-28 flex items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500/15 via-slate-900/60 to-emerald-400/10 border border-cyan-500/30 p-2 sm:p-2.5 shadow-[0_0_25px_rgba(0,229,255,0.15)]">
+          <div className="h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-400/10 p-1.5 sm:p-2">
             <img
               src={sgciLogo}
               alt="SGCI"
-              className="h-full w-full object-contain drop-shadow-[0_4px_10px_rgba(0,229,255,0.25)]"
+              className="h-full w-full rounded-full object-cover"
             />
           </div>
         </div>
