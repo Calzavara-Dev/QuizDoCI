@@ -173,7 +173,7 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
 
   const handleRestartQuiz = () => {
     clearProgress();
-    const fresh = getShuffledQuestions(quizId);
+    const fresh = getDynamicShuffledQuestions(quizId);
     setCurrentIndex(0);
     setCorrect(0);
     setAnswers([]);
