@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { quizzes } from "../data/questions";
 import type { Question } from "../types/question";
-import { Lock, User, Key, Eye, EyeOff, ShieldCheck, AlertCircle, LogOut, ArrowLeft, Plus, Trash2, Edit2, Check, Download, Upload, Search, FileText, ChevronLeft, ChevronRight, Copy, CheckCircle2 } from "lucide-react";
+import { getQuizzesSync } from "../utils/questionLoader";
+import { fetchRemoteQuestions, saveRemoteQuestions } from "../utils/supabase";
+import { Lock, User, Key, Eye, EyeOff, ShieldCheck, AlertCircle, LogOut, ArrowLeft, Plus, Trash2, Edit2, Check, Download, Upload, Search, FileText, ChevronLeft, ChevronRight, Copy, CheckCircle2, Cloud } from "lucide-react";
 
 interface AdminProps {
   onClose: () => void;
@@ -15,8 +17,8 @@ export function Admin({ onClose }: AdminProps) {
   const [showPassword, setShowPassword] = useState<boolean>(false);
 
   // Painel Admin state
-  const [localQuizzes, setLocalQuizzes] = useState<Record<string, Question[]>>(
-    JSON.parse(JSON.stringify(quizzes))
+  const [localQuizzes, setLocalQuizzes] = useState<Record<string, Question[]>>(() =>
+    JSON.parse(JSON.stringify(getQuizzesSync()))
   );
   const [selectedQuiz, setSelectedQuiz] = useState<string>(
     Object.keys(localQuizzes)[0] ?? "telefonia"
@@ -27,8 +29,40 @@ export function Admin({ onClose }: AdminProps) {
   const [jsonText, setJsonText] = useState<string>("");
   const [copied, setCopied] = useState<boolean>(false);
 
+  const [syncingCloud, setSyncingCloud] = useState<boolean>(false);
+  const [cloudStatusMessage, setCloudStatusMessage] = useState<string | null>(null);
+
   const itemsPerPage = 10;
   const quizKeys = Object.keys(localQuizzes);
+
+  async function handleSaveToCloud() {
+    setSyncingCloud(true);
+    setCloudStatusMessage(null);
+    const ok = await saveRemoteQuestions(selectedQuiz, localQuizzes[selectedQuiz] || []);
+    setSyncingCloud(false);
+    if (ok) {
+      setCloudStatusMessage(`✅ Módulo "${selectedQuiz}" salvo na nuvem com sucesso!`);
+      setTimeout(() => setCloudStatusMessage(null), 5000);
+    } else {
+      setCloudStatusMessage(`❌ Erro ao salvar na nuvem. Verifique a tabela quiz_questions no Supabase.`);
+      setTimeout(() => setCloudStatusMessage(null), 5000);
+    }
+  }
+
+  async function handleLoadFromCloud() {
+    setSyncingCloud(true);
+    setCloudStatusMessage(null);
+    const remote = await fetchRemoteQuestions(selectedQuiz);
+    setSyncingCloud(false);
+    if (remote && remote[selectedQuiz]) {
+      setLocalQuizzes(prev => ({ ...prev, [selectedQuiz]: remote[selectedQuiz] }));
+      setCloudStatusMessage(`☁️ Módulo "${selectedQuiz}" atualizado com questões da nuvem!`);
+      setTimeout(() => setCloudStatusMessage(null), 5000);
+    } else {
+      setCloudStatusMessage(`ℹ️ Nenhuma questão encontrada na nuvem para "${selectedQuiz}". Usando local.`);
+      setTimeout(() => setCloudStatusMessage(null), 5000);
+    }
+  }
 
   function updateQuestion(idx: number, q: Partial<Question>) {
     setLocalQuizzes((prev) => {
@@ -238,6 +272,28 @@ export function Admin({ onClose }: AdminProps) {
           </div>
           <div className="flex flex-wrap items-center gap-2">
             <button
+              type="button"
+              onClick={handleLoadFromCloud}
+              disabled={syncingCloud}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-xs font-semibold transition-all disabled:opacity-50"
+              title="Baixar questões cadastradas na nuvem"
+            >
+              <Cloud className="w-4 h-4 text-cyan-400" />
+              <span>{syncingCloud ? "Sincronizando..." : "Carregar da Nuvem"}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleSaveToCloud}
+              disabled={syncingCloud}
+              className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 border border-cyan-500/40 text-cyan-300 hover:border-cyan-400 text-xs font-bold transition-all shadow-sm disabled:opacity-50"
+              title="Salvar módulo atualizado no banco Supabase"
+            >
+              <Upload className="w-4 h-4 text-emerald-400" />
+              <span>{syncingCloud ? "Salvando..." : "Salvar na Nuvem"}</span>
+            </button>
+
+            <button
               className="ghost-btn flex items-center gap-1.5 text-xs text-slate-300 hover:text-white py-2 px-3"
               onClick={() => {
                 setIsAuthenticated(false);
@@ -252,6 +308,12 @@ export function Admin({ onClose }: AdminProps) {
             </button>
           </div>
         </div>
+
+        {cloudStatusMessage && (
+          <div className="mb-4 p-3 rounded-xl bg-slate-950/80 border border-slate-800 text-xs text-slate-200 flex items-center justify-between animate-fade-in">
+            <span>{cloudStatusMessage}</span>
+          </div>
+        )}
 
         {/* Abas de Navegação */}
         <div className="flex border-b border-slate-800 mb-6 gap-2">
