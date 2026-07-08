@@ -127,7 +127,7 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
         initial={{ scale: 0.96, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.1, type: "spring", stiffness: 100 }}
-        className="w-full max-w-5xl card rounded-3xl p-5 md:p-8 mt-2 md:mt-4 shadow-2xl border border-slate-700/80"
+        className="w-full max-w-5xl card rounded-3xl p-4 sm:p-5 md:p-8 mt-2 md:mt-4 shadow-2xl border border-slate-700/80"
       >
         {/* Top Navigation Bar */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-800">
@@ -248,33 +248,33 @@ export function Ranking({ rankings, selectedQuiz, onBack }: RankingProps) {
         </div>
 
         {/* Tab Selection Buttons */}
-        <div className="flex border-b border-slate-800 mb-6 gap-2">
+        <div className="flex border-b border-slate-800 mb-6 gap-1 sm:gap-2">
           <button
             onClick={() => setActiveTab('local')}
-            className={`flex items-center gap-2 px-5 py-3 text-sm font-bold rounded-t-2xl transition-all border-b-2 ${
+            className={`flex-1 flex items-center justify-center gap-1.5 px-3 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-bold rounded-t-2xl transition-all border-b-2 ${
               activeTab === 'local'
                 ? 'bg-slate-800/90 text-cyan-400 border-cyan-500 shadow-lg'
                 : 'text-slate-400 hover:text-white border-transparent hover:bg-slate-800/40'
             }`}
           >
-            <User size={16} />
-            <span>Meu Histórico por Quiz</span>
-            <span className="ml-1 px-2 py-0.5 rounded-full text-[11px] bg-slate-950 text-slate-300 border border-slate-700">
+            <User size={14} className="shrink-0" />
+            <span className="truncate">Histórico Local</span>
+            <span className="ml-1 px-1.5 py-0.5 rounded-full text-[10px] bg-slate-950 text-slate-300 border border-slate-700 shrink-0">
               {quizKeys.length}
             </span>
           </button>
           <button
             onClick={() => setActiveTab('remote')}
-            className={`flex items-center gap-2 px-5 py-3 text-sm font-bold rounded-t-2xl transition-all border-b-2 ${
+            className={`flex-1 flex items-center justify-center gap-1.5 px-3 sm:px-5 py-2.5 sm:py-3 text-xs sm:text-sm font-bold rounded-t-2xl transition-all border-b-2 ${
               activeTab === 'remote'
                 ? 'bg-slate-800/90 text-cyan-400 border-cyan-500 shadow-lg'
                 : 'text-slate-400 hover:text-white border-transparent hover:bg-slate-800/40'
             }`}
           >
-            <Globe size={16} />
-            <span>Placar Global (Ao Vivo)</span>
+            <Globe size={14} className="shrink-0" />
+            <span className="truncate">Placar Global</span>
             {remote && (
-              <span className="ml-1 px-2 py-0.5 rounded-full text-[11px] bg-slate-950 text-cyan-300 border border-cyan-500/30">
+              <span className="ml-1 px-1.5 py-0.5 rounded-full text-[10px] bg-slate-950 text-cyan-300 border border-cyan-500/30 shrink-0">
                 {remote.length}
               </span>
             )}

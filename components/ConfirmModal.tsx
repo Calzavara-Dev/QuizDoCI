@@ -12,11 +12,11 @@ export function ConfirmModal({ open, title = "Confirmação", message = "Tem cer
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-slate-800 rounded-xl p-6 max-w-md w-full text-white"
+        className="bg-slate-800 rounded-xl p-6 max-w-md w-full text-white mx-4"
       >
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
         <p className="text-slate-300 mb-4">{message}</p>

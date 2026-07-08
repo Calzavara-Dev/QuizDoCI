@@ -87,6 +87,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
   will-change: transform;
   transform: translateZ(0);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .card:hover {
@@ -98,6 +100,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Premium Buttons System */
 .primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: linear-gradient(135deg, #00e5ff 0%, #7c3aed 55%, #3b82f6 100%);
   background-size: 200% 200%;
   color: #ffffff;
@@ -133,6 +139,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ghost-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: #cbd5e1;
@@ -169,6 +179,8 @@ input, select, textarea {
   font-size: 0.925rem;
   transition: all 0.2s ease;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 input::placeholder, textarea::placeholder {

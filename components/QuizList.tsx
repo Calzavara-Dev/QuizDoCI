@@ -14,7 +14,7 @@ export function QuizList({ onSelect, onBack }: QuizListProps) {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="w-full max-w-md card rounded-3xl p-6">
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="w-full max-w-md card rounded-3xl p-4 sm:p-6">
         <h2 className="text-2xl font-bold text-white mb-4 text-center">Selecionar Quiz</h2>
         <div className="grid grid-cols-1 gap-3">
           {keys.map((k) => (
