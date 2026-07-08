@@ -8,6 +8,7 @@ import { Ranking } from "./components/Ranking";
 import { Admin } from "./components/Admin";
 import { addQuizResult, loadRankings, type Rankings } from "./utils/rankings";
 import { saveResultRemote } from "./utils/supabase";
+import { loadAndSyncQuizzesRemote } from "./utils/questionLoader";
 
 export interface ResultData {
   correct: number;
@@ -30,6 +31,10 @@ export default function App() {
   const [rankings, setRankings] = useState<Rankings>(() => loadRankings());
   const [playerName, setPlayerName] = useState<string>("");
   const [quizKey, setQuizKey] = useState<number>(0);
+
+  useEffect(() => {
+    loadAndSyncQuizzesRemote();
+  }, []);
 
   const handleStart = (quizId?: string, name?: string) => {
     if (quizId) setSelectedQuiz(quizId);

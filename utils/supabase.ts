@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import type { Question } from "../types/question";
 
 // Valores fornecidos pelo usuário (usados como fallback quando não há variáveis de ambiente)
 const DEFAULT_SUPABASE_URL = "https://qyclxcadhpiujkyrsaea.supabase.co";
@@ -65,6 +66,67 @@ export const fetchRemoteResults = async (limit = 100) => {
   } catch (err) {
     console.warn("Supabase fetch error", err);
     return null;
+  }
+};
+
+export const fetchRemoteQuestions = async (quizId?: string): Promise<Record<string, Question[]> | null> => {
+  try {
+    if (supabase) {
+      let query = supabase.from("quiz_questions").select("quiz_id, question, options, answer");
+      if (quizId) {
+        query = query.eq("quiz_id", quizId);
+      }
+      const { data, error } = await query;
+      if (error) throw error;
+      if (!data || data.length === 0) return null;
+
+      const grouped: Record<string, Question[]> = {};
+      for (const row of data) {
+        const qId = row.quiz_id as string;
+        if (!grouped[qId]) grouped[qId] = [];
+        let parsedOptions = row.options;
+        if (typeof parsedOptions === "string") {
+          try {
+            parsedOptions = JSON.parse(parsedOptions);
+          } catch (e) {
+            parsedOptions = [row.options];
+          }
+        }
+        grouped[qId].push({
+          question: row.question,
+          options: Array.isArray(parsedOptions) ? parsedOptions : [],
+          answer: row.answer,
+        });
+      }
+      return grouped;
+    }
+    return null;
+  } catch (err) {
+    console.warn("Supabase fetchRemoteQuestions error:", err);
+    return null;
+  }
+};
+
+export const saveRemoteQuestions = async (quizId: string, questions: Question[]): Promise<boolean> => {
+  try {
+    if (!supabase) return false;
+    // Remove registros anteriores desse quiz_id para manter sincronizado com a lista atual
+    await supabase.from("quiz_questions").delete().eq("quiz_id", quizId);
+
+    const rows = questions.map((q) => ({
+      quiz_id: quizId,
+      question: q.question,
+      options: q.options,
+      answer: q.answer,
+      updated_at: new Date().toISOString(),
+    }));
+
+    const { error } = await supabase.from("quiz_questions").insert(rows);
+    if (error) throw error;
+    return true;
+  } catch (err) {
+    console.warn("Supabase saveRemoteQuestions error:", err);
+    return false;
   }
 };
 

@@ -1,7 +1,8 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check, X, ArrowRight, RotateCcw, ChevronLeft } from "lucide-react";
-import { getShuffledQuestions, quizTitles } from "../data/questions";
+import { quizTitles } from "../data/questions";
+import { getDynamicShuffledQuestions } from "../utils/questionLoader";
 import type { ResultData } from "../App";
 import type { Question } from "../types/question";
 import { ConfirmModal } from "./ConfirmModal";
@@ -50,7 +51,7 @@ interface QuizProps {
 export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProps) {
   const savedProgress = useMemo(() => loadSavedProgress(quizId), [quizId]);
   const [shuffledQuestions] = useState<Question[]>(() => {
-    const questions = savedProgress?.shuffledQuestions ?? getShuffledQuestions(quizId);
+    const questions = savedProgress?.shuffledQuestions ?? getDynamicShuffledQuestions(quizId);
     return Array.isArray(questions) ? questions : [];
   });
   const [currentIndex, setCurrentIndex] = useState(() => {
