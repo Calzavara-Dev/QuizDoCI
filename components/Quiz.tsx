@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X, ArrowRight, RotateCcw } from "lucide-react";
-import { getShuffledQuestions } from "../data/questions";
+import { Check, X, ArrowRight, RotateCcw, ChevronLeft } from "lucide-react";
+import { getShuffledQuestions, quizTitles } from "../data/questions";
 import type { ResultData } from "../App";
 import type { Question } from "../types/question";
 import { ConfirmModal } from "./ConfirmModal";
@@ -185,40 +185,103 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   };
 
   return (
-    <div className="min-h-screen flex flex-col p-4 md:p-6">
-      <div className="max-w-3xl w-full mx-auto mb-4 flex justify-between items-center gap-3">
-        {/* Left: back button */}
-        <button
-          onClick={() => setShowConfirm(true)}
-          className="text-slate-400 hover:text-white text-sm flex items-center gap-1.5 transition-colors"
-        >
-          ← Início
-        </button>
+    <div className="min-h-screen flex flex-col p-4 md:p-6 bg-app">
 
-        {/* Centre: restart current quiz */}
-        <button
-          onClick={() => setShowRestartConfirm(true)}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-cyan-500/50 text-xs font-semibold transition-all"
-          title="Reiniciar este quiz do zero"
-        >
-          <RotateCcw size={14} />
-          Reiniciar Quiz
-        </button>
+      {/* ── UNIFIED PREMIUM NAV + PROGRESS HEADER ── */}
+      <div className="w-full max-w-3xl mx-auto mb-6">
+        <div className="card rounded-2xl border border-slate-700/80 p-4 shadow-xl">
 
-        {/* Right: previous question */}
-        {currentIndex > 0 ? (
-          <button
-            onClick={handlePrevious}
-            className="text-slate-400 hover:text-white text-sm transition-colors"
-          >
-            ← Anterior
-          </button>
-        ) : (
-          <span className="w-16" />
-        )}
+          {/* Row 1: actions + quiz title */}
+          <div className="flex items-center justify-between gap-2 mb-4">
+
+            {/* Left: back to home */}
+            <button
+              onClick={() => setShowConfirm(true)}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-xs font-semibold transition-all shrink-0"
+            >
+              <ChevronLeft size={15} />
+              <span className="hidden sm:inline">Início</span>
+            </button>
+
+            {/* Centre: quiz name */}
+            <div className="flex-1 text-center px-2">
+              <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-0.5">Módulo</p>
+              <h2 className="text-sm md:text-base font-extrabold text-white truncate">
+                {quizTitles[quizId] ?? quizId.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+              </h2>
+            </div>
+
+            {/* Right: restart + previous */}
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                onClick={() => setShowRestartConfirm(true)}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-amber-400 hover:border-amber-500/40 text-xs font-semibold transition-all"
+                title="Reiniciar quiz do zero"
+              >
+                <RotateCcw size={14} />
+                <span className="hidden sm:inline">Reiniciar</span>
+              </button>
+
+              <button
+                onClick={handlePrevious}
+                disabled={currentIndex === 0}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-xs font-semibold transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+                title="Questão anterior"
+              >
+                <ChevronLeft size={14} />
+                <span className="hidden sm:inline">Anterior</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Row 2: stat chips */}
+          <div className="flex items-center gap-3 mb-4">
+            {/* Question counter */}
+            <div className="flex items-center gap-2 bg-slate-900/70 rounded-xl px-3 py-2 border border-slate-800">
+              <span className="text-xs text-slate-400 font-semibold">Questão</span>
+              <span className="font-black text-white text-sm tabular-nums">{currentIndex + 1}</span>
+              <span className="text-slate-600">/</span>
+              <span className="text-slate-400 text-sm tabular-nums">{shuffledQuestions.length}</span>
+            </div>
+
+            {/* Spacer */}
+            <div className="flex-1" />
+
+            {/* Correct chip */}
+            <div className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/25 rounded-xl px-3 py-2">
+              <Check size={13} className="text-emerald-400 shrink-0" />
+              <span className="text-emerald-300 text-sm font-black tabular-nums">{correct}</span>
+              <span className="text-emerald-600 text-xs hidden sm:inline">certas</span>
+            </div>
+
+            {/* Wrong chip */}
+            <div className="flex items-center gap-1.5 bg-rose-500/10 border border-rose-500/25 rounded-xl px-3 py-2">
+              <X size={13} className="text-rose-400 shrink-0" />
+              <span className="text-rose-300 text-sm font-black tabular-nums">
+                {answers.filter(Boolean).filter(a => !a.isCorrect).length}
+              </span>
+              <span className="text-rose-600 text-xs hidden sm:inline">erradas</span>
+            </div>
+
+            {/* Percentage chip */}
+            <div className="flex items-center gap-1.5 bg-cyan-500/10 border border-cyan-500/25 rounded-xl px-3 py-2">
+              <span className="text-cyan-300 text-sm font-black tabular-nums">{Math.round(progress)}%</span>
+            </div>
+          </div>
+
+          {/* Row 3: animated gradient progress bar */}
+          <div className="h-2.5 bg-slate-800/80 rounded-full overflow-hidden border border-slate-700/50">
+            <motion.div
+              className="h-full rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500"
+              initial={{ width: 0 }}
+              animate={{ width: `${progress}%` }}
+              transition={{ duration: 0.35, ease: "easeOut" }}
+            />
+          </div>
+        </div>
       </div>
 
-      {/* Exit confirmation */}
+      {/* Modals */}
       <ConfirmModal
         open={showConfirm}
         title="Voltar ao Início"
@@ -226,8 +289,6 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
         onConfirm={handleExitQuiz}
         onCancel={() => setShowConfirm(false)}
       />
-
-      {/* Restart confirmation */}
       <ConfirmModal
         open={showRestartConfirm}
         title="Reiniciar Quiz"
@@ -235,24 +296,6 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
         onConfirm={handleRestartQuiz}
         onCancel={() => setShowRestartConfirm(false)}
       />
-      <div className="max-w-3xl w-full mx-auto mb-6">
-        <div className="flex justify-between items-center mb-3">
-          <span className="text-slate-400 text-sm">
-            Questão {currentIndex + 1} de {shuffledQuestions.length}
-          </span>
-          <span className="text-cyan-400 font-bold">
-            {correct} corretas
-          </span>
-        </div>
-        <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
-          <motion.div
-            className="h-full bg-cyan-500"
-            initial={{ width: 0 }}
-            animate={{ width: `${progress}%` }}
-            transition={{ duration: 0.3 }}
-          />
-        </div>
-      </div>
 
       <div className="w-full max-w-2xl mx-auto flex-1 flex flex-col">
         <AnimatePresence mode="wait">
