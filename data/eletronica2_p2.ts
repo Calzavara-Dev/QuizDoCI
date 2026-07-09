@@ -6,927 +6,1225 @@ import circuito129 from "../assets/circuitos/129.jpg";
 import circuito131 from "../assets/circuitos/131.jpg";
 import circuito133 from "../assets/circuitos/133.jpg";
 import circuito134 from "../assets/circuitos/134.jpg";
-import demuxDiagram from "../assets/circuitos/demux_diagram_1.png";
-import rampaDiagram from "../assets/circuitos/rampa_diagram_1.png";
-import triangularDiagram from "../assets/circuitos/triangular_diagram_1.png";
+import circuito137 from "../assets/circuitos/137.jpg";
+import circuito138 from "../assets/circuitos/138.jpg";
 
 export const eletronica2P2Questions: Question[] = [
   {
-    "question": "Canais de entrada, entrada de seleção e saída de informação são características fundamentais de qual bloco lógico?",
+    "question": "Canais de entrada, entrada de seleção e saída de informação são características do bloco:",
     "options": [
-      "Multiplex.",
-      "Conversor A/D.",
-      "Demultiplex.",
-      "Conversor D/A.",
-      "Mux/Demux."
+      "Multiplex",
+      "Demultiplex",
+      "Conversor A/D",
+      "Conversor D/A",
+      "Decodificador"
     ],
-    "answer": "Multiplex.",
-    "topic": "2.3 - Multiplex [Múltipla Escolha]"
+    "answer": "Multiplex",
+    "topic": "2.3 - Multiplex"
   },
   {
-    "question": "Nos circuitos multiplex de 3, 15, 25 e 36 canais, serão usadas, respectivamente, quantas variáveis de seleção?",
+    "question": "Nos circuitos multiplex de 3, 15, 25 e 36 canais, serão usadas, respectivamente, as seguintes variáveis de seleção:",
     "options": [
-      "2, 4, 5 e 6.",
-      "1, 3, 5 e 6.",
-      "2, 3, 5 e 6.",
-      "1, 4, 5 e 6.",
-      "3, 4, 5 e 6."
+      "2, 4, 5 e 6",
+      "1, 3, 4 e 5",
+      "2, 3, 5 e 6",
+      "3, 4, 5 e 6",
+      "2, 4, 6 e 8"
     ],
-    "answer": "2, 4, 5 e 6.",
-    "topic": "2.3 - Multiplex [Múltipla Escolha]"
+    "answer": "2, 4, 5 e 6",
+    "topic": "2.3 - Multiplex"
   },
   {
-    "question": "Um circuito Multiplexador (MUX) com 6 canais de entrada necessita de, no mínimo, quantas variáveis de seleção?",
+    "question": "Em um circuito DEMUX de 16 canais, quando as variáveis de seleção estiverem na condição ABCD, em que A é o MSB... a entrada (E) estará ligada a qual saída?",
     "options": [
-      "3 variáveis de seleção (2^3 = 8 >= 6).",
-      "2 variáveis de seleção.",
-      "4 variáveis de seleção.",
-      "6 variáveis de seleção.",
-      "5 variáveis de seleção."
+      "15",
+      "0",
+      "8",
+      "12",
+      "16"
     ],
-    "answer": "3 variáveis de seleção (2^3 = 8 >= 6).",
-    "topic": "2.3 - Multiplex [Questão Direta]"
+    "answer": "15",
+    "topic": "2.4 - Demultiplex"
   },
   {
-    "question": "No projeto de um circuito MUX, quantas variáveis de seleção seriam necessárias, no mínimo, para selecionar 42 linhas de entrada?",
+    "question": "Podemos construir um circuito conversor digital-analógico com chave seletora digital na entrada. Neste caso, a chave seletora será formada por:",
     "options": [
-      "6 variáveis de seleção (2^6 = 64 >= 42).",
-      "5 variáveis de seleção (2^5 = 32).",
-      "7 variáveis de seleção.",
-      "4 variáveis de seleção.",
-      "8 variáveis de seleção."
+      "Portas AND",
+      "Portas OR",
+      "Portas XOR",
+      "Portas NAND",
+      "Flip-Flops JK"
     ],
-    "answer": "6 variáveis de seleção (2^6 = 64 >= 42).",
-    "topic": "2.3 - Multiplex [Questão Direta]"
+    "answer": "Portas AND",
+    "topic": "3.1 - Conversores D/A"
   },
   {
-    "question": "No projeto de um circuito MUX, quantas variáveis de seleção seriam necessárias para selecionar exatamente 16 linhas de entrada?",
+    "question": "Na Figura 131, se a tensão de entrada for 2V, a saída binária do conversor A/D deverá ser qual binário?",
     "options": [
-      "4 variáveis de seleção (2^4 = 16).",
-      "3 variáveis de seleção.",
-      "5 variáveis de seleção.",
-      "2 variáveis de seleção.",
-      "8 variáveis de seleção."
+      "01100110",
+      "10010110",
+      "01010011",
+      "00110011",
+      "11001100"
     ],
-    "answer": "4 variáveis de seleção (2^4 = 16).",
-    "topic": "2.3 - Multiplex [Questão Direta]"
+    "answer": "01100110",
+    "topic": "3.2 - Conversores A/D",
+    "image": circuito131
   },
   {
-    "question": "Qual o desenho ou estrutura de um MUX que desempenhe uma função lógica NOR na saída?",
+    "question": "A conversão digital para analógica, do circuito da Fig. 126, para uma entrada binária 0111, é de quantos Volts?",
     "options": [
-      "Um Multiplexador padrão seguido de um inversor na saída principal Y, ou com a porta somadora final configurada como NOR.",
-      "Um MUX cujas linhas de seleção são aterradas.",
-      "Um MUX sem portas AND na matriz de decodificação.",
-      "Um DEMUX ligado ao contrário.",
-      "Um contador síncrono de 4 bits."
+      "-8.4V",
+      "-4.2V",
+      "-6.0V",
+      "-7.5V",
+      "-9.6V"
     ],
-    "answer": "Um Multiplexador padrão seguido de um inversor na saída principal Y, ou com a porta somadora final configurada como NOR.",
-    "topic": "2.3 - Multiplex [Questão Discursiva]"
+    "answer": "-8.4V",
+    "topic": "3.1 - Conversores D/A",
+    "image": circuito126
   },
   {
-    "question": "Desenhe ou descreva o diagrama de bloco de um MUX 16x1, especificando suas entradas e saídas.",
+    "question": "No conversor digital-analógico utilizando a rede R-2R da Fig. 129, onde Vcc = 6V, quando a entrada for: A=0, B=1, C=1 e D=0, a saída analógica Vs será de quantos volts?",
     "options": [
-      "Possui 16 linhas de entrada de dados (D0 a D15), 4 linhas de seleção de endereço (S0 a S3) para decodificar qual canal será roteado, e 1 linha de saída de dados (Y).",
-      "Possui 1 linha de entrada, 4 linhas de seleção e 16 saídas.",
-      "Possui 16 entradas de dados, nenhuma linha de seleção e 16 saídas.",
-      "Possui 8 entradas de dados, 3 seleções e 2 saídas.",
-      "Possui apenas portas NAND em cascata sem seleção."
+      "1,5V",
+      "2,5V",
+      "3,0V",
+      "3,5V",
+      "4,5V"
     ],
-    "answer": "Possui 16 linhas de entrada de dados (D0 a D15), 4 linhas de seleção de endereço (S0 a S3) para decodificar qual canal será roteado, e 1 linha de saída de dados (Y).",
-    "topic": "2.3 - Multiplex [Questão Discursiva]"
+    "answer": "1,5V",
+    "topic": "3.1 - Conversores D/A",
+    "image": circuito129
   },
   {
-    "question": "Em um circuito DEMUX de 16 canais de saída, quando as variáveis de seleção estiverem na condição ABCD = 1100 (onde A é o MSB), a entrada de dados estará ligada a qual saída?",
+    "question": "A Figura 121 mostra o bloco de uma memória RAM ESTÁTICA. Para que haja habilitação de escrita, as condições do Barramento de Controle são:",
     "options": [
-      "Saída 12.",
-      "Saída 10.",
-      "Saída 14.",
-      "Saída 15.",
-      "Saída 8."
+      "CE = L, OE = H e WE = L",
+      "CE = H, OE = L e WE = H",
+      "CE = L, OE = L e WE = L",
+      "CE = H, OE = H e WE = L",
+      "CE = L, OE = H e WE = H"
     ],
-    "answer": "Saída 12.",
-    "topic": "2.4 - Demultiplex [Múltipla Escolha]"
+    "answer": "CE = L, OE = H e WE = L",
+    "topic": "2.5 - Memórias",
+    "image": circuito121
   },
   {
-    "question": "No projeto de um circuito DEMUX, quantas variáveis de seleção seriam necessárias, no mínimo, para selecionar 65 canais na saída?",
+    "question": "Assinale a opção que contém a Memória em que sua programação é feita eletricamente, podendo ser apagada através da exposição de sua pastilha semicondutora à luz ultravioleta.",
     "options": [
-      "7 variáveis de seleção (2^7 = 128 > 65).",
-      "6 variáveis de seleção (2^6 = 64).",
-      "8 variáveis de seleção.",
-      "5 variáveis de seleção.",
-      "9 variáveis de seleção."
+      "EPROM",
+      "EEPROM",
+      "PROM",
+      "DRAM",
+      "FLASH"
     ],
-    "answer": "7 variáveis de seleção (2^7 = 128 > 65).",
-    "topic": "2.4 - Demultiplex [Questão Direta]"
+    "answer": "EPROM",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Qual é a estrutura de circuito lógico de um DEMUX de quatro canais de saída (1x4)?",
-    "image": demuxDiagram,
+    "question": "No que se refere à troca de dados com outros componentes do sistema, a memória de acesso aleatório, volátil e de escrita/leitura é a:",
     "options": [
-      "É constituído por 4 portas AND cujas saídas representam Y0 a Y3; cada porta AND recebe a linha comum de dados de entrada e uma das 4 combinações decodificadas de 2 variáveis de seleção.",
-      "É formado por 4 flip-flops D em anel.",
-      "Constitui-se apenas de uma porta OR de 4 entradas.",
-      "É formado por um conversor analógico-digital de 4 canais.",
-      "É composto por 4 diodos zener em paralelo."
+      "RAM",
+      "ROM",
+      "EPROM",
+      "EEPROM",
+      "FLASH"
     ],
-    "answer": "É constituído por 4 portas AND cujas saídas representam Y0 a Y3; cada porta AND recebe a linha comum de dados de entrada e uma das 4 combinações decodificadas de 2 variáveis de seleção.",
-    "topic": "2.4 - Demultiplex (Com Figura) [Questão Discursiva]"
+    "answer": "RAM",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "No projeto de um circuito DEMUX de 4 canais de saída (1x4), quais são as equações lógicas das saídas Y0, Y1, Y2 e Y3 em função da entrada de dados D e das seleções A e B?",
-    "image": demuxDiagram,
+    "question": "A tensão de saída no circuito da Fig. 126 é de quantos V? (Mesma entrada da Q.6)",
     "options": [
-      "Y0 = D·A'·B', Y1 = D·A'·B, Y2 = D·A·B' e Y3 = D·A·B.",
-      "Y0 = D+A+B, Y1 = D+A'+B, Y2 = D+A+B' e Y3 = D+A'+B'.",
-      "Y0 = A·B, Y1 = A'·B, Y2 = A·B' e Y3 = A'·B'.",
-      "Y0 = D·A, Y1 = D·B, Y2 = D·(A+B) e Y3 = D.",
-      "Y0 = Y1 = Y2 = Y3 = D·(A⊕B)."
+      "-8.4V",
+      "-7.2V",
+      "-6.4V",
+      "-9.0V",
+      "-5.2V"
     ],
-    "answer": "Y0 = D·A'·B', Y1 = D·A'·B, Y2 = D·A·B' e Y3 = D·A·B.",
-    "topic": "2.4 - Demultiplex (Com Figura) [Questão Discursiva]"
+    "answer": "-8.4V",
+    "topic": "3.1 - Conversores D/A",
+    "image": circuito126
   },
   {
-    "question": "O código EBCDIC (Extended Binary Coded Decimal Interchange Code) possui quantos bits para cada caractere?",
+    "question": "O código EBCDIC possui quantos bits para cada caracter?",
     "options": [
-      "8 bits.",
-      "7 bits.",
-      "6 bits.",
-      "16 bits.",
-      "4 bits."
+      "8 bits",
+      "7 bits",
+      "6 bits",
+      "16 bits",
+      "4 bits"
     ],
-    "answer": "8 bits.",
-    "topic": "2.5 - Códigos e Transmissão [Múltipla Escolha]"
+    "answer": "8 bits",
+    "topic": "2.1 - Códigos"
   },
   {
-    "question": "Quantas codificações ou caracteres possíveis o código EBCDIC de 8 bits possui?",
+    "question": "Os barramentos de uma memória são:",
     "options": [
-      "256 codificações possíveis (2^8).",
-      "128 codificações possíveis.",
-      "512 codificações possíveis.",
-      "64 codificações possíveis.",
-      "1024 codificações possíveis."
+      "Endereço, dados e controle",
+      "Entrada, saída e alimentação",
+      "Sincronismo, relógio e paridade",
+      "RAS, CAS e Refresh",
+      "Série, paralelo e diferencial"
     ],
-    "answer": "256 codificações possíveis (2^8).",
-    "topic": "2.5 - Códigos e Transmissão [Questão Direta]"
+    "answer": "Endereço, dados e controle",
+    "topic": "2.6 - Barramentos"
   },
   {
-    "question": "Qual é a diferença fundamental entre os códigos ASCII e EBCDIC?",
+    "question": "Uma memória de 32k x 8 possui:",
     "options": [
-      "O código ASCII padrão utiliza 7 bits (128 combinações de caracteres), enquanto o EBCDIC utiliza 8 bits (256 combinações de caracteres).",
-      "O código ASCII é numérico e o EBCDIC é analógico.",
-      "O código EBCDIC não permite representar símbolos especiais.",
-      "O código ASCII possui 16 bits e o EBCDIC 4 bits.",
-      "Não há diferença no número de bits ou na tabela de caracteres."
+      "15 linhas de dados, 8 linhas de endereços...",
+      "32000 posições, 64000 bits e 14 linhas de endereços",
+      "16384 posições, 131072 bits e 16 linhas de endereços",
+      "65536 posições, 524288 bits e 16 linhas de endereços",
+      "32768 posições, 262144 bits e 15 linhas de endereços"
     ],
-    "answer": "O código ASCII padrão utiliza 7 bits (128 combinações de caracteres), enquanto o EBCDIC utiliza 8 bits (256 combinações de caracteres).",
-    "topic": "2.5 - Códigos e Transmissão [Questão Discursiva]"
+    "answer": "32768 posições, 262144 bits e 15 linhas de endereços",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Além de números, um computador deve reconhecer letras, sinais de pontuação e caracteres especiais através de códigos. Como são conhecidos esses códigos?",
+    "question": "Para o endereçamento de uma DRAM em duas etapas, usamos:",
     "options": [
-      "Códigos alfanuméricos.",
-      "Códigos BCD puros.",
-      "Códigos decimais sem sinal.",
-      "Códigos de gray.",
-      "Códigos analógicos discretos."
+      "CAS e RAS (Column e Row Address Strobe)",
+      "CS e WR (Chip Select e Write)",
+      "CE e OE (Chip Enable e Output Enable)",
+      "ALE e CLK (Address Latch Enable e Clock)",
+      "INTR e RD (Interrupt e Read)"
     ],
-    "answer": "Códigos alfanuméricos.",
-    "topic": "2.5 - Códigos e Transmissão [Questão Direta]"
+    "answer": "CAS e RAS (Column e Row Address Strobe)",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Descreva para que serve o método de paridade (bit de paridade) na transmissão de dados digitais.",
+    "question": "Unidade de um micro responsável por transferir dados do computador para o mundo exterior.",
     "options": [
-      "Serve para a detecção de erros ocorridos durante a transmissão ou armazenamento de dados, adicionando um bit extra para que o número total de bits '1' seja par (paridade par) ou ímpar (paridade ímpar).",
-      "Serve para corrigir automaticamente qualquer número de bits alterados sem precisar de retransmissão.",
-      "Serve para dobrar a velocidade de transmissão no cabo.",
-      "Serve para criptografar a mensagem contra leitura não autorizada.",
-      "Serve para sincronizar a voltagem da fonte de alimentação."
+      "Unidade de saída",
+      "Unidade Lógica e Aritmética",
+      "Unidade de Controle e Temporização",
+      "Unidade de memória cache",
+      "Unidade de entrada"
     ],
-    "answer": "Serve para a detecção de erros ocorridos durante a transmissão ou armazenamento de dados, adicionando um bit extra para que o número total de bits '1' seja par (paridade par) ou ímpar (paridade ímpar).",
-    "topic": "2.5 - Códigos e Transmissão [Questão Discursiva]"
+    "answer": "Unidade de saída",
+    "topic": "2.6 - Barramentos"
   },
   {
-    "question": "Qual deve ser o valor do BIT de paridade para uma paridade ímpar que deve ser adicionado à informação 1001100 antes da transmissão?",
+    "question": "Na Fig. 129, quando A=1, B=1, C=1 e D=0, Vs será:",
     "options": [
-      "0 (pois a palavra 1001100 já possui três bits '1', que é ímpar).",
-      "1 (para tornar a quantidade total ímpar).",
-      "Depende do primeiro bit da palavra.",
-      "Sempre 1 no início da transmissão.",
-      "Sempre 0 independentemente dos dados."
+      "4,5V",
+      "3,5V",
+      "1,5V",
+      "2,5V",
+      "5,0V"
     ],
-    "answer": "0 (pois a palavra 1001100 já possui três bits '1', que é ímpar).",
-    "topic": "2.5 - Códigos e Transmissão [Questão Direta]"
+    "answer": "3,5V",
+    "topic": "3.1 - Conversores D/A",
+    "image": circuito129
   },
   {
-    "question": "A afirmativa: 'Através do bit de paridade, podemos determinar exatamente qual dos bits de uma informação está errado' é verdadeira ou falsa? Justifique.",
+    "question": "O conversor da Fig. 131 possui uma resolução de 0,02V. Para uma tensão de entrada no pino 6 de 3V, a saída binária será:",
     "options": [
-      "Falsa. O bit de paridade simples permite apenas detectar a ocorrência de um erro em número ímpar de bits, mas não é capaz de localizar a posição exata do bit corrompido.",
-      "Verdadeira. O bit de paridade indica o índice exato do erro na palavra.",
-      "Verdadeira se o código utilizado for ASCII 7 bits.",
-      "Falsa, pois a paridade não detecta nenhum erro digital.",
-      "Verdadeira apenas em comunicações ópticas."
+      "10010110",
+      "01100110",
+      "10100101",
+      "11001100",
+      "10001000"
     ],
-    "answer": "Falsa. O bit de paridade simples permite apenas detectar a ocorrência de um erro em número ímpar de bits, mas não é capaz de localizar a posição exata do bit corrompido.",
-    "topic": "2.5 - Códigos e Transmissão [Questão Discursiva]"
+    "answer": "10010110",
+    "topic": "3.2 - Conversores A/D",
+    "image": circuito131
   },
   {
-    "question": "Qual é a melhor maneira de se transmitir dados digitais a longas distâncias entre sistemas?",
+    "question": "A finalidade da chave seletora digital de um conversor D/A é:",
     "options": [
-      "Transmissão em série, pois requer menos condutores (menor custo) e apresenta muito menor interferência (crosstalk) em comparação com cabos paralelos.",
-      "Transmissão em paralelo com barramento de 64 fios.",
-      "Transmissão analógica sem conversão.",
-      "Transmissão por cabo paralelo não blindado.",
-      "Transmissão em alta tensão sem clock."
+      "isolar a saída da entrada (isolar a impedância de saída)",
+      "amplificar a corrente contínua da fonte de alimentação",
+      "converter automaticamente sinais seriais em paralelos",
+      "gerar o pulso de sincronismo de escrita para a memória RAM",
+      "eliminar a necessidade de resistores de precisão na malha"
     ],
-    "answer": "Transmissão em série, pois requer menos condutores (menor custo) e apresenta muito menor interferência (crosstalk) em comparação com cabos paralelos.",
-    "topic": "2.5 - Códigos e Transmissão [Questão Direta]"
+    "answer": "isolar a saída da entrada (isolar a impedância de saída)",
+    "topic": "3.1 - Conversores D/A"
   },
   {
-    "question": "Cite duas (2) características fundamentais da transmissão de dados no modo série.",
+    "question": "O tempo decorrido entre a aplicação do endereço e a apresentação dos dados na saída, é chamado tempo de:",
     "options": [
-      "Os bits são enviados sequencialmente um após o outro por um único canal de comunicação, sendo ideal para longas distâncias e necessitando de registradores de deslocamento na transmissão e recepção.",
-      "Envia todos os bits da palavra simultaneamente por múltiplos fios paralelos.",
-      "Requer cabos muito mais espessos que a transmissão paralela.",
-      "Não necessita de sincronismo por clock ou bits de start/stop.",
-      "Apresenta alta interferência mútua entre canais adjacentes."
+      "acesso",
+      "ciclo",
+      "latência CAS",
+      "refresh",
+      "recuperação"
     ],
-    "answer": "Os bits são enviados sequencialmente um após o outro por um único canal de comunicação, sendo ideal para longas distâncias e necessitando de registradores de deslocamento na transmissão e recepção.",
-    "topic": "2.5 - Códigos e Transmissão [Questão Discursiva]"
+    "answer": "acesso",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Onde a transmissão em série de dados se mostra mais útil e recomendada?",
+    "question": "A memória PIPELINE BURST, usada em computadores, é do tipo:",
     "options": [
-      "Em comunicações entre computadores e periféricos distantes, redes de telecomunicações e conexões de longa distância.",
-      "Apenas nas ligações internas entre os registradores da ULA na CPU.",
-      "Exclusivamente para displays de 7 segmentos na mesma placa.",
-      "Apenas em circuitos que não utilizam relógio digital.",
-      "Quando a distância é inferior a 1 centímetro."
+      "RAM estática",
+      "RAM dinâmica",
+      "ROM eletricamente apagável",
+      "Memória magnética sequencial",
+      "Memória virtual paginada"
     ],
-    "answer": "Em comunicações entre computadores e periféricos distantes, redes de telecomunicações e conexões de longa distância.",
-    "topic": "2.5 - Códigos e Transmissão [Questão Direta]"
+    "answer": "RAM estática",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "A afirmativa: 'Os problemas de interferência entre os sinais, em uma transmissão de dados em paralelo, são resolvidos com o aumento da espessura dos condutores' é verdadeira ou falsa? Justifique.",
+    "question": "O conversor da Fig. 127 possui R'=8 ohms e R=5 Kohms. Assim, o valor de Vs, quando A=C=5V, será:",
     "options": [
-      "Falsa. O aumento da espessura dos condutores não elimina o acoplamento capacitivo e indutivo entre fios paralelos próximos; a solução adequada envolve blindagem, trançamento ou conversão para transmissão série.",
-      "Verdadeira. Fios mais espessos impedem campos magnéticos.",
-      "Verdadeira apenas em cabos coaxiais.",
-      "Falsa, pois a interferência em cabos paralelos não existe.",
-      "Verdadeira se a tensão for zerada."
+      "10mV",
+      "20mV",
+      "5mV",
+      "15mV",
+      "25mV"
     ],
-    "answer": "Falsa. O aumento da espessura dos condutores não elimina o acoplamento capacitivo e indutivo entre fios paralelos próximos; a solução adequada envolve blindagem, trançamento ou conversão para transmissão série.",
-    "topic": "2.5 - Códigos e Transmissão [Questão Discursiva]"
+    "answer": "10mV",
+    "topic": "3.1 - Conversores D/A",
+    "image": circuito127
   },
   {
-    "question": "Qual é o código de 7 bits amplamente utilizado em computadores para transformar os caracteres de teclado em representação binária padrão?",
+    "question": "Na Fig. 133, a tensão de saída, quando B=C=D=9V e R=5 Kohms, será:",
     "options": [
-      "Código ASCII (American Standard Code for Information Interchange).",
-      "Código EBCDIC.",
-      "Código BCD 8421.",
-      "Código de Gray.",
-      "Código Hamming de 8 bits."
+      "2,6V",
+      "3,2V",
+      "4,5V",
+      "1,8V",
+      "5,4V"
     ],
-    "answer": "Código ASCII (American Standard Code for Information Interchange).",
-    "topic": "2.5 - Códigos e Transmissão [Questão Direta]"
+    "answer": "2,6V",
+    "topic": "3.1 - Conversores D/A",
+    "image": circuito133
   },
   {
-    "question": "No que se refere à troca de dados com outros componentes do sistema, qual é a memória de acesso aleatório, volátil e de escrita/leitura?",
+    "question": "No conversor da Fig. 131, o valor do capacitor do pino 4 foi alterado para 100pF. A nova freqüência interna será:",
     "options": [
-      "RAM.",
-      "ROM.",
-      "PROM.",
-      "EPROM.",
-      "EEPROM."
+      "1,1 MHz",
+      "606 KHz",
+      "100 KHz",
+      "2,2 MHz",
+      "500 KHz"
     ],
-    "answer": "RAM.",
-    "topic": "2.6 - Memórias [Múltipla Escolha]"
+    "answer": "1,1 MHz",
+    "topic": "3.2 - Conversores A/D",
+    "image": circuito131
   },
   {
-    "question": "Qual tipo de memória permite o apagamento dos dados armazenados através da exposição de sua pastilha semicondutora à luz ultravioleta?",
+    "question": "Um conversor A/D similar ao da Fig. 131 possui seu barramento de dados de 12 bits. A resolução para esse conversor será:",
     "options": [
-      "EPROM.",
-      "EEPROM.",
-      "PROM.",
-      "DRAM.",
-      "Flash ROM."
+      "1,2 mV",
+      "2,4 mV",
+      "0,6 mV",
+      "5,0 mV",
+      "10,0 mV"
     ],
-    "answer": "EPROM.",
-    "topic": "2.6 - Memórias [Múltipla Escolha]"
+    "answer": "1,2 mV",
+    "topic": "3.2 - Conversores A/D",
+    "image": circuito131
   },
   {
-    "question": "Quanto ao armazenamento e retenção de dados na ausência de energia elétrica, como podem ser classificadas as memórias?",
+    "question": "No conversor da Fig. 131, o valor binário na saída, quando Vin+ = 4V, será:",
     "options": [
-      "Voláteis (perdem os dados quando a alimentação é desligada, ex.: RAM) e Não Voláteis (retêm os dados mesmo sem energia, ex.: ROM/EPROM/Flash).",
-      "Analógicas e Digitais exclusivamente.",
-      "Síncronas e Assíncronas apenas.",
-      "Estáticas e Magnéticas apenas.",
-      "Unidirecionais e Bidirecionais."
+      "11001100",
+      "10110000",
+      "10100101",
+      "11010010",
+      "10001000"
     ],
-    "answer": "Voláteis (perdem os dados quando a alimentação é desligada, ex.: RAM) e Não Voláteis (retêm os dados mesmo sem energia, ex.: ROM/EPROM/Flash).",
-    "topic": "2.6 - Memórias [Questão Discursiva]"
+    "answer": "11001100",
+    "topic": "3.2 - Conversores A/D",
+    "image": circuito131
   },
   {
-    "question": "Uma memória de capacidade 32k x 8 possui quais características de posições, total de bits e linhas de endereço?",
+    "question": "Função lógica executada pelo MUX da Fig. 138.",
     "options": [
-      "32768 posições, 262144 bits e 15 linhas de endereços.",
-      "32000 posições, 256000 bits e 15 linhas de endereços.",
-      "32768 posições, 262144 bits e 16 linhas de endereços.",
-      "16384 posições, 131072 bits e 14 linhas de endereços.",
-      "32768 posições, 32768 bits e 8 linhas de endereços."
+      "Coincidência (XNOR)",
+      "OU Exclusivo (XOR)",
+      "NÃO-E (NAND)",
+      "NÃO-OU (NOR)",
+      "Inversão dupla"
     ],
-    "answer": "32768 posições, 262144 bits e 15 linhas de endereços.",
-    "topic": "2.6 - Memórias [Múltipla Escolha]"
+    "answer": "Coincidência (XNOR)",
+    "topic": "2.3 - Multiplex",
+    "image": circuito138
   },
   {
-    "question": "Qual é a capacidade total em bits que uma memória estruturada como 16K x 2 pode armazenar?",
+    "question": "Desvantagem da SRAM em relação à DRAM.",
     "options": [
-      "32.768 bits (16.384 * 2).",
+      "Mais cara (e de menor densidade)",
+      "Muito mais lenta nas operações de leitura e escrita",
+      "Exige ciclos constantes de recarga periódica (refresh)",
+      "Perde os dados quando exposta à luz ambiente",
+      "Consome muito mais energia no estado de repouso"
+    ],
+    "answer": "Mais cara (e de menor densidade)",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "O conversor da Fig. 127 é compatível com TTL e possui R'=8 Ω e R=5 KΩ... Assim, o valor de Vs, para A=C=1, é:",
+    "options": [
+      "10mV",
+      "15mV",
+      "5mV",
+      "20mV",
+      "12mV"
+    ],
+    "answer": "10mV",
+    "topic": "3.1 - Conversores D/A",
+    "image": circuito127
+  },
+  {
+    "question": "Na figura 127, a tensão de saída quando B=C=D=9V e R=5KOHM será:",
+    "options": [
+      "2,6V",
+      "3,5V",
+      "1,8V",
+      "4,2V",
+      "3,0V"
+    ],
+    "answer": "2,6V",
+    "topic": "3.1 - Conversores D/A",
+    "image": circuito127
+  },
+  {
+    "question": "No conversor da Fig. 131, o conjunto RC dos pinos 4 e 19 teve os valores alterados para 8 KΩ e 100 pF. Assim, a nova freqüência interna será:",
+    "options": [
+      "1,1 MHz",
+      "800 KHz",
+      "1,5 MHz",
+      "600 KHz",
+      "2,0 MHz"
+    ],
+    "answer": "1,1 MHz",
+    "topic": "3.2 - Conversores A/D",
+    "image": circuito131
+  },
+  {
+    "question": "Qual o código de sete (7) bits, usado em pequenos sistemas de computadores, para transformar os caracteres de teclado em linguagem de computador?",
+    "options": [
+      "EBCDIC",
+      "BCD 8421",
+      "ASCII",
+      "Hexadecimal",
+      "Código Gray"
+    ],
+    "answer": "ASCII",
+    "topic": "2.1 - Códigos"
+  },
+  {
+    "question": "Quanto ao armazenamento, como as memórias podem ser classificadas de forma primária?",
+    "options": [
+      "Magnéticas e Ópticas",
+      "Voláteis e Não Voláteis",
+      "ROM e PROM",
+      "Estáticas e Dinâmicas",
+      "Sequenciais e Aleatórias"
+    ],
+    "answer": "Estáticas e Dinâmicas",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Qual o valor do bit de paridade para uma \"paridade ímpar\" que deve ser adicionado à informação binária 1001100 antes da transmissão?",
+    "options": [
+      "1, para que a soma total de bits seja ímpar.",
+      "0, pois a informação já possui uma quantidade ímpar de bits \"1\" (três bits).",
+      "1, pois falta um bit para fechar um byte completo.",
+      "0, pois o bit de paridade ímpar é sempre zero.",
+      "1, para que o sistema receptor possa detectar a posição de um possível erro."
+    ],
+    "answer": "0, pois a informação já possui uma quantidade ímpar de bits \"1\" (três bits).",
+    "topic": "2.2 - Paridade"
+  },
+  {
+    "question": "Qual é o tipo de memória DRAM projetada com duas entradas (portas), permitindo que o processador e o controlador a acessem ao mesmo tempo?",
+    "options": [
+      "FPM DRAM",
+      "SDRAM",
+      "RDRAM",
+      "VRAM",
+      "EDO DRAM"
+    ],
+    "answer": "VRAM",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Quantas linhas de endereços, no mínimo, são necessárias para acessar todas as posições de uma memória de 4K x 2?",
+    "options": [
+      "8 linhas",
+      "10 linhas",
+      "12 linhas",
+      "14 linhas",
+      "16 linhas"
+    ],
+    "answer": "12 linhas",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Quais os sinais de controle usados no endereçamento em duas etapas em uma memória DRAM com multiplexação de endereços?",
+    "options": [
+      "CS e CE",
+      "WE e OE",
+      "ALE e PGM",
+      "Tx e Rx",
+      "RAS (Row) e CAS (Column)"
+    ],
+    "answer": "RAS (Row) e CAS (Column)",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Qual a principal desvantagem da memória DRAM em relação à SRAM?",
+    "options": [
+      "Apresenta uma densidade de integração muito menor.",
+      "Ocupa muito mais espaço físico na placa.",
+      "É mais lenta, pois necessita de circuitos de controle para a recarga periódica de suas células (refresh).",
+      "Custa muito mais caro por bit armazenado.",
+      "Retém dados permanentemente, tornando a regravação difícil."
+    ],
+    "answer": "É mais lenta, pois necessita de circuitos de controle para a recarga periódica de suas células (refresh).",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Onde a transmissão de dados em série é mais útil e qual a sua principal característica?",
+    "options": [
+      "Em curtas distâncias, por transmitir palavras inteiras (bytes) de uma só vez.",
+      "Em longas distâncias, por ser mais barata e usar taxas de transferência mais elevadas num par de fios, embora transmita bit a bit.",
+      "Entre o processador e a memória cache, garantindo altíssima velocidade.",
+      "Apenas dentro de sistemas microprocessados isolados de ruído.",
+      "Para resolver problemas de interferências entre sinais adjacentes usando múltiplos cabos grossos."
+    ],
+    "answer": "Em longas distâncias, por ser mais barata e usar taxas de transferência mais elevadas num par de fios, embora transmita bit a bit.",
+    "topic": "2.6 - Barramentos"
+  },
+  {
+    "question": "Qual o tipo de memória não volátil em que podemos realizar o apagamento elétrico no próprio circuito e de maneira rápida, muitas vezes separada por blocos ou setores?",
+    "options": [
+      "ROM Máscara",
+      "EPROM",
+      "SRAM Pipelined Burst",
+      "FLASH",
+      "RAM Dinâmica"
+    ],
+    "answer": "FLASH",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Qual a finalidade principal do uso de Amplificadores Operacionais em um conversor Digital-Analógico (D/A)?",
+    "options": [
+      "Amplificar a corrente de entrada para ativar as portas NAND da rede seletora.",
+      "Isolar a impedância da rede R-2R com a carga e oferecer tensão cujo fator de proporcionalidade independe do nível 1 lógico.",
+      "Executar o endereçamento em duas etapas por meio do sinal RAS.",
+      "Reduzir o tempo de acesso da memória SDRAM acoplada.",
+      "Gerar o clock interno (pulso de strobe) para iniciar a conversão do chip ADC0804."
+    ],
+    "answer": "Isolar a impedância da rede R-2R com a carga e oferecer tensão cujo fator de proporcionalidade independe do nível 1 lógico.",
+    "topic": "3.1 - Conversores D/A"
+  },
+  {
+    "question": "Quantos níveis de tensão diferentes um conversor D/A de 12 bits pode produzir na saída?",
+    "options": [
+      "1024",
+      "2048",
+      "4096",
+      "8192",
+      "256"
+    ],
+    "answer": "4096",
+    "topic": "3.1 - Conversores D/A"
+  },
+  {
+    "question": "Um circuito Multiplexador (MUX) com 6 canais de entrada de dados precisa de, no mínimo, quantas entradas (variáveis) de seleção?",
+    "options": [
+      "2 entradas",
+      "3 entradas",
+      "4 entradas",
+      "6 entradas",
+      "8 entradas"
+    ],
+    "answer": "3 entradas",
+    "topic": "2.3 - Multiplex"
+  },
+  {
+    "question": "Quantas codificações possíveis o código alfanumérico EBCDIC possui?",
+    "options": [
+      "64",
+      "128",
+      "256",
+      "512",
+      "1024"
+    ],
+    "answer": "256",
+    "topic": "2.1 - Códigos"
+  },
+  {
+    "question": "Qual a diferença estrutural principal entre os códigos ASCII e EBCDIC?",
+    "options": [
+      "O ASCII é usado apenas em circuitos lógicos bipolares; o EBCDIC em CMOS.",
+      "O ASCII possui 8 bits (256 codificações); o EBCDIC possui 7 bits (128 codificações).",
+      "O ASCII possui 7 bits (128 codificações possíveis); o EBCDIC possui 8 bits (256 codificações possíveis).",
+      "O ASCII detecta erros via pulso RAS; o EBCDIC utiliza CAS.",
+      "Não existe diferença na quantidade de codificações, ambos têm 8 bits."
+    ],
+    "answer": "O ASCII possui 7 bits (128 codificações possíveis); o EBCDIC possui 8 bits (256 codificações possíveis).",
+    "topic": "2.1 - Códigos"
+  },
+  {
+    "question": "Qual é a capacidade total de bits (células de memória) que uma memória do tipo 16K x 2 pode armazenar?",
+    "options": [
+      "8.192 bits",
+      "16.384 bits",
+      "32.768 bits",
+      "65.536 bits",
+      "131.072 bits"
+    ],
+    "answer": "32.768 bits",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Qual é a principal desvantagem do conversor Digital-Analógico (D/A) básico construído apenas com uma rede de resistores, e qual circuito adicional é normalmente empregado na saída para corrigir esse problema?",
+    "options": [
+      "Apresenta alta dissipação térmica; corrigido com capacitores de desacoplamento de tântalo.",
+      "Exige multiplexação de dados complexa; corrigido com um CI demultiplexador na entrada.",
+      "Apresenta um baixo valor de tensão analógica na saída; corrigido com o uso de um Amplificador Operacional na configuração somador.",
+      "Gera correntes reversas indesejáveis; corrigido com a inserção de transistores Schottky.",
+      "Sofre de atrasos de propagação excessivos; corrigido com o uso de transistores na configuração Totem-Pole."
+    ],
+    "answer": "Apresenta um baixo valor de tensão analógica na saída; corrigido com o uso de um Amplificador Operacional na configuração somador.",
+    "topic": "3.1 - Conversores D/A"
+  },
+  {
+    "question": "Em relação às formas de variação das grandezas processadas em sistemas eletrônicos, como ocorrem, respectivamente, a variação de um \"sinal digital\" e a variação de um \"sinal analógico\"?",
+    "options": [
+      "Contínua assumindo valores em uma faixa restrita; Discreta operando em saltos.",
+      "Discreta, com a passagem de um valor a outro ocorrendo por saltos finitos; Contínua, assumindo infinitos valores intermediários dentro da sua faixa.",
+      "Ambas ocorrem de forma contínua, porém o sinal digital possui níveis filtrados.",
+      "Aleatória e dividida em blocos de 8 bits; Estruturada rigidamente em níveis quânticos.",
+      "Analógica, baseada em lógica de limiar; Digital, baseada na saturação dos transistores bipolares."
+    ],
+    "answer": "Discreta, com a passagem de um valor a outro ocorrendo por saltos finitos; Contínua, assumindo infinitos valores intermediários dentro da sua faixa.",
+    "topic": "1.1 - Sinais Analógicos e Digitais"
+  },
+  {
+    "question": "Além de dados puramente numéricos, um computador precisa ser capaz de reconhecer letras, sinais de pontuação e caracteres de controle (teclado, impressoras, etc). Como são conhecidos os códigos (como o ASCII e o EBCDIC) que realizam essa representação nos sistemas digitais?",
+    "options": [
+      "Códigos Hexadecimais.",
+      "Códigos de Paridade Ímpar.",
+      "Códigos Alfanuméricos.",
+      "Códigos BCD 8421.",
+      "Códigos Gray."
+    ],
+    "answer": "Códigos Alfanuméricos.",
+    "topic": "2.1 - Códigos"
+  },
+  {
+    "question": "O método do bit de paridade é amplamente utilizado em sistemas de transmissão de dados. Avalie a afirmação a seguir sobre esse método: \"Através do bit de paridade, o sistema receptor é capaz de determinar exatamente qual dos bits de uma informação transmitida está errado, corrigindo-o ativamente\".",
+    "options": [
+      "Verdadeira, pois o bit extra atua como um ponteiro de endereço do erro na palavra.",
+      "Falsa. O bit de paridade é capaz de detectar se houve erro na transmissão, mas não determina a sua posição (qual bit especificamente errou).",
+      "Verdadeira, mas essa funcionalidade só ocorre na \"paridade par\".",
+      "Falsa. O método de paridade é incapaz de detectar erros de transmissão, servindo apenas para empacotar a informação.",
+      "Verdadeira, desde que acoplado a um circuito multiplexador de 16 canais no receptor."
+    ],
+    "answer": "Falsa. O bit de paridade é capaz de detectar se houve erro na transmissão, mas não determina a sua posição (qual bit especificamente errou).",
+    "topic": "2.2 - Paridade"
+  },
+  {
+    "question": "Na transmissão de dados em \"paralelo\", as interferências eletromagnéticas (crosstalk) entre sinais em condutores adjacentes são problemas comuns. Como fisicamente esses problemas costumam ser resolvidos no meio de transmissão e qual é a principal consequência técnica dessa solução?",
+    "options": [
+      "Aumentando a tensão de alimentação dos barramentos, exigindo interfaces buffers potentes.",
+      "Com o uso de blindagens físicas e sinais através de pares diferenciais, o que acaba aumentando a espessura do cabo, tornando-o mais caro e de difícil instalação.",
+      "Diminuindo drasticamente a espessura dos fios e removendo o isolamento plástico, deixando o ar atuar como dielétrico.",
+      "Transmitindo os sinais no vácuo em guias de onda ópticos de baixo custo.",
+      "Modulando o sinal paralelo através de CIs TTL de alta potência (série FAST)."
+    ],
+    "answer": "Com o uso de blindagens físicas e sinais através de pares diferenciais, o que acaba aumentando a espessura do cabo, tornando-o mais caro e de difícil instalação.",
+    "topic": "2.6 - Barramentos"
+  },
+  {
+    "question": "Em um microcomputador, a Unidade Central de Processamento (CPU) é hoje implementada em um único chip chamado Microprocessador. Quais são as principais unidades internas clássicas que compõem uma CPU?",
+    "options": [
+      "Unidade de Memória EPROM e Registradores Dinâmicos.",
+      "Controladores de Interrupção Múltipla e Barramento de Vídeo.",
+      "Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).",
+      "Multiplexadores de Endereços e Conversores Analógico/Digitais.",
+      "Memória Cache de nível 2 e Barramento Frontal de alta velocidade."
+    ],
+    "answer": "Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).",
+    "topic": "2.6 - Barramentos e CPU"
+  },
+  {
+    "question": "Na arquitetura de comunicação de um microcomputador, os sinais são escoados por um conjunto de vias. Qual é a definição exata e o comportamento direcional do Barramento de Endereços (Address Bus)?",
+    "options": [
+      "É um barramento bidirecional que transporta os dados já processados da memória para os periféricos.",
+      "É um barramento unidirecional que conduz a informação da CPU para a memória ou dispositivos de E/S, fornecendo a posição da célula onde um dado será lido ou escrito.",
+      "É um barramento multiplexado que carrega sinais de temporização (clock) para todas as placas conectadas à placa-mãe.",
+      "É o barramento dedicado ao transporte de níveis lógicos entre a interface de vídeo e o monitor.",
+      "É um barramento exclusivo para alertar a CPU de falhas fatais no hardware (Interrupt Bus)."
+    ],
+    "answer": "É um barramento unidirecional que conduz a informação da CPU para a memória ou dispositivos de E/S, fornecendo a posição da célula onde um dado será lido ou escrito.",
+    "topic": "2.6 - Barramentos"
+  },
+  {
+    "question": "Das características técnicas que compõem o datasheet de uma memória semicondutora, o que expressa o chamado \"Tempo de Acesso\"?",
+    "options": [
+      "O tempo necessário para a inicialização total (boot) do circuito em que a ROM está instalada.",
+      "O intervalo de tempo decorrido entre a aplicação de uma combinação de endereços nas entradas do CI e a apresentação efetiva do dado nas linhas de saída.",
+      "O tempo máximo gasto pelo sinal RAS e CAS para ativar e desativar as linhas da DRAM.",
+      "O tempo contínuo exigido para a exposição da pastilha de silício à luz ultravioleta (em memórias EPROM).",
+      "O tempo médio que o usuário leva para salvar um documento na unidade de disco rígido (HD)."
+    ],
+    "answer": "O intervalo de tempo decorrido entre a aplicação de uma combinação de endereços nas entradas do CI e a apresentação efetiva do dado nas linhas de saída.",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "A multiplexação de endereços é uma técnica usada para diminuir o tamanho dos chips e a quantidade de pinos. Em um chip DRAM cuja matriz requer um total de 20 bits de endereço para acessar sua capacidade completa de 1 Megabyte, quantas linhas físicas de endereço existirão, na prática, ligadas ao CI?",
+    "options": [
+      "20 linhas físicas.",
+      "15 linhas físicas.",
+      "10 linhas físicas.",
+      "8 linhas físicas.",
+      "5 linhas físicas."
+    ],
+    "answer": "10 linhas físicas.",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "A respeito da tecnologia de memórias e do processamento do pulso de clock, julgue a afirmação: \"Uma memória DDR-SDRAM trabalha com uma frequência de clock real que é o DOBRO daquela usada na SDRAM comum (SDR), para poder transferir o dobro da taxa de dados.\" Qual das opções abaixo está correta?",
+    "options": [
+      "A afirmação é Verdadeira. A sigla DDR (Double Data Rate) se refere ao fato de o cristal oscilador operar com o dobro de hertz no barramento frontal.",
+      "A afirmação é Falsa. A memória DDR trabalha na mesma frequência real de oscilação do barramento SDR, mas ela transfere os dados tanto na subida (borda positiva) quanto na descida (borda negativa) do pulso de clock.",
+      "A afirmação é Verdadeira. A arquitetura exige tensão reduzida justamente para aguentar o dobro do calor gerado pela frequência dobrada.",
+      "A afirmação é Falsa. A DDR dobra a velocidade apenas por possuir dois controladores assíncronos independentes na placa-mãe.",
+      "A afirmação é Verdadeira. Todo processador requer que as memórias operem a 2x o multiplicador base para simular altas taxas."
+    ],
+    "answer": "A afirmação é Falsa. A memória DDR trabalha na mesma frequência real de oscilação do barramento SDR, mas ela transfere os dados tanto na subida (borda positiva) quanto na descida (borda negativa) do pulso de clock.",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "O conversor A/D compatível com barramentos de microcomputadores, como o ADC0804, possui pinos de controle essenciais. Entre eles, qual é a função respectiva dos pinos 1 (CS - Chip Select) e 2 (RD - Read)?",
+    "options": [
+      "O CS seleciona o canal do multiplexador interno; o RD inicia as sucessões matemáticas.",
+      "O CS determina a conversão entre o código BCD e o ASCII; o RD desabilita os ruídos do terra analógico.",
+      "O CS, quando em nível alto, habilita a conversão; o RD funciona como interrupção (INTR) que alerta o fim do processo.",
+      "O CS em nível baixo ativa o circuito integrado da pastilha permitindo o funcionamento; o RD em nível baixo habilita os buffers tri-state de saída para que a CPU leia o dado resultante.",
+      "Ambos fornecem tensão estabilizada para o comparador interno do chip se o gerador de clock falhar."
+    ],
+    "answer": "O CS em nível baixo ativa o circuito integrado da pastilha permitindo o funcionamento; o RD em nível baixo habilita os buffers tri-state de saída para que a CPU leia o dado resultante.",
+    "topic": "3.2 - Conversores A/D"
+  },
+  {
+    "question": "Considere um circuito com o conversor A/D (8 bits, variação máxima do dado igual a 255 em decimal) idêntico ao da Figura 131 da apostila. A escala total de fundo analógico foi calibrada para exatamente 6,5 Volts. Se um transdutor injetar 2,7 Volts na entrada, qual será, aproximadamente, o valor digital binário lido no barramento? (Fórmula: Decimal equivalente = V_entrada / Resolução)",
+    "options": [
+      "00110011",
+      "10110000",
+      "01101001",
+      "11001100",
+      "10000101"
+    ],
+    "answer": "01101001",
+    "topic": "3.2 - Conversores A/D",
+    "image": circuito131
+  },
+  {
+    "question": "Avaliando o desempenho do sistema através da transferência de barramento, calcule a taxa de transferência real suportada por um barramento frontal de placa-mãe que opera com uma frequência de 150 MHz e possui um tamanho (largura) de 64 bits de dados físicos por via. Lembre-se da relação Byte/bit.",
+    "options": [
+      "150 Megabytes por segundo (MB/s).",
+      "300 Megabytes por segundo (MB/s).",
+      "9.600 Megabytes por segundo (MB/s).",
+      "1.200 Megabytes por segundo (MB/s) - equivalente a 1,2 GB/s.",
+      "450 Megabytes por segundo (MB/s)."
+    ],
+    "answer": "1.200 Megabytes por segundo (MB/s) - equivalente a 1,2 GB/s.",
+    "topic": "2.6 - Barramentos"
+  },
+  {
+    "question": "Dispositivos dedicados conhecidos como \"Geradores de Formas de Ondas Digitais\" combinam componentes já estudados. Especifique, primariamente, os blocos essenciais que constituem o núcleo de um \"Gerador de Rampa Digital\" clássico (dente de serra).",
+    "options": [
+      "Um Demultiplexador e uma malha de resistores TTL.",
+      "Um codificador de prioridade 8-para-3 e uma memória RAM de acesso sequencial.",
+      "Um microprocessador e um comparador de limiar.",
+      "Um Controlador Diferencial (PID) e uma antena transmissora acoplada a conversores D/A.",
+      "Um Contador digital de 0 a \"n\" gerador de estados e um Conversor D/A acoplado na saída do mesmo."
+    ],
+    "answer": "Um Contador digital de 0 a \"n\" gerador de estados e um Conversor D/A acoplado na saída do mesmo.",
+    "topic": "3.3 - Geradores de Formas de Onda"
+  },
+  {
+    "question": "Em um laboratório, desejamos utilizar um MUX de 4 canais como \"Circuito Combinacional\", realizando estritamente a função da porta NOR (Não-OU) para as duas variáveis de seleção 'A' e 'B'. Como devem estar polarizadas (em +Vcc ou GND) as 4 entradas de dados (I0, I1, I2 e I3) para que a saída do multiplexador respeite a tabela verdade da NOR?",
+    "options": [
+      "Todas as entradas (I0 a I3) devem ser amarradas ao +Vcc (nível 1).",
+      "I0 conectada ao nível 1 (+Vcc); I1, I2 e I3 conectadas ao nível 0 (GND).",
+      "I0 conectada ao nível 0 (GND); I1, I2 e I3 conectadas ao nível 1 (+Vcc).",
+      "Apenas I3 conectada ao nível 1 (+Vcc), as restantes em nível 0 (GND).",
+      "I1 e I2 conectadas ao nível 1 (+Vcc); I0 e I3 conectadas ao nível 0 (GND)."
+    ],
+    "answer": "I0 conectada ao nível 1 (+Vcc); I1, I2 e I3 conectadas ao nível 0 (GND).",
+    "topic": "2.3 - Multiplex"
+  },
+  {
+    "question": "O que caracteriza um \"sinal analógico\" em oposição a um sinal digital?",
+    "options": [
+      "Varia de forma discreta, passando de um valor a outro em saltos finitos.",
+      "Varia continuamente, assumindo infinitos valores intermediários dentro de sua faixa de atuação.",
+      "Assume apenas os valores lógicos 0 (terra) e 1 (+Vcc).",
+      "É imune a qualquer tipo de ruído eletromagnético do ambiente.",
+      "É gerado exclusivamente por flip-flops e contadores decádicos."
+    ],
+    "answer": "Varia continuamente, assumindo infinitos valores intermediários dentro de sua faixa de atuação.",
+    "topic": "1.1 - Sinais Analógicos e Digitais"
+  },
+  {
+    "question": "A \"Variação Digital\" no contexto de sistemas eletrônicos é definida como:",
+    "options": [
+      "Uma transição que ocorre de forma discreta, ou seja, a passagem de um valor a outro se dá por saltos (níveis finitos).",
+      "A variação contínua ao longo de infinitos valores em uma escala de tempo.",
+      "O processo em que a tensão obedece obrigatoriamente a funções senoidais.",
+      "A alteração de correntes contínuas utilizando reatores nucleares.",
+      "Uma oscilação gerada por circuitos ressonantes R-C que não muda de estado."
+    ],
+    "answer": "Uma transição que ocorre de forma discreta, ou seja, a passagem de um valor a outro se dá por saltos (níveis finitos).",
+    "topic": "1.1 - Sinais Analógicos e Digitais"
+  },
+  {
+    "question": "Qual a principal vantagem da \"Transmissão Serial\" e onde ela é mais recomendada em detrimento da \"Transmissão Paralela\"?",
+    "options": [
+      "Transmite vários bytes ao mesmo tempo; útil apenas em redes intra-processador.",
+      "É muito mais cara devido à espessura dos cabos; útil em curtas distâncias (< 1 metro).",
+      "Envia os bits sequencialmente em um único canal, tornando a estrutura mais barata; é a mais recomendada para longas distâncias.",
+      "Não sofre nenhum tipo de atenuação; ideal para comunicação entre memórias Cache e a ULA.",
+      "Utiliza múltiplos condutores grossos para evitar \"crosstalk\" (interferência); é obrigatória em impressoras matriciais."
+    ],
+    "answer": "Envia os bits sequencialmente em um único canal, tornando a estrutura mais barata; é a mais recomendada para longas distâncias.",
+    "topic": "2.6 - Barramentos"
+  },
+  {
+    "question": "Em um circuito Demultiplexador (DEMUX) com 4 canais de saída, qual é a estrutura lógica mínima necessária para o seu roteamento?",
+    "options": [
+      "4 entradas de seleção de endereço, acopladas a uma única porta OR.",
+      "2 entradas de seleção (A e B), uma entrada de dados (E) e 4 portas AND que ligam a entrada \"E\" a cada uma das respectivas saídas de acordo com a seleção.",
+      "1 entrada de seleção controlando 4 portas NOR em cascata.",
+      "Chaves eletromecânicas acionadas por relés.",
+      "4 multiplexadores invertidos funcionando por portas NAND tri-state."
+    ],
+    "answer": "2 entradas de seleção (A e B), uma entrada de dados (E) e 4 portas AND que ligam a entrada \"E\" a cada uma das respectivas saídas de acordo com a seleção.",
+    "topic": "2.4 - Demultiplex"
+  },
+  {
+    "question": "Sabendo que um certo Multiplexador (MUX) necessita chavear as linhas de entrada para atender exatamente a 42 canais diferentes. Qual será o número mínimo de \"variáveis de seleção\" que o projetista precisará interligar no chip?",
+    "options": [
+      "4 variáveis.",
+      "5 variáveis.",
+      "6 variáveis.",
+      "7 variáveis.",
+      "42 variáveis."
+    ],
+    "answer": "6 variáveis.",
+    "topic": "2.3 - Multiplex"
+  },
+  {
+    "question": "Para que possamos projetar um circuito Demultiplexador capaz de rotear uma informação para 65 canais na sua saída, o número mínimo de variáveis de seleção requeridas é de:",
+    "options": [
+      "5 variáveis.",
+      "6 variáveis.",
+      "7 variáveis.",
+      "8 variáveis.",
+      "65 variáveis."
+    ],
+    "answer": "7 variáveis.",
+    "topic": "2.4 - Demultiplex"
+  },
+  {
+    "question": "Quantas linhas de endereçamento físicas, no mínimo, a CPU do sistema precisaria ativar para conseguir acessar perfeitamente a posição de memória que se encontra no endereço \"03FF\" (em hexadecimal)?",
+    "options": [
+      "8 linhas.",
+      "9 linhas.",
+      "10 linhas.",
+      "12 linhas.",
+      "16 linhas."
+    ],
+    "answer": "10 linhas.",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Em um microcomputador, a Unidade Central de Processamento (CPU) conta com unidades vitais para realizar todo o processamento de máquina. Quais são as nomenclaturas dessas subunidades que dividem a função central do processador?",
+    "options": [
+      "Placa de Vídeo e Ponte Norte (Northbridge).",
+      "Barramento Frontal (FSB) e Memória de Massa.",
+      "Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).",
+      "Unidade de Conversão Analógica e Controlador de Interrupções.",
+      "BIOS e Memória ROM."
+    ],
+    "answer": "Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).",
+    "topic": "2.6 - Barramentos e CPU"
+  },
+  {
+    "question": "Para que o microcomputador execute uma função prática (como exibir este texto), é preciso alimentar a máquina com lógicas sequenciais específicas. O que é um \"Programa\" na definição de arquitetura de computadores?",
+    "options": [
+      "Um dispositivo físico (hardware) que resfria a memória em funcionamento.",
+      "Um conjunto completo de instruções matemáticas e lógicas elaboradas que descrevem exatamente o que o computador deve fazer a cada passo.",
+      "A camada de verniz semicondutor da placa mãe.",
+      "O sistema que injeta elétrons com alta energia na porta em flutuação das EPROMs.",
+      "Um pulso RAS (Row Address Strobe) executado repetidamente."
+    ],
+    "answer": "Um conjunto completo de instruções matemáticas e lógicas elaboradas que descrevem exatamente o que o computador deve fazer a cada passo.",
+    "topic": "2.6 - Barramentos e CPU"
+  },
+  {
+    "question": "O uso da \"multiplexação de endereços\" é vital para reduzir a quantidade de pinos externos de uma pastilha de memória. Em uma DRAM com capacidade de 1 MB (que no total necessitaria de 20 linhas teóricas de endereço), quantas linhas de endereços FÍSICAS entram efetivamente no chip?",
+    "options": [
+      "5 linhas.",
+      "10 linhas.",
+      "15 linhas.",
+      "20 linhas.",
+      "40 linhas."
+    ],
+    "answer": "10 linhas.",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "Quais são os dois sinais de controle (flags) classicamente responsáveis por \"travar\" (inserir no registrador) as metades do endereço multiplexado em uma memória DRAM?",
+    "options": [
+      "CE (Chip Enable) e OE (Output Enable).",
+      "VDD e VSS.",
+      "WR (Write) e RD (Read).",
+      "RAS (Row Address Strobe) e CAS (Column Address Strobe).",
+      "ALE e PGM."
+    ],
+    "answer": "RAS (Row Address Strobe) e CAS (Column Address Strobe).",
+    "topic": "2.5 - Memórias"
+  },
+  {
+    "question": "No conversor A/D compatível com microprocessadores ADC0804, a interface utiliza uma série de pinos de controle para conversar com a CPU. Se o pino número 2, chamado de RD (Read), for acionado em nível baixo (\"0\"), o que o chip executará?",
+    "options": [
+      "Ocorrerá o apagamento completo do registrador interno da conversão.",
+      "A conversão da tensão analógica para digital é imediatamente iniciada (Start).",
+      "O pino atua como uma interrupção avisando a placa mãe que houve falha geral.",
+      "O pino habilita os buffers de saída (tri-state) para que os dados binários recém-convertidos fiquem disponíveis no barramento para a leitura pela CPU.",
+      "A tensão de referência interna (Vref/2) será reduzida à metade."
+    ],
+    "answer": "O pino habilita os buffers de saída (tri-state) para que os dados binários recém-convertidos fiquem disponíveis no barramento para a leitura pela CPU.",
+    "topic": "3.2 - Conversores A/D"
+  },
+  {
+    "question": "Se modificarmos a escala (fundo de escala analógico) de um circuito conversor A/D de 8 bits (como o ADC0804) para exatamente 4,0 VDC. Qual será a saída digital obtida (em binário) se o sensor injetar na entrada analógica uma tensão de 0,8 Volts?",
+    "options": [
+      "10100101",
+      "01101001",
+      "00110011",
+      "10110000",
+      "11001100"
+    ],
+    "answer": "00110011",
+    "topic": "3.2 - Conversores A/D"
+  },
+  {
+    "question": "Ao construirmos um \"Gerador de Formas de Onda Digitais\" na forma de uma RAMPA (dente-de-serra), o núcleo desse aparelho é montado utilizando primariamente a cascata de dois circuitos da eletrônica digital. Quais são eles?",
+    "options": [
+      "Um Demultiplexador em série com decodificadores de 7 segmentos.",
+      "Um MUX atuando como porta NAND e uma memória FLASH OTP.",
+      "Um Contador digital (para gerar o sequenciamento numérico crescente) interligado a um Conversor D/A (para passar esse sequenciamento a níveis de tensão em rampa).",
+      "Um Flip-Flop do tipo T e um sensor analógico de pressão.",
+      "Uma ULA integrada com um registrador de deslocamento PISO."
+    ],
+    "answer": "Um Contador digital (para gerar o sequenciamento numérico crescente) interligado a um Conversor D/A (para passar esse sequenciamento a níveis de tensão em rampa).",
+    "topic": "3.3 - Geradores de Formas de Onda"
+  },
+  {
+    "question": "Já se o nosso objetivo for construir não uma rampa simples, mas sim um \"Gerador de forma de onda TRIANGULAR\", qual deve ser a principal modificação nesse contador da questão anterior?",
+    "options": [
+      "O contador deve ser de Década e resetar no número 9.",
+      "Deve-se utilizar um Contador Crescente/Decrescente (Up/Down Counter), pois a forma de onda precisa subir e depois descer as escadas da rampa.",
+      "O contador precisa obrigatoriamente trabalhar de forma Assíncrona no modo \"ripple\".",
+      "É preciso adicionar filtros indutores aos flip-flops.",
+      "Retira-se o contador e utiliza-se apenas um decodificador de 4 para 16 linhas."
+    ],
+    "answer": "Deve-se utilizar um Contador Crescente/Decrescente (Up/Down Counter), pois a forma de onda precisa subir e depois descer as escadas da rampa.",
+    "topic": "3.3 - Geradores de Formas de Onda"
+  },
+  {
+    "question": "Um microprocessador precisa digitalizar a leitura de um sensor utilizando um circuito conversor A/D de 8 bits (baseado no CI ADC0804). O projetista modificou a tensão de referência para que o fundo de escala máximo suportado na entrada analógica fosse de exatamente 6,5 VDC. Se, em determinado momento, o sensor injetar 4,5 Volts no pino Vin(+), qual será a palavra binária resultante colocada no barramento de dados?",
+    "options": [
+      "10100101",
+      "10001000",
+      "10110000",
+      "01101001",
+      "11111111"
+    ],
+    "answer": "10110000",
+    "topic": "3.2 - Conversores A/D"
+  },
+  {
+    "question": "Em um outro circuito industrial equipado com o mesmo conversor A/D de 8 bits, o fundo de escala foi reduzido e ajustado para exatamente 4,0 VDC. Calcule a saída digital obtida caso a tensão analógica lida seja de 2,6 Volts.",
+    "options": [
+      "10110011",
+      "10100101",
+      "01100111",
+      "00110011",
+      "11001000"
+    ],
+    "answer": "10100101",
+    "topic": "3.2 - Conversores A/D"
+  },
+  {
+    "question": "O CI ADC0804 possui um gerador de clock interno que dita o seu tempo de conversão. A frequência desse clock é determinada por uma rede RC externa ligada aos pinos 4 (CLK IN) e 19 (CLK OUT), calculada pela fórmula f≈1/(1,1⋅R⋅C). Se os valores dos componentes forem alterados para R=8 kΩ e C=100 pF, a nova frequência interna de conversão será aproximadamente de:",
+    "options": [
+      "100 KHz",
+      "909 KHz",
+      "11,3 MHz",
+      "1,1 MHz",
+      "606 KHz"
+    ],
+    "answer": "1,1 MHz",
+    "topic": "3.2 - Conversores A/D"
+  },
+  {
+    "question": "Um conversor Digital-Analógico foi montado apenas com a rede resistiva R-2R simples (sem uso de amplificador operacional). Sabe-se que essa rede, alimentada com Vcc=6V, atribui parcelas de tensão decrescentes para os bits de entrada (Vcc/3 para o MSB, Vcc/6 para o próximo, e assim sucessivamente). Para uma palavra binária de entrada igual a 1110 (Sendo A o MSB e D o LSB), qual será a tensão analógica Vs produzida na saída da rede?",
+    "options": [
+      "1,5 V",
+      "2,6 V",
+      "3,5 V",
+      "4,5 V",
+      "5,0 V"
+    ],
+    "answer": "3,5 V",
+    "topic": "3.1 - Conversores D/A"
+  },
+  {
+    "question": "Nos projetos mais eficientes de Conversores D/A, é praxe associar a rede R-2R resistiva a um Amplificador Operacional na configuração de somador inversor. Dentre as justificativas técnicas para essa topologia, destaca-se que o Amplificador Operacional:",
+    "options": [
+      "Transforma a corrente digital em pulsos de clock sincronizados para a CPU.",
+      "Reduz drasticamente a velocidade de comutação para evitar ruídos (spikes).",
+      "Funciona como um comparador de tensão, zerando a saída se a palavra for par.",
+      "Permite ajustar o fator de proporcionalidade da saída sem depender da tensão do nível lógico 1, além de promover um excelente isolamento de impedância com a carga.",
+      "Realiza o processo de \"refresh\" nos diodos Schottky da rede para evitar perda de resolução térmica."
+    ],
+    "answer": "Permite ajustar o fator de proporcionalidade da saída sem depender da tensão do nível lógico 1, além de promover um excelente isolamento de impedância com a carga.",
+    "topic": "3.1 - Conversores D/A"
+  },
+  {
+    "question": "Avaliando a capacidade técnica das pastilhas de memória estática, determine o número total de células biestáveis (bits armazenados no total) em um chip cuja organização estrutural é descrita pelo fabricante como \"16K x 2\".",
+    "options": [
+      "8.192 bits.",
       "16.384 bits.",
+      "32.768 bits.",
       "65.536 bits.",
-      "131.072 bits.",
-      "8.192 bits."
+      "131.072 bits."
     ],
-    "answer": "32.768 bits (16.384 * 2).",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "32.768 bits.",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Quantas linhas de endereço são necessárias para acessar uma memória estruturada como 4K x 2?",
+    "question": "Em sistemas computacionais, existem memórias com arquiteturas totalmente dedicadas ao desempenho de vídeo. A memória \"VRAM\" (Video RAM) diferencia-se drasticamente da DRAM comum porque:",
     "options": [
-      "12 linhas de endereço (2^12 = 4096 = 4K).",
-      "10 linhas de endereço.",
-      "14 linhas de endereço.",
-      "8 linhas de endereço.",
-      "16 linhas de endereço."
+      "É completamente assíncrona, eliminando a necessidade de barramento local.",
+      "Utiliza flip-flops do tipo T no lugar de capacitores, sendo por natureza uma memória Estática (SRAM).",
+      "Possui arquitetura de \"porta dupla\" (Dual-Port), permitindo que o microprocessador a atualize ao mesmo tempo em que o controlador de vídeo lê os dados para enviar ao monitor.",
+      "Opera obrigatoriamente acoplada a conversores ADC0804 para gerar gráficos 3D.",
+      "Seu processo de apagamento ocorre através da emissão de raios ultravioleta pelo próprio tubo do monitor."
     ],
-    "answer": "12 linhas de endereço (2^12 = 4096 = 4K).",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "Possui arquitetura de \"porta dupla\" (Dual-Port), permitindo que o microprocessador a atualize ao mesmo tempo em que o controlador de vídeo lê os dados para enviar ao monitor.",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "No mínimo, quantas linhas de endereço são necessárias para acessar o endereço hexadecimal 03FFh em uma memória?",
+    "question": "Em projetos de computadores que requerem máxima performance (como as memórias Cache L2), o engenheiro deve escolher cuidadosamente o tipo de SRAM a utilizar. Qual a característica que torna a \"SRAM Pipelined Burst\" superior à \"SRAM Assíncrona\" tradicional?",
     "options": [
-      "10 linhas de endereço (03FFh = 1023 decimal, totalizando 1024 posições = 2^10).",
-      "8 linhas de endereço.",
-      "12 linhas de endereço.",
-      "16 linhas de endereço.",
-      "9 linhas de endereço."
+      "A Pipelined Burst realiza refresh a cada 20ms, o que economiza bateria.",
+      "A Pipelined Burst transfere blocos contínuos de dados (rajada) em menos ciclos de clock, podendo trabalhar com barramentos (FSB) muito rápidos (até 133 MHz) sem a necessidade de introduzir estados de espera (wait states).",
+      "A SRAM Assíncrona exige que o sinal RAS e CAS sejam ativados para cada leitura.",
+      "A SRAM Assíncrona foi projetada exclusivamente para tecnologias de Baixa Tensão (3,3V).",
+      "Não há superioridade de velocidade, ambas possuem o mesmo tempo de acesso típico de 50ns."
     ],
-    "answer": "10 linhas de endereço (03FFh = 1023 decimal, totalizando 1024 posições = 2^10).",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "A Pipelined Burst transfere blocos contínuos de dados (rajada) em menos ciclos de clock, podendo trabalhar com barramentos (FSB) muito rápidos (até 133 MHz) sem a necessidade de introduzir estados de espera (wait states).",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "No mínimo, quantas linhas de endereço necessitaríamos para acessar o endereço hexadecimal 01FFh?",
+    "question": "O projeto de um decodificador de memória exige a conversão exata do mapa de endereços (Memory Map). Quantas linhas físicas de endereçamento, no mínimo, a CPU precisa atracar no barramento para conseguir acessar unicamente a posição que se encontra no endereço \"01FF\" (em hexadecimal)?",
     "options": [
-      "9 linhas de endereço (01FFh = 511 decimal, totalizando 512 posições = 2^9).",
-      "8 linhas de endereço.",
-      "10 linhas de endereço.",
-      "12 linhas de endereço.",
-      "7 linhas de endereço."
+      "7 linhas de endereço (A0 a A6).",
+      "8 linhas de endereço (A0 a A7).",
+      "9 linhas de endereço (A0 a A8).",
+      "10 linhas de endereço (A0 a A9).",
+      "12 linhas de endereço (A0 a A11)."
     ],
-    "answer": "9 linhas de endereço (01FFh = 511 decimal, totalizando 512 posições = 2^9).",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "9 linhas de endereço (A0 a A8).",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Quais são os sinais de controle utilizados no endereçamento em duas etapas em uma memória DRAM?",
+    "question": "No conversor A/D ADC0804, há um pino muito específico (pino 9) denominado \"Vref/2\". Segundo o datasheet do componente, se este pino for deixado em aberto (desconectado externamente), o que ocorrerá internamente com a tensão de referência do circuito?",
     "options": [
-      "CAS (Column Address Strobe) e RAS (Row Address Strobe).",
-      "OE e CE apenas.",
-      "CLK e RESET.",
-      "WR e CS apenas.",
-      "RW e INT."
+      "O chip entra em curto-circuito (latch-up) térmico.",
+      "O conversor paralisa todas as atividades, aguardando um sinal de Interrupção (INTR).",
+      "A tensão de referência cai para zero e o chip passa a atuar como um buffer inversor.",
+      "O pino assumirá automaticamente a tensão Vcc/2 (típicamente 2,5V), já que a própria tensão de alimentação (Vcc) passa a atuar como o fundo de escala (5V) por padrão.",
+      "A escala analógica suportada sobe instantaneamente para 15V."
     ],
-    "answer": "CAS (Column Address Strobe) e RAS (Row Address Strobe).",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "O pino assumirá automaticamente a tensão Vcc/2 (típicamente 2,5V), já que a própria tensão de alimentação (Vcc) passa a atuar como o fundo de escala (5V) por padrão.",
+    "topic": "3.2 - Conversores A/D"
   },
   {
-    "question": "O uso da multiplexação de endereços veio para reduzir o número de pinos dos CIs de memória. Uma DRAM de 1 MB (1 M x 1), usando multiplexação de endereços, necessita de quantas linhas físicas de endereço no CI?",
+    "question": "A memória EPROM, durante muito tempo, foi o padrão para a gravação da BIOS das placas-mães. Baseando-se no conceito de semicondutores, como essa memória é efetivamente programada (escrita) e como ela deve ser apagada?",
     "options": [
-      "10 linhas físicas de endereço (multiplexando 10 bits de linha e 10 bits de coluna para formar 20 bits de endereço total).",
-      "20 linhas físicas de endereço.",
-      "16 linhas físicas de endereço.",
-      "8 linhas físicas de endereço.",
-      "12 linhas físicas de endereço."
+      "Escrita magneticamente por um cabeçote; apagada desmagnetizando os setores cilíndricos.",
+      "Escrita eletricamente, injetando elétrons com alta energia na região da porta em flutuação (flotting-gate) através de pulsos de tensão elevados (Vpp); apagada pela exposição prolongada (aprox. 20 minutos) da pastilha à luz ultravioleta (UV).",
+      "Escrita pela \"queima\" destrutiva e irreversível de micro-fusíveis de titânio; impossível de ser apagada.",
+      "Escrita aplicando nível lógico 0 ao pino CAS; apagada enviando um pulso em nível 1 ao pino RAS.",
+      "Escrita de forma eletromecânica em fábrica (máscara de silício); apagamento feito por raios-X em câmaras de vácuo."
     ],
-    "answer": "10 linhas físicas de endereço (multiplexando 10 bits de linha e 10 bits de coluna para formar 20 bits de endereço total).",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "Escrita eletricamente, injetando elétrons com alta energia na região da porta em flutuação (flotting-gate) através de pulsos de tensão elevados (Vpp); apagada pela exposição prolongada (aprox. 20 minutos) da pastilha à luz ultravioleta (UV).",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Qual é a DRAM em arquitetura de computador que possui duas portas (ou duas entradas) para acesso independente e simultâneo?",
+    "question": "Ao trabalhar com comunicações entre periféricos e a CPU de um computador (como entre o Teclado e o Processador), lida-se com dispositivos que transferem dados a taxas incrivelmente distintas. Qual a arquitetura de memória projetada especificamente para atuar como um \"Buffer de Transferência\", no qual o primeiro dado armazenado é estritamente o primeiro a ser lido?",
     "options": [
-      "VRAM (Video RAM) ou Dual-Port RAM.",
-      "SRAM assíncrona.",
-      "EPROM UV.",
-      "PROM fusível.",
-      "SDRAM padrão de porta única."
+      "Memória LIFO (Last-In, First-Out).",
+      "Memória FIFO (First-In, First-Out).",
+      "Registrador PIPO (Parallel-In, Parallel-Out).",
+      "SDRAM Múltipla.",
+      "Memória ROM-Máscara."
     ],
-    "answer": "VRAM (Video RAM) ou Dual-Port RAM.",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "Memória FIFO (First-In, First-Out).",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Qual tipo de memória permite fazer o apagamento e regravação elétrica seletiva diretamente no circuito por setor ou bloco?",
+    "question": "O CI 74LS154 é um componente clássico da eletrônica digital atuando como Decodificador/Demultiplexador de 4 para 16 linhas. Neste chip, todas as 16 saídas são ativas em nível BAIXO. Para que a pastilha não fique em estado de alta impedância ou inativa, como devem ser polarizadas as suas duas entradas de habilitação de dados (G1 e G2)?",
     "options": [
-      "Memória Flash (ou EEPROM por bloco).",
-      "Memória ROM mascarada.",
-      "Memória EPROM por ultravioleta.",
-      "Memória PROM descartável.",
-      "Memória de núcleo magnético."
+      "Ambas em nível lógico ALTO (1 e 1).",
+      "G1 em nível ALTO e G2 em nível BAIXO (1 e 0).",
+      "G1 em nível BAIXO e G2 em nível ALTO (0 e 1).",
+      "Ambas devem estar obrigatoriamente em nível lógico BAIXO (0 e 0).",
+      "Devem ser polarizadas em Vcc/2."
     ],
-    "answer": "Memória Flash (ou EEPROM por bloco).",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "Ambas devem estar obrigatoriamente em nível lógico BAIXO (0 e 0).",
+    "topic": "2.4 - Demultiplex"
   },
   {
-    "question": "Que memória foi construída a partir da junção e evolução das memórias EPROM e EEPROM, oferecendo alta densidade e apagamento elétrico em setores?",
+    "question": "A construção de multiplexadores de alta capacidade a partir de CIs comerciais menores exige técnica lógica. Se desejarmos construir um único sistema MUX de 16 canais de dados (16 entradas e 1 saída) utilizando exclusivamente pastilhas MUX de 8 canais, como o circuito principal deve se comportar fisicamente?",
     "options": [
-      "Memória Flash.",
-      "Memória SRAM estática.",
-      "Memória DRAM em coluna.",
-      "Memória PROM térmica.",
-      "Memória cache L1."
+      "Basta ligar as 16 entradas no primeiro chip, pois a multiplexação ocorre por divisão de frequência térmica.",
+      "Precisaremos de dois CIs MUX de 8 canais atuando paralelamente, e um terceiro elemento (como um terceiro MUX ou portas lógicas) que utilizará a variável de seleção mais significativa (MSB) para decidir qual dos dois chips iniciais enviará seu dado para a saída final.",
+      "Usa-se 16 pastilhas de 8 canais conectadas em cascata (daisy-chain) formando um anel.",
+      "É impossível montar um sistema MUX maior sem queimar as portas de seleção internas.",
+      "Conecta-se todos os pinos de saída entre si (configuração Wired-OR) e aterra-se o sinal CAS da pastilha mestre."
     ],
-    "answer": "Memória Flash.",
-    "topic": "2.6 - Memórias [Questão Direta]"
+    "answer": "Precisaremos de dois CIs MUX de 8 canais atuando paralelamente, e um terceiro elemento (como um terceiro MUX ou portas lógicas) que utilizará a variável de seleção mais significativa (MSB) para decidir qual dos dois chips iniciais enviará seu dado para a saída final.",
+    "topic": "2.3 - Multiplex"
   },
   {
-    "question": "Qual é a principal desvantagem da memória DRAM em relação à memória SRAM?",
+    "question": "Visando modernizar a automação de uma fragata, o sistema interno de dados baseia-se num barramento primário cuja frequência teórica de trabalho da placa é de 50 MHz e sua largura física de transferência (tamanho do barramento de dados) é de 32 bits de comprimento por ciclo. A Taxa de Transferência limite (em MB/s) deste canal será de:",
     "options": [
-      "Necessidade de ciclos periódicos de refrescamento (refresh) para manter os dados nas capacitâncias e menor velocidade de operação.",
-      "Maior consumo em repouso por célula.",
-      "Ocupa mais área de silício por bit.",
-      "Custo muito superior por Megabyte.",
-      "Não permite reescrita de dados."
-    ],
-    "answer": "Necessidade de ciclos periódicos de refrescamento (refresh) para manter os dados nas capacitâncias e menor velocidade de operação.",
-    "topic": "2.6 - Memórias [Questão Discursiva]"
-  },
-  {
-    "question": "Das características de uma memória, defina o que é TEMPO DE ACESSO (Access Time).",
-    "options": [
-      "O tempo decorrido entre a aplicação de um endereço válido no CI de memória e o momento em que os dados correspondentes estão estáveis e disponíveis nos pinos de saída.",
-      "O tempo necessário para resfriar a pastilha após a escrita.",
-      "O intervalo mínimo entre duas energizações do computador.",
-      "A frequência máxima de operação do clock da CPU.",
-      "O tempo de gravação permanente em uma ROM."
-    ],
-    "answer": "O tempo decorrido entre a aplicação de um endereço válido no CI de memória e o momento em que os dados correspondentes estão estáveis e disponíveis nos pinos de saída.",
-    "topic": "2.6 - Memórias [Questão Discursiva]"
-  },
-  {
-    "question": "A memória PIPELINE BURST, amplamente usada como cache rápida em computadores, é classificada como que tipo de memória?",
-    "options": [
-      "SRAM síncrona com registradores internos de pipeline.",
-      "DRAM assíncrona convencional.",
-      "EEPROM serial lenta.",
-      "ROM magnética.",
-      "EPROM de alta voltagem."
-    ],
-    "answer": "SRAM síncrona com registradores internos de pipeline.",
-    "topic": "2.6 - Memórias [Múltipla Escolha]"
-  },
-  {
-    "question": "A afirmativa: 'Uma memória DDR-SDRAM trabalha com uma frequência real que é o dobro daquela usada na SDRAM-SDR, para poder transferir o dobro da taxa de dados' é verdadeira ou falsa? Justifique.",
-    "options": [
-      "Falsa. A frequência de clock real pode ser a mesma; a DDR-SDRAM transfere o dobro de dados porque realiza transferências em ambas as bordas do clock (subida e descida).",
-      "Verdadeira. A DDR sempre dobra o clock físico de silício.",
-      "Verdadeira apenas em placas-mãe sem barramento de dados.",
-      "Falsa, pois a DDR opera com metade da taxa da SDR.",
-      "Verdadeira se a tensão for de 5V."
-    ],
-    "answer": "Falsa. A frequência de clock real pode ser a mesma; a DDR-SDRAM transfere o dobro de dados porque realiza transferências em ambas as bordas do clock (subida e descida).",
-    "topic": "2.6 - Memórias [Questão Discursiva]"
-  },
-  {
-    "question": "Qual é a taxa de transferência de dados de um barramento que opera a 50 MHz com largura de palavra de 32 bits (4 bytes)?",
-    "options": [
-      "200 MB/s (50 MHz * 4 bytes).",
-      "100 MB/s.",
-      "400 MB/s.",
       "50 MB/s.",
-      "1600 MB/s."
-    ],
-    "answer": "200 MB/s (50 MHz * 4 bytes).",
-    "topic": "2.6 - Barramentos [Questão Direta]"
-  },
-  {
-    "question": "Qual é a taxa de transferência de dados de um barramento que opera a 150 MHz com largura de palavra de 64 bits (8 bytes)?",
-    "options": [
-      "1.200 MB/s ou 1,2 GB/s (150 MHz * 8 bytes).",
+      "100 MB/s.",
+      "200 MB/s.",
       "800 MB/s.",
-      "600 MB/s.",
-      "2.400 MB/s.",
-      "9.600 MB/s."
+      "1.600 MB/s."
     ],
-    "answer": "1.200 MB/s ou 1,2 GB/s (150 MHz * 8 bytes).",
-    "topic": "2.6 - Barramentos [Questão Direta]"
+    "answer": "200 MB/s.",
+    "topic": "2.6 - Barramentos"
   },
   {
-    "question": "Qual é a taxa de transferência de dados de um barramento que opera a 180 MHz com largura de palavra de 64 bits (8 bytes)?",
+    "question": "(Arquitetura de Barramentos) Em uma arquitetura típica de microcomputadores, a comunicação entre a Unidade Central de Processamento (CPU) e as memórias depende de três vias principais. Qual a principal característica direcional e funcional do Barramento de Endereços (Address Bus)?",
     "options": [
-      "1.440 MB/s ou 1,44 GB/s (180 MHz * 8 bytes).",
-      "1.200 MB/s.",
-      "900 MB/s.",
-      "2.880 MB/s.",
-      "360 MB/s."
+      "É um barramento bidirecional controlado pelo pino INTR, usado para receber e enviar endereços.",
+      "É um barramento multiplexado que carrega sinais de clock para manter a memória RAM em sincronismo.",
+      "É um barramento unidirecional, conduzindo a informação exclusivamente da CPU para a memória ou dispositivos periféricos, fornecendo a posição exata em que uma leitura ou escrita ocorrerá.",
+      "É unidirecional, fluindo da memória de massa para a CPU a fim de indicar que o disco rígido está pronto para transferência.",
+      "Funciona de modo serial assíncrono para economizar pinos (Técnica JTAG)."
     ],
-    "answer": "1.440 MB/s ou 1,44 GB/s (180 MHz * 8 bytes).",
-    "topic": "2.6 - Barramentos [Questão Direta]"
+    "answer": "É um barramento unidirecional, conduzindo a informação exclusivamente da CPU para a memória ou dispositivos periféricos, fornecendo a posição exata em que uma leitura ou escrita ocorrerá.",
+    "topic": "2.6 - Barramentos"
   },
   {
-    "question": "Observando a Figura 121 (Barramentos do Sistema), como são estruturados e classificados os três barramentos de interligação entre CPU, Memória e Unidades de E/S?",
-    "image": circuito121,
+    "question": "(Unidades Internas da CPU) O microprocessador agrupa as funções da CPU em um único chip. Dentre as unidades funcionais clássicas que operam internamente nele, qual é a subunidade estritamente responsável por buscar uma instrução da memória (enviando um endereço e um comando de leitura), decodificá-la e fornecer os sinais de sincronismo para que todo o sistema atue no tempo certo?",
     "options": [
-      "Barramento de Endereços (unidirecional da CPU para memória/dispositivos), Barramento de Dados (bidirecional) e Barramento de Controle (sinais de leitura/escrita e sincronismo).",
-      "Barramento Primário, Barramento Secundário e Barramento Terciário.",
-      "Barramento TTL, Barramento CMOS e Barramento ECL.",
-      "Barramento Analógico, Barramento Digital e Barramento Misto.",
-      "Barramento de Entrada, Barramento de Saída e Barramento de Terra."
-    ],
-    "answer": "Barramento de Endereços (unidirecional da CPU para memória/dispositivos), Barramento de Dados (bidirecional) e Barramento de Controle (sinais de leitura/escrita e sincronismo).",
-    "topic": "2.6 - Barramentos (Com Figura) [Questão Discursiva]"
-  },
-  {
-    "question": "Na comunicação entre as unidades de um computador mostrado no esquema de barramentos, defina o que é e qual a função do BARRAMENTO DE ENDEREÇOS.",
-    "image": circuito121,
-    "options": [
-      "Um conjunto de condutores unidirecionais pelos quais a CPU envia a identificação (endereço numérico) da posição de memória ou dispositivo com o qual deseja se comunicar.",
-      "Um barramento bidirecional que transporta os dados de áudio do sistema.",
-      "As linhas que alimentam o circuito integrado com 5 V e terra.",
-      "As linhas exclusivas para sinal de clock de alta frequência.",
-      "Um barramento analógico de controle de ganho."
-    ],
-    "answer": "Um conjunto de condutores unidirecionais pelos quais a CPU envia a identificação (endereço numérico) da posição de memória ou dispositivo com o qual deseja se comunicar.",
-    "topic": "2.6 - Barramentos (Com Figura) [Questão Discursiva]"
-  },
-  {
-    "question": "Qual unidade funcional de um microcomputador é responsável por transferir os dados processados internamente para os dispositivos do mundo exterior?",
-    "options": [
-      "Unidade de Saída.",
       "Unidade Lógica e Aritmética (ULA).",
-      "Unidade de Controle.",
-      "Unidade de Memória.",
-      "Unidade de Temporização."
+      "Unidade de Conversão de Hardware (UCH).",
+      "Decodificador de Prioridade BCD.",
+      "Unidade de Controle e Temporização (UCT).",
+      "Unidade Aritmética de Ponto Flutuante (FPU)."
     ],
-    "answer": "Unidade de Saída.",
-    "topic": "2.6 - Arquitetura [Múltipla Escolha]"
+    "answer": "Unidade de Controle e Temporização (UCT).",
+    "topic": "2.6 - Barramentos e CPU"
   },
   {
-    "question": "O que significa e como se comporta um sinal analógico no mundo real em oposição a um sinal digital?",
+    "question": "(Definição de Software/Programa) A transição entre o hardware puro e o software define a computação. Na concepção de eletrônica digital e arquitetura de computadores, o que define a expressão \"Programa\"?",
     "options": [
-      "É um sinal que varia de forma contínua no tempo, podendo assumir infinitos valores intermediários de amplitude (tensão ou corrente) dentro de uma faixa.",
-      "É um sinal que assume apenas dois valores discretos 0 V e 5 V.",
-      "É um sinal imune a atenuação em linhas de transmissão.",
-      "É um sinal que ocorre apenas dentro de registradores CMOS.",
-      "É uma onda retangular pura de 50% de ciclo de trabalho."
+      "A plataforma física em que são conectadas a ULA e a UCT.",
+      "Um conjunto ordenado e completo de instruções lógicas e aritméticas (códigos binários) que descreve de forma precisa e passo a passo a tarefa que o computador deve executar.",
+      "O circuito multiplexador que escolhe qual periférico terá prioridade no barramento PCI.",
+      "Um protocolo de refresh implementado em memória de massa magnética.",
+      "A tabela verdade física entalhada nos transistores de uma ROM Máscara."
     ],
-    "answer": "É um sinal que varia de forma contínua no tempo, podendo assumir infinitos valores intermediários de amplitude (tensão ou corrente) dentro de uma faixa.",
-    "topic": "3.1 - Conversores D/A [Questão Discursiva]"
+    "answer": "Um conjunto ordenado e completo de instruções lógicas e aritméticas (códigos binários) que descreve de forma precisa e passo a passo a tarefa que o computador deve executar.",
+    "topic": "2.6 - Barramentos e CPU"
   },
   {
-    "question": "Qual é a finalidade principal do uso de Amplificadores Operacionais na saída de conversores D/A (Digital-Analógico)?",
-    "image": circuito126,
+    "question": "(Tecnologia DDR-SDRAM) A tecnologia de memória DDR-SDRAM (Double Data Rate) proporcionou um salto imenso de desempenho nas placas-mães modernas se comparada à SDRAM comum (SDR). Qual é o princípio eletro-lógico que permite à memória DDR transferir praticamente o dobro de dados por segundo da tecnologia anterior?",
     "options": [
-      "Atuar como somador de correntes e conversor corrente-tensão, fornecendo uma saída analógica em tensão proporcional à palavra binária com baixa impedância de saída.",
-      "Gerar pulsos de clock de altíssima frequência.",
-      "Multiplexar os canais analógicos de entrada.",
-      "Substituir a referência de tensão zener.",
-      "Digitalizar a onda analógica em bits discretos."
+      "Ela utiliza cristal oscilador interno que multiplica a frequência de base do barramento frontal (FSB) por dois via hardware de PLL.",
+      "Reduz a tensão da arquitetura para 3,3V, permitindo ao usuário dobrar o clock via overclocking.",
+      "Substitui a matriz de capacitores comum da RAM dinâmica por flip-flops tipo D estáticos (SRAM) em configuração de anel.",
+      "Ao invés de usar uma única via, utiliza dois barramentos físicos paralelos independentes controlados pelo sinal ALE.",
+      "Consegue ler e entregar os dados em ambas as frentes do sinal de clock (na borda de subida/ativação e na borda de descida/desativação), dobrando a vazão sem dobrar a frequência de operação do cristal."
     ],
-    "answer": "Atuar como somador de correntes e conversor corrente-tensão, fornecendo uma saída analógica em tensão proporcional à palavra binária com baixa impedância de saída.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Discursiva]"
+    "answer": "Consegue ler e entregar os dados em ambas as frentes do sinal de clock (na borda de subida/ativação e na borda de descida/desativação), dobrando a vazão sem dobrar a frequência de operação do cristal.",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Quantos níveis de tensão analógicos discretos diferentes um conversor D/A de 12 bits é capaz de produzir em sua saída?",
+    "question": "(Cálculo Físico de Taxa de Transferência) Durante o dimensionamento do hardware de um controlador em tempo real, o engenheiro especificou que o Barramento Frontal irá operar com uma frequência real de 180 MHz, e a largura física do barramento de dados será de 64 bits por pulso. Aplicando o conhecimento teórico de organização de computadores, a taxa máxima teórica de transferência em Megabytes por segundo (MB/s) será de:",
     "options": [
-      "4.096 níveis (2^12).",
-      "1.024 níveis.",
-      "2.048 níveis.",
-      "65.536 níveis.",
-      "256 níveis."
+      "720 MB/s.",
+      "1.440 MB/s.",
+      "2.880 MB/s.",
+      "11.520 MB/s.",
+      "180 MB/s."
     ],
-    "answer": "4.096 níveis (2^12).",
-    "topic": "3.1 - Conversores D/A [Questão Direta]"
+    "answer": "1.440 MB/s.",
+    "topic": "2.6 - Barramentos"
   },
   {
-    "question": "Podemos construir um conversor digital-analógico com chave seletora digital na entrada. Neste caso, a chave seletora será formada por quais componentes eletrônicos típicos?",
-    "image": circuito133,
+    "question": "(Decodificação e Linhas de Endereço) Um certo equipamento controlador de atuadores robóticos é mapeado diretamente na memória de um microcomputador e possui o endereço de máquina 03FF (representação hexadecimal). Quantas linhas lógicas de endereçamento (fios independentes), no mínimo, a CPU necessitará ativar com nível lógico '1' ou '0' para mapear até esse dispositivo de forma correta?",
     "options": [
-      "Transistores MOS / portas CMOS operando como chaves analógicas.",
-      "Relés eletromecânicos de potência.",
-      "Transformadores em núcleo de ar.",
-      "Pontes de diodos zener.",
-      "Lâmpadas incandescentes."
+      "8 linhas.",
+      "10 linhas.",
+      "12 linhas.",
+      "14 linhas.",
+      "16 linhas."
     ],
-    "answer": "Transistores MOS / portas CMOS operando como chaves analógicas.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Múltipla Escolha]"
+    "answer": "10 linhas.",
+    "topic": "2.5 - Memórias"
   },
   {
-    "question": "Que circuito devemos usar para aumentar ou amplificar o valor da tensão de fundo de escala na saída de um conversor D/A básico?",
-    "image": circuito126,
+    "question": "(Pinos de Controle em ADC0804) O Conversor A/D de aproximações sucessivas (ADC0804) se interliga ao microprocessador via pinos rígidos de controle que ditam o handshake da interface. Avaliando o uso dos pinos 3 (WR) e 5 (INTR), é correto afirmar que os seus comportamentos funcionais são, respectivamente:",
     "options": [
-      "Um amplificador operacional na configuração amplificadora (somador/não-inversor) com resistores de ganho ajustados.",
-      "Um simples diodo zener em série.",
-      "Mais portas NAND na entrada.",
-      "Um capacitor de acoplamento de alto valor.",
-      "Um transformador abaixador."
+      "O pino WR lê o barramento externo; o INTR define a tensão de referência para as chaves operacionais.",
+      "O pino WR (Write) é quem recebe a transição de alto para baixo que Inicia o processo de conversão; o INTR (Interrupt) atua indo para o nível lógico baixo no momento em que ele sinaliza o Fim da conversão para a CPU.",
+      "Ambos alimentam eletricamente os comparadores no caso do terra digital (DGND) oscilar.",
+      "O pino WR age esvaziando a memória temporária do CI; o INTR eleva a tensão do conversor R-2R acoplado.",
+      "O pino WR liga a porta NAND tri-state; o INTR atua como barramento de entrada em 8 bits paralelos."
     ],
-    "answer": "Um amplificador operacional na configuração amplificadora (somador/não-inversor) com resistores de ganho ajustados.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
+    "answer": "O pino WR (Write) é quem recebe a transição de alto para baixo que Inicia o processo de conversão; o INTR (Interrupt) atua indo para o nível lógico baixo no momento em que ele sinaliza o Fim da conversão para a CPU.",
+    "topic": "3.2 - Conversores A/D"
   },
   {
-    "question": "Com base no circuito do conversor D/A da Figura 126 com Vref = -16 V e amplificador operacional inversor, qual é a tensão de saída Vs produzida para a combinação de entrada apresentada?",
-    "image": circuito126,
+    "question": "(Matemática do Conversor ADC de Escala Customizada) Um equipamento sonoro antigo está sendo adaptado com um CI ADC0804 (8 bits). No circuito esquemático, os pinos de calibração receberam alterações analógicas para suportar um fundo de escala integral de exatos 4,0 VDC. Calcule e determine qual seria a saída digital binária apresentada no barramento se o circuito de áudio aplicar uma tensão de 0,8 Volts na entrada positiva:",
     "options": [
-      "-9,6 V.",
-      "-6,0 V.",
-      "-7,2 V.",
-      "-8,4 V.",
-      "-4,8 V."
+      "00100000",
+      "10100101",
+      "01101001",
+      "00110011",
+      "11001100"
     ],
-    "answer": "-9,6 V.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Múltipla Escolha]"
+    "answer": "00110011",
+    "topic": "3.2 - Conversores A/D"
   },
   {
-    "question": "Analisando a Figura 127 (Conversor D/A com código BCD 8421), explique a relação entre os resistores de entrada e o peso dos bits.",
-    "image": circuito127,
+    "question": "(Topologia e Limitações do Conversor D/A) Conversores Digitais-Analógicos construídos apenas com uma simples rede resistiva direta, destituídos de qualquer filtro ativo ou amplificador na saída, raramente são aplicados na indústria devido a falhas intrínsecas, principalmente porque:",
     "options": [
-      "Os resistores possuem valores inversamente proporcionais aos pesos dos bits (R, 2R, 4R, 8R), gerando correntes proporcionais ao valor numérico BCD.",
-      "Todos os resistores têm exatamente o mesmo valor em ohms.",
-      "Os resistores são idênticos aos de uma memória ROM.",
-      "O bit LSB utiliza o menor resistor da rede.",
-      "Não há relação entre a resistência e o peso binário."
+      "Apresentam elevada impedância de saída que varia com o código binário de entrada, acarretando perda de precisão e queda de tensão ao alimentar cargas analógicas.",
+      "Exigem alimentação simétrica de alta tensão incompatível com sistemas microprocessados.",
+      "Geram oscilações de alta frequência incontroláveis em todas as portas lógicas acopladas.",
+      "Consumem corrente nula da fonte de referência, impedindo a estabilização térmica dos resistores.",
+      "São incapazes de converter números binários que contenham o bit mais significativo (MSB) em nível 1."
     ],
-    "answer": "Os resistores possuem valores inversamente proporcionais aos pesos dos bits (R, 2R, 4R, 8R), gerando correntes proporcionais ao valor numérico BCD.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Discursiva]"
-  },
-  {
-    "question": "No conversor D/A utilizando a rede em escada R-2R da Figura 129, onde Vcc = 6 V, qual é a tensão analógica Vs na saída quando a entrada binária é A B C D = 1 0 0 0 (onde A é o MSB)?",
-    "image": circuito129,
-    "options": [
-      "3,0 V (metade da tensão Vcc para o MSB isolado).",
-      "1,5 V.",
-      "4,5 V.",
-      "6,0 V.",
-      "0,75 V."
-    ],
-    "answer": "3,0 V (metade da tensão Vcc para o MSB isolado).",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Múltipla Escolha]"
-  },
-  {
-    "question": "No conversor D/A da Figura 129 com Vcc = 6 V, qual será a tensão de saída Vs quando a entrada for A = 1, B = 1, C = 1 e D = 0?",
-    "image": circuito129,
-    "options": [
-      "5,25 V (soma das contribuições: 3,0 V + 1,5 V + 0,75 V).",
-      "4,5 V.",
-      "3,5 V.",
-      "2,5 V.",
-      "6,0 V."
-    ],
-    "answer": "5,25 V (soma das contribuições: 3,0 V + 1,5 V + 0,75 V).",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "Na Figura 133 (Conversor D/A chaveado), qual é o papel e o funcionamento dos transistores ou portas CMOS operando como chaves eletrônicas analógicas?",
-    "image": circuito133,
-    "options": [
-      "Comutar com precisão cada ramo da rede resistiva entre a tensão de referência (Vref) e o terra, conforme o estado '1' ou '0' de cada bit digital.",
-      "Atuar como retificadores de potência para a fonte de alimentação.",
-      "Gerar a frequência de clock de 10 MHz.",
-      "Amplificar o sinal de áudio de saída.",
-      "Proteger o circuito contra curtos-circuitos."
-    ],
-    "answer": "Comutar com precisão cada ramo da rede resistiva entre a tensão de referência (Vref) e o terra, conforme o estado '1' ou '0' de cada bit digital.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Discursiva]"
-  },
-  {
-    "question": "Observando a Figura 134 (Conversor D/A com rede R-2R e Amp Op na saída), explique duas vantagens importantes dessa configuração em circuitos integrados.",
-    "image": circuito134,
-    "options": [
-      "Utiliza apenas dois valores nominais de resistores (R e 2R), garantindo excelente estabilidade térmica e facilidade de fabricação e balanceamento em circuito integrado.",
-      "Requer resistores com valores que variam de 1 ohm até 1 megaohm.",
-      "Não necessita de fonte de referência analógica.",
-      "Consome corrente variável da fonte de referência dependendo do código de entrada.",
-      "Opera apenas em temperaturas criogênicas."
-    ],
-    "answer": "Utiliza apenas dois valores nominais de resistores (R e 2R), garantindo excelente estabilidade térmica e facilidade de fabricação e balanceamento em circuito integrado.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Discursiva]"
-  },
-  {
-    "question": "Em um conversor D/A BCD 8421 elementar (Fig. 3.7 / Fig. 3.8 da apostila, equivalente ao esquema da Fig. 127), onde o LSB (bit D) produz 1 mV de saída, qual será a tensão analógica de saída para a palavra de entrada binária 1101 (A=1, B=1, C=0, D=1)?",
-    "image": circuito127,
-    "options": [
-      "13 mV (pois A=8 mV, B=4 mV e D=1 mV, somando 8 + 4 + 1 = 13 mV).",
-      "11 mV.",
-      "15 mV.",
-      "10 mV.",
-      "7 mV."
-    ],
-    "answer": "13 mV (pois A=8 mV, B=4 mV e D=1 mV, somando 8 + 4 + 1 = 13 mV).",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "No conversor D/A com amplificador operacional da Fig. 3.14 da apostila (esquematizado na Fig. 126, com Vcc = 16 V e resistores Ro = R = 5 kΩ), qual é a tensão analógica na saída para a entrada binária 0011 (A=0, B=0, C=1, D=1)?",
-    "image": circuito126,
-    "options": [
-      "3,0 V (soma dos pesos C=2V e D=1V).",
-      "1,5 V.",
-      "4,5 V.",
-      "6,0 V.",
-      "12,0 V."
-    ],
-    "answer": "3,0 V (soma dos pesos C=2V e D=1V).",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "No conversor D/A com amplificador operacional da Fig. 3.14 da apostila (esquematizado na Fig. 126, com Vcc = 16 V), qual será a tensão analógica de saída quando a entrada for 0111 (A=0, B=1, C=1, D=1)?",
-    "image": circuito126,
-    "options": [
-      "7,0 V (soma das contribuições B=4V, C=2V e D=1V).",
-      "8,0 V.",
-      "5,0 V.",
-      "14,0 V.",
-      "3,5 V."
-    ],
-    "answer": "7,0 V (soma das contribuições B=4V, C=2V e D=1V).",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "Para o circuito conversor D/A da Fig. 3.17 da apostila (esquematizado na Fig. 126), determine a tensão analógica de saída para a palavra de entrada binária 0010.",
-    "image": circuito126,
-    "options": [
-      "-2,4 V.",
-      "-4,8 V.",
-      "-1,2 V.",
-      "-9,6 V.",
-      "-3,6 V."
-    ],
-    "answer": "-2,4 V.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "Para o circuito conversor D/A da Fig. 3.17 da apostila (esquematizado na Fig. 126), determine a tensão analógica de saída para a palavra de entrada binária 0100.",
-    "image": circuito126,
-    "options": [
-      "-4,8 V.",
-      "-2,4 V.",
-      "-7,2 V.",
-      "-9,6 V.",
-      "-10,8 V."
-    ],
-    "answer": "-4,8 V.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "Para o circuito conversor D/A da Fig. 3.17 da apostila (esquematizado na Fig. 126), determine a tensão analógica de saída para a palavra de entrada binária 1001.",
-    "image": circuito126,
-    "options": [
-      "-10,8 V.",
-      "-12,0 V.",
-      "-9,6 V.",
-      "-18,0 V.",
-      "-8,4 V."
-    ],
-    "answer": "-10,8 V.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "Para o circuito conversor D/A da Fig. 3.17 da apostila (esquematizado na Fig. 126), determine a tensão analógica de saída para a palavra de entrada binária 1111 (fundo de escala).",
-    "image": circuito126,
-    "options": [
-      "-18,0 V.",
-      "-15,0 V.",
-      "-12,0 V.",
-      "-24,0 V.",
-      "-16,2 V."
-    ],
-    "answer": "-18,0 V.",
-    "topic": "3.1 - Conversores D/A (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "No conversor A/D integrado ADC0804 mostrado na Figura 131, quais são as funções principais dos pinos de controle CS (Chip Select) e RD (Read)?",
-    "image": circuito131,
-    "options": [
-      "CS ativo em nível baixo seleciona/habilita o chip no barramento; RD ativo em nível baixo habilita as saídas digitais tri-state para leitura do dado convertido.",
-      "CS inicia o clock interno; RD reseta os registradores SAR.",
-      "CS calibra o zero analógico; RD inverte a polaridade.",
-      "CS e RD alimentam o amplificador de instrumentação interno.",
-      "CS e RD são saídas de alarme térmico."
-    ],
-    "answer": "CS ativo em nível baixo seleciona/habilita o chip no barramento; RD ativo em nível baixo habilita as saídas digitais tri-state para leitura do dado convertido.",
-    "topic": "3.2 - Conversores A/D (Com Figura) [Questão Discursiva]"
-  },
-  {
-    "question": "No conversor ADC0804 da Figura 131, qual é a função específica dos pinos INTR (Interrupt, pino 5) e WR (Write, pino 3)?",
-    "image": circuito131,
-    "options": [
-      "WR em pulso baixo inicia uma nova conversão analógico-digital; INTR vai a nível baixo quando a conversão é concluída, avisando o microprocessador.",
-      "WR grava um programa na memória do conversor; INTR desliga a alimentação.",
-      "WR seleciona a entrada diferencial; INTR ajusta a frequência de clock.",
-      "WR aumenta a resolução de 8 para 10 bits; INTR reseta o contador.",
-      "WR e INTR são entradas de sinal de áudio."
-    ],
-    "answer": "WR em pulso baixo inicia uma nova conversão analógico-digital; INTR vai a nível baixo quando a conversão é concluída, avisando o microprocessador.",
-    "topic": "3.2 - Conversores A/D (Com Figura) [Questão Discursiva]"
-  },
-  {
-    "question": "No conversor A/D ADC0804 da Figura 131 com fundo de escala analógico ajustado para 5,0 V, se a tensão analógica aplicada na entrada for 2,0 V, qual será aproximadamente a palavra binária de 8 bits na saída?",
-    "image": circuito131,
-    "options": [
-      "01100110 (equivalente a 102 decimal, pois 102 * (5,0V / 255) ≈ 2,0 V).",
-      "11001000.",
-      "01001100.",
-      "00100110.",
-      "11111111."
-    ],
-    "answer": "01100110 (equivalente a 102 decimal, pois 102 * (5,0V / 255) ≈ 2,0 V).",
-    "topic": "3.2 - Conversores A/D (Com Figura) [Múltipla Escolha]"
-  },
-  {
-    "question": "Em um conversor A/D similar ao da Figura 131, com a escala analógica total calibrada para 4,0 VDC, qual será o valor digital de saída (em decimal) para uma entrada analógica de 0,8 V?",
-    "image": circuito131,
-    "options": [
-      "51 decimal (pois 0,8 V / 4,0 V = 20% da escala total de 255 ≈ 51).",
-      "128 decimal.",
-      "100 decimal.",
-      "25 decimal.",
-      "200 decimal."
-    ],
-    "answer": "51 decimal (pois 0,8 V / 4,0 V = 20% da escala total de 255 ≈ 51).",
-    "topic": "3.2 - Conversores A/D (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "No circuito do conversor A/D ADC0804 da Fig. 3.27 da apostila (esquematizado na Fig. 131), modificando a escala total de tensão analógica para 7,6 V (resolução = 29,8 mV/bit), qual será a saída digital em binário para uma entrada analógica de 0,9 V?",
-    "image": circuito131,
-    "options": [
-      "00011110 (equivalente ao valor inteiro 30 decimal, pois 0,9 V / 0,0298 V = 30,2).",
-      "00110010 (50 decimal).",
-      "01000110 (70 decimal).",
-      "00001111 (15 decimal).",
-      "00100000 (32 decimal)."
-    ],
-    "answer": "00011110 (equivalente ao valor inteiro 30 decimal, pois 0,9 V / 0,0298 V = 30,2).",
-    "topic": "3.2 - Conversores A/D (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "No circuito do conversor A/D ADC0804 da Fig. 3.27 da apostila (esquematizado na Fig. 131) com escala total analógica de 7,6 V (resolução = 29,8 mV/bit), calcule a palavra digital binária na saída para uma entrada analógica de 1,5 V.",
-    "image": circuito131,
-    "options": [
-      "00110010 (equivalente ao valor inteiro 50 decimal, pois 1,5 V / 0,0298 V = 50,3).",
-      "00011110 (30 decimal).",
-      "01000110 (70 decimal).",
-      "00111100 (60 decimal).",
-      "01010000 (80 decimal)."
-    ],
-    "answer": "00110010 (equivalente ao valor inteiro 50 decimal, pois 1,5 V / 0,0298 V = 50,3).",
-    "topic": "3.2 - Conversores A/D (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "No circuito do conversor A/D ADC0804 da Fig. 3.27 da apostila (esquematizado na Fig. 131) com escala total analógica de 7,6 V (resolução = 29,8 mV/bit), calcule a palavra digital binária na saída para uma entrada analógica de 2,1 V.",
-    "image": circuito131,
-    "options": [
-      "01000110 (equivalente ao valor inteiro 70 decimal, pois 2,1 V / 0,0298 V = 70,4).",
-      "00110010 (50 decimal).",
-      "01011010 (90 decimal).",
-      "00100110 (38 decimal).",
-      "01100100 (100 decimal)."
-    ],
-    "answer": "01000110 (equivalente ao valor inteiro 70 decimal, pois 2,1 V / 0,0298 V = 70,4).",
-    "topic": "3.2 - Conversores A/D (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "Quais são os circuitos e blocos funcionais essenciais utilizados na arquitetura de Geradores de Formas de Onda Digitais programáveis?",
-    "image": rampaDiagram,
-    "options": [
-      "Um contador digital acionado por clock, acoplado a uma memória ROM com tabela de amostras e um conversor D/A na saída.",
-      "Apenas retificadores em ponte e filtros capacitivos.",
-      "Exclusivamente transformadores de isolação sem clock.",
-      "Apenas portas NAND CMOS auto-oscilantes.",
-      "Um motor de passo acoplado a um potenciômetro mecânico."
-    ],
-    "answer": "Um contador digital acionado por clock, acoplado a uma memória ROM com tabela de amostras e um conversor D/A na saída.",
-    "topic": "3.3 - Geradores de Formas de Onda (Com Figura) [Questão Discursiva]"
-  },
-  {
-    "question": "Especifique qual tipo de contador digital é utilizado para gerar uma forma de onda triangular simétrica através de um conversor D/A.",
-    "image": triangularDiagram,
-    "options": [
-      "Um contador crescente/decrescente (Up/Down Counter) que sobe até a contagem máxima e inverte automaticamente para decrescer até zero.",
-      "Um contador crescente simples que zera abruptamente.",
-      "Um contador Johnson em anel.",
-      "Um flip-flop D em configuração de divisão por 2.",
-      "Um registrador de deslocamento serial sem realimentação."
-    ],
-    "answer": "Um contador crescente/decrescente (Up/Down Counter) que sobe até a contagem máxima e inverte automaticamente para decrescer até zero.",
-    "topic": "3.3 - Geradores de Formas de Onda (Com Figura) [Questão Direta]"
-  },
-  {
-    "question": "Como é obtida a forma de onda 'dente de serra' (sawtooth) em um gerador digital com conversor D/A?",
-    "image": rampaDiagram,
-    "options": [
-      "Utilizando um contador crescente que incrementa uniformemente até o valor máximo e, ao atingir o topo, transita instantaneamente para zero no ciclo seguinte.",
-      "Utilizando um contador crescente/decrescente que sobe e desce na mesma velocidade.",
-      "Através de um filtro passa-baixa analógico sem contador digital.",
-      "Invertendo a alimentação do conversor D/A periodicamente.",
-      "Desligando o pino MSB em ciclos alternados."
-    ],
-    "answer": "Utilizando um contador crescente que incrementa uniformemente até o valor máximo e, ao atingir o topo, transita instantaneamente para zero no ciclo seguinte.",
-    "topic": "3.3 - Geradores de Formas de Onda (Com Figura) [Questão Discursiva]"
+    "answer": "Apresentam elevada impedância de saída que varia com o código binário de entrada, acarretando perda de precisão e queda de tensão ao alimentar cargas analógicas.",
+    "topic": "3.1 - Conversores D/A"
   }
 ];

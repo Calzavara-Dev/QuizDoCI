@@ -33,12 +33,13 @@ export function Results({ data, rankings, onRestart, onRestartSameQuiz, onBackTo
 
   const percentage = Math.round((data.correct / data.total) * 100);
   const badge = getRankBadgeStyle(percentage);
-  const quizName = quizTitles[data.quizId] ?? data.quizId.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  const quizId = data.quizId || "telefonia";
+  const quizName = quizTitles[quizId] ?? quizId.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
   
   const overallRankName = getRankName(rankings.overall.averagePercentage);
   const overallBadge = getRankBadgeStyle(rankings.overall.averagePercentage);
   
-  const quizRank = rankings.quizzes[data.quizId];
+  const quizRank = rankings.quizzes[quizId];
   const quizRankName = quizRank ? getRankName(quizRank.averagePercentage) : "Sem histórico";
   const quizRankBadge = quizRank ? getRankBadgeStyle(quizRank.averagePercentage) : getRankBadgeStyle(0);
   
