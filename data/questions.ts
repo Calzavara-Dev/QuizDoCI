@@ -1,4 +1,5 @@
 import { manutencao2Questions } from "./manutencao2";
+import { eletronica2P2Questions } from "./eletronica2_p2";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -1693,6 +1694,7 @@ export const quizTitles: Record<string, string> = {
   telefonia: "Telefonia",
   /* voip title removed */
   "eletronica-digital-2": "Eletrônica Digital 2",
+  "eletronica-digital-2-p2": "Eletronica Digital II P2",
   "exercicios-moodle-et-d2": "Exercicios Moodle ET.D2",
   "manutencao-dos-sistemas-telefonicos-2": "Manutenção dos Sistemas Telefônicos 2",
   "manutencao-dos-sistemas-de-odometros": "MANUTENÇÃO DOS SISTEMAS DE ODÔMETROS",
@@ -2600,5 +2602,6 @@ quizzes["exercicios-moodle-et-d2"] = [
 ];
 
 quizzes["manutencao-dos-sistemas-telefonicos-2"] = manutencao2Questions;
+quizzes["eletronica-digital-2-p2"] = eletronica2P2Questions;
 
 export const questions: Question[] = quizzes.telefonia;

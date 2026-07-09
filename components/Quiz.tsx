@@ -314,10 +314,29 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
             className="card rounded-2xl p-4 sm:p-5 md:p-6 border border-slate-700 flex-1 flex flex-col justify-between"
           >
             <div>
+              {currentQuestion.topic && (
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="text-xs font-medium text-slate-400">
+                    {currentQuestion.topic.replace(/\s*\[.*\]/, '').trim()}
+                  </span>
+                  {currentQuestion.topic.includes('[Questão Direta]') && (
+                    <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm">
+                      ⚡ Questão Direta
+                    </span>
+                  )}
+                  {currentQuestion.topic.includes('[Questão Discursiva]') && (
+                    <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/40 shadow-sm">
+                      📝 Questão Discursiva
+                    </span>
+                  )}
+                  {currentQuestion.topic.includes('[Múltipla Escolha]') && (
+                    <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm">
+                      ✓ Múltipla Escolha
+                    </span>
+                  )}
+                </div>
+              )}
               <h2 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-4 sm:mb-6 leading-relaxed">
-                {currentQuestion.topic && (
-                  <div className="text-xs text-slate-400 mb-1.5">{currentQuestion.topic}</div>
-                )}
                 {currentQuestion.question}
               </h2>
 
