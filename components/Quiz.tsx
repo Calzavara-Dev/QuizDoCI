@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X, ArrowRight, RotateCcw, ChevronLeft } from "lucide-react";
+import { Check, X, ArrowRight, RotateCcw, ChevronLeft, ZoomIn } from "lucide-react";
 import { quizTitles } from "../data/questions";
 import { getDynamicShuffledQuestions } from "../utils/questionLoader";
 import type { ResultData } from "../App";
@@ -71,6 +71,7 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   const [answers, setAnswers] = useState<ResultData["answers"]>(savedProgress?.answers ?? []);
   const [showConfirm, setShowConfirm] = useState(false);
   const [showRestartConfirm, setShowRestartConfirm] = useState(false);
+  const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
   const currentQuestion = shuffledQuestions[currentIndex];
   const progress = shuffledQuestions.length ? ((currentIndex + 1) / shuffledQuestions.length) * 100 : 0;
@@ -303,6 +304,46 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
         onCancel={() => setShowRestartConfirm(false)}
       />
 
+      {/* Modal de ampliação de figura */}
+      <AnimatePresence>
+        {zoomedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setZoomedImage(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/90 backdrop-blur-md cursor-zoom-out"
+          >
+            <motion.div
+              initial={{ scale: 0.88, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.88, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative max-w-5xl max-h-[92vh] flex flex-col items-center bg-slate-900 border border-slate-700 rounded-2xl p-2 sm:p-4 shadow-2xl"
+            >
+              <button
+                onClick={() => setZoomedImage(null)}
+                className="absolute -top-3 -right-3 sm:top-3 sm:right-3 p-2 rounded-full bg-slate-800 border border-slate-600 text-slate-300 hover:text-white hover:bg-rose-600 hover:border-rose-500 transition-all shadow-lg z-10"
+                title="Fechar ampliação"
+              >
+                <X size={18} />
+              </button>
+              <div className="overflow-auto max-h-[82vh] flex items-center justify-center p-2">
+                <img
+                  src={zoomedImage}
+                  alt="Figura ampliada"
+                  className="max-w-full max-h-[78vh] object-contain rounded-xl"
+                />
+              </div>
+              <p className="text-xs text-slate-400 mt-2 font-medium flex items-center gap-1.5">
+                <span>Clique na tela ou no X para fechar</span>
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className="w-full max-w-2xl mx-auto flex-1 flex flex-col">
         <AnimatePresence mode="wait">
           <motion.div
@@ -341,12 +382,22 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
               </h2>
 
               {currentQuestion.image && (
-                <div className="mb-4 sm:mb-6 rounded-2xl border border-slate-700 bg-slate-900/70 p-1 md:p-2 max-w-[380px] mx-auto">
+                <div 
+                  onClick={() => setZoomedImage(currentQuestion.image || null)}
+                  className="mb-4 sm:mb-6 rounded-2xl border border-slate-700 bg-slate-900/70 p-1 md:p-2 max-w-[380px] mx-auto cursor-pointer group relative overflow-hidden transition-all hover:border-cyan-500/60 hover:shadow-[0_0_20px_rgba(6,182,212,0.18)]"
+                  title="Clique para ampliar a figura"
+                >
                   <img
                     src={currentQuestion.image}
                     alt={`Figura relacionada à pergunta ${currentIndex + 1}`}
-                    className="w-full h-auto max-h-56 sm:max-h-80 object-contain rounded-xl"
+                    className="w-full h-auto max-h-56 sm:max-h-80 object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                   />
+                  <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-xl">
+                    <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/40 text-cyan-300 text-xs font-semibold shadow-lg backdrop-blur-sm">
+                      <ZoomIn size={14} />
+                      Clique para ampliar
+                    </span>
+                  </div>
                 </div>
               )}
 
