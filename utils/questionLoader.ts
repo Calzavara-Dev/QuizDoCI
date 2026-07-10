@@ -8,13 +8,40 @@ const LOCAL_CACHE_KEY = "quizdoCI_cached_quizzes";
  * Retorna as questões do cache local (ou fallback nativo estático) de forma síncrona.
  * Ideal para renderização instantânea sem espera de rede.
  */
+function enrichWithTags(data: Record<string, Question[]>): Record<string, Question[]> {
+  const result: Record<string, Question[]> = {};
+  for (const modKey of Object.keys(data)) {
+    const list = data[modKey];
+    const staticList = staticQuizzes[modKey] || [];
+    if (Array.isArray(list)) {
+      result[modKey] = list.map((q, idx) => {
+        const staticQ = staticList[idx];
+        let topic = q.topic || (staticQ ? staticQ.topic : undefined);
+        if (topic && !topic.includes("[")) {
+          if (staticQ && staticQ.topic && staticQ.topic.includes("[")) {
+            topic = staticQ.topic;
+          }
+        }
+        return {
+          ...q,
+          topic,
+          image: q.image || (staticQ ? staticQ.image : undefined),
+        };
+      });
+    } else {
+      result[modKey] = list;
+    }
+  }
+  return result;
+}
+
 export function getQuizzesSync(): Record<string, Question[]> {
   try {
     const cached = localStorage.getItem(LOCAL_CACHE_KEY);
     if (cached) {
       const parsed = JSON.parse(cached);
       if (parsed && typeof parsed === "object" && Object.keys(parsed).length > 0) {
-        return parsed;
+        return enrichWithTags(parsed);
       }
     }
   } catch (err) {
@@ -23,9 +50,6 @@ export function getQuizzesSync(): Record<string, Question[]> {
   return staticQuizzes;
 }
 
-/**
- * Salva um dicionário de questões no cache local (localStorage).
- */
 export function saveQuizzesToLocalCache(data: Record<string, Question[]>): void {
   try {
     localStorage.setItem(LOCAL_CACHE_KEY, JSON.stringify(data));
@@ -34,19 +58,14 @@ export function saveQuizzesToLocalCache(data: Record<string, Question[]>): void 
   }
 }
 
-/**
- * Busca as questões mais recentes do Supabase (nuvem) e sincroniza com o cache local.
- * Se falhar ou estiver offline, retorna o cache local / estático imediatamente.
- */
 export async function loadAndSyncQuizzesRemote(): Promise<Record<string, Question[]>> {
   try {
     const remoteData = await fetchRemoteQuestions();
     if (remoteData && Object.keys(remoteData).length > 0) {
-      // Sincroniza cache local e mescla com fallback para módulos que não estejam no banco
-      const merged = {
+      const merged = enrichWithTags({
         ...staticQuizzes,
         ...remoteData,
-      };
+      });
       saveQuizzesToLocalCache(merged);
       return merged;
     }
