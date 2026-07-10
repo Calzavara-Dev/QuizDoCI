@@ -72,7 +72,7 @@ export const fetchRemoteResults = async (limit = 100) => {
 export const fetchRemoteQuestions = async (quizId?: string): Promise<Record<string, Question[]> | null> => {
   try {
     if (supabase) {
-      let query = supabase.from("quiz_questions").select("quiz_id, question, options, answer");
+      let query = supabase.from("quiz_questions").select("*");
       if (quizId) {
         query = query.eq("quiz_id", quizId);
       }
@@ -96,6 +96,8 @@ export const fetchRemoteQuestions = async (quizId?: string): Promise<Record<stri
           question: row.question,
           options: Array.isArray(parsedOptions) ? parsedOptions : [],
           answer: row.answer,
+          topic: row.topic || undefined,
+          image: row.image || undefined,
         });
       }
       return grouped;
@@ -113,16 +115,29 @@ export const saveRemoteQuestions = async (quizId: string, questions: Question[])
     // Remove registros anteriores desse quiz_id para manter sincronizado com a lista atual
     await supabase.from("quiz_questions").delete().eq("quiz_id", quizId);
 
-    const rows = questions.map((q) => ({
+    const rowsFull = questions.map((q) => ({
       quiz_id: quizId,
       question: q.question,
       options: q.options,
       answer: q.answer,
+      topic: q.topic || null,
+      image: q.image || null,
       updated_at: new Date().toISOString(),
     }));
 
-    const { error } = await supabase.from("quiz_questions").insert(rows);
-    if (error) throw error;
+    const { error } = await supabase.from("quiz_questions").insert(rowsFull);
+    if (error) {
+      console.warn("Aviso na inserção completa (tentando fallback sem topic/image):", error.message);
+      const rowsBasic = questions.map((q) => ({
+        quiz_id: quizId,
+        question: q.question,
+        options: q.options,
+        answer: q.answer,
+        updated_at: new Date().toISOString(),
+      }));
+      const { error: errorBasic } = await supabase.from("quiz_questions").insert(rowsBasic);
+      if (errorBasic) throw errorBasic;
+    }
     return true;
   } catch (err) {
     console.warn("Supabase saveRemoteQuestions error:", err);

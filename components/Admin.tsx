@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { quizzes } from "../data/questions";
 import type { Question } from "../types/question";
-import { getQuizzesSync } from "../utils/questionLoader";
+import { getQuizzesSync, saveQuizzesToLocalCache } from "../utils/questionLoader";
 import { fetchRemoteQuestions, saveRemoteQuestions } from "../utils/supabase";
-import { Lock, User, Key, Eye, EyeOff, ShieldCheck, AlertCircle, LogOut, ArrowLeft, Plus, Trash2, Edit2, Check, Download, Upload, Search, FileText, ChevronLeft, ChevronRight, Copy, CheckCircle2, Cloud } from "lucide-react";
+import { Lock, User, Key, Eye, EyeOff, ShieldCheck, AlertCircle, LogOut, ArrowLeft, Plus, Trash2, Edit2, Check, Download, Upload, Search, FileText, ChevronLeft, ChevronRight, Copy, CheckCircle2, Cloud, Save } from "lucide-react";
 
 interface AdminProps {
   onClose: () => void;
@@ -35,17 +35,31 @@ export function Admin({ onClose }: AdminProps) {
   const itemsPerPage = 10;
   const quizKeys = Object.keys(localQuizzes);
 
+  // Auto-salvar no cache local sempre que alterar questões
+  useEffect(() => {
+    if (localQuizzes && Object.keys(localQuizzes).length > 0) {
+      saveQuizzesToLocalCache(localQuizzes);
+    }
+  }, [localQuizzes]);
+
+  function handleSaveLocalManual() {
+    saveQuizzesToLocalCache(localQuizzes);
+    setCloudStatusMessage(`✅ Questões salvas no cache do seu navegador com sucesso!`);
+    setTimeout(() => setCloudStatusMessage(null), 4000);
+  }
+
   async function handleSaveToCloud() {
     setSyncingCloud(true);
     setCloudStatusMessage(null);
+    saveQuizzesToLocalCache(localQuizzes);
     const ok = await saveRemoteQuestions(selectedQuiz, localQuizzes[selectedQuiz] || []);
     setSyncingCloud(false);
     if (ok) {
-      setCloudStatusMessage(`✅ Módulo "${selectedQuiz}" salvo na nuvem com sucesso!`);
+      setCloudStatusMessage(`✅ Módulo "${selectedQuiz}" salvo na nuvem e no navegador com sucesso!`);
       setTimeout(() => setCloudStatusMessage(null), 5000);
     } else {
-      setCloudStatusMessage(`❌ Erro ao salvar na nuvem. Verifique a tabela quiz_questions no Supabase.`);
-      setTimeout(() => setCloudStatusMessage(null), 5000);
+      setCloudStatusMessage(`❌ Erro ao salvar na nuvem (mas suas alterações foram salvas no navegador). Verifique a tabela quiz_questions no Supabase.`);
+      setTimeout(() => setCloudStatusMessage(null), 6000);
     }
   }
 
@@ -280,6 +294,16 @@ export function Admin({ onClose }: AdminProps) {
             >
               <Cloud className="w-4 h-4 text-cyan-400" />
               <span>{syncingCloud ? "Sincronizando..." : "Carregar da Nuvem"}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleSaveLocalManual}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-xs font-semibold transition-all"
+              title="Salvar questões no navegador instantaneamente"
+            >
+              <Save className="w-4 h-4 text-amber-400" />
+              <span>Salvar Localmente</span>
             </button>
 
             <button
