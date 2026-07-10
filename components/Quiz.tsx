@@ -1,6 +1,6 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X, ArrowRight, RotateCcw, ChevronLeft, ZoomIn } from "lucide-react";
+import { Check, X, ArrowRight, RotateCcw, ChevronLeft, ZoomIn, ZoomOut } from "lucide-react";
 import { quizTitles } from "../data/questions";
 import { getDynamicShuffledQuestions } from "../utils/questionLoader";
 import type { ResultData } from "../App";
@@ -72,6 +72,7 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   const [showConfirm, setShowConfirm] = useState(false);
   const [showRestartConfirm, setShowRestartConfirm] = useState(false);
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
+  const [imageScale, setImageScale] = useState(1);
 
   const currentQuestion = shuffledQuestions[currentIndex];
   const progress = shuffledQuestions.length ? ((currentIndex + 1) / shuffledQuestions.length) * 100 : 0;
@@ -86,15 +87,97 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
     }
   }, [currentIndex, shuffledQuestions.length]);
 
+  const handleZoomIn = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    setImageScale((prev) => Math.min(prev + 0.25, 3.5));
+  };
+
+  const handleZoomOut = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    setImageScale((prev) => Math.max(prev - 0.25, 0.5));
+  };
+
+  const handleResetZoom = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    setImageScale(1);
+  };
+
+  const handleWheelZoom = (e: React.WheelEvent) => {
+    e.stopPropagation();
+    if (e.deltaY < 0) {
+      setImageScale((prev) => Math.min(prev + 0.15, 3.5));
+    } else {
+      setImageScale((prev) => Math.max(prev - 0.15, 0.5));
+    }
+  };
+
+  const touchStartDistRef = useRef<number | null>(null);
+  const touchStartScaleRef = useRef<number>(1);
+  const lastTapTimeRef = useRef<number>(0);
+
+  const getTouchDistance = (touches: React.TouchList) => {
+    if (touches.length < 2) return null;
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.hypot(dx, dy);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (e.touches.length === 2) {
+      const dist = getTouchDistance(e.touches);
+      if (dist !== null) {
+        touchStartDistRef.current = dist;
+        touchStartScaleRef.current = imageScale;
+      }
+    } else if (e.touches.length === 1) {
+      const now = Date.now();
+      if (now - lastTapTimeRef.current < 280) {
+        setImageScale((prev) => (prev > 1.2 ? 1 : 2.2));
+      }
+      lastTapTimeRef.current = now;
+    }
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (e.touches.length === 2 && touchStartDistRef.current !== null) {
+      const currentDist = getTouchDistance(e.touches);
+      if (currentDist !== null) {
+        const factor = currentDist / touchStartDistRef.current;
+        const newScale = Math.min(Math.max(touchStartScaleRef.current * factor, 0.5), 3.5);
+        setImageScale(newScale);
+      }
+    }
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (e.touches.length < 2) {
+      touchStartDistRef.current = null;
+    }
+  };
+
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (zoomedImage) {
+        if (e.key === "Escape") {
+          setZoomedImage(null);
+          setImageScale(1);
+        } else if (e.key === "+" || e.key === "=") {
+          setImageScale((prev) => Math.min(prev + 0.25, 3.5));
+        } else if (e.key === "-") {
+          setImageScale((prev) => Math.max(prev - 0.25, 0.5));
+        } else if (e.key === "0") {
+          setImageScale(1);
+        }
+        return;
+      }
       if (showResult && (e.key === "Enter" || e.key === " ")) {
         handleNext();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [showResult]);
+  }, [showResult, zoomedImage]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -304,15 +387,18 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
         onCancel={() => setShowRestartConfirm(false)}
       />
 
-      {/* Modal de ampliação de figura */}
+      {/* Modal de ampliação de figura com controle de zoom */}
       <AnimatePresence>
         {zoomedImage && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setZoomedImage(null)}
-            className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/90 backdrop-blur-md cursor-zoom-out"
+            onClick={() => {
+              setZoomedImage(null);
+              setImageScale(1);
+            }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-6 bg-slate-950/90 backdrop-blur-md cursor-zoom-out"
           >
             <motion.div
               initial={{ scale: 0.88, opacity: 0 }}
@@ -320,24 +406,87 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
               exit={{ scale: 0.88, opacity: 0 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
               onClick={(e) => e.stopPropagation()}
-              className="relative max-w-5xl max-h-[92vh] flex flex-col items-center bg-slate-900 border border-slate-700 rounded-2xl p-2 sm:p-4 shadow-2xl"
+              className="relative w-full max-w-5xl max-h-[92vh] flex flex-col items-center bg-slate-900 border border-slate-700 rounded-2xl p-3 sm:p-5 shadow-2xl overflow-hidden cursor-default"
             >
-              <button
-                onClick={() => setZoomedImage(null)}
-                className="absolute -top-3 -right-3 sm:top-3 sm:right-3 p-2 rounded-full bg-slate-800 border border-slate-600 text-slate-300 hover:text-white hover:bg-rose-600 hover:border-rose-500 transition-all shadow-lg z-10"
-                title="Fechar ampliação"
+              {/* Barra de controle de Zoom */}
+              <div className="w-full flex items-center justify-between gap-2 mb-3 pb-3 border-b border-slate-800">
+                <div className="flex items-center gap-1 sm:gap-2 bg-slate-950/80 p-1 rounded-xl border border-slate-700">
+                  <button
+                    onClick={handleZoomOut}
+                    disabled={imageScale <= 0.5}
+                    className="p-1.5 sm:p-2 rounded-lg hover:bg-slate-800 text-slate-300 hover:text-cyan-300 disabled:opacity-40 disabled:hover:bg-transparent transition-colors"
+                    title="Diminuir zoom (-)"
+                  >
+                    <ZoomOut size={18} />
+                  </button>
+                  <button
+                    onClick={handleResetZoom}
+                    className="px-2.5 py-1 rounded-lg hover:bg-slate-800 text-xs sm:text-sm font-bold text-cyan-300 transition-colors"
+                    title="Restaurar zoom original (100%)"
+                  >
+                    {Math.round(imageScale * 100)}%
+                  </button>
+                  <button
+                    onClick={handleZoomIn}
+                    disabled={imageScale >= 3.5}
+                    className="p-1.5 sm:p-2 rounded-lg hover:bg-slate-800 text-slate-300 hover:text-cyan-300 disabled:opacity-40 disabled:hover:bg-transparent transition-colors"
+                    title="Aumentar zoom (+)"
+                  >
+                    <ZoomIn size={18} />
+                  </button>
+                  {imageScale !== 1 && (
+                    <button
+                      onClick={handleResetZoom}
+                      className="p-1.5 sm:p-2 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-amber-300 transition-colors"
+                      title="Reiniciar zoom"
+                    >
+                      <RotateCcw size={16} />
+                    </button>
+                  )}
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <span className="hidden sm:inline-block text-xs text-slate-400">
+                    Use os botões ou o scroll do mouse para ajustar
+                  </span>
+                  <button
+                    onClick={() => {
+                      setZoomedImage(null);
+                      setImageScale(1);
+                    }}
+                    className="p-2 rounded-xl bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-rose-600 hover:border-rose-500 transition-all shadow-md"
+                    title="Fechar figura (ESC)"
+                  >
+                    <X size={18} />
+                  </button>
+                </div>
+              </div>
+
+              {/* Container da imagem ampliada com suporte a scroll, touch mobile e zoom de roda do mouse */}
+              <div 
+                onWheel={handleWheelZoom}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+                className="w-full overflow-auto max-h-[75vh] flex items-center justify-center p-4 bg-slate-950/60 rounded-xl border border-slate-800/80 cursor-grab active:cursor-grabbing touch-none"
               >
-                <X size={18} />
-              </button>
-              <div className="overflow-auto max-h-[82vh] flex items-center justify-center p-2">
-                <img
+                <motion.img
                   src={zoomedImage}
                   alt="Figura ampliada"
-                  className="max-w-full max-h-[78vh] object-contain rounded-xl"
+                  animate={{ scale: imageScale }}
+                  transition={{ type: "spring", damping: 30, stiffness: 350 }}
+                  style={{ transformOrigin: "center center" }}
+                  className="max-w-full max-h-[70vh] object-contain rounded-lg select-none"
                 />
               </div>
-              <p className="text-xs text-slate-400 mt-2 font-medium flex items-center gap-1.5">
-                <span>Clique na tela ou no X para fechar</span>
+
+              <p className="text-xs text-slate-400 mt-2.5 font-medium text-center">
+                <span className="hidden sm:inline">
+                  Clique nos botões de zoom (<span className="text-cyan-300 font-bold">+</span> / <span className="text-cyan-300 font-bold">-</span>) ou use a rodinha do mouse para ampliar detalhes
+                </span>
+                <span className="sm:hidden">
+                  Faça o gesto de pinça com 2 dedos, dê 2 toques rápidos ou use os botões (<span className="text-cyan-300 font-bold">+</span> / <span className="text-cyan-300 font-bold">-</span>)
+                </span>
               </p>
             </motion.div>
           </motion.div>
@@ -383,7 +532,10 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
 
               {currentQuestion.image && (
                 <div 
-                  onClick={() => setZoomedImage(currentQuestion.image || null)}
+                  onClick={() => {
+                    setImageScale(1);
+                    setZoomedImage(currentQuestion.image || null);
+                  }}
                   className="mb-4 sm:mb-6 rounded-2xl border border-slate-700 bg-slate-900/70 p-1 md:p-2 max-w-[380px] mx-auto cursor-pointer group relative overflow-hidden transition-all hover:border-cyan-500/60 hover:shadow-[0_0_20px_rgba(6,182,212,0.18)]"
                   title="Clique para ampliar a figura"
                 >
