@@ -53,17 +53,9 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   const [shuffledQuestions] = useState<Question[]>(() => {
     const freshQuestions = getDynamicShuffledQuestions(quizId);
     if (savedProgress?.shuffledQuestions && Array.isArray(savedProgress.shuffledQuestions)) {
-      const savedList = savedProgress.shuffledQuestions;
-      const existingSet = new Set(savedList.map((q) => q.question.trim().toLowerCase()));
-      const merged = [...savedList];
-      for (const fq of (Array.isArray(freshQuestions) ? freshQuestions : [])) {
-        const norm = fq.question?.trim().toLowerCase();
-        if (norm && !existingSet.has(norm)) {
-          merged.push(fq);
-          existingSet.add(norm);
-        }
+      if (savedProgress.shuffledQuestions.length === (freshQuestions?.length || 0)) {
+        return savedProgress.shuffledQuestions;
       }
-      return merged;
     }
     return Array.isArray(freshQuestions) ? freshQuestions : [];
   });

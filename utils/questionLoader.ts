@@ -67,15 +67,23 @@ function mergeWithStatic(data: Record<string, Question[]>): Record<string, Quest
   return enrichWithTags(result);
 }
 
+function getExactStaticMerged(data?: Record<string, Question[]>): Record<string, Question[]> {
+  const result: Record<string, Question[]> = data && typeof data === "object" ? { ...data } : {};
+  for (const staticKey of Object.keys(staticQuizzes)) {
+    result[staticKey] = staticQuizzes[staticKey];
+  }
+  return enrichWithTags(result);
+}
+
 export function getQuizzesSync(): Record<string, Question[]> {
   try {
     const cached = localStorage.getItem(LOCAL_CACHE_KEY);
     if (cached) {
       const parsed = JSON.parse(cached);
       if (parsed && typeof parsed === "object" && Object.keys(parsed).length > 0) {
-        const merged = mergeWithStatic(parsed);
-        saveQuizzesToLocalCache(merged);
-        return merged;
+        const clean = getExactStaticMerged(parsed);
+        saveQuizzesToLocalCache(clean);
+        return clean;
       }
     }
   } catch (err) {
@@ -96,9 +104,9 @@ export async function loadAndSyncQuizzesRemote(): Promise<Record<string, Questio
   try {
     const remoteData = await fetchRemoteQuestions();
     if (remoteData && Object.keys(remoteData).length > 0) {
-      const merged = mergeWithStatic(remoteData);
-      saveQuizzesToLocalCache(merged);
-      return merged;
+      const clean = getExactStaticMerged(remoteData);
+      saveQuizzesToLocalCache(clean);
+      return clean;
     }
   } catch (err) {
     console.warn("Sem conexão ao carregar questões remotas, usando cache:", err);
