@@ -1,4 +1,4 @@
-# Quiz de Telefonia — Website
+# Quiz do CI — Website
 
 Este projeto é um site React + Vite que roda no navegador.
 
