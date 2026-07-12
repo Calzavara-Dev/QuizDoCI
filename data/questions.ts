@@ -1405,6 +1405,702 @@ export const quizzes: Record<string, Question[]> = {
       answer: "Não. De acordo com o princípio operacional do sistema, qualquer partícula ou organismo suspenso na água dispersa e reflete a energia sônica de 2 MHz de forma equivalente para fins de desvio Doppler, não havendo distinção de cálculo entre matéria orgânica ou inorgânica.",
       explanation: "O odômetro Doppler depende do fenômeno do espalhamento (volume scattering) provocado por quaisquer heterogeneidades acústicas na massa d'água (partículas minerais, microbolhas, plâncton ou microrganismos). O desvio de frequência Doppler depende da velocidade relativa dessas partículas em relação ao transdutor, sendo irrelevante sua natureza orgânica ou inorgânica.",
       topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual o princípio fundamental de operação do Odômetro SRD-331 para se determinar a velocidade do navio em relação à água?",
+      options: [
+        "Mudança da frequência das ondas de som pelo efeito Doppler, comparando sinais acústicos transmitidos e refletidos pela massa d'água.",
+        "Variação de fase por indução magnética entre eletrodos no casco em contato com a água salgada.",
+        "Medição direta de tempo de voo de pulsos ultrassônicos de 12 MHz refletidos diretamente no fundo do mar.",
+        "Aferição diferencial de pressão hidrostática exercida nos cristais piezoelétricos de proa e popa."
+      ],
+      answer: "Mudança da frequência das ondas de som pelo efeito Doppler, comparando sinais acústicos transmitidos e refletidos pela massa d'água.",
+      explanation: "O SRD-331 fundamenta seu funcionamento no efeito Doppler acústico, em que a frequência da onda sonora refletida pelas partículas na água sofre desvio proporcional à velocidade do navio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Cite as três unidades principais que compõem o sistema do Odômetro SRD-331:",
+      options: [
+        "Módulo do Transdutor, Unidade Eletrônica e Unidade Master Display.",
+        "Caixa de Junção TB1, Repetidora de Passadiço e Módulo de Bateria Auxiliar.",
+        "Unidade Transceptora A1, Processador Doppler Gate A2 e Fonte Chaveada A3.",
+        "Transdutor de Quilha, Girocompasso Digital e Unidade Indicadora Remota."
+      ],
+      answer: "Módulo do Transdutor, Unidade Eletrônica e Unidade Master Display.",
+      explanation: "A arquitetura do SRD-331 é dividida nessas três unidades principais: o Transdutor (no casco), a Unidade Eletrônica (processamento) e a Master Display (interface e controle).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "O que define corretamente o Efeito Doppler no contexto de ondas acústicas?",
+      options: [
+        "Mudança da frequência percebida de uma onda quando a fonte emissora e o receptor estão em movimento relativo um em relação ao outro.",
+        "Atenuação logarítmica da amplitude acústica ao atravessar camadas de diferentes densidades térmicas.",
+        "Reflexão total do feixe ultrassônico quando incide com ângulo superior a 45 graus na camada limite.",
+        "Conversão de pulsos elétricos de alta voltagem em ondas mecânicas de compressão por meio de cristais de quartzo."
+      ],
+      answer: "Mudança da frequência percebida de uma onda quando a fonte emissora e o receptor estão em movimento relativo um em relação ao outro.",
+      explanation: "O efeito Doppler é o desvio aparente na frequência de uma onda causado pelo movimento relativo entre o emissor e o elemento refletor/receptor.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual a função precípua do Microprocessador na Unidade Eletrônica do SRD-331?",
+      options: [
+        "Realizar os cálculos matemáticos para determinar o vetor de velocidade de proa e de popa a partir dos sinais de retorno modificados pelo efeito Doppler.",
+        "Gerar a potência de 10 Watts em 2 MHz para excitar diretamente as cerâmicas piezoelétricos do transdutor.",
+        "Converter a tensão contínua da bateria de 32 VDC em tensões reguladas de 5 VDC e 12 VDC para o painel.",
+        "Demodular o sinal analógico de áudio em níveis de limiar TTL por meio do circuito comparador U17."
+      ],
+      answer: "Realizar os cálculos matemáticos para determinar o vetor de velocidade de proa e de popa a partir dos sinais de retorno modificados pelo efeito Doppler.",
+      explanation: "O microprocessador atua processando as contagens de tempo/frequência fornecidas pelo circuito Doppler Gate para calcular a velocidade vetorial e compensar o movimento do navio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é o modelo do microprocessador utilizado na Unidade Eletrônica do SRD-331?",
+      options: [
+        "8085",
+        "Z80",
+        "68000",
+        "8086"
+      ],
+      answer: "8085",
+      explanation: "O cérebro lógico da Unidade Eletrônica do SRD-331 é o microprocessador Intel 8085 (U19).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Quais são as tensões e frequências de alimentação primária CA aceitas pela Unidade Eletrônica do SRD-331?",
+      options: [
+        "100, 115 ou 230 VCA em 50 ou 60 Hz.",
+        "24 ou 48 VCC contínuos.",
+        "440 VCA trifásico em 60 ou 400 Hz.",
+        "115 VCA exclusivamente em 400 Hz."
+      ],
+      answer: "100, 115 ou 230 VCA em 50 ou 60 Hz.",
+      explanation: "A fonte de alimentação interna é configurável para operar com a rede do navio em 100, 115 ou 230 VCA nas frequências de 50 ou 60 Hz.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Quem controla o chaveamento da alimentação primária na Unidade Eletrônica durante a operação normal?",
+      options: [
+        "Um relé de controle interno que opera comandado por sinais enviados pela Unidade Master Display.",
+        "O disjuntor térmico principal localizado diretamente no painel frontal da Unidade Eletrônica.",
+        "O circuito temporizador do microprocessador 8085 após o boot da EPROM U21.",
+        "A chave magnética acionada pela pressão hidrostática da válvula de fundo do transdutor."
+      ],
+      answer: "Um relé de controle interno que opera comandado por sinais enviados pela Unidade Master Display.",
+      explanation: "A energização da Unidade Eletrônica é comandada remotamente pela Master Display através de um relé na Unidade Eletrônica.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é o diferencial da Unidade Master Display em relação às Unidades Indicadoras Remotas quanto à retenção de dados?",
+      options: [
+        "A Master Display dispõe de uma bateria interna que retém os dados da distância acumulada por um período mínimo de 10 minutos na falta de energia.",
+        "A Master Display utiliza memória EPROM flash para armazenar indefinidamente o histórico de navegação dos últimos 30 dias.",
+        "As Indicadoras Remotas possuem baterias independentes, enquanto a Master Display depende exclusivamente do gerador principal.",
+        "A Master Display armazena a velocidade instantânea em fita magnética interna em caso de queda de tensão."
+      ],
+      answer: "A Master Display dispõe de uma bateria interna que retém os dados da distância acumulada por um período mínimo de 10 minutos na falta de energia.",
+      explanation: "O circuito de suporte a bateria da Master Display garante que a contagem de milhas acumuladas não seja perdida durante cortes de energia de até 10 minutos.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é a potência de pulso de saída e a frequência operacional do transdutor do SRD-331?",
+      options: [
+        "10 Watts em 2 MHz.",
+        "50 Watts em 400 kHz.",
+        "100 Watts em 12 MHz.",
+        "5 Watts em 1,5 MHz."
+      ],
+      answer: "10 Watts em 2 MHz.",
+      explanation: "O transmissor gera pulsos de radiofrequência acústica de 2 MHz com potência nominal de 10 Watts durante a rajada de disparo.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Resuma a função global da Unidade Eletrônica no sistema SRD-331:",
+      options: [
+        "Estimular os cristais a transmitirem energia ultrassônica e processar o sinal elétrico produzido pelos cristais quando recebem o eco ultrassônico refletido.",
+        "Apenas exibir os dados de velocidade no display digital e enviar repetidoras em protocolo NMEA 0183.",
+        "Atuar exclusivamente como fonte de alimentação chaveada para o Módulo do Transdutor e aquecimento das lentes.",
+        "Filtrar ruídos de fundo estáticos da rede de 115 VCA antes de alimentar o painel do passadiço."
+      ],
+      answer: "Estimular os cristais a transmitirem energia ultrassônica e processar o sinal elétrico produzido pelos cristais quando recebem o eco ultrassônico refletido.",
+      explanation: "A Unidade Eletrônica concentra tanto a geração dos pulsos de excitação ultrassônica quanto a amplificação, demodulação e computação lógica do eco Doppler.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual módulo/cartão da Unidade Eletrônica é responsável pelo controle de entrada e saída dos sinais de RF com o transdutor?",
+      options: [
+        "Conjunto Transmissor/Receptor de RF (Cartão A1).",
+        "Módulo de Processamento e Porta Doppler (Cartão A2).",
+        "Fonte de Alimentação Primária (Cartão A3).",
+        "Placa de Interface de Painel (Cartão A5)."
+      ],
+      answer: "Conjunto Transmissor/Receptor de RF (Cartão A1).",
+      explanation: "O Cartão A1 aloja os amplificadores de potência de transmissão de RF e os estágios pré-amplificadores de recepção que se conectam ao transdutor.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Descreva a síntese do ciclo de funcionamento do Odômetro SRD-331:",
+      options: [
+        "Opera pela transmissão de pulsos ultrassônicos de curta duração e detecção do eco de retorno alterado pelo efeito Doppler; os sinais são processados pelo microprocessador para calcular a velocidade em relação à água.",
+        "Emite feixes contínuos de luz laser de proa a popa, medindo a refração na água salgada para inferir o deslocamento do navio.",
+        "Mede a variação de capacitância mecânica gerada pelo arrasto da água sobre uma roda de pás instalada no fundo do casco.",
+        "Utiliza radares de superfície pulsados a 12 GHz para correlacionar a velocidade relativa das ondas na proa com o GPS."
+      ],
+      answer: "Opera pela transmissão de pulsos ultrassônicos de curta duração e detecção do eco de retorno alterado pelo efeito Doppler; os sinais são processados pelo microprocessador para calcular a velocidade em relação à água.",
+      explanation: "O princípio de operação baseia-se na emissão pulsada, escuta do retorno acústico defasado por efeito Doppler e computação digital da velocidade.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Em termos de canais acústicos, a função de transmissão do SRD-331 consiste em:",
+      options: [
+        "Dois canais idênticos (canal dianteiro/proa e canal traseiro/popa).",
+        "Quatro canais multiplexados (proa, popa, bombordo e boreste).",
+        "Um único canal omnidirecional operando por varredura contínua.",
+        "Três canais defasados em 120 graus para cálculo tridimensional."
+      ],
+      answer: "Dois canais idênticos (canal dianteiro/proa e canal traseiro/popa).",
+      explanation: "O sistema opera com dois canais acústicos simétricos apontados em ângulos opostos (vante e ré) para anular vetores verticais de balanço do navio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é a função do circuito 'Doppler Gate' (Porta Doppler) na arquitetura do sistema?",
+      options: [
+        "Determinar com precisão a diferença de frequência entre o sinal acústico dianteiro recebido e o sinal traseiro recebido.",
+        "Bloquear a entrada de tensões acima de 230 VCA na fonte de alimentação primária.",
+        "Chavear automaticamente o equipamento para o modo de velocidade manual na falta do sinal de GPS.",
+        "Sincronizar a varredura do display LCD com a taxa de atualização dos relés eletromecânicos."
+      ],
+      answer: "Determinar com precisão a diferença de frequência entre o sinal acústico dianteiro recebido e o sinal traseiro recebido.",
+      explanation: "O Doppler Gate é o circuito digital que temporiza e compara os cruzamentos de zero dos ecos de vante e ré para extrair a diferença de frequência Doppler.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "As funções de fonte de alimentação e controle de energia na Unidade Eletrônica estão distribuídas em três submódulos. Quais são eles?",
+      options: [
+        "Submódulos A3, A4 e A5.",
+        "Submódulos A1, A2 e A3.",
+        "Submódulos U19, U20 e U21.",
+        "Submódulos TB1, TB2 e TB3."
+      ],
+      answer: "Submódulos A3, A4 e A5.",
+      explanation: "Na Unidade Eletrônica, os cartões A1 e A2 cuidam de RF e processamento, enquanto os submódulos A3, A4 e A5 gerenciam a fonte e controle de alimentação.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "O Odômetro SRD-331 é classificado como um sistema compacto essencialmente controlado por:",
+      options: [
+        "Microprocessador.",
+        "Amplificadores magnéticos analógicos.",
+        "Válvulas termiônicas de alta potência.",
+        "Relés eletromecânicos temporizados a motor."
+      ],
+      answer: "Microprocessador.",
+      explanation: "A arquitetura do SRD-331 é baseada no controle lógico digital centralizado por microprocessador (Intel 8085).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "A aferição/medição das frequências recebidas pelos canais dianteiro e traseiro é realizada por meio de:",
+      options: [
+        "Circuitos contadores dedicados localizados na Unidade Eletrônica.",
+        "Filtros passa-faixa analógicos passivos no painel do Master Display.",
+        "Galvanômetros diferenciais acoplados aos transformadores do transdutor.",
+        "Comparadores ópticos infravermelhos na caixa de terminais TB1."
+      ],
+      answer: "Circuitos contadores dedicados localizados na Unidade Eletrônica.",
+      explanation: "Os circuitos contadores digitais da placa A2 quantificam os cruzamentos de zero e os pulsos de clock de 12 MHz para mensurar as frequências.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual componente lógico é o responsável direto por analisar a diferença matemática entre as frequências recebidas pelos dois canais?",
+      options: [
+        "Microprocessador 8085.",
+        "Demodulador de limiar U3.",
+        "Contador de Ripple U13.",
+        "Transistor de Buffer Q13."
+      ],
+      answer: "Microprocessador 8085.",
+      explanation: "Após os contadores capturarem os tempos de 2048 ciclos, a CPU 8085 calcula a diferença matemática que representa a velocidade.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual cristal piezoelétrico do transdutor é designado especificamente para transmitir e receber feixes acústicos na direção de POPA do navio?",
+      options: [
+        "Cristal Y2.",
+        "Cristal Y1.",
+        "Transformador T1.",
+        "Transistor Q14."
+      ],
+      answer: "Cristal Y2.",
+      explanation: "Na nomenclatura do SRD-331, o cristal Y1 aponta para vante (proa) e o cristal Y2 aponta para ré (popa).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é a função dos transformadores T1 e T2 e onde estão localizados no sistema SRD-331?",
+      options: [
+        "Casar a impedância do cabo do transdutor com a dos cristais para máxima eficiência de sinal; estão fixados no submódulo interno do conjunto do Transdutor.",
+        "Retificar a corrente alternada de 115 VCA em 32 VCC; estão fixados na placa A3 da Unidade Eletrônica.",
+        "Isolar oticamente o sinal das repetidoras remotas; estão instalados na placa A2 da Master Display.",
+        "Gerar o pulso de clock principal de 12 MHz; estão alojados na placa do microprocessador A2."
+      ],
+      answer: "Casar a impedância do cabo do transdutor com a dos cristais para máxima eficiência de sinal; estão fixados no submódulo interno do conjunto do Transdutor.",
+      explanation: "T1 e T2 ficam dentro do módulo do transdutor no casco para garantir o casamento de impedância perfeito entre os cristais piezoelétricos e o cabo TTRS de 9,2m.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "A Unidade Master Display é composta por dois submódulos (A1 e A2). Qual deles aloja os relés de controle de alimentação, transformador, filtro de linha e placa de terminais?",
+      options: [
+        "Submódulo A2.",
+        "Submódulo A1.",
+        "Cartão A3.",
+        "Painel de LCD frontal."
+      ],
+      answer: "Submódulo A2.",
+      explanation: "No Master Display, o A1 contém o processador do painel e teclado, enquanto o A2 concentra os circuitos de potência, filtros e terminais de interconexão.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "No Odômetro SRD-331, a fonte emissora/receptora de som no casco do navio é composta por um transdutor dotado de dois:",
+      options: [
+        "Cristais Piezoelétricos.",
+        "Alto-falantes magnetostritivos de ferrite.",
+        "Microfones de condensador de eletreto.",
+        "Eletrodos galvânicos de titânio."
+      ],
+      answer: "Cristais Piezoelétricos.",
+      explanation: "Os elementos transdutores acústicos que emitem e captam o som no mar são pastilhas cristalinas piezoelétricas de alta eficiência.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é a essência do trabalho executado pela eletrônica do SRD-331 sobre os sinais ultrassônicos?",
+      options: [
+        "Determinar a diferença de frequência entre os dois canais acústicos e utilizá-la para computar a velocidade do navio.",
+        "Medir o tempo absoluto de viagem do som até o fundo marinho para traçar o perfil batimétrico.",
+        "Comparar a atenuação de amplitude entre proa e popa para determinar a salinidade da água.",
+        "Modular em amplitude a onda portadora de 12 MHz para comunicação de voz submarina."
+      ],
+      answer: "Determinar a diferença de frequência entre os dois canais acústicos e utilizá-la para computar a velocidade do navio.",
+      explanation: "A função primordial dos circuitos eletrônicos do odômetro é extrair o desvio Doppler (diferença de frequência vante/ré) e convertê-lo em nós navegados.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Como se define tecnicamente a Unidade Eletrônica do SRD-331?",
+      options: [
+        "É um módulo eletrônico controlado por microprocessador que abriga dois circuitos idênticos de transmissores de RF, receptores e amplificadores.",
+        "É um painel eletromecânico passivo de distribuição que interliga o girocompasso às repetidoras de passadiço.",
+        "É uma caixa de baterias seladas destinada a alimentar o transdutor em caso de colapso do gerador do navio.",
+        "É um console de radar que sintetiza imagens acústicas de obstáculos submersos à frente da proa."
+      ],
+      answer: "É um módulo eletrônico controlado por microprocessador que abriga dois circuitos idênticos de transmissores de RF, receptores e amplificadores.",
+      explanation: "A Unidade Eletrônica é o gabinete processador principal contendo os canais duplos de transcepção ultrassônica e a CPU.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Quais são as características físicas essenciais da fonte de som do SRD-331?",
+      options: [
+        "Transdutor montado em válvula de fundo no casco do navio abrigando dois cristais piezoelétricos.",
+        "Par de antenas de corneta metálica fixadas no mastro principal da embarcação.",
+        "Conjunto de tubos de Pitot de aço inoxidável montados nas aletas de balanço.",
+        "Cápsula rebocada na popa com cabo de fibra óptica de 150 metros."
+      ],
+      answer: "Transdutor montado em válvula de fundo no casco do navio abrigando dois cristais piezoelétricos.",
+      explanation: "O transdutor acústico fica instalado na obra viva através de uma válvula de fundo de casco e contém as cerâmicas piezoelétricas direcionadas.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é o procedimento correto recomendado no manual para a limpeza da superfície do painel frontal da Master Display?",
+      options: [
+        "Limpar suavemente com álcool isopropílico e um tecido de algodão macio.",
+        "Esfregar com esponja abrasiva e detergente amoníaco concentrado.",
+        "Aplicar jato de vapor de água quente sob pressão para remover oleosidade.",
+        "Utilizar lixa fina para polimento de plásticos seguida de acetona pura."
+      ],
+      answer: "Limpar suavemente com álcool isopropílico e um tecido de algodão macio.",
+      explanation: "Para preservar a película do teclado e o visor de cristal líquido sem arranhões ou ataque químico, recomenda-se apenas álcool e tecido de algodão macio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Dentre as precauções vitais com o transdutor em período de docagem, a superfície acústica (lente) JAMAIS deve ser:",
+      options: [
+        "Pintada com tinta anti-incrustante ou qualquer revestimento.",
+        "Lavada com água doce em temperatura ambiente.",
+        "Limpa com detergente neutro e esponja macia.",
+        "Inspecionada visualmente sob iluminação de lanterna."
+      ],
+      answer: "Pintada com tinta anti-incrustante ou qualquer revestimento.",
+      explanation: "Qualquer camada de tinta ou produto químico aplicada sobre a lente de poliestireno modifica sua impedância acústica e impede a transmissão/recepção do ultrassom.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Quais teclas no painel Master Display controlam o ajuste do nível de iluminação (brilho) do visor?",
+      options: [
+        "A tecla 'INTENSITY', que ao ser pressionada habilita as teclas 'INCREASE' (aumentar) e 'DECREASE' (diminuir).",
+        "O botão rotativo mecânico 'DIMMER' localizado na lateral esquerda da caixa.",
+        "As teclas 'RESET MILES' pressionadas simultaneamente com 'KNOT/MILES'.",
+        "A chave de alavanca 'BRIGHT/DIM' na placa traseira A2."
+      ],
+      answer: "A tecla 'INTENSITY', que ao ser pressionada habilita as teclas 'INCREASE' (aumentar) e 'DECREASE' (diminuir).",
+      explanation: "No teclado digital, pressionar INTENSITY desbloqueia temporariamente as teclas de seta (INCREASE/DECREASE) para ajustar o brilho do LCD.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é a profundidade mínima de água abaixo do casco exigida para o processamento confiável dos sinais do SRD-331?",
+      options: [
+        "1,6 metros.",
+        "0,3 metros.",
+        "10,0 metros.",
+        "5,5 metros."
+      ],
+      answer: "1,6 metros.",
+      explanation: "A profundidade mínima operacional para que o sinal acústico escape da camada limite e retorne no tempo correto de processamento é 1,6 metros.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é a distância máxima abaixo do transdutor em que os retornos acústicos de partículas na água são processados?",
+      options: [
+        "4,8 metros.",
+        "100 metros.",
+        "25 metros.",
+        "1,2 metros."
+      ],
+      answer: "4,8 metros.",
+      explanation: "A janela de temporização de recepção (WTGTE) limita o processamento das reflexões na coluna d'água até a profundidade máxima de 4,8 metros abaixo da quilha.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Defina o que é um cristal piezoelétrico conforme aplicado em transdutores navais:",
+      options: [
+        "Cristal que, quando submetido a pressão mecânica, gera um campo/tensão elétrica em um eixo transversal, e vice-versa.",
+        "Material cerâmico que emite luz azulada intensa ao ser percorrido por corrente contínua de 10 Watts.",
+        "Semicondutor de silício que altera sua condutividade elétrica proporcionalmente à salinidade do meio submerso.",
+        "Polímero sintético que absorve ondas de rádio de 2 MHz convertendo-as em calor mensurável."
+      ],
+      answer: "Cristal que, quando submetido a pressão mecânica, gera um campo/tensão elétrica em um eixo transversal, e vice-versa.",
+      explanation: "A piezoeletricidade é a propriedade da conversão mútua entre estresse mecânico (pressão acústica) e diferença de potencial elétrico.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "O módulo do transdutor externo é constituído fisicamente por quais itens?",
+      options: [
+        "Um transdutor de eixo simples e um conjunto integral de cabo especial de 9,2 metros.",
+        "Um par de esferas de titânio soltas e cabo coaxial comum de 50 metros.",
+        "Uma caixa pré-amplificadora submersa acoplada a mangueira hidráulica dupla.",
+        "Quatro hastes de latão rosqueadas com conectores BNC abertos à água."
+      ],
+      answer: "Um transdutor de eixo simples e um conjunto integral de cabo especial de 9,2 metros.",
+      explanation: "O conjunto é formado pelo corpo do transdutor com sua lente/cristais e um cabo especial blindado de 9,2 metros de comprimento.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é o procedimento sequencial exato no teclado do Master Display para zerar (resetar) a distância acumulada em milhas?",
+      options: [
+        "Pressionar a tecla 'RESET MILES' duas vezes consecutivas dentro de um intervalo máximo de 5 segundos.",
+        "Manter pressionada a tecla 'POWER OFF' simultaneamente com 'OPERATE' por 15 segundos.",
+        "Pressionar uma única vez a tecla 'TEST' enquanto o navio estiver com velocidade zero.",
+        "Desligar o disjuntor principal de 115 VCA por 10 minutos para descarregar a bateria."
+      ],
+      answer: "Pressionar a tecla 'RESET MILES' duas vezes consecutivas dentro de um intervalo máximo de 5 segundos.",
+      explanation: "Como proteção contra zeragem acidental, o sistema exige o duplo acionamento da tecla RESET MILES dentro de uma janela de 5 segundos.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Quais unidades do sistema englobam fisicamente as funções completas de transmissão e recepção acústica?",
+      options: [
+        "Conjunto do Transdutor e Unidade Eletrônica.",
+        "Unidade Master Display e Repetidoras de Passadiço.",
+        "Caixa de Alimentação A3 e Painel de Baterias.",
+        "Girocompasso e Interface NMEA de Navegação."
+      ],
+      answer: "Conjunto do Transdutor e Unidade Eletrônica.",
+      explanation: "A cadeia completa de excitação, emissão acústica na água, captação e amplificação ocorre na interface entre o Transdutor e a Unidade Eletrônica.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é o período total do ciclo de temporização contínuo de transmissão e recepção do SRD-331?",
+      options: [
+        "7,7 milissegundos.",
+        "1,1 milissegundos.",
+        "100 milissegundos.",
+        "0,55 milissegundos."
+      ],
+      answer: "7,7 milissegundos.",
+      explanation: "O ciclo mestre repetitivo do sistema dura exatos 7,7 ms (compreendendo o pulso de transmissão de 1,1 ms seguido da escuta e processamento).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Quais são os instrumentos e componentes de bancada prescritos para a rotina completa de busca de avarias e alinhamento do SRD-331?",
+      options: [
+        "Osciloscópio (mín. 2 MHz e sensibilidade 10 mV/cm), Multímetro Digital, chaves de fenda/Philips e dois resistores de carga de 90 Ohms (2 Watts).",
+        "Analisador de Espectro de 10 GHz, Gerador de Varredura de RF e ponta lógica diferencial de 500 MHz.",
+        "Megômetro de 5.000 Volts, Década Resistiva de Precisão e Termômetro Infravermelho.",
+        "Ponte RLC digital, Frequencímetro Atômico de Rubídio e Simulador de Ecos Acústicos de 400 Hz."
+      ],
+      answer: "Osciloscópio (mín. 2 MHz e sensibilidade 10 mV/cm), Multímetro Digital, chaves de fenda/Philips e dois resistores de carga de 90 Ohms (2 Watts).",
+      explanation: "O manual especifica o osciloscópio de 2 MHz, multímetro e o par de resistores de 90 Ohms para simular a carga diferencial dos cristais nos testes em bancada.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "O que acontece logicamente no circuito Doppler Gate quando os contadores de cruzamento em zero (dianteiro e traseiro) atingem a contagem de 2048?",
+      options: [
+        "As saídas 'Qd' vão ao nível alto e são combinadas em uma porta lógica AND, cuja saída produz o sinal de contagem pronta ('CTR RDY') para gerar interrupção na CPU.",
+        "Um relé térmico é disparado para desligar o amplificador push-pull de 10 Watts por 5 segundos.",
+        "A memória EPROM U21 apaga automaticamente o buffer temporário da exibição no LCD.",
+        "O oscilador de 12 MHz é multiplicado por dois para iniciar a calibração de profundidade."
+      ],
+      answer: "As saídas 'Qd' vão ao nível alto e são combinadas em uma porta lógica AND, cuja saída produz o sinal de contagem pronta ('CTR RDY') para gerar interrupção na CPU.",
+      explanation: "Ao atingir 2048 cruzamentos em zero válidos, as saídas Qd sinalizam à porta AND que o período de amostragem terminou, avisando o processador para ler os dados.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Por que o cabo de interconexão do transdutor é construído com blindagem especial do tipo TTRS?",
+      options: [
+        "Para evitar e rejeitar eficazmente Interferências Eletromagnéticas (EMI) geradas no ambiente de bordo do navio.",
+        "Para resistir a temperaturas de até 500 °C em caso de incêndio na casa de máquinas.",
+        "Para permitir flexão contínua em torção mecânica acionada pelo leme.",
+        "Para conduzir tensões trifásicas de 440 VCA sem necessidade de conduíte metálico."
+      ],
+      answer: "Para evitar e rejeitar eficazmente Interferências Eletromagnéticas (EMI) geradas no ambiente de bordo do navio.",
+      explanation: "Sinais piezoelétricos de eco em milivolts são altamente sensíveis a ruídos; o cabo TTRS blindado impede que a EMI do navio cause erros de medição.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Além dos controles remotos na Master Display, existe uma chave de serviço interna na Unidade Eletrônica. Qual é sua finalidade?",
+      options: [
+        "Alimentar e desalimentar localmente a Unidade Eletrônica durante rotinas de teste e reparo técnico de bancada.",
+        "Inverter a polaridade da bateria auxiliar de 10 minutos para recarga rápida.",
+        "Chavear a frequência acústica de 2 MHz para 400 kHz em águas profundas.",
+        "Desconectar o aterramento do casco para medição de resistência de isolamento."
+      ],
+      answer: "Alimentar e desalimentar localmente a Unidade Eletrônica durante rotinas de teste e reparo técnico de bancada.",
+      explanation: "Essa chave de serviço interna permite que o técnico ligue ou desligue o gabinete eletrônico localmente no compartimento técnico sem depender do passadiço.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Como se comportam os circuitos transmissores/receptores e o transdutor quando o operador seleciona o modo de VELOCIDADE MANUAL?",
+      options: [
+        "Permanecem totalmente ativos emitindo e recebendo pulsos, porém o microprocessador ignora os dados dos ecos recebidos da água.",
+        "São completamente desenergizados para economizar energia do navio e preservar os cristais.",
+        "Reduzem a frequência de disparo para um pulso a cada 10 segundos apenas como autoteste.",
+        "Comutam o feixe de 2 MHz para uma carga resistiva fictícia ('Dummy Load') dentro da placa A1."
+      ],
+      answer: "Permanecem totalmente ativos emitindo e recebendo pulsos, porém o microprocessador ignora os dados dos ecos recebidos da água.",
+      explanation: "No modo manual, os estágios acústicos continuam funcionando normalmente na água; a única alteração ocorre no software, que despreza a contagem Doppler e usa a velocidade inserida.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Em qual cartão/módulo da Unidade Eletrônica ocorre a temporização do ciclo e a geração lógica do sinal portador de 2 MHz?",
+      options: [
+        "Circuito do Módulo do Processador e Porta Doppler (Cartão A2).",
+        "Circuito de Pré-Amplificação e Chave TR (Cartão A1).",
+        "Placa de Filtros de Entrada CA (Cartão A3).",
+        "Painel Frontal de Controle (Cartão A5)."
+      ],
+      answer: "Circuito do Módulo do Processador e Porta Doppler (Cartão A2).",
+      explanation: "O cartão A2 contém o oscilador principal, divisores de ripple e o microprocessador, comandando a temporização de todos os disparos de 2 MHz.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Em qual placa/cartão ocorre a amplificação final de potência do sinal de transmissão de RF antes do envio à água?",
+      options: [
+        "Circuito do Módulo Transmissor/Receptor de RF (Cartão A1).",
+        "Módulo Processador Digital (Cartão A2).",
+        "Placa da Fonte Chaveada (Cartão A4).",
+        "Interface Óptica Isolada (Cartão A6)."
+      ],
+      answer: "Circuito do Módulo Transmissor/Receptor de RF (Cartão A1).",
+      explanation: "Os amplificadores push-pull de 10 Watts para os canais de vante e ré estão situados no cartão de RF A1.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Em qual unidade do sistema ocorre fisicamente a transdução da energia elétrica em energia sonora (e vice-versa)?",
+      options: [
+        "Na Unidade Transdutora (Módulo do Transdutor no casco).",
+        "Na Placa A1 da Unidade Eletrônica.",
+        "No bloco de terminais TB1 do painel Master Display.",
+        "Nos relés repetidores de saída digital."
+      ],
+      answer: "Na Unidade Transdutora (Módulo do Transdutor no casco).",
+      explanation: "A conversão eletroacústica é executada diretamente pelas pastilhas de cristal piezoelétrico alojadas no transdutor de casco.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "De quais estágios principais consiste o circuito transmissor na placa de RF A1?",
+      options: [
+        "Um transistor de Buffer (Q13) e dois amplificadores de potência idênticos equipados com proteção contra sobrecarga de ganho.",
+        "Um oscilador local Hartley de 2 MHz e quatro multiplicadores de frequência de diodo varactor.",
+        "Uma chave analógica CMOS quádrupla e dois transformadores elevadores de 230 Volts.",
+        "Um misturador balanceado em anel e um amplificador operacional integrador."
+      ],
+      answer: "Um transistor de Buffer (Q13) e dois amplificadores de potência idênticos equipados com proteção contra sobrecarga de ganho.",
+      explanation: "A arquitetura de transmissão da placa A1 conta com o buffer chaveador Q13 alimentando os amplificadores diferenciais protegidos contra sobrecarga por realimentação de corrente.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é a amplitude mínima de tensão requerida para chavear com segurança o transistor de Buffer Q13 na placa A1?",
+      options: [
+        "1 Volt.",
+        "12 Volts.",
+        "0,1 Volt.",
+        "115 Volts."
+      ],
+      answer: "1 Volt.",
+      explanation: "O circuito divisor na base do buffer Q13 exige ao menos 1 Volt de nível de acionamento para prevenir disparos espúrios causados por ruído elétrico abaixo desse limiar.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual componente ajustável é responsável por calibrar a tensão base-emissor do transistor Q5 (ajuste de potência de transmissão)?",
+      options: [
+        "Potenciômetro R19 (PWR ADJ).",
+        "Trimpot R55 (THRESHOLD ADJ).",
+        "Capacitor variável C12 (FREQ ADJ).",
+        "Resistor de potência R90."
+      ],
+      answer: "Potenciômetro R19 (PWR ADJ).",
+      explanation: "O potenciômetro R19 regula a polarização de corrente contínua em Q5, definindo o ganho diferencial e a potência do amplificador de transmissão.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "O que ocorre se um contador de cruzamentos em zero falhar em alcançar a contagem de 2048 antes que a janela de escuta WTGTE expire?",
+      options: [
+        "O processador omite o sinal de reset ('CTR RST'), permitindo que o contador mantenha o acumulado e complete sua contagem durante o próximo ciclo de recepção.",
+        "O sistema entra em alarme visual de 'FAIL' e zera imediatamente toda a contagem de milhas do navio.",
+        "O amplificador A1 dobra a potência de transmissão para 20 Watts no ciclo seguinte.",
+        "A Master Display comuta para modo de velocidade manual zerando os registradores."
+      ],
+      answer: "O processador omite o sinal de reset ('CTR RST'), permitindo que o contador mantenha o acumulado e complete sua contagem durante o próximo ciclo de recepção.",
+      explanation: "Para não perder amostras em águas de eco fraco, o firmware não reseta o contador incompleto, possibilitando que ele atinja os 2048 no próximo ciclo de escuta.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Em quais pontos físicos do barramento de terminais podemos medir a alimentação CA (FASE) de entrada na Unidade Eletrônica?",
+      options: [
+        "Pinos 17 e 18 no bloco de terminais TB1 do módulo A4.",
+        "Pinos 1 e 2 no conector J5 da placa A1.",
+        "Pinos 10 e 11 na barra de terra do chassi A3.",
+        "Pinos 4 e 5 no conector DB-25 da Master Display."
+      ],
+      answer: "Pinos 17 e 18 no bloco de terminais TB1 do módulo A4.",
+      explanation: "Os pinos 17 e 18 do bloco TB1 em A4 são os pontos de aferição padronizados para a linha de fase da tensão de alimentação CA principal.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Em quais terminais podemos verificar a conexão da alimentação CA (NEUTRO) na Unidade Eletrônica?",
+      options: [
+        "Pinos 20 e 21 no bloco de terminais TB1 do módulo A4.",
+        "Pinos 3 e 4 na placa de relés A2.",
+        "Pinos 12 e 13 no conector do transdutor.",
+        "Pinos 30 e 31 na régua da bateria."
+      ],
+      answer: "Pinos 20 e 21 no bloco de terminais TB1 do módulo A4.",
+      explanation: "O retorno de neutro da rede de alimentação CA chega aos pinos 20 e 21 da barra de terminais TB1 em A4.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "De que material específico é confeccionada a lente acústica transparente na superfície do transdutor?",
+      options: [
+        "Poliestireno de grau acústico.",
+        "Vidro borossilicato temperado.",
+        "Acrílico policarbonato comum.",
+        "Borracha de neoprene vulcanizada."
+      ],
+      answer: "Poliestireno de grau acústico.",
+      explanation: "A lente protetora e refrativa que sela os cristais em contato direto com a água do mar é fabricada em poliestireno especial.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é o procedimento preventivo obrigatório com o transdutor antes da entrada e esvaziamento do dique seco?",
+      options: [
+        "Içar/recolher o transdutor para o interior do casco e fechar firmemente a válvula de fundo antes do esvaziamento do dique.",
+        "Cobrir a lente com uma lona de PVC e prender com abraçadeiras de aço inox sob a quilha.",
+        "Desconectar os cabos internos e injetar ar comprimido a 10 PSI na carcaça do transdutor.",
+        "Manter o equipamento ligado em modo de teste contínuo para evaporar umidade."
+      ],
+      answer: "Içar/recolher o transdutor para o interior do casco e fechar firmemente a válvula de fundo antes do esvaziamento do dique.",
+      explanation: "Içar o transdutor para dentro da válvula de fundo e fechá-la protege os cristais contra choques mecânicos, calços do dique e ressecamento agressivo.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Como deve ser executada a limpeza da superfície do conjunto transdutor que aloja os componentes ativos?",
+      options: [
+        "Com detergente suave, pasta ou pó de limpeza contendo o mínimo possível de material abrasivo e esponja macia.",
+        "Com escova de cerdas de aço e solvente removedor de tinta epóxi.",
+        "Com jateamento de areia fina sob baixa pressão de ar comprimido.",
+        "Com ácido muriático diluído para dissolver crostas calcárias rapidamente."
+      ],
+      answer: "Com detergente suave, pasta ou pó de limpeza contendo o mínimo possível de material abrasivo e esponja macia.",
+      explanation: "A limpeza deve ser extremamente cuidadosa, evitando agentes altamente abrasivos ou raspadores metálicos que danificariam a superfície de poliestireno.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Descreva a trajetória e conversão dos ecos no módulo do transdutor durante a recepção:",
+      options: [
+        "As ondas acústicas incidem nos cristais e são convertidas em energia elétrica; essa energia passa pelos transformadores casadores T1 e T2 e segue pelo cabo blindado como pulsos de recepção até a Unidade Eletrônica.",
+        "Os ecos são convertidos em sinais ópticos por fotodiodos e transmitidos por fibra de vidro até a Master Display.",
+        "O som movimenta uma membrana eletromagnética em T1/T2, cuja frequência é retificada em tensão contínua linear.",
+        "O retorno acústico aquece o termistor do cristal, gerando variação de resistência lida pela placa A1."
+      ],
+      answer: "As ondas acústicas incidem nos cristais e são convertidas em energia elétrica; essa energia passa pelos transformadores casadores T1 e T2 e segue pelo cabo blindado como pulsos de recepção até a Unidade Eletrônica.",
+      explanation: "O eco mecânico gera tensão elétrica nos cristais piezoelétricos; os transformadores T1/T2 casam a impedância e enviam o sinal elétrico balanceado à Unidade Eletrônica.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Onde ficam fisicamente instalados no casco do navio os transdutores acústicos do Odômetro Doppler SRD-331?",
+      options: [
+        "Montados no interior de uma válvula de fundo (gaveta) instalada no fundo do casco do navio.",
+        "Parafusados diretamente no leme e nas pás da hélice principal.",
+        "Alojados no bulbo de proa acima da linha d'água de lastro leve.",
+        "Fixados no convés principal com braço articulado retrátil de bombordo."
+      ],
+      answer: "Montados no interior de uma válvula de fundo (gaveta) instalada no fundo do casco do navio.",
+      explanation: "A instalação em válvula de fundo permite que o transdutor fique imerso no fluxo da água e possa ser recolhido para o interior do casco em manutenções.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Na frota naval de referência do manual, em quais classes/navios o Odômetro Doppler SRD-331 encontra-se instalado?",
+      options: [
+        "A bordo dos Navios-Patrulha Guarajá, Guajará, Gurupim, Gurupá e do Navio-Tanque Gastão Motta.",
+        "Exclusivamente em Submarinos Classe Tupi e Fragatas Classe Niterói.",
+        "Apenas em Navios-Aeródromo e Corvetas Classe Inhaúma.",
+        "Em Lanchas de Inspeção Naval e Rebocadores de Alto Mar."
+      ],
+      answer: "A bordo dos Navios-Patrulha Guarajá, Guajará, Gurupim, Gurupá e do Navio-Tanque Gastão Motta.",
+      explanation: "Essa relação cita as unidades da Marinha equipadas com esta versão específica de odômetro acústico Doppler.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Quais são as tensões de alimentação primária de entrada e as tensões contínuas CC reguladas geradas internamente pela Unidade Eletrônica?",
+      options: [
+        "Entrada CA de 100, 115 ou 230 VCA (50/60 Hz); fornece internamente tensões reguladas de 5, 12 e 32 Volts CC.",
+        "Entrada de 24 VCC; fornece internamente saídas reguladas de 3,3 e 9 Volts CC.",
+        "Entrada CA trifásica de 440 VCA; fornece saídas de 110 VCC e 48 VCC.",
+        "Entrada de 115 VCA (400 Hz); fornece internamente apenas 5 Volts CC para lógica."
+      ],
+      answer: "Entrada CA de 100, 115 ou 230 VCA (50/60 Hz); fornece internamente tensões reguladas de 5, 12 e 32 Volts CC.",
+      explanation: "A fonte interna opera com a rede CA do navio e produz as linhas de +5 VCC (lógica TTL/CPU), +12 VCC (analógico) e +32 VCC (amplificadores de potência RF).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual é a sensibilidade vertical mínima exigida para o osciloscópio utilizado nos procedimentos de teste e alinhamento do SRD-331?",
+      options: [
+        "No mínimo 10 mV/cm.",
+        "No mínimo 1 Volt/cm.",
+        "No mínimo 500 mV/cm.",
+        "No mínimo 100 uV/cm."
+      ],
+      answer: "No mínimo 10 mV/cm.",
+      explanation: "Como os retornos acústicos na saída pré-amplificada possuem baixa amplitude em milivolts, o osciloscópio precisa ter sensibilidade vertical de pelo menos 10 mV por centímetro.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
+    },
+    {
+      question: "Qual deve ser a metodologia filosófica e prática adotada pelo técnico na rotina de Busca de Avarias do Odômetro SRD-331?",
+      options: [
+        "Deve ser um procedimento sistemático e lógico de eliminação de módulos e estágios.",
+        "Troca aleatória e imediata de todos os cartões eletrônicos até o defeito sumir.",
+        "Ajuste empírico simultâneo de todos os trimpots da placa A1 e A2.",
+        "Substituição imediata do cabo de 9,2 metros antes de testar a Unidade Eletrônica."
+      ],
+      answer: "Deve ser um procedimento sistemático e lógico de eliminação de módulos e estágios.",
+      explanation: "O manual preconiza a busca sistemática por eliminação (isolar fonte, cabos, cartões e transdutor) para localizar avarias com rapidez e segurança.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     }
   ]
 };
