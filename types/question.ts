@@ -6,4 +6,6 @@ export interface Question {
   topic?: string;
   // imagem associada à questão (opcional)
   image?: string;
+  // explicação/comentário do gabarito (opcional)
+  explanation?: string;
 }

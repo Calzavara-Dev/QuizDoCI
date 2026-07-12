@@ -807,884 +807,604 @@ export const quizzes: Record<string, Question[]> = {
   ],
   "manutencao-dos-sistemas-de-odometros": [
     {
-      question: "Qual o princípio físico utilizado pelo odômetro SRD-331 para determinar a velocidade?",
+      question: "Qual é o princípio fundamental utilizado pelo Odômetro SRD-331 para determinar a velocidade do navio em relação à água?",
       options: [
-        "Indução Eletromagnética.",
-        "Efeito Doppler.",
-        "Pressão Hidrostática.",
-        "Reflexão de Luz."
+        "Variação de fase magnética induzida entre dois botões eletrodos no casco.",
+        "Medição de distância através de ecos de sonar modulados a 12 MHz diretos no fundo do mar.",
+        "Utilização da mudança de ondas de som pelo efeito \"Doppler\", através de pulsos sonoros de 2 MHz transmitidos na água.",
+        "Cálculo da resistência da \"camada limite\" (\"boundary layer\") frente aos cristais transdutores de 400 Hz."
       ],
-      answer: "Efeito Doppler.",
-      topic: "Página: 1-1"
+      answer: "Utilização da mudança de ondas de som pelo efeito \"Doppler\", através de pulsos sonoros de 2 MHz transmitidos na água.",
+      explanation: "O equipamento utiliza o princípio de mudança das ondas de som pelo efeito \"Doppler\" a fim de se determinar a velocidade do navio em relação à água. Os sinais sensores são pulsos de som de alta frequência transmitidos para a água.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O transdutor do SRD-331 contém quantas janelas transmissoras/receptoras?",
+      question: "O equipamento transmite os pulsos acústicos simultaneamente na direção da proa (FORE) e da popa (AFT). Qual a finalidade estrita de calcular a diferença processada dessas duas direções opostas?",
       options: [
-        "Uma única janela central.",
-        "Três janelas (proa, popa e bombordo).",
-        "Duas janelas (proa e popa).",
-        "Quatro janelas direcionais."
+        "Garantir que a falha de um cristal não afete a alimentação de +28V.",
+        "Determinar a média da diferença de velocidade de forma independente dos vetores dinâmicos resultantes do movimento de arfagem (\"pitch\") ou de içamento (\"heave\") do navio.",
+        "Permitir a ativação simultânea do modo \"Dummy Log\" (Falso Odômetro) para distâncias em milhas.",
+        "Criar a aeração necessária para proteger a lente de poliestireno do transdutor."
       ],
-      answer: "Duas janelas (proa e popa).",
-      topic: "Página: 1-1"
+      answer: "Determinar a média da diferença de velocidade de forma independente dos vetores dinâmicos resultantes do movimento de arfagem (\"pitch\") ou de içamento (\"heave\") do navio.",
+      explanation: "O uso de duas janelas transmitindo em direções opostas permite que a média da diferença de velocidade seja determinada independente dos movimentos de arfagem ou içamento do navio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a finalidade de usar duas janelas de transmissão em direções opostas?",
+      question: "O SRD-331 processa a reflexão acústica, mas evita intencionalmente medir os retornos de águas turbulentas que colam no casco. Como o sistema contorna o problema dessa \"camada limite\" (\"boundary layer\")?",
       options: [
-        "Aumentar o alcance do som.",
-        "Anular erros de arfagem (\"pitch\") ou içamento (\"heave\").",
-        "Economizar energia da bateria.",
-        "Detectar obstáculos à frente."
+        "Encurtando o pulso original XMTE de 1.1 ms para 0.55 ms no microprocessador.",
+        "Desligando o pré-amplificador receptor U1 durante toda a fase de recepção usando a chave TR (TR Switch).",
+        "Calculando um atraso no tempo (ativado pelo sinal WTGTE) após a transmissão e antes de permitir a contagem do sinal, assegurando a leitura de águas sem perturbações.",
+        "Utilizando um sinal de fase oposto no potenciômetro R19 de ajuste de potência (PWR ADJ)."
       ],
-      answer: "Anular erros de arfagem (\"pitch\") ou içamento (\"heave\").",
-      topic: "Página: 1-1"
+      answer: "Calculando um atraso no tempo (ativado pelo sinal WTGTE) após a transmissão e antes de permitir a contagem do sinal, assegurando a leitura de águas sem perturbações.",
+      explanation: "O atraso de contagem diminui a chance de contagem de sinais refletidos pela água presa à camada de demarcação (boundary layer) do navio. A contagem só inicia quando WTGTE se torna nível alto.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O que é a \"Camada Limite\" (Boundary Layer) mencionada no sistema Doppler?",
+      question: "Em vez de calcular eletronicamente a diferença de frequência \"Doppler\" de forma direta (analógica), que método matemático a arquitetura eletrônica SRD-331 aplica para derivar a velocidade?",
       options: [
-        "A profundidade máxima que o som atinge.",
-        "A camada de água perturbada colada ao casco.",
-        "O limite de velocidade do navio.",
-        "A espessura do casco do navio."
+        "Compara a diferença de tempo necessária na recepção de exatos 2048 pulsos nos cristais de vante e ré, valendo-se da relação T=1/f.",
+        "Usa a resistência variável da água entre eletrodos para calibrar os capacitores C1 e C2 do transdutor Y1.",
+        "Subtrai 2 MHz da frequência central de 12 MHz do clock primário na CPU U19.",
+        "Lê os dados EPROM em 7.7 ms e injeta cruzamentos de zero em conversores digital-analógicos de 115V."
       ],
-      answer: "A camada de água perturbada colada ao casco.",
-      topic: "Página: 1-1/1-2"
+      answer: "Compara a diferença de tempo necessária na recepção de exatos 2048 pulsos nos cristais de vante e ré, valendo-se da relação T=1/f.",
+      explanation: "Em vez de detectar a frequência diretamente, o circuito compara a diferença de tempo na recepção de 2048 pulsos, sabendo que essa diferença de tempo é diretamente proporcional à diferença de frequência (T=1/f).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Por que existe um \"atraso de tempo\" calculado após a transmissão do sinal?",
+      question: "O Odômetro SRD-331 possui uma arquitetura física dividida logicamente. Quais são as suas unidades principais de composição estrita?",
       options: [
-        "Para resfriar o transdutor.",
-        "Para processar a distância.",
-        "Para ignorar sinais da camada limite e ler águas sem perturbações.",
-        "Para carregar as baterias de emergência."
+        "Módulo de Retransmissão (RTU), Módulo Transdutor e Falso Odômetro (\"Dummy Log\").",
+        "Unidade Eletrônica, Unidade \"Master Display\" e o Módulo do Transdutor.",
+        "Gaveta de Cartões Analógicos, Módulo do Transdutor Piezoelétrico e Terminal de Calibração.",
+        "Unidade VCS Tipo 84, Haste Fixa (Fixed Probe) e Painel Indicador Remoto."
       ],
-      answer: "Para ignorar sinais da camada limite e ler águas sem perturbações.",
-      topic: "Página: 1-1/1-2"
+      answer: "Unidade Eletrônica, Unidade \"Master Display\" e o Módulo do Transdutor.",
+      explanation: "O equipamento é composto por três unidades principais, que são a Unidade Eletrônica, a Unidade \"Master Display\" e o Módulo do Transdutor.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "De acordo com o Efeito Doppler, quando a fonte se aproxima do observador, a frequência observada é:",
+      question: "Que mecanismo específico salvaguarda a integridade dos dados acumulados (distância total) na Unidade \"Master Display\" durante falhas ou colapsos de alimentação elétrica?",
       options: [
-        "Igual à emitida.",
-        "Menor do que a emitida.",
-        "Maior do que a emitida.",
-        "Nula."
+        "Uma memória EPROM na CPU que é atualizada e travada mecanicamente a cada pulso de 24V.",
+        "Um banco de resistores de 90 Ohms que acumula a voltagem do cruzamento em zero por até 2 dias.",
+        "O armazenamento físico nos roletes de catraca do indicador analógico.",
+        "Um circuito de suporte de baterias interno que retém os dados da distância acumulada por um período mínimo de 10 minutos."
       ],
-      answer: "Maior do que a emitida.",
-      topic: "Página: 1-2"
+      answer: "Um circuito de suporte de baterias interno que retém os dados da distância acumulada por um período mínimo de 10 minutos.",
+      explanation: "A Unidade \"Master Display\" contém um circuito de suporte de baterias que retém a distância acumulada no caso de falta de energia por um período mínimo de 10 minutos.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a frequência de ultrassom emitida pelos cristais do SRD-331?",
+      question: "O Módulo A3, A4 e A5 formam as subfunções de alimentação. Quais as especificações nominais primárias toleradas na entrada da Unidade Eletrônica deste modelo?",
       options: [
-        "60 Hz.",
-        "2 MHz.",
-        "400 Hz.",
-        "10 kHz."
+        "24V CC fornecidos pelo quadro principal de emergência.",
+        "Exclusivamente 115V 400Hz para acionamento síncrono dos módulos C1 e C2.",
+        "100, 115 ou 230 Volts AC, com frequências de 50 ou 60 Hz.",
+        "54 a 60V com 60Hz gerando corrente de excitação de 0.9A."
       ],
-      answer: "2 MHz.",
-      topic: "Página: 1-2"
+      answer: "100, 115 ou 230 Volts AC, com frequências de 50 ou 60 Hz.",
+      explanation: "A unidade Eletrônica opera recebendo alimentação do navio com 100, 115 ou 230 Volts AC, nas frequências de 50 ou 60 Hz.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual o tipo de cristal utilizado no transdutor para emitir energia ultrassônica?",
+      question: "O protocolo técnico permite fazer manutenções pontuais na Unidade Eletrônica de forma separada do painel na ponte. Como a arquitetura do \"hardware\" viabiliza esse corte localizado?",
       options: [
-        "Cristais de quartzo comum.",
-        "Cristais piezoelétricos.",
-        "Cristais de silício.",
-        "Cristais eletroluminescentes."
+        "Forçando um BITE (Teste Interno) até desligar ambos via linha serial RS-422.",
+        "Existe um controle de alimentação interno disponível na própria Unidade Eletrônica, permitindo ligar e desligar localmente durante reparos, sem afetar o comando da \"Master Display\".",
+        "Sacando fisicamente o Módulo Transmissor A1 que retém a chave geral primária de toda a estrutura.",
+        "Usando a tecla \"TEST\" conjugada à tecla \"POWER OFF\"."
       ],
-      answer: "Cristais piezoelétricos.",
-      topic: "Página: 1-2"
+      answer: "Existe um controle de alimentação interno disponível na própria Unidade Eletrônica, permitindo ligar e desligar localmente durante reparos, sem afetar o comando da \"Master Display\".",
+      explanation: "Há um controle interno de alimentação na Unidade Eletrônica que permite sua operação local (ligar/desligar) independente da alimentação enviada pela Unidade \"Master Display\" durante manutenções.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Se o navio se move para VANTE (vante), o sinal de proa (FORE) terá sua frequência:",
+      question: "No interior cego do Módulo Transdutor há um submódulo vital. Quais peças ficam fixadas ao lado dos cristais de escuta a fim de maximizar a absorção da fraca voltagem ecoada da água salgada?",
       options: [
-        "Diminuída.",
-        "Mantida constante.",
-        "Deslocada para uma frequência maior.",
-        "Cancelada."
+        "Os conversores Síncrono/Digital (15CX4) para evitar perdas do cabo longo.",
+        "Osciladores Mestres U9 (12 MHz) para sincronizar imediatamente o choque ultrassônico.",
+        "Transformadores casadores de impedância (T1 e T2) em conjunto com capacitores para transmitir e receber os sinais com eficiência primária.",
+        "Amplificadores limitadores U5B para queimar fusíveis antes que pulsos superem 1.1 ms de carga."
       ],
-      answer: "Deslocada para uma frequência maior.",
-      topic: "Página: 1-3"
+      answer: "Transformadores casadores de impedância (T1 e T2) em conjunto com capacitores para transmitir e receber os sinais com eficiência primária.",
+      explanation: "Localizados no submódulo do transdutor estão os transformadores T1 e T2 e capacitores (C1 e C2), que funcionam como casadores de impedância entre o cabo e os cristais transmissores/receptores.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Por quanto tempo a bateria da Unidade Master Display retém os dados de distância em caso de queda de energia?",
+      question: "Fainas de docagem preveem limpeza de crostas no sensor SRD-331. Assinale o rigor do manual sobre a lente do transmissor/receptor:",
       options: [
-        "1 minuto.",
-        "5 minutos.",
-        "No mínimo 10 minutos.",
-        "1 hora."
+        "Deve ser lixada agressivamente caso existam cracas e, em seguida, receber tinta anti-incrustante (vinílica).",
+        "Ela é de poliestireno; jamais pode ser raspada, tratada com ácidos ou pintada, usando-se apenas esponja com detergente para não distorcer as características refrativas.",
+        "É feita em \"G.R.P.\" elíptico e exige o ajuste em um potenciômetro RV-12 (Sensibilidade) após cada repintura naval.",
+        "Permite jateamento leve apenas se for lubrificada posteriormente por uma leve camada de graxa de silicone em seus eletrodos de contato."
       ],
-      answer: "No mínimo 10 minutos.",
-      topic: "Página: 1-3"
+      answer: "Ela é de poliestireno; jamais pode ser raspada, tratada com ácidos ou pintada, usando-se apenas esponja com detergente para não distorcer as características refrativas.",
+      explanation: "A superfície consiste numa lente transparente de poliestireno que nunca deve ser raspada, triturada, lixada ou limpa com ácido, bastando detergente e esponja para preservá-la. A pintura ou estrago acarreta perda da integridade.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Como é fornecida a iluminação de fundo dos displays de cristal líquido?",
+      question: "As condições de águas abaixo da quilha influem no eco \"Doppler\". Segundo os limites da fabricante Sperry, entre quais profundidades sobressaentes sob o casco a calibração se garante operativa?",
       options: [
-        "Leds de alta potência.",
-        "Lâmpadas incandescentes.",
-        "Painéis de lâmpadas eletroluminescentes.",
-        "Luz solar refletida."
+        "A partir de um mínimo de 1,6 metros e limitando-se ao máximo prático de 4,8 metros para a viabilidade do processamento do pulso.",
+        "Necessita somente de 1,83 metros para águas lodosas, sendo infinito para grandes oceanos.",
+        "Mínimo de 4,8 metros até a profundeza abissal (limitado por 9999,9 milhas contadas).",
+        "Exige 10 metros pelo menos, ou o efeito de arfagem (\"heave\") inverterá a quadratura doppler do fundo falso."
       ],
-      answer: "Painéis de lâmpadas eletroluminescentes.",
-      topic: "Página: 1-4"
+      answer: "A partir de um mínimo de 1,6 metros e limitando-se ao máximo prático de 4,8 metros para a viabilidade do processamento do pulso.",
+      explanation: "A profundidade mínima de operação é de 1,6 metros e a profundidade máxima na qual os sinais refletidos são processados adequadamente é de 4,8 metros.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a potência de pico de saída do transdutor SRD-331?",
+      question: "O longo trajeto de 9,2 m que sobe do transdutor pode induzir dados erráticos de velocidade (pulos falsos) na SDTU. Como o SRD-331 resolve a vulnerabilidade a ruído ou EMI (Interferência Eletromagnética) nesse chicote?",
       options: [
-        "1 Watt.",
-        "10 Watts.",
-        "100 Watts.",
-        "500 Watts."
+        "Utiliza a arquitetura EPROM no casco, digitalizando o sinal antes dele subir pelo navio.",
+        "Faz uso estrito do cabo transmissor TTRS com quatro condutores blindados de alta proteção imune ao EMI naval.",
+        "O Módulo de Calibração aciona o \"Dummy Log\" para cancelar os ruídos de 60 Hz.",
+        "Exige a medição trimestral e a substituição da Memória de Acesso Randômico 8156 para purgar o chicote."
       ],
-      answer: "10 Watts.",
-      topic: "Página: 1-4"
+      answer: "Faz uso estrito do cabo transmissor TTRS com quatro condutores blindados de alta proteção imune ao EMI naval.",
+      explanation: "O cabo utilizado entre o transdutor e a eletrônica é um cabo de proteção tipo TTRS, que fornece excelente proteção contra EMI (Interferência Eletromagnética), a qual de outro modo corromperia as leituras intermitentes.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Sobre a manutenção do transdutor, é correto afirmar que:",
+      question: "No evento de total avaria na recepção acústica \"Doppler\", a tripulação passa o painel para modo \"Manual\" e injeta uma velocidade estimada via teclado. Como reage o processador ao cômputo da Distância?",
       options: [
-        "Deve ser pintado com tinta anti-incrustante.",
-        "Pode ser lixado se houver cracas.",
-        "Nunca deve ser pintado, lixado ou limpo com ácidos.",
-        "Deve ser limpo com jatos de areia."
+        "Zera a contagem de distância até o conserto dos cristais, deixando a Unidade apenas como um tacômetro de nós.",
+        "Desliga o módulo A1 transmissor, mas passa a acumular milhas proporcionalmente utilizando a exata razão de velocidade manual recém-inserida pelo teclado.",
+        "Ele paralisa a SDTU e puxa o hodômetro prévio da sub-rotina BITE Completa em 0,5Hz.",
+        "A distância passará a ser processada pelos tacômetros mecânicos auxiliares do RTU sem precisão lógica de processador digital."
       ],
-      answer: "Nunca deve ser pintado, lixado ou limpo com ácidos.",
-      topic: "Página: 1-5"
+      answer: "Desliga o módulo A1 transmissor, mas passa a acumular milhas proporcionalmente utilizando a exata razão de velocidade manual recém-inserida pelo teclado.",
+      explanation: "Ao selecionar a inserção manual, o processador assimila a nova velocidade para suas matemáticas e continua, também, a atualizar e acumular normalmente a distância com base nesta nova razão estipulada no painel.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual material é recomendado para a limpeza da lente do transdutor?",
+      question: "Zerar a viagem (\"Reset Miles\") num navio moderno é uma tecla de extrema segurança para evitar acidentes de percurso. Qual o procedimento mandatório exigido pelo software deste modelo \"Doppler\" da Sperry?",
       options: [
-        "Ácido sulfúrico.",
-        "Detergente ou pasta de limpeza com esponja.",
-        "Palha de aço.",
-        "Thinner puro."
+        "Girar a chave física SW1 sob a tampa e apertar \"TEST\".",
+        "Digitar a senha através do Módulo de Calibração (12) seguida da chave \"OPERATE\".",
+        "A tecla \"RESET MILES\" deve obrigatoriamente ser acionada duas vezes consecutivas dentro de uma restrita janela de 5 segundos, do contrário, a placa ignora o reinício.",
+        "Pressionar simultaneamente as teclas \"KNOT/MILES\" e \"DECREASE\" por 10 minutos."
       ],
-      answer: "Detergente ou pasta de limpeza com esponja.",
-      topic: "Página: 1-5"
+      answer: "A tecla \"RESET MILES\" deve obrigatoriamente ser acionada duas vezes consecutivas dentro de uma restrita janela de 5 segundos, do contrário, a placa ignora o reinício.",
+      explanation: "A zeragem segura requer pressionar \"RESET MILES\" duas vezes com intervalo máximo de cinco segundos entre os toques. Senão, o display para de piscar e o comando é renegado mantendo-se a navegação acumulada prévia.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O fenômeno que pode bloquear a emissão de energia acústica por bolhas de ar é chamado:",
+      question: "Ao encerrar a operação em alto mar para permitir reparos internos urgentes, o mantenedor pressiona \"POWER OFF\" no botão tátil da Master Display apagando todo o sistema. Qual perigo severo de choque permeia a Eletrônica e que obriga a manobra do quadro do navio?",
       options: [
-        "Cavitação.",
-        "Aeração.",
-        "Indução.",
-        "Refração."
+        "O gerador piezelétrico retém acúmulo radiativo na lente de poliestireno por 24 horas.",
+        "As baterias auxiliares entram em curto imediato caso a carcaça seja removida sob a ordem \"POWER OFF\".",
+        "Mesmo com o botão no \"OFF\", correntes letais e tensão nominal de 115V AC continuam energizando a placa de terminais, transformadores e filtros primários de linha.",
+        "O relé de catraca RS-422 inverte a impedância gerando estática fulminante para peças CMOS se o aterramento da Haste estiver submerso."
       ],
-      answer: "Aeração.",
-      topic: "Página: 1-5"
+      answer: "Mesmo com o botão no \"OFF\", correntes letais e tensão nominal de 115V AC continuam energizando a placa de terminais, transformadores e filtros primários de linha.",
+      explanation: "O manual alerta que a tensão alta (115VAC) ainda reside perigosamente ativa na placa de bornes/terminais TB1, nos filtros e transformadores mesmo quando desligado pelo painel (Standby), exigindo o isolamento da força de bordo pelos painéis gerais.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual o tipo de cabo utilizado para proteger o sinal contra interferências magnéticas (EMI)?",
+      question: "O fenômeno agressivo da aeração no fundo marítimo pode incapacitar os sonares e o próprio odômetro SRD-331. Como as bolhas prejudicam o hardware e o resultado na ponte de comando?",
       options: [
-        "Cabo paralelo simples.",
-        "Cabo TTRS.",
-        "Fibra óptica.",
-        "Cabo coaxial de antena."
+        "Oxidando a camada de G.R.P e corroendo a resina Araldite do transdutor.",
+        "Elas criam barreiras densas o suficiente para impedir a saída térmica e refletir 10 Watts de ruído no pré-amplificador, queimando-o.",
+        "Se acumulam até travar os motores mecânicos síncronos de repetição de rumo e velocidade.",
+        "Elas isolam/bloqueiam física e acusticamente o choque da energia para a água ou mascaram a recepção ecoada, forçando a indicação de erros intermitentes/lapsos na leitura do oficial."
       ],
-      answer: "Cabo TTRS.",
-      topic: "Página: 1-5"
+      answer: "Elas isolam/bloqueiam física e acusticamente o choque da energia para a água ou mascaram a recepção ecoada, forçando a indicação de erros intermitentes/lapsos na leitura do oficial.",
+      explanation: "Bolhas grandes e densas mascaram fisicamente tanto a via de saída sônica quanto o escutar dos cristais receptores, o que causa lacunas de \"cegueira\" (lapsos temporários na marcação de velocidade no display).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a profundidade mínima necessária para a operação correta do transdutor?",
+      question: "O funcionamento em batimentos acústicos (Pings) segue uma lei de software inquebrável estipulada pelo Módulo 2 do SRD-331. Qual o valor do ciclo matemático de temporização ininterrupto entre disparar e escutar?",
       options: [
-        "0,5 metros.",
-        "1,6 metros.",
-        "5,0 metros.",
-        "10 metros."
+        "Durações de 2048 microssegundos divididos pelo relógio de quartzo síncrono.",
+        "Exatos 7.7 milissegundos para o ciclo total de temporização repetitivo do sistema.",
+        "Janelas variáveis de 0,5 Hz dependendo das correntes litorâneas.",
+        "Janela de limite Doppler de 60,3 milissegundos contínuos que cortam aos limites mecânicos das chaves SC/SD."
       ],
-      answer: "1,6 metros.",
-      topic: "Página: 1-5"
+      answer: "Exatos 7.7 milissegundos para o ciclo total de temporização repetitivo do sistema.",
+      explanation: "A arquitetura baseia todo seu ritmo no período de 7.7 milissegundos (7.7 ms) que perfaz um ciclo completo regular de transmissão e audição pelo eco do Doppler Gate.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Para resetar a distância acumulada (MILHAS), o operador deve:",
+      question: "Compreendendo o tempo de 7.7 ms acima, dentro deste espaço existe a \"Rajada\" real do raio ultrassônico empurrado para a água (Sinal Habilitador XMTE). Quanto tempo dura esse disparo brutal de força?",
       options: [
-        "Pressionar o botão \"RESET MILES\" uma única vez.",
-        "Manter o botão pressionado por 30 segundos.",
-        "Pressionar \"RESET MILES\" duas vezes dentro de 5 segundos.",
-        "Desligar a chave geral."
+        "Dura precisamente 1.1 milissegundo de duração sob nível lógico alto a 2 MHz de ressonância.",
+        "Estende-se por 0.55 milissegundos enquanto RST 7.5 carrega a matriz de capacitores RAM.",
+        "Dura de 1 a 10 minutos, amparado pelas baterias recarregáveis em caso de queima do fusível principal FS2.",
+        "Demora o tempo de cruzamento de 14 ondas curtas na camada \"boundary layer\"."
       ],
-      answer: "Pressionar \"RESET MILES\" duas vezes dentro de 5 segundos.",
-      topic: "Página: 1-6"
+      answer: "Dura precisamente 1.1 milissegundo de duração sob nível lógico alto a 2 MHz de ressonância.",
+      explanation: "Durante o pulso \"XMTE\" ativo (nível alto), ocorrem as transmissões dianteira e traseira; este período específico do sinal dura inflexivelmente 1.1 ms em cada ciclo de 7.7 ms.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "No modo de velocidade MANUAL, o que acontece com os dados recebidos pelo transdutor?",
+      question: "A mente da Unidade Eletrônica é abrigada no Módulo (Placa A2), o qual roda um processamento lógico para separar e analisar a física Doppler através de três Cis (Circuitos Integrados) essenciais. Quais compõem esse trio lógico de núcleo rígido?",
       options: [
-        "São somados à velocidade manual.",
-        "São ignorados pelo sistema.",
-        "São usados para calibração automática.",
-        "Causam o desligamento do odômetro."
+        "Amplificador Push-Pull Q2/Q3, Transformador T3 de pico de corrente e Demodulador de Limiar U3.",
+        "Uma rede contendo a EPROM de rotinas embarcadas, Célula do Sensor Haste-Revés e a Interface RS-422 auxiliar.",
+        "A arquitetura usa relés (RL1/RL2) que transferem as oscilações para um cartão de varistores mecânicos e tacômetros.",
+        "Utiliza a CPU 8085 (U19), atrelada ao timer de I/O de memória (U20-8156) e fechada pela lógica de controle embarcado da ROM (EPROM U21)."
       ],
-      answer: "São ignorados pelo sistema.",
-      topic: "Página: 1-7"
+      answer: "Utiliza a CPU 8085 (U19), atrelada ao timer de I/O de memória (U20-8156) e fechada pela lógica de controle embarcado da ROM (EPROM U21).",
+      explanation: "O coração computacional que organiza as transmissões e o barramento é o trio de integrados formado pela CPU 8085 (U19), o integrado RAM/Timer 8156 (U20) e a matriz de código EPROM com I/O (U21).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O microprocessador principal utilizado na Unidade Eletrônica do SRD-331 é o:",
+      question: "A inteligência do temporizador baseia-se num fracionamento da rotina via código computacional de linguagem de baixo nível. Como a CPU do SRD-331 orquestra as chaves de pulso eletrônicas (XMTE e WTGTE)?",
       options: [
-        "Intel Core i7.",
-        "8085.",
-        "Arduino Nano.",
-        "Motorola 68000."
+        "A RAM inibe as contagens por 2048 vezes, até que a EPROM envie sinal \"Dummy Log\" liberando a transmissão em fase mecânica síncrona aos rolamentos do VCS.",
+        "O sinal acústico da água é quem induz diretamente os pinos RX e TX de forma orgânica gerando voltagens limpas que são interpretadas isoladas e passivamente.",
+        "Através da saída \"TIMER OUT\" da U20 que gera uma rigorosa interrupção RST 7.5. O firmware então conta 14 destas interrupções seguidas de meio milissegundo, e assim ativa logicamente a subida e decida das saídas físicas do disparo (XMTE e WTGTE).",
+        "Atua monitorando os displays em cristal líquido (LCD) da master unit via diodos Zener de porta \"AND\" que disparam um gatilho mecânico atrelado ao sensor PROBE na velocidade de 2 MHz exatos."
       ],
-      answer: "8085.",
-      topic: "Página: 1-8"
+      answer: "Através da saída \"TIMER OUT\" da U20 que gera uma rigorosa interrupção RST 7.5. O firmware então conta 14 destas interrupções seguidas de meio milissegundo, e assim ativa logicamente a subida e decida das saídas físicas do disparo (XMTE e WTGTE).",
+      explanation: "A CPU lida com interrupções contínuas de hardware \"RST 7.5\" originadas da porta Timer Out. Ao receber, o software conta e manipula a mudança lógica para Alto ou Baixo nos gatilhos de controle principal XMTE e WTGTE de forma ritmada pelas contagens limitadas ao \"14\".",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual o período total do ciclo de temporização de transmissão/recepção?",
+      question: "O Cristal deve receber os imensos 2 MHz estritos de potência para a frequência correta do sonar, porém o Oscilador base na placa mãe do odômetro corre nativamente a 12 MHz (Cristal U9). Que malabarismo digital reduz e afina isso na ponte do pulso \"XMTE\"?",
       options: [
-        "1 segundo.",
-        "7.7 ms.",
-        "50 ms.",
-        "1 microsegundo."
+        "A EPROM usa algoritmos aritméticos paralelos para filtrar ecos indesejados da banda de rádio.",
+        "Diodos supressores esquentam os 10 MHz excedentes convertendo-os em 10 Watts RMS por transistores buffer.",
+        "O pulso liberado e em nível lógico atua tirando o reset num Flip-Flop Contador de \"Ripple\" especial (U13) que então divide perfeitamente o sinal inicial nativo do quartzo (12 MHz) pelo fator seis (6).",
+        "Envia a potência primária por divisores analógicos usando potenciômetros de precisão calibráveis R19 com limitadores tipo zener."
       ],
-      answer: "7.7 ms.",
-      topic: "Página: 1-8"
+      answer: "O pulso liberado e em nível lógico atua tirando o reset num Flip-Flop Contador de \"Ripple\" especial (U13) que então divide perfeitamente o sinal inicial nativo do quartzo (12 MHz) pelo fator seis (6).",
+      explanation: "Com o permissivo XMTE acionado, um contador de ripple é liberado e efetua a divisão lógica direta da onda de 12 MHz por um fator de divisor igual a seis, despejando ao amplificador a oscilação desejada de 2 MHz exata em duração fixada.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O sinal \"WATER GATE\" (WTGTE) serve para:",
+      question: "Para empurrar a alta carga à antena sob o mar exige-se o amplificador diferencial Q4/Q6 no RF de saída da placa (A1). Porém é preciso balancear seu ganho de forma delicada para não danificar nem o equipamento nem o transdutor. Onde atua fisicamente a calibração de limite deste conjunto primário?",
       options: [
-        "Abrir a válvula de fundo.",
-        "Iniciar a contagem dos sinais ignorando a camada de demarcação.",
-        "Expulsar água do transdutor.",
-        "Ligar a refrigeração."
+        "Atuando com uma lixa sob a superfície da lente para atenuar o espalhamento térmico antes da ressonância de choque de 115V.",
+        "Modificando a resistência das baterias reserva com capacitores de carga.",
+        "Através do tacômetro TG2 da Unidade RTU que afina o sinal sincronizando ao display na Ponte do Comandante.",
+        "O ganho é controlado pela corrente do transistor secundário Q5 atrelado à malha. A sua tensão base-emissor pode ser manuseada diretamente calibrando no potenciômetro variável \"PWR ADJ\" (R19) da placa, além da proteção ativa e dinâmica de limitação imposta de forma passiva através de transformadores de detecção de linha."
       ],
-      answer: "Iniciar a contagem dos sinais ignorando a camada de demarcação.",
-      topic: "Página: 1-8"
+      answer: "O ganho é controlado pela corrente do transistor secundário Q5 atrelado à malha. A sua tensão base-emissor pode ser manuseada diretamente calibrando no potenciômetro variável \"PWR ADJ\" (R19) da placa, além da proteção ativa e dinâmica de limitação imposta de forma passiva através de transformadores de detecção de linha.",
+      explanation: "O ganho do canal é regido pela corrente liberada pelo componente Q5, a qual reage ao calibrador rotatório \"PWR ADJ\" (potenciômetro R19) provendo sintonia e também protegendo o ganho através da redução no limitador final dinâmico (circuito anti-curto).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O potenciômetro \"PWR ADJ\" (R19) na placa A1 serve para:",
+      question: "Numa navegação, digamos que o chicote longo (TTRS de 9,2m) entre as unidades sofra avaria, mastigando e puxando sobrecarga extrema de \"Curto\" da energia de transmissão. Descreva com exatidão do manual a reação imediata salvadora de hardware dos Módulos SRD-331:",
       options: [
-        "Ajustar o brilho do display.",
-        "Ajustar a potência de transmissão.",
-        "Ajustar a sensibilidade do receptor.",
-        "Zerar a distância."
+        "Transforma a corrente extra em calor dissipando no transformador rebaixador abaixado da EPROM U20 e desligando o visor.",
+        "Disjuntores limitadores térmicos da fonte principal FS1 pipocam de imediato derrubando 100% o aparelho na escuridão.",
+        "O detector de indução física usa o sensor-bobina de proteção em T3; ele retifica esse escape induzido informando a anomalia ao detector lógico de pico, que deprime a base do Q5 asfixiando/bloqueando agressivamente o ganho do amplificador MOSFET Push-pull antes da catástrofe, limitando e estabilizando as saídas da antena em um equilíbrio inofensivo à placa.",
+        "Uma sirene do alarme do BITE toca exigindo operação estritamente manual \"DUMMY LOG\" e parando a injeção síncrona."
       ],
-      answer: "Ajustar a potência de transmissão.",
-      topic: "Página: 1-9"
+      answer: "O detector de indução física usa o sensor-bobina de proteção em T3; ele retifica esse escape induzido informando a anomalia ao detector lógico de pico, que deprime a base do Q5 asfixiando/bloqueando agressivamente o ganho do amplificador MOSFET Push-pull antes da catástrofe, limitando e estabilizando as saídas da antena em um equilíbrio inofensivo à placa.",
+      explanation: "Existe o detector atrelado de forma indutiva (Primário de T3) que funciona como \"sensor em linha\". Sendo disparado pelo pico no consumo de amperagem do choque RF, inverte seu sinal inibindo transistores e ceifando o ganho impulsionador na fonte limitadora do gerador.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O sinal que indica uma boa recepção e permite o funcionamento do contador é o:",
+      question: "Pela delicadeza na leitura do pulso Doppler, ruídos de convés de até alguns milivolts podem corromper as lógicas do odômetro. O módulo buffer Mestre Q13 detém uma regra imutável para não enlouquecer toda a Placa do painel:",
       options: [
-        "Doppler High.",
-        "Threshold (Limiar).",
-        "Reset Gate.",
-        "Power OK."
+        "A porta só chaveia se o pulso que entra de permissão para emissão de dados passar impositivamente do Divisor de 1 Volt (Tensão rígida exigida no barramento Pino 5).",
+        "Bloqueia tensões maiores de 1.1 ms pelo uso dos cruzamentos em zero \"Qd\" ligados ao diodo T9 blindado da antena.",
+        "Recebe interferências limpas e as converte em ruído reverso em RAM randômica com baterias limitadoras na RTU de 1.6 metros.",
+        "Só processa as contagens de 12 MHz originadas no transformador isolador CMOS das hastes se o navio passar de 2.5 nós."
       ],
-      answer: "Threshold (Limiar).",
-      topic: "Página: 1-11"
+      answer: "A porta só chaveia se o pulso que entra de permissão para emissão de dados passar impositivamente do Divisor de 1 Volt (Tensão rígida exigida no barramento Pino 5).",
+      explanation: "Há uma exigência mecânica por causa de um Divisor passivo Tensão atrelado à porta que força que pulsos \"XMTE\" vindos necessitem ultrapassar rigorosamente 1 Volt cravado na conexão (J5/pino 5), inibindo dessa forma o perigoso chaveamento prematuro ativado por meros surtos espúrios do ruído de navio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O circuito \"Doppler Gate\" interrompe a contagem quando atinge quantos cruzamentos em zero?",
+      question: "O Odômetro emite 10 Watts contínuos pelo transdutor para ferir a água e depois \"escuta\" fraquíssimas e frágeis milivoltagens da mesma fonte de via única. A fim de que a parte escutadora não exploda durante a explosão das emissões de sua irmã, usa-se a blindagem fundamental conhecida como:",
       options: [
-        "100.",
-        "1024.",
-        "2048.",
-        "5000."
+        "Isolador de vidro Piezoelétrico do Tipo Haste G.R.P com película reversa.",
+        "Tacômetro Isolador Unidirecional blindado por chaves limites mecânicas SC e SD nos fins de curso de proa a 400Hz.",
+        "Bateria Standby da SDTU protegendo o comparador no Limite Mecânico Reverso com limitadores D11.",
+        "Circuito blindador denominado formalmente na eletrônica de \"Chave TR\" (TR Switch) formada estrategicamente por diodos de limitação agressiva servindo de altíssima parede de impedância contra os impulsos brutos do TX, resguardando assim os canais vitais pré-amplificadores \"U1\"."
       ],
-      answer: "2048.",
-      topic: "Página: 1-12"
+      answer: "Circuito blindador denominado formalmente na eletrônica de \"Chave TR\" (TR Switch) formada estrategicamente por diodos de limitação agressiva servindo de altíssima parede de impedância contra os impulsos brutos do TX, resguardando assim os canais vitais pré-amplificadores \"U1\".",
+      explanation: "Durante as fortes pulsações ativas o \"TR Switch\" entra em ação via hardware. Seus díodos oferecem caminhos alternativos isolando e salvaguardando perfeitamente as bases frágeis dos chips de amplificação audível frente aos devastadores raios de emissão do mesmo fio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Onde devem ser enviados os cartões ou módulos avariados do SRD-331 para reparo?",
+      question: "Após vencer a \"Chave TR\", os suaves sinais da água entram no Integrado Pré-Amplificador (U1) e em seguida se deparam com o Transformador \"T4\". Qual o exímio duplo-papel que a bobina T4 cumpre nesse ponto?",
       options: [
-        "Para qualquer oficina de eletrônica.",
-        "Para o fabricante nos EUA.",
-        "Para o CMS (Centro de Manutenção de Sistemas da Marinha).",
-        "Devem ser descartados."
+        "Amplifica para voltagens lógicas de 57 Volts da EPROM, dividindo 12MHz por 2MHz antes do demodulador.",
+        "Apena transforma as leituras puras em código binário para tela do Master Display exibindo os pulsos ASCII de velocidade pelo cabo TTRS.",
+        "Exerce o imperioso papel de atuar e \"casar\" a enorme alta-impedância da válvula original de saída (U1) para a exigente entrada de baixa impedância do circuito à frente (U2A), efetuando ainda no trajeto a transmutação e desmanche de um pulso \"duplo\" para \"Sinal Simples\" alinhado.",
+        "Re-modula todos os desvios causados por bolhas grandes via \"Dummy Gate\" ligando contatos livres de potencial de relé de alta performance."
       ],
-      answer: "Para o CMS (Centro de Manutenção de Sistemas da Marinha).",
-      topic: "Página: 1-13"
+      answer: "Exerce o imperioso papel de atuar e \"casar\" a enorme alta-impedância da válvula original de saída (U1) para a exigente entrada de baixa impedância do circuito à frente (U2A), efetuando ainda no trajeto a transmutação e desmanche de um pulso \"duplo\" para \"Sinal Simples\" alinhado.",
+      explanation: "Como citado na descrição construtiva, a função do acoplador T4 baseia-se duplamente em compatibilizar a impedância restritiva entre os canais do \"amplificador\" e paralelamente converter os sinais desdobrados em linha unificada analítica de pulsos (Duplo em Simples).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual cuidado deve ser tomado com o transdutor antes do navio entrar em dique?",
+      question: "Somente ruídos úteis devem virar \"Velocidade\" legível nos visores. Para peneirar sujeira o sinal necessita vencer a crivagem da janela lógica chamada tecnicamente de Porta De Nível ou \"THRESHOLD\". O seu funcionamento é feito quando:",
       options: [
-        "Deve ser pintado com graxa.",
-        "Deve ser içado para dentro da válvula de fundo e esta deve ser fechada.",
-        "Deve ser removido e guardado no COC.",
-        "Deve ser deixado na posição normal para medição."
+        "Os cruzamentos passam da marca limite estressada da RAM U8A limitados pelos diodos zener de -2.5 nós até 60 nós contínuos sem quedas na rede elétrica de bordo.",
+        "As voltagens ecoadas entram numa chave gangorra. Se forem fracas não giram a catraca dos tambores na distância RS-422 inibindo o contador decimal falso da RTU de milhas de retaguarda.",
+        "O sinal em oscilação é suprimido de vales negativos via processamento por Demodulador U3 gerando um platô/teto \"D.C.\" positivo; caso esta voltagem constante criada vença os tetos ajustados do comparador de tolerância (ajuste R55 via U4B), o mesmo despenca ativamente autorizando abertamente o fluir livre das Portas Doppler.",
+        "O relé de 12 MHz fecha os canais cruzando o pulso inversamente proporcional gerando interrupção total forçando BITE completo via Q2Q3 de nível máximo."
       ],
-      answer: "Deve ser içado para dentro da válvula de fundo e esta deve ser fechada.",
-      topic: "Página: 1-14"
+      answer: "O sinal em oscilação é suprimido de vales negativos via processamento por Demodulador U3 gerando um platô/teto \"D.C.\" positivo; caso esta voltagem constante criada vença os tetos ajustados do comparador de tolerância (ajuste R55 via U4B), o mesmo despenca ativamente autorizando abertamente o fluir livre das Portas Doppler.",
+      explanation: "A placa avalia amplitude. Tira-se a oscilação, amassa-se as pontas sujas tornando-o uma tensão constante macia (nível DC). Caso esse peso atinja as expectativas reguladas pela resistência sensível no limiar estipulado \"Threshold\" (R55 no comparador), emite-se um salvo-conduto lógico (\"Nível Baixo\") escancarando a contagem de diferenças do Gate Doppler vital à vida do Navio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a lei da física fundamental para o funcionamento do odômetro AGI?",
+      question: "No coração de toda a engrenagem, o sub-nó \"Doppler Gate\" decifra a equação do físico austríaco. Qual é exatamente sua dinâmica física de contagem para se achar a \"frequência diferente\" real entre as hastes proa x popa de 2 MHz que não pode ser feita diretamente?",
       options: [
-        "Lei de Newton.",
-        "Lei de Ohm.",
-        "Lei de Faraday (Indução Eletromagnética).",
-        "Lei de Arquimedes."
+        "Ele usa a contagem regressiva de decibéis lidos em tempo real gravados no Firmware para achar os falsos desvios de salinidade do sensor, convertendo o erro logarítmico em RS422 livre.",
+        "Possui estrutura paralela com relógios. Ele equipa pares idênticos de registradores em cada extremidade (Vante x Ré); dos quais uma parte caça e empilha incessantemente os \"picos de cruzamento no ponto zero\" da água suja, enquanto a parte espelho amontoa impiedosamente oscilações cristalinas perfeitas do cristal Master Board que pisca implacável a 12 milhões de vezes/segundo.",
+        "Dispara o tempo do eco da popa e diminui o valor fixo gravado na tabela do BITE Completo, e assim divide tudo nas EPROMs.",
+        "Emite ruídos curtos até emparelhar o navio real com o dummy log, medindo o atraso em Hertz."
       ],
-      answer: "Lei de Faraday (Indução Eletromagnética).",
-      topic: "Página: 2-3"
+      answer: "Possui estrutura paralela com relógios. Ele equipa pares idênticos de registradores em cada extremidade (Vante x Ré); dos quais uma parte caça e empilha incessantemente os \"picos de cruzamento no ponto zero\" da água suja, enquanto a parte espelho amontoa impiedosamente oscilações cristalinas perfeitas do cristal Master Board que pisca implacável a 12 milhões de vezes/segundo.",
+      explanation: "A apostila determina a dupla função de contadores em cada uma das ramificações Doppler Gate (Frente e Trás); um contabilizando apenas as travessias sujas dos ecos oscilantes de onda na marca de cruzamento-zero e seu coirmão dedicado ao acúmulo paralelo e preciso em \"ticks\" fixos base do clock imutável oscilante primário base (12 MHz).",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a precisão de velocidade do sistema AGI para velocidades acima de 10 nós?",
+      question: "Ao atingir o platô matemático ideal das Portas Doppler onde os cruzamentos-zero chegam a fatídica conta alvo cravada de \"2048 picos recebidos e amontoados\", o que a lógica desencadeia nesse átimo milissegundo interno no canal?",
       options: [
-        "± 0,1 nó.",
-        "± 1%.",
-        "± 2%.",
-        "± 5%."
+        "Bate a marca no \"Qd\" (alcançando o limite) e desliga a CPU de medição inibindo sumariamente o acolhimento de mais detritos navais do eco e consequentemente bloqueando à força seca a corrida do cronômetro cristalizado parceiro do relojoeiro local de 12 MHz na placa associada.",
+        "Altera e inverte o pulso WTGTE para reiniciar de emergência os contadores do outro lado para compensar erro térmico causado pelas bolhas no transdutor dianteiro.",
+        "Empurra direto ao Visor central (via pino 5 RS422) o resultado numérico dos \"nós\" atuais do cruzador ignorando todo o atraso.",
+        "Permuta o sistema por BITE restrito se o navio oscilar abaixo de 2.5 nós até destravar diodos D12 e M1 motor centralizado."
       ],
-      answer: "± 2%.",
-      topic: "Página: 2-1"
+      answer: "Bate a marca no \"Qd\" (alcançando o limite) e desliga a CPU de medição inibindo sumariamente o acolhimento de mais detritos navais do eco e consequentemente bloqueando à força seca a corrida do cronômetro cristalizado parceiro do relojoeiro local de 12 MHz na placa associada.",
+      explanation: "Quando se enche a vasilha do registrador até os almejados 2048 eventos rítmicos oceânicos, a comporta \"Qd\" de controle acende. Isto cria o fechamento da via lógica travando impiedosamente novas coletas de zeros do mar e também paralisando seu acompanhante \"timer de alta performance\" vizinho simultaneamente de forma que não entre mais pulsos de 12Mhz.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a sensibilidade típica da haste fixa do AGI?",
+      question: "Ao final do labirinto (quando a proa e a popa finalmente se calam ao fechar os seus contadores de água), a Unidade Cerebral 8085 é informada que a conta e o banquete de pulsações finalmente terminaram e está a postos para os cálculos pesados de velocidade. O \"Grito\" sistêmico que desperta o microprocessador denomina-se:",
       options: [
-        "1 Volt por nó.",
-        "325 a 425 microvolts por nó.",
-        "10 milivolts por nó.",
-        "1 Ampere por nó."
+        "Geração da voltagem de falha BITE Completo piscando telas a meia frequência com o Navio no \"Mode Operative\" e soando alarme \"Dummy Log\".",
+        "Combinação mútua num feixe lógico tipo \"AND\" unindo proa/popa com o sinal de exultação da \"Contagem Finalizada\" batizado \"CRT RDY\", forçando e cortando a fila das tarefas do processador através de severa interrupção impositiva de Hardware classificada pela fábrica (RST 6.5) a ler os tanques de pulsos antes que expludam ou sejam reciclados e assim tirar o saldo delta de diferença do Doppler.",
+        "Queda forçada via \"TIMER OUT\" da EPROM ressetando tudo antes da rajada 7.7 ms pelo pulso \"XMTE\" com o uso da interrupção lógica interna (RST 7.5).",
+        "Liberação via diodos Schottky Zener forçando o cruzamento TTL de quadratura nos motores síncronos dos tacômetros RTU do sistema para repassar o pulso na casa de 24VCC e 100 milhas por hora."
       ],
-      answer: "325 a 425 microvolts por nó.",
-      topic: "Página: 2-1"
+      answer: "Combinação mútua num feixe lógico tipo \"AND\" unindo proa/popa com o sinal de exultação da \"Contagem Finalizada\" batizado \"CRT RDY\", forçando e cortando a fila das tarefas do processador através de severa interrupção impositiva de Hardware classificada pela fábrica (RST 6.5) a ler os tanques de pulsos antes que expludam ou sejam reciclados e assim tirar o saldo delta de diferença do Doppler.",
+      explanation: "A união da proa com o final da popa culmina ativando de forma lógica comutada numa porta \"AND\" o aviso formal (CRT RDY / Contador Preparado). A presença dele interrompe e captura o cérebro 8085 mediante sinal interruptivo de grau primário (RST 6.5) avisando e liberando-o da subrotina nativa forçando-o a recolher os resultados do saldo restante guardados dos balcões atômicos paralelos a 12Mhz.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Onde normalmente se localiza a Unidade SDTU do sistema AGI?",
+      question: "Imagine as hostis águas de uma guerra naval onde, devido ao turbilhão destrutivo excessivo, o escutador de vante (Dianteiro) perca pulsos preciosos e não consiga chegar na sonhada meta imposta de (2048 zeros colhidos) e o tempo limite de audição se esgote (corte de fechamento do WTGTE passivo). O processador joga o trabalho inútil todo fora daquele milissegundo perdido?",
       options: [
-        "Na Praça de Máquinas.",
-        "No Passadiço.",
-        "No COC (Centro de Operações de Combate).",
-        "Na proa."
+        "Sim. O Hardware Reset descarta impiedoso as contas não encerradas, joga BITE Piscando em tela acusando anomalia no Diodo do Sensor Y1 por aeração e limpa as matrizes em memórias temporárias e o Mestre apita de fundo contínuo.",
+        "Não. O aparelho simplesmente suspende e bloqueia internamente o repasse do pulso varredor limpador e cruel denominado (\"CTR RST\"); garantindo que a panela com o suco dos dados preciosos pela metade colhidos seja mantida intacta aquecendo os tanques lógicos. Os contadores de 12 MHz e Zeros prosseguirão caçando no momento de reabertura da escuta seguinte retomando da onde parou sem desperdiçar fôlego.",
+        "O equipamento acopla em sua estrutura do canal traseiro (se tiver completo) ignorando a deficiência dianteira com uma manobra de EPROM limitando o motor tacômetro de velocidade com diodo reversivo blindado e forçando 0.5hz BITE.",
+        "Corta 115V AC forçando proteção do limite mecânico impedindo contagens falsas."
       ],
-      answer: "No COC (Centro de Operações de Combate).",
-      topic: "Página: 2-1"
+      answer: "Não. O aparelho simplesmente suspende e bloqueia internamente o repasse do pulso varredor limpador e cruel denominado (\"CTR RST\"); garantindo que a panela com o suco dos dados preciosos pela metade colhidos seja mantida intacta aquecendo os tanques lógicos. Os contadores de 12 MHz e Zeros prosseguirão caçando no momento de reabertura da escuta seguinte retomando da onde parou sem desperdiçar fôlego.",
+      explanation: "A arquitetura preza dados vitais. Ela não zera a contagem e \"imita o esquecimento\" ao sonegar de forma estratégica o envio forçoso do impiedoso reset primário na placa \"CTR RST\" durante o início da nova rajada e as contagens órfãs podem seguir em frente completando as casinhas lógicas (Até 2048) logo em breve nas águas vindouras subsequentes do mesmo canal aproveitando a diferença remanescente do processador inteligente.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a função do \"Falso Odômetro\" (Dummy Log)?",
+      question: "Quais instrumentos cruciais o construtor norte-americano (Sperry Marine) exige exaustivamente para manuseios primários de laboratório durante peritagem das lógicas e varredura da falha Doppler do equipamento no porto?",
       options: [
-        "Testar a profundidade da água.",
-        "Suprir um sinal de velocidade estimado manualmente em caso de avaria na haste.",
-        "Enganar o inimigo sobre a posição do navio.",
-        "Calibrar o radar."
+        "Somente alicate amperímetro digital e lâmpadas dicroicas incandescentes teste.",
+        "Tensão do Tacômetro Gerador isolado de catracas síncronas simulando o \"Dummy\" log e microchaves relés de transição contínuas e bateria de reserva extra para Módulo Mestre de RAM.",
+        "Multiteste analógico com deflexão cruzada a -12v até +20v, lixas finas para limpar conectores TTRS GRP nas lentes ressecadas do Módulo Analógico com graxa em pasta térmica tipo B.",
+        "Osciloscópio superior à casa primária de transmissão 2 MHz de escuta com amarração e sincronização estritamente externa tolerando sensibilidade restrita mínima em deflexão (+10mV); Além do óbvio Multímetro moderno acoplado com dois componentes resistores cruciais em teste carga/casamento blindados a quentes de exatos 90 Ohms com a devida e baixa tolerância apertada de no máximo 5%."
       ],
-      answer: "Suprir um sinal de velocidade estimado manualmente em caso de avaria na haste.",
-      topic: "Página: 2-2"
+      answer: "Osciloscópio superior à casa primária de transmissão 2 MHz de escuta com amarração e sincronização estritamente externa tolerando sensibilidade restrita mínima em deflexão (+10mV); Além do óbvio Multímetro moderno acoplado com dois componentes resistores cruciais em teste carga/casamento blindados a quentes de exatos 90 Ohms com a devida e baixa tolerância apertada de no máximo 5%.",
+      explanation: "Equipamentos citados textualmente pelo fabricante preveem Osciloscópio (Mín. 2 MHz), Sensibilidade Vertical estrita 10mV/cm c/ sincronismo externo. Multímetro e os Resistores específicos 90 Ohms ±5% e capacidade resistiva em dissipação 2 Watts.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "De qual material é constituída a haste fixa do AGI?",
+      question: "O Oficial Tático de Bordo quer analisar o pulso cru da água antes que ele passe para os domínios digitais da CPU. Se colocar as pontas de prova na Unidade Eletrônica, para onde olhar sem ver mágica computacional e focar no estado primitivo do som?",
       options: [
-        "Plástico ABS.",
-        "Aço inoxidável puro.",
-        "Liga de bronze e alumínio.",
-        "Madeira tratada."
+        "Módulo 1 (Cartão de Interface).",
+        "No relé secundário da \"Master Display\" antes dos LEDS de LCD em Módulo 1A2 (Gate Doppler) e nos cabos da chaves U4 e U5 com alimentação RS-422.",
+        "Módulo A4, Bloco de Terminais de Cobre TB1 (da Unidade Eletrônica onde os cabos das extremidades do navio desembocam primitivamente antes dos transformadores cruéis cegos da proteção primária TX-RX de pulso).",
+        "Na catraca física das Repetidoras remotas na Ponte RTU com engrenagens de pulsos síncronos da M1 Motor Acionador em painéis relógio puristas de limite."
       ],
-      answer: "Liga de bronze e alumínio.",
-      topic: "Página: 2-3"
+      answer: "Módulo A4, Bloco de Terminais de Cobre TB1 (da Unidade Eletrônica onde os cabos das extremidades do navio desembocam primitivamente antes dos transformadores cruéis cegos da proteção primária TX-RX de pulso).",
+      explanation: "O técnico consegue inspecionar o pulso cru recebido através de medições primárias diretas realizadas estritamente em bancada nas guias isoladas do submódulo A4, bloco isolado pátio Terminais TB1 interno em sua base física.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O que é o revestimento \"G.R.P.\" da haste?",
+      question: "Se a Fragata tiver 3 telinhas espalhadas do oficial de manobras escravas informando a velocidade da embarcação em \"tempo real\", quem fala para todas as repetidoras isoladas o que o mar diz? Quem envia para todo o mundo?",
       options: [
-        "Tinta comum.",
-        "Plástico reforçado com fibra de vidro.",
-        "Borracha isolante.",
-        "Camada de ouro."
+        "As Repetidoras puxam do conversor Sincro analógico do \"Doppler\" nativo na própria Placa Mestre Eletrônica processadora ativada com cabos RS232.",
+        "As telas dependem exaustivamente de extrações mecânicas ativando as pontes do Falso Odômetro na cabine de comando acionando relés via motor giratório analógico.",
+        "A Mestra; ou em vias de fato a cobiçada Unidade central \"Master Display\". Uma vez que os dados vêm todos compilados da caixa crua inferior Eletrônica e mastigados em seu íntimo; a Unidade no painel principal re-despacha/transmite de forma imperiosa para eventuais aparelhos burros paralelos Remotos \"Slave\".",
+        "Os cristais Y1 e Y2 piezoelétricos na barriga do navio emitem diretamente em rede e feixes sonoros de pulsos sem decodificação pelas telas por possuírem processadores nativos de leitura paralelos independentes U19 a fim de redundância severa com os visores \"CRT RDY\"."
       ],
-      answer: "Plástico reforçado com fibra de vidro.",
-      topic: "Página: 2-3"
+      answer: "A Mestra; ou em vias de fato a cobiçada Unidade central \"Master Display\". Uma vez que os dados vêm todos compilados da caixa crua inferior Eletrônica e mastigados em seu íntimo; a Unidade no painel principal re-despacha/transmite de forma imperiosa para eventuais aparelhos burros paralelos Remotos \"Slave\".",
+      explanation: "Qualquer unidade remota espalhada ligada opera usando todos os dados mastigados e geridos transmitidos unicamente oriundos através da principal da ponte ou unidade \"Master Display\" encarregada formal do re-envio.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Como é feita a remoção de uma haste fixa avariada?",
+      question: "O caixote principal Master Display é constituído fisicamente por 2 gavetas. A gaveta submódulo (A1) suporta quais elementos das finas artérias lógicas?",
       options: [
-        "É necessário docar o navio.",
-        "Por um mergulhador, por fora do navio.",
-        "Por dentro do navio, removendo o flange.",
-        "Não pode ser removida."
+        "O processador cru que joga o som a 1.1ms para fora, as baterias grossas isolantes, Relés de Potência blindados da Haste de Fundo com filtro linha 115v CA nativo com bornes duplos de parafuso e diodos cruzados na EPROM 4 de Calibragem para o \"boundary layer\" denso a 4,8 metros abissais.",
+        "O A1 aloja a engrenagem e os rolamentos dentados limitadores analógicos de 60 nós, que correm os tambores decimais contáveis em milhas de catraca até bater -2,5 cravado sem limite motor via chaves de feedback SC e D11 retrocedidas a ZERO Elétrico Potenciômetro.",
+        "Aloja essencialmente a parte de baixa voltagem ou de mente frágil; compreendida como a sua alimentação nativa de placa estabilizada, seu minúsculo processador particular isolado e alienado da cabine Eletrônica do porão, e o óbvio e tátil display fino a cristal líquido retro-iluminado e chaves \"touth\" filme polimérico coladas ao vidro do comandante onde todo o controle repousa seguro longe dos filtros grossos embutidos.",
+        "Placas U9 do temporizador RS 422 de saída ASCII de pulsos livres."
       ],
-      answer: "Por um mergulhador, por fora do navio.",
-      topic: "Página: 2-2"
+      answer: "Aloja essencialmente a parte de baixa voltagem ou de mente frágil; compreendida como a sua alimentação nativa de placa estabilizada, seu minúsculo processador particular isolado e alienado da cabine Eletrônica do porão, e o óbvio e tátil display fino a cristal líquido retro-iluminado e chaves \"touth\" filme polimérico coladas ao vidro do comandante onde todo o controle repousa seguro longe dos filtros grossos embutidos.",
+      explanation: "Submódulo A1 (Display Master Unit) carrega a placa inteligente local, CPU dedicada ao vídeo (Painel), a própria tela a Cristal Líquido LCD crua em formato de filme fino tátil englobando os botões de superfície fina; longe do Módulo sujo (A2) de Relés de Tensão 115 e Barras e Filtros energéticos brutos de 5 amperes e fiação do painel do navio blindada.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O que é o sinal de \"Haste Zero\" (Rod Zero Signal)?",
+      question: "A comunicação arcaica porém valiosa para aparelhos de época entre a Unidade \"Master\" no Painel em repasse para as repetidoras isoladas ocorre com que nível primitivo de \"Handshake\" físico para envio das rotinas métricas da \"distância percorrida milha a milha\"?",
       options: [
-        "Velocidade zero do navio.",
-        "Sinal gerado por efeito de transformador mesmo com o navio parado.",
-        "Falta de energia na haste.",
-        "Sinal de profundidade zero."
+        "Pulso serial estrito digital RS422.",
+        "Abertura/fechamento puramente físico através de um sistema robusto provido por um formato cru de Contatos limpos de Relé (bate a distância).",
+        "Tensão modulada a pulso por Potenciômetro rotacional cravado por tacômetro U10.",
+        "Tensão induzida pela quadratura 15CX4 sincro cravado e amplificado por T3 num buffer U4 em onda de rádio de 12Mhz paralela a EPROM 400hz."
       ],
-      answer: "Sinal gerado por efeito de transformador mesmo com o navio parado.",
-      topic: "Página: 2-3"
+      answer: "Abertura/fechamento puramente físico através de um sistema robusto provido por um formato cru de Contatos limpos de Relé (bate a distância).",
+      explanation: "Unidade fornece os estritos dados longos de saída da viagem calculada (\"distância\") no rústico porém durável formato a nível de chaves/hardware mecânico baseado estritamente no \"fechamento de contatos de relés\" embutidos que transferem milhagens puras isoladas para outros equipamentos repetidores da velha frota e displays analógicos se necessário.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual potenciômetro é usado para eliminar o erro de \"Rod Zero\"?",
+      question: "Como o navio resolve pane de surto eletrostático nos canais e despolarização fatal dos processadores que corromperam variáveis na navegação atual? O que o marinheiro experiente faz sob a armadura de metal na manutenção crítica em mar se as chaves lógicas travam tudo?",
       options: [
-        "RV-1.",
-        "RV-10.",
-        "RV-15.",
-        "RV-12."
+        "Espera por 10 minutos cortando a bateria até RAM não volátil esfriar sozinha zerando contatos CMOS TTRS do terminal 4.",
+        "Pressiona os botões pushpull/push botton instalados e soldadas diretamente fisicamente sobrepostos as placas A1 ou A2 das gavetas internas do painel, os quais executam a faina bruta purga master do pino de forçagem central do processador denominado \"Master Reset\".",
+        "Desconecta as engrenagens e gira 6.000 milhas num relógio na traseira do terminal RTU M1 para estourar buffer estático diodo reverso D12 e M1.",
+        "Executa 5 varreduras de TEST em 5 segundos zerando com botão reset a lente poliestirena para limpar sujeira magnética acumulada do navio e varre toda ROM EPROM \"Qd\"."
       ],
-      answer: "RV-10.",
-      topic: "Página: 2-3"
+      answer: "Pressiona os botões pushpull/push botton instalados e soldadas diretamente fisicamente sobrepostos as placas A1 ou A2 das gavetas internas do painel, os quais executam a faina bruta purga master do pino de forçagem central do processador denominado \"Master Reset\".",
+      explanation: "Para manobras difíceis nas placas travadas da eletrônica há os pequenos punhos e chaves alavancas/botões \"pushpull\" afixados no âmago das placas que ativam um severo reset limpo de mestre em hardware limpo limpando estática forçada nos cérebros processadores lógicos sem afetar energia dos transformadores grossos paralelos de fundo isolados pelas barras A2..",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a condição ideal para calibrar o \"Rod Zero\"?",
+      question: "Após ofuscar ou iluminar o painel para navegação tática no escuro com os botões, como a placa é amarrada impendindo esbarrões equivocados pelo dedo de inserir nós absurdos acidentalmente confundidos pelo oficial nas pressas das teclas INCREASE/DECREASE do LCD?",
       options: [
-        "Navio em velocidade máxima.",
-        "Navio flutuando, parado e em águas paradas.",
-        "Navio em dique seco.",
-        "Navio realizando manobra de combate."
+        "A tela inativa automaticamente via Bateria relógio EPROM a cada 5s sem toques até cair a janela \"TEST\" e reset de distância piscar duas vezes.",
+        "O oficial se obriga textualmente após a luz ajustada ao seu grado a clicar cegamente no grande botão mandatório \"OPERATE\" (Operação nativa), e no exato instante a rotina CPU desengata/inibe severamente para os pinos INCREASE e DECREASE desativando o processamento do painel até as chaves \"TEST\" mudarem algo ou Modo manual ser convocado expressamente pelas lâmpadas e senhas de controle secundário.",
+        "Aperta de emergência e solta KNOTS em 5 segundos, piscando todo \"Dummy\".",
+        "Os leds perdem a eletroluminescência depois de piscar o código ASCII de modo livre caindo no reset R55."
       ],
-      answer: "Navio flutuando, parado e em águas paradas.",
-      topic: "Página: 2-3/2-4"
+      answer: "Aperta de emergência e solta KNOTS em 5 segundos, piscando todo \"Dummy\".",
+      explanation: "A placa pede como procedimento após lidar com luminosidades (Intensity e Increase/Decrease) no Módulo LCD ser firmemente travada clicando-se obrigatoriamente e apenas na tecla mestre de trabalho nativo \"OPERATE\" que cega e ignora toques avulsos futuros nestas cruciais funções sensíveis e desastrosas de numéricos e lógicas puras bloqueando-as imediatamente a fim de travamento.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual o comprimento máximo permitido para o cabo entre a haste e a SDTU?",
+      question: "O que atesta no display primário ao oficial do passadiço que a \"Velocidade Real (Nós)\" do navio está sobreposta preenchendo as casas do Cristal no LCD central (E não a odometria percorrida)?",
       options: [
-        "10 metros.",
-        "45 metros.",
-        "100 metros.",
-        "1 quilômetro."
+        "O número pula 4 vezes e pisca 0.5hz BITE Restrito.",
+        "O Mestre Processador U19 lança numerais avermelhados de catraca num dial acoplado iluminando a letraz \"S\" e \"Z\".",
+        "Se a tecla (KNOT/MILES) selecionou e apertou pro lado da física métrica atual, e o sistema retrocedeu internamente as rotinas, o painel iluminará um indicativo lateral luminoso nativo a chaves com a imponente e unânime letra \"K\" informando ao usuário estar perante os \"KNOTS\" a dominar o display do painel principal.",
+        "A barra indicativa \"WTGTE\" fica no pulso ALTO contínuo e exibe o número \"M\" por \"Miles\"."
       ],
-      answer: "45 metros.",
-      topic: "Página: 2-4"
+      answer: "Se a tecla (KNOT/MILES) selecionou e apertou pro lado da física métrica atual, e o sistema retrocedeu internamente as rotinas, o painel iluminará um indicativo lateral luminoso nativo a chaves com a imponente e unânime letra \"K\" informando ao usuário estar perante os \"KNOTS\" a dominar o display do painel principal.",
+      explanation: "A Tabela técnica explícita que uma imensa indicativa de status com luz paralela retroiluminada com a \"letra K\" iluminará como \"status aceso\" atestando fisicamente que \"KNOTS\" ativou ao visor.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual ferramenta deve ser usada para limpar os eletrodos da haste sem danificá-los?",
+      question: "A tecla de \"TEST\" do painel varre impiedosamente todo o ambiente na fragata atrás de pane cega em um rito. As partes varridas pelo sistema durante o auto teste englobam exatamente:",
       options: [
-        "Lixa de ferro.",
-        "Raspas de plástico.",
-        "Escova de aço.",
-        "Chave de fenda afiada."
+        "Puxa exames da calibração EPROM Módulo 2 do transdutor GRP contra vazamentos de navio através da barreira física na válvula de fundo cravando 2MHz nas bordas.",
+        "Verifica a sanidade lógica e memórias internas da referida \"Unidade Master Display\", do processador embutido na porão da \"Unidade Eletrônica\", estendendo-se exaustivamente o teste a integridade contínua limpa livre de defeitos dos fios cruéis do elo de \"cabo\" e também de toda \"comunicação\" que interliga cegamente esse par distanciado.",
+        "Puxa leituras mecânicas e roda engrenagens do RTU até engatar com M1 relé D12 batendo aos pinos das portas limitadores e soando alarme \"Simulado Up/Down\".",
+        "Acende todos contatos CMOS testando a radiação acústica de peixes orgânicos debaixo do casco enviando sinal doppler espúrio pelo TTRS blindado para os cartões de saída de 115v."
       ],
-      answer: "Raspas de plástico.",
-      topic: "Página: 2-4"
+      answer: "Puxa leituras mecânicas e roda engrenagens do RTU até engatar com M1 relé D12 batendo aos pinos das portas limitadores e soando alarme \"Simulado Up/Down\".",
+      explanation: "O manual esclarece na operação que \"a sequência verifica internamente a Unidade Master Display\", testando e crivando a CPU (processador no Eletrônico) e conferindo o cabo longo de contato e o link de Comunicação percorrido que alinhava todo sistema naval do convés ao fundo escuro.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a resistência de isolamento mínima aceitável para a haste?",
+      question: "Durante o limiar crivo \"THRESHOLD\" nos comparadores de Doppler, uma porta especial do cérebro recebe a sujeira em defasagem e alinha tudo magicamente como blocos para a CPU ler de forma fácil como pulso puro (TTL). Que comparador transforma e reverte esses cruzamentos?",
       options: [
-        "1 Ω.",
-        "100 kΩ.",
-        "50 MΩ.",
-        "1 GΩ."
+        "Componente U3 que recorta o pico de decibéis amaciando para DC contínuo puro na EPROM U21 e bloqueando a RAM.",
+        "As entradas puras e tortas defasadas (onda suja rebatida defasada a 180 graus da matriz água), rebatem pesadamente no componente \"Comparador U17\", onde de forma cravada sairão com seus pulsos aparados transmutados sob o código e formato chato padronizado rígido nível TTL da indústria; estritamente agora em conformidade e fase atrelada lado a lado ao pulso principal da onda limpa originária alta dianteira dos zeros.",
+        "Comparador Q1 e limitadores de crista CR4 acoplado pelo detector de pico e Diodo CR3 com transformadores rebaixados.",
+        "O motor \"Dummy\" relé bate na chave limite e converte isso por M1 acoplado na válvula 115v CA forçando o limite D12 para trás no RTU a 400hz contínuos re-injetados pelo Q5."
       ],
-      answer: "50 MΩ.",
-      topic: "Página: 2-4"
+      answer: "As entradas puras e tortas defasadas (onda suja rebatida defasada a 180 graus da matriz água), rebatem pesadamente no componente \"Comparador U17\", onde de forma cravada sairão com seus pulsos aparados transmutados sob o código e formato chato padronizado rígido nível TTL da indústria; estritamente agora em conformidade e fase atrelada lado a lado ao pulso principal da onda limpa originária alta dianteira dos zeros.",
+      explanation: "A eletrônica ensina a função do Comparador (U17): o cruzamento defasado em rústico ruidoso de (180 graus de reverso), sofre o nivelamento impositivo ao passar suas barras, ganhando contornos quadrados cruéis em formato \"TTL em fase\" para que a CPU seja blindada dos decibéis oscilantes lidos no cristal primário da lente marinha suja.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Por que a haste só deve ser alimentada quando mergulhada?",
+      question: "Num corte acidental \"inserção manual\" ou estimativa cega; O manual adverte algo inesperado no Módulo submerso Eletrônico (A1/A2/T1) sobre os pingos sonares estarem ativos a queimar o transdutor para a nada?",
       options: [
-        "Para não gastar bateria.",
-        "Porque a água é necessária para fechar o circuito.",
-        "Para evitar superaquecimento da bobina de excitação.",
-        "Para evitar choques elétricos no convés."
+        "O radar interno é paralisado bloqueando 1.1ms e salvando EPROM e RAM do aquecimento extremo das calotas do barco na válvula da linha 57V a fim blindar EMI falso \" Dummy Log\" no T1.",
+        "Segundo a doutrina textualmente ditada: No \"Modo Manual\", O transdutor principal submerso e todos os transmissores bem como receptores internos pesados de energia e processamento (\"continuam plenamente armados/ativos e funcionais com força operatória\"), sendo que O Módulo A1 ainda bate pulso 2MHz no oceano, a CPU que, de forma ingrata, esnoba ativamente da rotina a água lida preferindo seu próprio cálculo.",
+        "Ao forçar os botões SIM UP/DOWN da EPROM o sistema entra num \"Reset\" Mestre e o cristal Piezo \"Y1\" racha por aeração cruzada com a RTU a 400hz contínuos cravada nos Diodos.",
+        "Ele aciona Bateria Backup cega interna cortando 100% o cabo TTRS caindo do sistema toda a interferência física blindada."
       ],
-      answer: "Para evitar superaquecimento da bobina de excitação.",
-      topic: "Página: 2-5"
+      answer: "Segundo a doutrina textualmente ditada: No \"Modo Manual\", O transdutor principal submerso e todos os transmissores bem como receptores internos pesados de energia e processamento (\"continuam plenamente armados/ativos e funcionais com força operatória\"), sendo que O Módulo A1 ainda bate pulso 2MHz no oceano, a CPU que, de forma ingrata, esnoba ativamente da rotina a água lida preferindo seu próprio cálculo.",
+      explanation: "Operacionalmente a instrução é categórica: o radar (A1 e os Transdutores) permanecem integral e letalmente ATIVOS e radiando (sendo processados e mantidos operando gastando 115v CA normal como de rotina), contudo, os dados puros extraídos da água são sistematicamente desconsiderados/ignorados nas sub-rotinas pela vontade mandatória do microprocessador central em virtude de seu status na programação.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O display de distância na SDTU do AGI é do tipo:",
+      question: "Uma placa estourou por estática. O Mantenedor remove as travas da Mestre A2/A1 pucha-as e solda/monta a virgem. Como restabelecer a precisão da velha embarcação após colocar racks novamente e girar a trava de metal?",
       options: [
-        "Relógio analógico.",
-        "Digital.",
-        "Barra de Leds.",
-        "Tubo de raios catódicos."
+        "Só usar raspas plásticas finas lavando o EPROM na esponja detergente pra evitar corrosão marinha antes de colocar a chave ON no Módulo 8 da PSU para ler EPROM \"Qd\".",
+        "Puxa a bateria Auxiliar e apaga memória das RTUs e dos Relés paralelos da válvula fechando painel BITE de emergência via Terminal de Calibragem para 0.5hz intermitente.",
+        "Obriga rigorosamente \"Um Alinhamento formal na Placa Substituída particular de circuito a ser efetuado/imposto em testes logo após troca\" (conforme dita o regime normativo militar restritivo na troca do equipamento de cartões A1/A2 a fim da vida do circuito de hardware do Doppler Gate ser calibrada e casada de novo no sistema a funcionar plenamente nas linhas primárias de recepção/transmissão limitadoras de ruído das voltagens estritas operacionais).",
+        "Fechar a \"Chave TR\" limitando o fusível de \"Q14\" T9 via 2048 cruzamentos em zero \" Dummy\"."
       ],
-      answer: "Digital.",
-      topic: "Página: 2-5"
+      answer: "Obriga rigorosamente \"Um Alinhamento formal na Placa Substituída particular de circuito a ser efetuado/imposto em testes logo após troca\" (conforme dita o regime normativo militar restritivo na troca do equipamento de cartões A1/A2 a fim da vida do circuito de hardware do Doppler Gate ser calibrada e casada de novo no sistema a funcionar plenamente nas linhas primárias de recepção/transmissão limitadoras de ruído das voltagens estritas operacionais).",
+      explanation: "A norma do manual manda, textualmente: \"O procedimento de Alinhamento na placa cega recém assumida no posto e de circuito base deve ser efetuado, exigido na rotina após substituição de Placas base ou a referida falha no sistema do Módulo, sendo um dos requisitos chaves do hardware após acúmulo da distância ou queda \".",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "A indicação de velocidade na SDTU do AGI é dada por um:",
+      question: "Se no momento da ancoragem as águas rasas atingirem 1,4 metros (distância da superfície da lente acústica ao fundo do mar), o equipamento lerá de forma confusa as distorções do fundo para determinar a velocidade em relação ao fundo (Ground-Track)?",
       options: [
-        "Display de 7 segmentos.",
-        "Mostrador tipo relógio.",
-        "Computador de mão.",
-        "Indicador sonoro."
+        "Em teoria, o sistema deixará de funcionar adequadamente ou entrará em instabilidade antes mesmo de ler o fundo, pois o manual técnico exige expressamente uma profundidade livre de operação mínima de 1,6 metros e carece de no mínimo 1,83 metros sobressaentes em fundo livre.",
+        "Sim, ele comutará automaticamente para o modo Ground-Track por meio dos relés de limite SC/SD, calculando o vetor de velocidade por reflexão de fundo com erro de fase de até 5%.",
+        "Não, o pré-amplificador U1 ativará o circuito AGC para atenuar o eco de fundo raso a 1,4 m, mantendo a leitura na camada limite (\"boundary layer\") a 400 Hz.",
+        "O transdutor emitirá pulsos curtos de 0,55 ms via interrupção RST 7.5, compensando o raso de 1,4 metro através da chave TR (TR Switch) sem alteração no display."
       ],
-      answer: "Mostrador tipo relógio.",
-      topic: "Página: 2-5"
+      answer: "Em teoria, o sistema deixará de funcionar adequadamente ou entrará em instabilidade antes mesmo de ler o fundo, pois o manual técnico exige expressamente uma profundidade livre de operação mínima de 1,6 metros e carece de no mínimo 1,83 metros sobressaentes em fundo livre.",
+      explanation: "O manual técnico da Sperry determina que a profundidade mínima operacional para processamento confiável dos sinais refletidos é de 1,6 metros (com recomendação de 1,83 m de fundo livre). Abaixo desse limiar (como a 1,4 m), a proximidade extrema impede a correta separação temporal e acústica do eco Doppler, gerando instabilidade ou perda de leitura.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Quantas saídas de sinais pulsados de distância a SDTU provê?",
+      question: "O sinal de recepção convertido do ecobatímetro atinge inicialmente um circuito de baixa corrente. O que faz especificamente a junção do transistor Q14 acoplado ao transformador T9 nesta faina?",
       options: [
-        "Uma única saída.",
-        "Duas saídas.",
-        "Três saídas (100, 200 e 400 pulsos/milha).",
-        "Dez saídas independentes."
+        "A saída amplificada por U2B é acoplada na base do amplificador emissor-comum Q14; do coletor de Q14 esse pulso passa pelo transformador T9, que cria uma poderosa saída balanceada dupla e de baixíssima impedância para enviar ao demodulador U3 (limiar de ruído) preservando a integridade do sinal.",
+        "O transistor Q14 atua como chave de corte térmico em conjunto com T9, bloqueando tensões acima de 1 Volt que poderiam danificar a entrada de referência do contador de ripple U13.",
+        "Q14 e T9 formam um oscilador local de 12 MHz sincronizado ao clock primário, convertendo a onda simples de U2B em quadratura digital para o painel Master Display.",
+        "O transformador T9 eleva a tensão do pulso de eco para 115 VAC, permitindo que Q14 chaveie diretamente os relés eletromecânicos de repetição de distância nas repetidoras remotas."
       ],
-      answer: "Três saídas (100, 200 e 400 pulsos/milha).",
-      topic: "Página: 2-6"
+      answer: "A saída amplificada por U2B é acoplada na base do amplificador emissor-comum Q14; do coletor de Q14 esse pulso passa pelo transformador T9, que cria uma poderosa saída balanceada dupla e de baixíssima impedância para enviar ao demodulador U3 (limiar de ruído) preservando a integridade do sinal.",
+      explanation: "Na cadeia de processamento de recepção do SRD-331, após o estágio amplificador U2B, o sinal excita a base do transistor emissor-comum Q14. O transformador T9 no coletor de Q14 converte esse sinal em uma saída balanceada dupla de baixíssima impedância, otimizada para alimentar o demodulador U3 sem degradação ou ruído.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a leitura máxima do mostrador digital de distância do AGI?",
+      question: "Em uma docagem para manutenção e pintura da obra viva da Fragata, qual é a precaução mandatória de segurança mecânica e operacional do marinheiro antes mesmo de se esvaziar o dique envolvendo o Odômetro SRD-331?",
       options: [
-        "1.000 milhas.",
-        "9.999,9 milhas.",
-        "99.999,99 milhas.",
-        "1.000.000 milhas."
+        "O transdutor deve obrigatoriamente ser recolhido/içado para dentro da sua válvula de fundo e a referida válvula do casco ser severamente vedada e fechada antes sequer que a água seja retirada do dique.",
+        "Deve-se apenas desconectar o cabo TTRS de 9,2 m na caixa de terminais TB1 e aterrar a carcaça da Unidade Eletrônica com malha de cobre de 90 Ohms.",
+        "A lente de poliestireno deve ser recoberta com uma espessa camada de graxa de silicone e tinta vinílica anti-incrustante para protegê-la do ar seco do dique.",
+        "O sistema deve ser colocado em modo \"Dummy Log\" e alimentado com 24 VCC contínuos para manter o aquecimento interno dos cristais piezoelétricos Y1 e Y2."
       ],
-      answer: "99.999,99 milhas.",
-      topic: "Página: 2-6"
+      answer: "O transdutor deve obrigatoriamente ser recolhido/içado para dentro da sua válvula de fundo e a referida válvula do casco ser severamente vedada e fechada antes sequer que a água seja retirada do dique.",
+      explanation: "Para evitar danos mecânicos catastróficos ao conjunto do transdutor durante o esvaziamento do dique e trabalhos na obra viva do navio, o manual estipula que o transdutor seja recolhido para o interior do casco e a válvula de fundo completamente fechada antes da drenagem do dique.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Qual a finalidade da Unidade de Retransmissão (R.T.U.)?",
+      question: "Caso na faina de limpeza, além da remoção das cracas que cobriram a lente de poliestireno, ocorra um arranhão mais agressivo provocado por espátula metálica ou lixa (o que o manual proíbe terminantemente), o que será comprometido no sistema?",
       options: [
-        "Aumentar a potência do rádio do navio.",
-        "Fornecer sinais de velocidade síncronos para múltiplos sistemas de bordo (armas, navegação).",
-        "Carregar as baterias do odômetro.",
-        "Funcionar como radar reserva."
+        "A raspagem e o dano físico alteram totalmente a refração acústica da lente, modificando suas características de transmissão e de escuta do retorno, provocando a perda da integridade funcional e injeção de erros graves na medição, exigindo a substituição do conjunto transdutor.",
+        "O dano causará curto-circuito apenas no cabo TTRS, disparando o disjuntor térmico FS1 da fonte primária sem afetar os cristais piezoelétricos.",
+        "A alteração na lente provocará um desvio fixo de +2,5 nós em todas as velocidades, o qual pode ser facilmente corrigido ajustando o potenciômetro R19 (PWR ADJ).",
+        "O ar retido no arranhão será compensado automaticamente pelo circuito Doppler Gate após 2048 cruzamentos em zero, não afetando a medição final no display."
       ],
-      answer: "Fornecer sinais de velocidade síncronos para múltiplos sistemas de bordo (armas, navegação).",
-      topic: "Página: 2-2/2-11"
+      answer: "A raspagem e o dano físico alteram totalmente a refração acústica da lente, modificando suas características de transmissão e de escuta do retorno, provocando a perda da integridade funcional e injeção de erros graves na medição, exigindo a substituição do conjunto transdutor.",
+      explanation: "A lente de poliestireno possui propriedades refrativas e de impedância acústica rigorosamente projetadas para o acoplamento som/água a 2 MHz. Riscos profundos, raspagem ou ataque químico distorcem o feixe sônico tanto na emissão quanto na recepção, invalidando a medição Doppler.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O sinal de entrada da RTU provém de:",
+      question: "Explique o que é o componente EPROM U21 e como ele se integra na arquitetura lógica e de geração de frequência na Unidade Eletrônica do Odômetro SRD-331:",
       options: [
-        "Um sensor acústico.",
-        "Um transmissor síncrono localizado na SDTU.",
-        "Direto da haste.",
-        "Do GPS do navio."
+        "A EPROM U21 armazena o firmware do sistema e possui portas programáveis de entrada/saída (I/O); através da sua porta B (Port-B), o sinal de habilitação \"XMTE\" é emitido de forma invertida para liberar o reset do contador de ripple U13, iniciando a divisão do clock para 2 MHz.",
+        "É uma memória de acesso aleatório não volátil que armazena exclusivamente os dados da última navegação em milhas quando falta alimentação de 115 VAC.",
+        "Trata-se de um conversor analógico-digital que transforma os milivolts recebidos no bloco TB1 em palavras binárias de 8 bits no barramento AD0-AD7.",
+        "É o oscilador mestre de quartzo responsável por gerar a frequência base de 12 MHz e sincronizar as portas lógicas da Master Display via RS-422."
       ],
-      answer: "Um transmissor síncrono localizado na SDTU.",
-      topic: "Página: 2-11"
+      answer: "A EPROM U21 armazena o firmware do sistema e possui portas programáveis de entrada/saída (I/O); através da sua porta B (Port-B), o sinal de habilitação \"XMTE\" é emitido de forma invertida para liberar o reset do contador de ripple U13, iniciando a divisão do clock para 2 MHz.",
+      explanation: "O circuito integrado U21 combina memória EPROM (com as rotinas de controle da CPU 8085) e linhas de I/O. As linhas da Port-B controlam sinais vitais de temporização do hardware, incluindo a geração lógica do comando XMTE que autoriza a divisão de frequência em U13 para gerar o pulso acústico de 2 MHz.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "O instrumento de indicação visual \"VCS Tipo 84\" provê:",
+      question: "Como o sinal acústico refletido pelo oceano (energia sônica) é revertido em energia elétrica apta a trafegar pelo cabo blindado até a Unidade Eletrônica do SRD-331?",
       options: [
-        "Apenas velocidade.",
-        "Apenas distância.",
-        "Velocidade (até 40 nós) e distância (até 999,99 milhas).",
-        "Pressão do óleo."
+        "Através dos cristais piezoelétricos de proa e popa (Y1 e Y2); a pressão mecânica exercida pela onda acústica de eco sobre a estrutura cristalina gera uma diferença de potencial elétrico proporcional nos seus terminais (efeito piezoelétrico).",
+        "Por meio de indução magnética em bobinas de núcleo de ferrite imersas em óleo de silicone no submódulo do transdutor.",
+        "Através da variação de capacitância entre dois eletrodos de poliestireno excitados por uma corrente de bias de 24 VCC.",
+        "Pelo aquecimento diferencial medido por termistores de precisão acoplados aos transformadores casadores T1 e T2."
       ],
-      answer: "Velocidade (até 40 nós) e distância (até 999,99 milhas).",
-      topic: "Página: 2-12"
+      answer: "Através dos cristais piezoelétricos de proa e popa (Y1 e Y2); a pressão mecânica exercida pela onda acústica de eco sobre a estrutura cristalina gera uma diferença de potencial elétrico proporcional nos seus terminais (efeito piezoelétrico).",
+      explanation: "O transdutor SRD-331 emprega cristais piezoelétricos (Y1/Y2) tanto na emissão quanto na recepção. Na recepção, as ondas de compressão sonora refletidas pela água exercem estresse mecânico sobre o cristal, gerando tensões elétricas milivoltadas proporcionais que são enviadas via cabo TTRS.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "No VCS, o ponteiro de velocidade é acionado por um:",
+      question: "Existe diferença no cálculo executado pelo processador central do SRD-331 para interpretar os retornos Doppler oriundos da dispersão por matéria inanimada (partículas minerais) em comparação com a dispersão por biomassa marinha (plâncton/vida marinha)?",
       options: [
-        "Motor de passo.",
-        "Receptor Síncrono (TR).",
-        "Ímã permanente.",
-        "Cabo de aço."
+        "Não. De acordo com o princípio operacional do sistema, qualquer partícula ou organismo suspenso na água dispersa e reflete a energia sônica de 2 MHz de forma equivalente para fins de desvio Doppler, não havendo distinção de cálculo entre matéria orgânica ou inorgânica.",
+        "Sim, os retornos de biomassa marinha apresentam defasagem harmônica de 400 Hz que é filtrada pelo demodulador U3 antes da contagem na Porta Doppler.",
+        "Sim, o microprocessador aplica um fator de correção logarítmico na EPROM U21 quando detecta atenuação superior a 10 dB típica de cardumes densos.",
+        "Não, porém a contagem de 2048 cruzamentos em zero só é autorizada se o reflexo for estritamente de fundo rochoso ou arenoso em profundidades maiores que 10 metros."
       ],
-      answer: "Receptor Síncrono (TR).",
-      topic: "Página: 2-13"
-    },
-    {
-      question: "Quais potenciômetros corrigem a \"não linearidade\" do sinal de velocidade?",
-      options: [
-        "RV-10.",
-        "RV-11.",
-        "RV-1 a RV-9 e RV-15.",
-        "RV-18."
-      ],
-      answer: "RV-1 a RV-9 e RV-15.",
-      topic: "Página: 2-8"
-    },
-    {
-      question: "Quando é necessário realizar a calibragem de não linearidade?",
-      options: [
-        "Toda semana.",
-        "Na primeira instalação ou em mudanças no contorno das obras vivas do navio.",
-        "Sempre que trocar o fusível.",
-        "Somente quando o navio estiver em combate."
-      ],
-      answer: "Na primeira instalação ou em mudanças no contorno das obras vivas do navio.",
-      topic: "Página: 2-4"
-    },
-    {
-      question: "Como é chamado o procedimento de calibragem de não linearidade?",
-      options: [
-        "Teste de bancada.",
-        "\"Correr a milha\".",
-        "Ajuste de foco.",
-        "Reset mestre."
-      ],
-      answer: "\"Correr a milha\".",
-      topic: "Página: 2-4"
-    },
-    {
-      question: "Em quais intervalos de velocidade a calibragem \"correr a milha\" é feita?",
-      options: [
-        "De 1 em 1 nó.",
-        "De 10 em 10 nós.",
-        "De 6 em 6 nós (6-12-18-24-30).",
-        "Somente na velocidade máxima."
-      ],
-      answer: "De 6 em 6 nós (6-12-18-24-30).",
-      topic: "Página: 2-8"
-    },
-    {
-      question: "O conceito modular da SDTU AGI-LOG permite um tempo médio para reparo (MTTR) de:",
-      options: [
-        "5 minutos.",
-        "Aproximadamente 30 minutos.",
-        "24 horas.",
-        "1 semana."
-      ],
-      answer: "Aproximadamente 30 minutos.",
-      topic: "Página: 3-3"
-    },
-    {
-      question: "O que significa a sigla BITE no sistema AGI-LOG?",
-      options: [
-        "Busca de Interferência Técnica Eletrônica.",
-        "Circuito de Teste Integrado (Built-In Test Equipment).",
-        "Bateria de Indicadores de Tensão Elétrica.",
-        "Bloco de Informação de Tempo Estendido."
-      ],
-      answer: "Circuito de Teste Integrado (Built-In Test Equipment).",
-      topic: "Página: 3-1"
-    },
-    {
-      question: "Qual tipo de sensor AGI-LOG é projetado para operação em águas rasas?",
-      options: [
-        "Haste retrátil.",
-        "Sensor estilo OTAN.",
-        "Sensor Revés (nenhuma proteção para fora do casco).",
-        "Sensor de barbatana."
-      ],
-      answer: "Sensor Revés (nenhuma proteção para fora do casco).",
-      topic: "Página: 3-3"
-    },
-    {
-      question: "De que material é feita a caixa da SDTU do AGI-LOG?",
-      options: [
-        "Plástico de alta densidade.",
-        "Madeira compensada.",
-        "Alumínio robusto à prova d'água.",
-        "Ferro fundido."
-      ],
-      answer: "Alumínio robusto à prova d'água.",
-      topic: "Página: 3-3"
-    },
-    {
-      question: "Quantos módulos eletrônicos são fornecidos como padrão na SDTU?",
-      options: [
-        "3 módulos.",
-        "7 módulos eletrônicos.",
-        "20 módulos.",
-        "Apenas 1 placa integrada."
-      ],
-      answer: "7 módulos eletrônicos.",
-      topic: "Página: 3-3"
-    },
-    {
-      question: "Qual módulo é considerado o \"coração\" da SDTU no AGI-LOG?",
-      options: [
-        "Módulo 1 (Interface).",
-        "Módulo 2 (Cartão Microprocessador).",
-        "Módulo 8 (Fonte).",
-        "Módulo 10 (Display)."
-      ],
-      answer: "Módulo 2 (Cartão Microprocessador).",
-      topic: "Página: 3-4"
-    },
-    {
-      question: "Onde são armazenados os dados de calibração no AGI-LOG?",
-      options: [
-        "Em um disquete.",
-        "Em uma memória RAM não volátil (retém dados sem energia).",
-        "Escritos manualmente em um livro.",
-        "No GPS."
-      ],
-      answer: "Em uma memória RAM não volátil (retém dados sem energia).",
-      topic: "Página: 3-4"
-    },
-    {
-      question: "Qual o protocolo de saída digital serial utilizado para conexão com a barra de dados do navio?",
-      options: [
-        "USB 3.0.",
-        "RS422.",
-        "Bluetooth.",
-        "Wi-Fi."
-      ],
-      answer: "RS422.",
-      topic: "Página: 3-4"
-    },
-    {
-      question: "Como o sistema indica uma falha descoberta pelo BITE?",
-      options: [
-        "Toca uma sirene alta.",
-        "Os displays de NÓS e MILHAS piscam a 0,5 Hz.",
-        "O odômetro explode o fusível.",
-        "A tela fica preta."
-      ],
-      answer: "Os displays de NÓS e MILHAS piscam a 0,5 Hz.",
-      topic: "Página: 3-5/3-10"
-    },
-    {
-      question: "Qual nível de BITE está operativo durante a operação normal com a tampa fechada?",
-      options: [
-        "BITE Completo.",
-        "BITE Restrito.",
-        "BITE de Fábrica.",
-        "BITE Manual."
-      ],
-      answer: "BITE Restrito.",
-      topic: "Página: 3-12"
-    },
-    {
-      question: "Como se ativa o \"BITE Completo\" para diagnóstico detalhado?",
-      options: [
-        "Pressionando todas as teclas ao mesmo tempo.",
-        "Removendo a tampa dianteira da SDTU.",
-        "Digitando uma senha secreta.",
-        "Somente via satélite."
-      ],
-      answer: "Removendo a tampa dianteira da SDTU.",
-      topic: "Página: 3-12"
-    },
-    {
-      question: "No BITE Completo, onde aparece o código da falha MAIS provável?",
-      options: [
-        "No display de NÓS.",
-        "No display de MILHAS.",
-        "Na tela do radar.",
-        "Não aparece código."
-      ],
-      answer: "No display de NÓS.",
-      topic: "Página: 3-13"
-    },
-    {
-      question: "No BITE Completo, onde aparecem as outras falhas alternativas?",
-      options: [
-        "Em uma impressora externa.",
-        "No display de MILHAS NAVEGADAS.",
-        "No COC.",
-        "Em um LED verde."
-      ],
-      answer: "No display de MILHAS NAVEGADAS.",
-      topic: "Página: 3-13"
-    },
-    {
-      question: "Quantos pontos de calibração podem ser inseridos para cada sensor na faixa de 0 a 60 nós?",
-      options: [
-        "Apenas 1.",
-        "Até 5.",
-        "Até 14 pontos.",
-        "Pontos ilimitados."
-      ],
-      answer: "Até 14 pontos.",
-      topic: "Página: 3-6"
-    },
-    {
-      question: "Qual a resolução de velocidade do display do AGI-LOG?",
-      options: [
-        "1 nó.",
-        "0,1 nó.",
-        "0,01 nó.",
-        "0,001 nó."
-      ],
-      answer: "0,01 nó.",
-      topic: "Página: 3-7"
-    },
-    {
-      question: "Qual a faixa de exibição de velocidade em nós no display de LED?",
-      options: [
-        "0 a 30 nós.",
-        "-25 a +60 nós.",
-        "0 a 100 nós.",
-        "-10 a +10 nós."
-      ],
-      answer: "-25 a +60 nós.",
-      topic: "Página: 3-7"
-    },
-    {
-      question: "Quanto tempo o sistema leva para obter uma velocidade estável após ser ligado?",
-      options: [
-        "1 segundo.",
-        "30 segundos.",
-        "10 minutos.",
-        "1 hora."
-      ],
-      answer: "30 segundos.",
-      topic: "Página: 3-7"
-    },
-    {
-      question: "Qual a tensão de alimentação padrão fornecida aos sensores (hastes) no AGI-LOG?",
-      options: [
-        "12V DC.",
-        "115V AC.",
-        "57V 50/60Hz.",
-        "220V trifásico."
-      ],
-      answer: "57V 50/60Hz.",
-      topic: "Página: 3-9"
-    },
-    {
-      question: "Qual tecnologia de circuitos integrados exige cuidados contra eletricidade estática no manuseio das placas?",
-      options: [
-        "Tecnologia Válvula.",
-        "Tecnologia CMOS.",
-        "Tecnologia Relé.",
-        "Tecnologia de Mercúrio."
-      ],
-      answer: "Tecnologia CMOS.",
-      topic: "Página: 3-14"
-    },
-    {
-      question: "Qual a filosofia de manutenção corretiva da SDTU AGI-LOG?",
-      options: [
-        "Reparo de trilhas com solda de estanho.",
-        "Substituição de transistores individuais.",
-        "Reparo por substituição de módulos/cartões.",
-        "Trocar o aparelho inteiro sempre que falhar."
-      ],
-      answer: "Reparo por substituição de módulos/cartões.",
-      topic: "Página: 3-14"
-    },
-    {
-      question: "Com que frequência deve ser verificado o funcionamento dos segmentos do display?",
-      options: [
-        "Diariamente.",
-        "Semanalmente.",
-        "Trimestralmente (a cada 3 meses).",
-        "Anualmente."
-      ],
-      answer: "Trimestralmente (a cada 3 meses).",
-      topic: "Página: 3-15"
-    },
-    {
-      question: "Qual a velocidade máxima que deve aparecer no display durante o teste de segmentos?",
-      options: [
-        "30.00 nós.",
-        "60.99 nós.",
-        "99.99 nós.",
-        "120.00 nós."
-      ],
-      answer: "60.99 nós.",
-      topic: "Página: 3-15"
-    },
-    {
-      question: "O que deve ser feito antes de iniciar as rotinas de verificação preventiva?",
-      options: [
-        "Desligar o radar do navio.",
-        "Notificar o pessoal responsável pelos sistemas que recebem informação do odômetro.",
-        "Esvaziar os tanques de combustível.",
-        "Abandonar o navio."
-      ],
-      answer: "Notificar o pessoal responsável pelos sistemas que recebem informação do odômetro.",
-      topic: "Página: 3-15/3-16"
-    },
-    {
-      question: "No modo SIMULADO do AGI-LOG, quais teclas controlam a velocidade?",
-      options: [
-        "MODE e CURVE.",
-        "PROBE e RESET.",
-        "SIM UP e SIM DOWN.",
-        "ON e OFF."
-      ],
-      answer: "SIM UP e SIM DOWN.",
-      topic: "Página: 3-11"
-    },
-    {
-      question: "Qual o peso aproximado da Unidade SDTU do AGI-LOG?",
-      options: [
-        "5 Kg.",
-        "22 ± 1 Kg.",
-        "50 Kg.",
-        "100 Kg."
-      ],
-      answer: "22 ± 1 Kg.",
-      topic: "Página: 3-6"
-    },
-    {
-      question: "O terminal de calibração (módulo 12) possui processador próprio?",
-      options: [
-        "Não, depende totalmente da placa mãe.",
-        "Sim, para dar continuidade ao diagnóstico se o processador principal falhar.",
-        "Sim, mas serve apenas para jogos.",
-        "Não, é apenas um teclado mecânico."
-      ],
-      answer: "Sim, para dar continuidade ao diagnóstico se o processador principal falhar.",
-      topic: "Página: 3-13"
+      answer: "Não. De acordo com o princípio operacional do sistema, qualquer partícula ou organismo suspenso na água dispersa e reflete a energia sônica de 2 MHz de forma equivalente para fins de desvio Doppler, não havendo distinção de cálculo entre matéria orgânica ou inorgânica.",
+      explanation: "O odômetro Doppler depende do fenômeno do espalhamento (volume scattering) provocado por quaisquer heterogeneidades acústicas na massa d'água (partículas minerais, microbolhas, plâncton ou microrganismos). O desvio de frequência Doppler depende da velocidade relativa dessas partículas em relação ao transdutor, sendo irrelevante sua natureza orgânica ou inorgânica.",
+      topic: "Capítulo 1 - Odômetro SRD-331"
     }
   ]
 };

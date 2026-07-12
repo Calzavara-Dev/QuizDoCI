@@ -632,6 +632,12 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
                     {selectedAnswer === currentQuestion.answer ? "Correto!" : "Resposta correta:"}
                   </p>
                   <p className="text-slate-300">{currentQuestion.answer}</p>
+                  {currentQuestion.explanation && (
+                    <div className="mt-3 pt-3 border-t border-slate-700/50 text-xs text-slate-300 leading-relaxed">
+                      <span className="font-semibold text-emerald-400">Comentário: </span>
+                      {currentQuestion.explanation}
+                    </div>
+                  )}
                 </div>
 
                 <motion.button
