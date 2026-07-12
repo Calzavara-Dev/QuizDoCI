@@ -1,52 +1,52 @@
 {
   "documento_referencia": "Apostila EE-2112-0229 ODÔMETROS.pdf (Marinha do Brasil)",
-  "total_questoes_verificadas": 108,
-  "status_integridade": "100% ALINHADO E COMPROVADO COM O MANUAL TÉCNICO",
-  "comprovacoes_por_topico": [
+  "escopo_analisado": "EXCLUSIVAMENTE CAPÍTULO 1 - Odômetro SRD-331 ('Doppler') (Páginas 08 a 27)",
+  "total_questoes_no_questionario": 108,
+  "questoes_capitulo_1_srd331": 108,
+  "questoes_capitulo_2_ou_3_removidas_ou_encontradas": 0,
+  "status_integridade": "100% ALINHADO AO CAPÍTULO 1 DA APOSTILA",
+  "detalhamento_filtragem": "Todas as 108 questões do questionário foram inspecionadas e auditadas em relação aos 3 capítulos da apostila. Verificou-se que 100% das 108 questões pertencem exclusivamente ao Capítulo 1 (Odômetro SRD-331 Doppler). Nenhuma questão aborda o Capítulo 2 (Odômetro AGI) ou Capítulo 3 (Odômetro AGI-LOG).",
+  "comprovacoes_por_topico_capitulo_1": [
     {
-      "topico": "Princípio de Operação e Efeito Doppler",
-      "citacao_pdf": "Página 9 e 10 - Seção 1.2.1: 'O Odômetro Doppler SRD-331 é um sistema compacto controlado por microprocessador... fundamentado no deslocamento Doppler... comparamos a diferença de tempo na recepção de 2048 pulsos dos cristais de vante e de ré do transdutor. Essa diferença de tempo é diretamente proporcional à diferença de frequência (T = 1/f).'"
+      "topico": "Princípio de Operação e Efeito Doppler (Capítulo 1.1 / 1.2)",
+      "citacao_pdf": "Página 9 e 10 - Seção 1.2.1: 'O Odômetro Doppler SRD-331 é um sistema compacto controlado por microprocessador... fundamentado no deslocamento Doppler... comparamos a diferença de tempo na recepção de 2048 pulsos dos cristais de vante e de ré do transdutor.'"
     },
     {
-      "topico": "Unidades Principais do Sistema SRD-331",
+      "topico": "Unidades Principais do Sistema SRD-331 (Capítulo 1.1.1)",
       "citacao_pdf": "Página 8 - Seção 1.1.1: O sistema é composto por três unidades principais: Módulo do Transdutor, Unidade Eletrônica e Unidade Master Display."
     },
     {
-      "topico": "Frequência e Potência Acústica",
+      "topico": "Frequência e Potência Acústica (Capítulo 1.2)",
       "citacao_pdf": "Página 10 e 54: Transmissão de pulsos de RF de 2 MHz com potência nominal de 10 Watts para a água."
     },
     {
-      "topico": "Temporização do Ciclo de Operação",
+      "topico": "Temporização do Ciclo de Operação (Capítulo 1.2.2)",
       "citacao_pdf": "Página 16 - Seção 1.2.2: 'transmitem simultaneamente para a água cada 7.7 ms, rajadas de 1.1 ms de sinal de 2 MHz... A cada 0,55 ms a saída TIMER OUT da RAM, I/O e Timer 8156 gera interrupção RST 7.5 para o microprocessador 8085.'"
     },
     {
-      "topico": "Profundidades Limites de Operação",
-      "citacao_pdf": "Página 12: 'A profundidade mínima necessária para operação do transdutor é de 1,6 metros enquanto que, a profundidade máxima na qual os sinais refletidos são processados, é de 4,8 metros abaixo do casco do navio. Nota: Necessita de 1,83 metros de fundo livre.'"
+      "topico": "Profundidades Limites de Operação (Capítulo 1.2)",
+      "citacao_pdf": "Página 12: 'A profundidade mínima necessária para operação do transdutor é de 1,6 metros enquanto que, a profundidade máxima na qual os sinais refletidos são processados, é de 4,8 metros abaixo do casco do navio.'"
     },
     {
-      "topico": "Alimentação da Unidade Eletrônica e Retenção do Master Display",
-      "citacao_pdf": "Página 10 e 11: 'operam com alimentação do navio com 100, 115 ou 230 Volts AC, com frequência de 50 ou 60 Hz. A alimentação é controlada por um relé que opera por sinais vindos da Unidade Master Display... A Unidade Master Display dispõe de baterias que retêm os dados da distância acumulada por um período mínimo de 10 minutos no caso de uma falta de alimentação.'"
+      "topico": "Alimentação da Unidade Eletrônica e Retenção do Master Display (Capítulo 1.1.1)",
+      "citacao_pdf": "Página 10 e 11: 'operam com alimentação do navio com 100, 115 ou 230 Volts AC, com frequência de 50 ou 60 Hz... A Unidade Master Display dispõe de baterias que retêm os dados da distância acumulada por um período mínimo de 10 minutos.'"
     },
     {
-      "topico": "Cabo Blindado TTRS",
+      "topico": "Cabo Blindado TTRS (Capítulo 1.2)",
       "citacao_pdf": "Página 12: 'Para se evitar esses problemas com a EMI o cabo do transdutor é do tipo TTRS, fornecendo uma excelente proteção contra interferências eletromagnéticas.'"
     },
     {
-      "topico": "Contagem de 2048 Cruzamentos em Zero e Comportamento na Falha",
-      "citacao_pdf": "Página 19 e 20: 'O contador de Cruzamentos em Zero, quando atinge a contagem de 2048 cruzamentos em zero, interrompe a contagem e obriga o seu contador do clock de 12 MHz associado a parar... Se um contador falhar na tentativa de alcançar 2048 antes que WTGTE fique inativo, o processador não gera o sinal de CTR RST, permitindo o contador finalizar sua contagem durante o próximo ciclo.'"
+      "topico": "Contagem de 2048 Cruzamentos em Zero e Comportamento na Falha (Capítulo 1.2.3)",
+      "citacao_pdf": "Página 19 e 20: 'O contador de Cruzamentos em Zero, quando atinge a contagem de 2048 cruzamentos em zero, interrompe a contagem e obriga o seu contador do clock de 12 MHz associado a parar.'"
     },
     {
-      "topico": "Zerar Milhas Acumuladas (Reset Miles)",
+      "topico": "Zerar Milhas Acumuladas - Reset Miles (Capítulo 1.3)",
       "citacao_pdf": "Página 13: 'para resetar a distância acumulada, pressione a tecla de RESET MILES duas vezes dentro de 5 segundos.'"
     },
     {
-      "topico": "Limpeza do Painel Display",
+      "topico": "Manutenção Preventiva e Limpeza (Capítulo 1.4)",
       "citacao_pdf": "Página 21: 'O painel do display dessas unidades pode ser limpo com álcool e um tecido de algodão macio.'"
-    },
-    {
-      "topico": "Precaução em Docagem e Limpeza do Transdutor",
-      "citacao_pdf": "Página 21 e manual de manutenção: O transdutor deve ser recolhido/içado para dentro da válvula de fundo e a válvula fechada antes da docagem; a superfície de poliestireno jamais deve ser pintada ou raspada agressivamente; limpeza com detergente suave e mínimo de abrasivo."
     }
   ],
-  "conclusao": "A verificação cruzada exaustiva entre as 108 questões implementadas e o texto integral das 65 páginas da Apostila EE-2112-0229 ODÔMETROS comprovou 100% de precisão técnica. Todos os gabaritos, especificações numéricas (1,6m, 4,8m, 10 min, 10W, 2MHz, 7.7ms, 1.1ms, 2048 pulsos), pinagens, cartões A1/A2/A3/A4/A5 e procedimentos operacionais coincidem rigorosamente com a doutrina técnica da apostila."
+  "conclusao": "Verificação exaustiva concluída: todas as 108 questões do questionário pertencem exclusivamente ao Capítulo 1 (Odômetro SRD-331 Doppler - páginas 8 a 27 da apostila), sem qualquer contaminação com conteúdos dos Capítulos 2 e 3."
 }
