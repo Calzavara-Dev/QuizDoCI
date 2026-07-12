@@ -51,8 +51,21 @@ interface QuizProps {
 export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProps) {
   const savedProgress = useMemo(() => loadSavedProgress(quizId), [quizId]);
   const [shuffledQuestions] = useState<Question[]>(() => {
-    const questions = savedProgress?.shuffledQuestions ?? getDynamicShuffledQuestions(quizId);
-    return Array.isArray(questions) ? questions : [];
+    const freshQuestions = getDynamicShuffledQuestions(quizId);
+    if (savedProgress?.shuffledQuestions && Array.isArray(savedProgress.shuffledQuestions)) {
+      const savedList = savedProgress.shuffledQuestions;
+      const existingSet = new Set(savedList.map((q) => q.question.trim().toLowerCase()));
+      const merged = [...savedList];
+      for (const fq of (Array.isArray(freshQuestions) ? freshQuestions : [])) {
+        const norm = fq.question?.trim().toLowerCase();
+        if (norm && !existingSet.has(norm)) {
+          merged.push(fq);
+          existingSet.add(norm);
+        }
+      }
+      return merged;
+    }
+    return Array.isArray(freshQuestions) ? freshQuestions : [];
   });
   const [currentIndex, setCurrentIndex] = useState(() => {
     const index = savedProgress?.currentIndex ?? 0;

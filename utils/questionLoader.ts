@@ -35,19 +35,53 @@ function enrichWithTags(data: Record<string, Question[]>): Record<string, Questi
   return result;
 }
 
+function mergeWithStatic(data: Record<string, Question[]>): Record<string, Question[]> {
+  const result: Record<string, Question[]> = {};
+  const allKeys = new Set([...Object.keys(staticQuizzes), ...Object.keys(data || {})]);
+
+  for (const modKey of allKeys) {
+    const staticList = staticQuizzes[modKey] || [];
+    const dynamicList = data[modKey] || [];
+
+    if (!Array.isArray(staticList) && !Array.isArray(dynamicList)) {
+      result[modKey] = [];
+      continue;
+    }
+
+    const mergedList: Question[] = [...staticList];
+    const existingSet = new Set(staticList.map((q) => q.question.trim().toLowerCase()));
+
+    if (Array.isArray(dynamicList)) {
+      for (const dq of dynamicList) {
+        const normalized = dq.question?.trim().toLowerCase();
+        if (normalized && !existingSet.has(normalized)) {
+          mergedList.push(dq);
+          existingSet.add(normalized);
+        }
+      }
+    }
+
+    result[modKey] = mergedList;
+  }
+
+  return enrichWithTags(result);
+}
+
 export function getQuizzesSync(): Record<string, Question[]> {
   try {
     const cached = localStorage.getItem(LOCAL_CACHE_KEY);
     if (cached) {
       const parsed = JSON.parse(cached);
       if (parsed && typeof parsed === "object" && Object.keys(parsed).length > 0) {
-        return enrichWithTags(parsed);
+        const merged = mergeWithStatic(parsed);
+        saveQuizzesToLocalCache(merged);
+        return merged;
       }
     }
   } catch (err) {
     console.warn("Erro ao ler cache local de questões:", err);
   }
-  return staticQuizzes;
+  return enrichWithTags(staticQuizzes);
 }
 
 export function saveQuizzesToLocalCache(data: Record<string, Question[]>): void {
@@ -62,10 +96,7 @@ export async function loadAndSyncQuizzesRemote(): Promise<Record<string, Questio
   try {
     const remoteData = await fetchRemoteQuestions();
     if (remoteData && Object.keys(remoteData).length > 0) {
-      const merged = enrichWithTags({
-        ...staticQuizzes,
-        ...remoteData,
-      });
+      const merged = mergeWithStatic(remoteData);
       saveQuizzesToLocalCache(merged);
       return merged;
     }
