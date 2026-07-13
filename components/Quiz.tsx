@@ -26,6 +26,10 @@ const loadSavedProgress = (quizId: string): SavedQuizProgress | null => {
     const parsed = JSON.parse(raw) as SavedQuizProgress;
     if (parsed.quizId !== quizId) return null;
     if (!Array.isArray(parsed.shuffledQuestions)) return null;
+    const hasRealProgress =
+      parsed.currentIndex > 0 ||
+      (Array.isArray(parsed.answers) && parsed.answers.some((a) => a != null));
+    if (!hasRealProgress) return null;
     return parsed;
   } catch {
     return null;
@@ -50,7 +54,7 @@ interface QuizProps {
 
 export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProps) {
   const savedProgress = useMemo(() => loadSavedProgress(quizId), [quizId]);
-  const [shuffledQuestions] = useState<Question[]>(() => {
+  const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>(() => {
     const freshQuestions = getDynamicShuffledQuestions(quizId);
     if (savedProgress?.shuffledQuestions && Array.isArray(savedProgress.shuffledQuestions)) {
       if (savedProgress.shuffledQuestions.length === (freshQuestions?.length || 0)) {
@@ -185,6 +189,8 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   }, [showResult, zoomedImage]);
 
   useEffect(() => {
+    const hasStarted = currentIndex > 0 || answers.some((a) => a != null);
+    if (!hasStarted) return;
     const timer = setTimeout(() => {
       saveProgress({
         quizId,
@@ -263,15 +269,13 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   const handleRestartQuiz = () => {
     clearProgress();
     const fresh = getDynamicShuffledQuestions(quizId);
+    setShuffledQuestions(fresh);
     setCurrentIndex(0);
     setCorrect(0);
     setAnswers([]);
     setSelectedAnswer(null);
     setShowResult(false);
     setShowRestartConfirm(false);
-    // Force the question list to update by mutating via ref trick isn't needed:
-    // shuffledQuestions is a useState initialised once, so we replace its contents in-place
-    shuffledQuestions.splice(0, shuffledQuestions.length, ...fresh);
   };
 
   return (

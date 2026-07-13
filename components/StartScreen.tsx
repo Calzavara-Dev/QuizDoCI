@@ -46,13 +46,14 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
 
     try {
       const parsed = JSON.parse(raw) as SavedQuizProgress;
-      if (
+      const hasRealProgress =
         parsed?.quizId &&
         typeof parsed.currentIndex === "number" &&
         typeof parsed.total === "number" &&
         typeof parsed.correct === "number" &&
-        Array.isArray(parsed.answers)
-      ) {
+        Array.isArray(parsed.answers) &&
+        (parsed.currentIndex > 0 || parsed.answers.some((a) => a != null));
+      if (hasRealProgress) {
         setSavedProgress(parsed);
       }
     } catch {
