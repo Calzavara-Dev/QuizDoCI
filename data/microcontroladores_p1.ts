@@ -2587,4 +2587,290 @@ export const microcontroladoresP1Questions: Question[] = [
     answer: "Pode ser usada como interface de comunicação paralela para conexão direta com outros microcontroladores ou microprocessadores de 8 bits.",
     topic: "Capítulo 4 - Portas de Entrada e Saída (I/O) [Questão Discursiva]"
   },
+  {
+    question: "Qual a função do Contador de Programa (PC)?",
+    options: [
+      "Realizar operações lógicas e aritméticas.",
+      "Armazenar os dados de calibração do cristal.",
+      "Apontar o endereço da próxima instrução a ser executada.",
+      "Controlar o estouro do Watchdog Timer."
+    ],
+    answer: "Apontar o endereço da próxima instrução a ser executada.",
+    topic: "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+  },
+  {
+    question: "Defina Pipeline.",
+    options: [
+      "Técnica que executa uma instrução enquanto busca a próxima.",
+      "Barramento de comunicação serial assíncrona.",
+      "Memória não-volátil para armazenamento de dados.",
+      "Conversão de sinais analógicos para digitais."
+    ],
+    answer: "Técnica que executa uma instrução enquanto busca a próxima.",
+    topic: "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+  },
+  {
+    question: "A família de microcontroladores \"PIC\" pertence a qual fabricante?",
+    options: [
+      "Intel",
+      "Atmel",
+      "Motorola",
+      "Microchip"
+    ],
+    answer: "Microchip",
+    topic: "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+  },
+  {
+    question: "Quantas instruções podem ser armazenadas na memória Flash do PIC 16F877?",
+    options: [
+      "1024",
+      "2048",
+      "4096",
+      "8192"
+    ],
+    answer: "8192",
+    topic: "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+  },
+  {
+    question: "Se a frequência do clock externo for 16MHz, a frequência interna será:",
+    options: [
+      "1 MHz",
+      "4 MHz",
+      "8 MHz",
+      "16 MHz"
+    ],
+    answer: "4 MHz",
+    topic: "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+  },
+  {
+    question: "A frequência do clock externo para um ciclo de instrução de 200 ns é:",
+    options: [
+      "4 MHz",
+      "10 MHz",
+      "16 MHz",
+      "20 MHz"
+    ],
+    answer: "20 MHz",
+    topic: "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+  },
+  {
+    question: "O tempo de uma instrução de salto com clock externo de 4MHz é:",
+    options: [
+      "1 µs",
+      "2 µs",
+      "4 µs",
+      "8 µs"
+    ],
+    answer: "2 µs",
+    topic: "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+  },
+  {
+    question: "De acordo com as características do PIC16F877, marque a opção INCORRETA:",
+    options: [
+      "O espelhamento facilita evitando trocas constantes de banco.",
+      "Não há bits de status para indicar pilha cheia.",
+      "O microcontrolador possui 7 tipos de interrupções.",
+      "O registro especial STATUS está em todos os bancos."
+    ],
+    answer: "O microcontrolador possui 7 tipos de interrupções.",
+    topic: "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+  },
+  {
+    question: "Qual o endereço do vetor de interrupção na memória Flash?",
+    options: [
+      "0000h",
+      "0004h",
+      "2007h",
+      "0005h"
+    ],
+    answer: "0004h",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "Na memória FLASH quais bits operam como CHAVE SELETORA de página nas instruções GOTO e CALL?",
+    options: [
+      "RP0 e RP1 do STATUS",
+      "Bits <4:3> do PCLATH",
+      "GIE e PEIE do INTCON",
+      "PS0 e PS1 do OPTION_REG"
+    ],
+    answer: "Bits <4:3> do PCLATH",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "Por que usamos o termo \"Banco\" para a memória RAM?",
+    options: [
+      "Porque a memória é dividida em páginas de 2K.",
+      "Para separar fisicamente a memória de programa da de dados.",
+      "Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.",
+      "Para armazenar variáveis como em um banco de dados."
+    ],
+    answer: "Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "No endereçamento direto, a seleção do banco de memória é feita por:",
+    options: [
+      "Registros INDF e FSR",
+      "Bits <4:3> do PCLATH",
+      "Bits RP1 e RP0 do STATUS",
+      "Bit GIE do INTCON"
+    ],
+    answer: "Bits RP1 e RP0 do STATUS",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "Cite a principal característica do registro especial W (WORK).",
+    options: [
+      "Mapeado no Banco 0 e aponta para a RAM.",
+      "Ponte/destino de operações, mas NÃO mapeado na memória RAM.",
+      "Aponta para o topo da Pilha (Stack).",
+      "Configura resistores de pull-up globais."
+    ],
+    answer: "Ponte/destino de operações, mas NÃO mapeado na memória RAM.",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "Qual bit e registro indicam que o Watchdog provocou o reset do micro?",
+    options: [
+      "Bit /POR em 0 no PCON",
+      "Bit Z em 1 no STATUS",
+      "Bit GIE em 0 no INTCON",
+      "Bit /TO em 0 no STATUS"
+    ],
+    answer: "Bit /TO em 0 no STATUS",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "Se, num teste, o bit Z (STATUS<2>) está em '1', o que aconteceu?",
+    options: [
+      "Ocorreu um estouro (overflow) na pilha.",
+      "A contagem do TIMER0 estourou.",
+      "O resultado da operação lógica/aritmética anterior foi zero.",
+      "Houve transporte de bit (carry) na soma."
+    ],
+    answer: "O resultado da operação lógica/aritmética anterior foi zero.",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "No endereçamento indireto, qual registro aponta para a memória RAM?",
+    options: [
+      "FSR",
+      "INDF",
+      "PCLATH",
+      "STATUS"
+    ],
+    answer: "FSR",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "O registro que mostra o estado geral do microcontrolador é:",
+    options: [
+      "OPTION_REG",
+      "INTCON",
+      "FSR",
+      "STATUS"
+    ],
+    answer: "STATUS",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "Qual bit é a chave geral das interrupções no PIC16F877?",
+    options: [
+      "PEIE (INTCON)",
+      "GIE (INTCON)",
+      "INTE (STATUS)",
+      "ADIE (PIE1)"
+    ],
+    answer: "GIE (INTCON)",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "O registro que mostra o estado geral das interrupções é o:",
+    options: [
+      "STATUS",
+      "OPTION_REG",
+      "INTCON",
+      "PCON"
+    ],
+    answer: "INTCON",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "O endereço contido no PC durante a instrução GOTO é formado por:",
+    options: [
+      "Endereço retirado da Pilha.",
+      "11 bits do Opcode + bits <4:3> do PCLATH.",
+      "7 bits do Opcode + RP0 e RP1 do STATUS.",
+      "Endereço absoluto apontado pelo FSR."
+    ],
+    answer: "11 bits do Opcode + bits <4:3> do PCLATH.",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "O endereço contido no PC no retorno de uma sub-rotina (RETURN) é formado por:",
+    options: [
+      "11 bits da instrução.",
+      "Bits <4:3> do PCLATH.",
+      "Endereço recuperado do Topo da Pilha (TOS).",
+      "Endereço absoluto apontado por W."
+    ],
+    answer: "Endereço recuperado do Topo da Pilha (TOS).",
+    topic: "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+  },
+  {
+    question: "Qual registro controla a operação da porta D como Porta Paralela Escrava (PSP)?",
+    options: [
+      "TRISD",
+      "TRISE",
+      "PORTD",
+      "OPTION_REG"
+    ],
+    answer: "TRISE",
+    topic: "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+  },
+  {
+    question: "Qual porta pode usar resistores de pull-up internos?",
+    options: [
+      "PORTA",
+      "PORTB",
+      "PORTC",
+      "PORTD"
+    ],
+    answer: "PORTB",
+    topic: "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+  },
+  {
+    question: "Qual opção define o PORTC metade SAÍDA (RC0 a RC3) e metade ENTRADA (RC4 a RC7)?",
+    options: [
+      "TRISC = 00001111b",
+      "TRISC = 11110000b",
+      "PORTC = 11110000b",
+      "TRISC = 10101010b"
+    ],
+    answer: "TRISC = 11110000b",
+    topic: "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+  },
+  {
+    question: "LED ligado em RB4 (acende com nível alto). Se TRISB = 45h (0100 0101b) e PORTB = AAh (1010 1010b), o LED está:",
+    options: [
+      "Aceso, pois é saída e recebe nível alto.",
+      "Apagado, pois RB4 está configurado como entrada.",
+      "Apagado, pois RB4 é saída (0), mas o pino recebe nível baixo (0).",
+      "Aceso, independentemente do registro TRISB."
+    ],
+    answer: "Apagado, pois RB4 é saída (0), mas o pino recebe nível baixo (0).",
+    topic: "Capítulo 4 - Portas de Entrada e Saída (I/O) [Questão Discursiva]"
+  },
+  {
+    question: "Após a leitura da memória EEPROM de dados, o dado lido é armazenado em qual registro?",
+    options: [
+      "EEADR",
+      "Flash",
+      "STATUS",
+      "EEDATA"
+    ],
+    answer: "EEDATA",
+    topic: "Capítulo 5 - Memória EEPROM e Flash [Múltipla Escolha]"
+  }
 ];
