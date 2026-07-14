@@ -1,5 +1,6 @@
 import { manutencao2Questions } from "./manutencao2";
 import { eletronica2P2Questions } from "./eletronica2_p2";
+import { microcontroladoresP1Questions } from "./microcontroladores_p1";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -2043,18 +2044,6 @@ export const quizzes: Record<string, Question[]> = {
       topic: "Capítulo 1 - Odômetro SRD-331"
     },
     {
-      question: "Na frota naval de referência do manual, em quais classes/navios o Odômetro Doppler SRD-331 encontra-se instalado?",
-      options: [
-        "A bordo dos Navios-Patrulha Guarajá, Guajará, Gurupim, Gurupá e do Navio-Tanque Gastão Motta.",
-        "Exclusivamente em Submarinos Classe Tupi e Fragatas Classe Niterói.",
-        "Apenas em Navios-Aeródromo e Corvetas Classe Inhaúma.",
-        "Em Lanchas de Inspeção Naval e Rebocadores de Alto Mar."
-      ],
-      answer: "A bordo dos Navios-Patrulha Guarajá, Guajará, Gurupim, Gurupá e do Navio-Tanque Gastão Motta.",
-      explanation: "Essa relação cita as unidades da Marinha equipadas com esta versão específica de odômetro acústico Doppler.",
-      topic: "Capítulo 1 - Odômetro SRD-331"
-    },
-    {
       question: "Quais são as tensões de alimentação primária de entrada e as tensões contínuas CC reguladas geradas internamente pela Unidade Eletrônica?",
       options: [
         "Entrada CA de 100, 115 ou 230 VCA (50/60 Hz); fornece internamente tensões reguladas de 5, 12 e 32 Volts CC.",
@@ -2102,6 +2091,7 @@ export const quizTitles: Record<string, string> = {
   "exercicios-moodle-et-d2": "Exercicios Moodle ET.D2",
   "manutencao-dos-sistemas-telefonicos-2": "Manutenção dos Sistemas Telefônicos 2",
   "manutencao-dos-sistemas-de-odometros": "MANUTENÇÃO DOS SISTEMAS DE ODÔMETROS",
+  "introducao-aos-microcontroladores-p1": "INTRODUÇÃO AOS MICROCONTROLADORES P1",
 };
 
 // Quiz de Eletrônica Digital II
@@ -3007,5 +2997,6 @@ quizzes["exercicios-moodle-et-d2"] = [
 
 quizzes["manutencao-dos-sistemas-telefonicos-2"] = manutencao2Questions;
 quizzes["eletronica-digital-2-p2"] = eletronica2P2Questions;
+quizzes["introducao-aos-microcontroladores-p1"] = microcontroladoresP1Questions;
 
 export const questions: Question[] = quizzes.telefonia;

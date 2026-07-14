@@ -86,6 +86,11 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
       label: "MANUTENÇÃO DOS SISTEMAS DE ODÔMETROS.pdf",
       url: new URL('../assets/Apostila EE-2112-0229 ODÔMETROS.pdf', import.meta.url).href,
     },
+    {
+      id: "apostila-4",
+      label: "Apostila EE 2006-0423 MICROCONTROLADORES.pdf",
+      url: new URL('../assets/Apostila EE 2006-0423 MICROCONTROLADORES.pdf', import.meta.url).href,
+    },
   ];
   const selectedApostilaData = apostilas.find((apostila) => apostila.id === selectedApostila) ?? apostilas[0];
 

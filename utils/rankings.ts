@@ -73,7 +73,7 @@ export const saveRankings = (rankings: Rankings) => {
 
 export const addQuizResult = (data: ResultData): Rankings => {
   const current = loadRankings();
-  const quizId = data.quizId;
+  const quizId = data.quizId ?? "telefonia";
   const updatedQuiz = buildUpdatedRank(current.quizzes[quizId] ?? createEmptyRank(), data.correct, data.total);
   const updatedOverall = buildUpdatedRank(current.overall, data.correct, data.total);
 
