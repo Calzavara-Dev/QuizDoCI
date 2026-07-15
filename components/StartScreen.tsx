@@ -106,7 +106,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.15, type: "spring" }}
-        className="w-full max-w-md card rounded-3xl p-4 sm:p-6"
+        className="w-full max-w-[480px] card rounded-3xl p-5 sm:p-7 shadow-2xl my-auto"
       >
         <div className="mb-4 sm:mb-6 flex justify-center">
           <div className="h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full bg-gradient-to-br from-cyan-500/20 to-emerald-400/10 p-1.5 sm:p-2">
@@ -126,7 +126,7 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
           Teste seus conhecimentos.
         </p>
 
-        <div className="mb-5 grid grid-cols-2 gap-2.5 max-w-xs mx-auto">
+        <div className="mb-5 grid grid-cols-2 gap-2.5 w-full">
           <button onClick={() => (onOpenRanking ? onOpenRanking() : undefined)} className="ghost-btn px-3 py-2.5 rounded-xl text-xs sm:text-sm font-semibold">
             Ver Ranking
           </button>
@@ -169,14 +169,14 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
         </div>
 
         <div className="mb-4">
-          <div className="rounded-xl p-3.5 sm:p-4 card text-center max-w-xs mx-auto">
+          <div className="rounded-2xl p-4 bg-slate-900/60 border border-slate-800 text-center w-full">
             <p className="text-2xl sm:text-3xl font-bold text-cyan-400">{totalQuestions}</p>
             <p className="text-slate-300 text-xs sm:text-sm">Total de Questões</p>
           </div>
         </div>
 
         <div className="mb-6">
-          <div className="rounded-2xl p-3.5 sm:p-4 bg-slate-900/60 border border-slate-800 text-center max-w-md mx-auto">
+          <div className="rounded-2xl p-4 sm:p-5 bg-slate-900/60 border border-slate-800 text-center w-full">
             <p className="text-base sm:text-lg font-semibold text-white mb-1">Apostila para estudo</p>
             <p className="text-slate-300 text-xs sm:text-sm mb-3">Escolha a apostila e abra ou baixe o PDF desejado.</p>
             <label htmlFor="apostila-select" className="block text-left text-xs sm:text-sm text-slate-300 mb-1.5">
