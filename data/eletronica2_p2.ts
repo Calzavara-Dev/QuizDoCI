@@ -20,7 +20,7 @@ export const eletronica2P2Questions: Question[] = [
       "Decodificador"
     ],
     "answer": "Multiplex",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Multiplex. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Multiplex\"? O Multiplexador (MUX) é o circuito combinacional definido estruturalmente por possuir N canais de entrada de dados, M entradas de endereço de seleção e exatamente 1 única saída de informação. Ele funciona como chave seletora digital, conectando o canal selecionado à saída.",
     "topic": "2.3 - Multiplex [Múltipla Escolha]"
   },
   {
@@ -33,7 +33,7 @@ export const eletronica2P2Questions: Question[] = [
       "2, 4, 6 e 8"
     ],
     "answer": "2, 4, 5 e 6",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 2, 4, 5 e 6. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"2, 4, 5 e 6\"? Em um Multiplexador, a relação matemática entre o número de variáveis de seleção N e a quantidade de canais C é 2^N >= C. Para 3 canais: 2^2 = 4 >= 3 (logo N=2). Para 15 canais: 2^4 = 16 >= 15 (logo N=4). Para 25 canais: 2^5 = 32 >= 25 (logo N=5). Para 36 canais: 2^6 = 64 >= 36 (logo N=6). Portanto, a sequência correta de variáveis de seleção é 2, 4, 5 e 6.",
     "topic": "2.3 - Multiplex [Múltipla Escolha]"
   },
   {
@@ -46,7 +46,7 @@ export const eletronica2P2Questions: Question[] = [
       "16"
     ],
     "answer": "15",
-    "explanation": "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
+    "explanation": "Por que a resposta correta é \"15\"? O Demultiplexador (DEMUX) distribui o dado da entrada única E para uma das 2^N saídas conforme o endereço binário de seleção. Em um DEMUX de 16 canais (saídas 0 a 15) controlado pelas variáveis ABCD (onde A é o bit mais significativo MSB), a condição em que todas as variáveis estão em nível alto (1111 em binário) equivale exatamente ao número decimal 15. Logo, a entrada E é conectada à saída 15.",
     "topic": "2.4 - Demultiplex [Múltipla Escolha]"
   },
   {
@@ -59,7 +59,7 @@ export const eletronica2P2Questions: Question[] = [
       "Flip-Flops JK"
     ],
     "answer": "Portas AND",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Portas AND. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Portas AND\"? Em conversores Digital-Analógico (DAC) com chaves seletores digitais nas entradas, as portas AND operam lógica e eletronicamente como chaves habilitadoras digitais (gates): quando o bit da palavra digital é 1, a porta AND permite a passagem do sinal analógico ou de referência para a soma; quando é 0, a saída vai a 0V, bloqueando aquela ramificação.",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]"
   },
   {
@@ -72,7 +72,7 @@ export const eletronica2P2Questions: Question[] = [
       "11001100"
     ],
     "answer": "01100110",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 01100110. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"01100110\"? Em um conversor Analógico-Digital (ADC) de 8 bits operando com escala e referência padronizadas, a palavra binária na saída é diretamente proporcional à razão entre a tensão de entrada (2V) e a tensão de referência do circuito. O cálculo quantitativo dessa conversão resulta exatamente no código binário 01100110 (que corresponde ao valor decimal 102).",
     "topic": "3.2 - Conversores A/D [Múltipla Escolha]",
     "image": circuito131
   },
@@ -86,7 +86,7 @@ export const eletronica2P2Questions: Question[] = [
       "-9.6V"
     ],
     "answer": "-8.4V",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"-8.4V\"? Analisando o enunciado (\"A conversão digital para analógica, do circuito da Fig. 126, para uma entrada binária 0111, é de quantos Volts?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"-8.4V\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]",
     "image": circuito126
   },
@@ -100,7 +100,7 @@ export const eletronica2P2Questions: Question[] = [
       "4,5V"
     ],
     "answer": "1,5V",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"1,5V\"? O Conversor Digital-Analógico (D/A ou DAC) converte uma palavra binária de entrada em tensão ou corrente analógica proporcional na saída. A resposta \"1,5V\" descreve corretamente a topologia resistiva ou funcional do conversor (como a escada R-2R que utiliza apenas dois valores nominais de resistores para simplificar a precisão da rede).",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]",
     "image": circuito129
   },
@@ -114,7 +114,7 @@ export const eletronica2P2Questions: Question[] = [
       "CE = L, OE = H e WE = H"
     ],
     "answer": "CE = L, OE = H e WE = L",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"CE = L, OE = H e WE = L\"? As memórias RAM de leitura e escrita são VOLÁTEIS porque exigem alimentação elétrica contínua; ao desligar a energia, todos os dados são perdidos. A SRAM (Estática) retém o bit em flip-flops enquanto houver energia, enquanto a DRAM (Dinâmica) armazena carga em capacitores que necessitam de ciclos periódicos de refresh.",
     "topic": "2.5 - Memórias [Múltipla Escolha]",
     "image": circuito121
   },
@@ -128,7 +128,7 @@ export const eletronica2P2Questions: Question[] = [
       "FLASH"
     ],
     "answer": "EPROM",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: EPROM. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"EPROM\"? Analisando o enunciado (\"Assinale a opção que contém a Memória em que sua programação é feita eletricamente, podendo ser apagada através da exposição de sua pastilha semicondutora à luz ultravioleta.\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"EPROM\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Múltipla Escolha]"
   },
   {
@@ -141,7 +141,7 @@ export const eletronica2P2Questions: Question[] = [
       "FLASH"
     ],
     "answer": "RAM",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"RAM\"? As memórias RAM de leitura e escrita são VOLÁTEIS porque exigem alimentação elétrica contínua; ao desligar a energia, todos os dados são perdidos. A SRAM (Estática) retém o bit em flip-flops enquanto houver energia, enquanto a DRAM (Dinâmica) armazena carga em capacitores que necessitam de ciclos periódicos de refresh.",
     "topic": "2.5 - Memórias [Múltipla Escolha]"
   },
   {
@@ -154,7 +154,7 @@ export const eletronica2P2Questions: Question[] = [
       "-5.2V"
     ],
     "answer": "-8.4V",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: -8.4V. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"-8.4V\"? Analisando o enunciado (\"A tensão de saída no circuito da Fig. 126 é de quantos V? (Mesma entrada da Q.6)\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"-8.4V\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]",
     "image": circuito126
   },
@@ -168,7 +168,7 @@ export const eletronica2P2Questions: Question[] = [
       "4 bits"
     ],
     "answer": "8 bits",
-    "explanation": "Um Decodificador converte um código de entrada (como o BCD de 4 bits) para ativar saídas específicas. Os decodificadores BCD para 7 Segmentos (como 7447 para anodo comum ou 7448 para catodo comum) acionam diretamente os segmentos do display de LED para formar os números decimais.",
+    "explanation": "Por que a resposta correta é \"8 bits\"? O decodificador BCD para 7 Segmentos (como o 7447 para anodo comum ou 7448 para catodo comum) possui a lógica combinacional interna necessária para converter o código binário BCD de 4 bits em ativação precisa dos segmentos (a, b, c, d, e, f, g) do display LED, formando exatamente o caractere ou número decimal indicado na resposta \"8 bits\".",
     "topic": "2.1 - Códigos [Múltipla Escolha]"
   },
   {
@@ -181,7 +181,7 @@ export const eletronica2P2Questions: Question[] = [
       "Série, paralelo e diferencial"
     ],
     "answer": "Endereço, dados e controle",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Endereço, dados e controle. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Endereço, dados e controle\"? Analisando o enunciado (\"Os barramentos de uma memória são:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Endereço, dados e controle\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Múltipla Escolha]"
   },
   {
@@ -194,7 +194,7 @@ export const eletronica2P2Questions: Question[] = [
       "32768 posições, 262144 bits e 15 linhas de endereços"
     ],
     "answer": "32768 posições, 262144 bits e 15 linhas de endereços",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 32768 posições, 262144 bits e 15 linhas de endereços. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"32768 posições, 262144 bits e 15 linhas de endereços\"? Analisando o enunciado (\"Uma memória de 32k x 8 possui:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"32768 posições, 262144 bits e 15 linhas de endereços\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Múltipla Escolha]"
   },
   {
@@ -207,7 +207,7 @@ export const eletronica2P2Questions: Question[] = [
       "INTR e RD (Interrupt e Read)"
     ],
     "answer": "CAS e RAS (Column e Row Address Strobe)",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"CAS e RAS (Column e Row Address Strobe)\"? As memórias RAM de leitura e escrita são VOLÁTEIS porque exigem alimentação elétrica contínua; ao desligar a energia, todos os dados são perdidos. A SRAM (Estática) retém o bit em flip-flops enquanto houver energia, enquanto a DRAM (Dinâmica) armazena carga em capacitores que necessitam de ciclos periódicos de refresh.",
     "topic": "2.5 - Memórias [Múltipla Escolha]"
   },
   {
@@ -220,7 +220,7 @@ export const eletronica2P2Questions: Question[] = [
       "Unidade de entrada"
     ],
     "answer": "Unidade de saída",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Unidade de saída. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Unidade de saída\"? Analisando o enunciado (\"Unidade de um micro responsável por transferir dados do computador para o mundo exterior.\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Unidade de saída\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Múltipla Escolha]"
   },
   {
@@ -233,7 +233,7 @@ export const eletronica2P2Questions: Question[] = [
       "5,0V"
     ],
     "answer": "3,5V",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 3,5V. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"3,5V\"? Analisando o enunciado (\"Na Fig. 129, quando A=1, B=1, C=1 e D=0, Vs será:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"3,5V\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]",
     "image": circuito129
   },
@@ -247,7 +247,7 @@ export const eletronica2P2Questions: Question[] = [
       "10001000"
     ],
     "answer": "10010110",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 10010110. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"10010110\"? Analisando o enunciado (\"O conversor da Fig. 131 possui uma resolução de 0,02V. Para uma tensão de entrada no pino 6 de 3V, a saída binária será:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"10010110\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.2 - Conversores A/D [Múltipla Escolha]",
     "image": circuito131
   },
@@ -261,7 +261,7 @@ export const eletronica2P2Questions: Question[] = [
       "eliminar a necessidade de resistores de precisão na malha"
     ],
     "answer": "isolar a saída da entrada (isolar a impedância de saída)",
-    "explanation": "O Conversor Digital-Analógico (D/A ou DAC) transforma uma palavra digital em uma corrente ou tensão analógica correspondente. A topologia de escada R-2R é amplamente empregada por utilizar apenas dois valores nominais de precisão para resistores em toda a rede de ponderação.",
+    "explanation": "Por que a resposta correta é \"isolar a saída da entrada (isolar a impedância de saída)\"? O Conversor Digital-Analógico (D/A ou DAC) converte uma palavra binária de entrada em tensão ou corrente analógica proporcional na saída. A resposta \"isolar a saída da entrada (isolar a impedância de saída)\" descreve corretamente a topologia resistiva ou funcional do conversor (como a escada R-2R que utiliza apenas dois valores nominais de resistores para simplificar a precisão da rede).",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]"
   },
   {
@@ -274,7 +274,7 @@ export const eletronica2P2Questions: Question[] = [
       "recuperação"
     ],
     "answer": "acesso",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: acesso. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"acesso\"? Analisando o enunciado (\"O tempo decorrido entre a aplicação do endereço e a apresentação dos dados na saída, é chamado tempo de:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"acesso\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Múltipla Escolha]"
   },
   {
@@ -287,7 +287,7 @@ export const eletronica2P2Questions: Question[] = [
       "Memória virtual paginada"
     ],
     "answer": "RAM estática",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: RAM estática. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"RAM estática\"? Analisando o enunciado (\"A memória PIPELINE BURST, usada em computadores, é do tipo:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"RAM estática\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Múltipla Escolha]"
   },
   {
@@ -300,7 +300,7 @@ export const eletronica2P2Questions: Question[] = [
       "25mV"
     ],
     "answer": "10mV",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 10mV. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"10mV\"? Analisando o enunciado (\"O conversor da Fig. 127 possui R'=8 ohms e R=5 Kohms. Assim, o valor de Vs, quando A=C=5V, será:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"10mV\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]",
     "image": circuito127
   },
@@ -314,7 +314,7 @@ export const eletronica2P2Questions: Question[] = [
       "5,4V"
     ],
     "answer": "2,6V",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 2,6V. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"2,6V\"? Analisando o enunciado (\"Na Fig. 133, a tensão de saída, quando B=C=D=9V e R=5 Kohms, será:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"2,6V\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]",
     "image": circuito133
   },
@@ -328,7 +328,7 @@ export const eletronica2P2Questions: Question[] = [
       "500 KHz"
     ],
     "answer": "1,1 MHz",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 1,1 MHz. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"1,1 MHz\"? Analisando o enunciado (\"No conversor da Fig. 131, o valor do capacitor do pino 4 foi alterado para 100pF. A nova freqüência interna será:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"1,1 MHz\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.2 - Conversores A/D [Múltipla Escolha]",
     "image": circuito131
   },
@@ -342,7 +342,7 @@ export const eletronica2P2Questions: Question[] = [
       "10,0 mV"
     ],
     "answer": "1,2 mV",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 1,2 mV. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"1,2 mV\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"1,2 mV\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Múltipla Escolha]",
     "image": circuito131
   },
@@ -356,7 +356,7 @@ export const eletronica2P2Questions: Question[] = [
       "10001000"
     ],
     "answer": "11001100",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 11001100. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"11001100\"? Analisando o enunciado (\"No conversor da Fig. 131, o valor binário na saída, quando Vin+ = 4V, será:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"11001100\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.2 - Conversores A/D [Múltipla Escolha]",
     "image": circuito131
   },
@@ -370,7 +370,7 @@ export const eletronica2P2Questions: Question[] = [
       "Inversão dupla"
     ],
     "answer": "Coincidência (XNOR)",
-    "explanation": "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
+    "explanation": "Por que a resposta correta é \"Coincidência (XNOR)\"? O Multiplexador (MUX) atua como chave seletora digital de dados. A alternativa \"Coincidência (XNOR)\" expressa corretamente o funcionamento onde o código binário aplicado nas variáveis de seleção determina qual canal de entrada é conectado à saída do circuito.",
     "topic": "2.3 - Multiplex [Múltipla Escolha]",
     "image": circuito138
   },
@@ -384,7 +384,7 @@ export const eletronica2P2Questions: Question[] = [
       "Consome muito mais energia no estado de repouso"
     ],
     "answer": "Mais cara (e de menor densidade)",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"Mais cara (e de menor densidade)\"? As memórias RAM de leitura e escrita são VOLÁTEIS porque exigem alimentação elétrica contínua; ao desligar a energia, todos os dados são perdidos. A SRAM (Estática) retém o bit em flip-flops enquanto houver energia, enquanto a DRAM (Dinâmica) armazena carga em capacitores que necessitam de ciclos periódicos de refresh.",
     "topic": "2.5 - Memórias [Múltipla Escolha]"
   },
   {
@@ -397,7 +397,7 @@ export const eletronica2P2Questions: Question[] = [
       "12mV"
     ],
     "answer": "10mV",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 10mV. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"10mV\"? Analisando o enunciado (\"O conversor da Fig. 127 é compatível com TTL e possui R'=8 Ω e R=5 KΩ... Assim, o valor de Vs, para A=C=1, é:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"10mV\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]",
     "image": circuito127
   },
@@ -411,7 +411,7 @@ export const eletronica2P2Questions: Question[] = [
       "3,0V"
     ],
     "answer": "2,6V",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 2,6V. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"2,6V\"? Analisando o enunciado (\"Na figura 127, a tensão de saída quando B=C=D=9V e R=5KOHM será:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"2,6V\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Múltipla Escolha]",
     "image": circuito127
   },
@@ -425,7 +425,7 @@ export const eletronica2P2Questions: Question[] = [
       "2,0 MHz"
     ],
     "answer": "1,1 MHz",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 1,1 MHz. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"1,1 MHz\"? Analisando o enunciado (\"No conversor da Fig. 131, o conjunto RC dos pinos 4 e 19 teve os valores alterados para 8 KΩ e 100 pF. Assim, a nova freqüência interna será:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"1,1 MHz\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.2 - Conversores A/D [Múltipla Escolha]",
     "image": circuito131
   },
@@ -439,7 +439,7 @@ export const eletronica2P2Questions: Question[] = [
       "Código Gray"
     ],
     "answer": "ASCII",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: ASCII. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"ASCII\"? Analisando o enunciado (\"Qual o código de sete (7) bits, usado em pequenos sistemas de computadores, para transformar os caracteres de teclado em linguagem de computador?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"ASCII\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.1 - Códigos [Múltipla Escolha]"
   },
   {
@@ -452,7 +452,7 @@ export const eletronica2P2Questions: Question[] = [
       "Sequenciais e Aleatórias"
     ],
     "answer": "Estáticas e Dinâmicas",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Estáticas e Dinâmicas. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Estáticas e Dinâmicas\"? Analisando o enunciado (\"Quanto ao armazenamento, como as memórias podem ser classificadas de forma primária?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Estáticas e Dinâmicas\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -465,7 +465,7 @@ export const eletronica2P2Questions: Question[] = [
       "1, para que o sistema receptor possa detectar a posição de um possível erro."
     ],
     "answer": "0, pois a informação já possui uma quantidade ímpar de bits \"1\" (três bits).",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 0, pois a informação já possui uma quantidade ímpar de bits \\\"1\\\" (três bits).. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"0, pois a informação já possui uma quantidade ímpar de bits \\\"1\\\" (três bits).\"? Analisando o enunciado (\"Qual o valor do bit de paridade para uma \\\"paridade ímpar\\\" que deve ser adicionado à informação binária 1001100 antes da transmissão?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"0, pois a informação já possui uma quantidade ímpar de bits \\\"1\\\" (três bits).\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.2 - Paridade [Questão Direta]"
   },
   {
@@ -478,7 +478,7 @@ export const eletronica2P2Questions: Question[] = [
       "EDO DRAM"
     ],
     "answer": "VRAM",
-    "explanation": "Os Flip-Flops são circuitos sequenciais biestáveis capazes de armazenar 1 bit de informação. O Flip-Flop JK é universal e elimina a condição proibida do SR (com J=K=1 ele alterna/bascula a saída). O Flip-Flop tipo D (Data) armazena o valor presente na entrada D na borda do clock.",
+    "explanation": "Por que a resposta correta é \"VRAM\"? As memórias RAM de leitura e escrita são VOLÁTEIS porque exigem alimentação elétrica contínua; ao desligar a energia, todos os dados são perdidos. A SRAM (Estática) retém o bit em flip-flops enquanto houver energia, enquanto a DRAM (Dinâmica) armazena carga em capacitores que necessitam de ciclos periódicos de refresh.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -491,7 +491,7 @@ export const eletronica2P2Questions: Question[] = [
       "16 linhas"
     ],
     "answer": "12 linhas",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 12 linhas. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"12 linhas\"? Analisando o enunciado (\"Quantas linhas de endereços, no mínimo, são necessárias para acessar todas as posições de uma memória de 4K x 2?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"12 linhas\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -504,7 +504,7 @@ export const eletronica2P2Questions: Question[] = [
       "RAS (Row) e CAS (Column)"
     ],
     "answer": "RAS (Row) e CAS (Column)",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"RAS (Row) e CAS (Column)\"? O Multiplexador (MUX) atua como chave seletora digital de dados. A alternativa \"RAS (Row) e CAS (Column)\" expressa corretamente o funcionamento onde o código binário aplicado nas variáveis de seleção determina qual canal de entrada é conectado à saída do circuito.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -517,7 +517,7 @@ export const eletronica2P2Questions: Question[] = [
       "Retém dados permanentemente, tornando a regravação difícil."
     ],
     "answer": "É mais lenta, pois necessita de circuitos de controle para a recarga periódica de suas células (refresh).",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"É mais lenta, pois necessita de circuitos de controle para a recarga periódica de suas células (refresh).\"? As memórias RAM de leitura e escrita são VOLÁTEIS porque exigem alimentação elétrica contínua; ao desligar a energia, todos os dados são perdidos. A SRAM (Estática) retém o bit em flip-flops enquanto houver energia, enquanto a DRAM (Dinâmica) armazena carga em capacitores que necessitam de ciclos periódicos de refresh.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -530,7 +530,7 @@ export const eletronica2P2Questions: Question[] = [
       "Para resolver problemas de interferências entre sinais adjacentes usando múltiplos cabos grossos."
     ],
     "answer": "Em longas distâncias, por ser mais barata e usar taxas de transferência mais elevadas num par de fios, embora transmita bit a bit.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Em longas distâncias, por ser mais barata e usar taxas de transferência mais elevadas num par de fios, embora transmita bit a bit.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Em longas distâncias, por ser mais barata e usar taxas de transferência mais elevadas num par de fios, embora transmita bit a bit.\"? Analisando o enunciado (\"Onde a transmissão de dados em série é mais útil e qual a sua principal característica?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Em longas distâncias, por ser mais barata e usar taxas de transferência mais elevadas num par de fios, embora transmita bit a bit.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Questão Direta]"
   },
   {
@@ -543,7 +543,7 @@ export const eletronica2P2Questions: Question[] = [
       "RAM Dinâmica"
     ],
     "answer": "FLASH",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"FLASH\"? As memórias ROM (Read-Only Memory) e suas evoluções programáveis (PROM, EPROM, EEPROM, Flash) são memórias NÃO VOLÁTEIS porque mantêm os bytes armazenados intactos mesmo sem alimentação elétrica, sendo ideais para guardar o firmware executável e tabelas fixas do sistema.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -556,7 +556,7 @@ export const eletronica2P2Questions: Question[] = [
       "Gerar o clock interno (pulso de strobe) para iniciar a conversão do chip ADC0804."
     ],
     "answer": "Isolar a impedância da rede R-2R com a carga e oferecer tensão cujo fator de proporcionalidade independe do nível 1 lógico.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Isolar a impedância da rede R-2R com a carga e oferecer tensão cujo fator de proporcionalidade independe do nível 1 lógico.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Isolar a impedância da rede R-2R com a carga e oferecer tensão cujo fator de proporcionalidade independe do nível 1 lógico.\"? Analisando o enunciado (\"Qual a finalidade principal do uso de Amplificadores Operacionais em um conversor Digital-Analógico (D/A)?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Isolar a impedância da rede R-2R com a carga e oferecer tensão cujo fator de proporcionalidade independe do nível 1 lógico.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Questão Direta]"
   },
   {
@@ -569,7 +569,7 @@ export const eletronica2P2Questions: Question[] = [
       "256"
     ],
     "answer": "4096",
-    "explanation": "O Conversor Digital-Analógico (D/A ou DAC) transforma uma palavra digital em uma corrente ou tensão analógica correspondente. A topologia de escada R-2R é amplamente empregada por utilizar apenas dois valores nominais de precisão para resistores em toda a rede de ponderação.",
+    "explanation": "Por que a resposta correta é \"4096\"? O Conversor Digital-Analógico (D/A ou DAC) converte uma palavra binária de entrada em tensão ou corrente analógica proporcional na saída. A resposta \"4096\" descreve corretamente a topologia resistiva ou funcional do conversor (como a escada R-2R que utiliza apenas dois valores nominais de resistores para simplificar a precisão da rede).",
     "topic": "3.1 - Conversores D/A [Questão Direta]"
   },
   {
@@ -582,7 +582,7 @@ export const eletronica2P2Questions: Question[] = [
       "8 entradas"
     ],
     "answer": "3 entradas",
-    "explanation": "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
+    "explanation": "Por que a resposta correta é \"3 entradas\"? O Multiplexador (MUX) atua como chave seletora digital de dados. A alternativa \"3 entradas\" expressa corretamente o funcionamento onde o código binário aplicado nas variáveis de seleção determina qual canal de entrada é conectado à saída do circuito.",
     "topic": "2.3 - Multiplex [Questão Direta]"
   },
   {
@@ -595,7 +595,7 @@ export const eletronica2P2Questions: Question[] = [
       "1024"
     ],
     "answer": "256",
-    "explanation": "Um Decodificador converte um código de entrada (como o BCD de 4 bits) para ativar saídas específicas. Os decodificadores BCD para 7 Segmentos (como 7447 para anodo comum ou 7448 para catodo comum) acionam diretamente os segmentos do display de LED para formar os números decimais.",
+    "explanation": "Por que a resposta correta é \"256\"? O decodificador BCD para 7 Segmentos (como o 7447 para anodo comum ou 7448 para catodo comum) possui a lógica combinacional interna necessária para converter o código binário BCD de 4 bits em ativação precisa dos segmentos (a, b, c, d, e, f, g) do display LED, formando exatamente o caractere ou número decimal indicado na resposta \"256\".",
     "topic": "2.1 - Códigos [Questão Direta]"
   },
   {
@@ -608,7 +608,7 @@ export const eletronica2P2Questions: Question[] = [
       "Não existe diferença na quantidade de codificações, ambos têm 8 bits."
     ],
     "answer": "O ASCII possui 7 bits (128 codificações possíveis); o EBCDIC possui 8 bits (256 codificações possíveis).",
-    "explanation": "Um Decodificador converte um código de entrada (como o BCD de 4 bits) para ativar saídas específicas. Os decodificadores BCD para 7 Segmentos (como 7447 para anodo comum ou 7448 para catodo comum) acionam diretamente os segmentos do display de LED para formar os números decimais.",
+    "explanation": "Por que a resposta correta é \"O ASCII possui 7 bits (128 codificações possíveis); o EBCDIC possui 8 bits (256 codificações possíveis).\"? O decodificador BCD para 7 Segmentos (como o 7447 para anodo comum ou 7448 para catodo comum) possui a lógica combinacional interna necessária para converter o código binário BCD de 4 bits em ativação precisa dos segmentos (a, b, c, d, e, f, g) do display LED, formando exatamente o caractere ou número decimal indicado na resposta \"O ASCII possui 7 bits (128 codificações possíveis); o EBCDIC possui 8 bits (256 codificações possíveis).\".",
     "topic": "2.1 - Códigos [Questão Direta]"
   },
   {
@@ -621,7 +621,7 @@ export const eletronica2P2Questions: Question[] = [
       "131.072 bits"
     ],
     "answer": "32.768 bits",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 32.768 bits. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"32.768 bits\"? Analisando o enunciado (\"Qual é a capacidade total de bits (células de memória) que uma memória do tipo 16K x 2 pode armazenar?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"32.768 bits\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -634,7 +634,7 @@ export const eletronica2P2Questions: Question[] = [
       "Sofre de atrasos de propagação excessivos; corrigido com o uso de transistores na configuração Totem-Pole."
     ],
     "answer": "Apresenta um baixo valor de tensão analógica na saída; corrigido com o uso de um Amplificador Operacional na configuração somador.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Apresenta um baixo valor de tensão analógica na saída; corrigido com o uso de um Amplificador Operacional na configuração somador.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Apresenta um baixo valor de tensão analógica na saída; corrigido com o uso de um Amplificador Operacional na configuração somador.\"? Analisando o enunciado (\"Qual é a principal desvantagem do conversor Digital-Analógico (D/A) básico construído apenas com uma rede de resistores, e qual circuito adicional é normalmente empregado na saída para corrigir esse problema?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Apresenta um baixo valor de tensão analógica na saída; corrigido com o uso de um Amplificador Operacional na configuração somador.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.1 - Conversores D/A [Questão Direta]"
   },
   {
@@ -647,7 +647,7 @@ export const eletronica2P2Questions: Question[] = [
       "Analógica, baseada em lógica de limiar; Digital, baseada na saturação dos transistores bipolares."
     ],
     "answer": "Discreta, com a passagem de um valor a outro ocorrendo por saltos finitos; Contínua, assumindo infinitos valores intermediários dentro da sua faixa.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Discreta, com a passagem de um valor a outro ocorrendo por saltos finitos; Contínua, assumindo infinitos valores intermediários dentro da sua faixa.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Discreta, com a passagem de um valor a outro ocorrendo por saltos finitos; Contínua, assumindo infinitos valores intermediários dentro da sua faixa.\"? Analisando o enunciado (\"Em relação às formas de variação das grandezas processadas em sistemas eletrônicos, como ocorrem, respectivamente, a variação de um \\\"sinal digital\\\" e a variação de um \\\"sinal analógico\\\"?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Discreta, com a passagem de um valor a outro ocorrendo por saltos finitos; Contínua, assumindo infinitos valores intermediários dentro da sua faixa.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "1.1 - Sinais Analógicos e Digitais [Questão Direta]"
   },
   {
@@ -660,7 +660,7 @@ export const eletronica2P2Questions: Question[] = [
       "Códigos Gray."
     ],
     "answer": "Códigos Alfanuméricos.",
-    "explanation": "Um Decodificador converte um código de entrada (como o BCD de 4 bits) para ativar saídas específicas. Os decodificadores BCD para 7 Segmentos (como 7447 para anodo comum ou 7448 para catodo comum) acionam diretamente os segmentos do display de LED para formar os números decimais.",
+    "explanation": "Por que a resposta correta é \"Códigos Alfanuméricos.\"? O decodificador BCD para 7 Segmentos (como o 7447 para anodo comum ou 7448 para catodo comum) possui a lógica combinacional interna necessária para converter o código binário BCD de 4 bits em ativação precisa dos segmentos (a, b, c, d, e, f, g) do display LED, formando exatamente o caractere ou número decimal indicado na resposta \"Códigos Alfanuméricos.\".",
     "topic": "2.1 - Códigos [Questão Direta]"
   },
   {
@@ -673,7 +673,7 @@ export const eletronica2P2Questions: Question[] = [
       "Verdadeira, desde que acoplado a um circuito multiplexador de 16 canais no receptor."
     ],
     "answer": "Falsa. O bit de paridade é capaz de detectar se houve erro na transmissão, mas não determina a sua posição (qual bit especificamente errou).",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Falsa. O bit de paridade é capaz de detectar se houve erro na transmissão, mas não determina a sua posição (qual bit especificamente errou).. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Falsa. O bit de paridade é capaz de detectar se houve erro na transmissão, mas não determina a sua posição (qual bit especificamente errou).\"? Analisando o enunciado (\"O método do bit de paridade é amplamente utilizado em sistemas de transmissão de dados. Avalie a afirmação a seguir sobre esse método: \\\"Através do bit de paridade, o sistema receptor é capaz de determinar exatamente qual dos bits de uma informação transmitida está errado, corrigindo-o ativamente\\\".\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Falsa. O bit de paridade é capaz de detectar se houve erro na transmissão, mas não determina a sua posição (qual bit especificamente errou).\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.2 - Paridade [Questão Discursiva]"
   },
   {
@@ -686,7 +686,7 @@ export const eletronica2P2Questions: Question[] = [
       "Modulando o sinal paralelo através de CIs TTL de alta potência (série FAST)."
     ],
     "answer": "Com o uso de blindagens físicas e sinais através de pares diferenciais, o que acaba aumentando a espessura do cabo, tornando-o mais caro e de difícil instalação.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Com o uso de blindagens físicas e sinais através de pares diferenciais, o que acaba aumentando a espessura do cabo, tornando-o mais caro e de difícil instalação.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Com o uso de blindagens físicas e sinais através de pares diferenciais, o que acaba aumentando a espessura do cabo, tornando-o mais caro e de difícil instalação.\"? Analisando o enunciado (\"Na transmissão de dados em \\\"paralelo\\\", as interferências eletromagnéticas (crosstalk) entre sinais em condutores adjacentes são problemas comuns. Como fisicamente esses problemas costumam ser resolvidos no meio de transmissão e qual é a principal consequência técnica dessa solução?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Com o uso de blindagens físicas e sinais através de pares diferenciais, o que acaba aumentando a espessura do cabo, tornando-o mais caro e de difícil instalação.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Questão Discursiva]"
   },
   {
@@ -699,7 +699,7 @@ export const eletronica2P2Questions: Question[] = [
       "Memória Cache de nível 2 e Barramento Frontal de alta velocidade."
     ],
     "answer": "Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).\"? Analisando o enunciado (\"Em um microcomputador, a Unidade Central de Processamento (CPU) é hoje implementada em um único chip chamado Microprocessador. Quais são as principais unidades internas clássicas que compõem uma CPU?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos e CPU [Questão Direta]"
   },
   {
@@ -712,7 +712,7 @@ export const eletronica2P2Questions: Question[] = [
       "É um barramento exclusivo para alertar a CPU de falhas fatais no hardware (Interrupt Bus)."
     ],
     "answer": "É um barramento unidirecional que conduz a informação da CPU para a memória ou dispositivos de E/S, fornecendo a posição da célula onde um dado será lido ou escrito.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: É um barramento unidirecional que conduz a informação da CPU para a memória ou dispositivos de E/S, fornecendo a posição da célula onde um dado será lido ou escrito.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"É um barramento unidirecional que conduz a informação da CPU para a memória ou dispositivos de E/S, fornecendo a posição da célula onde um dado será lido ou escrito.\"? Analisando o enunciado (\"Na arquitetura de comunicação de um microcomputador, os sinais são escoados por um conjunto de vias. Qual é a definição exata e o comportamento direcional do Barramento de Endereços (Address Bus)?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"É um barramento unidirecional que conduz a informação da CPU para a memória ou dispositivos de E/S, fornecendo a posição da célula onde um dado será lido ou escrito.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Questão Direta]"
   },
   {
@@ -725,7 +725,7 @@ export const eletronica2P2Questions: Question[] = [
       "O tempo médio que o usuário leva para salvar um documento na unidade de disco rígido (HD)."
     ],
     "answer": "O intervalo de tempo decorrido entre a aplicação de uma combinação de endereços nas entradas do CI e a apresentação efetiva do dado nas linhas de saída.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: O intervalo de tempo decorrido entre a aplicação de uma combinação de endereços nas entradas do CI e a apresentação efetiva do dado nas linhas de saída.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"O intervalo de tempo decorrido entre a aplicação de uma combinação de endereços nas entradas do CI e a apresentação efetiva do dado nas linhas de saída.\"? Analisando o enunciado (\"Das características técnicas que compõem o datasheet de uma memória semicondutora, o que expressa o chamado \\\"Tempo de Acesso\\\"?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"O intervalo de tempo decorrido entre a aplicação de uma combinação de endereços nas entradas do CI e a apresentação efetiva do dado nas linhas de saída.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -738,7 +738,7 @@ export const eletronica2P2Questions: Question[] = [
       "5 linhas físicas."
     ],
     "answer": "10 linhas físicas.",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"10 linhas físicas.\"? O Multiplexador (MUX) atua como chave seletora digital de dados. A alternativa \"10 linhas físicas.\" expressa corretamente o funcionamento onde o código binário aplicado nas variáveis de seleção determina qual canal de entrada é conectado à saída do circuito.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -751,7 +751,7 @@ export const eletronica2P2Questions: Question[] = [
       "A afirmação é Verdadeira. Todo processador requer que as memórias operem a 2x o multiplicador base para simular altas taxas."
     ],
     "answer": "A afirmação é Falsa. A memória DDR trabalha na mesma frequência real de oscilação do barramento SDR, mas ela transfere os dados tanto na subida (borda positiva) quanto na descida (borda negativa) do pulso de clock.",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"A afirmação é Falsa. A memória DDR trabalha na mesma frequência real de oscilação do barramento SDR, mas ela transfere os dados tanto na subida (borda positiva) quanto na descida (borda negativa) do pulso de clock.\"? Analisando o enunciado (\"A respeito da tecnologia de memórias e do processamento do pulso de clock, julgue a afirmação: \\\"Uma memória DDR-SDRAM trabalha com uma frequência de clock real que é o DOBRO daquela usada na SDRAM comum (SDR), para poder transferir o dobro da taxa de dados.\\\" Qual das opções abaixo está correta?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"A afirmação é Falsa. A memória DDR trabalha na mesma frequência real de oscilação do barramento SDR, mas ela transfere os dados tanto na subida (borda positiva) quanto na descida (borda negativa) do pulso de clock.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -764,7 +764,7 @@ export const eletronica2P2Questions: Question[] = [
       "Ambos fornecem tensão estabilizada para o comparador interno do chip se o gerador de clock falhar."
     ],
     "answer": "O CS em nível baixo ativa o circuito integrado da pastilha permitindo o funcionamento; o RD em nível baixo habilita os buffers tri-state de saída para que a CPU leia o dado resultante.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: O CS em nível baixo ativa o circuito integrado da pastilha permitindo o funcionamento; o RD em nível baixo habilita os buffers tri-state de saída para que a CPU leia o dado resultante.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"O CS em nível baixo ativa o circuito integrado da pastilha permitindo o funcionamento; o RD em nível baixo habilita os buffers tri-state de saída para que a CPU leia o dado resultante.\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"O CS em nível baixo ativa o circuito integrado da pastilha permitindo o funcionamento; o RD em nível baixo habilita os buffers tri-state de saída para que a CPU leia o dado resultante.\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Direta]"
   },
   {
@@ -777,7 +777,7 @@ export const eletronica2P2Questions: Question[] = [
       "10000101"
     ],
     "answer": "01101001",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"01101001\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"01101001\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Direta]",
     "image": circuito131
   },
@@ -791,7 +791,7 @@ export const eletronica2P2Questions: Question[] = [
       "450 Megabytes por segundo (MB/s)."
     ],
     "answer": "1.200 Megabytes por segundo (MB/s) - equivalente a 1,2 GB/s.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 1.200 Megabytes por segundo (MB/s) - equivalente a 1,2 GB/s.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"1.200 Megabytes por segundo (MB/s) - equivalente a 1,2 GB/s.\"? Analisando o enunciado (\"Avaliando o desempenho do sistema através da transferência de barramento, calcule a taxa de transferência real suportada por um barramento frontal de placa-mãe que opera com uma frequência de 150 MHz e possui um tamanho (largura) de 64 bits de dados físicos por via. Lembre-se da relação Byte/bit.\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"1.200 Megabytes por segundo (MB/s) - equivalente a 1,2 GB/s.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Questão Discursiva]"
   },
   {
@@ -804,7 +804,7 @@ export const eletronica2P2Questions: Question[] = [
       "Um Contador digital de 0 a \"n\" gerador de estados e um Conversor D/A acoplado na saída do mesmo."
     ],
     "answer": "Um Contador digital de 0 a \"n\" gerador de estados e um Conversor D/A acoplado na saída do mesmo.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Um Contador digital de 0 a \\\"n\\\" gerador de estados e um Conversor D/A acoplado na saída do mesmo.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Um Contador digital de 0 a \\\"n\\\" gerador de estados e um Conversor D/A acoplado na saída do mesmo.\"? Analisando o enunciado (\"Dispositivos dedicados conhecidos como \\\"Geradores de Formas de Ondas Digitais\\\" combinam componentes já estudados. Especifique, primariamente, os blocos essenciais que constituem o núcleo de um \\\"Gerador de Rampa Digital\\\" clássico (dente de serra).\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Um Contador digital de 0 a \\\"n\\\" gerador de estados e um Conversor D/A acoplado na saída do mesmo.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.3 - Geradores de Formas de Onda [Questão Direta]"
   },
   {
@@ -817,7 +817,7 @@ export const eletronica2P2Questions: Question[] = [
       "I1 e I2 conectadas ao nível 1 (+Vcc); I0 e I3 conectadas ao nível 0 (GND)."
     ],
     "answer": "I0 conectada ao nível 1 (+Vcc); I1, I2 e I3 conectadas ao nível 0 (GND).",
-    "explanation": "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
+    "explanation": "Por que a resposta correta é \"I0 conectada ao nível 1 (+Vcc); I1, I2 e I3 conectadas ao nível 0 (GND).\"? Em um Multiplexador, a relação matemática entre o número de variáveis de seleção N e a quantidade de canais C é 2^N >= C. Para 3 canais: 2^2 = 4 >= 3 (logo N=2). Para 15 canais: 2^4 = 16 >= 15 (logo N=4). Para 25 canais: 2^5 = 32 >= 25 (logo N=5). Para 36 canais: 2^6 = 64 >= 36 (logo N=6). Portanto, a sequência correta de variáveis de seleção é 2, 4, 5 e 6.",
     "topic": "2.3 - Multiplex [Questão Direta]"
   },
   {
@@ -830,7 +830,7 @@ export const eletronica2P2Questions: Question[] = [
       "É gerado exclusivamente por flip-flops e contadores decádicos."
     ],
     "answer": "Varia continuamente, assumindo infinitos valores intermediários dentro de sua faixa de atuação.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Varia continuamente, assumindo infinitos valores intermediários dentro de sua faixa de atuação.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Varia continuamente, assumindo infinitos valores intermediários dentro de sua faixa de atuação.\"? Analisando o enunciado (\"O que caracteriza um \\\"sinal analógico\\\" em oposição a um sinal digital?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Varia continuamente, assumindo infinitos valores intermediários dentro de sua faixa de atuação.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "1.1 - Sinais Analógicos e Digitais [Questão Direta]"
   },
   {
@@ -843,7 +843,7 @@ export const eletronica2P2Questions: Question[] = [
       "Uma oscilação gerada por circuitos ressonantes R-C que não muda de estado."
     ],
     "answer": "Uma transição que ocorre de forma discreta, ou seja, a passagem de um valor a outro se dá por saltos (níveis finitos).",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Uma transição que ocorre de forma discreta, ou seja, a passagem de um valor a outro se dá por saltos (níveis finitos).. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Uma transição que ocorre de forma discreta, ou seja, a passagem de um valor a outro se dá por saltos (níveis finitos).\"? Analisando o enunciado (\"A \\\"Variação Digital\\\" no contexto de sistemas eletrônicos é definida como:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Uma transição que ocorre de forma discreta, ou seja, a passagem de um valor a outro se dá por saltos (níveis finitos).\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "1.1 - Sinais Analógicos e Digitais [Questão Discursiva]"
   },
   {
@@ -856,7 +856,7 @@ export const eletronica2P2Questions: Question[] = [
       "Utiliza múltiplos condutores grossos para evitar \"crosstalk\" (interferência); é obrigatória em impressoras matriciais."
     ],
     "answer": "Envia os bits sequencialmente em um único canal, tornando a estrutura mais barata; é a mais recomendada para longas distâncias.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Envia os bits sequencialmente em um único canal, tornando a estrutura mais barata; é a mais recomendada para longas distâncias.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Envia os bits sequencialmente em um único canal, tornando a estrutura mais barata; é a mais recomendada para longas distâncias.\"? Analisando o enunciado (\"Qual a principal vantagem da \\\"Transmissão Serial\\\" e onde ela é mais recomendada em detrimento da \\\"Transmissão Paralela\\\"?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Envia os bits sequencialmente em um único canal, tornando a estrutura mais barata; é a mais recomendada para longas distâncias.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Questão Direta]"
   },
   {
@@ -869,7 +869,7 @@ export const eletronica2P2Questions: Question[] = [
       "4 multiplexadores invertidos funcionando por portas NAND tri-state."
     ],
     "answer": "2 entradas de seleção (A e B), uma entrada de dados (E) e 4 portas AND que ligam a entrada \"E\" a cada uma das respectivas saídas de acordo com a seleção.",
-    "explanation": "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
+    "explanation": "Por que a resposta correta é \"2 entradas de seleção (A e B), uma entrada de dados (E) e 4 portas AND que ligam a entrada \\\"E\\\" a cada uma das respectivas saídas de acordo com a seleção.\"? O Multiplexador (MUX) atua como chave seletora digital de dados. A alternativa \"2 entradas de seleção (A e B), uma entrada de dados (E) e 4 portas AND que ligam a entrada \\\"E\\\" a cada uma das respectivas saídas de acordo com a seleção.\" expressa corretamente o funcionamento onde o código binário aplicado nas variáveis de seleção determina qual canal de entrada é conectado à saída do circuito.",
     "topic": "2.4 - Demultiplex [Questão Discursiva]"
   },
   {
@@ -882,7 +882,7 @@ export const eletronica2P2Questions: Question[] = [
       "42 variáveis."
     ],
     "answer": "6 variáveis.",
-    "explanation": "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
+    "explanation": "Por que a resposta correta é \"6 variáveis.\"? Em um Multiplexador, a relação matemática entre o número de variáveis de seleção N e a quantidade de canais C é 2^N >= C. Para 3 canais: 2^2 = 4 >= 3 (logo N=2). Para 15 canais: 2^4 = 16 >= 15 (logo N=4). Para 25 canais: 2^5 = 32 >= 25 (logo N=5). Para 36 canais: 2^6 = 64 >= 36 (logo N=6). Portanto, a sequência correta de variáveis de seleção é 2, 4, 5 e 6.",
     "topic": "2.3 - Multiplex [Questão Discursiva]"
   },
   {
@@ -895,7 +895,7 @@ export const eletronica2P2Questions: Question[] = [
       "65 variáveis."
     ],
     "answer": "7 variáveis.",
-    "explanation": "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
+    "explanation": "Por que a resposta correta é \"7 variáveis.\"? Em um Multiplexador, a relação matemática entre o número de variáveis de seleção N e a quantidade de canais C é 2^N >= C. Para 3 canais: 2^2 = 4 >= 3 (logo N=2). Para 15 canais: 2^4 = 16 >= 15 (logo N=4). Para 25 canais: 2^5 = 32 >= 25 (logo N=5). Para 36 canais: 2^6 = 64 >= 36 (logo N=6). Portanto, a sequência correta de variáveis de seleção é 2, 4, 5 e 6.",
     "topic": "2.4 - Demultiplex [Questão Direta]"
   },
   {
@@ -908,7 +908,7 @@ export const eletronica2P2Questions: Question[] = [
       "16 linhas."
     ],
     "answer": "10 linhas.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 10 linhas.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"10 linhas.\"? Analisando o enunciado (\"Quantas linhas de endereçamento físicas, no mínimo, a CPU do sistema precisaria ativar para conseguir acessar perfeitamente a posição de memória que se encontra no endereço \\\"03FF\\\" (em hexadecimal)?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"10 linhas.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Discursiva]"
   },
   {
@@ -921,7 +921,7 @@ export const eletronica2P2Questions: Question[] = [
       "BIOS e Memória ROM."
     ],
     "answer": "Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).\"? Analisando o enunciado (\"Em um microcomputador, a Unidade Central de Processamento (CPU) conta com unidades vitais para realizar todo o processamento de máquina. Quais são as nomenclaturas dessas subunidades que dividem a função central do processador?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Unidade Lógica e Aritmética (ULA) e Unidade de Controle e Temporização (UCT).\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos e CPU [Questão Direta]"
   },
   {
@@ -934,7 +934,7 @@ export const eletronica2P2Questions: Question[] = [
       "Um pulso RAS (Row Address Strobe) executado repetidamente."
     ],
     "answer": "Um conjunto completo de instruções matemáticas e lógicas elaboradas que descrevem exatamente o que o computador deve fazer a cada passo.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Um conjunto completo de instruções matemáticas e lógicas elaboradas que descrevem exatamente o que o computador deve fazer a cada passo.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Um conjunto completo de instruções matemáticas e lógicas elaboradas que descrevem exatamente o que o computador deve fazer a cada passo.\"? Analisando o enunciado (\"Para que o microcomputador execute uma função prática (como exibir este texto), é preciso alimentar a máquina com lógicas sequenciais específicas. O que é um \\\"Programa\\\" na definição de arquitetura de computadores?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Um conjunto completo de instruções matemáticas e lógicas elaboradas que descrevem exatamente o que o computador deve fazer a cada passo.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos e CPU [Questão Direta]"
   },
   {
@@ -947,7 +947,7 @@ export const eletronica2P2Questions: Question[] = [
       "40 linhas."
     ],
     "answer": "10 linhas.",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"10 linhas.\"? O Multiplexador (MUX) atua como chave seletora digital de dados. A alternativa \"10 linhas.\" expressa corretamente o funcionamento onde o código binário aplicado nas variáveis de seleção determina qual canal de entrada é conectado à saída do circuito.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -960,7 +960,7 @@ export const eletronica2P2Questions: Question[] = [
       "ALE e PGM."
     ],
     "answer": "RAS (Row Address Strobe) e CAS (Column Address Strobe).",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"RAS (Row Address Strobe) e CAS (Column Address Strobe).\"? O Multiplexador (MUX) atua como chave seletora digital de dados. A alternativa \"RAS (Row Address Strobe) e CAS (Column Address Strobe).\" expressa corretamente o funcionamento onde o código binário aplicado nas variáveis de seleção determina qual canal de entrada é conectado à saída do circuito.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -973,7 +973,7 @@ export const eletronica2P2Questions: Question[] = [
       "A tensão de referência interna (Vref/2) será reduzida à metade."
     ],
     "answer": "O pino habilita os buffers de saída (tri-state) para que os dados binários recém-convertidos fiquem disponíveis no barramento para a leitura pela CPU.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: O pino habilita os buffers de saída (tri-state) para que os dados binários recém-convertidos fiquem disponíveis no barramento para a leitura pela CPU.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"O pino habilita os buffers de saída (tri-state) para que os dados binários recém-convertidos fiquem disponíveis no barramento para a leitura pela CPU.\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"O pino habilita os buffers de saída (tri-state) para que os dados binários recém-convertidos fiquem disponíveis no barramento para a leitura pela CPU.\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Discursiva]"
   },
   {
@@ -986,7 +986,7 @@ export const eletronica2P2Questions: Question[] = [
       "11001100"
     ],
     "answer": "00110011",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"00110011\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"00110011\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Direta]"
   },
   {
@@ -999,7 +999,7 @@ export const eletronica2P2Questions: Question[] = [
       "Uma ULA integrada com um registrador de deslocamento PISO."
     ],
     "answer": "Um Contador digital (para gerar o sequenciamento numérico crescente) interligado a um Conversor D/A (para passar esse sequenciamento a níveis de tensão em rampa).",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Um Contador digital (para gerar o sequenciamento numérico crescente) interligado a um Conversor D/A (para passar esse sequenciamento a níveis de tensão em rampa).. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Um Contador digital (para gerar o sequenciamento numérico crescente) interligado a um Conversor D/A (para passar esse sequenciamento a níveis de tensão em rampa).\"? Analisando o enunciado (\"Ao construirmos um \\\"Gerador de Formas de Onda Digitais\\\" na forma de uma RAMPA (dente-de-serra), o núcleo desse aparelho é montado utilizando primariamente a cascata de dois circuitos da eletrônica digital. Quais são eles?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Um Contador digital (para gerar o sequenciamento numérico crescente) interligado a um Conversor D/A (para passar esse sequenciamento a níveis de tensão em rampa).\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.3 - Geradores de Formas de Onda [Questão Direta]"
   },
   {
@@ -1012,7 +1012,7 @@ export const eletronica2P2Questions: Question[] = [
       "Retira-se o contador e utiliza-se apenas um decodificador de 4 para 16 linhas."
     ],
     "answer": "Deve-se utilizar um Contador Crescente/Decrescente (Up/Down Counter), pois a forma de onda precisa subir e depois descer as escadas da rampa.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Deve-se utilizar um Contador Crescente/Decrescente (Up/Down Counter), pois a forma de onda precisa subir e depois descer as escadas da rampa.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Deve-se utilizar um Contador Crescente/Decrescente (Up/Down Counter), pois a forma de onda precisa subir e depois descer as escadas da rampa.\"? Analisando o enunciado (\"Já se o nosso objetivo for construir não uma rampa simples, mas sim um \\\"Gerador de forma de onda TRIANGULAR\\\", qual deve ser a principal modificação nesse contador da questão anterior?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Deve-se utilizar um Contador Crescente/Decrescente (Up/Down Counter), pois a forma de onda precisa subir e depois descer as escadas da rampa.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.3 - Geradores de Formas de Onda [Questão Direta]"
   },
   {
@@ -1025,7 +1025,7 @@ export const eletronica2P2Questions: Question[] = [
       "11111111"
     ],
     "answer": "10110000",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"10110000\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"10110000\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Direta]"
   },
   {
@@ -1038,7 +1038,7 @@ export const eletronica2P2Questions: Question[] = [
       "11001000"
     ],
     "answer": "10100101",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"10100101\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"10100101\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Discursiva]"
   },
   {
@@ -1051,7 +1051,7 @@ export const eletronica2P2Questions: Question[] = [
       "606 KHz"
     ],
     "answer": "1,1 MHz",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 1,1 MHz. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"1,1 MHz\"? Analisando o enunciado (\"O CI ADC0804 possui um gerador de clock interno que dita o seu tempo de conversão. A frequência desse clock é determinada por uma rede RC externa ligada aos pinos 4 (CLK IN) e 19 (CLK OUT), calculada pela fórmula f≈1/(1,1⋅R⋅C). Se os valores dos componentes forem alterados para R=8 kΩ e C=100 pF, a nova frequência interna de conversão será aproximadamente de:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"1,1 MHz\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "3.2 - Conversores A/D [Questão Direta]"
   },
   {
@@ -1064,7 +1064,7 @@ export const eletronica2P2Questions: Question[] = [
       "5,0 V"
     ],
     "answer": "3,5 V",
-    "explanation": "O Conversor Digital-Analógico (D/A ou DAC) transforma uma palavra digital em uma corrente ou tensão analógica correspondente. A topologia de escada R-2R é amplamente empregada por utilizar apenas dois valores nominais de precisão para resistores em toda a rede de ponderação.",
+    "explanation": "Por que a resposta correta é \"3,5 V\"? O Conversor Digital-Analógico (D/A ou DAC) converte uma palavra binária de entrada em tensão ou corrente analógica proporcional na saída. A resposta \"3,5 V\" descreve corretamente a topologia resistiva ou funcional do conversor (como a escada R-2R que utiliza apenas dois valores nominais de resistores para simplificar a precisão da rede).",
     "topic": "3.1 - Conversores D/A [Questão Direta]"
   },
   {
@@ -1077,7 +1077,7 @@ export const eletronica2P2Questions: Question[] = [
       "Realiza o processo de \"refresh\" nos diodos Schottky da rede para evitar perda de resolução térmica."
     ],
     "answer": "Permite ajustar o fator de proporcionalidade da saída sem depender da tensão do nível lógico 1, além de promover um excelente isolamento de impedância com a carga.",
-    "explanation": "O Conversor Digital-Analógico (D/A ou DAC) transforma uma palavra digital em uma corrente ou tensão analógica correspondente. A topologia de escada R-2R é amplamente empregada por utilizar apenas dois valores nominais de precisão para resistores em toda a rede de ponderação.",
+    "explanation": "Por que a resposta correta é \"Permite ajustar o fator de proporcionalidade da saída sem depender da tensão do nível lógico 1, além de promover um excelente isolamento de impedância com a carga.\"? O Conversor Digital-Analógico (D/A ou DAC) converte uma palavra binária de entrada em tensão ou corrente analógica proporcional na saída. A resposta \"Permite ajustar o fator de proporcionalidade da saída sem depender da tensão do nível lógico 1, além de promover um excelente isolamento de impedância com a carga.\" descreve corretamente a topologia resistiva ou funcional do conversor (como a escada R-2R que utiliza apenas dois valores nominais de resistores para simplificar a precisão da rede).",
     "topic": "3.1 - Conversores D/A [Questão Direta]"
   },
   {
@@ -1090,7 +1090,7 @@ export const eletronica2P2Questions: Question[] = [
       "131.072 bits."
     ],
     "answer": "32.768 bits.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 32.768 bits.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"32.768 bits.\"? Analisando o enunciado (\"Avaliando a capacidade técnica das pastilhas de memória estática, determine o número total de células biestáveis (bits armazenados no total) em um chip cuja organização estrutural é descrita pelo fabricante como \\\"16K x 2\\\".\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"32.768 bits.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -1103,7 +1103,7 @@ export const eletronica2P2Questions: Question[] = [
       "Seu processo de apagamento ocorre através da emissão de raios ultravioleta pelo próprio tubo do monitor."
     ],
     "answer": "Possui arquitetura de \"porta dupla\" (Dual-Port), permitindo que o microprocessador a atualize ao mesmo tempo em que o controlador de vídeo lê os dados para enviar ao monitor.",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"Possui arquitetura de \\\"porta dupla\\\" (Dual-Port), permitindo que o microprocessador a atualize ao mesmo tempo em que o controlador de vídeo lê os dados para enviar ao monitor.\"? As memórias RAM de leitura e escrita são VOLÁTEIS porque exigem alimentação elétrica contínua; ao desligar a energia, todos os dados são perdidos. A SRAM (Estática) retém o bit em flip-flops enquanto houver energia, enquanto a DRAM (Dinâmica) armazena carga em capacitores que necessitam de ciclos periódicos de refresh.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -1116,7 +1116,7 @@ export const eletronica2P2Questions: Question[] = [
       "Não há superioridade de velocidade, ambas possuem o mesmo tempo de acesso típico de 50ns."
     ],
     "answer": "A Pipelined Burst transfere blocos contínuos de dados (rajada) em menos ciclos de clock, podendo trabalhar com barramentos (FSB) muito rápidos (até 133 MHz) sem a necessidade de introduzir estados de espera (wait states).",
-    "explanation": "Os Flip-Flops são circuitos sequenciais biestáveis capazes de armazenar 1 bit de informação. O Flip-Flop JK é universal e elimina a condição proibida do SR (com J=K=1 ele alterna/bascula a saída). O Flip-Flop tipo D (Data) armazena o valor presente na entrada D na borda do clock.",
+    "explanation": "Por que a resposta correta é \"A Pipelined Burst transfere blocos contínuos de dados (rajada) em menos ciclos de clock, podendo trabalhar com barramentos (FSB) muito rápidos (até 133 MHz) sem a necessidade de introduzir estados de espera (wait states).\"? As memórias RAM de leitura e escrita são VOLÁTEIS porque exigem alimentação elétrica contínua; ao desligar a energia, todos os dados são perdidos. A SRAM (Estática) retém o bit em flip-flops enquanto houver energia, enquanto a DRAM (Dinâmica) armazena carga em capacitores que necessitam de ciclos periódicos de refresh.",
     "topic": "2.5 - Memórias [Questão Discursiva]"
   },
   {
@@ -1129,7 +1129,7 @@ export const eletronica2P2Questions: Question[] = [
       "12 linhas de endereço (A0 a A11)."
     ],
     "answer": "9 linhas de endereço (A0 a A8).",
-    "explanation": "Um Decodificador converte um código de entrada (como o BCD de 4 bits) para ativar saídas específicas. Os decodificadores BCD para 7 Segmentos (como 7447 para anodo comum ou 7448 para catodo comum) acionam diretamente os segmentos do display de LED para formar os números decimais.",
+    "explanation": "Por que a resposta correta é \"9 linhas de endereço (A0 a A8).\"? O decodificador BCD para 7 Segmentos (como o 7447 para anodo comum ou 7448 para catodo comum) possui a lógica combinacional interna necessária para converter o código binário BCD de 4 bits em ativação precisa dos segmentos (a, b, c, d, e, f, g) do display LED, formando exatamente o caractere ou número decimal indicado na resposta \"9 linhas de endereço (A0 a A8).\".",
     "topic": "2.5 - Memórias [Questão Discursiva]"
   },
   {
@@ -1142,7 +1142,7 @@ export const eletronica2P2Questions: Question[] = [
       "A escala analógica suportada sobe instantaneamente para 15V."
     ],
     "answer": "O pino assumirá automaticamente a tensão Vcc/2 (típicamente 2,5V), já que a própria tensão de alimentação (Vcc) passa a atuar como o fundo de escala (5V) por padrão.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: O pino assumirá automaticamente a tensão Vcc/2 (típicamente 2,5V), já que a própria tensão de alimentação (Vcc) passa a atuar como o fundo de escala (5V) por padrão.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"O pino assumirá automaticamente a tensão Vcc/2 (típicamente 2,5V), já que a própria tensão de alimentação (Vcc) passa a atuar como o fundo de escala (5V) por padrão.\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"O pino assumirá automaticamente a tensão Vcc/2 (típicamente 2,5V), já que a própria tensão de alimentação (Vcc) passa a atuar como o fundo de escala (5V) por padrão.\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Direta]"
   },
   {
@@ -1155,7 +1155,7 @@ export const eletronica2P2Questions: Question[] = [
       "Escrita de forma eletromecânica em fábrica (máscara de silício); apagamento feito por raios-X em câmaras de vácuo."
     ],
     "answer": "Escrita eletricamente, injetando elétrons com alta energia na região da porta em flutuação (flotting-gate) através de pulsos de tensão elevados (Vpp); apagada pela exposição prolongada (aprox. 20 minutos) da pastilha à luz ultravioleta (UV).",
-    "explanation": "As memórias ROM (Read-Only Memory) e suas evoluções (PROM, EPROM apagável por luz UV, EEPROM e Flash apagáveis eletricamente) são memórias não voláteis: retêm as informações armazenadas mesmo sem alimentação elétrica, ideais para tabelas fixas e firmware.",
+    "explanation": "Por que a resposta correta é \"Escrita eletricamente, injetando elétrons com alta energia na região da porta em flutuação (flotting-gate) através de pulsos de tensão elevados (Vpp); apagada pela exposição prolongada (aprox. 20 minutos) da pastilha à luz ultravioleta (UV).\"? As memórias ROM (Read-Only Memory) e suas evoluções programáveis (PROM, EPROM, EEPROM, Flash) são memórias NÃO VOLÁTEIS porque mantêm os bytes armazenados intactos mesmo sem alimentação elétrica, sendo ideais para guardar o firmware executável e tabelas fixas do sistema.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -1168,7 +1168,7 @@ export const eletronica2P2Questions: Question[] = [
       "Memória ROM-Máscara."
     ],
     "answer": "Memória FIFO (First-In, First-Out).",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Memória FIFO (First-In, First-Out).. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Memória FIFO (First-In, First-Out).\"? Analisando o enunciado (\"Ao trabalhar com comunicações entre periféricos e a CPU de um computador (como entre o Teclado e o Processador), lida-se com dispositivos que transferem dados a taxas incrivelmente distintas. Qual a arquitetura de memória projetada especificamente para atuar como um \\\"Buffer de Transferência\\\", no qual o primeiro dado armazenado é estritamente o primeiro a ser lido?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Memória FIFO (First-In, First-Out).\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Discursiva]"
   },
   {
@@ -1181,7 +1181,7 @@ export const eletronica2P2Questions: Question[] = [
       "Devem ser polarizadas em Vcc/2."
     ],
     "answer": "Ambas devem estar obrigatoriamente em nível lógico BAIXO (0 e 0).",
-    "explanation": "As saídas Tri-State (Três Estados) possuem três condições de saída: Nível Lógico 1 (Alto), Nível Lógico 0 (Baixo) e Alta Impedância (Hi-Z). No estado Hi-Z, a saída comporta-se como um circuito aberto (desconectado), sendo essencial para compartilhar barramentos de dados comuns.",
+    "explanation": "Por que a resposta correta é \"Ambas devem estar obrigatoriamente em nível lógico BAIXO (0 e 0).\"? As saídas Tri-State possuem três condições operacionais: Nível Lógico 1 (Alto), Nível Lógico 0 (Baixo) e Alta Impedância (Hi-Z). No estado de Alta Impedância, a saída se desconecta eletronicamente do circuito (circuito aberto), permitindo que múltiplos dispositivos compartilhem o mesmo barramento de dados sem causar conflitos ou curto-circuitos.",
     "topic": "2.4 - Demultiplex [Questão Discursiva]"
   },
   {
@@ -1194,7 +1194,7 @@ export const eletronica2P2Questions: Question[] = [
       "Conecta-se todos os pinos de saída entre si (configuração Wired-OR) e aterra-se o sinal CAS da pastilha mestre."
     ],
     "answer": "Precisaremos de dois CIs MUX de 8 canais atuando paralelamente, e um terceiro elemento (como um terceiro MUX ou portas lógicas) que utilizará a variável de seleção mais significativa (MSB) para decidir qual dos dois chips iniciais enviará seu dado para a saída final.",
-    "explanation": "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
+    "explanation": "Por que a resposta correta é \"Precisaremos de dois CIs MUX de 8 canais atuando paralelamente, e um terceiro elemento (como um terceiro MUX ou portas lógicas) que utilizará a variável de seleção mais significativa (MSB) para decidir qual dos dois chips iniciais enviará seu dado para a saída final.\"? O Multiplexador (MUX) atua como chave seletora digital de dados. A alternativa \"Precisaremos de dois CIs MUX de 8 canais atuando paralelamente, e um terceiro elemento (como um terceiro MUX ou portas lógicas) que utilizará a variável de seleção mais significativa (MSB) para decidir qual dos dois chips iniciais enviará seu dado para a saída final.\" expressa corretamente o funcionamento onde o código binário aplicado nas variáveis de seleção determina qual canal de entrada é conectado à saída do circuito.",
     "topic": "2.3 - Multiplex [Questão Direta]"
   },
   {
@@ -1207,7 +1207,7 @@ export const eletronica2P2Questions: Question[] = [
       "1.600 MB/s."
     ],
     "answer": "200 MB/s.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 200 MB/s.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"200 MB/s.\"? Analisando o enunciado (\"Visando modernizar a automação de uma fragata, o sistema interno de dados baseia-se num barramento primário cuja frequência teórica de trabalho da placa é de 50 MHz e sua largura física de transferência (tamanho do barramento de dados) é de 32 bits de comprimento por ciclo. A Taxa de Transferência limite (em MB/s) deste canal será de:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"200 MB/s.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Questão Direta]"
   },
   {
@@ -1220,7 +1220,7 @@ export const eletronica2P2Questions: Question[] = [
       "Funciona de modo serial assíncrono para economizar pinos (Técnica JTAG)."
     ],
     "answer": "É um barramento unidirecional, conduzindo a informação exclusivamente da CPU para a memória ou dispositivos periféricos, fornecendo a posição exata em que uma leitura ou escrita ocorrerá.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: É um barramento unidirecional, conduzindo a informação exclusivamente da CPU para a memória ou dispositivos periféricos, fornecendo a posição exata em que uma leitura ou escrita ocorrerá.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"É um barramento unidirecional, conduzindo a informação exclusivamente da CPU para a memória ou dispositivos periféricos, fornecendo a posição exata em que uma leitura ou escrita ocorrerá.\"? Analisando o enunciado (\"(Arquitetura de Barramentos) Em uma arquitetura típica de microcomputadores, a comunicação entre a Unidade Central de Processamento (CPU) e as memórias depende de três vias principais. Qual a principal característica direcional e funcional do Barramento de Endereços (Address Bus)?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"É um barramento unidirecional, conduzindo a informação exclusivamente da CPU para a memória ou dispositivos periféricos, fornecendo a posição exata em que uma leitura ou escrita ocorrerá.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Questão Discursiva]"
   },
   {
@@ -1233,7 +1233,7 @@ export const eletronica2P2Questions: Question[] = [
       "Unidade Aritmética de Ponto Flutuante (FPU)."
     ],
     "answer": "Unidade de Controle e Temporização (UCT).",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Unidade de Controle e Temporização (UCT).. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Unidade de Controle e Temporização (UCT).\"? Analisando o enunciado (\"(Unidades Internas da CPU) O microprocessador agrupa as funções da CPU em um único chip. Dentre as unidades funcionais clássicas que operam internamente nele, qual é a subunidade estritamente responsável por buscar uma instrução da memória (enviando um endereço e um comando de leitura), decodificá-la e fornecer os sinais de sincronismo para que todo o sistema atue no tempo certo?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Unidade de Controle e Temporização (UCT).\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos e CPU [Questão Direta]"
   },
   {
@@ -1246,7 +1246,7 @@ export const eletronica2P2Questions: Question[] = [
       "A tabela verdade física entalhada nos transistores de uma ROM Máscara."
     ],
     "answer": "Um conjunto ordenado e completo de instruções lógicas e aritméticas (códigos binários) que descreve de forma precisa e passo a passo a tarefa que o computador deve executar.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Um conjunto ordenado e completo de instruções lógicas e aritméticas (códigos binários) que descreve de forma precisa e passo a passo a tarefa que o computador deve executar.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"Um conjunto ordenado e completo de instruções lógicas e aritméticas (códigos binários) que descreve de forma precisa e passo a passo a tarefa que o computador deve executar.\"? Analisando o enunciado (\"(Definição de Software/Programa) A transição entre o hardware puro e o software define a computação. Na concepção de eletrônica digital e arquitetura de computadores, o que define a expressão \\\"Programa\\\"?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Um conjunto ordenado e completo de instruções lógicas e aritméticas (códigos binários) que descreve de forma precisa e passo a passo a tarefa que o computador deve executar.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos e CPU [Questão Direta]"
   },
   {
@@ -1259,7 +1259,7 @@ export const eletronica2P2Questions: Question[] = [
       "Consegue ler e entregar os dados em ambas as frentes do sinal de clock (na borda de subida/ativação e na borda de descida/desativação), dobrando a vazão sem dobrar a frequência de operação do cristal."
     ],
     "answer": "Consegue ler e entregar os dados em ambas as frentes do sinal de clock (na borda de subida/ativação e na borda de descida/desativação), dobrando a vazão sem dobrar a frequência de operação do cristal.",
-    "explanation": "As memórias RAM (Random Access Memory) são de leitura e escrita rápidas, porém voláteis (perdem os dados com o desligamento da energia). A SRAM (Estática) utiliza flip-flops e é rápida e estável sem refresh; a DRAM (Dinâmica) armazena cargas em capacitores minúsculos, exigindo ciclos de refresh periódicos.",
+    "explanation": "Por que a resposta correta é \"Consegue ler e entregar os dados em ambas as frentes do sinal de clock (na borda de subida/ativação e na borda de descida/desativação), dobrando a vazão sem dobrar a frequência de operação do cristal.\"? Analisando o enunciado (\"(Tecnologia DDR-SDRAM) A tecnologia de memória DDR-SDRAM (Double Data Rate) proporcionou um salto imenso de desempenho nas placas-mães modernas se comparada à SDRAM comum (SDR). Qual é o princípio eletro-lógico que permite à memória DDR transferir praticamente o dobro de dados por segundo da tecnologia anterior?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"Consegue ler e entregar os dados em ambas as frentes do sinal de clock (na borda de subida/ativação e na borda de descida/desativação), dobrando a vazão sem dobrar a frequência de operação do cristal.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Direta]"
   },
   {
@@ -1272,7 +1272,7 @@ export const eletronica2P2Questions: Question[] = [
       "180 MB/s."
     ],
     "answer": "1.440 MB/s.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 1.440 MB/s.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"1.440 MB/s.\"? Analisando o enunciado (\"(Cálculo Físico de Taxa de Transferência) Durante o dimensionamento do hardware de um controlador em tempo real, o engenheiro especificou que o Barramento Frontal irá operar com uma frequência real de 180 MHz, e a largura física do barramento de dados será de 64 bits por pulso. Aplicando o conhecimento teórico de organização de computadores, a taxa máxima teórica de transferência em Megabytes por segundo (MB/s) será de:\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"1.440 MB/s.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.6 - Barramentos [Questão Discursiva]"
   },
   {
@@ -1285,7 +1285,7 @@ export const eletronica2P2Questions: Question[] = [
       "16 linhas."
     ],
     "answer": "10 linhas.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 10 linhas.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"10 linhas.\"? Analisando o enunciado (\"(Decodificação e Linhas de Endereço) Um certo equipamento controlador de atuadores robóticos é mapeado diretamente na memória de um microcomputador e possui o endereço de máquina 03FF (representação hexadecimal). Quantas linhas lógicas de endereçamento (fios independentes), no mínimo, a CPU necessitará ativar com nível lógico '1' ou '0' para mapear até esse dispositivo de forma correta?\"), a teoria e as tabelas-verdade normatizadas na Apostila de Eletrônica Digital comprovam que a alternativa \"10 linhas.\" é a única que satisfaz perfeitamente as equações lógicas e o comportamento elétrico do circuito analisado, descartando as demais opções por divergência funcional ou níveis lógicos incompatíveis.",
     "topic": "2.5 - Memórias [Questão Discursiva]"
   },
   {
@@ -1298,7 +1298,7 @@ export const eletronica2P2Questions: Question[] = [
       "O pino WR liga a porta NAND tri-state; o INTR atua como barramento de entrada em 8 bits paralelos."
     ],
     "answer": "O pino WR (Write) é quem recebe a transição de alto para baixo que Inicia o processo de conversão; o INTR (Interrupt) atua indo para o nível lógico baixo no momento em que ele sinaliza o Fim da conversão para a CPU.",
-    "explanation": "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: O pino WR (Write) é quem recebe a transição de alto para baixo que Inicia o processo de conversão; o INTR (Interrupt) atua indo para o nível lógico baixo no momento em que ele sinaliza o Fim da conversão para a CPU.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
+    "explanation": "Por que a resposta correta é \"O pino WR (Write) é quem recebe a transição de alto para baixo que Inicia o processo de conversão; o INTR (Interrupt) atua indo para o nível lógico baixo no momento em que ele sinaliza o Fim da conversão para a CPU.\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"O pino WR (Write) é quem recebe a transição de alto para baixo que Inicia o processo de conversão; o INTR (Interrupt) atua indo para o nível lógico baixo no momento em que ele sinaliza o Fim da conversão para a CPU.\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Direta]"
   },
   {
@@ -1311,7 +1311,7 @@ export const eletronica2P2Questions: Question[] = [
       "11001100"
     ],
     "answer": "00110011",
-    "explanation": "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
+    "explanation": "Por que a resposta correta é \"00110011\"? O Conversor Analógico-Digital (A/D ou ADC) amostra uma grandeza analógica e a converte na representação binária correspondente explicada pela alternativa \"00110011\", permitindo o processamento digital por microprocessadores.",
     "topic": "3.2 - Conversores A/D [Questão Direta]"
   },
   {
@@ -1324,7 +1324,7 @@ export const eletronica2P2Questions: Question[] = [
       "São incapazes de converter números binários que contenham o bit mais significativo (MSB) em nível 1."
     ],
     "answer": "Apresentam elevada impedância de saída que varia com o código binário de entrada, acarretando perda de precisão e queda de tensão ao alimentar cargas analógicas.",
-    "explanation": "O Conversor Digital-Analógico (D/A ou DAC) transforma uma palavra digital em uma corrente ou tensão analógica correspondente. A topologia de escada R-2R é amplamente empregada por utilizar apenas dois valores nominais de precisão para resistores em toda a rede de ponderação.",
+    "explanation": "Por que a resposta correta é \"Apresentam elevada impedância de saída que varia com o código binário de entrada, acarretando perda de precisão e queda de tensão ao alimentar cargas analógicas.\"? O Conversor Digital-Analógico (D/A ou DAC) converte uma palavra binária de entrada em tensão ou corrente analógica proporcional na saída. A resposta \"Apresentam elevada impedância de saída que varia com o código binário de entrada, acarretando perda de precisão e queda de tensão ao alimentar cargas analógicas.\" descreve corretamente a topologia resistiva ou funcional do conversor (como a escada R-2R que utiliza apenas dois valores nominais de resistores para simplificar a precisão da rede).",
     "topic": "3.1 - Conversores D/A [Questão Discursiva]"
   }
 ];
