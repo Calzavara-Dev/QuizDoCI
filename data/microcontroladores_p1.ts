@@ -11,6 +11,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Unidade Central de Processamento (CPU)."
     ],
     "answer": "Unidade de GPS.",
+    "explanation": "Os microcontroladores PIC da Microchip possuem nativamente Unidade Central de Processamento (CPU), Memória (Program/Data), Watchdog Timer e Unidades de Entrada/Saída (I/O). Unidades de GPS são módulos externos de radiocomunicação e posicionamento por satélite, não sendo integradas no chip.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -23,6 +24,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Unidade de GPS."
     ],
     "answer": "Watchdog.",
+    "explanation": "O Watchdog Timer (WDT) é um temporizador com oscilador RC interno próprio e independente do clock principal. Sua função é monitorar a execução do programa: se o código travar ou entrar em loop infinito sem executar a instrução CLRWDT (Clear Watchdog Timer) no tempo previsto, o WDT transborda e gera um Reset automático do sistema para recuperá-lo.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -35,6 +37,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Conversor analógico-digital."
     ],
     "answer": "Contador de Programa (PC).",
+    "explanation": "O Contador de Programa (PC - Program Counter) é o registrador que armazena o endereço da próxima instrução na memória de programa a ser buscada (fetch) e executada pela CPU, controlando o fluxo sequencial e os desvios (GOTO, CALL) do código.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -47,6 +50,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "ligar o temporizador do Watchdog."
     ],
     "answer": "impedir que o Watchdog transborde.",
+    "explanation": "O Watchdog Timer (WDT) é um temporizador com oscilador RC interno próprio e independente do clock principal. Sua função é monitorar a execução do programa: se o código travar ou entrar em loop infinito sem executar a instrução CLRWDT (Clear Watchdog Timer) no tempo previsto, o WDT transborda e gera um Reset automático do sistema para recuperá-lo.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -59,6 +63,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Quantidade de memória que se deseja endereçar."
     ],
     "answer": "Quantidade de memória que se deseja endereçar.",
+    "explanation": "A largura do barramento de endereços (número de linhas N) define diretamente o espaço de endereçamento máximo do microcontrolador (2^N posições de memória). Portanto, depende da quantidade de memória que se deseja endereçar no projeto da arquitetura.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -71,6 +76,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Barramentos."
     ],
     "answer": "Protocolo.",
+    "explanation": "Um Protocolo de comunicação define o conjunto padronizado de regras, tempos, sinais elétricos e formatos de quadros/pacotes utilizados para a troca confiável de dados entre o processador e periféricos ou outros dispositivos.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -83,6 +89,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "direto, alternativo e indireto."
     ],
     "answer": "direto, indireto e imediato.",
+    "explanation": "Na programação assembly de microcontroladores (como a família PIC), os modos clássicos de endereçamento são: Imediato (o operando é um valor constante na própria instrução), Direto (o endereço do registrador é especificado na instrução) e Indireto (o endereço do registrador alvo é apontado pelo par FSR/INDF).",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -95,6 +102,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Harvard."
     ],
     "answer": "Von-Neumann.",
+    "explanation": "Na arquitetura Von-Neumann, as memórias de programa e de dados compartilham o mesmo barramento físico e espaço de endereçamento. Já na arquitetura Harvard (utilizada nos PICs), existem barramentos e memórias separadas para instruções e dados, permitindo acesso simultâneo e maior desempenho.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -107,6 +115,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Von-Neumann."
     ],
     "answer": "Harvard.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Harvard.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -119,6 +128,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Endereçamento."
     ],
     "answer": "Pipeline.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Pipeline.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -131,6 +141,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "0,50us."
     ],
     "answer": "0,4us.",
+    "explanation": "Na arquitetura PIC clássica de 8 bits, cada ciclo de instrução (ciclo de máquina) corresponde a exatamente 4 ciclos do clock principal (Fosc/4). Assim, se o oscilador for de 4 MHz, o clock interno de instrução será de 1 MHz, executando 1 milhão de instruções simples por segundo.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -143,6 +154,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "OPTION_REG."
     ],
     "answer": "FSR.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: FSR.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -155,6 +167,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "2,5V a 5V."
     ],
     "answer": "2V a 5,5V.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: 2V a 5,5V.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -167,6 +180,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "acessar o endereçamento indireto."
     ],
     "answer": "armazenar o endereço de retorno após uma instrução de desvio.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: armazenar o endereço de retorno após uma instrução de desvio.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -179,6 +193,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTA é de 6 bits e PORTB é de 7 bits."
     ],
     "answer": "PORTA é de 6 bits e PORTB é de 8 bits.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: PORTA é de 6 bits e PORTB é de 8 bits.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -191,6 +206,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "16 instruções."
     ],
     "answer": "35 instruções.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: 35 instruções.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -203,6 +219,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "3; Timer 0, Timer 1 e Timer 2."
     ],
     "answer": "3; Timer 0, Timer 1 e Timer 2.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: 3; Timer 0, Timer 1 e Timer 2.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -215,6 +232,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Processador, Memória de Programa, Memória de Dados, USB e Contadores."
     ],
     "answer": "Processador, Memória de Programa, Memória de Dados, Periféricos, Contadores.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Processador, Memória de Programa, Memória de Dados, Periféricos, Contadores.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -227,6 +245,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "14."
     ],
     "answer": "13.",
+    "explanation": "O Contador de Programa (PC - Program Counter) é o registrador que armazena o endereço da próxima instrução na memória de programa a ser buscada (fetch) e executada pela CPU, controlando o fluxo sequencial e os desvios (GOTO, CALL) do código.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -239,6 +258,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Ckext."
     ],
     "answer": "CKext / 4.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: CKext / 4.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -251,6 +271,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "opcode da instrução mais os bits IRP, RP1 e RP0 do registro de STATUS."
     ],
     "answer": "opcode da instrução mais os bits <4:3> do registro PCLATH.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: opcode da instrução mais os bits <4:3> do registro PCLATH.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -263,6 +284,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "OPTION_REG."
     ],
     "answer": "STATUS.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: STATUS.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -275,6 +297,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "STATUS e INDF."
     ],
     "answer": "INDF e FSR.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: INDF e FSR.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -287,6 +310,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "INTCON."
     ],
     "answer": "INTCON.",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -299,6 +323,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "RBIF do registro INTCON."
     ],
     "answer": "INTE do registro INTCON.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: INTE do registro INTCON.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -311,6 +336,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "a pilha possui oito níveis com endereços de 14 bits."
     ],
     "answer": "a pilha opera como um buffer circular do tipo LIFO caracterizada por apresentar oito pontos de acesso denominado Topo da Pilha.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: a pilha opera como um buffer circular do tipo LIFO caracterizada por apresentar oito pontos de acesso denominado Topo da Pilha.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -323,6 +349,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "GIE do registro INTCON."
     ],
     "answer": "GIE do registro INTCON.",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -335,6 +362,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "A."
     ],
     "answer": "B.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -347,6 +375,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "os registros de propósitos gerais fazem parte apenas do banco 1 e 3."
     ],
     "answer": "cada banco da memória RAM possui 128 bytes.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: cada banco da memória RAM possui 128 bytes.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -359,6 +388,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "registros de STATUS e FSR."
     ],
     "answer": "bits RP1 e RP0 do registro de STATUS.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: bits RP1 e RP0 do registro de STATUS.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -371,6 +401,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "endereço contido na Pilha."
     ],
     "answer": "endereço contido na Pilha.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: endereço contido na Pilha.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -383,6 +414,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "indica o estado geral do Micro."
     ],
     "answer": "indica o estado geral do Micro.",
+    "explanation": "O registrador STATUS armazena os sinalizadores de condição (Flags) gerados pela ALU após operações aritméticas ou lógicas: Z (Zero flag), C (Carry flag / Vai-um) e DC (Digit Carry / Carry de meio byte, usado em operações BCD), além de bits para seleção de banco (RP0, RP1).",
     "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
   },
   {
@@ -395,6 +427,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "TRISB=00001111b."
     ],
     "answer": "TRISB=00001111b.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -407,6 +440,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Somente os bits MSB deverão ser zero (0)."
     ],
     "answer": "Deverão se manter setados.",
+    "explanation": "Os registradores TRIS (ex: TRISA, TRISB) configuram a direção dos pinos dos portos de I/O. Por convenção na família PIC: escrever bit 1 no TRIS configura o pino como Entrada (Input = 1), e escrever bit 0 configura o pino como Saída (Output = 0).",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -419,6 +453,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EX-OR."
     ],
     "answer": "EX-OR.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -431,6 +466,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "C e E."
     ],
     "answer": "A e E.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -443,6 +479,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Duplexação."
     ],
     "answer": "Multiplexação.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Multiplexação.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -455,6 +492,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTB."
     ],
     "answer": "TRISE.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -467,6 +505,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "saída."
     ],
     "answer": "saída.",
+    "explanation": "Os registradores TRIS (ex: TRISA, TRISB) configuram a direção dos pinos dos portos de I/O. Por convenção na família PIC: escrever bit 1 no TRIS configura o pino como Entrada (Input = 1), e escrever bit 0 configura o pino como Saída (Output = 0).",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -479,6 +518,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Ativação de uma função Multiplexada."
     ],
     "answer": "Atraso entre a escrita e leitura.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Atraso entre a escrita e leitura.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -491,6 +531,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "é multiplexada com o PORTD."
     ],
     "answer": "controlada leitura por WR ou por escrita RD.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: controlada leitura por WR ou por escrita RD.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -503,6 +544,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP."
     ],
     "answer": "Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -515,6 +557,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EEADR."
     ],
     "answer": "EECON2.",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -527,6 +570,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "2 do registro EEDATA."
     ],
     "answer": "EEPGD do registro EECON1.",
+    "explanation": "A memória EEPROM de dados interna é uma memória não-volátil destinada a armazenar parâmetros, configurações do usuário, recordes ou calibrações que precisam ser preservados mesmo após o microcontrolador ser desligado (power-off).",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -539,6 +583,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PC."
     ],
     "answer": "EEDATA.",
+    "explanation": "A memória EEPROM de dados interna é uma memória não-volátil destinada a armazenar parâmetros, configurações do usuário, recordes ou calibrações que precisam ser preservados mesmo após o microcontrolador ser desligado (power-off).",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -551,6 +596,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Permitir interromper a operação da escrita a qualquer momento."
     ],
     "answer": "Tratar uma interrupção ao final da escrita.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Tratar uma interrupção ao final da escrita.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -563,6 +609,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "bit WREN (EECON1<2>) estará resetado."
     ],
     "answer": "bit WR (EECON1<1>) estará resetado.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: bit WR (EECON1<1>) estará resetado.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -575,6 +622,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EEDATA e SFR."
     ],
     "answer": "EEADR e EEDATA.",
+    "explanation": "A memória EEPROM de dados interna é uma memória não-volátil destinada a armazenar parâmetros, configurações do usuário, recordes ou calibrações que precisam ser preservados mesmo após o microcontrolador ser desligado (power-off).",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -587,6 +635,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O processo de escrita será finalizado."
     ],
     "answer": "O flag RD será apagado automaticamente pelo hardware.",
+    "explanation": "A memória EEPROM de dados interna é uma memória não-volátil destinada a armazenar parâmetros, configurações do usuário, recordes ou calibrações que precisam ser preservados mesmo após o microcontrolador ser desligado (power-off).",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -599,6 +648,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EEADR, EEADRH e EEDATA, EEDATAH."
     ],
     "answer": "EEADR, EEADRH e EEDATA, EEDATAH.",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -611,6 +661,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "CS."
     ],
     "answer": "WRT.",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -623,6 +674,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Proteger a Memória Flash de Programa contra a escrita durante no Power-UP."
     ],
     "answer": "Proteger a Memória Flash de Programa contra a escrita durante no Power-UP.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Proteger a Memória Flash de Programa contra a escrita durante no Power-UP.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
   },
   {
@@ -634,6 +686,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controlar o estouro do Watchdog Timer."
     ],
     "answer": "Apontar o endereço da próxima instrução a ser executada.",
+    "explanation": "O Contador de Programa (PC - Program Counter) é o registrador que armazena o endereço da próxima instrução na memória de programa a ser buscada (fetch) e executada pela CPU, controlando o fluxo sequencial e os desvios (GOTO, CALL) do código.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -645,6 +698,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Conversão de sinais analógicos para digitais."
     ],
     "answer": "Técnica que executa uma instrução enquanto busca a próxima.",
+    "explanation": "O Pipeline é a técnica de paralelismo na arquitetura Harvard onde a busca (Fetch) da próxima instrução ocorre simultaneamente com a execução (Execute) da instrução atual, fazendo com que a maioria das instruções demore efetivamente apenas 1 ciclo de instrução.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -656,6 +710,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Microchip"
     ],
     "answer": "Microchip",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Microchip. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
   },
   {
@@ -667,6 +722,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "8192"
     ],
     "answer": "8192",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -678,6 +734,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "16 MHz"
     ],
     "answer": "4 MHz",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: 4 MHz. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -689,6 +746,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "20 MHz"
     ],
     "answer": "20 MHz",
+    "explanation": "Na arquitetura PIC clássica de 8 bits, cada ciclo de instrução (ciclo de máquina) corresponde a exatamente 4 ciclos do clock principal (Fosc/4). Assim, se o oscilador for de 4 MHz, o clock interno de instrução será de 1 MHz, executando 1 milhão de instruções simples por segundo.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -700,6 +758,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "8 µs"
     ],
     "answer": "2 µs",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: 2 µs. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -711,6 +770,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O registro especial STATUS está em todos os bancos."
     ],
     "answer": "O microcontrolador possui 7 tipos de interrupções.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: O microcontrolador possui 7 tipos de interrupções.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
   },
   {
@@ -722,6 +782,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "0005h"
     ],
     "answer": "0004h",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -733,6 +794,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PS0 e PS1 do OPTION_REG"
     ],
     "answer": "Bits <4:3> do PCLATH",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -744,6 +806,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Para armazenar variáveis como em um banco de dados."
     ],
     "answer": "Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -755,6 +818,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Bit GIE do INTCON"
     ],
     "answer": "Bits RP1 e RP0 do STATUS",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Bits RP1 e RP0 do STATUS. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -766,6 +830,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Configura resistores de pull-up globais."
     ],
     "answer": "Ponte/destino de operações, mas NÃO mapeado na memória RAM.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Ponte/destino de operações, mas NÃO mapeado na memória RAM.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -777,6 +842,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Bit /TO em 0 no STATUS"
     ],
     "answer": "Bit /TO em 0 no STATUS",
+    "explanation": "O Watchdog Timer (WDT) é um temporizador com oscilador RC interno próprio e independente do clock principal. Sua função é monitorar a execução do programa: se o código travar ou entrar em loop infinito sem executar a instrução CLRWDT (Clear Watchdog Timer) no tempo previsto, o WDT transborda e gera um Reset automático do sistema para recuperá-lo.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -788,6 +854,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Houve transporte de bit (carry) na soma."
     ],
     "answer": "O resultado da operação lógica/aritmética anterior foi zero.",
+    "explanation": "O registrador STATUS armazena os sinalizadores de condição (Flags) gerados pela ALU após operações aritméticas ou lógicas: Z (Zero flag), C (Carry flag / Vai-um) e DC (Digit Carry / Carry de meio byte, usado em operações BCD), além de bits para seleção de banco (RP0, RP1).",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -799,6 +866,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "STATUS"
     ],
     "answer": "FSR",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: FSR. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -810,6 +878,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "STATUS"
     ],
     "answer": "STATUS",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: STATUS. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -821,6 +890,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "ADIE (PIE1)"
     ],
     "answer": "GIE (INTCON)",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -832,6 +902,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PCON"
     ],
     "answer": "INTCON",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -843,6 +914,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Endereço absoluto apontado pelo FSR."
     ],
     "answer": "11 bits do Opcode + bits <4:3> do PCLATH.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: 11 bits do Opcode + bits <4:3> do PCLATH.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -854,6 +926,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Endereço absoluto apontado por W."
     ],
     "answer": "Endereço recuperado do Topo da Pilha (TOS).",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Endereço recuperado do Topo da Pilha (TOS).. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
   },
   {
@@ -865,6 +938,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "OPTION_REG"
     ],
     "answer": "TRISE",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -876,6 +950,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTD"
     ],
     "answer": "PORTB",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -887,6 +962,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "TRISC = 10101010b"
     ],
     "answer": "TRISC = 11110000b",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -898,6 +974,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Aceso, independentemente do registro TRISB."
     ],
     "answer": "Apagado, pois RB4 é saída (0), mas o pino recebe nível baixo (0).",
+    "explanation": "Os registradores TRIS (ex: TRISA, TRISB) configuram a direção dos pinos dos portos de I/O. Por convenção na família PIC: escrever bit 1 no TRIS configura o pino como Entrada (Input = 1), e escrever bit 0 configura o pino como Saída (Output = 0).",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
   },
   {
@@ -909,6 +986,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EEDATA"
     ],
     "answer": "EEDATA",
+    "explanation": "A memória EEPROM de dados interna é uma memória não-volátil destinada a armazenar parâmetros, configurações do usuário, recordes ou calibrações que precisam ser preservados mesmo após o microcontrolador ser desligado (power-off).",
     "topic": "Capítulo 5 - Memória EEPROM e Flash [Múltipla Escolha]"
   },
   {
@@ -921,6 +999,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "É responsável pela multiplexação dos pinos de entrada e saída."
     ],
     "answer": "Não é uma função interna comum à maioria dos modelos de PIC.",
+    "explanation": "Os microcontroladores PIC da Microchip possuem nativamente Unidade Central de Processamento (CPU), Memória (Program/Data), Watchdog Timer e Unidades de Entrada/Saída (I/O). Unidades de GPS são módulos externos de radiocomunicação e posicionamento por satélite, não sendo integradas no chip.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -933,6 +1012,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controlar o espelhamento da memória RAM entre os diferentes bancos."
     ],
     "answer": "Incrementar um contador RC independente que, ao transbordar, provoca a reinicialização (reset) do sistema.",
+    "explanation": "O Watchdog Timer (WDT) é um temporizador com oscilador RC interno próprio e independente do clock principal. Sua função é monitorar a execução do programa: se o código travar ou entrar em loop infinito sem executar a instrução CLRWDT (Clear Watchdog Timer) no tempo previsto, o WDT transborda e gera um Reset automático do sistema para recuperá-lo.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -945,6 +1025,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Selecionar o banco de memória RAM ativo para endereçamento direto."
     ],
     "answer": "Estabelecer o fluxo de controle dos direcionamentos da memória que o código do programa contém.",
+    "explanation": "O Contador de Programa (PC - Program Counter) é o registrador que armazena o endereço da próxima instrução na memória de programa a ser buscada (fetch) e executada pela CPU, controlando o fluxo sequencial e os desvios (GOTO, CALL) do código.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -957,6 +1038,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "NOP."
     ],
     "answer": "CLRWDT.",
+    "explanation": "O Watchdog Timer (WDT) é um temporizador com oscilador RC interno próprio e independente do clock principal. Sua função é monitorar a execução do programa: se o código travar ou entrar em loop infinito sem executar a instrução CLRWDT (Clear Watchdog Timer) no tempo previsto, o WDT transborda e gera um Reset automático do sistema para recuperá-lo.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -969,6 +1051,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "A quantidade de registradores no topo da pilha de chamadas."
     ],
     "answer": "O número de linhas em um barramento de endereços.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: O número de linhas em um barramento de endereços.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -981,6 +1064,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Microcódigo."
     ],
     "answer": "Protocolo.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Protocolo.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -993,6 +1077,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os protocolos de barramento de dados suportados pelas portas seriais e paralelas."
     ],
     "answer": "Quais os 03 tipos de endereçamento que são usados no PC / instruções de PIC.",
+    "explanation": "Na programação assembly de microcontroladores (como a família PIC), os modos clássicos de endereçamento são: Imediato (o operando é um valor constante na própria instrução), Direto (o endereço do registrador é especificado na instrução) e Indireto (o endereço do registrador alvo é apontado pelo par FSR/INDF).",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -1005,6 +1090,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Não permitir o uso de pilhas de sub-rotinas nem de vetores de interrupção em hardware."
     ],
     "answer": "Compartilhar os barramentos de dados e endereços entre as memórias de programas e de dados na comunicação com a CPU.",
+    "explanation": "Na arquitetura Von-Neumann, as memórias de programa e de dados compartilham o mesmo barramento físico e espaço de endereçamento. Já na arquitetura Harvard (utilizada nos PICs), existem barramentos e memórias separadas para instruções e dados, permitindo acesso simultâneo e maior desempenho.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -1017,6 +1103,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Mista."
     ],
     "answer": "Harvard.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Harvard.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -1029,6 +1116,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Espelhamento de registradores."
     ],
     "answer": "Pipeline.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Pipeline.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -1041,6 +1129,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Clock externo de 8MHz."
     ],
     "answer": "Clock externo de 10MHz.",
+    "explanation": "Na arquitetura PIC clássica de 8 bits, cada ciclo de instrução (ciclo de máquina) corresponde a exatamente 4 ciclos do clock principal (Fosc/4). Assim, se o oscilador for de 4 MHz, o clock interno de instrução será de 1 MHz, executando 1 milhão de instruções simples por segundo.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1053,6 +1142,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Configurar a direção dos pinos digitais do PORTA como entradas ou saídas."
     ],
     "answer": "Ser um registro similar ao PC, que aponta para a memória de dados RAM (endereçamento indireto).",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Ser um registro similar ao PC, que aponta para a memória de dados RAM (endereçamento indireto).. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1065,6 +1155,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "A tensão mínima necessária para gravar dados na memória Flash."
     ],
     "answer": "A faixa de alimentação do microcontrolador PIC16F877.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: A faixa de alimentação do microcontrolador PIC16F877.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1077,6 +1168,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Memória de Programa Flash."
     ],
     "answer": "Pilha (Stack).",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Pilha (Stack).. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1089,6 +1181,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTA possui 6 bits e PORTB possui 7 bits."
     ],
     "answer": "PORTA possui 6 bits e PORTB possui 8 bits.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1101,6 +1194,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O temporizador Watchdog possui um pre-scaler com 35 estágios divisores."
     ],
     "answer": "O conjunto de instruções do PIC16F877 é do tipo RISC, formado por 35 instruções.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: O conjunto de instruções do PIC16F877 é do tipo RISC, formado por 35 instruções.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1113,6 +1207,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os conversores analógico-digitais multiplexados do PORTA e PORTE."
     ],
     "answer": "Os 3 Timers que compõem os módulos de temporização/contagem do PIC16F877.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Os 3 Timers que compõem os módulos de temporização/contagem do PIC16F877.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1125,6 +1220,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os circuitos de proteção contra descargas eletrostáticas das portas de entrada."
     ],
     "answer": "Quais os blocos internos do PIC16F877 da Microchip.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Quais os blocos internos do PIC16F877 da Microchip.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1137,6 +1233,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Para empacotar os 8 bits de dados juntamente com os 5 bits do registro TRISA."
     ],
     "answer": "Para conseguir direcionar/endereçar todos os 8K de palavras da memória Flash de programa.",
+    "explanation": "O Contador de Programa (PC - Program Counter) é o registrador que armazena o endereço da próxima instrução na memória de programa a ser buscada (fetch) e executada pela CPU, controlando o fluxo sequencial e os desvios (GOTO, CALL) do código.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1149,6 +1246,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O tempo de espera no acionamento (Power-up Timer) durante o reset."
     ],
     "answer": "A frequência do clock interno (ciclo de máquina).",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: A frequência do clock interno (ciclo de máquina).. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - PIC16F877 [Inverso]"
   },
   {
@@ -1161,6 +1259,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Determinar o valor inicial do temporizador Timer0 durante a inicialização."
     ],
     "answer": "Formar o endereço de desvio durante a execução de uma instrução GOTO ou CALL.",
+    "explanation": "O Contador de Programa (PC - Program Counter) é o registrador que armazena o endereço da próxima instrução na memória de programa a ser buscada (fetch) e executada pela CPU, controlando o fluxo sequencial e os desvios (GOTO, CALL) do código.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1173,6 +1272,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Manter o endereço de retorno da pilha sempre que ocorrer uma interrupção."
     ],
     "answer": "Mostrar o estado geral da Unidade Lógica e Aritmética (ULA), indicando Zero, Carry e seleção de banco.",
+    "explanation": "O registrador STATUS armazena os sinalizadores de condição (Flags) gerados pela ALU após operações aritméticas ou lógicas: Z (Zero flag), C (Carry flag / Vai-um) e DC (Digit Carry / Carry de meio byte, usado em operações BCD), além de bits para seleção de banco (RP0, RP1).",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1185,6 +1285,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Determinar a paridade e a velocidade dos dados na interface serial USART."
     ],
     "answer": "Realizar a escrita ou leitura indiretamente na memória RAM de dados.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Realizar a escrita ou leitura indiretamente na memória RAM de dados.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1197,6 +1298,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "INDF."
     ],
     "answer": "INTCON.",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1209,6 +1311,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Permitir o acesso de escrita à memória não-volátil EEPROM de dados."
     ],
     "answer": "Habilitar a entrada externa de interrupção no pino RB0/INT.",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1221,6 +1324,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Emite automaticamente uma interrupção não-mascarável sempre que o oitavo nível é ultrapassado."
     ],
     "answer": "Possui oito níveis de profundidade, endereços de 13 bits e opera como buffer circular sem flag de overflow no STATUS.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Possui oito níveis de profundidade, endereços de 13 bits e opera como buffer circular sem flag de overflow no STATUS.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1233,6 +1337,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O indicador de estouro da pilha de endereços após múltiplas chamadas CALL."
     ],
     "answer": "A chave responsável pela habilitação geral de todas as interrupções no PIC16F877.",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1245,6 +1350,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTE."
     ],
     "answer": "PORTB.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1257,6 +1363,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Configuração dos registradores de direção do PORTC em modo paralela escrava."
     ],
     "answer": "Organização e características arquiteturais das memórias de dados do PIC16F877.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Organização e características arquiteturais das memórias de dados do PIC16F877.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1269,6 +1376,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Definição das páginas superiores da memória Flash para saltos longos."
     ],
     "answer": "Seleção dos 4 bancos no endereçamento direto de um registrador da memória RAM.",
+    "explanation": "O registrador STATUS armazena os sinalizadores de condição (Flags) gerados pela ALU após operações aritméticas ou lógicas: Z (Zero flag), C (Carry flag / Vai-um) e DC (Digit Carry / Carry de meio byte, usado em operações BCD), além de bits para seleção de banco (RP0, RP1).",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1281,6 +1389,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Do endereço inicial do vetor de interrupção de hardware (0004h)."
     ],
     "answer": "Do endereço recuperado diretamente do topo da Pilha (TOS).",
+    "explanation": "O Contador de Programa (PC - Program Counter) é o registrador que armazena o endereço da próxima instrução na memória de programa a ser buscada (fetch) e executada pela CPU, controlando o fluxo sequencial e os desvios (GOTO, CALL) do código.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1293,6 +1402,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PCLATH."
     ],
     "answer": "STATUS.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: STATUS.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
   },
   {
@@ -1305,6 +1415,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Pinos analógicos ativados para leitura simultânea pelo módulo conversor A/D."
     ],
     "answer": "Metade como entrada (RB0 a RB3) e a outra metade como saída (RB4 a RB7).",
+    "explanation": "Os registradores TRIS (ex: TRISA, TRISB) configuram a direção dos pinos dos portos de I/O. Por convenção na família PIC: escrever bit 1 no TRIS configura o pino como Entrada (Input = 1), e escrever bit 0 configura o pino como Saída (Output = 0).",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1317,6 +1428,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Deverão ser alternados entre 0 e 1 a cada ciclo de amostragem analógica."
     ],
     "answer": "Deverão se manter setados (em nível 1, configurados como entradas).",
+    "explanation": "Os registradores TRIS (ex: TRISA, TRISB) configuram a direção dos pinos dos portos de I/O. Por convenção na família PIC: escrever bit 1 no TRIS configura o pino como Entrada (Input = 1), e escrever bit 0 configura o pino como Saída (Output = 0).",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1329,6 +1441,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Ativar o buffer de travamento Latch das saídas digitais do PORTD."
     ],
     "answer": "Gerar a interrupção por mudança de estado na própria porta B (RBIF).",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1341,6 +1454,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Gerarem todas as saídas de modulação por largura de pulso (PWM) dos módulos CCP."
     ],
     "answer": "Serem utilizadas junto com o Conversor Analógico-Digital (entradas analógicas / referências).",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1353,6 +1467,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Tri-state."
     ],
     "answer": "Multiplexação.",
+    "explanation": "A Modulação por Largura de Pulso (PWM - Pulse Width Modulation) gera uma onda quadrada de frequência fixa cujo tempo em nível alto (Duty Cycle ou razão cíclica) é controlado por software, sendo amplamente usada para controle de velocidade de motores e intensidade do brilho de LEDs.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1365,6 +1480,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Configurar a contagem inicial e o divisor de frequência do temporizador Timer 2."
     ],
     "answer": "Controlar a direção de dados (entradas ou saídas) dos pinos correspondentes ao PORTE.",
+    "explanation": "Os registradores TRIS (ex: TRISA, TRISB) configuram a direção dos pinos dos portos de I/O. Por convenção na família PIC: escrever bit 1 no TRIS configura o pino como Entrada (Input = 1), e escrever bit 0 configura o pino como Saída (Output = 0).",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1377,6 +1493,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Atua como pino multiplexado do barramento paralela escrava."
     ],
     "answer": "Atua como uma saída digital.",
+    "explanation": "Os registradores TRIS (ex: TRISA, TRISB) configuram a direção dos pinos dos portos de I/O. Por convenção na família PIC: escrever bit 1 no TRIS configura o pino como Entrada (Input = 1), e escrever bit 0 configura o pino como Saída (Output = 0).",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1389,6 +1506,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O travamento permanente do conversor analógico-digital de 10 bits."
     ],
     "answer": "Atraso entre a escrita e a leitura, ou problemas em instruções do tipo Read-Modify-Write.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1401,6 +1519,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O controle de fluxo no PSPMODE depende apenas dos bits do Timer 0 e da USART."
     ],
     "answer": "Na verdade, a leitura é controlada pelo sinal /RD e a escrita pelo sinal /WR, e não o inverso.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1413,6 +1532,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTD."
     ],
     "answer": "PORTE.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1425,6 +1545,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Zerar o contador do Watchdog e configurar o pre-scaler no registrador OPTION_REG."
     ],
     "answer": "Desbloquear a proteção e permitir o ciclo de escrita na memória FLASH ou EEPROM de dados.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Desbloquear a proteção e permitir o ciclo de escrita na memória FLASH ou EEPROM de dados.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1437,6 +1558,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Iniciar manualmente o processo de escrita na EEPROM após a sequência de desbloqueio."
     ],
     "answer": "Selecionar qual memória será acessada nas operações de leitura/escrita: EEPROM de dados ou Flash de programa.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Selecionar qual memória será acessada nas operações de leitura/escrita: EEPROM de dados ou Flash de programa.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1449,6 +1571,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Receber os bits superiores do endereço de 14 bits ao ler a memória Flash de programa."
     ],
     "answer": "Armazenar o dado de 8 bits após a conclusão da leitura da memória EEPROM de dados.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Armazenar o dado de 8 bits após a conclusão da leitura da memória EEPROM de dados.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1461,6 +1584,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Desabilitar o Watchdog Timer enquanto a escrita na Flash estiver em andamento."
     ],
     "answer": "Sinalizar ou tratar a ocorrência de interrupção indicando o final de um ciclo de escrita.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Sinalizar ou tratar a ocorrência de interrupção indicando o final de um ciclo de escrita.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1473,6 +1597,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O flag T0IF no registrador INTCON vai a nível alto em sincronia com o clock."
     ],
     "answer": "O bit WR (EECON1<1>) é resetado/apagado automaticamente pelo circuito interno.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: O bit WR (EECON1<1>) é resetado/apagado automaticamente pelo circuito interno.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1485,6 +1610,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Mapear as portas digitais do PORTD no barramento paralelo escravo com interrupção."
     ],
     "answer": "Realizar a leitura ou escrita na memória EEPROM de dados (endereço em EEADR e dado em EEDATA).",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Realizar a leitura ou escrita na memória EEPROM de dados (endereço em EEADR e dado em EEDATA).. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1497,6 +1623,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Trava o acesso ao barramento de dados até que a instrução NOP seja executada."
     ],
     "answer": "É apagado/resetado automaticamente pelo hardware logo após a conclusão da leitura.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1509,6 +1636,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O módulo de comunicação paralela escrava transfere dados de 16 em 16 bits com o processador mestre."
     ],
     "answer": "A memória Flash possui capacidade de 8Kb (endereços de 13 bits em EEADR/EEADRH) e palavras de 14 bits (dados em EEDATA/EEDATAH).",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1521,6 +1649,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Mudar o mapeamento dos vetores de interrupção de 0004h para o topo do bloco de memória RAM."
     ],
     "answer": "Proteger a Memória Flash de Programa contra escritas/gravações indesejadas durante a execução do programa.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Proteger a Memória Flash de Programa contra escritas/gravações indesejadas durante a execução do programa.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1533,6 +1662,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Proteger as portas digitais de I/O contra alterações acidentais de direção no registro TRIS."
     ],
     "answer": "Habilitar ou desabilitar a permissão para operações de escrita/gravação na memória Flash e EEPROM.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Habilitar ou desabilitar a permissão para operações de escrita/gravação na memória Flash e EEPROM.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   },
   {
@@ -1545,6 +1675,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Divisor de frequência Prescaler."
     ],
     "answer": "Contador de Programa (PC).",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -1557,6 +1688,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Endereçamento Imediato."
     ],
     "answer": "Pipeline.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Pipeline.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -1569,6 +1701,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "MSP430."
     ],
     "answer": "PIC.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: PIC.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
   },
   {
@@ -1581,6 +1714,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "2048 vetores de interrupção e sub-rotinas independentes."
     ],
     "answer": "8192 instruções de 14 bits.",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
   },
   {
@@ -1593,6 +1727,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "32 MHz."
     ],
     "answer": "16 MHz.",
+    "explanation": "Na arquitetura PIC clássica de 8 bits, cada ciclo de instrução (ciclo de máquina) corresponde a exatamente 4 ciclos do clock principal (Fosc/4). Assim, se o oscilador for de 4 MHz, o clock interno de instrução será de 1 MHz, executando 1 milhão de instruções simples por segundo.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
   },
   {
@@ -1605,6 +1740,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "8 MHz."
     ],
     "answer": "20 MHz.",
+    "explanation": "Na arquitetura PIC clássica de 8 bits, cada ciclo de instrução (ciclo de máquina) corresponde a exatamente 4 ciclos do clock principal (Fosc/4). Assim, se o oscilador for de 4 MHz, o clock interno de instrução será de 1 MHz, executando 1 milhão de instruções simples por segundo.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
   },
   {
@@ -1617,6 +1753,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "20 MHz."
     ],
     "answer": "4 MHz.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: 4 MHz.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
   },
   {
@@ -1629,6 +1766,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "As interrupções são divididas em exatamente 3 níveis de prioridade controlados pelo registro PCLATH."
     ],
     "answer": "O PIC16F877 possui, na verdade, 14 ou 15 fontes de interrupção (entre internas e externas), e não apenas 7.",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
   },
   {
@@ -1641,6 +1779,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O endereço de topo do primeiro banco da memória não-volátil EEPROM."
     ],
     "answer": "O vetor de interrupção (onde o PC desvia ao ocorrer qualquer interrupção).",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1653,6 +1792,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os indicadores de que ocorreu um estouro de contagem no temporizador Watchdog."
     ],
     "answer": "A chave seletora de página nas instruções que modificam o PC, como GOTO e CALL.",
+    "explanation": "A memória Flash é a memória não-volátil programável eletricamente onde é armazenado o código do programa (firmware) do microcontrolador, permitindo milhares de ciclos de gravação e apagamento sem perda dos dados com o corte de energia.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1665,6 +1805,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "A impossibilidade de ler ou gravar dados diretamente nas portas PORTD e PORTE."
     ],
     "answer": "O uso do termo 'Banco' e a divisão da memória RAM em bancos selecionáveis.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: O uso do termo 'Banco' e a divisão da memória RAM em bancos selecionáveis.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1677,6 +1818,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controlar o divisor de frequência programável atribuído ao Timer 0."
     ],
     "answer": "Fazer a seleção do banco de memória RAM no endereçamento direto.",
+    "explanation": "O registrador STATUS armazena os sinalizadores de condição (Flags) gerados pela ALU após operações aritméticas ou lógicas: Z (Zero flag), C (Carry flag / Vai-um) e DC (Digit Carry / Carry de meio byte, usado em operações BCD), além de bits para seleção de banco (RP0, RP1).",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1689,6 +1831,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controla de forma direta os resistores de pull-up internos associados aos pinos de entrada."
     ],
     "answer": "Atua como ponte/destino principal de operações da ULA, mas NÃO está mapeado com endereço na memória RAM.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Atua como ponte/destino principal de operações da ULA, mas NÃO está mapeado com endereço na memória RAM.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1701,6 +1844,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O conversor analógico-digital finalizou a conversão do canal selecionado."
     ],
     "answer": "O temporizador Watchdog transbordou e provocou o reset do microcontrolador.",
+    "explanation": "O registrador STATUS armazena os sinalizadores de condição (Flags) gerados pela ALU após operações aritméticas ou lógicas: Z (Zero flag), C (Carry flag / Vai-um) e DC (Digit Carry / Carry de meio byte, usado em operações BCD), além de bits para seleção de banco (RP0, RP1).",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1713,6 +1857,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Desabilita temporariamente o transbordo do contador Watchdog."
     ],
     "answer": "Coloca o bit Z (STATUS<2>) em nível lógico '1'.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Coloca o bit Z (STATUS<2>) em nível lógico '1'.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1725,6 +1870,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Mantém o histórico dos 8 últimos saltos de sub-rotina executados pelo programa."
     ],
     "answer": "Aponta para o endereço da memória RAM que será lido ou escrito através de INDF.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Aponta para o endereço da memória RAM que será lido ou escrito através de INDF.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1737,6 +1883,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controla a tensão de referência para os comparadores analógicos internos."
     ],
     "answer": "Mostra o estado geral do microcontrolador e da ULA, além dos bits de seleção de banco.",
+    "explanation": "O registrador STATUS armazena os sinalizadores de condição (Flags) gerados pela ALU após operações aritméticas ou lógicas: Z (Zero flag), C (Carry flag / Vai-um) e DC (Digit Carry / Carry de meio byte, usado em operações BCD), além de bits para seleção de banco (RP0, RP1).",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1749,6 +1896,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Desligar os periféricos analógicos para reduzir o consumo no modo Sleep."
     ],
     "answer": "Permitir ou bloquear globalmente todas as interrupções habilitadas individualmente no sistema.",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1761,6 +1909,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O controle de acesso simultâneo às páginas de memória Flash e EEPROM de dados."
     ],
     "answer": "O estado geral e o controle das principais interrupções (como GIE, PEIE, T0IE e INTE).",
+    "explanation": "O registrador INTCON (Interrupt Control Register) centraliza o controle e as bandeiras de sinalização das interrupções principais do PIC, incluindo a chave geral GIE (Global Interrupt Enable), interrupção de transbordo do TMR0 (T0IE/T0IF) e interrupção externa RB0/INT.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1773,6 +1922,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Verificar a integridade dos dados na memória não-volátil após um ciclo de gravação."
     ],
     "answer": "Formar o endereço completo de 13 bits carregado no PC durante uma instrução GOTO.",
+    "explanation": "Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), o conceito e a especificação correta para este parâmetro da arquitetura é exatamente: Formar o endereço completo de 13 bits carregado no PC durante uma instrução GOTO.. A correta diferenciação entre barramentos, registradores e periféricos garante o funcionamento seguro do firmware.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1785,6 +1935,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O programador realiza uma leitura indireta na memória RAM utilizando o registro INDF."
     ],
     "answer": "O processador executa o retorno de uma sub-rotina (instrução RETURN ou RETLW) ou interrupção (RETFIE).",
+    "explanation": "O Contador de Programa (PC - Program Counter) é o registrador que armazena o endereço da próxima instrução na memória de programa a ser buscada (fetch) e executada pela CPU, controlando o fluxo sequencial e os desvios (GOTO, CALL) do código.",
     "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
   },
   {
@@ -1797,6 +1948,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "INTCON."
     ],
     "answer": "TRISE.",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1809,6 +1961,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Dispensar totalmente o uso de registradores TRIS para definir a direção de seus pinos."
     ],
     "answer": "Usar resistores de pull-up internos ativáveis por software (via bit /RBPU no OPTION_REG).",
+    "explanation": "Os registradores PORT (ex: PORTA, PORTB) representam os níveis lógicos reais presentes nos pinos físicos do microcontrolador. Ler o PORT retorna o estado dos pinos externos, e escrever no PORT altera a tensão dos pinos configurados como saída via TRIS.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1821,6 +1974,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os canais de comunicação serial I2C e SPI assumem o controle prioritário dos pinos."
     ],
     "answer": "A metade inferior (RC0 a RC3) opera como SAÍDA (0) e a metade superior (RC4 a RC7) opera como ENTRADA (1).",
+    "explanation": "RISC (Reduced Instruction Set Computer) refere-se à arquitetura com conjunto reduzido de instruções simples, otimizadas para execução rápida em um ou poucos ciclos de máquina (como nos PICs, que possuem entre 35 e 75 instruções dependendo da família). CISC possui instruções complexas e de tamanhos variados.",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1833,6 +1987,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O resistor de pull-up interno do PORTB foi desativado, impedindo a condução do LED."
     ],
     "answer": "O bit 4 no TRISB vale 0 (portanto RB4 é saída), mas o bit 4 no PORTB vale 0 (o pino recebe nível baixo 0V).",
+    "explanation": "Os registradores TRIS (ex: TRISA, TRISB) configuram a direção dos pinos dos portos de I/O. Por convenção na família PIC: escrever bit 1 no TRIS configura o pino como Entrada (Input = 1), e escrever bit 0 configura o pino como Saída (Output = 0).",
     "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
   },
   {
@@ -1845,6 +2000,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Zera o bit RD no registrador EECON1 para sinalizar que o barramento está liberado."
     ],
     "answer": "Armazena o byte lido da célula da EEPROM, disponibilizando-o para leitura do processador.",
+    "explanation": "A memória EEPROM de dados interna é uma memória não-volátil destinada a armazenar parâmetros, configurações do usuário, recordes ou calibrações que precisam ser preservados mesmo após o microcontrolador ser desligado (power-off).",
     "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
   }
 ];

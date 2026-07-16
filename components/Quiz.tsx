@@ -235,6 +235,7 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
         isCorrect,
         userAnswer: answer,
         correctAnswer: currentQuestion.answer,
+        explanation: currentQuestion.explanation,
       };
       return next;
     });

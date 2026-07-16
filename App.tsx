@@ -19,6 +19,7 @@ export interface ResultData {
     isCorrect: boolean;
     userAnswer: string;
     correctAnswer: string;
+    explanation?: string;
   }[];
 }
 

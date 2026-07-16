@@ -263,6 +263,13 @@ export function Results({ data, rankings, onRestart, onRestartSameQuiz, onBackTo
                           </span>
                         )}
                       </div>
+
+                      {answer.explanation && (
+                        <div className="mt-2.5 pt-2 border-t border-slate-700/50 text-xs text-slate-300 leading-relaxed">
+                          <span className="font-semibold text-cyan-400">Comentário da Apostila: </span>
+                          {answer.explanation}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

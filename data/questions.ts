@@ -2100,545 +2100,652 @@ quizzes["eletronica-digital-2"] = [
   {
     question: "Os circuitos integrados TTL, de uso geral, são dimensionados para operar na faixa de temperatura de:",
     options: ["-55°C a +125°C","-55°C a +85°C","-40°C a +85°C","-40°C a +80°C","0°C a +70°C"],
-    answer: "0°C a +70°C"
+    answer: "0°C a +70°C",
+    explanation: "Os circuitos integrados TTL da série comercial (prefixo 74xx, ex: 7400, 74LS00) são padronizados para operar na faixa de temperatura comercial de 0°C a +70°C, com tensão nominal de 5V (±5%). Já a série militar (prefixo 54xx) opera entre -55°C e +125°C.",
   },
   {
     question: "A vantagem do CI TTL padrão sobre o CI MOS, padrão, é o(a):",
     options: ["FAN-OUT","dissipação de potência","imunidade ao ruído","larga faixa de alimentação de tensão","tempo de atraso de propagação"],
-    answer: "tempo de atraso de propagação"
+    answer: "tempo de atraso de propagação",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: tempo de atraso de propagação. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O tipo de lógica e a porta apresentada pelo circuito da Fig.100 são, respectivamente:",
     options: ["positiva e OR","positiva e NAND","negativa e AND","positiva e AND","negativa e NOR"],
     answer: "positiva e OR",
+    explanation: "Os Flip-Flops são circuitos sequenciais biestáveis capazes de armazenar 1 bit de informação. O Flip-Flop JK é universal e elimina a condição proibida do SR (com J=K=1 ele alterna/bascula a saída). O Flip-Flop tipo D (Data) armazena o valor presente na entrada D na borda do clock.",
     image: circuito100
   },
   {
     question: "Os níveis lógicos de entrada e saída em um circuito digital são representados por tensões referentes à sua fonte de alimentação; o valor máximo de um nível alto em circuitos TTL é de quantos Volts?",
     options: ["0,8","1,2","2,0","5,0","5,8"],
-    answer: "5,0"
+    answer: "5,0",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "De acordo com o circuito da Figura 105, para que a saída (S) tenha nível lógico 0, as suas entradas A, B e G deverão estar, respectivamente, nos seguintes níveis lógicos:",
     options: ["0,1 e 1","1,1 e 1","1,1 e 0","0,0 e 1","0,0 e 0"],
     answer: "1,1 e 1",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 1,1 e 1. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
     image: circuito105
   },
   {
     question: "Além dos blocos comuns (STANDARD), a família TTL possui outras versões de circuitos lógicos. A que fornece a maior velocidade é:",
     options: ["ADVANCED","SCHOTTKY","ADVANCED SCHOTTKY","FAST","LOW POWER SCHOTTKY"],
-    answer: "ADVANCED SCHOTTKY"
+    answer: "ADVANCED SCHOTTKY",
+    explanation: "O tempo de atraso de propagação (t_pd) é o intervalo de tempo entre a transição na entrada de uma porta lógica e a correspondente mudança de estado na sua saída. Famílias como TTL Schotky rápida (74S, 74F) possuem atrasos extremamente reduzidos no alcance de poucos nanosegundos.",
   },
   {
     question: "Nas séries comuns, os circuitos integrados CMOS são dimensionados para operar na faixa de temperatura de:",
     options: ["-40°C a +85°C","-40°C a +80°C","-40°C a +150°C","-150°C a +300°C","-30°C a +85°C"],
-    answer: "-40°C a +85°C"
+    answer: "-40°C a +85°C",
+    explanation: "Os circuitos integrados TTL da série comercial (prefixo 74xx, ex: 7400, 74LS00) são padronizados para operar na faixa de temperatura comercial de 0°C a +70°C, com tensão nominal de 5V (±5%). Já a série militar (prefixo 54xx) opera entre -55°C e +125°C.",
   },
   {
     question: "A desvantagem do CI CMOS padrão, com relação ao CI TTL padrão, é o(a):",
     options: ["FAN-OUT","dissipação de potência","imunidade ao ruído","larga faixa de alimentação de tensão","tempo de atraso de propagação"],
-    answer: "tempo de atraso de propagação"
+    answer: "tempo de atraso de propagação",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Ao analisarmos o funcionamento do circuito da Figura 109, concluímos que ele se comporta como uma porta do tipo:",
     options: ["NOR","AND","OR","NAND","OU Exclusivo"],
     answer: "NOR",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: NOR. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
     image: circuito109
   },
   {
     question: "A menor tensão de entrada para que um circuito TTL STANDARD, reconheça como nível ALTO, é de quantos V?",
     options: ["0,4","0,8","2,0","2,4","3,5"],
-    answer: "2,0"
+    answer: "2,0",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 2,0. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "A maior tensão de entrada, para que um circuito TTL STANDARD reconheça como nível BAIXO, é de:",
     options: ["0,4 V","3,5 V","2,0 V","2,4 V","0,8 V"],
-    answer: "0,8 V"
+    answer: "0,8 V",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 0,8 V. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Quantas portas estão contidas nos integrados da escala SSI?",
     options: ["13 a 99 portas","Até 12 portas","Até 1000 portas","100 a 1000 portas","1000 a 99.999 portas"],
-    answer: "Até 12 portas"
+    answer: "Até 12 portas",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Até 12 portas. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O funcionamento do circuito da Fig. 102, em lógica positiva, é de uma porta:",
     options: ["NOR","OR","NAND","AND","OU Exclusivo"],
     answer: "NAND",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: NAND. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
     image: circuito102
   },
   {
     question: "O circuito lógico básico da família TTL é composto por portas:",
     options: ["NAND","AND","NOT","OR","NOR"],
-    answer: "NAND"
+    answer: "NAND",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: NAND. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Um CI digital, contendo 150 portas, é classificado como:",
     options: ["SSI","MSI","LSI","ULSI","GSI"],
-    answer: "LSI"
+    answer: "LSI",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: LSI. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "A família lógica pertencente a série 4000 e 4000B é:",
     options: ["MOS","TTL","CMOS","DTL","HTL"],
-    answer: "CMOS"
+    answer: "CMOS",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Apesar de executarem a mesma função lógica, as séries 54 e 74 TTL apresentam uma característica diferente; assinale-a.",
     options: ["Imunidade a ruído","Alimentação","Número de pinos","Temperatura de operação","Velocidade"],
-    answer: "Temperatura de operação"
+    answer: "Temperatura de operação",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Temperatura de operação. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "As séries 54 operam na faixa de temperatura de quantos graus?",
     options: ["0°C a +85°C","0°C a +75°C","-55°C a +70°C","-55°C a +85°C","-55°C a +125°C"],
-    answer: "-55°C a +125°C"
+    answer: "-55°C a +125°C",
+    explanation: "Os circuitos integrados TTL da série comercial (prefixo 74xx, ex: 7400, 74LS00) são padronizados para operar na faixa de temperatura comercial de 0°C a +70°C, com tensão nominal de 5V (±5%). Já a série militar (prefixo 54xx) opera entre -55°C e +125°C.",
   },
   {
     question: "O CI SN 54/74S00 é um TTL da subfamília:",
     options: ["STANDARD","FAST","SCHOTTKY","LOW POWER SCHOTTKY","ADVANCED SCHOTTKY"],
-    answer: "SCHOTTKY"
+    answer: "SCHOTTKY",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: SCHOTTKY. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "A tensão de alimentação do CI SN 7400 é de:",
     options: ["15,0 V ±5%","12,0 V ± 5%","5,0 V±5%","5,0 V ±20%","3,0 V ± 5%"],
-    answer: "5,0 V±5%"
+    answer: "5,0 V±5%",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 5,0 V±5%. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O CI SN-74S00 utiliza, nos seus circuitos:",
     options: ["transistores de junção e diodos SCHOTTKY","transistores de efeito de campo e diodos SCHOTTKY","MOSFET e transistores de junção","transistores bipolares e diodos retificadores","apenas diodos SCHOTTKY"],
-    answer: "transistores de junção e diodos SCHOTTKY"
+    answer: "transistores de junção e diodos SCHOTTKY",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: transistores de junção e diodos SCHOTTKY. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Tensão máxima de alimentação que o CI SN 54F00 pode suportar.",
     options: ["3,0 V","5,0 V","5,25 V","5,5 V","15,0 V"],
-    answer: "5,5 V"
+    answer: "5,5 V",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 5,5 V. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual o valor máximo de Vdd para os circuitos integrados da série 4000B?",
     options: ["20V","18V","15V","10V","5V"],
-    answer: "18V"
+    answer: "18V",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Das TTL, a que apresenta menor consumo de potência é a:",
     options: ["7400","74ALS00","74F00","74LS00","74S00"],
-    answer: "74ALS00"
+    answer: "74ALS00",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 74ALS00. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Família que apresenta o maior FAN-OUT.",
     options: ["C-MOS","TTL","ECL","DTL","HTL"],
-    answer: "C-MOS"
+    answer: "C-MOS",
+    explanation: "O Fan-Out indica o número máximo de entradas padronizadas da mesma família lógica que a saída de uma porta lógica consegue acionar simultaneamente mantendo os níveis de tensão dentro dos limites da faixa garantida (V_OH/V_OL).",
   },
   {
     question: "Tipo de estrutura interna que nos permite a confecção de blocos lógicos em CIs.",
     options: ["Bloco lógico","Porta lógica","Circuito lógico","Família lógica","Circuito combinacional"],
-    answer: "Família lógica"
+    answer: "Família lógica",
+    explanation: "Os Flip-Flops são circuitos sequenciais biestáveis capazes de armazenar 1 bit de informação. O Flip-Flop JK é universal e elimina a condição proibida do SR (com J=K=1 ele alterna/bascula a saída). O Flip-Flop tipo D (Data) armazena o valor presente na entrada D na borda do clock.",
   },
   {
     question: "A capacidade de um bloco lógico alimentar, blocos da mesma família, é chamada:",
     options: ["FAN-OUT","lógica positiva","níveis de tensão","lógica negativa","tempo de atraso"],
-    answer: "FAN-OUT"
+    answer: "FAN-OUT",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: FAN-OUT. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual o FAN-OUT da família TTL?",
     options: ["Indeterminada","Maior que 10","Igual a 10","Menor que 10","Mínima"],
-    answer: "Igual a 10"
+    answer: "Igual a 10",
+    explanation: "O Fan-Out indica o número máximo de entradas padronizadas da mesma família lógica que a saída de uma porta lógica consegue acionar simultaneamente mantendo os níveis de tensão dentro dos limites da faixa garantida (V_OH/V_OL).",
   },
   {
     question: "No CI SN 74ALSOON, o significado das letras SN é:",
     options: ["função lógica","faixa de temperatura","prefixo do fabricante","baixo consumo","tipo de encapsulamento"],
-    answer: "prefixo do fabricante"
+    answer: "prefixo do fabricante",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: prefixo do fabricante. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Série TTL que usa um diodo especial para reduzir o tempo de chaveamento.",
     options: ["74HC","74S","74HCT","74F","74ACT"],
-    answer: "74S"
+    answer: "74S",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 74S. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Corrente que flui para a saída de um bloco lógico, quando essa saída estiver em nível lógico ALTO.",
     options: ["IIH","IIL","IOL","IOS","IOH"],
-    answer: "IOH"
+    answer: "IOH",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: IOH. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "A capacidade que um bloco lógico possui de NÃO receber influências elétricas ou magnéticas, denomina-se:",
     options: ["imunidade ao ruído","margem de ruído","FAN-OUT","tempo de atraso de propagação","requisitos de potência"],
-    answer: "imunidade ao ruído"
+    answer: "imunidade ao ruído",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: imunidade ao ruído. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O valor de VIH de uma TTL padrão é:",
     options: ["0,4V","0,8V","2,0V","2,4V","2,8V"],
-    answer: "2,0V"
+    answer: "2,0V",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "Quando uma saída TTL acionar mais cargas do que o normal, teremos:",
     options: ["redução de IOL","perda do nível lógico","nenhuma alteração","redução de IOH","redução de VOL"],
-    answer: "perda do nível lógico"
+    answer: "perda do nível lógico",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: perda do nível lógico. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Lógica que combina as melhores características da CMOS e Bipolar.",
     options: ["74AC","74C","74HCT","BICMOS","74ACT"],
-    answer: "BICMOS"
+    answer: "BICMOS",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Com VDD = 15V, a margem de ruído para uma CMOS padrão será:",
     options: ["0,4V","2,0V","2,75V","6,75V","7,5V"],
-    answer: "6,75V"
+    answer: "6,75V",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "O fator que determina o FAN-OUT de dispositivos CMOS é:",
     options: ["máximo atraso de propagação permitido","capacitância de saída de cada carga","tensão de alimentação","mínimo atraso de propagação permitido","mínima margem de ruído permitida"],
-    answer: "capacitância de saída de cada carga"
+    answer: "capacitância de saída de cada carga",
+    explanation: "O Fan-Out indica o número máximo de entradas padronizadas da mesma família lógica que a saída de uma porta lógica consegue acionar simultaneamente mantendo os níveis de tensão dentro dos limites da faixa garantida (V_OH/V_OL).",
   },
   {
     question: "Corrente que flui para a entrada de um bloco lógico, quando essa entrada está em nível lógico alto.",
     options: ["IOH","IIL","IIH","IOS","IOL"],
-    answer: "IIH"
+    answer: "IIH",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: IIH. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O consumo médio de um circuito integrado TTL, onde IccH=6mA e IccL = 12mA, é de:",
     options: ["90 mW","45 W","30 mW","45 mW","90 W"],
-    answer: "45 mW"
+    answer: "45 mW",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 45 mW. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "A margem de ruído no nível alto para uma TTL, onde VIH = 2V, VIL = 0,8V, VOH = 2,4V e VOL=0,4V, é de:",
     options: ["0,4V","0,8V","2,4V","2,8V","4,4V"],
-    answer: "0,4V"
+    answer: "0,4V",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "É eletricamente compatível com TTL.",
     options: ["74AC","74HCT","74LV","74HC","74C"],
-    answer: "74HCT"
+    answer: "74HCT",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 74HCT. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Com uma saída TTL padrão em nível lógico 0, o máximo valor de corrente absorvido será de:",
     options: ["0,4 mA","1,6 mA","2,4 mA","16 mA","18 mA"],
-    answer: "16 mA"
+    answer: "16 mA",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 16 mA. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Com Vdd = 12V, a margem de ruído para uma CMOS padrão será:",
     options: ["0,4 V","2,0 V","2,75 V","5,4 V","7,5 V"],
-    answer: "5,4 V"
+    answer: "5,4 V",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "Uma CMOS 4000B é alimentada com valor máximo permitido de Vdd. O máximo valor de VIL será de:",
     options: ["12,6V","7,5V","5,4V","4,5V","0,05V"],
-    answer: "5,4V"
+    answer: "5,4V",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "Quando uma TTL aciona uma CMOS, onde Vdd >>Vcc, devemos:",
     options: ["usar um BUFFER coletor aberto como interface","efetuar a ligação diretamente entre os dispositivos","usar um resistor de PULL-UP","usar uma saída TRI-STATE","usar uma interface conversora de níveis de correntes"],
-    answer: "usar uma interface conversora de níveis de correntes"
+    answer: "usar uma interface conversora de níveis de correntes",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "O número de portas E, necessárias para construir um gerador de produtos canônicos de 5 variáveis, que usa matriz de simples encadeamento, é:",
     options: ["60","256","508","512","1024"],
-    answer: "60"
+    answer: "60",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 60. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Valor de VIL de uma TTL padrão é:",
     options: ["menor ou igual a 0,8V","maior ou igual a 0,4V","maior ou igual a 2V","maior ou igual a 2,4V","menor ou igual a 2,4V"],
-    answer: "menor ou igual a 0,8V"
+    answer: "menor ou igual a 0,8V",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "Sua função é receber o sinal de saída do acionador e condicioná-lo de modo a tomá-lo compatível com os requisitos da carga. Estamos nos referindo a:",
     options: ["demultiplex","circuito TTL","circuito de interface","lógica combinacional","multiplex"],
-    answer: "circuito de interface"
+    answer: "circuito de interface",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: circuito de interface. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Circuito combinacional dedicado, cuja finalidade é selecionar qual das saídas deve receber a informação presente em sua entrada.",
     options: ["Memória","Demultiplex","Gerador de paridade","Multiplex","Gerador de produtos canônicos"],
-    answer: "Demultiplex"
+    answer: "Demultiplex",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Demultiplex. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "No circuito da figura 137, A = 1, B = 0, C=0, D = 1. Com estes níveis lógicos na entrada a porta ativa em nível um é:",
     options: ["P3","P6","P7","P10","P11"],
     answer: "P10",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: P10. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
     image: circuito137
   },
   {
     question: "No circuito da figura 102, quando A=0 e B = 1, podemos afirmar que D1, D2 e S estarão nas seguintes situações:",
     options: ["D1 conduzindo, D2 cortado e S = 0","D1 cortado, D2 conduzindo e S = 1","D1 conduzindo, D2 cortado e S = 0","D1 cortado, D2 conduzindo e S = 0","D1 conduzindo, D2 cortado e S = 1"],
     answer: "D1 cortado, D2 conduzindo e S = 1",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: D1 cortado, D2 conduzindo e S = 1. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
     image: circuito102
   },
   {
     question: "De acordo com o circuito da figura 104, quando tivermos S em nível 0, os transistores estarão nas seguintes condições:",
     options: ["T2 e T4 saturados e T3 cortado","T2 e T4 cortados e T3 saturado","T3 e T4 saturados e T2 cortado","T3 e T2 saturados e T4 cortado","T2 e T3 cortados e T4 saturado"],
     answer: "T2 e T4 saturados e T3 cortado",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: T2 e T4 saturados e T3 cortado. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
     image: circuito104
   },
   {
     question: "O bloco lógico que permite o controle externo da corrente de coletor é o:",
     options: ["totem pole","toletor aberto","TRISTATE","CMOS padrão","PULL UP"],
-    answer: "toletor aberto"
+    answer: "toletor aberto",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: toletor aberto. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é a estrutura básica de entrada do bloco lógico TTL?",
     options: ["Transistor bipolar ou MULTIEMISSORES","Porta XOR","Rede resistiva","Bloco injetor","Porta NOR"],
-    answer: "Transistor bipolar ou MULTIEMISSORES"
+    answer: "Transistor bipolar ou MULTIEMISSORES",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Transistor bipolar ou MULTIEMISSORES. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Como é chamado o tempo que um bloco lógico leva para passar do estado ALTO para o estado BAIXO ou vice-versa?",
     options: ["Tempo de propagação","Tempo de subida","Tempo de estabilização","Tempo de comutação","Tempo de setup"],
-    answer: "Tempo de propagação"
+    answer: "Tempo de propagação",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Tempo de propagação. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Quantas portas AND devemos usar para três variáveis de entrada, se quisermos gerar os produtos canônicos com portas AND e INVERSORES?",
     options: ["6","8","4","3","16"],
-    answer: "8"
+    answer: "8",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 8. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual a configuração de saída do Bloco Lógico da família TTL que permite o controle externo da corrente de coletor?",
     options: ["Open-collector","Totem-pole","Tri-state","Push-pull","Emitter follower"],
-    answer: "Open-collector"
+    answer: "Open-collector",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Open-collector. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual a matriz mais utilizada no processo de geração de produtos canônicos, por apresentar uma rápida resposta, com o menor número de portas AND?",
     options: ["Matriz de Duplo Encadeamento","Matriz de Simples Encadeamento","Matriz de Soma de Produto","Matriz de Karnaugh","Matriz de De Morgan"],
-    answer: "Matriz de Duplo Encadeamento"
+    answer: "Matriz de Duplo Encadeamento",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Matriz de Duplo Encadeamento. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual o nível lógico interpretado pela entrada de um circuito lógico, se a tensão de entrada estiver entre VIL e VIH?",
     options: ["Indefinido","Alto","Baixo","Tri-state","Superposição"],
-    answer: "Indefinido"
+    answer: "Indefinido",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "Qual a denominação para o número máximo de portas da mesma família, que podem ser ligadas à saída de uma outra, também da mesma família?",
     options: ["Fan-Out","Margem de ruido","Impedância de saída","Ganho","Fator de carga"],
-    answer: "Fan-Out"
+    answer: "Fan-Out",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Fan-Out. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é o estado de entrada de uma TTL em que flui maior corrente?",
     options: ["Nível baixo","Nível alto","Tri-state","Flutuante","Curto-circuito"],
-    answer: "Nível baixo"
+    answer: "Nível baixo",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Nível baixo. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Por que usamos o desacoplamento da fonte de alimentação?",
     options: ["Evitar picos de tensão","Melhorar a velocidade","Aumentar a corrente","Reduzir o ruído de sinal digital","Diminuir a impedância"],
-    answer: "Evitar picos de tensão"
+    answer: "Evitar picos de tensão",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Evitar picos de tensão. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é a função das entradas de seleção de um MUX?",
     options: ["Escolher a entrada a ser ligada à saída","Incrementar o endereço","Gerar paridade","Fornecer clock","Multiplicar sinais"],
-    answer: "Escolher a entrada a ser ligada à saída"
+    answer: "Escolher a entrada a ser ligada à saída",
+    explanation: "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
   },
   {
     question: "O que acontecerá na saída de um bloco lógico, se o FAN-OUT for excedido?",
     options: ["Queda do nível 1 de saída","Aumento da velocidade","Queda do nível 0 de saída","Nenhuma alteração","Aumento do VOH"],
-    answer: "Queda do nível 1 de saída"
+    answer: "Queda do nível 1 de saída",
+    explanation: "O Fan-Out indica o número máximo de entradas padronizadas da mesma família lógica que a saída de uma porta lógica consegue acionar simultaneamente mantendo os níveis de tensão dentro dos limites da faixa garantida (V_OH/V_OL).",
   },
   {
     question: "Qual é a denominação para a medida quantitativa de ruído?",
     options: ["Margem de ruído","Imunidade ao ruído","Ruído peak-to-peak","Fator de ruído","SNR"],
-    answer: "Margem de ruído"
+    answer: "Margem de ruído",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Margem de ruído. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Como são determinadas as escalas de integração?",
     options: ["Pelo número de portas ou dispositivos no chip","Pelo tipo de encapsulamento","Pela tensão de alimentação","Pela velocidade de comutação","Pela temperatura de operação"],
-    answer: "Pelo número de portas ou dispositivos no chip"
+    answer: "Pelo número de portas ou dispositivos no chip",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Pelo número de portas ou dispositivos no chip. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Quais os dispositivos na escala de integração SSI?",
     options: ["Portas e flip-flops","Memórias e CPUs","Conversores ADC","Amplificadores e filtros","Transmissores RF"],
-    answer: "Portas e flip-flops"
+    answer: "Portas e flip-flops",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Portas e flip-flops. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Como um circuito TTL responde a uma entrada em flutuação?",
     options: ["Assume nível 1","Assume nível 0","Permanece indefinido","Queima o circuito","Se torna tri-state"],
-    answer: "Assume nível 1"
+    answer: "Assume nível 1",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Assume nível 1. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Em qual estado de saída de uma TTL flui maior quantidade de corrente?",
     options: ["Nível lógico baixo","Nível lógico alto","Tri-state","Flutuante","Curto-circuito"],
-    answer: "Nível lógico baixo"
+    answer: "Nível lógico baixo",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Nível lógico baixo. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual será o nível lógico na saída de uma porta NAND TTL que possui todas as entradas desconectadas?",
     options: ["0","1","Tri-state","Indefinido","Vdd/2"],
-    answer: "0"
+    answer: "0",
+    explanation: "As portas lógicas NAND (E-Não) e NOR (Ou-Não) são consideradas Portas Universais pela Álgebra Lógica: qualquer outra função booleana fundamental (AND, OR, NOT, XOR) pode ser implementada combinando exclusivamente portas NAND ou exclusivamente portas NOR.",
   },
   {
     question: "Quais as duas (2) maneiras aceitáveis de lidar com entradas NÃO usadas, em uma porta E?",
     options: ["Ligá-las a VCC por resistor de 1kΩ","Deixá-las desconectadas","Ligá-las ao terra sem resistor","Ligá-las a uma das entradas já em uso","Usar pull-down ativo"],
-    answer: "Ligá-las a VCC por resistor de 1kΩ"
+    answer: "Ligá-las a VCC por resistor de 1kΩ",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Ligá-las a VCC por resistor de 1kΩ. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual das subfamílias TTL é melhor em altas frequências?",
     options: ["54AS/74AS","74LS","74HC","74HC(T)","74S"],
-    answer: "54AS/74AS"
+    answer: "54AS/74AS",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 54AS/74AS. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual fator limita o FAN-OUT de dispositivos CMOS?",
     options: ["Frequência de operação","Tensão de alimentação","Temperatura","Número de pinos","Corrente de fuga"],
-    answer: "Frequência de operação"
+    answer: "Frequência de operação",
+    explanation: "O Fan-Out indica o número máximo de entradas padronizadas da mesma família lógica que a saída de uma porta lógica consegue acionar simultaneamente mantendo os níveis de tensão dentro dos limites da faixa garantida (V_OH/V_OL).",
   },
   {
     question: "Qual subfamília combina as melhores características da lógica unipolar e da bipolar?",
     options: ["BICMOS","CMOS","TTL","ECL","DTL"],
-    answer: "BICMOS"
+    answer: "BICMOS",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: BICMOS. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual a vantagem de um Cl de alta densidade?",
     options: ["Menor espaço e menor consumo","Maior consumo","Maior temperatura","Maior ruído","Maior tensão"],
-    answer: "Menor espaço e menor consumo"
+    answer: "Menor espaço e menor consumo",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Menor espaço e menor consumo. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual a série de baixa tensão que é eletricamente compatível com TTL?",
     options: ["74LVT","74HC","74LS","74HCT","74ACT"],
-    answer: "74LVT"
+    answer: "74LVT",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 74LVT. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Como uma CMOS, com VDD > 5V, pode interfacear outra TTL?",
     options: ["Usando conversor de níveis","Ligando diretamente","Usando apenas resistores","Usando diodos Schottky","Não é possível"],
-    answer: "Usando conversor de níveis"
+    answer: "Usando conversor de níveis",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Em um circuito de interface, qual a função de um conversor de níveis?",
     options: ["Converter alta tensão para baixa e vice-versa","Amplificar sinais","Filtrar ruídos","Sincronizar clocks","Multiplexar canais"],
-    answer: "Converter alta tensão para baixa e vice-versa"
+    answer: "Converter alta tensão para baixa e vice-versa",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Converter alta tensão para baixa e vice-versa. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Quantas variáveis de seleção, no mínimo, são necessárias para o dispositivo, sabendo que um certo multiplexador pode chavear de 1 a 48 canais de dados de entrada para saída?",
     options: ["5","6","4","7","8"],
-    answer: "6"
+    answer: "6",
+    explanation: "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
   },
   {
     question: "Quantas entradas possuem as portas AND, utilizadas na confecção do gerador de produtos canônicos, pelo processo de matriz de simples encadeamento?",
     options: ["2","3","4","5","8"],
-    answer: "2"
+    answer: "2",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 2. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "De que forma podemos calcular o número de portas de uma matriz de simples encadeamento?",
     options: ["N = 2^(n+1) - 4","N = 2^n","N = n^2","N = 2^(n-1)","N = 2^(2n) - 1"],
-    answer: "N = 2^(n+1) - 4"
+    answer: "N = 2^(n+1) - 4",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: N = 2^(n+1) - 4. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é o circuito utilizado para enviar um certo número de informações, contidas em vários canais de entrada, à um só canal de saída?",
     options: ["Multiplexador","Demultiplexador","Mux-Demux","Switch","Multiplicador"],
-    answer: "Multiplexador"
+    answer: "Multiplexador",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Multiplexador. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é a interface usada para interligar um circuito CMOS a um TTL?",
     options: ["Buffers conversores / séries HC/HCT","Ligação direta","Resistores pull-up","Diodos zener","Transformadores"],
-    answer: "Buffers conversores / séries HC/HCT"
+    answer: "Buffers conversores / séries HC/HCT",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Quais são os limites de tensão de entrada de um circuito CMOS, na faixa de nível lógico baixo?",
     options: ["0 a 30% do VDD","0 a 50% do VDD","30 a 70% do VDD","50 a 100% do VDD","10 a 40% do VDD"],
-    answer: "0 a 30% do VDD"
+    answer: "0 a 30% do VDD",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Quais são as duas (2) vantagens da família CMOS em relação a TTL?",
     options: ["Menor consumo e maior densidade","Maior consumo e maior velocidade","Maior imunidade e maior tensão","Menor velocidade e menor densidade","Maior fan-out e maior consumo"],
-    answer: "Menor consumo e maior densidade"
+    answer: "Menor consumo e maior densidade",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Quais são os três (3) estados encontrados na configuração de bloco lógico TRI STATE?",
     options: ["Alto, baixo e alta impedância","Alto, baixo e indefinido","Entrada, saída e tri-state","Set, reset e hold","0,1 e X"],
-    answer: "Alto, baixo e alta impedância"
+    answer: "Alto, baixo e alta impedância",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Alto, baixo e alta impedância. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O que devemos fazer com as entradas NÃO usadas de portas NAND, confeccionadas com família TTL?",
     options: ["Ligá-las a VCC por resistor 1kΩ","Deixá-las flutuando","Ligá-las ao terra direto","Usar pull-down ativo","Conectar a uma entrada usada"],
-    answer: "Ligá-las a VCC por resistor 1kΩ"
+    answer: "Ligá-las a VCC por resistor 1kΩ",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Ligá-las a VCC por resistor 1kΩ. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Para que serve o número 192 da nomenclatura MM74C192N?",
     options: ["Define a função do CI: contador síncrono crescente/decrescente de 4 bits","Define a voltagem de trabalho","Define o encapsulamento","Define o fabricante","Define a série"],
-    answer: "Define a função do CI: contador síncrono crescente/decrescente de 4 bits"
+    answer: "Define a função do CI: contador síncrono crescente/decrescente de 4 bits",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Define a função do CI: contador síncrono crescente/decrescente de 4 bits. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O FAN-OUT está relacionado com as tensões de saída e de entrada dos blocos lógicos. Justifique.",
     options: ["Está relacionado primordialmente com as correntes máximas de saída e de entrada","Está relacionado apenas com tensões","Está relacionado com o número de pinos","Está relacionado com a temperatura","Está relacionado com a impedância de entrada"],
-    answer: "Está relacionado primordialmente com as correntes máximas de saída e de entrada"
+    answer: "Está relacionado primordialmente com as correntes máximas de saída e de entrada",
+    explanation: "O Fan-Out indica o número máximo de entradas padronizadas da mesma família lógica que a saída de uma porta lógica consegue acionar simultaneamente mantendo os níveis de tensão dentro dos limites da faixa garantida (V_OH/V_OL).",
   },
   {
     question: "De que depende a quantidade de portas dentro de um CI?",
     options: ["Da escala de integração (SSI, MSI, LSI, etc.)","Da voltagem de alimentação","Do tipo de encapsulamento","Da velocidade de comutação","Do fabricante"],
-    answer: "Da escala de integração (SSI, MSI, LSI, etc.)"
+    answer: "Da escala de integração (SSI, MSI, LSI, etc.)",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Da escala de integração (SSI, MSI, LSI, etc.). O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual o comportamento do MOS canal N, quando a tensão de limiar, VT, for maior do que VGS?",
     options: ["Não conduz","Conduz fortemente","Fica em curto","Opera em saturação","Opera em linear"],
-    answer: "Não conduz"
+    answer: "Não conduz",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Não conduz. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual a faixa de temperatura para as séries 54 e 74 da família TTL?",
     options: ["Série 74: 0°C a +70°C; Série 54: -55°C a +125°C","Série 74: -40°C a +85°C; Série 54: -55°C a +125°C","Série 74: 0°C a +85°C; Série 54: -55°C a +125°C","Série 74: 0°C a +70°C; Série 54: -40°C a +85°C","Série 74: -55°C a +125°C; Série 54: 0°C a +70°C"],
-    answer: "Série 74: 0°C a +70°C; Série 54: -55°C a +125°C"
+    answer: "Série 74: 0°C a +70°C; Série 54: -55°C a +125°C",
+    explanation: "Os circuitos integrados TTL da série comercial (prefixo 74xx, ex: 7400, 74LS00) são padronizados para operar na faixa de temperatura comercial de 0°C a +70°C, com tensão nominal de 5V (±5%). Já a série militar (prefixo 54xx) opera entre -55°C e +125°C.",
   },
   {
     question: "Quais as maneiras corretas de se ligar entradas NÃO usadas de uma porta NOU?",
     options: ["Ligar a uma das entradas usadas ou ligar ao terra (nível 0)","Deixar flutuando","Ligar a VCC direto","Usar resistor de pull-down e pull-up simultaneamente","Conectar a um capacitor"],
-    answer: "Ligar a uma das entradas usadas ou ligar ao terra (nível 0)"
+    answer: "Ligar a uma das entradas usadas ou ligar ao terra (nível 0)",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Ligar a uma das entradas usadas ou ligar ao terra (nível 0). O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O que devemos fazer para evitar que pulsos de alta frequência gerados na linha de alimentação prejudiquem o sistema?",
     options: ["Usar capacitores de desacoplamento entre VCC e terra perto de cada CI","Aumentar a tensão de alimentação","Diminuir a frequência de clock","Usar apenas resistores de pull-up","Substituir por CI CMOS"],
-    answer: "Usar capacitores de desacoplamento entre VCC e terra perto de cada CI"
+    answer: "Usar capacitores de desacoplamento entre VCC e terra perto de cada CI",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Usar capacitores de desacoplamento entre VCC e terra perto de cada CI. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Descreva o funcionamento da porta NAND TTL quando a entrada A está em 0 e B em 1.",
     options: ["Saída será nível lógico alto","Saída será nível lógico baixo","Saída será tri-state","Saída será indefinida","Saída alterna"],
-    answer: "Saída será nível lógico alto"
+    answer: "Saída será nível lógico alto",
+    explanation: "As portas lógicas NAND (E-Não) e NOR (Ou-Não) são consideradas Portas Universais pela Álgebra Lógica: qualquer outra função booleana fundamental (AND, OR, NOT, XOR) pode ser implementada combinando exclusivamente portas NAND ou exclusivamente portas NOR.",
   },
   {
     question: "Descreva em que situação usamos um circuito de Interface.",
     options: ["Quando é necessário interligar dispositivos com características elétricas diferentes","Quando queremos aumentar a largura de banda","Quando precisamos multiplexar vários sinais","Quando queremos reduzir o consumo de potência","Quando precisamos de isolamento galvânico"],
-    answer: "Quando é necessário interligar dispositivos com características elétricas diferentes"
+    answer: "Quando é necessário interligar dispositivos com características elétricas diferentes",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Quando é necessário interligar dispositivos com características elétricas diferentes. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Justifique por que o consumo de potência aumenta com a frequência em circuitos CMOS.",
     options: ["Porque mais comutações por segundo carregam/descarregam capacitâncias de carga","Porque a tensão aumenta com a frequência","Porque o número de portas aumenta","Porque a resistência interna aumenta","Porque o calor dissipa menos"],
-    answer: "Porque mais comutações por segundo carregam/descarregam capacitâncias de carga"
+    answer: "Porque mais comutações por segundo carregam/descarregam capacitâncias de carga",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Por que componentes CMOS são mais indicados para ambientes ruidosos que os TTLs?",
     options: ["Porque possuem maior margem de ruído","Porque consomem mais potência","Porque são mais rápidos","Porque operam em tensões mais altas","Porque têm mais pinos"],
-    answer: "Porque possuem maior margem de ruído"
+    answer: "Porque possuem maior margem de ruído",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Por que a velocidade de comutação do CMOS aumenta com a tensão de alimentação?",
     options: ["Porque a resistência interna RON diminui com VDD","Porque a tensão aumenta a temperatura","Porque a capacitância aumenta","Porque a corrente diminui","Porque o ganho de transistor cai"],
-    answer: "Porque a resistência interna RON diminui com VDD"
+    answer: "Porque a resistência interna RON diminui com VDD",
+    explanation: "O tempo de atraso de propagação (t_pd) é o intervalo de tempo entre a transição na entrada de uma porta lógica e a correspondente mudança de estado na sua saída. Famílias como TTL Schotky rápida (74S, 74F) possuem atrasos extremamente reduzidos no alcance de poucos nanosegundos.",
   },
   {
     question: "O aumento na densidade gerou redução do consumo? Justifique.",
     options: ["Não: maior densidade aumentou consumo por unidade de área, exigindo redução de tensão","Sim: reduz necessariamente o consumo","Sim: aumenta a eficiência termal","Não: aumenta a impedância","Depende do encapsulamento"],
-    answer: "Não: maior densidade aumentou consumo por unidade de área, exigindo redução de tensão"
+    answer: "Não: maior densidade aumentou consumo por unidade de área, exigindo redução de tensão",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Não: maior densidade aumentou consumo por unidade de área, exigindo redução de tensão. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Como os fabricantes resolveram problemas de isolamento em CIs de alta densidade?",
     options: ["Reduzindo tensões de alimentação","Aumentando o encapsulamento","Usando materiais isolantes especiais","Separando pinos","Aplicando shield metálico"],
-    answer: "Reduzindo tensões de alimentação"
+    answer: "Reduzindo tensões de alimentação",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Reduzindo tensões de alimentação. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Cite duas vantagens do aumento na densidade de integração.",
     options: ["Redução do tpd e economia de espaço","Aumento do consumo e aumento do preço","Maior temperatura e menor vida útil","Mais pinos e maior tensão","Maior ruído e menor precisão"],
-    answer: "Redução do tpd e economia de espaço"
+    answer: "Redução do tpd e economia de espaço",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Redução do tpd e economia de espaço. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Quais as características combinadas na lógica BICMOS?",
     options: ["Baixo consumo da CMOS e alta velocidade da bipolar","Alta tensão e baixo consumo","Maior fan-out e menor VIL","Mais portas e menor custo","Maior temperatura e menor tolerância"],
-    answer: "Baixo consumo da CMOS e alta velocidade da bipolar"
+    answer: "Baixo consumo da CMOS e alta velocidade da bipolar",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Descreva o funcionamento da porta NOR CMOS (Figura 109) quando as entradas A e B estão em nível 0.",
     options: ["Transistores P conduzem e N cortam resultando em saída 1","Transistores N conduzem e P cortam resultando em saída 0","Ambos conduzem resultando em curto","Nenhum conduz resultando em X","Transistores alternam estado"],
     answer: "Transistores P conduzem e N cortam resultando em saída 1",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
     image: circuito109
   },
   {
     question: "Defina Tempo de Atraso de Propagação.",
     options: ["Intervalo de tempo para um bloco mudar de estado após mudança na entrada","Tempo para estabilizar a alimentação","Tempo de subida do sinal","Tempo de chegada do clock","Tempo de amostragem"],
-    answer: "Intervalo de tempo para um bloco mudar de estado após mudança na entrada"
+    answer: "Intervalo de tempo para um bloco mudar de estado após mudança na entrada",
+    explanation: "O tempo de atraso de propagação (t_pd) é o intervalo de tempo entre a transição na entrada de uma porta lógica e a correspondente mudança de estado na sua saída. Famílias como TTL Schotky rápida (74S, 74F) possuem atrasos extremamente reduzidos no alcance de poucos nanosegundos.",
   },
   {
     question: "Descreva o tipo de encapsulamento PLCC.",
     options: ["Pinos em formato J curvados sob o CI","Pinos estilo DIP","Encapsulamento SMD sem pinos","Encapsulamento TO-220","Encapsulamento BGA"],
-    answer: "Pinos em formato J curvados sob o CI"
+    answer: "Pinos em formato J curvados sob o CI",
+    explanation: "Os Flip-Flops são circuitos sequenciais biestáveis capazes de armazenar 1 bit de informação. O Flip-Flop JK é universal e elimina a condição proibida do SR (com J=K=1 ele alterna/bascula a saída). O Flip-Flop tipo D (Data) armazena o valor presente na entrada D na borda do clock.",
   },
   {
     question: "Descreva o tipo de matriz muito usado na estrutura de memórias.",
     options: ["Matriz de Duplo Encadeamento","Matriz de Simples Encadeamento","Matriz de Karnaugh","Matriz de Soma de Produto","Matriz de De Morgan"],
-    answer: "Matriz de Duplo Encadeamento"
+    answer: "Matriz de Duplo Encadeamento",
+    explanation: "Os Flip-Flops são circuitos sequenciais biestáveis capazes de armazenar 1 bit de informação. O Flip-Flop JK é universal e elimina a condição proibida do SR (com J=K=1 ele alterna/bascula a saída). O Flip-Flop tipo D (Data) armazena o valor presente na entrada D na borda do clock.",
   }
 ];
 
@@ -2651,7 +2758,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "O estado lógico 0 é representado por tensão positiva e o estado 1 por 0 V.",
       "Os estados lógicos não dependem da tensão."
     ],
-    answer: "O estado lógico 1 é superior ao estado lógico 0 e é representado por uma tensão positiva."
+    answer: "O estado lógico 1 é superior ao estado lógico 0 e é representado por uma tensão positiva.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: O estado lógico 1 é superior ao estado lógico 0 e é representado por uma tensão positiva.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual dos exemplos representa corretamente a lógica positiva?",
@@ -2661,7 +2769,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "+5 V = 1 e 0 V = 0.",
       "+12 V = 0 e -12 V = 1."
     ],
-    answer: "+5 V = 1 e 0 V = 0."
+    answer: "+5 V = 1 e 0 V = 0.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: +5 V = 1 e 0 V = 0.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O que caracteriza a lógica negativa?",
@@ -2671,7 +2780,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "O estado lógico 1 sempre corresponde a +5 V.",
       "O estado lógico 0 é representado por tensão positiva obrigatoriamente."
     ],
-    answer: "O estado lógico 0 é superior ao estado lógico 1 e o nível lógico 1 é representado por tensão negativa."
+    answer: "O estado lógico 0 é superior ao estado lógico 1 e o nível lógico 1 é representado por tensão negativa.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: O estado lógico 0 é superior ao estado lógico 1 e o nível lógico 1 é representado por tensão negativa.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "O que determina as escalas de integração dos circuitos integrados?",
@@ -2681,7 +2791,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "A quantidade de portas ou dispositivos contidos no chip.",
       "O número de pinos."
     ],
-    answer: "A quantidade de portas ou dispositivos contidos no chip."
+    answer: "A quantidade de portas ou dispositivos contidos no chip.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: A quantidade de portas ou dispositivos contidos no chip.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Segundo a classificação GSI, um circuito integrado possui, no mínimo, quantas portas?",
@@ -2691,7 +2802,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "500.000 portas.",
       "1.000.000 de portas."
     ],
-    answer: "1.000.000 de portas."
+    answer: "1.000.000 de portas.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 1.000.000 de portas.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é a densidade da escala LSI (Large Scale Integration)?",
@@ -2701,7 +2813,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "1.000 a 9.999 portas por chip.",
       "Acima de 1 milhão de portas."
     ],
-    answer: "100 a 999 portas por chip."
+    answer: "100 a 999 portas por chip.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 100 a 999 portas por chip.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual dispositivo é típico da escala ULSI?",
@@ -2711,7 +2824,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Diodo Zener.",
       "Transistor bipolar discreto."
     ],
-    answer: "Microprocessador avançado."
+    answer: "Microprocessador avançado.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Microprocessador avançado.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é o tipo de configuração de saída da maioria das portas lógicas TTL?",
@@ -2721,7 +2835,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Totem-Pole.",
       "Push-Pull CMOS."
     ],
-    answer: "Totem-Pole."
+    answer: "Totem-Pole.",
+    explanation: "Os Flip-Flops são circuitos sequenciais biestáveis capazes de armazenar 1 bit de informação. O Flip-Flop JK é universal e elimina a condição proibida do SR (com J=K=1 ele alterna/bascula a saída). O Flip-Flop tipo D (Data) armazena o valor presente na entrada D na borda do clock.",
   },
   {
     question: "Em uma porta NAND TTL, qual será o nível lógico de saída quando a entrada estiver em aberto?",
@@ -2731,7 +2846,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Nível lógico 0.",
       "Indeterminado."
     ],
-    answer: "Nível lógico 0."
+    answer: "Nível lógico 0.",
+    explanation: "As portas lógicas NAND (E-Não) e NOR (Ou-Não) são consideradas Portas Universais pela Álgebra Lógica: qualquer outra função booleana fundamental (AND, OR, NOT, XOR) pode ser implementada combinando exclusivamente portas NAND ou exclusivamente portas NOR.",
   },
   {
     question: "Qual inovação tecnológica foi utilizada na entrada dos circuitos TTL?",
@@ -2741,7 +2857,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Transistores bipolares multiemissores.",
       "Amplificadores operacionais."
     ],
-    answer: "Transistores bipolares multiemissores."
+    answer: "Transistores bipolares multiemissores.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Transistores bipolares multiemissores.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "A família TTL é derivada de qual família lógica?",
@@ -2751,7 +2868,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "DTL.",
       "ECL."
     ],
-    answer: "DTL."
+    answer: "DTL.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: DTL.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é a tensão mínima de alimentação da série TTL 74XXX?",
@@ -2761,7 +2879,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "4,75 V.",
       "5,5 V."
     ],
-    answer: "4,75 V."
+    answer: "4,75 V.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 4,75 V.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é a faixa de alimentação da série TTL 54XXX?",
@@ -2771,7 +2890,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "5 V a 6 V.",
       "4,75 V a 5,25 V."
     ],
-    answer: "4,5 V a 5,5 V."
+    answer: "4,5 V a 5,5 V.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 4,5 V a 5,5 V.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é o fan-out típico da família TTL padrão?",
@@ -2781,7 +2901,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "10 blocos.",
       "20 blocos."
     ],
-    answer: "10 blocos."
+    answer: "10 blocos.",
+    explanation: "O Fan-Out indica o número máximo de entradas padronizadas da mesma família lógica que a saída de uma porta lógica consegue acionar simultaneamente mantendo os níveis de tensão dentro dos limites da faixa garantida (V_OH/V_OL).",
   },
   {
     question: "Qual é o tempo médio de atraso de propagação da TTL padrão?",
@@ -2791,7 +2912,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "10 ns.",
       "100 ns."
     ],
-    answer: "10 ns."
+    answer: "10 ns.",
+    explanation: "O tempo de atraso de propagação (t_pd) é o intervalo de tempo entre a transição na entrada de uma porta lógica e a correspondente mudança de estado na sua saída. Famílias como TTL Schotky rápida (74S, 74F) possuem atrasos extremamente reduzidos no alcance de poucos nanosegundos.",
   },
   {
     question: "Qual é a imunidade ao ruído da família TTL?",
@@ -2801,7 +2923,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "1,0 V.",
       "5,0 V."
     ],
-    answer: "0,4 V."
+    answer: "0,4 V.",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "Qual bloco lógico TTL não possui resistor de coletor ligado ao +VCC internamente?",
@@ -2811,7 +2934,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Open Collector.",
       "Buffer."
     ],
-    answer: "Open Collector."
+    answer: "Open Collector.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Open Collector.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Quem controla externamente a corrente de coletor em uma saída Open Collector?",
@@ -2821,7 +2945,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Resistor Pull-up.",
       "Indutor."
     ],
-    answer: "Resistor Pull-up."
+    answer: "Resistor Pull-up.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Resistor Pull-up.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual a principal vantagem do aumento da corrente de coletor?",
@@ -2831,7 +2956,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Permite aumentar o fan-out.",
       "Reduz a temperatura do circuito."
     ],
-    answer: "Permite aumentar o fan-out."
+    answer: "Permite aumentar o fan-out.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Permite aumentar o fan-out.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual tipo de saída apresenta um terceiro estado de alta impedância?",
@@ -2841,7 +2967,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Tri-State.",
       "Darlington."
     ],
-    answer: "Tri-State."
+    answer: "Tri-State.",
+    explanation: "As saídas Tri-State (Três Estados) possuem três condições de saída: Nível Lógico 1 (Alto), Nível Lógico 0 (Baixo) e Alta Impedância (Hi-Z). No estado Hi-Z, a saída comporta-se como um circuito aberto (desconectado), sendo essencial para compartilhar barramentos de dados comuns.",
   },
   {
     question: "Ao selecionar uma família lógica, quais características devem ser consideradas?",
@@ -2851,7 +2978,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Número de pinos e cor.",
       "Temperatura e encapsulamento."
     ],
-    answer: "Velocidade e potência."
+    answer: "Velocidade e potência.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Velocidade e potência.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é a versão TTL mais rápida?",
@@ -2861,7 +2989,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "74AS.",
       "74C."
     ],
-    answer: "74AS."
+    answer: "74AS.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 74AS.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Quais subfamílias TTL possuem menor consumo de potência?",
@@ -2871,7 +3000,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "74H e 74AS.",
       "74F e 74S."
     ],
-    answer: "74LS e 74ALS."
+    answer: "74LS e 74ALS.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: 74LS e 74ALS.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Qual é o tipo de saída do CI 7406?",
@@ -2881,7 +3011,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Coletor Aberto.",
       "Buffer CMOS."
     ],
-    answer: "Coletor Aberto."
+    answer: "Coletor Aberto.",
+    explanation: "Os Flip-Flops são circuitos sequenciais biestáveis capazes de armazenar 1 bit de informação. O Flip-Flop JK é universal e elimina a condição proibida do SR (com J=K=1 ele alterna/bascula a saída). O Flip-Flop tipo D (Data) armazena o valor presente na entrada D na borda do clock.",
   },
   {
     question: "Onde normalmente são utilizados os CIs que contêm buffers?",
@@ -2891,7 +3022,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Em fontes chaveadas.",
       "Em osciladores."
     ],
-    answer: "Em interfaces para aumentar a capacidade de corrente."
+    answer: "Em interfaces para aumentar a capacidade de corrente.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: Em interfaces para aumentar a capacidade de corrente.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Que tipo de transistor é utilizado na família CMOS?",
@@ -2901,7 +3033,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "MOS complementares (canal N e canal P).",
       "JFET."
     ],
-    answer: "MOS complementares (canal N e canal P)."
+    answer: "MOS complementares (canal N e canal P).",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Qual tipo de MOSFET é utilizado nos CIs digitais CMOS?",
@@ -2911,7 +3044,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Canal duplo.",
       "MOS de potência."
     ],
-    answer: "Enriquecimento (modo de indução)."
+    answer: "Enriquecimento (modo de indução).",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Quais são as séries comerciais da família CMOS?",
@@ -2921,7 +3055,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "74HC e 74HCT apenas.",
       "RTL e DTL."
     ],
-    answer: "54C/74C, 4000A e 4000B."
+    answer: "54C/74C, 4000A e 4000B.",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Qual é a faixa de temperatura típica dos CIs CMOS comuns?",
@@ -2931,7 +3066,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "-40°C a +85°C.",
       "-55°C a +125°C."
     ],
-    answer: "-40°C a +85°C."
+    answer: "-40°C a +85°C.",
+    explanation: "Os circuitos integrados TTL da série comercial (prefixo 74xx, ex: 7400, 74LS00) são padronizados para operar na faixa de temperatura comercial de 0°C a +70°C, com tensão nominal de 5V (±5%). Já a série militar (prefixo 54xx) opera entre -55°C e +125°C.",
   },
   {
     question: "Qual é a faixa de alimentação da série CMOS 4000B?",
@@ -2941,7 +3077,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "5 V a 12 V.",
       "10 V a 15 V."
     ],
-    answer: "3 V a 18 V."
+    answer: "3 V a 18 V.",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "Em um CI CMOS alimentado com VDD = 10 V, qual é o valor mínimo aproximado de VOH?",
@@ -2951,7 +3088,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "9,95 V.",
       "10,5 V."
     ],
-    answer: "9,95 V."
+    answer: "9,95 V.",
+    explanation: "A Margem de Ruído (ou imunidade ao ruído) é a máxima tensão transiente ou espúria que pode ser sobreposta ao sinal de entrada sem causar mudança indevida no estado lógico reconhecido pela porta. É calculada pelas diferenças V_OH(min) - V_IH(min) para nível alto e V_IL(max) - V_OL(max) para nível baixo.",
   },
   {
     question: "Qual melhoria foi introduzida na série CMOS 4000B em relação à 4000?",
@@ -2961,7 +3099,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Alimentação dupla.",
       "Oscilador interno."
     ],
-    answer: "Buffer na saída."
+    answer: "Buffer na saída.",
+    explanation: "A tecnologia CMOS (Complementary Metal-Oxide-Semiconductor) destaca-se pelo baixíssimo consumo de potência em repouso e alta margem de ruído. A série 4000B opera com alimentação ampla de 3V a 15V (ou 18V), enquanto as séries 74HC/74HCT combinam alta velocidade com compatibilidade aos níveis TTL.",
   },
   {
     question: "No código MM74C192N, o número 192 identifica:",
@@ -2971,7 +3110,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "A função específica do dispositivo.",
       "A tensão de alimentação."
     ],
-    answer: "A função específica do dispositivo."
+    answer: "A função específica do dispositivo.",
+    explanation: "Segundo a Apostila de Eletrônica Digital 2 e os parâmetros padronizados das famílias lógicas e circuitos sequenciais/combinacionais, a resposta correta é: A função específica do dispositivo.. O entendimento preciso desses conceitos técnicos garante o projeto e diagnóstico eficaz de sistemas digitais.",
   },
   {
     question: "Quando utilizamos um circuito Multiplexador (MUX)?",
@@ -2981,7 +3121,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Para amplificar sinais analógicos.",
       "Para armazenar dados permanentemente."
     ],
-    answer: "Quando precisamos selecionar uma entre várias entradas e enviá-la para uma única saída."
+    answer: "Quando precisamos selecionar uma entre várias entradas e enviá-la para uma única saída.",
+    explanation: "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
   },
   {
     question: "Qual é a finalidade da entrada de seleção em um MUX?",
@@ -2991,7 +3132,8 @@ quizzes["exercicios-moodle-et-d2"] = [
       "Escolher qual entrada será conectada à saída.",
       "Aumentar a corrente de saída."
     ],
-    answer: "Escolher qual entrada será conectada à saída."
+    answer: "Escolher qual entrada será conectada à saída.",
+    explanation: "O Multiplexador (MUX) funciona como uma chave seletora digital: ele possui 2^N entradas de dados, N entradas de seleção (endereço) e 1 única saída. De acordo com o código binário aplicado nas linhas de seleção, apenas a entrada correspondente é conectada diretamente à saída.",
   }
 ];
 
