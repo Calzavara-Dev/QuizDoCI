@@ -1,6 +1,7 @@
 import { manutencao2Questions } from "./manutencao2";
 import { eletronica2P2Questions } from "./eletronica2_p2";
 import { microcontroladoresP1Questions } from "./microcontroladores_p1";
+import { odometrosP2Questions } from "./odometros_p2";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -2092,6 +2093,7 @@ export const quizTitles: Record<string, string> = {
   "manutencao-dos-sistemas-telefonicos-2": "Manutenção dos Sistemas Telefônicos 2",
   "manutencao-dos-sistemas-de-odometros": "MANUTENÇÃO DOS SISTEMAS DE ODÔMETROS",
   "introducao-aos-microcontroladores-p1": "INTRODUÇÃO AOS MICROCONTROLADORES P1",
+  "manutencao-dos-sistemas-de-odometros-p2": "MANUTENÇÃO DOS SISTEMAS DE ODÔMETROS P2",
 };
 
 // Quiz de Eletrônica Digital II
@@ -3140,5 +3142,6 @@ quizzes["exercicios-moodle-et-d2"] = [
 quizzes["manutencao-dos-sistemas-telefonicos-2"] = manutencao2Questions;
 quizzes["eletronica-digital-2-p2"] = eletronica2P2Questions;
 quizzes["introducao-aos-microcontroladores-p1"] = microcontroladoresP1Questions;
+quizzes["manutencao-dos-sistemas-de-odometros-p2"] = odometrosP2Questions;
 
 export const questions: Question[] = quizzes.telefonia;
