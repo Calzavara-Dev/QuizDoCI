@@ -1673,5 +1673,152 @@ export const odometrosP2Questions: Question[] = [
     answer: "São chaves de transição brutas aguentando 1 Amperè sob 125 Volts AC em RMS e suportam na tolerância cargas cegas cruas resistivas em cravado (1 Ampére e 150 Volts DC); munidas de rigoroso isolamento superior magnético nativo isolando picos acima de marca \"200 Volts\" da rede paralela naval para que o sistema de tiro nunca acione as chaves da CPU internamente.",
     explanation: "Os quatro contatos de relé opto/magneticamente isolados do Módulo 7 possuem especificações elétricas robustas para interfaceamento naval: suportam cargas resistivas de até 1 Ampère com tensões de até 125 Volts AC (RMS) ou até 150 Volts DC (com corrente máxima de 1A), contando com alto isolamento dielétrico (superior a 200V/picos) que blinda os circuitos lógicos da CPU da SDTU contra surtos e retornos da rede externa do navio ou do controle de tiro.",
     topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
+  },
+  // ============================================================================
+  // QUESTÕES SUPLEMENTARES - ESPECIFICAÇÕES, CONEXÕES E MÓDULOS (AGI-LOG)
+  // ============================================================================
+  {
+    question: "Qual é a potência consumida pelo Odômetro AGI-LOG?",
+    options: [
+      "Até 160 VA",
+      "Até 500 VA",
+      "Aproximadamente 1.500 VA",
+      "Inferior a 15 VA"
+    ],
+    answer: "Até 160 VA",
+    explanation: "Conforme as especificações técnicas gerais do Odômetro eletromagnético AGI-LOG, a potência máxima consumida pela S.D.T.U. e pela excitação do sensor é de até 160 VA.",
+    topic: "Especificações Técnicas - Potência Consumida"
+  },
+  {
+    question: "Que precisão possui a haste fixa na velocidade de 0 a 10 nós?",
+    options: [
+      "+/- 0,1 nó",
+      "+/- 0,5 nó",
+      "+/- 1,0 nó",
+      "+/- 0,01 nó"
+    ],
+    answer: "+/- 0,1 nó",
+    explanation: "Na faixa de baixa velocidade (de 0 a 10 nós), onde a precisão é crítica para manobras e navegação em águas restritas, a haste fixa do Odômetro AGI-LOG garante uma precisão de +/- 0,1 nó.",
+    topic: "Especificações do Sensor - Precisão da Haste Fixa"
+  },
+  {
+    question: "Quantas partes componentes possuem os sensores (haste) tipo OTAN do Odômetro AGI-LOG?",
+    options: [
+      "03",
+      "02",
+      "04",
+      "05"
+    ],
+    answer: "03",
+    explanation: "O conjunto do sensor (haste) tipo OTAN do Odômetro AGI-LOG é composto estrutural e operacionalmente por 03 partes componentes principais.",
+    topic: "Sensores - Componentes da Haste Tipo OTAN"
+  },
+  {
+    question: "Em quais terminais do sensor (haste) tipo OTAN do Odômetro AGI-LOG está a alimentação da bobina?",
+    options: [
+      "Terminais 1 e 2 (alimentação da bobina).",
+      "Terminais 3 e 4 (alimentação da bobina).",
+      "Terminais 5 e 6 (alimentação da bobina).",
+      "Terminais A e B (alimentação da bobina)."
+    ],
+    answer: "Terminais 1 e 2 (alimentação da bobina).",
+    explanation: "Nas conexões do sensor tipo OTAN do Odômetro AGI-LOG, a alimentação de corrente alternada para excitação da bobina magnética está ligada aos Terminais 1 e 2.",
+    topic: "Sensores - Conexões e Terminais da Haste OTAN"
+  },
+  {
+    question: "Em quais terminais do sensor (haste) tipo OTAN do Odômetro AGI-LOG está o Sinal de Velocidade?",
+    options: [
+      "Terminais 3 e 4 (Sinal de Velocidade).",
+      "Terminais 1 e 2 (Sinal de Velocidade).",
+      "Terminais 5 e 6 (Sinal de Velocidade).",
+      "Terminais 7 e 8 (Sinal de Velocidade)."
+    ],
+    answer: "Terminais 3 e 4 (Sinal de Velocidade).",
+    explanation: "A minúscula tensão de milivolts induzida pelo movimento da água através do campo magnético é captada pelos eletrodos e enviada à S.D.T.U. através dos Terminais 3 e 4 (Sinal de Velocidade).",
+    topic: "Sensores - Conexões e Terminais da Haste OTAN"
+  },
+  {
+    question: "Em quais terminais do sensor (haste) tipo OTAN do Odômetro AGI-LOG está o terra?",
+    options: [
+      "Terminais 5 e 6 (Terra).",
+      "Terminais 1 e 2 (Terra).",
+      "Terminais 3 e 4 (Terra).",
+      "Apenas no Terminal 8 (Terra)."
+    ],
+    answer: "Terminais 5 e 6 (Terra).",
+    explanation: "A blindagem e a referência de terra (contato com a água do mar e carcaça do sensor) são ligadas aos Terminais 5 e 6 na caixa de junção da haste tipo OTAN.",
+    topic: "Sensores - Conexões e Terminais da Haste OTAN"
+  },
+  {
+    question: "Qual é a Alimentação da bobina do sensor (haste) tipo OTAN do Odômetro AGI-LOG?",
+    options: [
+      "54 a 60 v / 60hz",
+      "115 v / 400 hz",
+      "24 v dc contínuos",
+      "12 v / 50 hz"
+    ],
+    answer: "54 a 60 v / 60hz",
+    explanation: "A bobina magnética de excitação da haste tipo OTAN do Odômetro AGI-LOG é alimentada com tensão alternada regulada na faixa de 54 a 60 v com frequência de 60hz, fornecida pela S.D.T.U.",
+    topic: "Especificações Elétricas - Alimentação da Bobina"
+  },
+  {
+    question: "A S.D.T.U. do Odômetro AGI-LOG é uma unidade alojada em caixa de alumínio robusta e à prova de água, sendo de conceito modular. Qual é o tempo de reparo médio (MTTR)?",
+    options: [
+      "30 minutos",
+      "2 horas",
+      "10 minutos",
+      "24 horas"
+    ],
+    answer: "30 minutos",
+    explanation: "Devido ao conceito totalmente modular e aos circuitos de autodiagnóstico (BIT/BITE) integrados na S.D.T.U., a identificação e substituição de um módulo avariado apresenta um Tempo Médio para Reparo (MTTR - Mean Time To Repair) de apenas 30 minutos.",
+    topic: "Manutenção da S.D.T.U. - MTTR"
+  },
+  {
+    question: "Qual é a função do Módulo 01 (Cartão de Identificação) do Odômetro AGI-LOG?",
+    options: [
+      "Utilizado para fazer a interface entre o processador (M-02) e o painel de controle (M-11).",
+      "Gerar a tensão alternada de 54 a 60 V para excitação da bobina do sensor na água.",
+      "Realizar a conversão analógico-digital dos sinais de milivolts vindos dos eletrodos da haste.",
+      "Fornecer alimentação de emergência em 24 V DC para a memória EPROM da S.D.T.U."
+    ],
+    answer: "Utilizado para fazer a interface entre o processador (M-02) e o painel de controle (M-11).",
+    explanation: "O Módulo 01 (Cartão de Identificação / Interface) tem a função específica de realizar o interfaceamento de comunicação de dados e controle entre o Cartão do Microprocessador (Módulo 02) e o Cartão do Painel de Controle frontal (Módulo 11).",
+    topic: "S.D.T.U. - Funções dos Módulos (Módulo 01)"
+  },
+  {
+    question: "Qual é a função do Módulo 02 (Cartão do Micro Processador e memórias) do Odômetro AGI-LOG?",
+    options: [
+      "Tem a função de processar o sinal proveniente da haste, fornecendo saídas de velocidade e distância através dos módulos 05, 06 e 07. Possui intercomunicação com os módulos 01, 10, 11 e 12.",
+      "Atuar exclusivamente como filtro de linha AC de 115 V para proteger o painel contra surtos de tensão da rede.",
+      "Converter o sinal analógico diferencial da haste em sinal digital de 16 bits para o Módulo 04.",
+      "Gerar sinais síncronos de 400 Hz para alimentar diretamente a agulha giroscópica e o radar ARPA."
+    ],
+    answer: "Tem a função de processar o sinal proveniente da haste, fornecendo saídas de velocidade e distância através dos módulos 05, 06 e 07. Possui intercomunicação com os módulos 01, 10, 11 e 12.",
+    explanation: "O Módulo 02 é o cérebro da S.D.T.U., contendo o microprocessador e as memórias (EPROM/RAM). Ele processa matematicamente os dados convertidos do sensor com base nas curvas de calibração, calcula velocidade e distância integradas e comanda as saídas nos módulos 05, 06 e 07, além de comunicar-se com os módulos 01, 10, 11 e 12.",
+    topic: "S.D.T.U. - Funções dos Módulos (Módulo 02)"
+  },
+  {
+    question: "Qual é a função do Módulo 04 (Conversor de Sinais A/D) do Odômetro AGI-LOG?",
+    options: [
+      "Tem a função de converter o sinal proveniente da haste, em um sinal digital equivalente e após amplificá-lo envia ao Módulo 02.",
+      "Gerar as saídas de relé isoladas para os alarmes sonoros da ponte e registradores de viagem do navio.",
+      "Fazer a interface entre os mostradores digitais de 7 segmentos do painel frontal e as teclas de comando.",
+      "Distribuir a alimentação secundária de +5 V, +12 V e -12 V para os demais cartões do chassi."
+    ],
+    answer: "Tem a função de converter o sinal proveniente da haste, em um sinal digital equivalente e após amplificá-lo envia ao Módulo 02.",
+    explanation: "O Módulo 04 (Conversor A/D) recebe o sinal analógico de baixo nível induzido nos eletrodos da haste, realiza a pré-amplificação diferencial com alta rejeição a ruídos e converte esse sinal analógico para formato digital (A/D), enviando-o em seguida para processamento no Módulo 02.",
+    topic: "S.D.T.U. - Funções dos Módulos (Módulo 04)"
+  },
+  {
+    question: "Qual é a função dos Módulos 05 e 06 (Conversores de Sinais D/A = opcional) do Odômetro AGI-LOG?",
+    options: [
+      "Proporcionam saídas síncronas de 400 Hz. Sinais de velocidade equivalente a sincros 15CX4.",
+      "Proporcionam saídas em corrente contínua 4-20 mA para monitoramento das bombas do porão do navio.",
+      "Realizam o teste de isolamento elétrico da bobina do sensor contra a quilha da embarcação a cada 24 horas.",
+      "Conferem redundância à fonte de alimentação, comutando automaticamente para bateria de 24 V em caso de blecaute."
+    ],
+    answer: "Proporcionam saídas síncronas de 400 Hz. Sinais de velocidade equivalente a sincros 15CX4.",
+    explanation: "Os Módulos 05 e 06 (Conversores D/A opcionais) são cartões de interface de saída responsáveis por converter a informação digital do microprocessador em sinais analógicos síncronos de 400 Hz, equivalentes aos transmissores sincros padrão 15CX4, permitindo que repetidores eletromecânicos de velocidade do navio acompanhem a medição do odômetro.",
+    topic: "S.D.T.U. - Funções dos Módulos (Módulos 05 e 06)"
   }
 ];
