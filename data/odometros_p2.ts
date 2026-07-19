@@ -912,7 +912,7 @@ export const odometrosP2Questions: Question[] = [
       "O cartão é mergulhado por 24 horas em ácido sulfúrico para dissolver o verniz marinho e depois é banhado a ouro puro antes de voltar para o passadiço.",
       "O módulo é soldado permanentemente na caixa principal de disjuntores da casa de máquinas para funcionar como filtro passivo de harmônicas do gerador principal."
     ],
-    answer: "O cartäo é enviado a um laboratório ou oficina naval onde passa por Manutenção Corretiva detalhada a nível de componente com osciloscópio, trocando-se os circuitos integrados, capacitores ou transistores avariados para calibrá-lo e devolvê-lo ao estoque de sobressalentes testados.",
+    answer: "O cartão é enviado a um laboratório ou oficina naval onde passa por Manutenção Corretiva detalhada a nível de componente com osciloscópio, trocando-se os circuitos integrados, capacitores ou transistores avariados para calibrá-lo e devolvê-lo ao estoque de sobressalentes testados.",
     explanation: "O ciclo de vida logístico e de manutenção naval do AGI-LOG preserva os valiosos cartões modulares. A substituição a bordo garante um MTTR curto (navio operando). O cartão com avaria (ex: Módulo 04 ou 08) é encaminhado para a oficina de eletrônica de terra (2º/3º escalão), onde técnicos com manuais esquemáticos, injetores de sinal e estação de solda localizam o componente discreto exato que queimou (ex: um chip A/D ou capacitor de filtro), consertam, testam em bancada e restabelecem o cartão no estoque de spare parts.",
     topic: "Reparo a Nível de Componente na Oficina de Terra"
   },
