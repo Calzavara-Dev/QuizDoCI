@@ -1221,8 +1221,8 @@ export const anemometrosQuestions: Question[] = [
   },
   {
     question: "Durante uma manobra padrão, o operador do Centro de Operações de Combate (COC) nota que o indicador de direção do Anemômetro Tipo F continuou girando indefinidamente após uma guinada de 30º. Qual a causa mais provável dessa avaria?",
-    options: ["Falha no gerador de indução, que parou de enviar o sinal CA.","Queima do motor de frequência constante, travando o integrador mecânico.","nota que o indicador de direção do Anemômetro Tipo F continuou girando indefinidamente após uma guinada de 30º. Qual a causa mais provável dessa avaria? A) Falha no gerador de indução, que parou de enviar o sinal CA. B) Queima do motor de frequência constante, travando o integrador mecânico. C) Falta de realimentação (feedback) mecânica para o Transformador de Controle (CT).","Abertura do circuito pela microchave FC.","Curto-circuito nos anéis coletores do transmissor síncro."],
-    answer: "nota que o indicador de direção do Anemômetro Tipo F continuou girando indefinidamente após uma guinada de 30º. Qual a causa mais provável dessa avaria? A) Falha no gerador de indução, que parou de enviar o sinal CA. B) Queima do motor de frequência constante, travando o integrador mecânico. C) Falta de realimentação (feedback) mecânica para o Transformador de Controle (CT).",
+    options: ["Falha no gerador de indução, que parou de enviar o sinal CA.", "Queima do motor de frequência constante, travando o integrador mecânico.", "Falta de realimentação (feedback) mecânica para o Transformador de Controle (CT).", "Abertura do circuito pela microchave FC.", "Curto-circuito nos anéis coletores do transmissor síncro."],
+    answer: "Falta de realimentação (feedback) mecânica para o Transformador de Controle (CT).",
     explanation: "No servossistema do Tipo F, o motor posiciona o rotor e, simultaneamente, envia um sinal mecânico de resposta ao rotor do CT para zerar o erro. Sem essa realimentação, o sistema não percebe que já atingiu a posição e continua girando o indicador."
   },
   {
@@ -1268,8 +1268,8 @@ export const anemometrosQuestions: Question[] = [
     explanation: "A alimentação de 1 volt, proveniente do transformador T2, tem a finalidade específica de prover a energia para o circuito de \"Ajuste do Zero\" do sistema Evershed."
   },
   {
-    question: "Ao realizar a verificação das tensões nos pontos de teste (TP) da Unidade de Retransmissão (RTU) do anemômetro Evershed, o militar precisa de um ponto comum de referência (TERR",
-    options: [". O ponto de teste que deve sempre ser utilizado como referência de 0 Volts é o: A) TP 1","TP 2","TP 4","TP 6","TP 12"],
+    question: "Ao realizar a verificação das tensões nos pontos de teste (TP) da Unidade de Retransmissão (RTU) do anemômetro Evershed, o militar precisa de um ponto comum de referência (TERRA). O ponto de teste que deve sempre ser utilizado como referência de 0 Volts é o:",
+    options: ["TP 1", "TP 2", "TP 4", "TP 6", "TP 12"],
     answer: "TP 6",
     explanation: "Nos testes da RTU, o ponto TP 6 é a referência padronizada de aterramento (0 volts) para as medições."
   },
