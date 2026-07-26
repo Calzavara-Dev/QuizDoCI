@@ -2316,5 +2316,658 @@ export const anemometrosQuestions: Question[] = [
     ],
     "answer": "Potenciômetro RV4.",
     "topic": "Anemômetros"
+  },
+
+  {
+    "question": "O síncro LINVAR, utilizado no servo de velocidade do anemômetro EVERSHED, opera como um transdutor. Qual é o princípio eletromagnético fundamental que permite sua operação linear?",
+    "options": [
+      "Efeito Piezoelétrico com conversão direta de pressão em tensão contínua.",
+      "Variação linear do coeficiente de acoplamento magnético entre o rotor e o estator em função do ângulo de rotação.",
+      "Efeito Hall, medindo o campo magnético gerado pelas cubas.",
+      "Variação capacitiva em resposta à velocidade angular das cubas.",
+      "Indução eletrostática via anéis coletores de grafite."
+    ],
+    "answer": "Variação linear do coeficiente de acoplamento magnético entre o rotor e o estator em função do ângulo de rotação.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O LINVAR (Linear Variometer) é construído especialmente para que a tensão induzida no seu secundário (estator/rotor) varie de forma estritamente linear em relação ao deslocamento angular dentro de uma faixa específica de operação."
+  },
+  {
+    "question": "Durante o funcionamento do anemômetro EVERSHED, o LINVAR fornece uma realimentação (feedback) de 0 a 40 VCA. Qual é o propósito direto desse sinal no circuito do servo de velocidade?",
+    "options": [
+      "Alimentar o gerador de indução do detector.",
+      "Iluminar os mostradores do passadiço.",
+      "Opor-se (cancelar) a tensão retificada proveniente do detector para que o servomotor pare quando a posição correta for atingida.",
+      "Fornecer uma referência de fase estática para o síncro CT do servo de direção.",
+      "Retificar a corrente alternada de 115V para o painel principal."
+    ],
+    "answer": "Opor-se (cancelar) a tensão retificada proveniente do detector para que o servomotor pare quando a posição correta for atingida.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O sinal gerado pelo LINVAR é retificado e introduzido no circuito do amplificador onde é comparado (subtraído) com o sinal vindo do detector. Quando as tensões se igualam, o erro cai a zero, parando o servo motor."
+  },
+  {
+    "question": "Considerando o servo de velocidade do EVERSHED, o rotor do LINVAR não gira continuamente 360º. Seu deslocamento mecânico útil para a faixa de medição (0 a 75 nós) é de aproximadamente:",
+    "options": [
+      "360 graus.",
+      "180 graus.",
+      "85 graus (operando em uma faixa linear restrita).",
+      "10 graus.",
+      "270 graus."
+    ],
+    "answer": "85 graus (operando em uma faixa linear restrita).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Os LINVARs são projetados para oferecer linearidade apenas em uma faixa restrita (geralmente em torno de +/- 85 graus a partir da posição neutra). Eles não giram livremente como um síncro transmissor (TX)."
+  },
+  {
+    "question": "A tensão induzida no LINVAR apresenta uma inversão de fase quando o rotor passa pelo \"zero elétrico\". No servo de velocidade do EVERSHED, isso afeta o sistema de que maneira?",
+    "options": [
+      "Faz o motor girar no sentido reverso caso a indicação tente ir abaixo de zero nós.",
+      "Desarma os fusíveis FS1 e FS2 para proteção.",
+      "Muda a cor da indicação do dial de verde para vermelho.",
+      "Aumenta a temperatura do amplificador PA-112.",
+      "Causa saturação magnética no núcleo do LINVAR."
+    ],
+    "answer": "Faz o motor girar no sentido reverso caso a indicação tente ir abaixo de zero nós.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Ao passar do zero, a inversão de fase indica um erro negativo. O amplificador detecta essa fase reversa e comanda o motor M2 a girar na direção oposta, trazendo a indicação de volta para a faixa de operação."
+  },
+  {
+    "question": "Se houver uma falha no estator do síncro LINVAR (circuito aberto), qual será o sintoma imediato no mostrador de velocidade do anemômetro EVERSHED?",
+    "options": [
+      "O mostrador travará em zero nós.",
+      "O mostrador indicará sempre 75 nós.",
+      "O motor perderá a realimentação de oposição, fazendo o mostrador disparar ou oscilar incontrolavelmente até o fim de curso.",
+      "A direção do vento passará a ser exibida no mostrador de velocidade.",
+      "A luz vermelha do painel apagará."
+    ],
+    "answer": "O motor perderá a realimentação de oposição, fazendo o mostrador disparar ou oscilar incontrolavelmente até o fim de curso.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Sem a tensão de oposição (feedback) gerada pelo LINVAR, o sinal do detector continuará presente no amplificador como um \"erro constante\". O motor girará sem parar tentando zerar um erro que nunca será compensado."
+  },
+  {
+    "question": "No diagrama do anemômetro EVERSHED, a tensão alternada proveniente do LINVAR é transformada em contínua antes de chegar ao amplificador. Qual componente é o principal responsável por esta retificação?",
+    "options": [
+      "Diodo Zener D5.",
+      "Transformador T1.",
+      "Ponte de Diodos D4.",
+      "Diodo Retificador D1.",
+      "Potenciômetro RV4."
+    ],
+    "answer": "Ponte de Diodos D4.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O sinal AC de 0 a 40V do LINVAR passa pela ponte de diodos D4, sendo retificado em onda completa para que possa ser comparado como um nível DC (nível de tensão contínua) com o sinal de velocidade."
+  },
+  {
+    "question": "O que diferencia fisicamente e funcionalmente um LINVAR de um Síncro CT (Transformador de Controle) padrão dentro do sistema anemométrico?",
+    "options": [
+      "O LINVAR usa alimentação DC, enquanto o CT usa AC.",
+      "O CT gera um sinal para acionar motores diretamente, o LINVAR não.",
+      "O LINVAR possui um rotor especialmente bobinado/perfilado para saída de tensão linear versus ângulo, enquanto o CT fornece um sinal senoidal de erro que varia com o seno do ângulo de desalinhamento.",
+      "O LINVAR atua no servo de direção, o CT no servo de velocidade.",
+      "O LINVAR não possui anéis coletores."
+    ],
+    "answer": "O LINVAR possui um rotor especialmente bobinado/perfilado para saída de tensão linear versus ângulo, enquanto o CT fornece um sinal senoidal de erro que varia com o seno do ângulo de desalinhamento.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "A curva de saída do CT é senoidal (erro = sen(θ)). O LINVAR tem enrolamentos conformados para que a relação tensão/ângulo seja uma reta (linear), o que é essencial para um mostrador linear de velocidade (nós)."
+  },
+  {
+    "question": "Por que a alimentação AC do LINVAR (estator) requer estabilidade de frequência (400Hz)?",
+    "options": [
+      "Para impedir o sobreaquecimento da aleta mecânica.",
+      "Porque variações de frequência alteram a reatância indutiva dos enrolamentos, modificando a tensão de saída e, consequentemente, a precisão da calibração de velocidade.",
+      "Para compatibilizar com os relés DC.",
+      "Para que a ponte de diodos D4 não conduza reversamente.",
+      "Para aumentar a velocidade de rotação das cubas."
+    ],
+    "answer": "Porque variações de frequência alteram a reatância indutiva dos enrolamentos, modificando a tensão de saída e, consequentemente, a precisão da calibração de velocidade.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Como um dispositivo indutivo (transformador rotativo), a tensão induzida e a impedância dependem da frequência. Uma mudança brusca de 400Hz para 380Hz, por exemplo, faria a tensão de feedback cair, resultando em leituras de velocidade erradas."
+  },
+  {
+    "question": "No servo de velocidade, ao aumentarmos o amortecimento atuando no RV3, o que efetivamente acontece com o sinal do LINVAR?",
+    "options": [
+      "Ele é cortado completamente.",
+      "Sua fase é invertida instantaneamente.",
+      "Sua parcela de variação rápida é filtrada / atenuada no malha de erro para evitar que o motor M2 faça o ponteiro trepidar.",
+      "Ele tem sua tensão dobrada de 40V para 80V.",
+      "Ele é desviado para o servo de direção."
+    ],
+    "answer": "Sua parcela de variação rápida é filtrada / atenuada no malha de erro para evitar que o motor M2 faça o ponteiro trepidar.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O amortecimento (RV3) atua sobre a parcela dinâmica da malha. Ajustá-lo afeta como a taxa de variação do sinal (incluindo o do LINVAR) influencia a velocidade de resposta do motor, reduzindo as \"trepidações\" do ponteiro perante rajadas de vento."
+  },
+  {
+    "question": "O \"Fundo de Escala\" do anemômetro EVERSHED é 75 nós. Nesse ponto exato (vento a 75 nós), o rotor do LINVAR atinge sua posição máxima projetada. Nesse instante, a tensão de saída do LINVAR (antes da retificação) é de:",
+    "options": [
+      "0 VCA.",
+      "26 VCA.",
+      "115 VCA.",
+      "40 VCA.",
+      "10 VCA."
+    ],
+    "answer": "40 VCA.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O LINVAR foi projetado para fornecer um sinal que varia linearmente de 0 a 40 VCA. Logo, no fundo de escala máximo do indicador de velocidade (75 nós), a tensão de oposição gerada atinge seu máximo de 40 VCA."
+  },
+  {
+    "question": "Qual a consequência direta se o enrolamento primário do LINVAR receber uma tensão inferior a especificada por avaria no transformador de alimentação?",
+    "options": [
+      "A sensibilidade aumentará, lendo ventos mais fortes do que os reais.",
+      "O motor girará mais rápido na direção reversa.",
+      "O mostrador indicará uma velocidade maior do que a real.",
+      "Apenas o teste de calibração falhará.",
+      "Não haverá consequência, pois a retificação em ponte (D4) compensa."
+    ],
+    "answer": "O mostrador indicará uma velocidade maior do que a real.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Se o LINVAR receber menos tensão, ele induzirá um feedback menor para um mesmo ângulo do ponteiro. O amplificador exigirá que o ponteiro vá mais adiante na escala para gerar a tensão de oposição necessária, causando indicação falsamente alta."
+  },
+  {
+    "question": "A conexão mecânica entre o motor do servo de velocidade e o rotor do LINVAR é feita através de:",
+    "options": [
+      "Acoplamento magnético sem contato.",
+      "Um tubo de Pitot.",
+      "Um sistema de engrenagens redutoras (ex: 2000/1).",
+      "Um veio flexível (flex-drive) longo.",
+      "Discos de fricção do integrador mecânico."
+    ],
+    "answer": "Um sistema de engrenagens redutoras (ex: 2000/1).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O motor M2 de alta velocidade é reduzido por um trem de engrenagens (como a relação 2000:1) para movimentar lentamente o rotor do LINVAR e, simultaneamente, o ponteiro indicador, garantindo alto torque e precisão."
+  },
+  {
+    "question": "Qual é a principal característica operacional que define os Diodos D5 e D6 no painel de alimentação do EVERSHED como \"reguladores/estabilizadores\"?",
+    "options": [
+      "Operam polarizados diretamente, emitindo luz.",
+      "Operam em condução reversa controlada (Efeito Zener / Avalanche), mantendo uma queda de tensão constante em seus terminais independentemente de flutuações na corrente.",
+      "São diodos de túnel de altíssima frequência.",
+      "São SCRs que disparam apenas em 115V.",
+      "Atuam como foto-diodos para o circuito de alarme."
+    ],
+    "answer": "Operam em condução reversa controlada (Efeito Zener / Avalanche), mantendo uma queda de tensão constante em seus terminais independentemente de flutuações na corrente.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Diodos reguladores (Zener) são polarizados reversamente e projetados para entrar em condução (avalanche) a uma tensão específica, estabilizando as variações de voltagem do suprimento principal para proteger as referências do circuito."
+  },
+  {
+    "question": "Uma falha de \"curto-circuito\" em um dos diodos reguladores (D5 ou D6) causará:",
+    "options": [
+      "Um aumento perigoso na tensão de referência do amplificador operacional.",
+      "A queda da tensão da linha regulada para praticamente zero (terra), desestabilizando ou apagando as malhas de erro associadas.",
+      "Apenas a inversão de polaridade da alimentação do síncro CT.",
+      "O aumento da rotação das cubas no mastro.",
+      "A abertura da ponte de retificação D4."
+    ],
+    "answer": "A queda da tensão da linha regulada para praticamente zero (terra), desestabilizando ou apagando as malhas de erro associadas.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Um diodo Zener em curto-circuito desviará toda a corrente para o referencial de massa (terra), eliminando a tensão estabilizada que deveria ser distribuída, colapsando a operação do amplificador / malha de controle."
+  },
+  {
+    "question": "O Diodo D1, localizado no servo de velocidade, atua como retificador de:",
+    "options": [
+      "Onda completa do sinal do gerador de indução.",
+      "Meia onda do sinal de 10V / 400Hz oriundo do transformador T1.",
+      "Alta frequência para o Taco-Gerador.",
+      "Polaridade dupla para as lâmpadas.",
+      "Pico a pico da tensão DC."
+    ],
+    "answer": "Meia onda do sinal de 10V / 400Hz oriundo do transformador T1.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O diodo D1 é classificado tecnicamente nos manuais como um retificador de meia onda que processa a saída auxiliar (referência/excitação) vinda do enrolamento secundário do T1."
+  },
+  {
+    "question": "Considerando a ponte retificadora D4 do sistema EVERSHED, se um dos seus quatro diodos internos \"abrir\" (circuito aberto), o que acontecerá com a tensão DC de saída fornecida pelo LINVAR ao amplificador?",
+    "options": [
+      "Ela subirá para 115 VDC.",
+      "Ela será invertida.",
+      "A ponte passará a atuar como um retificador de meia onda, dobrando o *ripple* (ondulação) e reduzindo o valor médio DC, causando instabilidade no ponteiro.",
+      "Ocorrerá um curto-circuito desarmando a RTU.",
+      "A ponte continuará retificando em onda completa normalmente."
+    ],
+    "answer": "A ponte passará a atuar como um retificador de meia onda, dobrando o *ripple* (ondulação) e reduzindo o valor médio DC, causando instabilidade no ponteiro.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Quando um diodo de uma ponte de onda completa abre, a ponte passa a retificar apenas metade do ciclo (meia onda). Isso reduz o nível DC e introduz forte ruído (ripple), o que faz o servo motor oscilar ou vibrar."
+  },
+  {
+    "question": "O que aconteceria se os diodos reguladores D5 e D6 fossem acidentalmente instalados com a polaridade invertida (polarização direta)?",
+    "options": [
+      "A tensão da fonte seria estabilizada com o dobro do valor projetado.",
+      "O circuito de velocidade indicaria apenas na direção reversa.",
+      "Eles conduziriam como diodos comuns, provocando um curto prático com queda de apenas ~0.7V, não regulando a alta tensão e possivelmente queimando o resistor limitador.",
+      "O circuito funcionaria normalmente, pois diodos Zener são bidirecionais.",
+      "O transformador T1 explodiria imediatamente."
+    ],
+    "answer": "Eles conduziriam como diodos comuns, provocando um curto prático com queda de apenas ~0.7V, não regulando a alta tensão e possivelmente queimando o resistor limitador.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Diodos reguladores devem ser instalados com polarização reversa. Em polarização direta, comportam-se como diodos comuns (~0.7V de queda), drenando excessiva corrente através do resistor série e matando a regulação da linha."
+  },
+  {
+    "question": "Nos diagramas dos servos das fragatas, por que é necessária a retificação (via D4 e outros) de todos os sinais de erro antes da amplificação e mistura (PA-112)?",
+    "options": [
+      "Porque os motores de acompanhamento são obrigatoriamente de corrente contínua (DC).",
+      "O amplificador operacional do PA-112 é desenhado para somar e processar erros diferenciais em níveis de Corrente Contínua (DC). Sinais AC sofreriam cancelamento de fase indesejado ou problemas de frequência.",
+      "Para evitar interferência nos rádios do navio.",
+      "Para acender os painéis de LED vermelho e verde.",
+      "Porque o Síncro CT só funciona com pulsos DC."
+    ],
+    "answer": "O amplificador operacional do PA-112 é desenhado para somar e processar erros diferenciais em níveis de Corrente Contínua (DC). Sinais AC sofreriam cancelamento de fase indesejado ou problemas de frequência.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Amplificadores de erro (somadores) em servos analógicos clássicos geralmente processam variações de tensão DC. Os sinais AC vêm com variação de fase; ao convertê-los em DC, o sistema compara apenas magnitudes (níveis de tensão)."
+  },
+  {
+    "question": "Em um diagnóstico de rotina, a medição na saída da ponte D4 apresenta uma componente alternada (AC) muito alta sobreposta ao sinal DC. O componente passivo que provavelmente está avariado (além da ponte) na malha de retificação é o:",
+    "options": [
+      "Diodo D5.",
+      "Resistor de amortecimento R14.",
+      "Capacitor de filtro associado em paralelo à saída da ponte D4.",
+      "Potenciômetro RV1.",
+      "Taco-gerador TG2."
+    ],
+    "answer": "Capacitor de filtro associado em paralelo à saída da ponte D4.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "A componente alternada após a retificação é chamada de \"ripple\". Capacitores em paralelo atuam como filtros passa-baixa, alisando esse sinal. Se o capacitor secar ou abrir, o ripple AC aparece forte sobre o sinal DC."
+  },
+  {
+    "question": "A ponte retificadora que processa o sinal advindo do Síncro TX no detector de direção tem a função principal de:",
+    "options": [
+      "Transmitir 115V para aRTU.",
+      "Criar uma tensão contínua variável proporcional ao alinhamento angular para comparação no amplificador de direção.",
+      "Eliminar a eletricidade estática gerada pelo atrito da aleta com o vento.",
+      "Alimentar a resistência de aquecimento anti-congelamento.",
+      "Girar mecanicamente o rodete do integrador."
+    ],
+    "answer": "Criar uma tensão contínua variável proporcional ao alinhamento angular para comparação no amplificador de direção.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Assim como a velocidade, a direção precisa ser traduzida de sinais síncrono-AC para DC em alguns subsistemas do amplificador PA-112 para calcular o erro diferencial real."
+  },
+  {
+    "question": "Na teoria de falhas do EVERSHED, o resistor R15 está associado fortemente à que circuito do servo de direção?",
+    "options": [
+      "Ao circuito do alarme de excesso de vento.",
+      "Ao circuito de iluminação do mostrador.",
+      "À malha do circuito de Teste de Direção do Vento (chaves seletoras S1/S2).",
+      "Ao regulador de tensão do LINVAR.",
+      "Ao retificador de onda completa D4."
+    ],
+    "answer": "À malha do circuito de Teste de Direção do Vento (chaves seletoras S1/S2).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Na literatura e bizuários originais de MB, a avaria em R15 é clássica por isolar (inutilizar) o sinal aplicado aos estatores do CT durante a execução do teste rotativo de direção (0º, 120ºBE, 120ºBB)."
+  },
+  {
+    "question": "Durante a avaliação de um servo de velocidade do anemômetro, nota-se que quando o sinal medido no potenciômetro RV4 e no resistor R11 atingem exata oposição de polaridade e igualdade de valor, o motor:",
+    "options": [
+      "Atinge sua rotação máxima.",
+      "Oscila na frequência de 60Hz.",
+      "Aumenta o erro exponencialmente.",
+      "Encontra o estado de nulidade (zero RPM).",
+      "Desarma por sobretensão."
+    ],
+    "answer": "Encontra o estado de nulidade (zero RPM).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O R11 e RV4 fazem parte da rede de soma do amplificador. Quando os sinais são iguais em magnitude mas opostos em polaridade (+ e -), a soma algébrica no amplificador é 0V, causando a parada do servo."
+  },
+  {
+    "question": "O resistor R13, localizado no sistema EVERSHED, atua criticamente:",
+    "options": [
+      "Como resistência limitadora de corrente na base do transistor de saída do PA-112.",
+      "Na equalização de impedância do taco-gerador TG2.",
+      "Na limitação de corrente durante as simulações de velocidade da chave S3 (teste de 15, 30, 45 nós). Se queimar, o teste de calibração falha.",
+      "No amortecimento físico da engrenagem redutora 2000/1.",
+      "Como shunt de corrente no amperímetro do painel."
+    ],
+    "answer": "Na limitação de corrente durante as simulações de velocidade da chave S3 (teste de 15, 30, 45 nós). Se queimar, o teste de calibração falha.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Os circuitos de teste (chave S3) baseiam-se em injetar sinais calibrados no sistema através de um divisor resistivo de precisão. O R13 compõe essa malha divisora; sua queima impede a injeção do sinal simulado."
+  },
+  {
+    "question": "Ao medir o resistor R-103 numa placa antiga do sistema (conforme certas apostilas detalhadas), espera-se encontrar o valor ôhmico padrão de:",
+    "options": [
+      "120 Ohms.",
+      "60 Ohms.",
+      "1 kOhm.",
+      "10 kOhms.",
+      "470 Ohms."
+    ],
+    "answer": "60 Ohms.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "\"Bizu\" clássico da Marinha, derivado de diagramas esquemáticos internos onde resistores de casamento de linha ou shunt como o R-103 no amplificador PA possuem a especificação rígida de 60 Ohms."
+  },
+  {
+    "question": "Qual é a principal função dos divisores resistivos, compostos pelos diversos resistores de precisão da malha do PA-112?",
+    "options": [
+      "Proteger as lâmpadas contra queima imediata.",
+      "Ajustar os níveis das tensões provenientes dos transdutores (LINVAR, Gerador de Indução, CT) para a escala sensível de entrada do amplificador operacional (escala de milivolts).",
+      "Substituir os fusíveis FS1 e FS2.",
+      "Dissipar todo o ruído de RF vindo dos rádios de comunicação.",
+      "Gerar o sinal senoidal de 400Hz."
+    ],
+    "answer": "Ajustar os níveis das tensões provenientes dos transdutores (LINVAR, Gerador de Indução, CT) para a escala sensível de entrada do amplificador operacional (escala de milivolts).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Amplificadores operacionais exigem sinais de erro minúsculos. Sinais de 40V ou 26V devem ser atenuados via divisores resistivos (redes) antes de serem introduzidos nos pinos de entrada diferencial."
+  },
+  {
+    "question": "O resistor variável RV1, localizado no servo de direção, é fisicamente um:",
+    "options": [
+      "Potenciômetro rotativo que ajusta a sensibilidade (ganho de amplificação).",
+      "Varistor que protege contra raios.",
+      "Termistor de coeficiente negativo.",
+      "Reostato de 115V para controle direto da velocidade do M2.",
+      "Trimpot interno inacessível."
+    ],
+    "answer": "Potenciômetro rotativo que ajusta a sensibilidade (ganho de amplificação).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "RV1 é um potenciômetro. O ajuste da sensibilidade altera o ganho. Se a sensibilidade for baixa, o ponteiro tem \"folga\" e demora a responder; se for muito alta, o ponteiro \"vibra\" constantemente em pequenos desvios."
+  },
+  {
+    "question": "Num circuito de realimentação negativa (feedback) de um servo motor, como o do anemômetro, se o resistor de feedback (ex: RV2) assumir o valor de resistência infinita (fio quebrado), o que ocorrerá?",
+    "options": [
+      "O amortecimento será máximo e o motor não rodará.",
+      "O motor girará devagar e parará fora da posição.",
+      "O circuito operará em ganho de \"malha aberta\", tornando-se altamente instável (overshoot maciço), e o motor oscilará violentamente em torno do ponto desejado.",
+      "O taco-gerador assumirá o controle total.",
+      "A tensão em TP11 se anulará."
+    ],
+    "answer": "O circuito operará em ganho de \"malha aberta\", tornando-se altamente instável (overshoot maciço), e o motor oscilará violentamente em torno do ponto desejado.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Sem o resistor de feedback, o amortecimento some. O ganho do amplificador vai ao máximo (malha aberta). Qualquer pequeno erro faz o motor disparar com força total, passar do ponto, inverter, passar do ponto, gerando oscilação perpétua."
+  },
+  {
+    "question": "Durante a calibração, ajusta-se o RV4 (Zero do Mostrador de Velocidade). Ele eletricamente fornece ao amplificador:",
+    "options": [
+      "Uma tensão de polarização (offset) variável que soma ou subtrai uma constante DC ao erro, permitindo alinhar o ponteiro no 0 mecânico quando não há sinal do detector.",
+      "Um curto-circuito temporário para descarregar capacitores.",
+      "115V diretamente ao motor M2.",
+      "A alteração de frequência de 400Hz para 60Hz.",
+      "O ganho de malha aberta do LINVAR."
+    ],
+    "answer": "Uma tensão de polarização (offset) variável que soma ou subtrai uma constante DC ao erro, permitindo alinhar o ponteiro no 0 mecânico quando não há sinal do detector.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O RV4 compensa pequenas derivas eletrônicas ou desvios mecânicos introduzindo uma voltagem DC minúscula e ajustável (offset) na rede de soma de resistores (como o R11) para forçar o ponteiro exatamente ao zero mecânico."
+  },
+  {
+    "question": "O que é o fenômeno de \"Overshoot\", controlado pelo potenciômetro RV2 e pelo Taco-Gerador TG2 no servo de direção?",
+    "options": [
+      "É a queima do amplificador por sobretensão de vento.",
+      "É a ultrapassagem da marcação correta do ponteiro devido à inércia mecânica, antes de estabilizar.",
+      "É o congelamento das cubas em baixas temperaturas.",
+      "É a leitura simultânea de duas direções pela aleta.",
+      "É a falta total de resposta ao erro em 0º."
+    ],
+    "answer": "É a ultrapassagem da marcação correta do ponteiro devido à inércia mecânica, antes de estabilizar.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Overshoot é quando o sistema é comandado para 90º, mas por inércia ou excesso de ganho passa para 95º, retornando depois para 90º. O amortecimento atua contra essa ultrapassagem frenando o motor antes do ponto exato."
+  },
+  {
+    "question": "Se for constatada avaria no resistor limitador acoplado aos Diodos D5/D6, o efeito será:",
+    "options": [
+      "Funcionamento normal e sem variação.",
+      "A queima quase imediata dos diodos reguladores por excesso de corrente em avalanche, ou a perda total de tensão estabilizada se o resistor abrir.",
+      "O síncro TX inverterá sua fase de referência.",
+      "A velocidade de recolhimento ficará incorreta.",
+      "A indicação de 75 nós no teste de calibração."
+    ],
+    "answer": "A queima quase imediata dos diodos reguladores por excesso de corrente em avalanche, ou a perda total de tensão estabilizada se o resistor abrir.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Em um circuito regulador Zener, o resistor limitador em série é mandatório para segurar a queda de tensão e limitar a corrente máxima no diodo. Sem ele, a fonte destroi o Zener."
+  },
+  {
+    "question": "Na rotina de pesquisa de avarias em manuais da Marinha, a medição entre os Test Points TP6 e TP7 exige que a equipe técnica encontre um valor na faixa de:",
+    "options": [
+      "115 VCA exatos.",
+      "26 VCA.",
+      "0 a 100 mV (milivolts).",
+      "400 a 800 Volts DC.",
+      "12 a 24 VDC estabilizados."
+    ],
+    "answer": "0 a 100 mV (milivolts).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Pontos como TP6 e TP7 representam as entradas ou saídas de pequeno sinal dos amplificadores operacionais da RTU (como o PA-112). A leitura desses erros residuais de balanceamento opera em milivolts."
+  },
+  {
+    "question": "Em uma verificação de bancada, mede-se TP11 e TP12. A literatura garante que \"a tensão em TP11 é igual à de TP12 quando o componente _________ estiver conduzindo\".",
+    "options": [
+      "Diodo Regulador D5.",
+      "LINVAR.",
+      "Síncro CT.",
+      "Diodo D2.",
+      "Potenciômetro RV3."
+    ],
+    "answer": "Diodo D2.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "É uma peculiaridade cobrada (bizu de esquema do EVERSHED). O diodo D2 faz o acoplamento ou retificação de passagem entre esses dois nós específicos; sua condução nivela os potenciais de TP11 e TP12."
+  },
+  {
+    "question": "O que são os Test Points (TP) no contexto da manutenção do anemômetro EVERSHED?",
+    "options": [
+      "Interruptores de liga/desliga mecânicos do painel.",
+      "Furos de calibração mecânica das engrenagens 2000/1.",
+      "Terminais específicos (pinos de teste) disponibilizados nas placas de circuito impresso da RTU para medir tensões sem precisar dessoldar componentes.",
+      "Diodos de emissão de luz (LEDs) coloridos.",
+      "Locais no passadiço onde são feitos testes de velocidade simulada."
+    ],
+    "answer": "Terminais específicos (pinos de teste) disponibilizados nas placas de circuito impresso da RTU para medir tensões sem precisar dessoldar componentes.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "TP (Test Point) é padrão em circuitos industriais navais; eles fornecem acesso seguro de sondagem para multímetros e osciloscópios no acompanhamento dos sinais desde os síncros até o servo motor."
+  },
+  {
+    "question": "Se um técnico medir entre TP6 (Referência GND do Amplificador) e a saída do regulador D5 com o multímetro ajustado para AC (Corrente Alternada), qual leitura ele espera?",
+    "options": [
+      "115 Volts.",
+      "Próximo a 0 Volts AC (idealmente apenas ripple desprezível), pois a tensão deve ser pura Contínua (DC).",
+      "400 Hz.",
+      "26 Volts.",
+      "Exatamente 1 Volt AC para polarização."
+    ],
+    "answer": "Próximo a 0 Volts AC (idealmente apenas ripple desprezível), pois a tensão deve ser pura Contínua (DC).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O regulador Zener atua no setor de corrente contínua da fonte para entregar uma tensão DC limpa. O multímetro em AC medirá apenas a pequena flutuação residual (ripple), que deve ser quase nula."
+  },
+  {
+    "question": "A função principal da unidade PA-112 no sistema de retransmissão é:",
+    "options": [
+      "Transmitir dados via rádio-frequência.",
+      "Reduzir a voltagem do sistema geral.",
+      "Amplificar e somar vetorialmente os minúsculos sinais de erro de tensão contínua até um nível de potência suficiente para acionar o motor de acompanhamento M2.",
+      "Converter vento aparente em vento verdadeiro apenas.",
+      "Induzir fisicamente a rotação do anemômetro tipo F."
+    ],
+    "answer": "Amplificar e somar vetorialmente os minúsculos sinais de erro de tensão contínua até um nível de potência suficiente para acionar o motor de acompanhamento M2.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O PA-112 é o Amplificador de Potência principal das servo-malhas. Ele capta os erros das pontes de diodos e potenciômetros (nível de milivolts) e \"bombeia\" potência suficiente para mover mecanicamente os pesados rotores."
+  },
+  {
+    "question": "Durante um teste de calibração de direção, injeta-se o sinal rotativo no estator do síncro CT (por S1). Para o servo motor se deslocar e parar a 120º, o sinal de erro no TP do amplificador deve:",
+    "options": [
+      "Ficar cravado no máximo e não cair.",
+      "Cair progressivamente até atingir o patamar de 0 Volts (nulidade) exatamente quando a posição de 120º for atingida mecanicamente.",
+      "Inverter a fase em 60 Hz constantemente.",
+      "Chegar a 40 VCA.",
+      "Tornar-se corrente contínua negativa."
+    ],
+    "answer": "Cair progressivamente até atingir o patamar de 0 Volts (nulidade) exatamente quando a posição de 120º for atingida mecanicamente.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O fundamento de qualquer servomecanismo de nulo (nulo-balance) é que o movimento mecânico da engrenagem gira o rotor do CT, subtraindo gradativamente o sinal elétrico de erro até ele ser zerado (posição atingida)."
+  },
+  {
+    "question": "Quando a indicação no anemômetro apresenta comportamento errático \"pulando\" sem ventos reais, o primeiro ponto a ser verificado utilizando osciloscópio nos Test Points seria:",
+    "options": [
+      "O secundário do T1.",
+      "As entradas diferenciais (somador) para checar ripple provocado por falha no retificador D4 ou capacitores de filtragem ressecados.",
+      "A alimentação do PA-112 medindo 115V AC.",
+      "O ajuste mecânico da engrenagem de 2000/1.",
+      "O potenciômetro RV4 e sua solda de contato."
+    ],
+    "answer": "As entradas diferenciais (somador) para checar ripple provocado por falha no retificador D4 ou capacitores de filtragem ressecados.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O sintoma clássico de ripple (ondulação não filtrada) atingindo o amplificador de alto ganho é um servomotor que fica instável (jitter/pulos), comumente devido a diodos ou eletrolíticos degradados."
+  },
+  {
+    "question": "Para que o anemômetro calcule a direção real (vento verdadeiro), os sinais provenientes do transmissor (CX ou TX) devem ser comparados matematicamente não apenas com o vento relativo medido, mas também com a:",
+    "options": [
+      "Umidade do ar.",
+      "Temperatura dos sensores.",
+      "Velocidade log (odômetro) e a proa verdadeira da girobússola.",
+      "Inclinação transversal (jogo) e caturro da embarcação.",
+      "Frequência exata da rede elétrica de 60Hz."
+    ],
+    "answer": "Velocidade log (odômetro) e a proa verdadeira da girobússola.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Para obter Vento Verdadeiro, o Computador de Dados do Vento soma vetorialmente o Vento Relativo, a Velocidade do Navio (via Odômetro/Log) e o Rumo Verdadeiro do Navio (via Girobússola)."
+  },
+  {
+    "question": "No anemômetro EVERSHED, o \"Motor de Acompanhamento\" (M2) caracteristicamente operado pelo amplificador é um motor:",
+    "options": [
+      "De Corrente Contínua (DC) padrão.",
+      "Síncrono de três fases acoplado a anéis.",
+      "De indução bipolar servo-acionado de duas fases, cuja rotação e direção dependem da defasagem em graus aplicada aos seus dois enrolamentos.",
+      "De passo a passo unipolar.",
+      "Universal com escovas de carvão."
+    ],
+    "answer": "De indução bipolar servo-acionado de duas fases, cuja rotação e direção dependem da defasagem em graus aplicada aos seus dois enrolamentos.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Servomotores clássicos da época, especialmente os de 400Hz operados por amplificadores analógicos de AC ou pulsantes de duas fases dependem do avanço/atraso de fase de um enrolamento de controle em relação a um de referência."
+  },
+  {
+    "question": "O que ocorrerá no comportamento dinâmico do servo de direção se o Taco-gerador TG2 for mecanicamente desacoplado de seu eixo (deixar de girar com o motor)?",
+    "options": [
+      "O servo entrará em modo de emergência.",
+      "A indicação ficará 180º fora de alinhamento.",
+      "Ocorrerá violento *overshoot* e severa \"caça\" ou oscilação (hunting), porque o amplificador perderá a taxa de feedback dinâmico limitadora da aceleração.",
+      "O motor não terá força para mover as engrenagens.",
+      "O ajuste do zero do LINVAR queimará o RV1."
+    ],
+    "answer": "Ocorrerá violento *overshoot* e severa \"caça\" ou oscilação (hunting), porque o amplificador perderá a taxa de feedback dinâmico limitadora da aceleração.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O taco-gerador (gerador tacométrico) fornece um sinal elétrico estritamente proporcional à \"velocidade de giro\" mecânica atual, usado pelo amplificador para prever a frenagem antes da parada. Sem ele, a inércia faz o sistema passar do ponto repetidamente (caça)."
+  },
+  {
+    "question": "Durante a calibração com as chaves S3 nas posições 15, 30 e 45 nós, os valores aplicados simulando o vento provêm de:",
+    "options": [
+      "Uma tensão mecânica real injetada por uma hélice de teste menor.",
+      "Pulsos acústicos simulados na placa T1.",
+      "Divisores de tensão de precisão interligados pelo circuito elétrico das chaves que introduzem voltagens que representam o erro do gerador.",
+      "Modificação da capacitância do LINVAR via um capacitor variável.",
+      "Um software injetor dentro do PC da Fragata."
+    ],
+    "answer": "Divisores de tensão de precisão interligados pelo circuito elétrico das chaves que introduzem voltagens que representam o erro do gerador.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "A calibração eletrônica desliga o sensor do teto temporariamente e insere uma rede resistiva fixa (como R13) que gera tensões análogas às medições reais destas velocidades para aferir o amplificador e o LINVAR localmente."
+  },
+  {
+    "question": "Num sistema tipo B, a conversão da rotação das cubas para a movimentação do mostrador em nós é feita por:",
+    "options": [
+      "Linvar e amplificador eletrônico.",
+      "Um integrador mecânico estritamente a fricção, associado a um rodete móvel sobre um disco tracionado por um equipamento de frequência constante (motor constante).",
+      "Um computador que conta os pulsos de um feixe de LED.",
+      "Um taco-gerador diretamente alimentando um voltímetro DC.",
+      "Síncros CT empilhados sem motores auxiliares."
+    ],
+    "answer": "Um integrador mecânico estritamente a fricção, associado a um rodete móvel sobre um disco tracionado por um equipamento de frequência constante (motor constante).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O Tipo B é analógico e pesado: ele usa um integrador de disco de atrito mecânico. O atrito e a posição do rodete, guiado pela inércia contra um motor de relógio, integram o deslocamento criando o ângulo (leitura)."
+  },
+  {
+    "question": "A diferença primordial, em termos de transdutor primário de velocidade, entre o EVERSHED e o Tipo F é que:",
+    "options": [
+      "O EVERSHED possui cubas e LINVAR; o Tipo F possui hélice giratória e gerador de pulso AC (ou taco-gerador embutido na ponta).",
+      "O Tipo F mede eletromagneticamente via doppler; o EVERSHED não possui transdutores.",
+      "Ambos utilizam integradores com discos de fricção.",
+      "O Tipo F é ultrassônico e o EVERSHED tem peças móveis.",
+      "O EVERSHED não possui cata-vento para a direção."
+    ],
+    "answer": "O EVERSHED possui cubas e LINVAR; o Tipo F possui hélice giratória e gerador de pulso AC (ou taco-gerador embutido na ponta).",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "A silhueta visual clássica define que o EVERSHED usa cubas para velocidade e aleta para direção, suportados no mesmo eixo. O tipo F clássico utiliza hélice montada horizontalmente na extremidade proa-popa."
+  },
+  {
+    "question": "Se a voltagem de referência (normalmente provida ao enrolamento excitador primário) cair em um Taco-gerador AC do sistema servo, a consequência esperada é:",
+    "options": [
+      "Uma realimentação \"preguiçosa\" causando perda de amortecimento e oscilação induzida.",
+      "O travamento imediato e queima do rotor de inércia.",
+      "O erro de 180º no posicionamento do mostrador de velocidade do anemômetro.",
+      "Um curto direto para o LINVAR desarmando toda a proteção de 26V.",
+      "Modificação permanente do fundo de escala de 75 nós para 100 nós."
+    ],
+    "answer": "Uma realimentação \"preguiçosa\" causando perda de amortecimento e oscilação induzida.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "O Taco-Gerador AC depende de excitação magnética estável. Com campo fraco, ele gera pouca tensão por RPM. O amplificador \"pensa\" que o motor está rodando devagar e não freia, ocorrendo o overshoot excessivo."
+  },
+  {
+    "question": "O sinal primário gerado pela detecção das cubas no anemômetro EVERSHED (Gerador de Indução) sofre amplificação na RTU porque:",
+    "options": [
+      "Para acender diretamente as lâmpadas de iluminação verde e vermelha do passadiço.",
+      "O sinal original na gávea (detector) é frágil demais e sofre atenuação na fiação, sem potência para acionar os pesados relés e motores dos receptores no interior do navio.",
+      "Precisa-se converter 115V em 26V no próprio topo do mastro.",
+      "É exigido pelo Síncro TX para enviar a fase correta ao CT.",
+      "Caso contrário, o vento real passaria de 75 nós rasgando os componentes."
+    ],
+    "answer": "O sinal original na gávea (detector) é frágil demais e sofre atenuação na fiação, sem potência para acionar os pesados relés e motores dos receptores no interior do navio.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Sistemas síncronos distantes requerem servomecanismos justamente pela falta de \"músculo\" elétrico do sensor para girar pesados componentes eletromecânicos, ponteiros robustos e vencer atritos mecânicos longos (RTU resolve isso)."
+  },
+  {
+    "question": "Em relação à proteção dos retificadores D1 e ponte D4 do anemômetro EVERSHED, picos transientes oriundos da comutação dos geradores navais são barrados na alimentação geral da RTU tipicamente através de:",
+    "options": [
+      "Varistores acoplados às antenas.",
+      "Capacitores de desacoplamento, reguladores locais Zener e os transformadores de isolamento galvânico T1/T2.",
+      "Troca imediata dos pinos de TP.",
+      "Chave S1 colocada em curto propositalmente.",
+      "Aterramento da carcaça do anemômetro diretamente ao mar via mastro."
+    ],
+    "answer": "Capacitores de desacoplamento, reguladores locais Zener e os transformadores de isolamento galvânico T1/T2.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "A robustez naval contra transientes se apoia no isolamento por transformadores na entrada do painel da RTU (que separa fisicamente e magneticamente o circuito de 115V do navio da parte sensível de 10V e 26V), seguido de regulagem."
+  },
+  {
+    "question": "No servo de direção (EVERSHED), se no centro do amplificador a voltagem de erro DC derivada da diferença TX-CT for exatamente 0 Volts e mesmo assim o motor girar (drift constante), a avaria reside:",
+    "options": [
+      "Nas cubas girando rápido demais.",
+      "No desbalanceamento interno da polarização DC das etapas amplificadoras do PA-112 (offset irregular de zero), forçando o transistor de saída a conduzir indevidamente.",
+      "Na queima do Taco-Gerador TG1.",
+      "No erro de leitura de vento verdadeiro no C.O.C.",
+      "Na rede AC do painel principal (falha do navio)."
+    ],
+    "answer": "No desbalanceamento interno da polarização DC das etapas amplificadoras do PA-112 (offset irregular de zero), forçando o transistor de saída a conduzir indevidamente.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Um amplificador operacional perfeito não amplifica quando as entradas diferenciais marcam erro 0. Um amplificador desbalanceado (como por transistores em fuga térmica ou resistores R-shunt alterados) gera erro artificial e move o motor (\"drift\")."
+  },
+  {
+    "question": "Se numa calibração minuciosa do anemômetro o técnico ajusta o RV1, mas a sensibilidade do mostrador se mostra imprevisível (ora não reage, ora dispara), a causa mecânico-elétrica mais comum em ambientes navais é:",
+    "options": [
+      "Trinca na hélice principal provocada por gaivotas no mastro.",
+      "Pista condutiva do potenciômetro RV1 rompida, suja, ou com um cursor raspador carbonizado, gerando resistências espúrias imprevisíveis durante o ajuste.",
+      "Inversão de fase no síncro TR pelo centro de manutenção.",
+      "Troca do fusível por um modelo térmico maior do painel.",
+      "Frequência do LINVAR fixada mecanicamente."
+    ],
+    "answer": "Pista condutiva do potenciômetro RV1 rompida, suja, ou com um cursor raspador carbonizado, gerando resistências espúrias imprevisíveis durante o ajuste.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Potenciômetros em ambiente de maresia sofrem forte degradação mecânica (oxidação, poeira salina). Quando o contato desliza na trilha defeituosa, a resistência oscila criando \"ruído\", enlouquecendo o comportamento de servo."
+  },
+  {
+    "question": "Numa situação real, se a chave limitadora (\"Limit Switch\") montada no trem de engrenagens do eixo de velocidade for acionada (ou trancar acionada):",
+    "options": [
+      "Corta-se a alimentação do Síncro TX.",
+      "Acende a luz \"ALARM 400Hz\" no passadiço.",
+      "Interrompe mecanicamente e eletricamente o curso (ou alimentação direta ao relé final do motor M2), impedindo que o mecanismo tente rodar o ponteiro além das travas físicas para evitar a quebra do eixo e do próprio mostrador de velocidade.",
+      "Inverte a direção do vento calculada (passando para proa-popa reversa).",
+      "O gerador de indução dobra de frequência (para 800Hz) avisando falha."
+    ],
+    "answer": "Interrompe mecanicamente e eletricamente o curso (ou alimentação direta ao relé final do motor M2), impedindo que o mecanismo tente rodar o ponteiro além das travas físicas para evitar a quebra do eixo e do próprio mostrador de velocidade.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Chaves limite ou limit switches são chaves físicas acionadas por cames próximos ao fim da escala de operação mecânica para abrir a alimentação dos motores, protegendo o instrumento contra forçamento."
+  },
+  {
+    "question": "Sintetizando a eletrônica do sistema EVERSHED: a malha principal de controle do servo funciona convertendo a discrepância física angular num sinal elétrico fraco (1), traduzindo/retificando esse sinal de AC para DC filtrado (2), misturando-o a um *feedback* DC oposto num misturador de precisão (3), e aplicando os pulsos de potência diferenciais amplificados num atuador giratório (4). Que componentes cumprem fielmente as funções 1, 2, 3 e 4 no servo de velocidade, nesta ordem exata?",
+    "options": [
+      "1-Gerador Indução / 2-Diodo D1 / 3-LINVAR / 4-Síncro TR.",
+      "1-Gerador Indução / 2-Retificador D4 e Filtros / 3-Rede de Soma (R11/RV4) no PA-112 / 4-Motor de Acompanhamento M2.",
+      "1-Síncro TX / 2-Taco TG2 / 3-Resistor R15 / 4-Rotor do CT.",
+      "1-Cubas / 2-Diodo D5 e D6 / 3-Amplificador OP / 4-Ponteiro do mostrador.",
+      "1-Rodete mecânico / 2-Transdutor piezoelétrico / 3-Conversor ADC / 4-Painel LCD."
+    ],
+    "answer": "1-Gerador Indução / 2-Retificador D4 e Filtros / 3-Rede de Soma (R11/RV4) no PA-112 / 4-Motor de Acompanhamento M2.",
+    "topic": "Anemômetros (Aprofundamento/Gaps)",
+    "explanation": "Resumo ideal do servo de velocidade: (1) O Gerador capta fisicamente as cubas e dá o sinal fraco de erro original. (2) A ponte D4 o retifica para DC. (3) A rede de entrada soma o sinal DC retificado de erro com o sinal retificado do LINVAR (opposing feedback/offset). (4) A saída de potência reaciona e força o Motor M2 a rodar o dial."
   }
+
 ];
+
