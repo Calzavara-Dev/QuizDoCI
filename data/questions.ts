@@ -4,6 +4,7 @@ import { microcontroladoresP1Questions } from "./microcontroladores_p1";
 import { odometrosP2Questions } from "./odometros_p2";
 import { odometrosP2RapidasQuestions } from "./odometros_p2_rapidas";
 import { anemometrosQuestions } from "./anemometros";
+import { microcontroladoresP2Questions } from "./microcontroladores_p2";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -49,6 +50,7 @@ export function getShuffledQuestions(quizId = "telefonia"): Question[] {
 
 export const quizzes: Record<string, Question[]> = {
   anemometros: anemometrosQuestions,
+  microcontroladores_p2: microcontroladoresP2Questions,
   telefonia: [
     {
       question: "Qual é a finalidade da telefonia?",
