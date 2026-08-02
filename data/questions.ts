@@ -5,6 +5,7 @@ import { odometrosP2Questions } from "./odometros_p2";
 import { odometrosP2RapidasQuestions } from "./odometros_p2_rapidas";
 import { anemometrosQuestions } from "./anemometros";
 import { microcontroladoresP2Questions } from "./microcontroladores_p2";
+import { pic16f84Questions } from "./pic16f84";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -3150,5 +3151,6 @@ quizzes["manutencao-dos-sistemas-de-odometros-p2"] = odometrosP2Questions;
 quizzes["manutencao-dos-sistemas-de-odometros-p2-rapidas"] = odometrosP2RapidasQuestions;
 quizzes["anemometros"] = anemometrosQuestions;
 quizzes["microcontroladores_p2"] = microcontroladoresP2Questions;
+quizzes["pic16f84"] = pic16f84Questions;
 
 export const questions: Question[] = quizzes.telefonia;
