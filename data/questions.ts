@@ -49,8 +49,6 @@ export function getShuffledQuestions(quizId = "telefonia"): Question[] {
 }
 
 export const quizzes: Record<string, Question[]> = {
-  anemometros: anemometrosQuestions,
-  microcontroladores_p2: microcontroladoresP2Questions,
   telefonia: [
     {
       question: "Qual é a finalidade da telefonia?",
@@ -3150,5 +3148,7 @@ quizzes["eletronica-digital-2-p2"] = eletronica2P2Questions;
 quizzes["introducao-aos-microcontroladores-p1"] = microcontroladoresP1Questions;
 quizzes["manutencao-dos-sistemas-de-odometros-p2"] = odometrosP2Questions;
 quizzes["manutencao-dos-sistemas-de-odometros-p2-rapidas"] = odometrosP2RapidasQuestions;
+quizzes["anemometros"] = anemometrosQuestions;
+quizzes["microcontroladores_p2"] = microcontroladoresP2Questions;
 
 export const questions: Question[] = quizzes.telefonia;
