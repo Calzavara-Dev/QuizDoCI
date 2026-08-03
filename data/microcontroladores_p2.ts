@@ -1375,5 +1375,389 @@ export const microcontroladoresP2Questions: Question[] = [
       "Aceso porque todos os resistores de pull-up estão ativos"
     ],
     "answer": "Apagado, pois no bit do TRISA correspondente ao pino RA0 (bit 0) está configurado como saída (0), e no registrador PORTA o bit correspondente está em nível baixo (0, já que EEh = 1110 1110b), logo o led não recebe tensão"
+  },
+  {
+    "question": "Em um microcontrolador PIC16F84, funcionando com um clock externo de 8MHz, qual o tempo de retardo (delay) gerado pelo TIMER0 se ele estiver trabalhando com um PREESCALER ajustado em 64:1 e o valor inicial do TMR0 for igual a 56?",
+    "explanation": "Primeiro, calcula-se o ciclo de máquina (Tcy) que é Fosc / 4. Sendo 8MHz, o clock interno é 2MHz e Tcy = 0,5 µs. O Timer0 conta de 56 até estourar em 256, ou seja, necessita de 256 - 56 = 200 incrementos. Como o prescaler é 64, ele precisa de 200 * 64 = 12.800 ciclos de máquina. Multiplicando pelo tempo: 12.800 * 0,5 µs = 6.400 µs (ou 6,4 ms). (Capítulo 6).",
+    "options": [
+      "3,2 ms",
+      "6,4 ms",
+      "12,8 ms",
+      "25,6 ms",
+      "100 µs"
+    ],
+    "answer": "6,4 ms"
+  },
+  {
+    "question": "Analisando a configuração do Timer0 (registro OPTION_REG), quais são os bits e níveis lógicos corretos para selecionar o clock interno como fonte e atribuir o prescaler especificamente ao Timer0?",
+    "explanation": "Conforme o Capítulo 6 (item 6.1.7), o bit T0CS = 0 seleciona o clock interno (Fosc/4) operando no modo temporizador. Já o bit PSA = 0 garante que o Prescaler seja atribuído ao módulo Timer0 (se PSA fosse 1, seria atribuído ao Watchdog).",
+    "options": [
+      "T0CS = 1 e PSA = 1",
+      "T0CS = 0 e PSA = 1",
+      "T0CS = 1 e PSA = 0",
+      "T0CS = 0 e PSA = 0",
+      "T0SE = 0 e PSA = 0"
+    ],
+    "answer": "T0CS = 0 e PSA = 0"
+  },
+  {
+    "question": "Qual(is) módulo(s) interno(s) do PIC16F877 pode(m) ser usado(s) especificamente para a comunicação serial com outros periféricos ou dispositivos microcontrolados?",
+    "explanation": "Os Capítulos 8 e 9 abordam as interfaces de comunicação. O microcontrolador se comunica com o mundo exterior serialmente por meio do módulo MSSP (usando os protocolos SPI e I²C) e do módulo USART (Modo Assíncrono ou Síncrono).",
+    "options": [
+      "Apenas a Porta Paralela Escrava (PSP)",
+      "Módulo MSSP e Módulo USART",
+      "Apenas o módulo CCP",
+      "Módulo ADC e Timer2",
+      "Apenas o Watchdog Timer"
+    ],
+    "answer": "Módulo MSSP e Módulo USART"
+  },
+  {
+    "question": "Na palavra de configuração (registro CONFIG), os bits de seleção do oscilador (FOSC1:FOSC0) foram gravados com os níveis lógicos \\"11\\". Qual tipo de oscilador foi selecionado para o PIC?",
+    "explanation": "Conforme o Capítulo 11 (item 11.2.1), a combinação 11 nos bits FOSC1:FOSC0 seleciona o Oscilador RC. As outras combinações seriam: 10 para HS, 01 para XT e 00 para LP.",
+    "options": [
+      "Cristal de alta frequência (HS).",
+      "Cristal/Ressonador padrão (XT).",
+      "Cristal de baixa potência (LP).",
+      "Oscilador RC (Resistor/Capacitor).",
+      "Oscilador interno com PLL."
+    ],
+    "answer": "Oscilador RC (Resistor/Capacitor)."
+  },
+  {
+    "question": "Qual a instrução em linguagem Assembly do PIC16F877 que limpa (zera) um registro completo de 8 bits e, simultaneamente, aciona a flag Z no registro STATUS?",
+    "explanation": "O Capítulo 12 (item 12.2.6) descreve a instrução CLRF f, que apaga (zera) o valor do registro especificado pela variável 'f' e, como o resultado matemático da operação é zero, seta automaticamente o flag Z (Z = 1). A instrução CLRW apenas limpa o registro W.",
+    "options": [
+      "CLRW",
+      "NOP",
+      "BCF",
+      "CLRF",
+      "RRF"
+    ],
+    "answer": "CLRF"
+  },
+  {
+    "question": "Durante os testes condicionais de um programa, o bit Z (Zero) do registro STATUS assumiu o nível lógico '1'. O que causou essa mudança de estado?",
+    "explanation": "No Capítulo 12 e Capítulo 3 (item 3.4.3), o Bit 2 do registro STATUS é chamado de Zero Bit (Z). Ele assume o valor lógico 1 sempre que o resultado de uma operação (seja aritmética como ADDWF, ou lógica como ANDLW) resultar em 00h.",
+    "options": [
+      "Ocorreu um transbordo (overflow) no Timer0.",
+      "O resultado da operação lógica ou aritmética anterior executada pela ULA foi igual a zero (0).",
+      "Houve um empréstimo (borrow) durante uma subtração de rotina.",
+      "O pino de interrupção externa foi acionado.",
+      "A instrução executada foi um GOTO, forçando um desvio."
+    ],
+    "answer": "O resultado da operação lógica ou aritmética anterior executada pela ULA foi igual a zero (0)."
+  },
+  {
+    "question": "Qual é o tempo exato de execução de uma instrução de desvio incondicional (como GOTO ou CALL), sabendo que o microcontrolador está operando com um cristal externo de 4MHz?",
+    "explanation": "Conforme a Figura 12.3 do Capítulo 12, a frequência do ciclo de instrução (Tcy) é Fosc/4. Para um cristal de 4MHz, temos uma frequência interna de 1MHz, o que nos dá um tempo de ciclo de 1 µs. Como instruções que mudam o fluxo do programa (saltos ou desvios) precisam \\"limpar\\" o pipeline, elas necessitam de 2 ciclos de máquina para serem concluídas, resultando em um tempo total de 2 µs.",
+    "options": [
+      "1 µs",
+      "2 µs",
+      "4 µs",
+      "200 ns",
+      "8 µs"
+    ],
+    "answer": "2 µs"
+  },
+  {
+    "question": "Em um microcontrolador da família PIC, um LED foi conectado ao pino RB4 e acende com nível alto. Sabendo que o registrador TRISB = 45h e o registrador PORTB = AAh, qual a configuração do pino e o estado do LED, respectivamente?",
+    "explanation": "Como explicado na folha de resolução (Questão 1), o valor 45h em binário é 0100 0101. O bit 4 é 0, logo o pino está configurado como Saída. O valor enviado ao PORTB é AAh, que em binário é 1010 1010. O bit 4 é 0 (nível lógico baixo ou 0V). Como o enunciado diz que o LED acende com nível lógico alto, ele estará Apagado.",
+    "options": [
+      "Entrada ; Aceso",
+      "Saída ; Apagado",
+      "Saída ; Aceso",
+      "Entrada ; Apagado",
+      "Alta impedância ; Queimado"
+    ],
+    "answer": "Saída ; Apagado"
+  },
+  {
+    "question": "Em um circuito semelhante, um LED está em RB4 (acende com nível alto). O software envia os seguintes valores binários: TRISB = 0100 0101 e PORTB = 1011 1010. O que ocorrerá com este LED?",
+    "explanation": "Resolvido na Questão 2 do PDF de apoio. O bit 4 de TRISB é 0 (Saída). O bit 4 de PORTB é 1 (Nível Alto - 5V). Portanto, o pino envia energia suficiente e o LED fica Aceso.",
+    "options": [
+      "Ficará apagado, pois o pino atua como entrada.",
+      "Ficará apagado, pois o PORTB enviou nível lógico baixo.",
+      "Ficará aceso, pois o pino é saída e está enviando nível lógico alto.",
+      "Ficará piscando com base no Timer0.",
+      "Sofrerá curto-circuito."
+    ],
+    "answer": "Ficará aceso, pois o pino é saída e está enviando nível lógico alto."
+  },
+  {
+    "question": "Avaliando um hardware com o microcontrolador PIC rodando sob um Cristal Oscilador externo de 8MHz. Qual será a sua frequência interna de operação (Ciclo de Máquina) e qual a função do pino MCLR?",
+    "explanation": "Conforme o Bloco 2 da resolução, a frequência interna de processamento (frequência de máquina) de um PIC é sempre a frequência do clock externo dividida por 4. Logo, 8MHz / 4 = 2 MHz. O pino MCLR (Master Clear) atua como o botão de Reset de hardware do microcontrolador.",
+    "options": [
+      "8 MHz ; Pino de clock secundário.",
+      "4 MHz ; Pino de interrupção do Timer1.",
+      "2 MHz ; Pino de Master Clear responsável pelo Reset externo.",
+      "2 MHz ; Habilitação da porta paralela.",
+      "1 MHz ; Pino do oscilador interno."
+    ],
+    "answer": "2 MHz ; Pino de Master Clear responsável pelo Reset externo."
+  },
+  {
+    "question": "Em uma análise do módulo Timer0 com prescaler ajustado em 1:32, considere que o \\"clock interno\\" de processamento (frequência de máquina) seja de 2 MHz. Qual o tempo exato que um pulso demora para incrementar o registrador TMR0, e qual o tempo total que ele leva para transbordar (estourar) partindo do zero?",
+    "explanation": "De acordo com os cálculos da folha de resolução: se a frequência interna (Fcy) é de 2MHz, cada ciclo de instrução (Tcy) dura 1 / 2.000.000 = 0,5 µs. Como o prescaler é de 1:32, são necessários 32 ciclos para gerar um único incremento: 32 * 0,5 µs = 16 µs. Para o contador de 8 bits (TMR0) transbordar, ele precisa de 256 incrementos: 16 µs * 256 = 4.096 µs (ou 4,096 ms).",
+    "options": [
+      "1 µs e 8,192 ms",
+      "16 µs e 4,096 ms",
+      "32 µs e 8,192 ms",
+      "64 µs e 16,384 ms",
+      "0,5 µs e 2,048 ms"
+    ],
+    "answer": "16 µs e 4,096 ms"
+  },
+  {
+    "question": "Na prova, pede-se o cálculo de tempo de uma rotina. Em um PIC16F84 com clock externo de 4MHz, qual será o atraso total de tempo (delay) gerado pelo TIMER0, se o Prescaler for ajustado na razão 1:128 e o valor inicial carregado no TMR0 for igual a 0?",
+    "explanation": "Clock externo de 4MHz resulta em um ciclo de máquina de 1 µs. Como o valor inicial de TMR0 é zero, ele realizará 256 incrementos até o transbordo. A fórmula do delay é: Contagens * Prescaler * Tcy. Assim: 256 * 128 * 1 µs = 32.768 µs (ou seja, 32,768 ms).",
+    "options": [
+      "16,384 ms",
+      "32,768 ms",
+      "65,536 ms",
+      "12,288 ms",
+      "8,192 ms"
+    ],
+    "answer": "32,768 ms"
+  },
+  {
+    "question": "Nas implementações de botões e chaves pedidas nas provas, as instruções BTFSS e BTFSC são vitais. O que a instrução lógica BTFSS PORTA, 0 instrui a CPU a fazer?",
+    "explanation": "Conforme o Capítulo 12 e as resoluções do Bloco 3, BTFSS significa \\"Bit Test f, Skip if Set\\". A CPU avalia o estado do bit especificado; se ele for nível lógico 1 (Set), a instrução imediatamente seguinte no código é \\"pulada\\" (ignorada), gastando 2 ciclos de máquina. Se for 0, o programa segue o fluxo normalmente.",
+    "options": [
+      "Seta o bit 0 da porta A para nível lógico 1.",
+      "Limpa o bit 0 da porta A.",
+      "Testa o bit 0 do registrador PORTA e pula a próxima linha de instrução caso este bit seja 1 (Set).",
+      "Testa o bit 0 do registrador PORTA e pula a próxima linha de instrução caso este bit seja 0 (Clear).",
+      "Move a informação do pino 0 para o registrador W."
+    ],
+    "answer": "Testa o bit 0 do registrador PORTA e pula a próxima linha de instrução caso este bit seja 1 (Set)."
+  },
+  {
+    "question": "Em uma questão discursiva que pede a descrição das instruções, qual é a ação exata da instrução lógica ANDLW k no PIC?",
+    "explanation": "Segundo a tabela do Capítulo 12 (Instruções), a instrução ANDLW atua processando uma porta lógica AND entre o valor atualmente guardado no acumulador (Work register) e o valor literal 'k' passado no código. O resultado dessa comparação binária é armazenado no próprio registrador W, e a flag Z é afetada caso o resultado seja 00h.",
+    "options": [
+      "Incrementa o registro W e salta se for zero.",
+      "Efetua uma operação lógica \"E\" (AND) entre uma constante literal ('k') e o valor que já estava gravado no registrador W.",
+      "Soma uma literal 'k' ao registrador 'f'.",
+      "Zera o conteúdo do Watchdog Timer.",
+      "Realiza o complemento de 2 em um valor na memória."
+    ],
+    "answer": "Efetua uma operação lógica \"E\" (AND) entre uma constante literal ('k') e o valor que já estava gravado no registrador W."
+  },
+  {
+    "question": "Por que o TIMER2 não pode ser usado como contador de eventos externos?",
+    "explanation": "Conforme o Capítulo 6 (item 6.3.1), o Timer2 funciona somente no modo temporizador, pois a sua base de tempo provém obrigatoriamente do clock interno (Fosc/4). Ele não dispõe de entrada externa de clock, o que impossibilita o seu uso como contador de eventos externos.",
+    "options": [
+      "Porque ele possui apenas 8 bits de contagem e estoura rapidamente.",
+      "Porque ele não possui pino de entrada para clock externo, operando apenas com o clock interno.",
+      "Porque ele está exclusivamente dedicado ao módulo Watchdog.",
+      "Porque ele não possui prescaler nem postscaler configuráveis.",
+      "Porque sua interrupção é permanentemente mascarada pelo módulo ADC."
+    ],
+    "answer": "Porque ele não possui pino de entrada para clock externo, operando apenas com o clock interno."
+  },
+  {
+    "question": "Qual o valor máximo da contagem na saída do Timer0 com o prescaler ajustado em 1:64?",
+    "explanation": "O Timer0 é um contador de 8 bits, ou seja, conta até 256 (0 a 255). Com um prescaler configurado para dividir os impulsos de entrada por 64, o número total de eventos necessários para transbordar (estourar) o contador é 256 × 64 = 16.384 eventos.",
+    "options": [
+      "512 eventos.",
+      "4096 eventos.",
+      "8192 eventos.",
+      "16384 eventos.",
+      "32768 eventos."
+    ],
+    "answer": "16384 eventos."
+  },
+  {
+    "question": "Qual temporizador está diretamente relacionado com o controle do modo PWM do módulo CCP no PIC16F877?",
+    "explanation": "De acordo com o Capítulo 7 (item 7.4.1), o período do sinal PWM é controlado diretamente pelo Timer2 através do registro PR2. Quando o Timer2 atinge o valor de PR2, o ciclo do PWM é reiniciado.",
+    "options": [
+      "Timer0.",
+      "Timer1.",
+      "Timer2.",
+      "Watchdog Timer.",
+      "Timer Externo (RC)."
+    ],
+    "answer": "Timer2."
+  },
+  {
+    "question": "O módulo CCP configurado no modo Captura (Capture) possui a função principal de:",
+    "explanation": "No Capítulo 7 (item 7.2), o modo Capture é utilizado para a contagem de tempo entre dois eventos ocorridos em um pino (mudanças de borda). Ele copia o valor atual do Timer1 (16 bits) para os registradores do CCP (CCPRxH e CCPRxL).",
+    "options": [
+      "Gerar uma frequência fixa de clock para o microcontrolador.",
+      "Converter sinais analógicos em digitais com resolução de 10 bits.",
+      "Funcionar como uma chave de proteção contra falhas de software.",
+      "Medir o tempo (período) de um sinal externo, capturando o valor do Timer1.",
+      "Comparar dois registradores para acionar automaticamente o Timer0."
+    ],
+    "answer": "Medir o tempo (período) de um sinal externo, capturando o valor do Timer1."
+  },
+  {
+    "question": "Quais são os modos de funcionamento suportados pelo módulo USART (Universal Synchronous Asynchronous Receiver Transmitter)?",
+    "explanation": "De acordo com o Capítulo 9 (item 9.1.1), a USART pode ser configurada de dois modos diferentes: Assíncrono (full duplex, geralmente usado para comunicação com PCs) ou Síncrono (half duplex, para comunicação com periféricos como conversores A/D e EEPROMs).",
+    "options": [
+      "Capture, Compare e PWM.",
+      "Mestre I2C e Escravo I2C.",
+      "Temporizador e Contador.",
+      "Síncrono e Assíncrono.",
+      "Analógico e Digital."
+    ],
+    "answer": "Síncrono e Assíncrono."
+  },
+  {
+    "question": "Para que o módulo conversor A/D (ADC) consiga operar enquanto o microcontrolador está no modo Sleep (baixo consumo), é necessário que:",
+    "explanation": "De acordo com o Capítulo 10 (item 10.3), para que o módulo ADC funcione com a CPU em repouso (SLEEP), o clock de conversão deve ser configurado no modo RC interno (ADCS1:ADCS0 = 11). Se for usado o clock do sistema, a conversão é abortada ao entrar em Sleep.",
+    "options": [
+      "O oscilador principal (cristal) seja configurado para a função HS.",
+      "A interrupção global do Timer0 seja ativada.",
+      "O clock do conversor seja derivado do oscilador RC interno dedicado.",
+      "O Watchdog Timer seja desabilitado por software.",
+      "O pino MCLR receba nível lógico baixo continuamente."
+    ],
+    "answer": "O clock do conversor seja derivado do oscilador RC interno dedicado."
+  },
+  {
+    "question": "Quantas fontes de interrupção diferentes possui o microcontrolador PIC16F877?",
+    "explanation": "O Capítulo 11 (item 11.5.1) destaca explicitamente que este modelo de PIC possui um total de 14 interrupções diferentes, combinando fontes internas (periféricos) e externas.",
+    "options": [
+      "8.",
+      "10.",
+      "12.",
+      "14.",
+      "16."
+    ],
+    "answer": "14."
+  },
+  {
+    "question": "Qual é o endereço do vetor de interrupção na memória Flash?",
+    "explanation": "Quando qualquer evento de interrupção habilitada ocorre, a instrução em andamento é completada, o PC (endereço de retorno) é salvo na pilha e o programa é invariavelmente desviado para o vetor de interrupção, que fica no endereço 0x0004h (Capítulo 11, item 11.5.2).",
+    "options": [
+      "0000h.",
+      "0004h.",
+      "0008h.",
+      "2007h.",
+      "2000h."
+    ],
+    "answer": "0004h."
+  },
+  {
+    "question": "Qual registro nos mostra o estado geral das interrupções e contém a chave de habilitação global (GIE)?",
+    "explanation": "O registro INTCON (Interrupt Control) é o responsável por conter os bits de habilitações e flags globais do microcontrolador, incluindo o GIE (Global Interrupt Enable) no bit 7.",
+    "options": [
+      "STATUS.",
+      "OPTION_REG.",
+      "INTCON.",
+      "PIE1.",
+      "PIR1."
+    ],
+    "answer": "INTCON."
+  },
+  {
+    "question": "Como se deve limpar uma Bandeira (Flag) de interrupção após a mesma ter ocorrido?",
+    "explanation": "O Capítulo 11 (item 11.5.3) alerta que os flags das interrupções (na grande maioria das vezes) não são limpos automaticamente pelo sistema. Se o programador não os limpar via software antes de reabilitar as interrupções, o microcontrolador entrará em loop infinito de interrupção.",
+    "options": [
+      "A flag é limpa automaticamente pelo hardware assim que o vetor 0004h é atingido.",
+      "A flag é limpa gerando-se um reset no pino MCLR.",
+      "A flag deve ser limpa obrigatoriamente por software, pelo programador, dentro da rotina de tratamento.",
+      "A flag é limpa automaticamente quando o Timer correspondente transborda novamente.",
+      "A flag é limpa pela instrução RETFIE no final da sub-rotina."
+    ],
+    "answer": "A flag deve ser limpa obrigatoriamente por software, pelo programador, dentro da rotina de tratamento."
+  },
+  {
+    "question": "Qual o período nominal de estouro do Watchdog Timer (WDT) no PIC16F877 sem a utilização de divisores (prescaler)?",
+    "explanation": "O Capítulo 11 (item 11.7) explica que o período normal de estouro do WDT (acionado por um oscilador RC interno independente) é de aproximadamente 18 ms.",
+    "options": [
+      "1 ms.",
+      "18 ms.",
+      "72 ms.",
+      "100 ms.",
+      "1 segundo."
+    ],
+    "answer": "18 ms."
+  },
+  {
+    "question": "Como é conhecido o reset gerado pelo hardware quando a tensão de alimentação cai abaixo de 4V por um intervalo superior a 100 microssegundos?",
+    "explanation": "O Capítulo 11 (item 11.4.4) descreve o Brown-out Reset (BOR). Ele garante que o microcontrolador não opere de forma errática durante falhas e quedas temporárias de energia (tensão abaixo de 4V).",
+    "options": [
+      "Power-On Reset (POR).",
+      "Watchdog Timer Reset (WDT).",
+      "Master Clear Reset (MCLR).",
+      "Brown-out Reset (BOR).",
+      "In-Circuit Reset (ICR)."
+    ],
+    "answer": "Brown-out Reset (BOR)."
+  },
+  {
+    "question": "Qual o endereço da memória Flash destinado à Palavra de Configuração (Registro CONFIG), o qual só pode ser acessado durante a gravação/programação do PIC?",
+    "explanation": "O Capítulo 11 (item 11.2) afirma que a Palavra de Configuração fica mapeada no endereço 2007h e não pode ser lida nem escrita pelo código do usuário em tempo de execução, apenas pelo gravador externo.",
+    "options": [
+      "0000h.",
+      "0004h.",
+      "07FFh.",
+      "1FFFh.",
+      "2007h."
+    ],
+    "answer": "2007h."
+  },
+  {
+    "question": "Após um evento de Reset, analisando-se o registro STATUS, qual bit em nível lógico '0' nos indica especificamente que o Watchdog provocou o reinício do micro?",
+    "explanation": "Conforme o Capítulo 11 (Tabela 11.5 e item 11.6.3), o bit /TO é zerado pelo hardware toda vez que o contador do WDT estoura e provoca o reinício da CPU.",
+    "options": [
+      "Bit Z.",
+      "Bit /POR.",
+      "Bit /BOR.",
+      "Bit /TO (Time-Out).",
+      "Bit /PD (Power-Down)."
+    ],
+    "answer": "Bit /TO (Time-Out)."
+  },
+  {
+    "question": "Qual das instruções abaixo determina o retorno de uma sub-rotina de interrupção, recuperando o endereço de retorno da pilha e religando a chave geral de interrupções (GIE)?",
+    "explanation": "No Capítulo 12 (item 12.2.6), a instrução RETFIE faz o retorno da interrupção (colocando o valor do Topo da Pilha (TOS) no Program Counter) e simultaneamente executa a ação de 1 -> GIE, reabilitando novas interrupções.",
+    "options": [
+      "RETURN.",
+      "RETLW.",
+      "RETFIE.",
+      "GOTO.",
+      "CALL."
+    ],
+    "answer": "RETFIE."
+  },
+  {
+    "question": "A instrução incfsz é muito utilizada em loops. Ela executa a seguinte operação:",
+    "explanation": "No Capítulo 12, a sigla INCFSZ (Increment f, Skip if Zero) significa que o valor contido no registro 'f' será somado em 1. Se o resultado dessa operação alcançar 00h (após o 255), a próxima instrução do código será pulada, gerando um desvio condicional de 2 ciclos de máquina.",
+    "options": [
+      "Incrementa o registro W e salta a próxima instrução se o resultado for zero.",
+      "Incrementa um registro 'f' (File) e salta a próxima instrução caso o resultado do incremento seja zero.",
+      "Decrementa um registro 'f' e salta a próxima instrução caso o resultado seja zero.",
+      "Testa um bit específico de 'f' e salta se ele for zero.",
+      "Limpa o registro 'f' e salta incondicionalmente para a próxima rotina."
+    ],
+    "answer": "Incrementa um registro 'f' (File) e salta a próxima instrução caso o resultado do incremento seja zero."
+  },
+  {
+    "question": "Qual a instrução responsável por transferir o fluxo do programa para uma sub-rotina (desvio com retorno), garantindo que o endereço atual seja salvo na Pilha (Stack)?",
+    "explanation": "O Capítulo 12 destaca que a instrução CALL é um desvio com retorno. Antes de efetuar o salto, o PC+1 (endereço da próxima instrução) é salvo no Topo da Pilha (TOS) para que possa ser recuperado posteriormente pelas instruções de retorno.",
+    "options": [
+      "GOTO.",
+      "DECFSZ.",
+      "BTFSS.",
+      "RETURN.",
+      "CALL."
+    ],
+    "answer": "CALL."
+  },
+  {
+    "question": "Analise o seguinte trecho de código em linguagem Assembly. Qual será o valor armazenado no registro destino e o estado dos flags Z, DC e C do registro STATUS ao término da execução?\n\nMOVLW 02h\nSUBLW 00h",
+    "explanation": "A instrução MOVLW 02h carrega o registro Work (W) com o valor literal 02h. A instrução SUBLW 00h subtrai o valor atual de W de uma constante k (Operação: k - W). Assim, temos 00h - 02h. O resultado matemático é -2, o que resulta em um estouro negativo. Portanto, teremos Borrow/Empréstimo (Flag C = 0 e Flag DC = 0). O resultado não é zero (Z = 0). O valor -2 em complemento de dois de 8 bits é FEh, que ficará armazenado no próprio registro W.",
+    "options": [
+      "W = 02h, Z = 0, DC = 1, C = 1",
+      "W = FEh, Z = 0, DC = 0, C = 0",
+      "W = 00h, Z = 1, DC = 1, C = 1",
+      "W = FEh, Z = 1, DC = 0, C = 1",
+      "W = 02h, Z = 0, DC = 0, C = 0"
+    ],
+    "answer": "W = FEh, Z = 0, DC = 0, C = 0"
   }
 ];
