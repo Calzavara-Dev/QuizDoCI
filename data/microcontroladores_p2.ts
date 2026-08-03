@@ -1413,7 +1413,7 @@ export const microcontroladoresP2Questions: Question[] = [
     "answer": "Módulo MSSP e Módulo USART"
   },
   {
-    "question": "Na palavra de configuração (registro CONFIG), os bits de seleção do oscilador (FOSC1:FOSC0) foram gravados com os níveis lógicos \\"11\\". Qual tipo de oscilador foi selecionado para o PIC?",
+    "question": "Na palavra de configuração (registro CONFIG), os bits de seleção do oscilador (FOSC1:FOSC0) foram gravados com os níveis lógicos \"11\". Qual tipo de oscilador foi selecionado para o PIC?",
     "explanation": "Conforme o Capítulo 11 (item 11.2.1), a combinação 11 nos bits FOSC1:FOSC0 seleciona o Oscilador RC. As outras combinações seriam: 10 para HS, 01 para XT e 00 para LP.",
     "options": [
       "Cristal de alta frequência (HS).",
@@ -1450,7 +1450,7 @@ export const microcontroladoresP2Questions: Question[] = [
   },
   {
     "question": "Qual é o tempo exato de execução de uma instrução de desvio incondicional (como GOTO ou CALL), sabendo que o microcontrolador está operando com um cristal externo de 4MHz?",
-    "explanation": "Conforme a Figura 12.3 do Capítulo 12, a frequência do ciclo de instrução (Tcy) é Fosc/4. Para um cristal de 4MHz, temos uma frequência interna de 1MHz, o que nos dá um tempo de ciclo de 1 µs. Como instruções que mudam o fluxo do programa (saltos ou desvios) precisam \\"limpar\\" o pipeline, elas necessitam de 2 ciclos de máquina para serem concluídas, resultando em um tempo total de 2 µs.",
+    "explanation": "Conforme a Figura 12.3 do Capítulo 12, a frequência do ciclo de instrução (Tcy) é Fosc/4. Para um cristal de 4MHz, temos uma frequência interna de 1MHz, o que nos dá um tempo de ciclo de 1 µs. Como instruções que mudam o fluxo do programa (saltos ou desvios) precisam \"limpar\" o pipeline, elas necessitam de 2 ciclos de máquina para serem concluídas, resultando em um tempo total de 2 µs.",
     "options": [
       "1 µs",
       "2 µs",
@@ -1497,7 +1497,7 @@ export const microcontroladoresP2Questions: Question[] = [
     "answer": "2 MHz ; Pino de Master Clear responsável pelo Reset externo."
   },
   {
-    "question": "Em uma análise do módulo Timer0 com prescaler ajustado em 1:32, considere que o \\"clock interno\\" de processamento (frequência de máquina) seja de 2 MHz. Qual o tempo exato que um pulso demora para incrementar o registrador TMR0, e qual o tempo total que ele leva para transbordar (estourar) partindo do zero?",
+    "question": "Em uma análise do módulo Timer0 com prescaler ajustado em 1:32, considere que o \"clock interno\" de processamento (frequência de máquina) seja de 2 MHz. Qual o tempo exato que um pulso demora para incrementar o registrador TMR0, e qual o tempo total que ele leva para transbordar (estourar) partindo do zero?",
     "explanation": "De acordo com os cálculos da folha de resolução: se a frequência interna (Fcy) é de 2MHz, cada ciclo de instrução (Tcy) dura 1 / 2.000.000 = 0,5 µs. Como o prescaler é de 1:32, são necessários 32 ciclos para gerar um único incremento: 32 * 0,5 µs = 16 µs. Para o contador de 8 bits (TMR0) transbordar, ele precisa de 256 incrementos: 16 µs * 256 = 4.096 µs (ou 4,096 ms).",
     "options": [
       "1 µs e 8,192 ms",
@@ -1522,7 +1522,7 @@ export const microcontroladoresP2Questions: Question[] = [
   },
   {
     "question": "Nas implementações de botões e chaves pedidas nas provas, as instruções BTFSS e BTFSC são vitais. O que a instrução lógica BTFSS PORTA, 0 instrui a CPU a fazer?",
-    "explanation": "Conforme o Capítulo 12 e as resoluções do Bloco 3, BTFSS significa \\"Bit Test f, Skip if Set\\". A CPU avalia o estado do bit especificado; se ele for nível lógico 1 (Set), a instrução imediatamente seguinte no código é \\"pulada\\" (ignorada), gastando 2 ciclos de máquina. Se for 0, o programa segue o fluxo normalmente.",
+    "explanation": "Conforme o Capítulo 12 e as resoluções do Bloco 3, BTFSS significa \"Bit Test f, Skip if Set\". A CPU avalia o estado do bit especificado; se ele for nível lógico 1 (Set), a instrução imediatamente seguinte no código é \"pulada\" (ignorada), gastando 2 ciclos de máquina. Se for 0, o programa segue o fluxo normalmente.",
     "options": [
       "Seta o bit 0 da porta A para nível lógico 1.",
       "Limpa o bit 0 da porta A.",
