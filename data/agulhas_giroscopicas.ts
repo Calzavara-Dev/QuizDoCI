@@ -440,5 +440,666 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O erro de rumo será sempre máximo a 45 graus e nulo a 90 graus de latitude."
     ],
     "answer": "Irá tender para oeste sempre que o navio navegar com rumo norte, seja no hemisfério norte ou no hemisfério sul. Sempre que o rumo do navio for sul, o erro será leste independente do seu posicionamento global (latitude)"
+  },
+  {
+    "question": "Num sistema de navegação inercial, qual tipo de sensor é responsável pelo fornecimento das variações de posição angular?",
+    "options": [
+      "Acelerômetro",
+      "Nível eletrolítico",
+      "Pick off",
+      "Produtor de torque"
+    ],
+    "answer": "Pick off"
+  },
+  {
+    "question": "Num sistema de navegação inercial elementar, qual elemento é responsável por computar as acelerações?",
+    "options": [
+      "Pick off",
+      "Acelerômetro",
+      "Giroscópio",
+      "Balístico de líquido"
+    ],
+    "answer": "Acelerômetro"
+  },
+  {
+    "question": "Em relação ao erro de latitude, qual é a sua principal causa?",
+    "options": [
+      "A velocidade do navio",
+      "A Reite Horizontal da Terra (HER)",
+      "A Reite Vertical da Terra (VER)",
+      "O atrito nos rolamentos do eixo de rotação"
+    ],
+    "answer": "A Reite Vertical da Terra (VER)"
+  },
+  {
+    "question": "Defina razão de precessão:",
+    "options": [
+      "Relação entre a velocidade angular e a gravidade.",
+      "Relação entre torque aplicado e rigidez.",
+      "Relação entre a massa do rotor e o deslocamento azimutal.",
+      "Relação entre a inércia giroscópica e a rotação da Terra."
+    ],
+    "answer": "Relação entre torque aplicado e rigidez."
+  },
+  {
+    "question": "Em relação ao erro de velocidade e rumo, quais fatores determinam a direção do erro?",
+    "options": [
+      "A velocidade do rumo norte ou sul, sendo rumo sul (erro leste) e rumo norte (erro oeste).",
+      "A velocidade do rumo leste ou oeste, sendo rumo leste (erro norte) e rumo oeste (erro sul).",
+      "A aceleração do navio combinada com a latitude local.",
+      "A rotação aparente da Terra nos polos geográficos."
+    ],
+    "answer": "A velocidade do rumo norte ou sul, sendo rumo sul (erro leste) e rumo norte (erro oeste)."
+  },
+  {
+    "question": "Em relação ao girômetro mecânico, qual dispositivo é responsável pela leitura do deslocamento angular?",
+    "options": [
+      "Nível eletrolítico",
+      "Motor de indução bifásico",
+      "Pick off",
+      "Transformador de excitação"
+    ],
+    "answer": "Pick off"
+  },
+  {
+    "question": "Os sistemas de navegação inercial possibilitam a determinação de vários fatores do navio. Descreva-os:",
+    "options": [
+      "Altitude, pressão, densidade da água e temperatura.",
+      "Posição, rumo, balanço, caturro e velocidade.",
+      "Deslocamento de água, arrasto, tração e direção do vento.",
+      "Latitude magnética, declinação, inclinação e aceleração da gravidade."
+    ],
+    "answer": "Posição, rumo, balanço, caturro e velocidade."
+  },
+  {
+    "question": "Qual será o movimento aparente observado no giroscópio com sua ponta norte nivelada e apontando para leste?",
+    "options": [
+      "Translação",
+      "Rotação em azimute",
+      "Depressão",
+      "Elevação"
+    ],
+    "answer": "Elevação"
+  },
+  {
+    "question": "Com o abaixamento da ponta norte do giroscópio podemos pressupor que haverá precessão em que sentido?",
+    "options": [
+      "Em torno do eixo vertical.",
+      "Em torno do eixo horizontal.",
+      "Em torno do eixo de rotação.",
+      "Em direção ao equador."
+    ],
+    "answer": "Em torno do eixo vertical."
+  },
+  {
+    "question": "Para transformarmos um giroscópio em instrumento procurador do norte, em torno de qual eixo deve ser aplicado o torque?",
+    "options": [
+      "Em torno do eixo vertical (Peso W1).",
+      "Em torno do eixo horizontal (Peso W).",
+      "Em torno do eixo de rotação do rotor.",
+      "No anel fantasma da estrutura de suspensão."
+    ],
+    "answer": "Em torno do eixo horizontal (Peso W)."
+  },
+  {
+    "question": "Para transformarmos o giroscópio de procurador para indicador do norte se faz necessário a aplicação de torque em torno de qual eixo?",
+    "options": [
+      "Em torno do eixo de rotação.",
+      "Em torno do eixo horizontal (Peso W).",
+      "Vertical (Peso W1).",
+      "Transversal e longitudinal simultaneamente."
+    ],
+    "answer": "Vertical (Peso W1)."
+  },
+  {
+    "question": "As agulhas dotadas de girosferas se classificam em dois tipos quanto ao controle. Descreva-os:",
+    "options": [
+      "Controle manual e controle automático.",
+      "Controle hidráulico e controle pneumático.",
+      "Controle mecânico e controle eletrônico.",
+      "Controle magnético e controle inercial."
+    ],
+    "answer": "Controle mecânico e controle eletrônico."
+  },
+  {
+    "question": "Em relação às agulhas dotadas de girosfera, qual dispositivo é responsável detectar a inclinação devido à HER?",
+    "options": [
+      "Pick off",
+      "Nível eletrolítico",
+      "Acelerômetro linear",
+      "Balístico de óleo"
+    ],
+    "answer": "Nível eletrolítico"
+  },
+  {
+    "question": "Em relação às agulhas dotadas de girosfera, qual dispositivo é empregado como produtor de torque? Descreva suas partes componentes:",
+    "options": [
+      "Nível eletrolítico: tubo de vidro, eletrólito e eletrodos.",
+      "Acelerômetro: massa de prova e molas de retenção.",
+      "Pick off: enrolamento central (de referência) e dois enrolamentos laterais (de controle).",
+      "Girômetro sintonizado: rotor, motor e cardans."
+    ],
+    "answer": "Pick off: enrolamento central (de referência) e dois enrolamentos laterais (de controle)."
+  },
+  {
+    "question": "Em relação ao acelerômetro de força balanceada, qual dispositivo é responsável pela detecção do sinal de aceleração?",
+    "options": [
+      "Produtor de torque",
+      "Massa de prova",
+      "Nível eletrolítico",
+      "Pick off"
+    ],
+    "answer": "Pick off"
+  },
+  {
+    "question": "Em se tratando de um sistema de navegação inercial (NSI) do tipo plataforma analítica (strap down), qual componente é responsável por converter coordenadas em sinal de navegação?",
+    "options": [
+      "Computador de navegação",
+      "Girômetro a laser",
+      "Acelerômetro linear",
+      "Módulo de medição inercial (IMU)"
+    ],
+    "answer": "Computador de navegação"
+  },
+  {
+    "question": "Nos sistemas de navegação inercial, quais dispositivos externos são utilizados como correção do posicionamento global do navio?",
+    "options": [
+      "Radares e ecobatímetros.",
+      "Bússolas magnéticas e anemômetros.",
+      "Sinal de velocidade (odômetro), sinal de posicionamento global (Lat/Long) fornecido pela navegação ou via GPS.",
+      "Sistemas de giros a fibra óptica apenas."
+    ],
+    "answer": "Sinal de velocidade (odômetro), sinal de posicionamento global (Lat/Long) fornecido pela navegação ou via GPS."
+  },
+  {
+    "question": "Quem explica a propriedade da lei do movimento do giroscópio?",
+    "options": [
+      "Lei de Sagnac",
+      "Lei de Kepler",
+      "Lei de Galileu",
+      "Lei de Newton"
+    ],
+    "answer": "Lei de Newton"
+  },
+  {
+    "question": "Como é conseguido o máximo efeito de inércia em um giroscópio?",
+    "options": [
+      "Com a massa concentrada próxima à borda.",
+      "Com a massa concentrada no centro de gravidade.",
+      "Reduzindo a velocidade de rotação do rotor.",
+      "Aumentando o atrito no eixo horizontal."
+    ],
+    "answer": "Com a massa concentrada próxima à borda."
+  },
+  {
+    "question": "Qual é a propriedade do giroscópio pela qual ele tenta manter o eixo do rotor paralelo à sua posição original?",
+    "options": [
+      "Precessão",
+      "Translação",
+      "Rigidez no espaço ou inércia giroscópica",
+      "Rotação aparente"
+    ],
+    "answer": "Rigidez no espaço ou inércia giroscópica"
+  },
+  {
+    "question": "De quais fatores depende a inércia giroscópica?",
+    "options": [
+      "Latitude, longitude e velocidade do navio.",
+      "Velocidade angular (w), peso (kg) e raio de rotação.",
+      "Massa do navio, aceleração da gravidade e temperatura.",
+      "Torque aplicado, HER e VER."
+    ],
+    "answer": "Velocidade angular (w), peso (kg) e raio de rotação."
+  },
+  {
+    "question": "Defina precessão:",
+    "options": [
+      "Tendência de um corpo manter seu estado de repouso ou movimento retilíneo uniforme.",
+      "Movimento do giroscópio percebido pelo observador em relação à Terra.",
+      "Uma propriedade do giroscópio que causa mudança de direção do eixo de rotação, quando aplicado um torque no rotor.",
+      "Aceleração sentida pelo navio durante mudanças de rumo."
+    ],
+    "answer": "Uma propriedade do giroscópio que causa mudança de direção do eixo de rotação, quando aplicado um torque no rotor."
+  },
+  {
+    "question": "Se um torque é aplicado ao eixo vertical do giroscópio, em torno de qual eixo o rotor irá se mover?",
+    "options": [
+      "Eixo horizontal",
+      "Eixo de rotação",
+      "Eixo vertical",
+      "Não haverá movimento devido à inércia."
+    ],
+    "answer": "Eixo horizontal"
+  },
+  {
+    "question": "Quando a precessão passa pelo centro de gravidade e não gera torque, como é chamada?",
+    "options": [
+      "Força centrífeta",
+      "Força de Coriolis",
+      "Força de translação",
+      "Força de atrito"
+    ],
+    "answer": "Força de translação"
+  },
+  {
+    "question": "Em torno de qual eixo o torque de amortecimento é aplicado?",
+    "options": [
+      "Eixo vertical",
+      "Eixo horizontal",
+      "Eixo de rotação",
+      "Eixo cardan"
+    ],
+    "answer": "Eixo horizontal"
+  },
+  {
+    "question": "Aplicando-se uma força num ponto do giroscópio, como se observa a resposta a esta força?",
+    "options": [
+      "No mesmo ponto em que foi aplicada.",
+      "No ponto diametralmente oposto.",
+      "A força é anulada pela rigidez no espaço.",
+      "Este ponto se moverá a 90º do ponto aplicado (na direção da rotação do volante)."
+    ],
+    "answer": "Este ponto se moverá a 90º do ponto aplicado (na direção da rotação do volante)."
+  },
+  {
+    "question": "Defina rotação aparente:",
+    "options": [
+      "Rotação do eixo da Terra em relação às estrelas fixas.",
+      "É o movimento do giroscópio percebido pelo observador em relação à Terra.",
+      "Movimento de translação do navio ao longo de um meridiano.",
+      "Velocidade de precessão causada pela aplicação de um torque no eixo horizontal."
+    ],
+    "answer": "É o movimento do giroscópio percebido pelo observador em relação à Terra."
+  },
+  {
+    "question": "Onde a Reite Horizontal (HER) da Terra é máxima e mínima, respectivamente?",
+    "options": [
+      "Máxima nos polos e zero no equador.",
+      "Máxima no equador e zero nos polos.",
+      "Máxima em latitudes médias (45º) e mínima no equador.",
+      "É constante em qualquer latitude."
+    ],
+    "answer": "Máxima no equador e zero nos polos."
+  },
+  {
+    "question": "Onde a Reite Vertical (VER) da Terra é máxima e mínima, respectivamente?",
+    "options": [
+      "Máxima nos polos e zero no equador.",
+      "Máxima no equador e zero nos polos.",
+      "Máxima em latitudes médias (45º) e mínima nos polos.",
+      "É constante em qualquer latitude."
+    ],
+    "answer": "Máxima nos polos e zero no equador."
+  },
+  {
+    "question": "Quais são as fórmulas da HER e VER?",
+    "options": [
+      "HER = 15º/h . sen lat / VER = 15º/h . cos lat",
+      "HER = 15º/h . cos lat / VER = 15º/h . sen lat",
+      "HER = sen lat / VER = cos lat",
+      "HER = 15º/h + cos lat / VER = 15º/h + sen lat"
+    ],
+    "answer": "HER = 15º/h . cos lat / VER = 15º/h . sen lat"
+  },
+  {
+    "question": "Qual a diferença entre inércia giroscópica e rotação aparente?",
+    "options": [
+      "A velocidade angular do rotor.",
+      "A presença ou ausência de pesos de compensação.",
+      "O ponto de observação.",
+      "A direção do torque aplicado."
+    ],
+    "answer": "O ponto de observação."
+  },
+  {
+    "question": "Nas agulhas dotadas de girosfera, quais as vantagens em relação às agulhas anteriores?",
+    "options": [
+      "Aumento do erro de latitude e necessidade de componentes eletrônicos complexos.",
+      "O peso da girosfera é removido dos rolamentos do eixo vertical, devido à flutuação neutra, e a imersão em óleo oferece grande proteção contra agentes oxidantes.",
+      "Dispensa a utilização de eletricidade e computadores de navegação.",
+      "Imunidade total à rotação da Terra e à força da gravidade."
+    ],
+    "answer": "O peso da girosfera é removido dos rolamentos do eixo vertical, devido à flutuação neutra, e a imersão em óleo oferece grande proteção contra agentes oxidantes."
+  },
+  {
+    "question": "Qual o nome do sensor utilizado no sistema de controle eletrônico das agulhas dotadas de girosfera?",
+    "options": [
+      "Acelerômetro de força balanceada",
+      "Pick off magnético",
+      "Nível eletrolítico",
+      "Tubo de raios catódicos"
+    ],
+    "answer": "Nível eletrolítico"
+  },
+  {
+    "question": "Descreva o pick off:",
+    "options": [
+      "Dispositivo óptico que mede a interferência de franjas de laser.",
+      "Tubo de vidro preenchido parcialmente com eletrólito e três eletrodos.",
+      "Consiste de um núcleo de ferro laminado, em forma de \"E\" com 3 enrolamentos, e uma armadura de ferro móvel em relação ao transformador que completa o núcleo.",
+      "Massa suspensa por molas que desliza ao longo de um guia reto."
+    ],
+    "answer": "Consiste de um núcleo de ferro laminado, em forma de \"E\" com 3 enrolamentos, e uma armadura de ferro móvel em relação ao transformador que completa o núcleo."
+  },
+  {
+    "question": "O que é erro leste?",
+    "options": [
+      "Extremidade norte para baixo e a oeste do meridiano nas latitudes sul.",
+      "Extremidade norte levantada e a leste do meridiano nas latitudes norte.",
+      "Deslocamento da proa do navio para o sentido horário devido à inércia.",
+      "Falha na compensação de aceleração no eixo longitudinal."
+    ],
+    "answer": "Extremidade norte levantada e a leste do meridiano nas latitudes norte."
+  },
+  {
+    "question": "O que é erro oeste?",
+    "options": [
+      "Extremidade norte levantada e a leste do meridiano nas latitudes norte.",
+      "Extremidade norte para baixo e a oeste do meridiano nas latitudes sul.",
+      "Erro residual provocado por desalinhamento mecânico dos sensores inerciais.",
+      "Deslocamento da proa do navio para o sentido anti-horário devido ao caturro."
+    ],
+    "answer": "Extremidade norte para baixo e a oeste do meridiano nas latitudes sul."
+  },
+  {
+    "question": "Como é graduado o controle de latitude?",
+    "options": [
+      "De 0º a 180º leste e oeste.",
+      "De 0º a 360º.",
+      "De 0º a 90º norte e sul.",
+      "De -90º a +90º."
+    ],
+    "answer": "De 0º a 90º norte e sul."
+  },
+  {
+    "question": "Descreva navegação inercial:",
+    "options": [
+      "Sistema que depende inteiramente de informações de satélites (GPS) para cálculo contínuo.",
+      "Processo de determinar a posição do navio e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas.",
+      "Método de navegação baseado no uso de cartas náuticas e bússola magnética exclusivamente.",
+      "Navegação realizada pelo uso exclusivo de odômetros mecânicos."
+    ],
+    "answer": "Processo de determinar a posição do navio e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas."
+  },
+  {
+    "question": "Qual o princípio de funcionamento da navegação inercial?",
+    "options": [
+      "Efeito Doppler",
+      "Princípio da conservação de energia",
+      "Efeito de Coriolis",
+      "Inércia dos corpos"
+    ],
+    "answer": "Inércia dos corpos"
+  },
+  {
+    "question": "Quais são os sensores inerciais?",
+    "options": [
+      "Termômetros e barômetros",
+      "Girômetros e acelerômetros",
+      "Odômetros e sonares",
+      "Ecobatímetros e giroscópios mecânicos simples"
+    ],
+    "answer": "Girômetros e acelerômetros"
+  },
+  {
+    "question": "Quais os movimentos que registram as mudanças na navegação inercial?",
+    "options": [
+      "Linear e angular",
+      "Vertical e horizontal apenas",
+      "Ascensional e direcional",
+      "Translacional e gravitacional"
+    ],
+    "answer": "Linear e angular"
+  },
+  {
+    "question": "O que é girômetro?",
+    "options": [
+      "Dispositivo que integra a aceleração linear do navio.",
+      "É um rotor montado sobre uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixada.",
+      "Aparelho que converte sinais elétricos em sinais magnéticos.",
+      "Sensor de profundidade baseado em pressão."
+    ],
+    "answer": "É um rotor montado sobre uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixada."
+  },
+  {
+    "question": "Como é chamada a estrutura mecânica do girômetro?",
+    "options": [
+      "Rotor de indução",
+      "Estator flutuante",
+      "Pêndulo de inércia",
+      "Gimbal (Suspensão Cardan)"
+    ],
+    "answer": "Gimbal (Suspensão Cardan)"
+  },
+  {
+    "question": "O que os sensores do conjunto do girômetro medem?",
+    "options": [
+      "Apenas a aceleração da gravidade sobre o navio.",
+      "As variações da posição angular entre rotor e base.",
+      "A velocidade escalar do deslocamento leste-oeste.",
+      "As correntes oceânicas e a deriva."
+    ],
+    "answer": "As variações da posição angular entre rotor e base."
+  },
+  {
+    "question": "O giroscópio mede posição angular. O girômetro, ou simplesmente gyro, fornece quais variações?",
+    "options": [
+      "Variações de densidade e pressão.",
+      "Posição angular ou velocidades angulares.",
+      "Aceleração linear e distâncias.",
+      "Altitude e profundidade."
+    ],
+    "answer": "Posição angular ou velocidades angulares."
+  },
+  {
+    "question": "Nos girômetros mecânicos, quem determina o tipo de giro?",
+    "options": [
+      "O peso da massa de prova e o número de molas.",
+      "O número de cardans e a natureza do suporte.",
+      "A quantidade de espelhos e a frequência do laser.",
+      "O tamanho do display e o tipo de teclado."
+    ],
+    "answer": "O número de cardans e a natureza do suporte."
+  },
+  {
+    "question": "Como é feita a leitura do deslocamento angular na giro eletrostática?",
+    "options": [
+      "Por pick off tipo \"E\".",
+      "Por contatos elétricos deslizantes.",
+      "Por meios ópticos.",
+      "Por nível eletrolítico."
+    ],
+    "answer": "Por meios ópticos."
+  },
+  {
+    "question": "Quais os tipos de girômetros não-mecânicos?",
+    "options": [
+      "A laser e a fibra óptica.",
+      "Eletrostático e pendular.",
+      "Sintonizado e de força balanceada.",
+      "Hidráulico e pneumático."
+    ],
+    "answer": "A laser e a fibra óptica."
+  },
+  {
+    "question": "Descreva o princípio de funcionamento da giro a laser:",
+    "options": [
+      "Utiliza a propriedade inercial de uma esfera de berílio girando em alta velocidade no vácuo.",
+      "Baseia-se no efeito Sagnac, onde a diferença de tempo entre dois feixes de luz girando em sentidos opostos é proporcional à velocidade de rotação.",
+      "Funciona por meio de um pêndulo cuja oscilação indica a variação angular.",
+      "Utiliza a flutuação neutra de uma girosfera mergulhada em óleo especial."
+    ],
+    "answer": "Baseia-se no efeito Sagnac, onde a diferença de tempo entre dois feixes de luz girando em sentidos opostos é proporcional à velocidade de rotação."
+  },
+  {
+    "question": "Qual a finalidade dos espelhos dinâmicos na giro a laser?",
+    "options": [
+      "Projetar as informações em um display remoto.",
+      "Aumentar a potência do feixe luminoso emitido pelo catodo.",
+      "Para ajustar o comprimento do trajeto.",
+      "Criar campos magnéticos para precessar a luz."
+    ],
+    "answer": "Para ajustar o comprimento do trajeto."
+  },
+  {
+    "question": "Quais as vantagens da giro a laser?",
+    "options": [
+      "Robustez a variações ambientais, não possui partes móveis, não requer manutenção, entre outras.",
+      "Extrema precisão apenas em repouso e funcionamento puramente mecânico.",
+      "Menor consumo elétrico sem necessidade de fontes contínuas de alta tensão.",
+      "Permite o alinhamento instantâneo sem necessidade de computação de navegação."
+    ],
+    "answer": "Robustez a variações ambientais, não possui partes móveis, não requer manutenção, entre outras."
+  },
+  {
+    "question": "Defina acelerômetro:",
+    "options": [
+      "Instrumento usado para medir a profundidade através do eco.",
+      "Dispositivo projetado para medir a velocidade de rotação da Terra.",
+      "Dispositivo projetado para computar (medir) as acelerações ao longo de um determinado eixo.",
+      "Sensor que identifica interferências magnéticas no casco do navio."
+    ],
+    "answer": "Dispositivo projetado para computar (medir) as acelerações ao longo de um determinado eixo."
+  },
+  {
+    "question": "Na sua expressão mais simples, como pode ser considerado um acelerômetro?",
+    "options": [
+      "Como um volante que gira livremente no espaço.",
+      "Como uma massa suspensa por um fio (um pêndulo) ou que pode correr ao longo de um guia reto.",
+      "Como uma ampola de vidro parcialmente preenchida com fluido condutor.",
+      "Como um feixe de luz propagando-se em um caminho triangular fechado."
+    ],
+    "answer": "Como uma massa suspensa por um fio (um pêndulo) ou que pode correr ao longo de um guia reto."
+  },
+  {
+    "question": "Nos sistemas de navegação inercial (SNI), o acelerômetro de força balanceada consiste de que?",
+    "options": [
+      "Um núcleo de ferro e dois eletrodos de platina.",
+      "Três espelhos fixos e um anel de laser.",
+      "Um sensor (pick-off), uma massa de prova e um produtor de torque.",
+      "Dois rotores mecânicos suspensos em um único anel vertical."
+    ],
+    "answer": "Um sensor (pick-off), uma massa de prova e um produtor de torque."
+  },
+  {
+    "question": "Por quais dispositivos o sistema inercial com plataforma fixa ao navio deve ter todas as acelerações medidas?",
+    "options": [
+      "Acelerômetros e girômetros",
+      "Apenas acelerômetros",
+      "Apenas girômetros",
+      "Odômetros e bússolas"
+    ],
+    "answer": "Acelerômetros e girômetros"
+  },
+  {
+    "question": "No SNI, quais as duas montagens básicas?",
+    "options": [
+      "Plataforma óptica e plataforma eletromagnética.",
+      "Plataforma inercial convencional (física/estabilizada) e a plataforma inercial analítica (solidária/strap down).",
+      "Módulo eletrônico inercial e Módulo de controle remoto.",
+      "Plataforma manual e plataforma giroscópica semi-ativa."
+    ],
+    "answer": "Plataforma inercial convencional (física/estabilizada) e a plataforma inercial analítica (solidária/strap down)."
+  },
+  {
+    "question": "Na plataforma convencional, onde são montados os sensores?",
+    "options": [
+      "Diretamente no convés principal do navio.",
+      "Em um suporte denominado elemento estável.",
+      "Na unidade eletrônica de processamento.",
+      "Ao lado do transmissor sincro de rumo."
+    ],
+    "answer": "Em um suporte denominado elemento estável."
+  },
+  {
+    "question": "Quais os componentes básicos das plataformas convencionais?",
+    "options": [
+      "3 acelerômetros, 3 girômetros e um computador.",
+      "2 acelerômetros e 1 giroscópio centralizado.",
+      "1 acelerômetro e 3 espelhos a laser interligados.",
+      "4 giroscópios suspensos por ar."
+    ],
+    "answer": "3 acelerômetros, 3 girômetros e um computador."
+  },
+  {
+    "question": "Como é medida a latitude da plataforma convencional (estabilizad",
+    "options": [
+      "a)?",
+      "É deduzida através da rotação da esfera da agulha em direção ao polo norte.",
+      "É calculada a partir do tempo de resposta do feixe a laser.",
+      "É medida diretamente num SNI, a partir da plataforma estável, pois é um ângulo entre o eixo \"Z\" e a vertical do lugar.",
+      "Pelo odômetro do navio integrado ao GPS."
+    ],
+    "answer": "É medida diretamente num SNI, a partir da plataforma estável, pois é um ângulo entre o eixo \"Z\" e a vertical do lugar."
+  },
+  {
+    "question": "Como é medida a longitude?",
+    "options": [
+      "É medida diretamente pelo eixo X apontado para a proa do navio.",
+      "Não pode ser medida diretamente, mas o torque adicional exigido para manter o elemento sensível vertical em relação ao eixo de rotação da Terra é uma medida da velocidade na direção Leste-Oeste.",
+      "Pela diferença entre a velocidade norte-sul e a aceleração linear do balanço.",
+      "Através do sinal do inclinômetro no eixo Y do giroscópio."
+    ],
+    "answer": "Não pode ser medida diretamente, mas o torque adicional exigido para manter o elemento sensível vertical em relação ao eixo de rotação da Terra é uma medida da velocidade na direção Leste-Oeste."
+  },
+  {
+    "question": "Além da latitude e longitude, o sistema proporciona ainda quais informações?",
+    "options": [
+      "Rumo do navio, balanço, caturro e velocidade.",
+      "Vento verdadeiro, vento aparente e correntes marítimas.",
+      "Condição de carregamento, calado e compasso do navio.",
+      "Distância para a costa e temperatura do ar."
+    ],
+    "answer": "Rumo do navio, balanço, caturro e velocidade."
+  },
+  {
+    "question": "Na plataforma analítica, quais os componentes e onde são montados?",
+    "options": [
+      "3 giros e 3 acelerômetros, sobre uma mesma base rígida (módulo de medição inercial).",
+      "1 giroscópio gigante montado em uma esfera de compensação.",
+      "O sistema de navegação e as antenas de radar na torre de comando.",
+      "Apenas 2 giroscópios mecânicos em anéis cardans."
+    ],
+    "answer": "3 giros e 3 acelerômetros, sobre uma mesma base rígida (módulo de medição inercial)."
+  },
+  {
+    "question": "Como devem ser os eixos sensíveis dos giros e dos acelerômetros na plataforma analítica?",
+    "options": [
+      "Devem estar dispostos aleatoriamente para evitar redundância.",
+      "Devem ser coincidentes (paralelos) e formar ângulo de 90º entre si.",
+      "Devem estar todos apontados unicamente para a proa do navio.",
+      "Devem convergir para o centro de gravidade do navio independentemente de seus ângulos."
+    ],
+    "answer": "Devem ser coincidentes (paralelos) e formar ângulo de 90º entre si."
+  },
+  {
+    "question": "A partir da tríade de sensores fixada em um veículo (navio), como é denominado esse sistema de coordenada do veículo?",
+    "options": [
+      "Sistema de coordenada móvel ou sistema de coordenada roll/pitch/yaw.",
+      "Sistema de coordenada geográfica fixa global.",
+      "Sistema de balanço passivo.",
+      "Módulo de precessão constante."
+    ],
+    "answer": "Sistema de coordenada móvel ou sistema de coordenada roll/pitch/yaw."
+  },
+  {
+    "question": "Como devem estar os eixos X, Y e Z dos sensores fixos na base, constituindo assim uma estrutura denominada plataforma?",
+    "options": [
+      "O eixo X deve apontar para o sul, o eixo Y para o oeste e o eixo Z para o leste.",
+      "O eixo X aponta para bombordo, o Y para estibordo, e o Z para a popa.",
+      "O eixo X (roll) deve apontar para a proa, o eixo Y (pitch) ortogonal ao X e apontando para boreste, enquanto que o eixo Z (yaw) deve apontar para baixo (vertical).",
+      "Todos os eixos devem apontar paralelos ao deslocamento do navio."
+    ],
+    "answer": "O eixo X (roll) deve apontar para a proa, o eixo Y (pitch) ortogonal ao X e apontando para boreste, enquanto que o eixo Z (yaw) deve apontar para baixo (vertical)."
+  },
+  {
+    "question": "Descreva a teoria de funcionamento da plataforma analítica (strap down):",
+    "options": [
+      "Fundamenta-se na utilização exclusiva de sinais eletrostáticos emitidos de satélites para atualizar a matriz de rumo e caturro do navio.",
+      "Funciona mantendo os giroscópios perfeitamente alinhados ao norte geográfico usando pesos físicos, independentemente do balanço do navio.",
+      "Fundamenta-se na aplicação do princípio da inércia a um sistema de coordenadas móvel cujos sinais são integrados a um sistema de coordenadas de referência por um computador de navegação.",
+      "Utiliza a bóia inercial e um prumo analítico para determinar a latitude independentemente de cálculos computacionais."
+    ],
+    "answer": "Fundamenta-se na aplicação do princípio da inércia a um sistema de coordenadas móvel cujos sinais são integrados a um sistema de coordenadas de referência por um computador de navegação."
   }
 ];
