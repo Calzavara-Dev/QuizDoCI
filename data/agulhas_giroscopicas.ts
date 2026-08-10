@@ -1,8 +1,7 @@
 import type { Question } from "../types/question";
 
-export const agulhasGiroscopicasQuestions: Question[
+export const agulhasGiroscopicasQuestions: Question[] = [
   {
-] = [
     "question": "A terra é um esferóide achatado nas partes superior e inferior. que está dividida primariamente por uma linha imaginária (equador) em dois hemisférios, quais são eles?",
     "options": [
       "(NORTE E SUL).",
