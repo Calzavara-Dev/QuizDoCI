@@ -11,8 +11,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "(NOROESTE E SUDOESTE)."
     ],
     "answer": "(NORTE E SUL).",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Há também uma linha (meridiano de Greenwich) que, passando verticalmente pela sua superfície, divide-a em outros dois hemisférios chamados ORIENTAL (LESTE) e OCIDENTAL (OESTE), essas duas linhas de divisão separam a terra em quatro quadrantes. Cite os mesmos:",
@@ -24,8 +24,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Esses quadrantes são chamados POLARES, EQUATORIAIS, TROPICAIS E TEMPERADOS."
     ],
     "answer": "Esses quadrantes são chamados NORDESTE, SUDESTE, SUDOESTE E NOROESTE.",
-    "topic": "1.7 - Procurando o meridiano",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.7 - Procurando o meridiano' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador e o meridiano de Greenwich dividem a Terra em quatro quadrantes: NORDESTE, SUDESTE, SUDOESTE e NOROESTE. O equador divide Norte/Sul e o meridiano de Greenwich divide Leste/Oeste."
   },
   {
     "question": "Entre o EQUADOR e os PÓLOS há diversas linhas paralelas formando circunferências que diminuem de perímetro a medida que se aproximam dos PÓLOS. Como são chamadas essas linhas",
@@ -37,8 +37,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "\"EQUADORES\"."
     ],
     "answer": "\"PARALELOS \".",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Como é marcada a latitude no globo terrestre?",
@@ -50,8 +50,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "0° a 90° LESTE e 0° a 90° OESTE."
     ],
     "answer": "0° a 90º NORTE e 0° a 90º SUL.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "A latitude é marcada de 0° (Equador) a 90° Norte e de 0° (Equador) a 90° Sul. O Equador é o ponto zero de referência para a latitude."
   },
   {
     "question": "Como são chamadas as linhas na vertical (circunferências máximas) que passam pelos pólos? E como é marcada a longitude baseada nestas linhas?",
@@ -63,8 +63,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "a) \"LONGITUDES\"; e b) Contam-se de 0 a 90 graus a partir do Meridiano Zero."
     ],
     "answer": "a) \"MERIDIANOS\"; e b) O ponto de partida para essa medida é o meridiano que passa por GREENWICH, na Inglaterra, e que ficou sendo por convenção conhecido como MERIDIANO ZERO. Partindo do ponto zero, conta-se até 180º graus de longitude leste e 180o de longitude oeste.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As circunferências máximas que passam pelos pólos são os MERIDIANOS. A longitude é medida a partir do Meridiano de Greenwich (Meridiano Zero), contando-se 180° para Leste e 180° para Oeste."
   },
   {
     "question": "Descreva a fórmula da velocidade angular da terra:",
@@ -76,8 +76,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "A velocidade angular da terra é de 900 milhas por hora. Va = 900 milhas/hora"
     ],
     "answer": "A velocidade angular da terra é de 15º por hora em qualquer ponto da superfície da terra. Va = 360º/ 24H Va = 15º /H",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.5 - Rotação Aparente",
+    "explanation": "A Terra completa uma rotação de 360° em 24 horas. Portanto, sua velocidade angular é: Va = 360° ÷ 24h = 15°/h. Esse valor é constante em qualquer ponto da superfície terrestre."
   },
   {
     "question": "Descreva a fórmula da velocidade linear da terra, no EQUADOR:",
@@ -89,8 +89,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VL = 900 milhas / Latitude"
     ],
     "answer": "VL = 21.600milhas VL = 900 milhas/hora 24H",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.5 - Rotação Aparente",
+    "explanation": "A circunferência do Equador equivale a 21.600 milhas náuticas. Dividindo pelo período de 24h: VL = 21.600 ÷ 24 = 900 milhas/hora. Esse é o valor máximo, pois no Equador o raio da Terra é máximo."
   },
   {
     "question": "A medida que aumenta a latitude (diminui o perímetro), a velocidade linear da terra diminui. Desta forma, a velocidade linear, em qualquer ponto da superfície da terra, diante dos fatos expostos descreva a fórmula da mesma:",
@@ -102,8 +102,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VL = 15º/H x Seno Latitude"
     ],
     "answer": "VL = 900 x Co-seno Latitude",
-    "topic": "2.4 - Girômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.4 - Girômetro' da apostila oficial."
+    "topic": "1.5 - Rotação Aparente",
+    "explanation": "Como o perímetro dos paralelos diminui com a latitude, a velocidade linear em qualquer ponto é proporcional ao co-seno da latitude: VL = 900 × Co-seno(Latitude). No Equador (lat 0°), cos 0° = 1, logo VL = 900 mi/h. Nos pólos (lat 90°), cos 90° = 0, logo VL = 0."
   },
   {
     "question": "Descreva um giroscópio básico:",
@@ -116,7 +116,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Consiste de um rotor (disco) perfeitamente balanceado, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade. Diz - se assim, que o giroscópio tem três (3) graus de li- berdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denomina- dos respectivamente de eixo de rotação, eixo horizontal e eixo vertical.",
     "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "explanation": "Conforme a apostila (Cap.1): 'Um giroscópio básico consiste de um rotor (disco) perfeitamente balanceado, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade. Diz-se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical.'"
   },
   {
     "question": "Defina Rigidez no espaço ou Inércia giroscópica:",
@@ -129,7 +129,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial. Esta propriedade é explicada pela lei do movimento (lei de NEWTON) a qual enuncia que um corpo em movimento continuará a se mover a uma velocidade constante na mesma direção até que ele sofra a ação de uma força externa.",
     "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "explanation": "Conforme a apostila (Cap.1): 'Rigidez no espaço ou Inércia giroscópica é a propriedade do giroscópio pela qual ele tenta manter o eixo do rotor paralelo a sua posição original. Esta propriedade é explicada pela lei do movimento (lei de NEWTON), a qual enuncia que um corpo em movimento continuará a se mover a uma velocidade constante na mesma direção até que ele sofra a ação de uma força externa.'"
   },
   {
     "question": "De quais fatores depende a inércia giroscópica?",
@@ -142,7 +142,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Depende da velocidade de rotação do rotor, do raio de giro e da concentração da massa na periferia do rotor.",
     "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "explanation": "Conforme a apostila: 'A inércia giroscópica depende da velocidade angular, do peso e do raio de rotação de cada massa elementar. O máximo efeito de inércia é conseguido com a massa concentrada próximo da borda.' Portanto, depende da velocidade de rotação do rotor, do raio de giro e da concentração da massa na periferia."
   },
   {
     "question": "Defina precessão:",
@@ -154,8 +154,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É a oscilação do rotor em torno do meridiano de Greenwich."
     ],
     "answer": "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.4 - Precessão",
+    "explanation": "Conforme a apostila (Cap.1): 'Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.' A precessão ocorre em ângulo de 90° em relação ao torque aplicado, na direção de rotação do volante."
   },
   {
     "question": "Se um torque for aplicado em torno do eixo vertical, como mostrado por T na figura, o rotor gira ou precessiona em torno dequal eixo",
@@ -167,8 +167,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Norte-Sul como mostrado pelo peso W."
     ],
     "answer": "Horizontal como mostrado pela seta P.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.4 - Precessão",
+    "explanation": "Conforme a apostila: 'Se o torque for aplicado sobre o eixo vertical, como mostrado por T na figura, o rotor gira ou precessiona em torno de seu eixo horizontal como mostrado pela seta P.' Essa é a regra fundamental da precessão: torque num eixo causa precessão no eixo perpendicular."
   },
   {
     "question": "Vamos supor que o rotor está montado no Equador com seu eixo de rotação apontado no sentido Leste – Oeste. Qual será a rotação aparente observada?",
@@ -181,7 +181,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "O rotor parecerá girar em torno do seu eixo horizontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas).",
     "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "explanation": "Conforme a apostila: 'Se o observador estiver sobre a Terra, o rotor parecerá girar em torno do seu eixo horizontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360° em 24 horas). Este efeito é comumente denominado Reite Horizontal da Terra (HER).'"
   },
   {
     "question": "supondo-se que o rotor seja montado no Pólo Norte ou Pólo Sul com seu eixo de rotação horizontal (nivelado com a superfície da Terra), como mostrado na fi- gura 1.9, qual será a rotação aparente observada?",
@@ -194,7 +194,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "O rotor parecerá girar em torno de seu eixo vertical. Este efeito é comumente chamado de Reite Vertical da Terra (VER)",
     "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "explanation": "Conforme a apostila: 'Igualmente supondo-se que o rotor seja montado no Pólo Norte ou Pólo Sul com seu eixo de rotação horizontal (nivelado com a superfície da Terra), o rotor parecerá girar em torno de seu eixo vertical. Este efeito é comumente chamado de Reite Vertical da Terra (VER).'"
   },
   {
     "question": "Qual Reite da terra é máximo no Equador e zero nos pólos e varia com o co-seno da latitude?",
@@ -206,8 +206,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Inercial"
     ],
     "answer": "Horizontal",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.5 - Rotação Aparente",
+    "explanation": "Conforme a apostila: 'O efeito da Reite Horizontal da Terra (HER) é máximo no equador e zero nos pólos e varia com o co-seno da latitude.' Fórmula: HER = 15°/h × Cos(latitude). No Equador (lat 0°): HER = 15°/h × 1 = 15°/h (máximo). Nos Pólos (lat 90°): HER = 15°/h × 0 = 0."
   },
   {
     "question": "Qual Reite da terra varia com o seno da latitude, sendo máximo nos pólos e zero no Equador?",
@@ -219,8 +219,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Precessional"
     ],
     "answer": "Vertical",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Descreva as fórmulas de HER e VER:",
@@ -232,8 +232,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "a) HER = Va x Seno lat. b) VER = Va x Tangente lat."
     ],
     "answer": "a) HER = ER. Co-seno da latitude ou HER = 15°/ H. Cos lat. b) VER = ER. Seno da latitude ou VER = 15°/ H . Sen lat.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Calcule os valores de HER e VER nos pontos A, B e C:",
@@ -245,8 +245,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Ponto “A” Latitude zero (0°)\nVER = 15° / h, HER = 15° / h\n\nPonto “B” Latitude 30°\nVER = 0, HER = 0\n\nPonto “C” Latitude 60°\nVER = 0, HER = 0\n\nPonto “D” Latitude 90°\nVER = 15° / h, HER = 15° / h"
     ],
     "answer": "Ponto “A” Latitude zero (0°)\nSen. 0° é igual a zero, Logo VER = 0\nCos. 0° é igual a um (1), Logo HER = 15° / h (Máximo)\n\nPonto “B” Latitude 30°\nSen. 30° é igual a 0,5, Logo VER = 15° / h . 0,5 = 7.5°/h\nCos. 30° é igual a 0,866, Logo HER = 15° / h . 0,866 = 12.99°/h.\n\nPonto “C” Latitude 60°\nSen. 60° é igual a 0.866, logo VER = 15° / h . 0,866 = 12.99°/h. Cos. 60° é igual a 0.5, Logo HER = 15° / h . 0,5 = 7.5°/h.\n\nPonto “D” Latitude 90°\nSen. 90° é igual a um (1), Logo VER = 15° / h .1 = 15°/h (Máximo). Cos. 90° é igual a zero, Logo HER = 0.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Qual é o primeiro passo para transformar um giroscópio em uma agulha giroscópica?",
@@ -258,8 +258,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Instalar um nível eletrolítico."
     ],
     "answer": "Fazê-lo procurar o meridiano.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Qual é a função do peso W1 na transformação do giroscópio em elemento indicador do norte?",
@@ -271,8 +271,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Aumentar a velocidade de rotação do rotor para melhorar a rigidez no espaço."
     ],
     "answer": "Suprimir as oscilações do rotor em tempo do meridiano, um pequeno W1 é adicionado à esfera na qual o giroscópio está contido.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Em que posição é colocado o peso W1?",
@@ -284,8 +284,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Este peso é colocado no Pólo Norte da girosfera."
     ],
     "answer": "Este peso é colocado no lado Leste da girosfera numa posição mostrada pela figura.",
-    "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Descreva o efeito do peso W1 adicionado ao giroscópio procurador e indicador do norte:",
@@ -297,8 +297,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Desvia o eixo do rotor para o Leste, criando um erro constante que deve ser corrigido por tabelas de navegação."
     ],
     "answer": "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, como mostrado na figura, ao invés de um caminho elíptico como previamente indicado. Uma consideração cuidadosa da ação dos dois pesos evidenciará que a única posição de repouso que o giroscópio pode encontrar será com seu eixo na horizontal e no meridiano. Em outras palavras, o giroscópio livre foi convertido em agulha giroscópica.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Cite as vantágens das agulhas dotadas de girosfera?",
@@ -311,7 +311,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra;\n2ª - Oferece grande proteção contra choques mecânicos;\n3ª - Reduz os efeitos da aceleração;\n4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento em gás hélio; e\n5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxidantes.\nObs. - O gás hélio além de fornecer um empuxo para a flutuação neutra, transfere o calor produzido pelo motor, para a superfície interna da esfera.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Como se classificam as agulhas dotadas de girosfera quanto ao sistema de controle?",
@@ -324,7 +324,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Controle mecânico ou eletrônico.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Cite os modelos de agulhas que utilizam um balístico de liquido (óleo), Como mostra a figura para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivelamento).",
@@ -336,8 +336,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Temos como exemplo os giroscópios direcionais de aviação."
     ],
     "answer": "Temos como exemplo as agulhas MK - 27, 227, etc.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Descreva O balístico de óleo?",
@@ -349,8 +349,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É um sistema de resfriamento que circula óleo em torno do rotor para evitar superaquecimento devido à alta rotação."
     ],
     "answer": "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montado na girosfera. Quando há uma inclinação do conjunto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Descreva o princípio de funcionamento das agulhas com controle eletrônico:",
@@ -362,8 +362,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O princípio baseia-se num acelerômetro pendular que aplica torques hidráulicos na girosfera para forçar a indicação do norte."
     ],
     "answer": "Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento, Como mostra a figura. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é aplicado aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Cite exemplos de agulhgas com controle eletrônico:",
@@ -376,7 +376,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "MK - 19, 23, etc.",
     "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "explanation": "A alternativa correta é: 'MK - 19, 23, etc.'. Consulte o tópico '1.1 - Fundamentos' da apostila CIAA-117/037 para o detalhamento completo."
   },
   {
     "question": "Descreva o Nível eletrolítico:",
@@ -388,8 +388,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É um tipo de capacitor variável cujo dielétrico é o óleo da girosfera, utilizado para medir a temperatura."
     ],
     "answer": "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcial- mente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo, como mostra a figura.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O nível eletrolítico consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.' Quando inclinado, a bolha se desloca criando desequilíbrio de resistência entre os eletrodos, gerando um sinal elétrico proporcional à inclinação."
   },
   {
     "question": "Qual dispositivo as agulhas giroscópicas dotadas de girosfera utilizam como elemento sensível?",
@@ -401,8 +401,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Magnetômetro fluxgate."
     ],
     "answer": "Nível eletrolítico.",
-    "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Em alguns modelos mais modernos de agulha, o nível eletrolítico foi substituído por qual dispositivo?",
@@ -414,8 +414,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Pickoff de fibra óptica."
     ],
     "answer": "Acelerômetro.",
-    "topic": "2.5 - Acelerômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.5 - Acelerômetro' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O nível eletrolítico consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.' Quando inclinado, a bolha se desloca criando desequilíbrio de resistência entre os eletrodos, gerando um sinal elétrico proporcional à inclinação."
   },
   {
     "question": "Descreva o Produtor de torques (torquer)",
@@ -427,8 +427,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Consiste em duas bobinas idênticas alimentadas em corrente contínua que repulsam um ímã permanente fixado na base do giroscópio."
     ],
     "answer": "Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: O produtor de torques (torquer) consiste de uma estrutura tipo 'E' aberta de lâminas de ferro. O enrolamento central é o campo de referência (fixo), excitado pela linha de alimentação. Os enrolamentos laterais são os campos de controle, excitados pelo amplificador de torque. O campo magnético resultante atua sobre a superfície da girosfera para gerar torques de controle."
   },
   {
     "question": "Descreva o pickoff e seu princípio de funcionamento:",
@@ -440,8 +440,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É um dispositivo mecânico que aciona microchaves limitadoras quando o giroscópio precessa além de 15 graus."
     ],
     "answer": "Consiste de um núcleo de ferro laminado, em forma de “E” com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento (bobina) central é o primário e os dois enrolamentos (bobinas) laterais são os secundários, que são enroladas em série e opostas. O acoplamento magnético entre primário e secundários, vária com a posição da armadura.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O Pickoff consiste de um núcleo de ferro laminado em forma de E com três enrolamentos e uma armadura de ferro móvel. O enrolamento central é o primário e os dois laterais são os secundários, enrolados em série e em oposição.' Quando a armadura está centrada, a saída é zero. Qualquer desalinhamento gera um sinal proporcional ao deslocamento. É usado como sensor de erro."
   },
   {
     "question": "Como é empregado o pickoff?",
@@ -453,8 +453,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O pickoff serve exclusivamente para converter tensão AC em DC nos torquers."
     ],
     "answer": "O pickoff é usado como sensor ou detector de erro.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O Pickoff consiste de um núcleo de ferro laminado em forma de E com três enrolamentos e uma armadura de ferro móvel. O enrolamento central é o primário e os dois laterais são os secundários, enrolados em série e em oposição.' Quando a armadura está centrada, a saída é zero. Qualquer desalinhamento gera um sinal proporcional ao deslocamento. É usado como sensor de erro."
   },
   {
     "question": "Qual será a marcação verdadeira de uma agulha que apresenta erro leste de 2 graus e que a rosa está navegando em um rumo de 020 graus?",
@@ -466,8 +466,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "o rumo verdadeiro é 358 graus."
     ],
     "answer": "o rumo verdadeiro é 022 graus.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Como será a leitura numa rosa havendo erro Oeste?",
@@ -479,8 +479,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "A leitura na rosa indicará sempre o norte magnético."
     ],
     "answer": "A leitura na rosa será maior do que o rumo verdadeiro.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Qual será a marcação verdadeira de uma agulha que apresenta erro oeste de 2 graus e que a rosa está navegando em um rumo de 020 graus?",
@@ -492,8 +492,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "o rumo verdadeiro é 040 graus."
     ],
     "answer": "o rumo verdadeiro é 018 graus.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quais as tendências no erro de latitude?",
@@ -505,8 +505,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Erro nulo no hemisfério norte e máximo no hemisfério sul."
     ],
     "answer": "Para leste no hemisfério norte (Erro leste) ou para oeste no hemisfério sul (Erro oeste).",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quais as tendências no erro de rumo?",
@@ -518,8 +518,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O erro de rumo será sempre máximo a 45 graus e nulo a 90 graus de latitude."
     ],
     "answer": "Irá tender para oeste sempre que o navio navegar com rumo norte, seja no hemisfério norte ou no hemisfério sul. Sempre que o rumo do navio for sul, o erro será leste independente do seu posicionamento global (latitude)",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Num sistema de navegação inercial, qual tipo de sensor é responsável pelo fornecimento das variações de posição angular?",
@@ -530,8 +530,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Produtor de torque"
     ],
     "answer": "Pick off",
-    "topic": "2.6 - Sistema de navegação inercial (SNI)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.6 - Sistema de navegação inercial (SNI)' da apostila oficial."
+    "topic": "2.2 - Navegação inercial",
+    "explanation": "Conforme a apostila (Cap.2): 'Navegação inercial é o processo de determinar a posição do veículo (navio) e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas.' Ela utiliza sensores inerciais (girômetros e acelerômetros) e não depende de referências externas, sendo autônoma."
   },
   {
     "question": "Num sistema de navegação inercial elementar, qual elemento é responsável por computar as acelerações?",
@@ -542,8 +542,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Balístico de líquido"
     ],
     "answer": "Acelerômetro",
-    "topic": "2.6 - Sistema de navegação inercial (SNI)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.6 - Sistema de navegação inercial (SNI)' da apostila oficial."
+    "topic": "2.2 - Navegação inercial",
+    "explanation": "Conforme a apostila (Cap.2): 'Navegação inercial é o processo de determinar a posição do veículo (navio) e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas.' Ela utiliza sensores inerciais (girômetros e acelerômetros) e não depende de referências externas, sendo autônoma."
   },
   {
     "question": "Em relação ao erro de latitude, qual é a sua principal causa?",
@@ -554,8 +554,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O atrito nos rolamentos do eixo de rotação"
     ],
     "answer": "A Reite Vertical da Terra (VER)",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Defina razão de precessão:",
@@ -566,8 +566,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Relação entre a inércia giroscópica e a rotação da Terra."
     ],
     "answer": "Relação entre torque aplicado e rigidez.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Em relação ao erro de velocidade e rumo, quais fatores determinam a direção do erro?",
@@ -578,8 +578,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "A rotação aparente da Terra nos polos geográficos."
     ],
     "answer": "A velocidade do rumo norte ou sul, sendo rumo sul (erro leste) e rumo norte (erro oeste).",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Em relação ao girômetro mecânico, qual dispositivo é responsável pela leitura do deslocamento angular?",
@@ -591,7 +591,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Pick off",
     "topic": "2.4 - Girômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.4 - Girômetro' da apostila oficial."
+    "explanation": "Conforme a apostila (Cap.2): 'Um girômetro em sua forma mais simples pode ser definido como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado. A estrutura mecânica é denominada gimbal (Suspensão Cardan).' O girômetro fornece variações de posição angular (velocidades angulares), diferentemente do giroscópio que fornece posição angular."
   },
   {
     "question": "Os sistemas de navegação inercial possibilitam a determinação de vários fatores do navio. Descreva-os:",
@@ -602,8 +602,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Latitude magnética, declinação, inclinação e aceleração da gravidade."
     ],
     "answer": "Posição, rumo, balanço, caturro e velocidade.",
-    "topic": "2.2 - Navegação inercial",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.2 - Navegação inercial' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Qual será o movimento aparente observado no giroscópio com sua ponta norte nivelada e apontando para leste?",
@@ -614,8 +614,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Elevação"
     ],
     "answer": "Elevação",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Com o abaixamento da ponta norte do giroscópio podemos pressupor que haverá precessão em que sentido?",
@@ -626,8 +626,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Em direção ao equador."
     ],
     "answer": "Em torno do eixo vertical.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Para transformarmos um giroscópio em instrumento procurador do norte, em torno de qual eixo deve ser aplicado o torque?",
@@ -638,8 +638,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "No anel fantasma da estrutura de suspensão."
     ],
     "answer": "Em torno do eixo horizontal (Peso W).",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Para transformarmos o giroscópio de procurador para indicador do norte se faz necessário a aplicação de torque em torno de qual eixo?",
@@ -650,8 +650,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Transversal e longitudinal simultaneamente."
     ],
     "answer": "Vertical (Peso W1).",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "As agulhas dotadas de girosferas se classificam em dois tipos quanto ao controle. Descreva-os:",
@@ -663,7 +663,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Controle mecânico e controle eletrônico.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Em relação às agulhas dotadas de girosfera, qual dispositivo é responsável detectar a inclinação devido à HER?",
@@ -675,7 +675,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Nível eletrolítico",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Em relação às agulhas dotadas de girosfera, qual dispositivo é empregado como produtor de torque? Descreva suas partes componentes:",
@@ -687,7 +687,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Pick off: enrolamento central (de referência) e dois enrolamentos laterais (de controle).",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Em relação ao acelerômetro de força balanceada, qual dispositivo é responsável pela detecção do sinal de aceleração?",
@@ -699,7 +699,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Pick off",
     "topic": "2.5 - Acelerômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.5 - Acelerômetro' da apostila oficial."
+    "explanation": "Conforme a apostila: O acelerômetro é um sensor inercial que mede a aceleração específica (aceleração menos a gravidade) nas direções de seus eixos sensíveis. Em conjunto com os girômetros, os acelerômetros formam a base do Sistema de Navegação Inercial (SNI), permitindo calcular velocidade e posição do navio por integração das acelerações medidas."
   },
   {
     "question": "Em se tratando de um sistema de navegação inercial (NSI) do tipo plataforma analítica (strap down), qual componente é responsável por converter coordenadas em sinal de navegação?",
@@ -710,8 +710,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Módulo de medição inercial (IMU)"
     ],
     "answer": "Computador de navegação",
-    "topic": "2.6 - Sistema de navegação inercial (SNI)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.6 - Sistema de navegação inercial (SNI)' da apostila oficial."
+    "topic": "2.2 - Navegação inercial",
+    "explanation": "Conforme a apostila (Cap.2): 'Navegação inercial é o processo de determinar a posição do veículo (navio) e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas.' Ela utiliza sensores inerciais (girômetros e acelerômetros) e não depende de referências externas, sendo autônoma."
   },
   {
     "question": "Nos sistemas de navegação inercial, quais dispositivos externos são utilizados como correção do posicionamento global do navio?",
@@ -722,8 +722,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Sistemas de giros a fibra óptica apenas."
     ],
     "answer": "Sinal de velocidade (odômetro), sinal de posicionamento global (Lat/Long) fornecido pela navegação ou via GPS.",
-    "topic": "2.2 - Navegação inercial",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.2 - Navegação inercial' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Quem explica a propriedade da lei do movimento do giroscópio?",
@@ -734,8 +734,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Lei de Newton"
     ],
     "answer": "Lei de Newton",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Como é conseguido o máximo efeito de inércia em um giroscópio?",
@@ -746,8 +746,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Aumentando o atrito no eixo horizontal."
     ],
     "answer": "Com a massa concentrada próxima à borda.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Qual é a propriedade do giroscópio pela qual ele tenta manter o eixo do rotor paralelo à sua posição original?",
@@ -758,8 +758,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Rotação aparente"
     ],
     "answer": "Rigidez no espaço ou inércia giroscópica",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Se um torque é aplicado ao eixo vertical do giroscópio, em torno de qual eixo o rotor irá se mover?",
@@ -770,8 +770,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Não haverá movimento devido à inércia."
     ],
     "answer": "Eixo horizontal",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Quando a precessão passa pelo centro de gravidade e não gera torque, como é chamada?",
@@ -782,8 +782,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Força de atrito"
     ],
     "answer": "Força de translação",
-    "topic": "1.4 - Precessão",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.4 - Precessão' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Em torno de qual eixo o torque de amortecimento é aplicado?",
@@ -794,8 +794,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Eixo cardan"
     ],
     "answer": "Eixo horizontal",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Aplicando-se uma força num ponto do giroscópio, como se observa a resposta a esta força?",
@@ -806,8 +806,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Este ponto se moverá a 90º do ponto aplicado (na direção da rotação do volante)."
     ],
     "answer": "Este ponto se moverá a 90º do ponto aplicado (na direção da rotação do volante).",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Defina rotação aparente:",
@@ -818,8 +818,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Velocidade de precessão causada pela aplicação de um torque no eixo horizontal."
     ],
     "answer": "É o movimento do giroscópio percebido pelo observador em relação à Terra.",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Onde a Reite Horizontal (HER) da Terra é máxima e mínima, respectivamente?",
@@ -830,8 +830,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É constante em qualquer latitude."
     ],
     "answer": "Máxima no equador e zero nos polos.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Onde a Reite Vertical (VER) da Terra é máxima e mínima, respectivamente?",
@@ -842,8 +842,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É constante em qualquer latitude."
     ],
     "answer": "Máxima nos polos e zero no equador.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quais são as fórmulas da HER e VER?",
@@ -854,8 +854,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "HER = 15º/h + cos lat / VER = 15º/h + sen lat"
     ],
     "answer": "HER = 15º/h . cos lat / VER = 15º/h . sen lat",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Qual a diferença entre inércia giroscópica e rotação aparente?",
@@ -866,8 +866,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "A direção do torque aplicado."
     ],
     "answer": "O ponto de observação.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Nas agulhas dotadas de girosfera, quais as vantagens em relação às agulhas anteriores?",
@@ -879,7 +879,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "O peso da girosfera é removido dos rolamentos do eixo vertical, devido à flutuação neutra, e a imersão em óleo oferece grande proteção contra agentes oxidantes.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Qual o nome do sensor utilizado no sistema de controle eletrônico das agulhas dotadas de girosfera?",
@@ -891,7 +891,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Nível eletrolítico",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Descreva o pick off:",
@@ -902,8 +902,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Massa suspensa por molas que desliza ao longo de um guia reto."
     ],
     "answer": "Consiste de um núcleo de ferro laminado, em forma de \"E\" com 3 enrolamentos, e uma armadura de ferro móvel em relação ao transformador que completa o núcleo.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "O que é erro leste?",
@@ -914,8 +914,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Falha na compensação de aceleração no eixo longitudinal."
     ],
     "answer": "Extremidade norte levantada e a leste do meridiano nas latitudes norte.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador e o meridiano de Greenwich dividem a Terra em quatro quadrantes: NORDESTE, SUDESTE, SUDOESTE e NOROESTE. O equador divide Norte/Sul e o meridiano de Greenwich divide Leste/Oeste."
   },
   {
     "question": "O que é erro oeste?",
@@ -926,8 +926,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Deslocamento da proa do navio para o sentido anti-horário devido ao caturro."
     ],
     "answer": "Extremidade norte para baixo e a oeste do meridiano nas latitudes sul.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador e o meridiano de Greenwich dividem a Terra em quatro quadrantes: NORDESTE, SUDESTE, SUDOESTE e NOROESTE. O equador divide Norte/Sul e o meridiano de Greenwich divide Leste/Oeste."
   },
   {
     "question": "Como é graduado o controle de latitude?",
@@ -938,8 +938,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "De -90º a +90º."
     ],
     "answer": "De 0º a 90º norte e sul.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Descreva navegação inercial:",
@@ -950,8 +950,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Navegação realizada pelo uso exclusivo de odômetros mecânicos."
     ],
     "answer": "Processo de determinar a posição do navio e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas.",
-    "topic": "2.2 - Navegação inercial",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.2 - Navegação inercial' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Qual o princípio de funcionamento da navegação inercial?",
@@ -962,8 +962,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Inércia dos corpos"
     ],
     "answer": "Inércia dos corpos",
-    "topic": "2.2 - Navegação inercial",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.2 - Navegação inercial' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quais são os sensores inerciais?",
@@ -974,8 +974,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Ecobatímetros e giroscópios mecânicos simples"
     ],
     "answer": "Girômetros e acelerômetros",
-    "topic": "2.5 - Acelerômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.5 - Acelerômetro' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Quais os movimentos que registram as mudanças na navegação inercial?",
@@ -986,8 +986,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Translacional e gravitacional"
     ],
     "answer": "Linear e angular",
-    "topic": "2.2 - Navegação inercial",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.2 - Navegação inercial' da apostila oficial."
+    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
+    "explanation": "Conforme a apostila: 'A inércia giroscópica depende da velocidade angular, do peso e do raio de rotação de cada massa elementar. O máximo efeito de inércia é conseguido com a massa concentrada próximo da borda.' Portanto, depende da velocidade de rotação do rotor, do raio de giro e da concentração da massa na periferia."
   },
   {
     "question": "O que é girômetro?",
@@ -998,8 +998,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Sensor de profundidade baseado em pressão."
     ],
     "answer": "É um rotor montado sobre uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixada.",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "2.4 - Girômetro",
+    "explanation": "Conforme a apostila (Cap.2): 'Um girômetro em sua forma mais simples pode ser definido como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado. A estrutura mecânica é denominada gimbal (Suspensão Cardan).' O girômetro fornece variações de posição angular (velocidades angulares), diferentemente do giroscópio que fornece posição angular."
   },
   {
     "question": "Como é chamada a estrutura mecânica do girômetro?",
@@ -1010,8 +1010,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Gimbal (Suspensão Cardan)"
     ],
     "answer": "Gimbal (Suspensão Cardan)",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "2.4 - Girômetro",
+    "explanation": "Conforme a apostila (Cap.2): 'Um girômetro em sua forma mais simples pode ser definido como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado. A estrutura mecânica é denominada gimbal (Suspensão Cardan).' O girômetro fornece variações de posição angular (velocidades angulares), diferentemente do giroscópio que fornece posição angular."
   },
   {
     "question": "O que os sensores do conjunto do girômetro medem?",
@@ -1023,7 +1023,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "As variações da posição angular entre rotor e base.",
     "topic": "2.4 - Girômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.4 - Girômetro' da apostila oficial."
+    "explanation": "Conforme a apostila (Cap.2): 'Um girômetro em sua forma mais simples pode ser definido como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado. A estrutura mecânica é denominada gimbal (Suspensão Cardan).' O girômetro fornece variações de posição angular (velocidades angulares), diferentemente do giroscópio que fornece posição angular."
   },
   {
     "question": "O giroscópio mede posição angular. O girômetro, ou simplesmente gyro, fornece quais variações?",
@@ -1034,8 +1034,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Altitude e profundidade."
     ],
     "answer": "Posição angular ou velocidades angulares.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "2.4 - Girômetro",
+    "explanation": "Conforme a apostila (Cap.2): 'Um girômetro em sua forma mais simples pode ser definido como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado. A estrutura mecânica é denominada gimbal (Suspensão Cardan).' O girômetro fornece variações de posição angular (velocidades angulares), diferentemente do giroscópio que fornece posição angular."
   },
   {
     "question": "Nos girômetros mecânicos, quem determina o tipo de giro?",
@@ -1046,8 +1046,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O tamanho do display e o tipo de teclado."
     ],
     "answer": "O número de cardans e a natureza do suporte.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "2.4 - Girômetro",
+    "explanation": "Conforme a apostila (Cap.2): 'Um girômetro em sua forma mais simples pode ser definido como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado. A estrutura mecânica é denominada gimbal (Suspensão Cardan).' O girômetro fornece variações de posição angular (velocidades angulares), diferentemente do giroscópio que fornece posição angular."
   },
   {
     "question": "Como é feita a leitura do deslocamento angular na giro eletrostática?",
@@ -1058,8 +1058,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Por nível eletrolítico."
     ],
     "answer": "Por meios ópticos.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Quais os tipos de girômetros não-mecânicos?",
@@ -1070,8 +1070,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Hidráulico e pneumático."
     ],
     "answer": "A laser e a fibra óptica.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "2.4 - Girômetro",
+    "explanation": "Conforme a apostila (Cap.2): 'Um girômetro em sua forma mais simples pode ser definido como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado. A estrutura mecânica é denominada gimbal (Suspensão Cardan).' O girômetro fornece variações de posição angular (velocidades angulares), diferentemente do giroscópio que fornece posição angular."
   },
   {
     "question": "Descreva o princípio de funcionamento da giro a laser:",
@@ -1082,8 +1082,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Utiliza a flutuação neutra de uma girosfera mergulhada em óleo especial."
     ],
     "answer": "Baseia-se no efeito Sagnac, onde a diferença de tempo entre dois feixes de luz girando em sentidos opostos é proporcional à velocidade de rotação.",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "2.4 - Girômetro",
+    "explanation": "Conforme a apostila: O giro a laser (RLG - Ring Laser Gyro) tem funcionamento baseado no princípio de Sagnac: dois feixes de laser percorrem um trajeto fechado em sentidos opostos. Quando o dispositivo gira, a diferença de fase entre os feixes é proporcional à velocidade de rotação. Vantagens: sem partes móveis, maior precisão, sem necessidade de manutenção, robusto e leve."
   },
   {
     "question": "Qual a finalidade dos espelhos dinâmicos na giro a laser?",
@@ -1094,8 +1094,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Criar campos magnéticos para precessar a luz."
     ],
     "answer": "Para ajustar o comprimento do trajeto.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "2.4 - Girômetro",
+    "explanation": "Conforme a apostila: O giro a laser (RLG - Ring Laser Gyro) tem funcionamento baseado no princípio de Sagnac: dois feixes de laser percorrem um trajeto fechado em sentidos opostos. Quando o dispositivo gira, a diferença de fase entre os feixes é proporcional à velocidade de rotação. Vantagens: sem partes móveis, maior precisão, sem necessidade de manutenção, robusto e leve."
   },
   {
     "question": "Quais as vantagens da giro a laser?",
@@ -1106,8 +1106,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Permite o alinhamento instantâneo sem necessidade de computação de navegação."
     ],
     "answer": "Robustez a variações ambientais, não possui partes móveis, não requer manutenção, entre outras.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "2.4 - Girômetro",
+    "explanation": "Conforme a apostila: O giro a laser (RLG - Ring Laser Gyro) tem funcionamento baseado no princípio de Sagnac: dois feixes de laser percorrem um trajeto fechado em sentidos opostos. Quando o dispositivo gira, a diferença de fase entre os feixes é proporcional à velocidade de rotação. Vantagens: sem partes móveis, maior precisão, sem necessidade de manutenção, robusto e leve."
   },
   {
     "question": "Defina acelerômetro:",
@@ -1119,7 +1119,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Dispositivo projetado para computar (medir) as acelerações ao longo de um determinado eixo.",
     "topic": "2.5 - Acelerômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.5 - Acelerômetro' da apostila oficial."
+    "explanation": "Conforme a apostila: O acelerômetro é um sensor inercial que mede a aceleração específica (aceleração menos a gravidade) nas direções de seus eixos sensíveis. Em conjunto com os girômetros, os acelerômetros formam a base do Sistema de Navegação Inercial (SNI), permitindo calcular velocidade e posição do navio por integração das acelerações medidas."
   },
   {
     "question": "Na sua expressão mais simples, como pode ser considerado um acelerômetro?",
@@ -1131,7 +1131,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Como uma massa suspensa por um fio (um pêndulo) ou que pode correr ao longo de um guia reto.",
     "topic": "2.5 - Acelerômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.5 - Acelerômetro' da apostila oficial."
+    "explanation": "Conforme a apostila: O acelerômetro é um sensor inercial que mede a aceleração específica (aceleração menos a gravidade) nas direções de seus eixos sensíveis. Em conjunto com os girômetros, os acelerômetros formam a base do Sistema de Navegação Inercial (SNI), permitindo calcular velocidade e posição do navio por integração das acelerações medidas."
   },
   {
     "question": "Nos sistemas de navegação inercial (SNI), o acelerômetro de força balanceada consiste de que?",
@@ -1142,8 +1142,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Dois rotores mecânicos suspensos em um único anel vertical."
     ],
     "answer": "Um sensor (pick-off), uma massa de prova e um produtor de torque.",
-    "topic": "2.2 - Navegação inercial",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.2 - Navegação inercial' da apostila oficial."
+    "topic": "2.5 - Acelerômetro",
+    "explanation": "Conforme a apostila: O acelerômetro é um sensor inercial que mede a aceleração específica (aceleração menos a gravidade) nas direções de seus eixos sensíveis. Em conjunto com os girômetros, os acelerômetros formam a base do Sistema de Navegação Inercial (SNI), permitindo calcular velocidade e posição do navio por integração das acelerações medidas."
   },
   {
     "question": "Por quais dispositivos o sistema inercial com plataforma fixa ao navio deve ter todas as acelerações medidas?",
@@ -1154,8 +1154,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Odômetros e bússolas"
     ],
     "answer": "Acelerômetros e girômetros",
-    "topic": "2.6 - Sistema de navegação inercial (SNI)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.6 - Sistema de navegação inercial (SNI)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "No SNI, quais as duas montagens básicas?",
@@ -1166,8 +1166,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Plataforma manual e plataforma giroscópica semi-ativa."
     ],
     "answer": "Plataforma inercial convencional (física/estabilizada) e a plataforma inercial analítica (solidária/strap down).",
-    "topic": "2.2 - Navegação inercial",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.2 - Navegação inercial' da apostila oficial."
+    "topic": "2.6 - Sistema de navegação inercial (SNI)",
+    "explanation": "Conforme a apostila: O SNI (Sistema de Navegação Inercial) é composto por girômetros e acelerômetros. Os girômetros medem variações de posição angular, enquanto os acelerômetros medem acelerações. A integração das acelerações fornece velocidade, e a dupla integração fornece posição (latitude, longitude), de forma completamente autônoma, sem referências externas."
   },
   {
     "question": "Na plataforma convencional, onde são montados os sensores?",
@@ -1178,8 +1178,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Ao lado do transmissor sincro de rumo."
     ],
     "answer": "Em um suporte denominado elemento estável.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quais os componentes básicos das plataformas convencionais?",
@@ -1190,8 +1190,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "4 giroscópios suspensos por ar."
     ],
     "answer": "3 acelerômetros, 3 girômetros e um computador.",
-    "topic": "2.5 - Acelerômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.5 - Acelerômetro' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Como é medida a latitude da plataforma convencional (estabilizad",
@@ -1203,8 +1203,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Pelo odômetro do navio integrado ao GPS."
     ],
     "answer": "É medida diretamente num SNI, a partir da plataforma estável, pois é um ângulo entre o eixo \"Z\" e a vertical do lugar.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Como é medida a longitude?",
@@ -1215,8 +1215,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Através do sinal do inclinômetro no eixo Y do giroscópio."
     ],
     "answer": "Não pode ser medida diretamente, mas o torque adicional exigido para manter o elemento sensível vertical em relação ao eixo de rotação da Terra é uma medida da velocidade na direção Leste-Oeste.",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Além da latitude e longitude, o sistema proporciona ainda quais informações?",
@@ -1227,8 +1227,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Distância para a costa e temperatura do ar."
     ],
     "answer": "Rumo do navio, balanço, caturro e velocidade.",
-    "topic": "2.6 - Sistema de navegação inercial (SNI)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.6 - Sistema de navegação inercial (SNI)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Na plataforma analítica, quais os componentes e onde são montados?",
@@ -1239,8 +1239,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Apenas 2 giroscópios mecânicos em anéis cardans."
     ],
     "answer": "3 giros e 3 acelerômetros, sobre uma mesma base rígida (módulo de medição inercial).",
-    "topic": "2.2 - Navegação inercial",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.2 - Navegação inercial' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Como devem ser os eixos sensíveis dos giros e dos acelerômetros na plataforma analítica?",
@@ -1251,8 +1251,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Devem convergir para o centro de gravidade do navio independentemente de seus ângulos."
     ],
     "answer": "Devem ser coincidentes (paralelos) e formar ângulo de 90º entre si.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "2.5 - Acelerômetro",
+    "explanation": "Conforme a apostila: O acelerômetro é um sensor inercial que mede a aceleração específica (aceleração menos a gravidade) nas direções de seus eixos sensíveis. Em conjunto com os girômetros, os acelerômetros formam a base do Sistema de Navegação Inercial (SNI), permitindo calcular velocidade e posição do navio por integração das acelerações medidas."
   },
   {
     "question": "A partir da tríade de sensores fixada em um veículo (navio), como é denominado esse sistema de coordenada do veículo?",
@@ -1263,8 +1263,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Módulo de precessão constante."
     ],
     "answer": "Sistema de coordenada móvel ou sistema de coordenada roll/pitch/yaw.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Como devem estar os eixos X, Y e Z dos sensores fixos na base, constituindo assim uma estrutura denominada plataforma?",
@@ -1275,8 +1275,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Todos os eixos devem apontar paralelos ao deslocamento do navio."
     ],
     "answer": "O eixo X (roll) deve apontar para a proa, o eixo Y (pitch) ortogonal ao X e apontando para boreste, enquanto que o eixo Z (yaw) deve apontar para baixo (vertical).",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Descreva a teoria de funcionamento da plataforma analítica (strap down):",
@@ -1287,8 +1287,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Utiliza a bóia inercial e um prumo analítico para determinar a latitude independentemente de cálculos computacionais."
     ],
     "answer": "Fundamenta-se na aplicação do princípio da inércia a um sistema de coordenadas móvel cujos sinais são integrados a um sistema de coordenadas de referência por um computador de navegação.",
-    "topic": "2.6 - Sistema de navegação inercial (SNI)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.6 - Sistema de navegação inercial (SNI)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "O que caracteriza um giroscópio básico e quantos graus de liberdade ele possui?",
@@ -1299,8 +1299,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Um conjunto pendular com 4 eixos articulados em girosfera."
     ],
     "answer": "Um rotor balanceado livre para girar em torno de 3 eixos perpendiculares entre si que se interceptam no C.G.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quais são os 3 eixos de rotação de um giroscópio com 3 graus de liberdade?",
@@ -1312,7 +1312,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Eixo de Rotação (Spin Axis), Eixo Horizontal e Eixo Vertical.",
     "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "explanation": "Conforme a apostila: 'Um giroscópio básico consiste de um rotor (disco) perfeitamente balanceado, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade. Diz-se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos: eixo de rotação, eixo horizontal e eixo vertical.'"
   },
   {
     "question": "A 1ª Propriedade Fundamental (Rigidez no Espaço ou Inércia Giroscópica) é definida como:",
@@ -1323,8 +1323,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O deslocamento provocado pela atração gravimétrica nos pólos."
     ],
     "answer": "A propriedade dos corpos girantes de conservarem seu plano inicial de rotação.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "A Rigidez no Espaço (H) depende diretamente de quais fatores?",
@@ -1335,8 +1335,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Torque aplicado, campo magnético fixo e momento linear."
     ],
     "answer": "Velocidade do rotor, concentração da massa na periferia e raio de giro.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "A expressão matemática da rigidez giroscópica é dada por H MKS. O que representa a variável M?",
@@ -1348,7 +1348,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Massa do rotor dada por Peso (Lb)/32.",
     "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "explanation": "Conforme a apostila: 'A inércia giroscópica depende da velocidade angular, do peso e do raio de rotação de cada massa elementar. O máximo efeito de inércia é conseguido com a massa concentrada próximo da borda, deste fato o formato dos rotores empregados nas agulhas modernas.' A rigidez aumenta com: maior velocidade de rotação, maior massa e maior raio do rotor."
   },
   {
     "question": "Observe as duas configurações de rotor: no rotor (A) a massa é distribuída uniformemente; no rotor (B) a massa é concentrada na periferia. Qual apresenta maior rigidez e por quê?",
@@ -1359,8 +1359,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O rotor A, por diminuir a inércia rotacional."
     ],
     "answer": "O rotor B, pois o maior raio de giro (K) aumenta a rigidez H.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "A 2ª Propriedade Fundamental é a Precessão. Ela é definida como:",
@@ -1371,8 +1371,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O movimento aparente provocado exclusivamente pela latitude."
     ],
     "answer": "A rotação do giroscópio em torno de um eixo perpendicular àquele em que o torque foi aplicado.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Ao aplicar um torque em torno do eixo HORIZONTAL no sentido de abaixá-lo, qual será o efeito de precessão resultante?",
@@ -1383,8 +1383,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Haverá precessão a 180° no eixo de spin."
     ],
     "answer": "O giroscópio precessará a 90° em torno do eixo VERTICAL.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Qual o ângulo existente entre a direção do torque aplicado e o movimento de precessão resultante?",
@@ -1395,8 +1395,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "0° (na mesma linha de ação)."
     ],
     "answer": "90° no sentido de rotação do rotor.",
-    "topic": "1.4 - Precessão",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.4 - Precessão' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "O que se entende por Rotação Aparente (Movimento Aparente) de um giroscópio?",
@@ -1407,8 +1407,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O efeito do amortecimento causado pelo balístico de líquido."
     ],
     "answer": "A rotação do giroscópio em relação à sua base (Terra), observada pelo operador na superfície.",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Em qual condição um giroscópio colocado no Equador NÃO apresentará rotação aparente?",
@@ -1419,8 +1419,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Nunca, sempre haverá rotação aparente no Equador."
     ],
     "answer": "Quando seu eixo de rotação estiver paralelo ao eixo de rotação da Terra (horizontal, apontando Norte).",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "No Equador, com o eixo de rotação na horizontal apontando para o LESTE, haverá rotação aparente em torno de qual eixo e qual seu valor máximo (HER)?",
@@ -1431,8 +1431,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Não há rotação aparente nessa posição."
     ],
     "answer": "Em torno do eixo horizontal com valor de 15°/H.",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.2 - Giroscópio",
+    "explanation": "Conforme a apostila: Os três eixos do giroscópio são: 1) Eixo de Rotação (Spin Axis) - o eixo em torno do qual o rotor gira; 2) Eixo Horizontal - permite inclinação vertical; 3) Eixo Vertical - permite rotação em azimute. Juntos formam os três graus de liberdade do giroscópio."
   },
   {
     "question": "Nos PÓLOS, um giroscópio com eixo nivelado apontando Leste apresentará rotação aparente em torno de qual eixo (VER) e com qual taxa?",
@@ -1443,8 +1443,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Eixo Transversal, igual a 5°/H."
     ],
     "answer": "Eixo Vertical, igual a 15°/H (360° em 24 horas).",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Em um ponto intermediário de latitude (L), como se comportam as componentes HER e VER?",
@@ -1455,8 +1455,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Dependem apenas da velocidade do navio."
     ],
     "answer": "HER = 15°/H cos(Lat) e VER = 15°/H sen(Lat).",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "À medida que levamos o giroscópio para uma latitude mais ALTA (próxima ao pólo), o que acontece com os valores de HER e VER?",
@@ -1467,8 +1467,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Ambas as componentes tornam-se nulas."
     ],
     "answer": "HER diminui e VER aumenta.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quais são os 4 fatores utilizados para transformar um giroscópio livre em instrumento PROCURADOR do Norte?",
@@ -1479,8 +1479,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Velocidade do navio, Rumo, Latitude e Longitude."
     ],
     "answer": "Rigidez, Precessão, Rotação da Terra (HER) e Força da Gravidade.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "No giroscópio procurador do Norte, qual a função da MASSA PENDULAR (peso W)?",
@@ -1491,8 +1491,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Manter o sensor tipo \"E\" centralizado."
     ],
     "answer": "Aplicar torque de gravidade quando a ponta Norte se eleva ou abaixa, gerando precessão azimutal em direção ao meridiano.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador e o meridiano de Greenwich dividem a Terra em quatro quadrantes: NORDESTE, SUDESTE, SUDOESTE e NOROESTE. O equador divide Norte/Sul e o meridiano de Greenwich divide Leste/Oeste."
   },
   {
     "question": "A combinação do efeito de HER e da Massa Pendular (MP) faz com que a extremidade Norte do eixo descreva qual trajetória em torno do meridiano?",
@@ -1503,8 +1503,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Um quadrado concêntrico."
     ],
     "answer": "Uma elipse (oscilação contínua não amortecida).",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Para transformar o giroscópio em INDICADOR do Norte (suprimindo as oscilações elípticas), adiciona-se o AMORTECIMENTO. Como isso é feito fisicamente?",
@@ -1515,8 +1515,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Aumentando a quantidade de gás hélio na esfera."
     ],
     "answer": "Colocando uma massa lateral (peso W1) no lado LESTE (direita) do rotor.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Qual o efeito da Massa Lateral (peso W1) quando a extremidade Norte do eixo de rotação se ELEVA?",
@@ -1527,8 +1527,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Trava o eixo horizontal."
     ],
     "answer": "Causa uma precessão para BAIXO, reduzindo gradualmente as oscilações (curva amortecida).",
-    "topic": "1.4 - Precessão",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.4 - Precessão' da apostila oficial."
+    "topic": "1.2 - Giroscópio",
+    "explanation": "Conforme a apostila: Os três eixos do giroscópio são: 1) Eixo de Rotação (Spin Axis) - o eixo em torno do qual o rotor gira; 2) Eixo Horizontal - permite inclinação vertical; 3) Eixo Vertical - permite rotação em azimute. Juntos formam os três graus de liberdade do giroscópio."
   },
   {
     "question": "Em agulhas modernas, o rotor gira dentro de uma girosfera contendo gás hélio imersa em óleo. Qual a principal vantagem da flutuação neutra da girosfera?",
@@ -1539,8 +1539,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Eliminar totalmente o erro de velocidade."
     ],
     "answer": "Remover o peso da girosfera dos rolamentos do eixo vertical.",
-    "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Quais são as vantagens do uso do GÁS HÉLIO dentro da esfera da girosfera?",
@@ -1551,8 +1551,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Isolar eletricamente as bobinas do torquer."
     ],
     "answer": "Fornecer empuxo para flutuação e transferir o calor do motor para a superfície interna da esfera.",
-    "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "As agulhas com CONTROLE MECÂNICO (ex: MK-27, MK-227) utilizam quais elementos para controle azimutal e amortecimento?",
@@ -1563,8 +1563,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Giroscópios a laser e girometros piezoelétricos."
     ],
     "answer": "Balístico de líquido (óleo) para torque azimutal e pesos para amortecimento.",
-    "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "As agulhas com CONTROLE ELETRÔNICO (ex: MK-19, MK-23) utilizam qual componente como detector de inclinação?",
@@ -1575,8 +1575,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Tacogerador de corrente contínua."
     ],
     "answer": "Sensor de nível eletrolítico (nível de bolha).",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "No Nível Eletrolítico das agulhas de controle eletrônico, como são alimentados os eletrodos inferiores e de onde sai o sinal de inclinação?",
@@ -1587,8 +1587,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Alimentados pela linha do repetidor de rumo."
     ],
     "answer": "Excitados pelos terminais opostos do secundário de um transformador (115V, 400Hz); sinal obtido no eletrodo superior e terminal central.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O nível eletrolítico consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.' Quando inclinado, a bolha se desloca criando desequilíbrio de resistência entre os eletrodos, gerando um sinal elétrico proporcional à inclinação."
   },
   {
     "question": "O PRODUTOR DE TORQUES (Torquer) de uma agulha eletrônica possui estrutura tipo \"E\" aberta. Como funcionam seus enrolamentos?",
@@ -1599,8 +1599,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Funciona por repulsão mecânica de mola e contrapeso."
     ],
     "answer": "Enrolamento central é o campo de referência (fixo, energizado pela linha); enrolamentos laterais são os campos de controle (saída do amplificador).",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: O produtor de torques (torquer) consiste de uma estrutura tipo 'E' aberta de lâminas de ferro. O enrolamento central é o campo de referência (fixo), excitado pela linha de alimentação. Os enrolamentos laterais são os campos de controle, excitados pelo amplificador de torque. O campo magnético resultante atua sobre a superfície da girosfera para gerar torques de controle."
   },
   {
     "question": "Qual a função do PICKOFF (Transformador tipo \"E\") no sistema da agulha giroscópica eletrônica?",
@@ -1611,8 +1611,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Fornecer o sinal de velocidade do navio."
     ],
     "answer": "Atuar como sensor ou detector de erro, medindo o desalinhamento entre o elemento sensível e a armadura.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O Pickoff consiste de um núcleo de ferro laminado em forma de E com três enrolamentos e uma armadura de ferro móvel. O enrolamento central é o primário e os dois laterais são os secundários, enrolados em série e em oposição.' Quando a armadura está centrada, a saída é zero. Qualquer desalinhamento gera um sinal proporcional ao deslocamento. É usado como sensor de erro."
   },
   {
     "question": "Quando a armadura do PICKOFF está exatamente no CENTRO, qual é a tensão (sinal) de saída resultante entre os secundários opostos?",
@@ -1623,8 +1623,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Tensão contínua pulsante de 12V."
     ],
     "answer": "Zero, pois as tensões induzidas nos dois secundários são iguais e opostas.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O Pickoff consiste de um núcleo de ferro laminado em forma de E com três enrolamentos e uma armadura de ferro móvel. O enrolamento central é o primário e os dois laterais são os secundários, enrolados em série e em oposição.' Quando a armadura está centrada, a saída é zero. Qualquer desalinhamento gera um sinal proporcional ao deslocamento. É usado como sensor de erro."
   },
   {
     "question": "Como é definido o ERRO LESTE no sistema de indicação da repetidora?",
@@ -1635,8 +1635,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Erro provocado por desvio de agulha magnética."
     ],
     "answer": "Leitura na repetidora MENOR que o rumo verdadeiro.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Como é definido o ERRO OESTE na leitura da repetidora de rumo?",
@@ -1647,8 +1647,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Leitura igual a 000° em qualquer latitude."
     ],
     "answer": "Leitura na repetidora MAIOR que o rumo verdadeiro.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quanto ao ERRO DE LATITUDE (devido ao posicionamento global), quais são os sinais dos erros nos Hemisférios Norte e Sul?",
@@ -1659,8 +1659,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Não há erro de latitude em nenhum hemisfério."
     ],
     "answer": "Hemisfério Norte: Erro Leste / Hemisfério Sul: Erro Oeste.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Em qual situação um navio NÃO apresentará Erro de Latitude?",
@@ -1671,8 +1671,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Quando o torquer de nível estiver desligado."
     ],
     "answer": "Quando estiver no EQUADOR deslocando-se nos rumos Leste/Oeste (090° ou 270°).",
-    "topic": "3.14 - Modos operacionais com o navio no mar (Sea)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '3.14 - Modos operacionais com o navio no mar (Sea)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Com relação ao ERRO DE VELOCIDADE, RUMO E LATITUDE (erro de proa), qual o sinal do erro para um navio no Hemisfério Sul navegando em rumo Norte (271° a 089°)?",
@@ -1683,8 +1683,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Depende apenas do balístico de líquido."
     ],
     "answer": "Erro Leste.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Quadro explicativo dos erros de agulha giroscópica:",
@@ -1695,8 +1695,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Nulo / Nulo / Nulo / Nulo / Nulo"
     ],
     "answer": "Leste / Oeste / Leste / Oeste / Nulo",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Quais os quatro fenômenos dos quais depende a operação da agulha giroscópica?",
@@ -1707,8 +1707,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Grande proteção contra choques mecânicos, reduz os efeitos da aceleração, imersão dos elementos em óleo oferece grande proteção contra agentes oxidantes, o peso da girosfera é removido dos rolamentos do eixo vertical devido à flutuação neutra."
     ],
     "answer": "Inerentes ao giroscópio: rigidez no espaço e precessão. Referentes à Terra: força de gravidade e rotação da Terra.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "Conforme a apostila: 'Basicamente, uma agulha giroscópica depende de quatro (4) fenômenos naturais para sua operação.' Os dois primeiros são propriedades do giroscópio: (1) Rigidez no espaço (Inércia Giroscópica) e (2) Precessão. Os outros dois referem-se à Terra: (3) Força de gravidade e (4) Rotação da Terra (HER)."
   },
   {
     "question": "Defina giroscópio e seus graus de liberdade.",
@@ -1719,8 +1719,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Essas agulhas utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento."
     ],
     "answer": "Consiste de um rotor perfeitamente balanceado livre para girar em torno de três eixos perpendiculares entre si: eixo de rotação, eixo horizontal e eixo vertical.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Defina rigidez no espaço ou inércia giroscópica.",
@@ -1732,7 +1732,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Propriedade que têm os corpos girantes de conservarem seu plano inicial de rotação.",
     "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "explanation": "Conforme a apostila (Cap.1): 'Rigidez no espaço ou Inércia giroscópica é a propriedade do giroscópio pela qual ele tenta manter o eixo do rotor paralelo a sua posição original. Esta propriedade é explicada pela lei do movimento (lei de NEWTON), a qual enuncia que um corpo em movimento continuará a se mover a uma velocidade constante na mesma direção até que ele sofra a ação de uma força externa.'"
   },
   {
     "question": "De que fatores depende a rigidez no espaço ou inércia giroscópica?",
@@ -1743,8 +1743,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "A bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos inferiores é igual."
     ],
     "answer": "Velocidade angular, peso e raio de giro.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Defina precessão.",
@@ -1755,8 +1755,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VERTICAL."
     ],
     "answer": "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.4 - Precessão",
+    "explanation": "Conforme a apostila (Cap.1): 'Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.' A precessão ocorre em ângulo de 90° em relação ao torque aplicado, na direção de rotação do volante."
   },
   {
     "question": "O que é razão de precessão?",
@@ -1767,8 +1767,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez."
     ],
     "answer": "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "O que é rotação ou movimento aparente?",
@@ -1779,8 +1779,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Acelerômetro."
     ],
     "answer": "É a rotação do giroscópio em relação à sua base, assim observada.",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Onde o giroscópio é montado?",
@@ -1791,8 +1791,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Propriedade que têm os corpos girantes de conservarem seu plano inicial de rotação."
     ],
     "answer": "É montado em uma esfera, e a esfera sustentada pelo anel vertical. A esfera e o anel vertical são montados em uma base chamada fantasma.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Qual o primeiro passo para transformar um giroscópio em uma agulha giroscópica?",
@@ -1803,8 +1803,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VERTICAL."
     ],
     "answer": "Fazê-lo procurar o meridiano.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Qual efeito o peso W causa no giroscópio?",
@@ -1815,8 +1815,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo."
     ],
     "answer": "Para fazer com que o anel vertical se torne pendular em relação ao eixo horizontal, o peso W é elevado contra a ação da força de gravidade e consequentemente causa um torque no eixo horizontal do giroscópio.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Descreva o efeito do peso W1 adicionado ao giroscópio procurador e indicador do Norte.",
@@ -1827,8 +1827,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, ao invés de um caminho elíptico. O giroscópio livre foi convertido em agulha giroscópica."
     ],
     "answer": "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, ao invés de um caminho elíptico. O giroscópio livre foi convertido em agulha giroscópica.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "A diferença entre inércia giroscópica e rotação aparente é?",
@@ -1839,8 +1839,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Quanto ao ponto de observação."
     ],
     "answer": "Quanto ao ponto de observação.",
-    "topic": "1.3 - Rigidez no espaço ou Inércia Giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.3 - Rigidez no espaço ou Inércia Giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "O tempo em minutos exigido para a oscilação completa é chamado?",
@@ -1851,8 +1851,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Para fazer com que o anel vertical se torne pendular em relação ao eixo horizontal, o peso W é elevado contra a ação da força de gravidade e consequentemente causa um torque no eixo horizontal do giroscópio."
     ],
     "answer": "Período de oscilação. (Pode ser modificado variando o peso no fundo do anel vertical).",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Quais as vantagens que as agulhas dotadas de girosfera proporcionam sobre agulhas anteriores?",
@@ -1864,7 +1864,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Grande proteção contra choques mecânicos, reduz os efeitos da aceleração, imersão dos elementos em óleo oferece grande proteção contra agentes oxidantes, o peso da girosfera é removido dos rolamentos do eixo vertical devido à flutuação neutra.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Para que serve o gás Hélio no interior da esfera?",
@@ -1875,8 +1875,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez."
     ],
     "answer": "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Como podem ser classificadas as agulhas giroscópicas quanto ao sistema de controle?",
@@ -1887,8 +1887,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Com controle mecânico e eletrônico."
     ],
     "answer": "Com controle mecânico e eletrônico.",
-    "topic": "1.10  - Erros nas agulhas giroscópicas",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.10  - Erros nas agulhas giroscópicas' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Cite os modelos de agulhas que utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivelamento).",
@@ -1899,8 +1899,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Horizontal."
     ],
     "answer": "Temos como exemplo as agulhas MK-27, 227, etc.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O balístico de óleo consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montado na girosfera. Quando há uma inclinação do conjunto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.' São usados nas agulhas MK-27, 227 etc."
   },
   {
     "question": "Descreva o balístico de óleo.",
@@ -1911,8 +1911,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É a rotação do giroscópio em relação à sua base, assim observada."
     ],
     "answer": "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montados na girosfera. Quando há uma inclinação do conjunto (devido à HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Discorra sobre agulhas com controle mecânico.",
@@ -1923,8 +1923,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Temos como exemplo as agulhas MK-27, 227, etc."
     ],
     "answer": "Essas agulhas utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento.",
-    "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Descreva o princípio de funcionamento das agulhas com controle eletrônico.",
@@ -1935,8 +1935,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Horizontal."
     ],
     "answer": "Utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é applied aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Cite exemplos de agulhas com controle eletrônico.",
@@ -1948,7 +1948,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "MK-19, 23, etc.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "A alternativa correta é: 'MK-19, 23, etc.'. Consulte o tópico '1.9 - Agulhas dotadas de girosfera' da apostila CIAA-117/037 para o detalhamento completo."
   },
   {
     "question": "Quais os componentes utilizados nas agulhas giroscópicas?",
@@ -1959,8 +1959,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VERTICAL."
     ],
     "answer": "Nível eletrolítico, produtor de torque e pickoff.",
-    "topic": "1.10  - Erros nas agulhas giroscópicas",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.10  - Erros nas agulhas giroscópicas' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Descreva o nível eletrolítico.",
@@ -1971,8 +1971,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
     ],
     "answer": "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O nível eletrolítico consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.' Quando inclinado, a bolha se desloca criando desequilíbrio de resistência entre os eletrodos, gerando um sinal elétrico proporcional à inclinação."
   },
   {
     "question": "Quando o nível eletrolítico estiver na horizontal o que acontecerá?",
@@ -1983,8 +1983,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Consiste de uma estrutura tipo \"E\" aberta (sem armadura) de lâminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle. Os campos são defasados de 90° elétricos tal qual um motor de indução bifásico. O campo fixo ou de referência é excitado pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
     ],
     "answer": "A bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos inferiores é igual.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O nível eletrolítico consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.' Quando inclinado, a bolha se desloca criando desequilíbrio de resistência entre os eletrodos, gerando um sinal elétrico proporcional à inclinação."
   },
   {
     "question": "Descreva o produtor de torque (torquer).",
@@ -1995,8 +1995,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Consiste de uma estrutura tipo \"E\" aberta (sem armadura) de lâminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle. Os campos são defasados de 90° elétricos tal qual um motor de indução bifásico. O campo fixo ou de referência é excitado pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
     ],
     "answer": "Consiste de uma estrutura tipo \"E\" aberta (sem armadura) de lâminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle. Os campos são defasados de 90° elétricos tal qual um motor de indução bifásico. O campo fixo ou de referência é excitado pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Descreva o pickoff e seu princípio de funcionamento.",
@@ -2007,8 +2007,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VERTICAL."
     ],
     "answer": "Consiste de um núcleo de ferro laminado, em forma \"E\" com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento central é o primário e os dois enrolamentos laterais são os secundários, que são enrolados em série e opostos. O acoplamento magnético entre primário e secundários varia com a posição da armadura.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O Pickoff consiste de um núcleo de ferro laminado em forma de E com três enrolamentos e uma armadura de ferro móvel. O enrolamento central é o primário e os dois laterais são os secundários, enrolados em série e em oposição.' Quando a armadura está centrada, a saída é zero. Qualquer desalinhamento gera um sinal proporcional ao deslocamento. É usado como sensor de erro."
   },
   {
     "question": "Descreva o erro LESTE.",
@@ -2019,8 +2019,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Quando a leitura na rosa é menor que a verdadeira."
     ],
     "answer": "Quando a leitura na rosa é menor que a verdadeira.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "A Terra é um esferóide achatado nas partes superior e inferior, dividida primariamente por uma linha imaginária (equador) em dois hemisférios. Quais são eles?",
@@ -2031,8 +2031,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral até estabilizar no meridiano."
     ],
     "answer": "NORTE E SUL.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Qual a linha (meridiano) que serve como ponto de partida convencionado como Meridiano Zero?",
@@ -2043,8 +2043,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral até estabilizar no meridiano."
     ],
     "answer": "Meridiano de Greenwich (Inglaterra).",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Entre o EQUADOR e os PÓLOS há diversas linhas paralelas formando circunferências que diminuem de perímetro à medida que se aproximam dos PÓLOS. Como são chamadas essas linhas?",
@@ -2055,8 +2055,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "PARALELOS."
     ],
     "answer": "PARALELOS.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Descreva a fórmula da velocidade linear da Terra, no EQUADO",
@@ -2067,8 +2067,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Precessiona em torno do eixo Horizontal (P)."
     ],
     "answer": "R: VL = 21.600 milhas / 24H = 900 milhas/hora.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "À medida que aumenta a latitude, a velocidade linear diminui. Descreva a fórmula da velocidade linear em qualquer ponto da superfície da Terra:",
@@ -2079,8 +2079,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VL = 900 x Cos(Latitude)."
     ],
     "answer": "VL = 900 x Cos(Latitude).",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Se um torque for aplicado em torno do eixo vertical (T), o rotor precessiona em torno de qual eixo?",
@@ -2091,8 +2091,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Precessiona em torno do eixo Horizontal (P)."
     ],
     "answer": "Precessiona em torno do eixo Horizontal (P).",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.4 - Precessão",
+    "explanation": "Conforme a apostila: 'Se o torque for aplicado sobre o eixo vertical, como mostrado por T na figura, o rotor gira ou precessiona em torno de seu eixo horizontal como mostrado pela seta P.' Essa é a regra fundamental da precessão: torque num eixo causa precessão no eixo perpendicular."
   },
   {
     "question": "Supondo o rotor no Equador com eixo Leste-Oeste, qual a rotação aparente observada?",
@@ -2103,8 +2103,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Acelerômetro."
     ],
     "answer": "O rotor parecerá girar em torno do seu eixo horizontal com velocidade igual (15°/H / 360° em 24h), mas direção oposta à rotação da Terra.",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Supondo o rotor no Pólo Norte ou Pólo Sul com eixo horizontal, qual a rotação aparente observada?",
@@ -2115,8 +2115,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Tornar o anel vertical pendular, aplicando torque de gravidade quando a ponta se eleva ou abaixa para gerar precessão em direção ao meridiano."
     ],
     "answer": "O rotor parecerá girar em torno de seu eixo vertical (Reite Vertical da Terra - VER).",
-    "topic": "1.5 - Rotação Aparente",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.5 - Rotação Aparente' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Descreva as fórmulas de HER e VE",
@@ -2127,8 +2127,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Meridiano de Greenwich (Inglaterra)."
     ],
     "answer": "R: a) HER = 15°/H × Cos(lat); b) VER = 15°/H × Sen(lat).",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Calcule os valores de HER e VER nos pontos:",
@@ -2139,8 +2139,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Latitude 0°: VER = 0°/h, HER = 15°/h (Máximo) Latitude 30°: VER = 7,5°/h, HER = 12,99°/h Latitude 60°: VER = 12,99°/h, HER = 7,5°/h Latitude 90°: VER = 15°/h (Máximo), HER = 0°/h"
     ],
     "answer": "Latitude 0°: VER = 0°/h, HER = 15°/h (Máximo) Latitude 30°: VER = 7,5°/h, HER = 12,99°/h Latitude 60°: VER = 12,99°/h, HER = 7,5°/h Latitude 90°: VER = 15°/h (Máximo), HER = 0°/h",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Qual é a função do peso W no giroscópio para procurar o meridiano?",
@@ -2151,8 +2151,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Tornar o anel vertical pendular, aplicando torque de gravidade quando a ponta se eleva ou abaixa para gerar precessão em direção ao meridiano."
     ],
     "answer": "Tornar o anel vertical pendular, aplicando torque de gravidade quando a ponta se eleva ou abaixa para gerar precessão em direção ao meridiano.",
-    "topic": "1.2 - Giroscópio",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.2 - Giroscópio' da apostila oficial."
+    "topic": "1.7 - Procurando o meridiano",
+    "explanation": "Conforme a apostila: 'Para procurar o meridiano, um peso W é adicionado na parte inferior do anel vertical. Isto faz com que o anel vertical se torne pendular em relação ao eixo horizontal.' Quando a Terra gira, o anel se inclina e o peso cria um torque que força a precessão em direção ao meridiano."
   },
   {
     "question": "Cite as 5 vantagens das agulhas dotadas de girosfera:",
@@ -2164,7 +2164,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "1ª - Peso removido dos rolamentos do eixo vertical pela flutuação neutra; 2ª - Grande proteção contra choques mecânicos; 3ª Reduz efeitos da aceleração; 4ª - Trabalho do motor facilitado por gás hélio; 5ª - Imersão em óleo protege contra agentes oxidantes.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Cite os modelos de agulhas que utilizam balístico de líquido (óleo) e pesos para amortecimento:",
@@ -2176,7 +2176,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "MK-27, MK-227, etc.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'O balístico de óleo consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montado na girosfera. Quando há uma inclinação do conjunto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.' São usados nas agulhas MK-27, 227 etc."
   },
   {
     "question": "Descreva o balístico de óleo:",
@@ -2187,8 +2187,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Suprimir as oscilações do rotor em tempo do meridiano (amortecimento), adicionando um pequeno peso W1 na esfera do lado Leste."
     ],
     "answer": "Consiste em dois reservatórios interligados por tubo com óleo. Com a inclinação (HER), o óleo escoa para o reservatório mais baixo, aplicando torque no rotor para procurar o norte.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   },
   {
     "question": "Qual dispositivo as agulhas dotadas de girosfera utilizam como elemento sensível?",
@@ -2200,7 +2200,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
     ],
     "answer": "Nível eletrolítico.",
     "topic": "1.9 - Agulhas dotadas de girosfera",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.9 - Agulhas dotadas de girosfera' da apostila oficial."
+    "explanation": "Conforme a apostila: 'As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta rotação no interior de uma esfera contendo gás hélio.' As vantagens incluem: flutuação neutra (remove o peso dos rolamentos), proteção contra choques, redução dos efeitos de aceleração, melhor condicionamento pelo hélio e proteção contra oxidação."
   },
   {
     "question": "Em alguns modelos mais modernos, o nível eletrolítico foi substituído por qual dispositivo?",
@@ -2211,8 +2211,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Precessiona em torno do eixo Horizontal (P)."
     ],
     "answer": "Acelerômetro.",
-    "topic": "2.5 - Acelerômetro",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '2.5 - Acelerômetro' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: 'O nível eletrolítico consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.' Quando inclinado, a bolha se desloca criando desequilíbrio de resistência entre os eletrodos, gerando um sinal elétrico proporcional à inclinação."
   },
   {
     "question": "Descreva o produtor de torques (torquer):",
@@ -2223,8 +2223,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial (1ª Lei de Newton)."
     ],
     "answer": "Estrutura tipo \"E\" aberta. Enrolamento central é campo de referência (fixo) e laterais são de controle (saída do amplificador), defasados de 90° elétricos.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.9 - Agulhas dotadas de girosfera",
+    "explanation": "Conforme a apostila: O produtor de torques (torquer) consiste de uma estrutura tipo 'E' aberta de lâminas de ferro. O enrolamento central é o campo de referência (fixo), excitado pela linha de alimentação. Os enrolamentos laterais são os campos de controle, excitados pelo amplificador de torque. O campo magnético resultante atua sobre a superfície da girosfera para gerar torques de controle."
   },
   {
     "question": "Qual será a marcação verdadeira de uma agulha que apresenta erro?",
@@ -2235,8 +2235,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Tubo de vidro cilíndrico com 3 eletrodos de platina e parcialmente cheio de eletrólito, formando uma bolha de ar na parte superior."
     ],
     "answer": "Rumo Verdadeiro = Rumo Lido - Erro Leste (+ se Erro Oeste). Ex: Se Erro for Leste, Leitura < Verdadeiro.",
-    "topic": "1.6  - O Giroscópio como uma agulha giroscópica",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.6  - O Giroscópio como uma agulha giroscópica' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Qual a diferença entre Erro Leste e Erro Oeste na indicação?",
@@ -2247,8 +2247,8 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral até estabilizar no meridiano."
     ],
     "answer": "Erro Leste: Leitura < Rumo Real. Erro Oeste: Leitura > Rumo Real.",
-    "topic": "1.1 - Fundamentos",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.1 - Fundamentos' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "O equador é a linha imaginária que divide a Terra em dois hemisférios: NORTE e SUL. Essa divisão primária é a base da coordenada de latitude usada na navegação."
   },
   {
     "question": "Quais os erros de latitude nos hemisférios?",
@@ -2259,7 +2259,7 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Rumo Verdadeiro = Rumo Lido - Erro Leste (+ se Erro Oeste). Ex: Se Erro for Leste, Leitura < Verdadeiro."
     ],
     "answer": "Hemisfério Norte: Erro Leste. Hemisfério Sul: Erro Oeste.",
-    "topic": "1.8 - Indicando o norte (Orientando-se no meridiano)",
-    "explanation": "A resposta correta pode ser encontrada revisando o tópico '1.8 - Indicando o norte (Orientando-se no meridiano)' da apostila oficial."
+    "topic": "1.1 - Introdução",
+    "explanation": "As linhas paralelas ao equador são chamadas de PARALELOS. Elas formam circunferências que diminuem de tamanho à medida que se aproximam dos pólos, sendo usadas para medir a latitude."
   }
 ];
