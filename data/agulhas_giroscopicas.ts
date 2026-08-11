@@ -10,10 +10,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "(NORDESTE E SUDESTE).",
       "(NOROESTE E SUDOESTE)."
     ],
-    "answer": "(NORTE E SUL)."
+    "answer": "(NORTE E SUL).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Na busca por um equipamento que indicasse o norte verdadeiro, em vez do norte magné- tico, a agulha giroscópica foi desenvolvida, pelos norte - americanos, nas primeiras dé-  cadas do século 20 (1911), tendo como base um único giroscópio."
   },
   {
-"question": "Há também uma linha (meridiano de Greenwich) que, passando verticalmente pela sua superfície, divide-a em outros dois hemisférios chamados ORIENTAL (LESTE) e OCIDENTAL (OESTE), essas duas linhas de divisão separam a terra em quatro quadrantes. Cite os mesmos:",
+    "question": "Há também uma linha (meridiano de Greenwich) que, passando verticalmente pela sua superfície, divide-a em outros dois hemisférios chamados ORIENTAL (LESTE) e OCIDENTAL (OESTE), essas duas linhas de divisão separam a terra em quatro quadrantes. Cite os mesmos:",
     "options": [
       "Esses quadrantes são chamados NORDESTE, SUDESTE, SUDOESTE E NOROESTE.",
       "Esses quadrantes são chamados NORTE, SUL, LESTE E OESTE.",
@@ -21,10 +23,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Esses quadrantes são chamados SUPERIOR, INFERIOR, DIREITO E ESQUERDO.",
       "Esses quadrantes são chamados POLARES, EQUATORIAIS, TROPICAIS E TEMPERADOS."
     ],
-    "answer": "Esses quadrantes são chamados NORDESTE, SUDESTE, SUDOESTE E NOROESTE."
+    "answer": "Esses quadrantes são chamados NORDESTE, SUDESTE, SUDOESTE E NOROESTE.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 4° - Interferências (Ruídos ou Desvios) Esses problemas são causados pelos efeitos da gravidade e rotação da terra, que afe- tam a leitura dos acelerômetros."
   },
   {
-"question": "Entre o EQUADOR e os PÓLOS há diversas linhas paralelas formando circunferências que diminuem de perímetro a medida que se aproximam dos PÓLOS. Como são chamadas essas linhas",
+    "question": "Entre o EQUADOR e os PÓLOS há diversas linhas paralelas formando circunferências que diminuem de perímetro a medida que se aproximam dos PÓLOS. Como são chamadas essas linhas",
     "options": [
       "\"PARALELOS \".",
       "\"MERIDIANOS\".",
@@ -32,10 +36,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "\"LONGITUDES\".",
       "\"EQUADORES\"."
     ],
-    "answer": "\"PARALELOS \"."
+    "answer": "\"PARALELOS \".",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Os eixos são orto- gonais coincidentes, ou seja, os eixos sensíveis dos giros e dos acelerômetros devem ser coincidentes (paralelos) e formado ângulos de noventa graus entre si, como mos- tra a figura 2.19, para que possam realizar transformações de coordenadas."
   },
   {
-"question": "Como é marcada a latitude no globo terrestre?",
+    "question": "Como é marcada a latitude no globo terrestre?",
     "options": [
       "0° a 90º NORTE e 0° a 90º SUL.",
       "0° a 180º LESTE e 0° a 180º OESTE.",
@@ -43,10 +49,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "15° a 90° LESTE e 15° a 90° OESTE.",
       "0° a 90° LESTE e 0° a 90° OESTE."
     ],
-    "answer": "0° a 90º NORTE e 0° a 90º SUL."
+    "answer": "0° a 90º NORTE e 0° a 90º SUL.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Na busca por um equipamento que indicasse o norte verdadeiro, em vez do norte magné- tico, a agulha giroscópica foi desenvolvida, pelos norte - americanos, nas primeiras dé-  cadas do século 20 (1911), tendo como base um único giroscópio."
   },
   {
-"question": "Como são chamadas as linhas na vertical (circunferências máximas) que passam pelos pólos? E como é marcada a longitude baseada nestas linhas?",
+    "question": "Como são chamadas as linhas na vertical (circunferências máximas) que passam pelos pólos? E como é marcada a longitude baseada nestas linhas?",
     "options": [
       "a) \"MERIDIANOS\"; e b) O ponto de partida para essa medida é o meridiano que passa por GREENWICH, na Inglaterra, e que ficou sendo por convenção conhecido como MERIDIANO ZERO. Partindo do ponto zero, conta-se até 180º graus de longitude leste e 180o de longitude oeste.",
       "a) \"PARALELOS\"; e b) O ponto de partida é o Equador, contando de 0° a 90° Norte e Sul.",
@@ -54,10 +62,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "a) \"MERIDIANOS\"; e b) O ponto de partida é o Equador, contando 360° no total.",
       "a) \"LONGITUDES\"; e b) Contam-se de 0 a 90 graus a partir do Meridiano Zero."
     ],
-    "answer": "a) \"MERIDIANOS\"; e b) O ponto de partida para essa medida é o meridiano que passa por GREENWICH, na Inglaterra, e que ficou sendo por convenção conhecido como MERIDIANO ZERO. Partindo do ponto zero, conta-se até 180º graus de longitude leste e 180o de longitude oeste."
+    "answer": "a) \"MERIDIANOS\"; e b) O ponto de partida para essa medida é o meridiano que passa por GREENWICH, na Inglaterra, e que ficou sendo por convenção conhecido como MERIDIANO ZERO. Partindo do ponto zero, conta-se até 180º graus de longitude leste e 180o de longitude oeste.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Neste ponto o eixo sofreu uma precessão tanto para Oeste do meridiano como anteriormente para Leste."
   },
   {
-"question": "Descreva a fórmula da velocidade angular da terra:",
+    "question": "Descreva a fórmula da velocidade angular da terra:",
     "options": [
       "A velocidade angular da terra é de 15º por hora em qualquer ponto da superfície da terra. Va = 360º/ 24H Va = 15º /H",
       "A velocidade angular da terra é de 10º por hora em qualquer ponto da superfície da terra. Va = 360º/ 36H Va = 10º /H",
@@ -65,10 +75,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "A velocidade angular da terra varia de 0º a 15º por hora de acordo com a latitude.",
       "A velocidade angular da terra é de 900 milhas por hora. Va = 900 milhas/hora"
     ],
-    "answer": "A velocidade angular da terra é de 15º por hora em qualquer ponto da superfície da terra. Va = 360º/ 24H Va = 15º /H"
+    "answer": "A velocidade angular da terra é de 15º por hora em qualquer ponto da superfície da terra. Va = 360º/ 24H Va = 15º /H",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Analisando a figura 1.9, chegamos a conclusão que a velocidade angular da Terra (ER) é igual à 15 graus por hora, desta forma, teremos: Ponto     “A”     Latitude     zero     (0°)      Sen."
   },
   {
-"question": "Descreva a fórmula da velocidade linear da terra, no EQUADOR:",
+    "question": "Descreva a fórmula da velocidade linear da terra, no EQUADOR:",
     "options": [
       "VL = 21.600milhas VL = 900 milhas/hora 24H",
       "VL = 900 x Co-seno Latitude",
@@ -76,10 +88,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VL = 15º /H",
       "VL = 900 milhas / Latitude"
     ],
-    "answer": "VL = 21.600milhas VL = 900 milhas/hora 24H"
+    "answer": "VL = 21.600milhas VL = 900 milhas/hora 24H",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Analisando a figura 1.9, chegamos a conclusão que a velocidade angular da Terra (ER) é igual à 15 graus por hora, desta forma, teremos: Ponto     “A”     Latitude     zero     (0°)      Sen."
   },
   {
-"question": "A medida que aumenta a latitude (diminui o perímetro), a velocidade linear da terra diminui. Desta forma, a velocidade linear, em qualquer ponto da superfície da terra, diante dos fatos expostos descreva a fórmula da mesma:",
+    "question": "A medida que aumenta a latitude (diminui o perímetro), a velocidade linear da terra diminui. Desta forma, a velocidade linear, em qualquer ponto da superfície da terra, diante dos fatos expostos descreva a fórmula da mesma:",
     "options": [
       "VL = 900 x Co-seno Latitude",
       "VL = 900 x Seno Latitude",
@@ -87,10 +101,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "VL = 21.600 / Co-seno Latitude",
       "VL = 15º/H x Seno Latitude"
     ],
-    "answer": "VL = 900 x Co-seno Latitude"
+    "answer": "VL = 900 x Co-seno Latitude",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O efeito da Reite Horizontal da Terra é máximo no equador e zero nos pólos e varia com o co-seno da latitude, enquanto que o efeito da Reite Vertical da Terra variará com o seno da lati- tude, sendo máximo nos pólos e zero no Equador, desta forma, seus valores podem ser determinados, em qualquer ponto da Terra, utilizando as seguintes expressões: HER = ER."
   },
   {
-"question": "Descreva um giroscópio básico:",
+    "question": "Descreva um giroscópio básico:",
     "options": [
       "Consiste de um rotor (disco) perfeitamente balanceado, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade. Diz - se assim, que o giroscópio tem três (3) graus de li- berdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denomina- dos respectivamente de eixo de rotação, eixo horizontal e eixo vertical.",
       "Consiste de um sensor eletrônico que detecta a variação do campo magnético terrestre para indicar o norte verdadeiro.",
@@ -98,10 +114,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É um disco que gira em torno de apenas um eixo vertical, mantendo-se perfeitamente alinhado com a latitude local.",
       "É um equipamento composto apenas por um balístico de mercúrio e uma rosa dos ventos, sem partes móveis rotativas."
     ],
-    "answer": "Consiste de um rotor (disco) perfeitamente balanceado, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade. Diz - se assim, que o giroscópio tem três (3) graus de li- berdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denomina- dos respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
+    "answer": "Consiste de um rotor (disco) perfeitamente balanceado, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade. Diz - se assim, que o giroscópio tem três (3) graus de li- berdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denomina- dos respectivamente de eixo de rotação, eixo horizontal e eixo vertical.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - GIROSCÓPIO Um giroscópio básico, figura 1.1, consiste de um rotor (disco) perfeitamente balancea- do, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade."
   },
   {
-"question": "Defina Rigidez no espaço ou Inércia giroscópica:",
+    "question": "Defina Rigidez no espaço ou Inércia giroscópica:",
     "options": [
       "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial. Esta propriedade é explicada pela lei do movimento (lei de NEWTON) a qual enuncia que um corpo em movimento continuará a se mover a uma velocidade constante na mesma direção até que ele sofra a ação de uma força externa.",
       "É a propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
@@ -109,10 +127,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É o movimento aparente que o giroscópio apresenta devido à rotação da Terra.",
       "É a força que faz com que a girosfera flutue em equilíbrio neutro."
     ],
-    "answer": "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial. Esta propriedade é explicada pela lei do movimento (lei de NEWTON) a qual enuncia que um corpo em movimento continuará a se mover a uma velocidade constante na mesma direção até que ele sofra a ação de uma força externa."
+    "answer": "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial. Esta propriedade é explicada pela lei do movimento (lei de NEWTON) a qual enuncia que um corpo em movimento continuará a se mover a uma velocidade constante na mesma direção até que ele sofra a ação de uma força externa.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Esta propriedade é explicada pela lei do movimento - lei de NEWTON - a qual enuncia que um corpo em movimento continuará a se mover a uma velocidade constante na mesma direção até que ele sofra a ação de uma força externa."
   },
   {
-"question": "De quais fatores depende a inércia giroscópica?",
+    "question": "De quais fatores depende a inércia giroscópica?",
     "options": [
       "Depende da velocidade de rotação do rotor, do raio de giro e da concentração da massa na periferia do rotor.",
       "Depende da latitude local, da velocidade linear da Terra e da gravidade.",
@@ -120,10 +140,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Depende do fluxo de óleo no balístico, do tamanho da girosfera e do gás hélio.",
       "Depende da tensão de alimentação, da corrente elétrica do estator e da temperatura externa."
     ],
-    "answer": "Depende da velocidade de rotação do rotor, do raio de giro e da concentração da massa na periferia do rotor."
+    "answer": "Depende da velocidade de rotação do rotor, do raio de giro e da concentração da massa na periferia do rotor.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A inércia giroscópica depende da velocidade angular, do peso e do raio de rotação de cada massa elementar."
   },
   {
-"question": "Defina precessão:",
+    "question": "Defina precessão:",
     "options": [
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
       "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial.",
@@ -131,10 +153,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É o erro introduzido no giroscópio devido ao movimento do navio em rumo norte.",
       "É a oscilação do rotor em torno do meridiano de Greenwich."
     ],
-    "answer": "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
+    "answer": "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - PRECESSÃO Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
   },
   {
-"question": "Se um torque for aplicado em torno do eixo vertical, como mostrado por T na figura, o rotor gira ou precessiona em torno dequal eixo",
+    "question": "Se um torque for aplicado em torno do eixo vertical, como mostrado por T na figura, o rotor gira ou precessiona em torno dequal eixo",
     "options": [
       "Horizontal como mostrado pela seta P.",
       "Vertical como mostrado pela seta T.",
@@ -142,10 +166,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Azimutal como mostrado pela seta P.",
       "Norte-Sul como mostrado pelo peso W."
     ],
-    "answer": "Horizontal como mostrado pela seta P."
+    "answer": "Horizontal como mostrado pela seta P.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 1.4, o rotor gira ou preces- siona em torno de seu eixo horizontal como mostrado pela seta P."
   },
   {
-"question": "Vamos supor que o rotor está montado no Equador com seu eixo de rotação apontado no sentido Leste – Oeste. Qual será a rotação aparente observada?",
+    "question": "Vamos supor que o rotor está montado no Equador com seu eixo de rotação apontado no sentido Leste – Oeste. Qual será a rotação aparente observada?",
     "options": [
       "O rotor parecerá girar em torno do seu eixo horizontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas).",
       "O rotor parecerá girar em torno de seu eixo vertical com uma velocidade igual ao seno da latitude.",
@@ -153,10 +179,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O rotor girará rapidamente em torno do seu eixo de rotação, procurando o norte geográfico.",
       "O rotor apresentará apenas o efeito de precessão devido à gravidade."
     ],
-    "answer": "O rotor parecerá girar em torno do seu eixo horizontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas)."
+    "answer": "O rotor parecerá girar em torno do seu eixo horizontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Se o observador estiver sobre a Terra, o rotor parecerá girar em torno do seu eixo hori- zontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas)."
   },
   {
-"question": "supondo-se que o rotor seja montado no Pólo Norte ou Pólo Sul com seu eixo de rotação horizontal (nivelado com a superfície da Terra), como mostrado na fi- gura 1.9, qual será a rotação aparente observada?",
+    "question": "supondo-se que o rotor seja montado no Pólo Norte ou Pólo Sul com seu eixo de rotação horizontal (nivelado com a superfície da Terra), como mostrado na fi- gura 1.9, qual será a rotação aparente observada?",
     "options": [
       "O rotor parecerá girar em torno de seu eixo vertical. Este efeito é comumente chamado de Reite Vertical da Terra (VER)",
       "O rotor parecerá girar em torno do seu eixo horizontal. Este efeito é chamado de Reite Horizontal da Terra (HER)",
@@ -164,10 +192,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O rotor parecerá precessionar em torno do eixo Norte-Sul.",
       "O rotor parecerá girar com o dobro da velocidade angular da Terra."
     ],
-    "answer": "O rotor parecerá girar em torno de seu eixo vertical. Este efeito é comumente chamado de Reite Vertical da Terra (VER)"
+    "answer": "O rotor parecerá girar em torno de seu eixo vertical. Este efeito é comumente chamado de Reite Vertical da Terra (VER)",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Se o observador estiver sobre a Terra, o rotor parecerá girar em torno do seu eixo hori- zontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas)."
   },
   {
-"question": "Qual Reite da terra é máximo no Equador e zero nos pólos e varia com o co-seno da latitude?",
+    "question": "Qual Reite da terra é máximo no Equador e zero nos pólos e varia com o co-seno da latitude?",
     "options": [
       "Horizontal",
       "Vertical",
@@ -175,10 +205,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Linear",
       "Inercial"
     ],
-    "answer": "Horizontal"
+    "answer": "Horizontal",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "Qual Reite da terra varia com o seno da latitude, sendo máximo nos pólos e zero no Equador?",
+    "question": "Qual Reite da terra varia com o seno da latitude, sendo máximo nos pólos e zero no Equador?",
     "options": [
       "Vertical",
       "Horizontal",
@@ -186,10 +218,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Linear",
       "Precessional"
     ],
-    "answer": "Vertical"
+    "answer": "Vertical",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "Descreva as fórmulas de HER e VER:",
+    "question": "Descreva as fórmulas de HER e VER:",
     "options": [
       "a) HER = ER. Co-seno da latitude ou HER = 15°/ H. Cos lat. b) VER = ER. Seno da latitude ou VER = 15°/ H . Sen lat.",
       "a) HER = ER. Seno da latitude ou HER = 15°/ H. Sen lat. b) VER = ER. Co-seno da latitude ou VER = 15°/ H . Cos lat.",
@@ -197,10 +231,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "a) HER = 360º/24H b) VER = 15º/H",
       "a) HER = Va x Seno lat. b) VER = Va x Tangente lat."
     ],
-    "answer": "a) HER = ER. Co-seno da latitude ou HER = 15°/ H. Cos lat. b) VER = ER. Seno da latitude ou VER = 15°/ H . Sen lat."
+    "answer": "a) HER = ER. Co-seno da latitude ou HER = 15°/ H. Cos lat. b) VER = ER. Seno da latitude ou VER = 15°/ H . Sen lat.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O efeito da Reite Horizontal da Terra é máximo no equador e zero nos pólos e varia com o co-seno da latitude, enquanto que o efeito da Reite Vertical da Terra variará com o seno da lati- tude, sendo máximo nos pólos e zero no Equador, desta forma, seus valores podem ser determinados, em qualquer ponto da Terra, utilizando as seguintes expressões: HER = ER."
   },
   {
-"question": "Calcule os valores de HER e VER nos pontos A, B e C:",
+    "question": "Calcule os valores de HER e VER nos pontos A, B e C:",
     "options": [
       "Ponto “A” Latitude zero (0°)\nSen. 0° é igual a zero, Logo VER = 0\nCos. 0° é igual a um (1), Logo HER = 15° / h (Máximo)\n\nPonto “B” Latitude 30°\nSen. 30° é igual a 0,5, Logo VER = 15° / h . 0,5 = 7.5°/h\nCos. 30° é igual a 0,866, Logo HER = 15° / h . 0,866 = 12.99°/h.\n\nPonto “C” Latitude 60°\nSen. 60° é igual a 0.866, logo VER = 15° / h . 0,866 = 12.99°/h. Cos. 60° é igual a 0.5, Logo HER = 15° / h . 0,5 = 7.5°/h.\n\nPonto “D” Latitude 90°\nSen. 90° é igual a um (1), Logo VER = 15° / h .1 = 15°/h (Máximo). Cos. 90° é igual a zero, Logo HER = 0.",
       "Ponto “A” Latitude zero (0°)\nVER = 15° / h (Máximo), HER = 0\n\nPonto “B” Latitude 30°\nVER = 12.99°/h, HER = 7.5°/h\n\nPonto “C” Latitude 60°\nVER = 7.5°/h, HER = 12.99°/h\n\nPonto “D” Latitude 90°\nVER = 0, HER = 15° / h (Máximo)",
@@ -208,10 +244,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Ponto “A” Latitude zero (0°)\nVER = 7.5°/h, HER = 7.5°/h\n\nPonto “B” Latitude 30°\nVER = 0, HER = 15° / h\n\nPonto “C” Latitude 60°\nVER = 15° / h, HER = 0\n\nPonto “D” Latitude 90°\nVER = 12.99°/h, HER = 12.99°/h",
       "Ponto “A” Latitude zero (0°)\nVER = 15° / h, HER = 15° / h\n\nPonto “B” Latitude 30°\nVER = 0, HER = 0\n\nPonto “C” Latitude 60°\nVER = 0, HER = 0\n\nPonto “D” Latitude 90°\nVER = 15° / h, HER = 15° / h"
     ],
-    "answer": "Ponto “A” Latitude zero (0°)\nSen. 0° é igual a zero, Logo VER = 0\nCos. 0° é igual a um (1), Logo HER = 15° / h (Máximo)\n\nPonto “B” Latitude 30°\nSen. 30° é igual a 0,5, Logo VER = 15° / h . 0,5 = 7.5°/h\nCos. 30° é igual a 0,866, Logo HER = 15° / h . 0,866 = 12.99°/h.\n\nPonto “C” Latitude 60°\nSen. 60° é igual a 0.866, logo VER = 15° / h . 0,866 = 12.99°/h. Cos. 60° é igual a 0.5, Logo HER = 15° / h . 0,5 = 7.5°/h.\n\nPonto “D” Latitude 90°\nSen. 90° é igual a um (1), Logo VER = 15° / h .1 = 15°/h (Máximo). Cos. 90° é igual a zero, Logo HER = 0."
+    "answer": "Ponto “A” Latitude zero (0°)\nSen. 0° é igual a zero, Logo VER = 0\nCos. 0° é igual a um (1), Logo HER = 15° / h (Máximo)\n\nPonto “B” Latitude 30°\nSen. 30° é igual a 0,5, Logo VER = 15° / h . 0,5 = 7.5°/h\nCos. 30° é igual a 0,866, Logo HER = 15° / h . 0,866 = 12.99°/h.\n\nPonto “C” Latitude 60°\nSen. 60° é igual a 0.866, logo VER = 15° / h . 0,866 = 12.99°/h. Cos. 60° é igual a 0.5, Logo HER = 15° / h . 0,5 = 7.5°/h.\n\nPonto “D” Latitude 90°\nSen. 90° é igual a um (1), Logo VER = 15° / h .1 = 15°/h (Máximo). Cos. 90° é igual a zero, Logo HER = 0.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 0° é igual a um (1), Logo HER = 15° / h (Máximo)  Ponto “B” Latitude 30° Sen."
   },
   {
-"question": "Qual é o primeiro passo para transformar um giroscópio em uma agulha giroscópica?",
+    "question": "Qual é o primeiro passo para transformar um giroscópio em uma agulha giroscópica?",
     "options": [
       "Fazê-lo procurar o meridiano.",
       "Adicionar o peso W1 na girosfera.",
@@ -219,10 +257,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Preenchê-lo com balístico de óleo.",
       "Instalar um nível eletrolítico."
     ],
-    "answer": "Fazê-lo procurar o meridiano."
+    "answer": "Fazê-lo procurar o meridiano.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Uma vez que o norte é a direção representada por uma linha horizontal no plano meridi- ano, alguns meios devem ser empregados para: a) fazer o eixo do giroscópio procurar o plano de meridiano; b) fazer o eixo nivelar; e c) fazê-lo manter sua posição, uma vez encontrada."
   },
   {
-"question": "Qual é a função do peso W1 na transformação do giroscópio em elemento indicador do norte?",
+    "question": "Qual é a função do peso W1 na transformação do giroscópio em elemento indicador do norte?",
     "options": [
       "Suprimir as oscilações do rotor em tempo do meridiano, um pequeno W1 é adicionado à esfera na qual o giroscópio está contido.",
       "Fazer com que o giroscópio procure o meridiano de Greenwich, adicionando peso ao lado Oeste.",
@@ -230,10 +270,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Aplicar um torque em torno do eixo vertical para gerar o erro de latitude.",
       "Aumentar a velocidade de rotação do rotor para melhorar a rigidez no espaço."
     ],
-    "answer": "Suprimir as oscilações do rotor em tempo do meridiano, um pequeno W1 é adicionado à esfera na qual o giroscópio está contido."
+    "answer": "Suprimir as oscilações do rotor em tempo do meridiano, um pequeno W1 é adicionado à esfera na qual o giroscópio está contido.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: OSTENSIVO CIAA-117/037 1-13 OSTENSIVO ORIGINAL - INDICANDO O NORTE (ORIENTANDO-SE NO MERIDIANO) Para suprimir as oscilações do rotor em tempo do meridiano, um pequeno  W1 é adicio- nado à esfera na qual o giroscópio está contido."
   },
   {
-"question": "Em que posição é colocado o peso W1?",
+    "question": "Em que posição é colocado o peso W1?",
     "options": [
       "Este peso é colocado no lado Leste da girosfera numa posição mostrada pela figura.",
       "Este peso é colocado no lado Oeste da girosfera.",
@@ -241,10 +283,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Este peso é colocado na parte inferior do rotor, no centro de gravidade.",
       "Este peso é colocado no Pólo Norte da girosfera."
     ],
-    "answer": "Este peso é colocado no lado Leste da girosfera numa posição mostrada pela figura."
+    "answer": "Este peso é colocado no lado Leste da girosfera numa posição mostrada pela figura.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Este peso é  colocado no lado Leste da girosfera numa posição mostrada pela fig."
   },
   {
-"question": "Descreva o efeito do peso W1 adicionado ao giroscópio procurador e indicador do norte:",
+    "question": "Descreva o efeito do peso W1 adicionado ao giroscópio procurador e indicador do norte:",
     "options": [
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, como mostrado na figura, ao invés de um caminho elíptico como previamente indicado. Uma consideração cuidadosa da ação dos dois pesos evidenciará que a única posição de repouso que o giroscópio pode encontrar será com seu eixo na horizontal e no meridiano. Em outras palavras, o giroscópio livre foi convertido em agulha giroscópica.",
       "Causa um aumento nas oscilações elípticas, forçando o eixo do rotor a se alinhar imediatamente com o equador celeste.",
@@ -252,10 +296,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Mantém o giroscópio livre, adicionando um grau a mais de liberdade no eixo vertical.",
       "Desvia o eixo do rotor para o Leste, criando um erro constante que deve ser corrigido por tabelas de navegação."
     ],
-    "answer": "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, como mostrado na figura, ao invés de um caminho elíptico como previamente indicado. Uma consideração cuidadosa da ação dos dois pesos evidenciará que a única posição de repouso que o giroscópio pode encontrar será com seu eixo na horizontal e no meridiano. Em outras palavras, o giroscópio livre foi convertido em agulha giroscópica."
+    "answer": "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, como mostrado na figura, ao invés de um caminho elíptico como previamente indicado. Uma consideração cuidadosa da ação dos dois pesos evidenciará que a única posição de repouso que o giroscópio pode encontrar será com seu eixo na horizontal e no meridiano. Em outras palavras, o giroscópio livre foi convertido em agulha giroscópica.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Uma consideração cuidadosa da ação dos dois pesos evidenciará que a única posição de repouso que o giroscópio pode encontrar será com seu eixo na horizon- tal e no meridiano."
   },
   {
-"question": "Cite as vantágens das agulhas dotadas de girosfera?",
+    "question": "Cite as vantágens das agulhas dotadas de girosfera?",
     "options": [
       "1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra;\n2ª - Oferece grande proteção contra choques mecânicos;\n3ª - Reduz os efeitos da aceleração;\n4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento em gás hélio; e\n5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxidantes.\nObs. - O gás hélio além de fornecer um empuxo para a flutuação neutra, transfere o calor produzido pelo motor, para a superfície interna da esfera.",
       "1ª - São mais leves que as bússolas magnéticas convencionais;\n2ª - Não necessitam de energia elétrica;\n3ª - Nunca apresentam erros de latitude;\n4ª - Estão imunes à gravidade terrestre.",
@@ -263,10 +309,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "1ª - O óleo aumenta a inércia giroscópica;\n2ª - O gás nitrogênio protege os contatos elétricos contra centelhamento;\n3ª - Funciona independentemente do movimento da Terra.",
       "1ª - Utiliza controle puramente eletrônico, dispensando o peso W1;\n2ª - Resiste a temperaturas de até 500 graus Celsius;\n3ª - Não requer pickoff ou nível eletrolítico."
     ],
-    "answer": "1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra;\n2ª - Oferece grande proteção contra choques mecânicos;\n3ª - Reduz os efeitos da aceleração;\n4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento em gás hélio; e\n5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxidantes.\nObs. - O gás hélio além de fornecer um empuxo para a flutuação neutra, transfere o calor produzido pelo motor, para a superfície interna da esfera."
+    "answer": "1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra;\n2ª - Oferece grande proteção contra choques mecânicos;\n3ª - Reduz os efeitos da aceleração;\n4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento em gás hélio; e\n5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxidantes.\nObs. - O gás hélio além de fornecer um empuxo para a flutuação neutra, transfere o calor produzido pelo motor, para a superfície interna da esfera.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas características proporcionam, sobre as agulhas anteriores, as seguintes vantagens: 1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra; 2ª - Oferece grande proteção contra choques mecânicos; CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-15 3ª - Reduz os efeitos da aceleração; 4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento  em gás hélio; e 5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxi-  dantes."
   },
   {
-"question": "Como se classificam as agulhas dotadas de girosfera quanto ao sistema de controle?",
+    "question": "Como se classificam as agulhas dotadas de girosfera quanto ao sistema de controle?",
     "options": [
       "Controle mecânico ou eletrônico.",
       "Controle hidráulico ou pneumático.",
@@ -274,10 +322,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Controle magnético ou gravitacional.",
       "Controle inercial ou de precessão."
     ],
-    "answer": "Controle mecânico ou eletrônico."
+    "answer": "Controle mecânico ou eletrônico.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: b) Quanto ao sistema de controle As agulhas dotadas de girosfera utilizam também a força de gravidade para procurar e  indicar o norte verdadeiro da terra, e podem ser com controle mecânico ou eletrônico."
   },
   {
-"question": "Cite os modelos de agulhas que utilizam um balístico de liquido (óleo), Como mostra a figura para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivelamento).",
+    "question": "Cite os modelos de agulhas que utilizam um balístico de liquido (óleo), Como mostra a figura para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivelamento).",
     "options": [
       "Temos como exemplo as agulhas MK - 27, 227, etc.",
       "Temos como exemplo as agulhas MK - 19, 23, etc.",
@@ -285,10 +335,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Temos como exemplo as bússolas magnéticas classe A.",
       "Temos como exemplo os giroscópios direcionais de aviação."
     ],
-    "answer": "Temos como exemplo as agulhas MK - 27, 227, etc."
+    "answer": "Temos como exemplo as agulhas MK - 27, 227, etc.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Temos como exemplo as agulhas MK - 27, 227, etc."
   },
   {
-"question": "Descreva O balístico de óleo?",
+    "question": "Descreva O balístico de óleo?",
     "options": [
       "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montado na girosfera. Quando há uma inclinação do conjunto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.",
       "Consiste de um único tanque cheio de óleo onde a girosfera flutua, protegendo-a de choques e garantindo a flutuação neutra.",
@@ -296,10 +348,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Consiste em um sensor de inclinação (nível eletrolítico) que envia sinais elétricos para os produtores de torque (torquer).",
       "É um sistema de resfriamento que circula óleo em torno do rotor para evitar superaquecimento devido à alta rotação."
     ],
-    "answer": "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montado na girosfera. Quando há uma inclinação do conjunto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte."
+    "answer": "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montado na girosfera. Quando há uma inclinação do conjunto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando há uma inclinação do con- CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-16 junto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um tor-  que no rotor, fazendo o conjunto procurar o norte."
   },
   {
-"question": "Descreva o princípio de funcionamento das agulhas com controle eletrônico:",
+    "question": "Descreva o princípio de funcionamento das agulhas com controle eletrônico:",
     "options": [
       "Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento, Como mostra a figura. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é aplicado aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra.",
       "Essas agulhas funcionam convertendo o movimento mecânico de um balístico de mercúrio em sinais digitais enviados a um display na ponte de comando.",
@@ -307,10 +361,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Essas agulhas utilizam GPS e magnetômetros para calcular o desvio da proa, aplicando correções automáticas ao giroscópio livre.",
       "O princípio baseia-se num acelerômetro pendular que aplica torques hidráulicos na girosfera para forçar a indicação do norte."
     ],
-    "answer": "Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento, Como mostra a figura. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é aplicado aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra."
+    "answer": "Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento, Como mostra a figura. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é aplicado aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando há uma inclinação  do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a  esta inclinação, que depois de amplificado é aplicado aos produtores de torques, para  procurar e indicar o norte verdadeiro da Terra."
   },
   {
-"question": "Cite exemplos de agulhgas com controle eletrônico:",
+    "question": "Cite exemplos de agulhgas com controle eletrônico:",
     "options": [
       "MK - 19, 23, etc.",
       "MK - 27, 227, etc.",
@@ -318,10 +374,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Giroscópios Sperry Mark XIV.",
       "Bússolas de navegação costeira."
     ],
-    "answer": "MK - 19, 23, etc."
+    "answer": "MK - 19, 23, etc.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 3-32 3.15 – Operação do sistema.....................................................................................3-35 3.16 – Operação da RCDU e Funções do display...................................................3-38 3.17 – Procedimentos para operação do teclado e menus.......................................3-39 3.18 – FIM / PC.........................................................................................................3-42 3.19 – Sistema de alarmes........................................................................................3-43 3.20 – Manutenção...................................................................................................3-45 ANEXO A - Bibliografia...........................................................................................A-1 OSTENSIVO CIAA-117/037 - V - OSTENSIVO ORIGINAL INTRODUÇÃO 1 - PROPÓSITO Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu- lhas giroscópicas e sistemas de navegação inercial."
   },
   {
-"question": "Descreva o Nível eletrolítico:",
+    "question": "Descreva o Nível eletrolítico:",
     "options": [
       "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcial- mente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo, como mostra a figura.",
       "Consiste de uma bateria de chumbo-ácido que alimenta os circuitos do pickoff na falta de energia.",
@@ -329,10 +387,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Consiste em um sensor óptico que detecta a posição de uma bolha de ar dentro de um tubo de acrílico opaco.",
       "É um tipo de capacitor variável cujo dielétrico é o óleo da girosfera, utilizado para medir a temperatura."
     ],
-    "answer": "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcial- mente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo, como mostra a figura."
+    "answer": "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcial- mente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo, como mostra a figura.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: c) Componentes utilizados nas agulhas giroscópicas 1 - Nível eletrolítico Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcial- mente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo, como mostra a figura 1.17."
   },
   {
-"question": "Qual dispositivo as agulhas giroscópicas dotadas de girosfera utilizam como elemento sensível?",
+    "question": "Qual dispositivo as agulhas giroscópicas dotadas de girosfera utilizam como elemento sensível?",
     "options": [
       "Nível eletrolítico.",
       "Balístico de mercúrio.",
@@ -340,10 +400,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Giroscópio direcional.",
       "Magnetômetro fluxgate."
     ],
-    "answer": "Nível eletrolítico."
+    "answer": "Nível eletrolítico.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação  (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores  de torques (torquer) de controle azimutal e amortecimento."
   },
   {
-"question": "Em alguns modelos mais modernos de agulha, o nível eletrolítico foi substituído por qual dispositivo?",
+    "question": "Em alguns modelos mais modernos de agulha, o nível eletrolítico foi substituído por qual dispositivo?",
     "options": [
       "Acelerômetro.",
       "Giroscópio a laser (RLG).",
@@ -351,10 +413,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Sistema GPS diferencial.",
       "Pickoff de fibra óptica."
     ],
-    "answer": "Acelerômetro."
+    "answer": "Acelerômetro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - Em alguns modelos mais modernos de agulha, o nível eletrolítico foi substituído por um acelerômetro, que será estudado no capítulo seguinte."
   },
   {
-"question": "Descreva o Produtor de torques (torquer)",
+    "question": "Descreva o Produtor de torques (torquer)",
     "options": [
       "Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque.",
       "Consiste num pequeno motor de passo acoplado diretamente ao eixo horizontal para girar o rotor contra a direção da rotação terrestre.",
@@ -362,10 +426,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É um contrapeso móvel que desliza sobre o eixo de rotação para alterar o centro de gravidade da esfera.",
       "Consiste em duas bobinas idênticas alimentadas em corrente contínua que repulsam um ímã permanente fixado na base do giroscópio."
     ],
-    "answer": "Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
+    "answer": "Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2 - Produtor de torques (torquer) Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos late- rais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-19 alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
   },
   {
-"question": "Descreva o pickoff e seu princípio de funcionamento:",
+    "question": "Descreva o pickoff e seu princípio de funcionamento:",
     "options": [
       "Consiste de um núcleo de ferro laminado, em forma de “E” com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento (bobina) central é o primário e os dois enrolamentos (bobinas) laterais são os secundários, que são enroladas em série e opostas. O acoplamento magnético entre primário e secundários, vária com a posição da armadura.",
       "Consiste num potenciômetro de precisão acoplado ao eixo vertical, cuja resistência varia linearmente com a inclinação da girosfera.",
@@ -373,10 +439,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Funciona emitindo um feixe de luz que é refletido por um espelho na armadura, lido por um conjunto de fotodiodos no secundário.",
       "É um dispositivo mecânico que aciona microchaves limitadoras quando o giroscópio precessa além de 15 graus."
     ],
-    "answer": "Consiste de um núcleo de ferro laminado, em forma de “E” com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento (bobina) central é o primário e os dois enrolamentos (bobinas) laterais são os secundários, que são enroladas em série e opostas. O acoplamento magnético entre primário e secundários, vária com a posição da armadura."
+    "answer": "Consiste de um núcleo de ferro laminado, em forma de “E” com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento (bobina) central é o primário e os dois enrolamentos (bobinas) laterais são os secundários, que são enroladas em série e opostas. O acoplamento magnético entre primário e secundários, vária com a posição da armadura.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - 1.19 - Produtor de torques (torquer) 3 - Pickoff (transformador tipo “E”) Consiste de um núcleo de ferro laminado, em forma de “E” com três enrolamentos (bo- binas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo."
   },
   {
-"question": "Como é empregado o pickoff?",
+    "question": "Como é empregado o pickoff?",
     "options": [
       "O pickoff é usado como sensor ou detector de erro.",
       "O pickoff é usado para fornecer a energia de rotação ao rotor do giroscópio.",
@@ -384,10 +452,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "O pickoff atua na regulagem da temperatura do gás hélio interno.",
       "O pickoff serve exclusivamente para converter tensão AC em DC nos torquers."
     ],
-    "answer": "O pickoff é usado como sensor ou detector de erro."
+    "answer": "O pickoff é usado como sensor ou detector de erro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - O pickoff é usado como sensor ou detector de erro."
   },
   {
-"question": "Qual será a marcação verdadeira de uma agulha que apresenta erro leste de 2 graus e que a rosa está navegando em um rumo de 020 graus?",
+    "question": "Qual será a marcação verdadeira de uma agulha que apresenta erro leste de 2 graus e que a rosa está navegando em um rumo de 020 graus?",
     "options": [
       "o rumo verdadeiro é 022 graus.",
       "o rumo verdadeiro é 018 graus.",
@@ -395,10 +465,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "o rumo verdadeiro é 040 graus.",
       "o rumo verdadeiro é 358 graus."
     ],
-    "answer": "o rumo verdadeiro é 022 graus."
+    "answer": "o rumo verdadeiro é 022 graus.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Para rumo sul ocorreria o contrário (Erro leste), entretanto, se o rumo for leste ou oeste verdadeiro, o movimento do navio não tenderia a inclinar a giro uma vez que a veloci- dade do navio estaria no mesmo ângulo que o rotor do giroscópio (Sem erro)."
   },
   {
-"question": "Como será a leitura numa rosa havendo erro Oeste?",
+    "question": "Como será a leitura numa rosa havendo erro Oeste?",
     "options": [
       "A leitura na rosa será maior do que o rumo verdadeiro.",
       "A leitura na rosa será menor do que o rumo verdadeiro.",
@@ -406,10 +478,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "A leitura na rosa inverterá a direção em 180 graus.",
       "A leitura na rosa indicará sempre o norte magnético."
     ],
-    "answer": "A leitura na rosa será maior do que o rumo verdadeiro."
+    "answer": "A leitura na rosa será maior do que o rumo verdadeiro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Para rumo sul ocorreria o contrário (Erro leste), entretanto, se o rumo for leste ou oeste verdadeiro, o movimento do navio não tenderia a inclinar a giro uma vez que a veloci- dade do navio estaria no mesmo ângulo que o rotor do giroscópio (Sem erro)."
   },
   {
-"question": "Qual será a marcação verdadeira de uma agulha que apresenta erro oeste de 2 graus e que a rosa está navegando em um rumo de 020 graus?",
+    "question": "Qual será a marcação verdadeira de uma agulha que apresenta erro oeste de 2 graus e que a rosa está navegando em um rumo de 020 graus?",
     "options": [
       "o rumo verdadeiro é 018 graus.",
       "o rumo verdadeiro é 022 graus.",
@@ -417,10 +491,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "o rumo verdadeiro é 358 graus.",
       "o rumo verdadeiro é 040 graus."
     ],
-    "answer": "o rumo verdadeiro é 018 graus."
+    "answer": "o rumo verdadeiro é 018 graus.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Para rumo sul ocorreria o contrário (Erro leste), entretanto, se o rumo for leste ou oeste verdadeiro, o movimento do navio não tenderia a inclinar a giro uma vez que a veloci- dade do navio estaria no mesmo ângulo que o rotor do giroscópio (Sem erro)."
   },
   {
-"question": "Quais as tendências no erro de latitude?",
+    "question": "Quais as tendências no erro de latitude?",
     "options": [
       "Para leste no hemisfério norte (Erro leste) ou para oeste no hemisfério sul (Erro oeste).",
       "Para oeste no hemisfério norte (Erro oeste) ou para leste no hemisfério sul (Erro leste).",
@@ -428,10 +504,12 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Sempre para oeste, independente do hemisfério em que se encontra.",
       "Erro nulo no hemisfério norte e máximo no hemisfério sul."
     ],
-    "answer": "Para leste no hemisfério norte (Erro leste) ou para oeste no hemisfério sul (Erro oeste)."
+    "answer": "Para leste no hemisfério norte (Erro leste) ou para oeste no hemisfério sul (Erro oeste).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Como resultado, o eixo do giroscópio supera o movimento da Terra e orienta – se com a extremidade norte levantado e a “leste” do meridiano nas latitudes norte (Erro leste) ou com a extremidade norte para baixo e a “oeste” do meridiano nas latitudes sul (Erro oeste)."
   },
   {
-"question": "Quais as tendências no erro de rumo?",
+    "question": "Quais as tendências no erro de rumo?",
     "options": [
       "Irá tender para oeste sempre que o navio navegar com rumo norte, seja no hemisfério norte ou no hemisfério sul. Sempre que o rumo do navio for sul, o erro será leste independente do seu posicionamento global (latitude)",
       "Irá tender para leste sempre que o navio navegar com rumo norte, e oeste quando navegar com rumo sul.",
@@ -439,570 +517,684 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "Irá tender a zerar sempre que o navio navegar rumo leste ou oeste, mantendo-se constante no rumo norte/sul.",
       "O erro de rumo será sempre máximo a 45 graus e nulo a 90 graus de latitude."
     ],
-    "answer": "Irá tender para oeste sempre que o navio navegar com rumo norte, seja no hemisfério norte ou no hemisfério sul. Sempre que o rumo do navio for sul, o erro será leste independente do seu posicionamento global (latitude)"
+    "answer": "Irá tender para oeste sempre que o navio navegar com rumo norte, seja no hemisfério norte ou no hemisfério sul. Sempre que o rumo do navio for sul, o erro será leste independente do seu posicionamento global (latitude)",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A proporção da inclinação do eixo de rotação do giroscópio, depende da velocidade do navio em um rumo norte ou sul, se a giro se inclinar, ocorrerá um erro em azimute para oeste ou para leste, entretanto, se for aplicado um torque que precessione o eixo de rota- ção da giro para baixo ou para cima de intensidade igual e em sentido contrário ao que causa sua elevação ou depressão (velocidade norte ou sul), a giro permanecerá nivelada e não ocorrerá nenhum erro."
   },
   {
-"question": "Num sistema de navegação inercial, qual tipo de sensor é responsável pelo fornecimento das variações de posição angular?",
+    "question": "Num sistema de navegação inercial, qual tipo de sensor é responsável pelo fornecimento das variações de posição angular?",
     "options": [
       "Acelerômetro",
       "Nível eletrolítico",
       "Pick off",
       "Produtor de torque"
     ],
-    "answer": "Pick off"
+    "answer": "Pick off",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 3-32 3.15 – Operação do sistema.....................................................................................3-35 3.16 – Operação da RCDU e Funções do display...................................................3-38 3.17 – Procedimentos para operação do teclado e menus.......................................3-39 3.18 – FIM / PC.........................................................................................................3-42 3.19 – Sistema de alarmes........................................................................................3-43 3.20 – Manutenção...................................................................................................3-45 ANEXO A - Bibliografia...........................................................................................A-1 OSTENSIVO CIAA-117/037 - V - OSTENSIVO ORIGINAL INTRODUÇÃO 1 - PROPÓSITO Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu- lhas giroscópicas e sistemas de navegação inercial."
   },
   {
-"question": "Num sistema de navegação inercial elementar, qual elemento é responsável por computar as acelerações?",
+    "question": "Num sistema de navegação inercial elementar, qual elemento é responsável por computar as acelerações?",
     "options": [
       "Pick off",
       "Acelerômetro",
       "Giroscópio",
       "Balístico de líquido"
     ],
-    "answer": "Acelerômetro"
+    "answer": "Acelerômetro",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - Em alguns modelos mais modernos de agulha, o nível eletrolítico foi substituído por um acelerômetro, que será estudado no capítulo seguinte."
   },
   {
-"question": "Em relação ao erro de latitude, qual é a sua principal causa?",
+    "question": "Em relação ao erro de latitude, qual é a sua principal causa?",
     "options": [
       "A velocidade do navio",
       "A Reite Horizontal da Terra (HER)",
       "A Reite Vertical da Terra (VER)",
       "O atrito nos rolamentos do eixo de rotação"
     ],
-    "answer": "A Reite Vertical da Terra (VER)"
+    "answer": "A Reite Vertical da Terra (VER)",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Este efeito é comumente cha- mado de Reite Vertical da Terra (VER)."
   },
   {
-"question": "Defina razão de precessão:",
+    "question": "Defina razão de precessão:",
     "options": [
       "Relação entre a velocidade angular e a gravidade.",
       "Relação entre torque aplicado e rigidez.",
       "Relação entre a massa do rotor e o deslocamento azimutal.",
       "Relação entre a inércia giroscópica e a rotação da Terra."
     ],
-    "answer": "Relação entre torque aplicado e rigidez."
+    "answer": "Relação entre torque aplicado e rigidez.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - PRECESSÃO Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
   },
   {
-"question": "Em relação ao erro de velocidade e rumo, quais fatores determinam a direção do erro?",
+    "question": "Em relação ao erro de velocidade e rumo, quais fatores determinam a direção do erro?",
     "options": [
       "A velocidade do rumo norte ou sul, sendo rumo sul (erro leste) e rumo norte (erro oeste).",
       "A velocidade do rumo leste ou oeste, sendo rumo leste (erro norte) e rumo oeste (erro sul).",
       "A aceleração do navio combinada com a latitude local.",
       "A rotação aparente da Terra nos polos geográficos."
     ],
-    "answer": "A velocidade do rumo norte ou sul, sendo rumo sul (erro leste) e rumo norte (erro oeste)."
+    "answer": "A velocidade do rumo norte ou sul, sendo rumo sul (erro leste) e rumo norte (erro oeste).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A proporção da inclinação do eixo de rotação do giroscópio, depende da velocidade do navio em um rumo norte ou sul, se a giro se inclinar, ocorrerá um erro em azimute para oeste ou para leste, entretanto, se for aplicado um torque que precessione o eixo de rota- ção da giro para baixo ou para cima de intensidade igual e em sentido contrário ao que causa sua elevação ou depressão (velocidade norte ou sul), a giro permanecerá nivelada e não ocorrerá nenhum erro."
   },
   {
-"question": "Em relação ao girômetro mecânico, qual dispositivo é responsável pela leitura do deslocamento angular?",
+    "question": "Em relação ao girômetro mecânico, qual dispositivo é responsável pela leitura do deslocamento angular?",
     "options": [
       "Nível eletrolítico",
       "Motor de indução bifásico",
       "Pick off",
       "Transformador de excitação"
     ],
-    "answer": "Pick off"
+    "answer": "Pick off",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 3-32 3.15 – Operação do sistema.....................................................................................3-35 3.16 – Operação da RCDU e Funções do display...................................................3-38 3.17 – Procedimentos para operação do teclado e menus.......................................3-39 3.18 – FIM / PC.........................................................................................................3-42 3.19 – Sistema de alarmes........................................................................................3-43 3.20 – Manutenção...................................................................................................3-45 ANEXO A - Bibliografia...........................................................................................A-1 OSTENSIVO CIAA-117/037 - V - OSTENSIVO ORIGINAL INTRODUÇÃO 1 - PROPÓSITO Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu- lhas giroscópicas e sistemas de navegação inercial."
   },
   {
-"question": "Os sistemas de navegação inercial possibilitam a determinação de vários fatores do navio. Descreva-os:",
+    "question": "Os sistemas de navegação inercial possibilitam a determinação de vários fatores do navio. Descreva-os:",
     "options": [
       "Altitude, pressão, densidade da água e temperatura.",
       "Posição, rumo, balanço, caturro e velocidade.",
       "Deslocamento de água, arrasto, tração e direção do vento.",
       "Latitude magnética, declinação, inclinação e aceleração da gravidade."
     ],
-    "answer": "Posição, rumo, balanço, caturro e velocidade."
+    "answer": "Posição, rumo, balanço, caturro e velocidade.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Máximo) 3 - Velocidade     (SPEED)     - 0.6 Nós “RMS” 4 – Posição     (Lat/Long)     - Com “GPS”, 100% Preciso - Sem “GPS”, 1.0 Milha náutica em 8 horas “TRMS” CIAA-117/037 OSTENSIVO ORIGINAL 3-3 OSTENSIVO e) Movimento     Dinâmico      1 – Balanço (Roll) ± 40 graus 2 – Caturro (Pitch) ± 15 graus 3 – Guinada (Yaw) ± 10 graus 4 – Velocidade (Speed) - 10 a 90 nós – DADOS DE ENTRADA E SAÍDA a) Entradas 1 – Sinal de velocidade (Odômetro) 2 – Sinais do “GPS” 3 – Sinais introduzidos através do teclado b) Saídas: 1 – Analógicas; - Rumo (Heading): Sinais sincros nas velocidades 1:1 e 36:1 - Balanço e Caturro (Roll / Pitch): Sinais sincros nas velocidades 1:1e 36:1 ou 2:1 e 36:1 2 – Digitais; - Balanço (Roll), Caturro (Pitch), Rumo (Heading), e Rates (variações - Roll , Pitch e He- ading ) 3 – Alarmes; - Indicação sonora e visual 4 – Referência síncrona (H.P.R); e - 115 Volts 400 Hz 5 – Informações Através do display."
   },
   {
-"question": "Qual será o movimento aparente observado no giroscópio com sua ponta norte nivelada e apontando para leste?",
+    "question": "Qual será o movimento aparente observado no giroscópio com sua ponta norte nivelada e apontando para leste?",
     "options": [
       "Translação",
       "Rotação em azimute",
       "Depressão",
       "Elevação"
     ],
-    "answer": "Elevação"
+    "answer": "Elevação",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A proporção da inclinação do eixo de rotação do giroscópio, depende da velocidade do navio em um rumo norte ou sul, se a giro se inclinar, ocorrerá um erro em azimute para oeste ou para leste, entretanto, se for aplicado um torque que precessione o eixo de rota- ção da giro para baixo ou para cima de intensidade igual e em sentido contrário ao que causa sua elevação ou depressão (velocidade norte ou sul), a giro permanecerá nivelada e não ocorrerá nenhum erro."
   },
   {
-"question": "Com o abaixamento da ponta norte do giroscópio podemos pressupor que haverá precessão em que sentido?",
+    "question": "Com o abaixamento da ponta norte do giroscópio podemos pressupor que haverá precessão em que sentido?",
     "options": [
       "Em torno do eixo vertical.",
       "Em torno do eixo horizontal.",
       "Em torno do eixo de rotação.",
       "Em direção ao equador."
     ],
-    "answer": "Em torno do eixo vertical."
+    "answer": "Em torno do eixo vertical.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "Para transformarmos um giroscópio em instrumento procurador do norte, em torno de qual eixo deve ser aplicado o torque?",
+    "question": "Para transformarmos um giroscópio em instrumento procurador do norte, em torno de qual eixo deve ser aplicado o torque?",
     "options": [
       "Em torno do eixo vertical (Peso W1).",
       "Em torno do eixo horizontal (Peso W).",
       "Em torno do eixo de rotação do rotor.",
       "No anel fantasma da estrutura de suspensão."
     ],
-    "answer": "Em torno do eixo horizontal (Peso W)."
+    "answer": "Em torno do eixo horizontal (Peso W).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A razão entre o movimento em torno do eixo horizontal (causado pela rotação aparente) OSTENSIVO CIAA-117/037 1-12 OSTENSIVO ORIGINAL e o movimento precessional do eixo vertical (causado pela oscilação do peso) determina o formato da elipse."
   },
   {
-"question": "Para transformarmos o giroscópio de procurador para indicador do norte se faz necessário a aplicação de torque em torno de qual eixo?",
+    "question": "Para transformarmos o giroscópio de procurador para indicador do norte se faz necessário a aplicação de torque em torno de qual eixo?",
     "options": [
       "Em torno do eixo de rotação.",
       "Em torno do eixo horizontal (Peso W).",
       "Vertical (Peso W1).",
       "Transversal e longitudinal simultaneamente."
     ],
-    "answer": "Vertical (Peso W1)."
+    "answer": "Vertical (Peso W1).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Para isto, um peso W é adicionado na parte inferior do anel vertical, como mostrado na fig."
   },
   {
-"question": "As agulhas dotadas de girosferas se classificam em dois tipos quanto ao controle. Descreva-os:",
+    "question": "As agulhas dotadas de girosferas se classificam em dois tipos quanto ao controle. Descreva-os:",
     "options": [
       "Controle manual e controle automático.",
       "Controle hidráulico e controle pneumático.",
       "Controle mecânico e controle eletrônico.",
       "Controle magnético e controle inercial."
     ],
-    "answer": "Controle mecânico e controle eletrônico."
+    "answer": "Controle mecânico e controle eletrônico.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: b) Quanto ao sistema de controle As agulhas dotadas de girosfera utilizam também a força de gravidade para procurar e  indicar o norte verdadeiro da terra, e podem ser com controle mecânico ou eletrônico."
   },
   {
-"question": "Em relação às agulhas dotadas de girosfera, qual dispositivo é responsável detectar a inclinação devido à HER?",
+    "question": "Em relação às agulhas dotadas de girosfera, qual dispositivo é responsável detectar a inclinação devido à HER?",
     "options": [
       "Pick off",
       "Nível eletrolítico",
       "Acelerômetro linear",
       "Balístico de óleo"
     ],
-    "answer": "Nível eletrolítico"
+    "answer": "Nível eletrolítico",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação  (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores  de torques (torquer) de controle azimutal e amortecimento."
   },
   {
-"question": "Em relação às agulhas dotadas de girosfera, qual dispositivo é empregado como produtor de torque? Descreva suas partes componentes:",
+    "question": "Em relação às agulhas dotadas de girosfera, qual dispositivo é empregado como produtor de torque? Descreva suas partes componentes:",
     "options": [
       "Nível eletrolítico: tubo de vidro, eletrólito e eletrodos.",
       "Acelerômetro: massa de prova e molas de retenção.",
       "Pick off: enrolamento central (de referência) e dois enrolamentos laterais (de controle).",
       "Girômetro sintonizado: rotor, motor e cardans."
     ],
-    "answer": "Pick off: enrolamento central (de referência) e dois enrolamentos laterais (de controle)."
+    "answer": "Pick off: enrolamento central (de referência) e dois enrolamentos laterais (de controle).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2 - Produtor de torques (torquer) Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos late- rais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-19 alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
   },
   {
-"question": "Em relação ao acelerômetro de força balanceada, qual dispositivo é responsável pela detecção do sinal de aceleração?",
+    "question": "Em relação ao acelerômetro de força balanceada, qual dispositivo é responsável pela detecção do sinal de aceleração?",
     "options": [
       "Produtor de torque",
       "Massa de prova",
       "Nível eletrolítico",
       "Pick off"
     ],
-    "answer": "Pick off"
+    "answer": "Pick off",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 3-32 3.15 – Operação do sistema.....................................................................................3-35 3.16 – Operação da RCDU e Funções do display...................................................3-38 3.17 – Procedimentos para operação do teclado e menus.......................................3-39 3.18 – FIM / PC.........................................................................................................3-42 3.19 – Sistema de alarmes........................................................................................3-43 3.20 – Manutenção...................................................................................................3-45 ANEXO A - Bibliografia...........................................................................................A-1 OSTENSIVO CIAA-117/037 - V - OSTENSIVO ORIGINAL INTRODUÇÃO 1 - PROPÓSITO Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu- lhas giroscópicas e sistemas de navegação inercial."
   },
   {
-"question": "Em se tratando de um sistema de navegação inercial (NSI) do tipo plataforma analítica (strap down), qual componente é responsável por converter coordenadas em sinal de navegação?",
+    "question": "Em se tratando de um sistema de navegação inercial (NSI) do tipo plataforma analítica (strap down), qual componente é responsável por converter coordenadas em sinal de navegação?",
     "options": [
       "Computador de navegação",
       "Girômetro a laser",
       "Acelerômetro linear",
       "Módulo de medição inercial (IMU)"
     ],
-    "answer": "Computador de navegação"
+    "answer": "Computador de navegação",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Esta tarefa de transformação de coordenadas é feita pelo computador de navegação; este computador calcula então a atitude do vei- culo (navio) e a matriz de transformação de coordenadas."
   },
   {
-"question": "Nos sistemas de navegação inercial, quais dispositivos externos são utilizados como correção do posicionamento global do navio?",
+    "question": "Nos sistemas de navegação inercial, quais dispositivos externos são utilizados como correção do posicionamento global do navio?",
     "options": [
       "Radares e ecobatímetros.",
       "Bússolas magnéticas e anemômetros.",
       "Sinal de velocidade (odômetro), sinal de posicionamento global (Lat/Long) fornecido pela navegação ou via GPS.",
       "Sistemas de giros a fibra óptica apenas."
     ],
-    "answer": "Sinal de velocidade (odômetro), sinal de posicionamento global (Lat/Long) fornecido pela navegação ou via GPS."
+    "answer": "Sinal de velocidade (odômetro), sinal de posicionamento global (Lat/Long) fornecido pela navegação ou via GPS.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Máximo) 3 - Velocidade     (SPEED)     - 0.6 Nós “RMS” 4 – Posição     (Lat/Long)     - Com “GPS”, 100% Preciso - Sem “GPS”, 1.0 Milha náutica em 8 horas “TRMS” CIAA-117/037 OSTENSIVO ORIGINAL 3-3 OSTENSIVO e) Movimento     Dinâmico      1 – Balanço (Roll) ± 40 graus 2 – Caturro (Pitch) ± 15 graus 3 – Guinada (Yaw) ± 10 graus 4 – Velocidade (Speed) - 10 a 90 nós – DADOS DE ENTRADA E SAÍDA a) Entradas 1 – Sinal de velocidade (Odômetro) 2 – Sinais do “GPS” 3 – Sinais introduzidos através do teclado b) Saídas: 1 – Analógicas; - Rumo (Heading): Sinais sincros nas velocidades 1:1 e 36:1 - Balanço e Caturro (Roll / Pitch): Sinais sincros nas velocidades 1:1e 36:1 ou 2:1 e 36:1 2 – Digitais; - Balanço (Roll), Caturro (Pitch), Rumo (Heading), e Rates (variações - Roll , Pitch e He- ading ) 3 – Alarmes; - Indicação sonora e visual 4 – Referência síncrona (H.P.R); e - 115 Volts 400 Hz 5 – Informações Através do display."
   },
   {
-"question": "Quem explica a propriedade da lei do movimento do giroscópio?",
+    "question": "Quem explica a propriedade da lei do movimento do giroscópio?",
     "options": [
       "Lei de Sagnac",
       "Lei de Kepler",
       "Lei de Galileu",
       "Lei de Newton"
     ],
-    "answer": "Lei de Newton"
+    "answer": "Lei de Newton",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Esta propriedade é explicada pela lei do movimento - lei de NEWTON - a qual enuncia que um corpo em movimento continuará a se mover a uma velocidade constante na mesma direção até que ele sofra a ação de uma força externa."
   },
   {
-"question": "Como é conseguido o máximo efeito de inércia em um giroscópio?",
+    "question": "Como é conseguido o máximo efeito de inércia em um giroscópio?",
     "options": [
       "Com a massa concentrada próxima à borda.",
       "Com a massa concentrada no centro de gravidade.",
       "Reduzindo a velocidade de rotação do rotor.",
       "Aumentando o atrito no eixo horizontal."
     ],
-    "answer": "Com a massa concentrada próxima à borda."
+    "answer": "Com a massa concentrada próxima à borda.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O máximo efeito de inércia é conseguido com a massa concen- trada próximo da borda, deste fato o formato dos rotores empregados nas agulhas mo- dernas."
   },
   {
-"question": "Qual é a propriedade do giroscópio pela qual ele tenta manter o eixo do rotor paralelo à sua posição original?",
+    "question": "Qual é a propriedade do giroscópio pela qual ele tenta manter o eixo do rotor paralelo à sua posição original?",
     "options": [
       "Precessão",
       "Translação",
       "Rigidez no espaço ou inércia giroscópica",
       "Rotação aparente"
     ],
-    "answer": "Rigidez no espaço ou inércia giroscópica"
+    "answer": "Rigidez no espaço ou inércia giroscópica",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 1.1 – Giroscópio - RIGIDEZ NO ESPAÇO OU INÉRCIA GIROSCÓPICA Rigidez no espaço ou Inércia giroscópica,é a propriedade do giroscópio pela qual ele tenta manter o eixo do rotor paralelo a sua posição original."
   },
   {
-"question": "Se um torque é aplicado ao eixo vertical do giroscópio, em torno de qual eixo o rotor irá se mover?",
+    "question": "Se um torque é aplicado ao eixo vertical do giroscópio, em torno de qual eixo o rotor irá se mover?",
     "options": [
       "Eixo horizontal",
       "Eixo de rotação",
       "Eixo vertical",
       "Não haverá movimento devido à inércia."
     ],
-    "answer": "Eixo horizontal"
+    "answer": "Eixo horizontal",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "Quando a precessão passa pelo centro de gravidade e não gera torque, como é chamada?",
+    "question": "Quando a precessão passa pelo centro de gravidade e não gera torque, como é chamada?",
     "options": [
       "Força centrífeta",
       "Força de Coriolis",
       "Força de translação",
       "Força de atrito"
     ],
-    "answer": "Força de translação"
+    "answer": "Força de translação",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Dos quatro (4) fenômenos dos quais depende a operação da agulha giroscópica, os dois (2) primeiros são propriedades inerentes ao giroscópio, denominados de rigidez no espa- ço (inércia giroscópica e precessão, os outros dois (2) referem - se à terra e são denomi- nados de força de gravidade e rotação da terra (HER)."
   },
   {
-"question": "Em torno de qual eixo o torque de amortecimento é aplicado?",
+    "question": "Em torno de qual eixo o torque de amortecimento é aplicado?",
     "options": [
       "Eixo vertical",
       "Eixo horizontal",
       "Eixo de rotação",
       "Eixo cardan"
     ],
-    "answer": "Eixo horizontal"
+    "answer": "Eixo horizontal",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "Aplicando-se uma força num ponto do giroscópio, como se observa a resposta a esta força?",
+    "question": "Aplicando-se uma força num ponto do giroscópio, como se observa a resposta a esta força?",
     "options": [
       "No mesmo ponto em que foi aplicada.",
       "No ponto diametralmente oposto.",
       "A força é anulada pela rigidez no espaço.",
       "Este ponto se moverá a 90º do ponto aplicado (na direção da rotação do volante)."
     ],
-    "answer": "Este ponto se moverá a 90º do ponto aplicado (na direção da rotação do volante)."
+    "answer": "Este ponto se moverá a 90º do ponto aplicado (na direção da rotação do volante).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Este ponto não se moverá em resposta à força, mas sim num ponto a 90º (na direção da rotação do volante) daquele em que foi aplicada a força."
   },
   {
-"question": "Defina rotação aparente:",
+    "question": "Defina rotação aparente:",
     "options": [
       "Rotação do eixo da Terra em relação às estrelas fixas.",
       "É o movimento do giroscópio percebido pelo observador em relação à Terra.",
       "Movimento de translação do navio ao longo de um meridiano.",
       "Velocidade de precessão causada pela aplicação de um torque no eixo horizontal."
     ],
-    "answer": "É o movimento do giroscópio percebido pelo observador em relação à Terra."
+    "answer": "É o movimento do giroscópio percebido pelo observador em relação à Terra.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Se for lembrado que o movimento aparente das estrelas através do céu tem uma rotação contrária à dos ponteiros do relógio com relação à estrela polar, uma maneira de lem- brar o efeito da rotação da Terra em um giroscópio livre é considerar o eixo do rotor apontando para uma estrela."
   },
   {
-"question": "Onde a Reite Horizontal (HER) da Terra é máxima e mínima, respectivamente?",
+    "question": "Onde a Reite Horizontal (HER) da Terra é máxima e mínima, respectivamente?",
     "options": [
       "Máxima nos polos e zero no equador.",
       "Máxima no equador e zero nos polos.",
       "Máxima em latitudes médias (45º) e mínima no equador.",
       "É constante em qualquer latitude."
     ],
-    "answer": "Máxima no equador e zero nos polos."
+    "answer": "Máxima no equador e zero nos polos.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 1.8 – Rotação aparente entre o equador e os polos As grandezas relativas dos efeitos das componentes, são funções de latitude."
   },
   {
-"question": "Onde a Reite Vertical (VER) da Terra é máxima e mínima, respectivamente?",
+    "question": "Onde a Reite Vertical (VER) da Terra é máxima e mínima, respectivamente?",
     "options": [
       "Máxima nos polos e zero no equador.",
       "Máxima no equador e zero nos polos.",
       "Máxima em latitudes médias (45º) e mínima nos polos.",
       "É constante em qualquer latitude."
     ],
-    "answer": "Máxima nos polos e zero no equador."
+    "answer": "Máxima nos polos e zero no equador.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 1.8 – Rotação aparente entre o equador e os polos As grandezas relativas dos efeitos das componentes, são funções de latitude."
   },
   {
-"question": "Quais são as fórmulas da HER e VER?",
+    "question": "Quais são as fórmulas da HER e VER?",
     "options": [
       "HER = 15º/h . sen lat / VER = 15º/h . cos lat",
       "HER = 15º/h . cos lat / VER = 15º/h . sen lat",
       "HER = sen lat / VER = cos lat",
       "HER = 15º/h + cos lat / VER = 15º/h + sen lat"
     ],
-    "answer": "HER = 15º/h . cos lat / VER = 15º/h . sen lat"
+    "answer": "HER = 15º/h . cos lat / VER = 15º/h . sen lat",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 3-32 3.15 – Operação do sistema.....................................................................................3-35 3.16 – Operação da RCDU e Funções do display...................................................3-38 3.17 – Procedimentos para operação do teclado e menus.......................................3-39 3.18 – FIM / PC.........................................................................................................3-42 3.19 – Sistema de alarmes........................................................................................3-43 3.20 – Manutenção...................................................................................................3-45 ANEXO A - Bibliografia...........................................................................................A-1 OSTENSIVO CIAA-117/037 - V - OSTENSIVO ORIGINAL INTRODUÇÃO 1 - PROPÓSITO Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu- lhas giroscópicas e sistemas de navegação inercial."
   },
   {
-"question": "Qual a diferença entre inércia giroscópica e rotação aparente?",
+    "question": "Qual a diferença entre inércia giroscópica e rotação aparente?",
     "options": [
       "A velocidade angular do rotor.",
       "A presença ou ausência de pesos de compensação.",
       "O ponto de observação.",
       "A direção do torque aplicado."
     ],
-    "answer": "O ponto de observação."
+    "answer": "O ponto de observação.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: De um ponto de observação no espaço, a Terra pode ser vista girando na direção da seta (com uma velocidade angular de uma rotação em 24 horas), carregando o rotor com ela."
   },
   {
-"question": "Nas agulhas dotadas de girosfera, quais as vantagens em relação às agulhas anteriores?",
+    "question": "Nas agulhas dotadas de girosfera, quais as vantagens em relação às agulhas anteriores?",
     "options": [
       "Aumento do erro de latitude e necessidade de componentes eletrônicos complexos.",
       "O peso da girosfera é removido dos rolamentos do eixo vertical, devido à flutuação neutra, e a imersão em óleo oferece grande proteção contra agentes oxidantes.",
       "Dispensa a utilização de eletricidade e computadores de navegação.",
       "Imunidade total à rotação da Terra e à força da gravidade."
     ],
-    "answer": "O peso da girosfera é removido dos rolamentos do eixo vertical, devido à flutuação neutra, e a imersão em óleo oferece grande proteção contra agentes oxidantes."
+    "answer": "O peso da girosfera é removido dos rolamentos do eixo vertical, devido à flutuação neutra, e a imersão em óleo oferece grande proteção contra agentes oxidantes.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas características proporcionam, sobre as agulhas anteriores, as seguintes vantagens: 1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra; 2ª - Oferece grande proteção contra choques mecânicos; CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-15 3ª - Reduz os efeitos da aceleração; 4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento  em gás hélio; e 5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxi-  dantes."
   },
   {
-"question": "Qual o nome do sensor utilizado no sistema de controle eletrônico das agulhas dotadas de girosfera?",
+    "question": "Qual o nome do sensor utilizado no sistema de controle eletrônico das agulhas dotadas de girosfera?",
     "options": [
       "Acelerômetro de força balanceada",
       "Pick off magnético",
       "Nível eletrolítico",
       "Tubo de raios catódicos"
     ],
-    "answer": "Nível eletrolítico"
+    "answer": "Nível eletrolítico",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação  (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores  de torques (torquer) de controle azimutal e amortecimento."
   },
   {
-"question": "Descreva o pick off:",
+    "question": "Descreva o pick off:",
     "options": [
       "Dispositivo óptico que mede a interferência de franjas de laser.",
       "Tubo de vidro preenchido parcialmente com eletrólito e três eletrodos.",
       "Consiste de um núcleo de ferro laminado, em forma de \"E\" com 3 enrolamentos, e uma armadura de ferro móvel em relação ao transformador que completa o núcleo.",
       "Massa suspensa por molas que desliza ao longo de um guia reto."
     ],
-    "answer": "Consiste de um núcleo de ferro laminado, em forma de \"E\" com 3 enrolamentos, e uma armadura de ferro móvel em relação ao transformador que completa o núcleo."
+    "answer": "Consiste de um núcleo de ferro laminado, em forma de \"E\" com 3 enrolamentos, e uma armadura de ferro móvel em relação ao transformador que completa o núcleo.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - 1.19 - Produtor de torques (torquer) 3 - Pickoff (transformador tipo “E”) Consiste de um núcleo de ferro laminado, em forma de “E” com três enrolamentos (bo- binas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo."
   },
   {
-"question": "O que é erro leste?",
+    "question": "O que é erro leste?",
     "options": [
       "Extremidade norte para baixo e a oeste do meridiano nas latitudes sul.",
       "Extremidade norte levantada e a leste do meridiano nas latitudes norte.",
       "Deslocamento da proa do navio para o sentido horário devido à inércia.",
       "Falha na compensação de aceleração no eixo longitudinal."
     ],
-    "answer": "Extremidade norte levantada e a leste do meridiano nas latitudes norte."
+    "answer": "Extremidade norte levantada e a leste do meridiano nas latitudes norte.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Como resultado, o eixo do giroscópio supera o movimento da Terra e orienta – se com a extremidade norte levantado e a “leste” do meridiano nas latitudes norte (Erro leste) ou com a extremidade norte para baixo e a “oeste” do meridiano nas latitudes sul (Erro oeste)."
   },
   {
-"question": "O que é erro oeste?",
+    "question": "O que é erro oeste?",
     "options": [
       "Extremidade norte levantada e a leste do meridiano nas latitudes norte.",
       "Extremidade norte para baixo e a oeste do meridiano nas latitudes sul.",
       "Erro residual provocado por desalinhamento mecânico dos sensores inerciais.",
       "Deslocamento da proa do navio para o sentido anti-horário devido ao caturro."
     ],
-    "answer": "Extremidade norte para baixo e a oeste do meridiano nas latitudes sul."
+    "answer": "Extremidade norte para baixo e a oeste do meridiano nas latitudes sul.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Como resultado, o eixo do giroscópio supera o movimento da Terra e orienta – se com a extremidade norte levantado e a “leste” do meridiano nas latitudes norte (Erro leste) ou com a extremidade norte para baixo e a “oeste” do meridiano nas latitudes sul (Erro oeste)."
   },
   {
-"question": "Como é graduado o controle de latitude?",
+    "question": "Como é graduado o controle de latitude?",
     "options": [
       "De 0º a 180º leste e oeste.",
       "De 0º a 360º.",
       "De 0º a 90º norte e sul.",
       "De -90º a +90º."
     ],
-    "answer": "De 0º a 90º norte e sul."
+    "answer": "De 0º a 90º norte e sul.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Na busca por um equipamento que indicasse o norte verdadeiro, em vez do norte magné- tico, a agulha giroscópica foi desenvolvida, pelos norte - americanos, nas primeiras dé-  cadas do século 20 (1911), tendo como base um único giroscópio."
   },
   {
-"question": "Descreva navegação inercial:",
+    "question": "Descreva navegação inercial:",
     "options": [
       "Sistema que depende inteiramente de informações de satélites (GPS) para cálculo contínuo.",
       "Processo de determinar a posição do navio e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas.",
       "Método de navegação baseado no uso de cartas náuticas e bússola magnética exclusivamente.",
       "Navegação realizada pelo uso exclusivo de odômetros mecânicos."
     ],
-    "answer": "Processo de determinar a posição do navio e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas."
+    "answer": "Processo de determinar a posição do navio e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: b) Navegação Inercial Ao processo de determinar a posição do veículo (navio) e os seus movimentos com base na medida das suas acelerações em direções espaciais conhecidas, dá -se o nome de na- vegação inercial."
   },
   {
-"question": "Qual o princípio de funcionamento da navegação inercial?",
+    "question": "Qual o princípio de funcionamento da navegação inercial?",
     "options": [
       "Efeito Doppler",
       "Princípio da conservação de energia",
       "Efeito de Coriolis",
       "Inércia dos corpos"
     ],
-    "answer": "Inércia dos corpos"
+    "answer": "Inércia dos corpos",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A navegação inercial pode ser ainda definida como a navegação baseada em informa- ções provenientes de sensores inerciais, que recebem esta denominação pelo fato de u- sarem como principio de funcionamento o principio da inércia dos corpos, ou seja, em resistirem às mudanças em suas quantidades de movimento linear e angular."
   },
   {
-"question": "Quais são os sensores inerciais?",
+    "question": "Quais são os sensores inerciais?",
     "options": [
       "Termômetros e barômetros",
       "Girômetros e acelerômetros",
       "Odômetros e sonares",
       "Ecobatímetros e giroscópios mecânicos simples"
     ],
-    "answer": "Girômetros e acelerômetros"
+    "answer": "Girômetros e acelerômetros",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Estes sensores inerciais são girômetros e acelerômetros, que detectam mudanças de po- sição e de orientação angular do veículo, o que permite, a partir do conhecimento da posição e orientação inerciais do mesmo, determinar estas grandezas a cada instante, permitindo assim a guiagem do veículo ao ponto desejado, podendo prescindir de in- formações externas."
   },
   {
-"question": "Quais os movimentos que registram as mudanças na navegação inercial?",
+    "question": "Quais os movimentos que registram as mudanças na navegação inercial?",
     "options": [
       "Linear e angular",
       "Vertical e horizontal apenas",
       "Ascensional e direcional",
       "Translacional e gravitacional"
     ],
-    "answer": "Linear e angular"
+    "answer": "Linear e angular",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A navegação inercial pode ser ainda definida como a navegação baseada em informa- ções provenientes de sensores inerciais, que recebem esta denominação pelo fato de u- sarem como principio de funcionamento o principio da inércia dos corpos, ou seja, em resistirem às mudanças em suas quantidades de movimento linear e angular."
   },
   {
-"question": "O que é girômetro?",
+    "question": "O que é girômetro?",
     "options": [
       "Dispositivo que integra a aceleração linear do navio.",
       "É um rotor montado sobre uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixada.",
       "Aparelho que converte sinais elétricos em sinais magnéticos.",
       "Sensor de profundidade baseado em pressão."
     ],
-    "answer": "É um rotor montado sobre uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixada."
+    "answer": "É um rotor montado sobre uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixada.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2.1 - Giroscópio - GIRÔMETRO Um girômetro em sua forma mais simples, como mostrado na Fig.2.2, Pode ser defini- do como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado."
   },
   {
-"question": "Como é chamada a estrutura mecânica do girômetro?",
+    "question": "Como é chamada a estrutura mecânica do girômetro?",
     "options": [
       "Rotor de indução",
       "Estator flutuante",
       "Pêndulo de inércia",
       "Gimbal (Suspensão Cardan)"
     ],
-    "answer": "Gimbal (Suspensão Cardan)"
+    "answer": "Gimbal (Suspensão Cardan)",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A estrutura mecânica, dá-se o nome de gimbal ( Suspensão cardan )."
   },
   {
-"question": "O que os sensores do conjunto do girômetro medem?",
+    "question": "O que os sensores do conjunto do girômetro medem?",
     "options": [
       "Apenas a aceleração da gravidade sobre o navio.",
       "As variações da posição angular entre rotor e base.",
       "A velocidade escalar do deslocamento leste-oeste.",
       "As correntes oceânicas e a deriva."
     ],
-    "answer": "As variações da posição angular entre rotor e base."
+    "answer": "As variações da posição angular entre rotor e base.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2.2 – girômetro Básico O conjunto possui sensores (pickoffs) que medem variações da posição angular entre rotor e base."
   },
   {
-"question": "O giroscópio mede posição angular. O girômetro, ou simplesmente gyro, fornece quais variações?",
+    "question": "O giroscópio mede posição angular. O girômetro, ou simplesmente gyro, fornece quais variações?",
     "options": [
       "Variações de densidade e pressão.",
       "Posição angular ou velocidades angulares.",
       "Aceleração linear e distâncias.",
       "Altitude e profundidade."
     ],
-    "answer": "Posição angular ou velocidades angulares."
+    "answer": "Posição angular ou velocidades angulares.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: No presente trabalho usaremos a denominação “Giroscópio” para os sensores inerciais que medem a posição angular, reservando–se a expressão “Girômetro”, ou simplesmen- te “Giro” (Gyro), para os sensores que fornecem as variações da posição angular, ou ve- locidades angulares."
   },
   {
-"question": "Nos girômetros mecânicos, quem determina o tipo de giro?",
+    "question": "Nos girômetros mecânicos, quem determina o tipo de giro?",
     "options": [
       "O peso da massa de prova e o número de molas.",
       "O número de cardans e a natureza do suporte.",
       "A quantidade de espelhos e a frequência do laser.",
       "O tamanho do display e o tipo de teclado."
     ],
-    "answer": "O número de cardans e a natureza do suporte."
+    "answer": "O número de cardans e a natureza do suporte.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Nota: O número de cardans e a natureza do suporte determinam o tipo de giro."
   },
   {
-"question": "Como é feita a leitura do deslocamento angular na giro eletrostática?",
+    "question": "Como é feita a leitura do deslocamento angular na giro eletrostática?",
     "options": [
       "Por pick off tipo \"E\".",
       "Por contatos elétricos deslizantes.",
       "Por meios ópticos.",
       "Por nível eletrolítico."
     ],
-    "answer": "Por meios ópticos."
+    "answer": "Por meios ópticos.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Uma vez que o norte é a direção representada por uma linha horizontal no plano meridi- ano, alguns meios devem ser empregados para: a) fazer o eixo do giroscópio procurar o plano de meridiano; b) fazer o eixo nivelar; e c) fazê-lo manter sua posição, uma vez encontrada."
   },
   {
-"question": "Quais os tipos de girômetros não-mecânicos?",
+    "question": "Quais os tipos de girômetros não-mecânicos?",
     "options": [
       "A laser e a fibra óptica.",
       "Eletrostático e pendular.",
       "Sintonizado e de força balanceada.",
       "Hidráulico e pneumático."
     ],
-    "answer": "A laser e a fibra óptica."
+    "answer": "A laser e a fibra óptica.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2.4 – Giro eletrostático .2 - Girômetros não Mecânicos a) Giro a laser CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 2-6 1 - Principio de     funcionamento      O giro a laser tem seu funcionamento baseado no principio físico, descoberto pelo físi-  co francês, Georges Marc Marie Sagnac, nas primeiras décadas do século XIX (1913)."
   },
   {
-"question": "Descreva o princípio de funcionamento da giro a laser:",
+    "question": "Descreva o princípio de funcionamento da giro a laser:",
     "options": [
       "Utiliza a propriedade inercial de uma esfera de berílio girando em alta velocidade no vácuo.",
       "Baseia-se no efeito Sagnac, onde a diferença de tempo entre dois feixes de luz girando em sentidos opostos é proporcional à velocidade de rotação.",
       "Funciona por meio de um pêndulo cuja oscilação indica a variação angular.",
       "Utiliza a flutuação neutra de uma girosfera mergulhada em óleo especial."
     ],
-    "answer": "Baseia-se no efeito Sagnac, onde a diferença de tempo entre dois feixes de luz girando em sentidos opostos é proporcional à velocidade de rotação."
+    "answer": "Baseia-se no efeito Sagnac, onde a diferença de tempo entre dois feixes de luz girando em sentidos opostos é proporcional à velocidade de rotação.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: “Sagnac” descobriu que a diferença de tempo entre dois feixes de luz girando em senti- dos opostos, em torno de um trajeto fechado e montados em uma plataforma, é direta- mente proporcional a velocidade em que a plataforma está girando."
   },
   {
-"question": "Qual a finalidade dos espelhos dinâmicos na giro a laser?",
+    "question": "Qual a finalidade dos espelhos dinâmicos na giro a laser?",
     "options": [
       "Projetar as informações em um display remoto.",
       "Aumentar a potência do feixe luminoso emitido pelo catodo.",
       "Para ajustar o comprimento do trajeto.",
       "Criar campos magnéticos para precessar a luz."
     ],
-    "answer": "Para ajustar o comprimento do trajeto."
+    "answer": "Para ajustar o comprimento do trajeto.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O giro a laser utiliza espelhos dinâmicos que se posicionam para ajustar o compri- mento do trajeto, neste projeto, dois espelhos são montado sobre transdutores piezo elé- tricos que permitem que sejam movidos para dentro ou para fora, ajustando assim o comprimento do trajeto."
   },
   {
-"question": "Quais as vantagens da giro a laser?",
+    "question": "Quais as vantagens da giro a laser?",
     "options": [
       "Robustez a variações ambientais, não possui partes móveis, não requer manutenção, entre outras.",
       "Extrema precisão apenas em repouso e funcionamento puramente mecânico.",
       "Menor consumo elétrico sem necessidade de fontes contínuas de alta tensão.",
       "Permite o alinhamento instantâneo sem necessidade de computação de navegação."
     ],
-    "answer": "Robustez a variações ambientais, não possui partes móveis, não requer manutenção, entre outras."
+    "answer": "Robustez a variações ambientais, não possui partes móveis, não requer manutenção, entre outras.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 5 – Vantagens 1ª - Não possui partes móveis  2ª - Maior precisão 3ª - Maior segurança 4ª - Não requer manutenção 5ª - Robustez a variações ambientais  6ª - Peso reduzido 7ª - Baixo custo 8ª - Baixo índice de ruído CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 2-10 b) Giro à fibra ótica Os giros à fibra ótica são os mais utilizados nos dias de hoje, devido ao seu baixo custo e suas qualidades técnicas."
   },
   {
-"question": "Defina acelerômetro:",
+    "question": "Defina acelerômetro:",
     "options": [
       "Instrumento usado para medir a profundidade através do eco.",
       "Dispositivo projetado para medir a velocidade de rotação da Terra.",
       "Dispositivo projetado para computar (medir) as acelerações ao longo de um determinado eixo.",
       "Sensor que identifica interferências magnéticas no casco do navio."
     ],
-    "answer": "Dispositivo projetado para computar (medir) as acelerações ao longo de um determinado eixo."
+    "answer": "Dispositivo projetado para computar (medir) as acelerações ao longo de um determinado eixo.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2.7 – Giro à fibra ótica CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 2-11 ACELERÔMETRO a) Introdução     Dispositivo projetado para computar (medir) as acelerações (a) ao longo de um deter- minado eixo, pela medida da força (F) exercida ao longo desse eixo sobre uma dada massa (m) usando a 2° lei do movimento de Newton (F = ma)."
   },
   {
-"question": "Na sua expressão mais simples, como pode ser considerado um acelerômetro?",
+    "question": "Na sua expressão mais simples, como pode ser considerado um acelerômetro?",
     "options": [
       "Como um volante que gira livremente no espaço.",
       "Como uma massa suspensa por um fio (um pêndulo) ou que pode correr ao longo de um guia reto.",
       "Como uma ampola de vidro parcialmente preenchida com fluido condutor.",
       "Como um feixe de luz propagando-se em um caminho triangular fechado."
     ],
-    "answer": "Como uma massa suspensa por um fio (um pêndulo) ou que pode correr ao longo de um guia reto."
+    "answer": "Como uma massa suspensa por um fio (um pêndulo) ou que pode correr ao longo de um guia reto.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Um acelerômetro pode ser considerado em sua expressão mais simples, como uma mas- sa suspensa por um fio (um pêndulo) ou que pode correr ao longo de um guia reto."
   },
   {
-"question": "Nos sistemas de navegação inercial (SNI), o acelerômetro de força balanceada consiste de que?",
+    "question": "Nos sistemas de navegação inercial (SNI), o acelerômetro de força balanceada consiste de que?",
     "options": [
       "Um núcleo de ferro e dois eletrodos de platina.",
       "Três espelhos fixos e um anel de laser.",
       "Um sensor (pick-off), uma massa de prova e um produtor de torque.",
       "Dois rotores mecânicos suspensos em um único anel vertical."
     ],
-    "answer": "Um sensor (pick-off), uma massa de prova e um produtor de torque."
+    "answer": "Um sensor (pick-off), uma massa de prova e um produtor de torque.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2.8 – Funcionamento do acelerômetro linear c) Acelerômetro de força balanceada Comumente utilizado nos sistemas de navegação inercial, consiste de um sensor (Pic- koff), uma massa de prova e um produtor de torques (torquer), todos situados num eixo móvel comum (Pêndulo), como mostrado na figura 2.9."
   },
   {
-"question": "Por quais dispositivos o sistema inercial com plataforma fixa ao navio deve ter todas as acelerações medidas?",
+    "question": "Por quais dispositivos o sistema inercial com plataforma fixa ao navio deve ter todas as acelerações medidas?",
     "options": [
       "Acelerômetros e girômetros",
       "Apenas acelerômetros",
       "Apenas girômetros",
       "Odômetros e bússolas"
     ],
-    "answer": "Acelerômetros e girômetros"
+    "answer": "Acelerômetros e girômetros",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Estes sensores inerciais são girômetros e acelerômetros, que detectam mudanças de po- sição e de orientação angular do veículo, o que permite, a partir do conhecimento da posição e orientação inerciais do mesmo, determinar estas grandezas a cada instante, permitindo assim a guiagem do veículo ao ponto desejado, podendo prescindir de in- formações externas."
   },
   {
-"question": "No SNI, quais as duas montagens básicas?",
+    "question": "No SNI, quais as duas montagens básicas?",
     "options": [
       "Plataforma óptica e plataforma eletromagnética.",
       "Plataforma inercial convencional (física/estabilizada) e a plataforma inercial analítica (solidária/strap down).",
       "Módulo eletrônico inercial e Módulo de controle remoto.",
       "Plataforma manual e plataforma giroscópica semi-ativa."
     ],
-    "answer": "Plataforma inercial convencional (física/estabilizada) e a plataforma inercial analítica (solidária/strap down)."
+    "answer": "Plataforma inercial convencional (física/estabilizada) e a plataforma inercial analítica (solidária/strap down).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - 2.11 - Montagem dos sensores inerciais CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 2-17 Há duas montagens básicas; a plataforma inercial convencional (física / estabilizada) e a plataforma inercial analítica (solidária / strap down)."
   },
   {
-"question": "Na plataforma convencional, onde são montados os sensores?",
+    "question": "Na plataforma convencional, onde são montados os sensores?",
     "options": [
       "Diretamente no convés principal do navio.",
       "Em um suporte denominado elemento estável.",
       "Na unidade eletrônica de processamento.",
       "Ao lado do transmissor sincro de rumo."
     ],
-    "answer": "Em um suporte denominado elemento estável."
+    "answer": "Em um suporte denominado elemento estável.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: – Plataforma convencional (Estabilizada) a) Introdução     Nesta configuração os sensores inerciais são montados sobre um suporte, denominado elemento estável, que é isolado dos movimentos angulares que o navio executa, por meio do emprego de um sistema de suspensão cardam, conforme mostrado na fig.2.12, como os giros formam um triedro ortogonal, pode-se detectar qualquer tendência de va- riação de atitude (balanço e caturro) e estas variações são realimentadas para os servo- motores, nos eixos dos anéis cardans, e assim obtém-se uma manutenção ativa da orien- tação inercial do elemento estável."
   },
   {
-"question": "Quais os componentes básicos das plataformas convencionais?",
+    "question": "Quais os componentes básicos das plataformas convencionais?",
     "options": [
       "3 acelerômetros, 3 girômetros e um computador.",
       "2 acelerômetros e 1 giroscópio centralizado.",
       "1 acelerômetro e 3 espelhos a laser interligados.",
       "4 giroscópios suspensos por ar."
     ],
-    "answer": "3 acelerômetros, 3 girômetros e um computador."
+    "answer": "3 acelerômetros, 3 girômetros e um computador.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Estes sensores inerciais são girômetros e acelerômetros, que detectam mudanças de po- sição e de orientação angular do veículo, o que permite, a partir do conhecimento da posição e orientação inerciais do mesmo, determinar estas grandezas a cada instante, permitindo assim a guiagem do veículo ao ponto desejado, podendo prescindir de in- formações externas."
   },
   {
-"question": "Como é medida a latitude da plataforma convencional (estabilizad",
+    "question": "Como é medida a latitude da plataforma convencional (estabilizad",
     "options": [
       "a)?",
       "É deduzida através da rotação da esfera da agulha em direção ao polo norte.",
@@ -1010,886 +1202,1064 @@ export const agulhasGiroscopicasQuestions: Question[] = [
       "É medida diretamente num SNI, a partir da plataforma estável, pois é um ângulo entre o eixo \"Z\" e a vertical do lugar.",
       "Pelo odômetro do navio integrado ao GPS."
     ],
-    "answer": "É medida diretamente num SNI, a partir da plataforma estável, pois é um ângulo entre o eixo \"Z\" e a vertical do lugar."
+    "answer": "É medida diretamente num SNI, a partir da plataforma estável, pois é um ângulo entre o eixo \"Z\" e a vertical do lugar.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2.16 – Plataforma Estabilizada CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 2-20 c) Medida     da    Latitude     A latitude é medida diretamente em um sistema de navegação inercial, a partir da plata- forma estável, pois é o ângulo entre o “eixo Z” (giro) é a vertical do lugar, como mostra a figura 2.17."
   },
   {
-"question": "Como é medida a longitude?",
+    "question": "Como é medida a longitude?",
     "options": [
       "É medida diretamente pelo eixo X apontado para a proa do navio.",
       "Não pode ser medida diretamente, mas o torque adicional exigido para manter o elemento sensível vertical em relação ao eixo de rotação da Terra é uma medida da velocidade na direção Leste-Oeste.",
       "Pela diferença entre a velocidade norte-sul e a aceleração linear do balanço.",
       "Através do sinal do inclinômetro no eixo Y do giroscópio."
     ],
-    "answer": "Não pode ser medida diretamente, mas o torque adicional exigido para manter o elemento sensível vertical em relação ao eixo de rotação da Terra é uma medida da velocidade na direção Leste-Oeste."
+    "answer": "Não pode ser medida diretamente, mas o torque adicional exigido para manter o elemento sensível vertical em relação ao eixo de rotação da Terra é uma medida da velocidade na direção Leste-Oeste.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2.17 – Medida da latitude d) Cômputo     da     Longitude     A longitude não pode ser medida diretamente mais o torque adicional exigido para manter o elemento sensível (estável) vertical em relação ao eixo de rotação da Terra, em qualquer latitude, como mostra a figura 2.18, é uma medida da velocidade na dire- ção Leste/Oeste."
   },
   {
-"question": "Além da latitude e longitude, o sistema proporciona ainda quais informações?",
+    "question": "Além da latitude e longitude, o sistema proporciona ainda quais informações?",
     "options": [
       "Rumo do navio, balanço, caturro e velocidade.",
       "Vento verdadeiro, vento aparente e correntes marítimas.",
       "Condição de carregamento, calado e compasso do navio.",
       "Distância para a costa e temperatura do ar."
     ],
-    "answer": "Rumo do navio, balanço, caturro e velocidade."
+    "answer": "Rumo do navio, balanço, caturro e velocidade.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Ao contrário de um sistema estabilizado, o processa- mento digital de alta velocidade é empregado para determinar a atitude (rumo, balanço e caturro) do navio."
   },
   {
-"question": "Na plataforma analítica, quais os componentes e onde são montados?",
+    "question": "Na plataforma analítica, quais os componentes e onde são montados?",
     "options": [
       "3 giros e 3 acelerômetros, sobre uma mesma base rígida (módulo de medição inercial).",
       "1 giroscópio gigante montado em uma esfera de compensação.",
       "O sistema de navegação e as antenas de radar na torre de comando.",
       "Apenas 2 giroscópios mecânicos em anéis cardans."
     ],
-    "answer": "3 giros e 3 acelerômetros, sobre uma mesma base rígida (módulo de medição inercial)."
+    "answer": "3 giros e 3 acelerômetros, sobre uma mesma base rígida (módulo de medição inercial).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 2-22 – Plataforma analítica (Strap down) a) Introdução     Nesta configuração os sensores inerciais, três giros e três acelerômetros, são monta- dos sobre uma mesma base rígida (módulo de medição inercial)."
   },
   {
-"question": "Como devem ser os eixos sensíveis dos giros e dos acelerômetros na plataforma analítica?",
+    "question": "Como devem ser os eixos sensíveis dos giros e dos acelerômetros na plataforma analítica?",
     "options": [
       "Devem estar dispostos aleatoriamente para evitar redundância.",
       "Devem ser coincidentes (paralelos) e formar ângulo de 90º entre si.",
       "Devem estar todos apontados unicamente para a proa do navio.",
       "Devem convergir para o centro de gravidade do navio independentemente de seus ângulos."
     ],
-    "answer": "Devem ser coincidentes (paralelos) e formar ângulo de 90º entre si."
+    "answer": "Devem ser coincidentes (paralelos) e formar ângulo de 90º entre si.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Os eixos são orto- gonais coincidentes, ou seja, os eixos sensíveis dos giros e dos acelerômetros devem ser coincidentes (paralelos) e formado ângulos de noventa graus entre si, como mos- tra a figura 2.19, para que possam realizar transformações de coordenadas."
   },
   {
-"question": "A partir da tríade de sensores fixada em um veículo (navio), como é denominado esse sistema de coordenada do veículo?",
+    "question": "A partir da tríade de sensores fixada em um veículo (navio), como é denominado esse sistema de coordenada do veículo?",
     "options": [
       "Sistema de coordenada móvel ou sistema de coordenada roll/pitch/yaw.",
       "Sistema de coordenada geográfica fixa global.",
       "Sistema de balanço passivo.",
       "Módulo de precessão constante."
     ],
-    "answer": "Sistema de coordenada móvel ou sistema de coordenada roll/pitch/yaw."
+    "answer": "Sistema de coordenada móvel ou sistema de coordenada roll/pitch/yaw.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Denominado sistema de coordenada móvel, ou siste- ma de coordenada Rool / Pitch / Way."
   },
   {
-"question": "Como devem estar os eixos X, Y e Z dos sensores fixos na base, constituindo assim uma estrutura denominada plataforma?",
+    "question": "Como devem estar os eixos X, Y e Z dos sensores fixos na base, constituindo assim uma estrutura denominada plataforma?",
     "options": [
       "O eixo X deve apontar para o sul, o eixo Y para o oeste e o eixo Z para o leste.",
       "O eixo X aponta para bombordo, o Y para estibordo, e o Z para a popa.",
       "O eixo X (roll) deve apontar para a proa, o eixo Y (pitch) ortogonal ao X e apontando para boreste, enquanto que o eixo Z (yaw) deve apontar para baixo (vertical).",
       "Todos os eixos devem apontar paralelos ao deslocamento do navio."
     ],
-    "answer": "O eixo X (roll) deve apontar para a proa, o eixo Y (pitch) ortogonal ao X e apontando para boreste, enquanto que o eixo Z (yaw) deve apontar para baixo (vertical)."
+    "answer": "O eixo X (roll) deve apontar para a proa, o eixo Y (pitch) ortogonal ao X e apontando para boreste, enquanto que o eixo Z (yaw) deve apontar para baixo (vertical).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O eixo “X” (Roll / Balanço) deve apontar para proa, o eixo “Y” (Pitch / Caturro) deve ser ortogonal ao eixo “X” e apontar para boreste, enquanto que o eixo “Z” (Yaw / Guinada) deve apontar para baixo (vertical), como mostra a figura 2.20."
   },
   {
-"question": "Descreva a teoria de funcionamento da plataforma analítica (strap down):",
+    "question": "Descreva a teoria de funcionamento da plataforma analítica (strap down):",
     "options": [
       "Fundamenta-se na utilização exclusiva de sinais eletrostáticos emitidos de satélites para atualizar a matriz de rumo e caturro do navio.",
       "Funciona mantendo os giroscópios perfeitamente alinhados ao norte geográfico usando pesos físicos, independentemente do balanço do navio.",
       "Fundamenta-se na aplicação do princípio da inércia a um sistema de coordenadas móvel cujos sinais são integrados a um sistema de coordenadas de referência por um computador de navegação.",
       "Utiliza a bóia inercial e um prumo analítico para determinar a latitude independentemente de cálculos computacionais."
     ],
-    "answer": "Fundamenta-se na aplicação do princípio da inércia a um sistema de coordenadas móvel cujos sinais são integrados a um sistema de coordenadas de referência por um computador de navegação."
+    "answer": "Fundamenta-se na aplicação do princípio da inércia a um sistema de coordenadas móvel cujos sinais são integrados a um sistema de coordenadas de referência por um computador de navegação.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - 2.21 - Módulo de medição inercial CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 2-24 b) Teoria     de    Funcionamento     A teoria deste sistema fundamenta-se na aplicação do principio da inércia a um sis- tema de coordenadas móvel (Plataforma Strap down) cujos sinais são integrados a um sistema de coordenadas de referência (Plataforma analítica ou computadorizada) como mostrado na figura 2."
   },
   {
-"question": "O que caracteriza um giroscópio básico e quantos graus de liberdade ele possui?",
+    "question": "O que caracteriza um giroscópio básico e quantos graus de liberdade ele possui?",
     "options": [
       "Um disco imerso em água com 2 eixos paralelos de liberdade.",
       "Um rotor balanceado livre para girar em torno de 3 eixos perpendiculares entre si que se interceptam no C.G.",
       "Uma esfera sob vácuo livre apenas no eixo horizontal e de spin.",
       "Um conjunto pendular com 4 eixos articulados em girosfera."
     ],
-    "answer": "Um rotor balanceado livre para girar em torno de 3 eixos perpendiculares entre si que se interceptam no C.G."
+    "answer": "Um rotor balanceado livre para girar em torno de 3 eixos perpendiculares entre si que se interceptam no C.G.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - GIROSCÓPIO Um giroscópio básico, figura 1.1, consiste de um rotor (disco) perfeitamente balancea- do, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade."
   },
   {
-"question": "Quais são os 3 eixos de rotação de um giroscópio com 3 graus de liberdade?",
+    "question": "Quais são os 3 eixos de rotação de um giroscópio com 3 graus de liberdade?",
     "options": [
       "Eixo Longitudinal, Transversal e Vertical.",
       "Eixo de Rotação (Spin Axis), Eixo Horizontal e Eixo Vertical.",
       "Eixo Azimutal, Eixo Balístico e Eixo Pendular.",
       "Eixo do Equador, Eixo dos Pólos e Eixo do Meridiano."
     ],
-    "answer": "Eixo de Rotação (Spin Axis), Eixo Horizontal e Eixo Vertical."
+    "answer": "Eixo de Rotação (Spin Axis), Eixo Horizontal e Eixo Vertical.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "A 1ª Propriedade Fundamental (Rigidez no Espaço ou Inércia Giroscópica) é definida como:",
+    "question": "A 1ª Propriedade Fundamental (Rigidez no Espaço ou Inércia Giroscópica) é definida como:",
     "options": [
       "A tendência do giroscópio de alinhar-se automaticamente com o Norte Magnético.",
       "A rotação em torno de um eixo perpendicular ao torque aplicado.",
       "A propriedade dos corpos girantes de conservarem seu plano inicial de rotação.",
       "O deslocamento provocado pela atração gravimétrica nos pólos."
     ],
-    "answer": "A propriedade dos corpos girantes de conservarem seu plano inicial de rotação."
+    "answer": "A propriedade dos corpos girantes de conservarem seu plano inicial de rotação.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 1.2 – Rigidez no Espaço OSTENSIVO CIAA-117/037 OSTENSIVO ORIGINAL Se o rotor do giroscópio estiver parado, o atrito nos rolamentos causará a inclinação do rotor devido à inclinação da base; entretanto, se rotor estiver girando, ele manterá o seu plano original de rotação."
   },
   {
-"question": "A Rigidez no Espaço (H) depende diretamente de quais fatores?",
+    "question": "A Rigidez no Espaço (H) depende diretamente de quais fatores?",
     "options": [
       "Velocidade do rotor, massa total da base e latitude local.",
       "Velocidade do rotor, concentração da massa na periferia e raio de giro.",
       "Temperatura do gás hélio, viscosidade do óleo e atrito vertical.",
       "Torque aplicado, campo magnético fixo e momento linear."
     ],
-    "answer": "Velocidade do rotor, concentração da massa na periferia e raio de giro."
+    "answer": "Velocidade do rotor, concentração da massa na periferia e raio de giro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A inércia giroscópica depende da velocidade angular, do peso e do raio de rotação de cada massa elementar."
   },
   {
-"question": "A expressão matemática da rigidez giroscópica é dada por H MKS. O que representa a variável M?",
+    "question": "A expressão matemática da rigidez giroscópica é dada por H MKS. O que representa a variável M?",
     "options": [
       "Massa do rotor dada por Peso (Lb)/32.",
       "Momento angular em RPM.",
       "Torque aplicado em N.m.",
       "Coeficiente de atrito no eixo horizontal."
     ],
-    "answer": "Massa do rotor dada por Peso (Lb)/32."
+    "answer": "Massa do rotor dada por Peso (Lb)/32.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A inércia giroscópica depende da velocidade angular, do peso e do raio de rotação de cada massa elementar."
   },
   {
-"question": "Observe as duas configurações de rotor: no rotor (A) a massa é distribuída uniformemente; no rotor (B) a massa é concentrada na periferia. Qual apresenta maior rigidez e por quê?",
+    "question": "Observe as duas configurações de rotor: no rotor (A) a massa é distribuída uniformemente; no rotor (B) a massa é concentrada na periferia. Qual apresenta maior rigidez e por quê?",
     "options": [
       "O rotor A, pois possui maior densidade no centro de gravidade.",
       "O rotor B, pois o maior raio de giro (K) aumenta a rigidez H.",
       "Ambos possuem a mesma rigidez se o peso total for idêntico.",
       "O rotor A, por diminuir a inércia rotacional."
     ],
-    "answer": "O rotor B, pois o maior raio de giro (K) aumenta a rigidez H."
+    "answer": "O rotor B, pois o maior raio de giro (K) aumenta a rigidez H.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 1.1 – Giroscópio - RIGIDEZ NO ESPAÇO OU INÉRCIA GIROSCÓPICA Rigidez no espaço ou Inércia giroscópica,é a propriedade do giroscópio pela qual ele tenta manter o eixo do rotor paralelo a sua posição original."
   },
   {
-"question": "A 2ª Propriedade Fundamental é a Precessão. Ela é definida como:",
+    "question": "A 2ª Propriedade Fundamental é a Precessão. Ela é definida como:",
     "options": [
       "A tendência do eixo do rotor de tombar em direção ao equador.",
       "A rotação do giroscópio em torno de um eixo perpendicular àquele em que o torque foi aplicado.",
       "A vibração provocada pelo desalinhamento da armadura do pickoff.",
       "O movimento aparente provocado exclusivamente pela latitude."
     ],
-    "answer": "A rotação do giroscópio em torno de um eixo perpendicular àquele em que o torque foi aplicado."
+    "answer": "A rotação do giroscópio em torno de um eixo perpendicular àquele em que o torque foi aplicado.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - PRECESSÃO Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
   },
   {
-"question": "Ao aplicar um torque em torno do eixo HORIZONTAL no sentido de abaixá-lo, qual será o efeito de precessão resultante?",
+    "question": "Ao aplicar um torque em torno do eixo HORIZONTAL no sentido de abaixá-lo, qual será o efeito de precessão resultante?",
     "options": [
       "O giroscópio precessará em torno do eixo HORIZONTAL no mesmo sentido.",
       "O giroscópio precessará a 90° em torno do eixo VERTICAL.",
       "O rotor para de girar instantaneamente.",
       "Haverá precessão a 180° no eixo de spin."
     ],
-    "answer": "O giroscópio precessará a 90° em torno do eixo VERTICAL."
+    "answer": "O giroscópio precessará a 90° em torno do eixo VERTICAL.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "Qual o ângulo existente entre a direção do torque aplicado e o movimento de precessão resultante?",
+    "question": "Qual o ângulo existente entre a direção do torque aplicado e o movimento de precessão resultante?",
     "options": [
       "45° no sentido oposto ao rotor.",
       "90° no sentido de rotação do rotor.",
       "180° no sentido horário.",
       "0° (na mesma linha de ação)."
     ],
-    "answer": "90° no sentido de rotação do rotor."
+    "answer": "90° no sentido de rotação do rotor.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - ROTAÇÃO APARENTE Inicialmente vamos supor que o rotor está montado no Equador com seu eixo apontado no sentido Este - Oeste."
   },
   {
-"question": "O que se entende por Rotação Aparente (Movimento Aparente) de um giroscópio?",
+    "question": "O que se entende por Rotação Aparente (Movimento Aparente) de um giroscópio?",
     "options": [
       "O deslocamento real do rotor dentro da girosfera.",
       "A rotação do giroscópio em relação à sua base (Terra), observada pelo operador na superfície.",
       "O erro acumulado na repetidora azimutal.",
       "O efeito do amortecimento causado pelo balístico de líquido."
     ],
-    "answer": "A rotação do giroscópio em relação à sua base (Terra), observada pelo operador na superfície."
+    "answer": "A rotação do giroscópio em relação à sua base (Terra), observada pelo operador na superfície.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Se for lembrado que o movimento aparente das estrelas através do céu tem uma rotação contrária à dos ponteiros do relógio com relação à estrela polar, uma maneira de lem- brar o efeito da rotação da Terra em um giroscópio livre é considerar o eixo do rotor apontando para uma estrela."
   },
   {
-"question": "Em qual condição um giroscópio colocado no Equador NÃO apresentará rotação aparente?",
+    "question": "Em qual condição um giroscópio colocado no Equador NÃO apresentará rotação aparente?",
     "options": [
       "Quando seu eixo de rotação estiver na vertical.",
       "Quando seu eixo de rotação estiver na horizontal e apontando para o Leste.",
       "Quando seu eixo de rotação estiver paralelo ao eixo de rotação da Terra (horizontal, apontando Norte).",
       "Nunca, sempre haverá rotação aparente no Equador."
     ],
-    "answer": "Quando seu eixo de rotação estiver paralelo ao eixo de rotação da Terra (horizontal, apontando Norte)."
+    "answer": "Quando seu eixo de rotação estiver paralelo ao eixo de rotação da Terra (horizontal, apontando Norte).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando o nível estiver na horizontal (indicando que o eixo de rotação do giroscópio está nivelado) a bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-17 inferiores é igual."
   },
   {
-"question": "No Equador, com o eixo de rotação na horizontal apontando para o LESTE, haverá rotação aparente em torno de qual eixo e qual seu valor máximo (HER)?",
+    "question": "No Equador, com o eixo de rotação na horizontal apontando para o LESTE, haverá rotação aparente em torno de qual eixo e qual seu valor máximo (HER)?",
     "options": [
       "Em torno do eixo vertical com valor de 15°/H.",
       "Em torno do eixo horizontal com valor de 15°/H.",
       "Em torno de ambos os eixos com valor de 7.5°/H.",
       "Não há rotação aparente nessa posição."
     ],
-    "answer": "Em torno do eixo horizontal com valor de 15°/H."
+    "answer": "Em torno do eixo horizontal com valor de 15°/H.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "Nos PÓLOS, um giroscópio com eixo nivelado apontando Leste apresentará rotação aparente em torno de qual eixo (VER) e com qual taxa?",
+    "question": "Nos PÓLOS, um giroscópio com eixo nivelado apontando Leste apresentará rotação aparente em torno de qual eixo (VER) e com qual taxa?",
     "options": [
       "Eixo Vertical, igual a 15°/H (360° em 24 horas).",
       "Eixo Horizontal, igual a 0°/H.",
       "Eixo de Spin, igual a 30°/H.",
       "Eixo Transversal, igual a 5°/H."
     ],
-    "answer": "Eixo Vertical, igual a 15°/H (360° em 24 horas)."
+    "answer": "Eixo Vertical, igual a 15°/H (360° em 24 horas).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Se o observador estiver sobre a Terra, o rotor parecerá girar em torno do seu eixo hori- zontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas)."
   },
   {
-"question": "Em um ponto intermediário de latitude (L), como se comportam as componentes HER e VER?",
+    "question": "Em um ponto intermediário de latitude (L), como se comportam as componentes HER e VER?",
     "options": [
       "HER = 15°/H sen(Lat) e VER = 15°/H cos(Lat).",
       "HER = 15°/H cos(Lat) e VER = 15°/H sen(Lat).",
       "Ambas são sempre fixas em 15°/H.",
       "Dependem apenas da velocidade do navio."
     ],
-    "answer": "HER = 15°/H cos(Lat) e VER = 15°/H sen(Lat)."
+    "answer": "HER = 15°/H cos(Lat) e VER = 15°/H sen(Lat).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 3-32 3.15 – Operação do sistema.....................................................................................3-35 3.16 – Operação da RCDU e Funções do display...................................................3-38 3.17 – Procedimentos para operação do teclado e menus.......................................3-39 3.18 – FIM / PC.........................................................................................................3-42 3.19 – Sistema de alarmes........................................................................................3-43 3.20 – Manutenção...................................................................................................3-45 ANEXO A - Bibliografia...........................................................................................A-1 OSTENSIVO CIAA-117/037 - V - OSTENSIVO ORIGINAL INTRODUÇÃO 1 - PROPÓSITO Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu- lhas giroscópicas e sistemas de navegação inercial."
   },
   {
-"question": "À medida que levamos o giroscópio para uma latitude mais ALTA (próxima ao pólo), o que acontece com os valores de HER e VER?",
+    "question": "À medida que levamos o giroscópio para uma latitude mais ALTA (próxima ao pólo), o que acontece com os valores de HER e VER?",
     "options": [
       "HER aumenta e VER diminui.",
       "HER diminui e VER aumenta.",
       "Ambos aumentam proporcionalmente.",
       "Ambas as componentes tornam-se nulas."
     ],
-    "answer": "HER diminui e VER aumenta."
+    "answer": "HER diminui e VER aumenta.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A resistência entre o eletrodo supe- rior e o inferior da direita diminui proporcionalmente, sendo a diferença no valor da re- sistência proporcional ao movimento da bolha."
   },
   {
-"question": "Quais são os 4 fatores utilizados para transformar um giroscópio livre em instrumento PROCURADOR do Norte?",
+    "question": "Quais são os 4 fatores utilizados para transformar um giroscópio livre em instrumento PROCURADOR do Norte?",
     "options": [
       "Rigidez, Precessão, Rotação da Terra (HER) e Força da Gravidade.",
       "Massa lateral, Óleo especial, Gás Hélio e Amortecimento.",
       "Torquer, Pickoff, Amplificador e Nível Eletrolítico.",
       "Velocidade do navio, Rumo, Latitude e Longitude."
     ],
-    "answer": "Rigidez, Precessão, Rotação da Terra (HER) e Força da Gravidade."
+    "answer": "Rigidez, Precessão, Rotação da Terra (HER) e Força da Gravidade.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Dos quatro (4) fenômenos dos quais depende a operação da agulha giroscópica, os dois (2) primeiros são propriedades inerentes ao giroscópio, denominados de rigidez no espa- ço (inércia giroscópica e precessão, os outros dois (2) referem - se à terra e são denomi- nados de força de gravidade e rotação da terra (HER)."
   },
   {
-"question": "No giroscópio procurador do Norte, qual a função da MASSA PENDULAR (peso W)?",
+    "question": "No giroscópio procurador do Norte, qual a função da MASSA PENDULAR (peso W)?",
     "options": [
       "Suprimir totalmente o movimento oscilatório.",
       "Aplicar torque de gravidade quando a ponta Norte se eleva ou abaixa, gerando precessão azimutal em direção ao meridiano.",
       "Aumentar a velocidade de rotação do rotor.",
       "Manter o sensor tipo \"E\" centralizado."
     ],
-    "answer": "Aplicar torque de gravidade quando a ponta Norte se eleva ou abaixa, gerando precessão azimutal em direção ao meridiano."
+    "answer": "Aplicar torque de gravidade quando a ponta Norte se eleva ou abaixa, gerando precessão azimutal em direção ao meridiano.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - PRECESSÃO Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
   },
   {
-"question": "A combinação do efeito de HER e da Massa Pendular (MP) faz com que a extremidade Norte do eixo descreva qual trajetória em torno do meridiano?",
+    "question": "A combinação do efeito de HER e da Massa Pendular (MP) faz com que a extremidade Norte do eixo descreva qual trajetória em torno do meridiano?",
     "options": [
       "Uma linha reta vertical perfeita.",
       "Uma trajetória helicoidal amortecida.",
       "Uma elipse (oscilação contínua não amortecida).",
       "Um quadrado concêntrico."
     ],
-    "answer": "Uma elipse (oscilação contínua não amortecida)."
+    "answer": "Uma elipse (oscilação contínua não amortecida).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A razão entre o movimento em torno do eixo horizontal (causado pela rotação aparente) OSTENSIVO CIAA-117/037 1-12 OSTENSIVO ORIGINAL e o movimento precessional do eixo vertical (causado pela oscilação do peso) determina o formato da elipse."
   },
   {
-"question": "Para transformar o giroscópio em INDICADOR do Norte (suprimindo as oscilações elípticas), adiciona-se o AMORTECIMENTO. Como isso é feito fisicamente?",
+    "question": "Para transformar o giroscópio em INDICADOR do Norte (suprimindo as oscilações elípticas), adiciona-se o AMORTECIMENTO. Como isso é feito fisicamente?",
     "options": [
       "Colocando uma massa lateral (peso W1) no lado LESTE (direita) do rotor.",
       "Retirando a massa pendular inferior.",
       "Reduzindo a rotação do rotor pela metade.",
       "Aumentando a quantidade de gás hélio na esfera."
     ],
-    "answer": "Colocando uma massa lateral (peso W1) no lado LESTE (direita) do rotor."
+    "answer": "Colocando uma massa lateral (peso W1) no lado LESTE (direita) do rotor.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Este peso é  colocado no lado Leste da girosfera numa posição mostrada pela fig."
   },
   {
-"question": "Qual o efeito da Massa Lateral (peso W1) quando a extremidade Norte do eixo de rotação se ELEVA?",
+    "question": "Qual o efeito da Massa Lateral (peso W1) quando a extremidade Norte do eixo de rotação se ELEVA?",
     "options": [
       "Causa uma precessão para CIMA.",
       "Causa uma precessão para BAIXO, reduzindo gradualmente as oscilações (curva amortecida).",
       "Faz o rotor girar no sentido inverso.",
       "Trava o eixo horizontal."
     ],
-    "answer": "Causa uma precessão para BAIXO, reduzindo gradualmente as oscilações (curva amortecida)."
+    "answer": "Causa uma precessão para BAIXO, reduzindo gradualmente as oscilações (curva amortecida).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Este torque causa precessão em torno do eixo vertical na direção indicada em C; o giroscópio assim moveu-se para fora de sua posição original Leste-Oeste."
   },
   {
-"question": "Em agulhas modernas, o rotor gira dentro de uma girosfera contendo gás hélio imersa em óleo. Qual a principal vantagem da flutuação neutra da girosfera?",
+    "question": "Em agulhas modernas, o rotor gira dentro de uma girosfera contendo gás hélio imersa em óleo. Qual a principal vantagem da flutuação neutra da girosfera?",
     "options": [
       "Eliminar a necessidade de alimentação elétrica.",
       "Remover o peso da girosfera dos rolamentos do eixo vertical.",
       "Impedir qualquer variação de temperatura no sistema.",
       "Eliminar totalmente o erro de velocidade."
     ],
-    "answer": "Remover o peso da girosfera dos rolamentos do eixo vertical."
+    "answer": "Remover o peso da girosfera dos rolamentos do eixo vertical.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas características proporcionam, sobre as agulhas anteriores, as seguintes vantagens: 1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra; 2ª - Oferece grande proteção contra choques mecânicos; CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-15 3ª - Reduz os efeitos da aceleração; 4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento  em gás hélio; e 5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxi-  dantes."
   },
   {
-"question": "Quais são as vantagens do uso do GÁS HÉLIO dentro da esfera da girosfera?",
+    "question": "Quais são as vantagens do uso do GÁS HÉLIO dentro da esfera da girosfera?",
     "options": [
       "Aumentar o atrito do rotor e evitar superaquecimento.",
       "Fornecer empuxo para flutuação e transferir o calor do motor para a superfície interna da esfera.",
       "Gerar o campo magnético do pickoff.",
       "Isolar eletricamente as bobinas do torquer."
     ],
-    "answer": "Fornecer empuxo para flutuação e transferir o calor do motor para a superfície interna da esfera."
+    "answer": "Fornecer empuxo para flutuação e transferir o calor do motor para a superfície interna da esfera.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - O gás hélio além de fornecer um empuxo para a flutuação neutra, transfere o ca-  lor produzido pelo motor, para a superfície interna da esfera."
   },
   {
-"question": "As agulhas com CONTROLE MECÂNICO (ex: MK-27, MK-227) utilizam quais elementos para controle azimutal e amortecimento?",
+    "question": "As agulhas com CONTROLE MECÂNICO (ex: MK-27, MK-227) utilizam quais elementos para controle azimutal e amortecimento?",
     "options": [
       "Amplificadores transistorizados e sensores ópticos.",
       "Balístico de líquido (óleo) para torque azimutal e pesos para amortecimento.",
       "Nível elétrico de mercúrio e solenóides de passo.",
       "Giroscópios a laser e girometros piezoelétricos."
     ],
-    "answer": "Balístico de líquido (óleo) para torque azimutal e pesos para amortecimento."
+    "answer": "Balístico de líquido (óleo) para torque azimutal e pesos para amortecimento.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas agulhas utilizam um balístico de liquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivela- mento)."
   },
   {
-"question": "As agulhas com CONTROLE ELETRÔNICO (ex: MK-19, MK-23) utilizam qual componente como detector de inclinação?",
+    "question": "As agulhas com CONTROLE ELETRÔNICO (ex: MK-19, MK-23) utilizam qual componente como detector de inclinação?",
     "options": [
       "Sensor de nível eletrolítico (nível de bolha).",
       "Potenciômetro linear de carvão.",
       "Encoder óptico incremental.",
       "Tacogerador de corrente contínua."
     ],
-    "answer": "Sensor de nível eletrolítico (nível de bolha)."
+    "answer": "Sensor de nível eletrolítico (nível de bolha).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação  (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores  de torques (torquer) de controle azimutal e amortecimento."
   },
   {
-"question": "No Nível Eletrolítico das agulhas de controle eletrônico, como são alimentados os eletrodos inferiores e de onde sai o sinal de inclinação?",
+    "question": "No Nível Eletrolítico das agulhas de controle eletrônico, como são alimentados os eletrodos inferiores e de onde sai o sinal de inclinação?",
     "options": [
       "Alimentados com 24VCC; saída nos terminais de fundo.",
       "Excitados pelos terminais opostos do secundário de um transformador (115V, 400Hz); sinal obtido no eletrodo superior e terminal central.",
       "Excitados por corrente contínua de alta tensão; saída sem transformador.",
       "Alimentados pela linha do repetidor de rumo."
     ],
-    "answer": "Excitados pelos terminais opostos do secundário de um transformador (115V, 400Hz); sinal obtido no eletrodo superior e terminal central."
+    "answer": "Excitados pelos terminais opostos do secundário de um transformador (115V, 400Hz); sinal obtido no eletrodo superior e terminal central.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O sinal de inclinação (saída) é obtido do eletrodo superior e o terminal central do secun- dário do transformador."
   },
   {
-"question": "O PRODUTOR DE TORQUES (Torquer) de uma agulha eletrônica possui estrutura tipo \"E\" aberta. Como funcionam seus enrolamentos?",
+    "question": "O PRODUTOR DE TORQUES (Torquer) de uma agulha eletrônica possui estrutura tipo \"E\" aberta. Como funcionam seus enrolamentos?",
     "options": [
       "Enrolamento central é o campo de referência (fixo, energizado pela linha); enrolamentos laterais são os campos de controle (saída do amplificador).",
       "Enrolamento central é a saída de sinal; enrolamentos laterais são alimentados em CC.",
       "Todos os enrolamentos são idênticos e ligados em paralelo na rede de 60Hz.",
       "Funciona por repulsão mecânica de mola e contrapeso."
     ],
-    "answer": "Enrolamento central é o campo de referência (fixo, energizado pela linha); enrolamentos laterais são os campos de controle (saída do amplificador)."
+    "answer": "Enrolamento central é o campo de referência (fixo, energizado pela linha); enrolamentos laterais são os campos de controle (saída do amplificador).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2 - Produtor de torques (torquer) Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos late- rais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-19 alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
   },
   {
-"question": "Qual a função do PICKOFF (Transformador tipo \"E\") no sistema da agulha giroscópica eletrônica?",
+    "question": "Qual a função do PICKOFF (Transformador tipo \"E\") no sistema da agulha giroscópica eletrônica?",
     "options": [
       "Atuar como motor elétrico de acionamento do rotor.",
       "Atuar como sensor ou detector de erro, medindo o desalinhamento entre o elemento sensível e a armadura.",
       "Resfriar o óleo da carcaça do elemento sensível.",
       "Fornecer o sinal de velocidade do navio."
     ],
-    "answer": "Atuar como sensor ou detector de erro, medindo o desalinhamento entre o elemento sensível e a armadura."
+    "answer": "Atuar como sensor ou detector de erro, medindo o desalinhamento entre o elemento sensível e a armadura.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - O pickoff é usado como sensor ou detector de erro."
   },
   {
-"question": "Quando a armadura do PICKOFF está exatamente no CENTRO, qual é a tensão (sinal) de saída resultante entre os secundários opostos?",
+    "question": "Quando a armadura do PICKOFF está exatamente no CENTRO, qual é a tensão (sinal) de saída resultante entre os secundários opostos?",
     "options": [
       "Tensão máxima igual a 115V.",
       "Zero, pois as tensões induzidas nos dois secundários são iguais e opostas.",
       "Tensão negativa de referência.",
       "Tensão contínua pulsante de 12V."
     ],
-    "answer": "Zero, pois as tensões induzidas nos dois secundários são iguais e opostas."
+    "answer": "Zero, pois as tensões induzidas nos dois secundários são iguais e opostas.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando a armadura está no centro da estrutura do transformador, como mostra a figura 1.20, tensões iguais são induzidas nos secundários, e a diferença entre elas é zero, devi- do estar enrolados em oposição, assim a tensão (sinal) de saída é zero."
   },
   {
-"question": "Como é definido o ERRO LESTE no sistema de indicação da repetidora?",
+    "question": "Como é definido o ERRO LESTE no sistema de indicação da repetidora?",
     "options": [
       "Leitura na repetidora MAIOR que o rumo verdadeiro.",
       "Leitura na repetidora MENOR que o rumo verdadeiro.",
       "Leitura idêntica ao rumo magnético.",
       "Erro provocado por desvio de agulha magnética."
     ],
-    "answer": "Leitura na repetidora MENOR que o rumo verdadeiro."
+    "answer": "Leitura na repetidora MENOR que o rumo verdadeiro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Para rumo sul ocorreria o contrário (Erro leste), entretanto, se o rumo for leste ou oeste verdadeiro, o movimento do navio não tenderia a inclinar a giro uma vez que a veloci- dade do navio estaria no mesmo ângulo que o rotor do giroscópio (Sem erro)."
   },
   {
-"question": "Como é definido o ERRO OESTE na leitura da repetidora de rumo?",
+    "question": "Como é definido o ERRO OESTE na leitura da repetidora de rumo?",
     "options": [
       "Leitura na repetidora MAIOR que o rumo verdadeiro.",
       "Leitura na repetidora MENOR que o rumo verdadeiro.",
       "Erro causado por turbulência no balístico.",
       "Leitura igual a 000° em qualquer latitude."
     ],
-    "answer": "Leitura na repetidora MAIOR que o rumo verdadeiro."
+    "answer": "Leitura na repetidora MAIOR que o rumo verdadeiro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Para rumo sul ocorreria o contrário (Erro leste), entretanto, se o rumo for leste ou oeste verdadeiro, o movimento do navio não tenderia a inclinar a giro uma vez que a veloci- dade do navio estaria no mesmo ângulo que o rotor do giroscópio (Sem erro)."
   },
   {
-"question": "Quanto ao ERRO DE LATITUDE (devido ao posicionamento global), quais são os sinais dos erros nos Hemisférios Norte e Sul?",
+    "question": "Quanto ao ERRO DE LATITUDE (devido ao posicionamento global), quais são os sinais dos erros nos Hemisférios Norte e Sul?",
     "options": [
       "Hemisfério Norte: Erro Oeste / Hemisfério Sul: Erro Leste.",
       "Hemisfério Norte: Erro Leste / Hemisfério Sul: Erro Oeste.",
       "Ambas as regiões apresentam Erro Leste.",
       "Não há erro de latitude em nenhum hemisfério."
     ],
-    "answer": "Hemisfério Norte: Erro Leste / Hemisfério Sul: Erro Oeste."
+    "answer": "Hemisfério Norte: Erro Leste / Hemisfério Sul: Erro Oeste.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Como resultado, o eixo do giroscópio supera o movimento da Terra e orienta – se com a extremidade norte levantado e a “leste” do meridiano nas latitudes norte (Erro leste) ou com a extremidade norte para baixo e a “oeste” do meridiano nas latitudes sul (Erro oeste)."
   },
   {
-"question": "Em qual situação um navio NÃO apresentará Erro de Latitude?",
+    "question": "Em qual situação um navio NÃO apresentará Erro de Latitude?",
     "options": [
       "Quando estiver navegando nos pólos em alta velocidade.",
       "Quando estiver no EQUADOR deslocando-se nos rumos Leste/Oeste (090° ou 270°).",
       "Quando estiver navegando no rumo 000° na latitude de 45°.",
       "Quando o torquer de nível estiver desligado."
     ],
-    "answer": "Quando estiver no EQUADOR deslocando-se nos rumos Leste/Oeste (090° ou 270°)."
+    "answer": "Quando estiver no EQUADOR deslocando-se nos rumos Leste/Oeste (090° ou 270°).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Com o giroscópio no Equador, o eixo na horizontal apontado na direção Leste-Oeste, e  girando no sentido dos ponteiros do relógio (visto do lado Oeste - ponto A na fig."
   },
   {
-"question": "Com relação ao ERRO DE VELOCIDADE, RUMO E LATITUDE (erro de proa), qual o sinal do erro para um navio no Hemisfério Sul navegando em rumo Norte (271° a 089°)?",
+    "question": "Com relação ao ERRO DE VELOCIDADE, RUMO E LATITUDE (erro de proa), qual o sinal do erro para um navio no Hemisfério Sul navegando em rumo Norte (271° a 089°)?",
     "options": [
       "Erro Leste.",
       "Erro Oeste.",
       "Nulo.",
       "Depende apenas do balístico de líquido."
     ],
-    "answer": "Erro Leste."
+    "answer": "Erro Leste.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Se uma Agulha Giroscópica for nivelada e colocada sobre o Meridiano, no Equador, onde somente a componente “HER” afeta a agulha, ela se orienta no Meridiano apon- tando para o norte (sem erro) com seu eixo de rotação nivelado, em uma latitude nor- te, o movimento vertical da Terra (VER) faria com que a extremidade “Norte” da giro se deslocasse para o Leste."
   },
   {
-"question": "Quadro explicativo dos erros de agulha giroscópica:",
+    "question": "Quadro explicativo dos erros de agulha giroscópica:",
     "options": [
       "Leste / Oeste / Leste / Oeste / Nulo",
       "Leste / Leste / Leste / Leste / Nulo",
       "Oeste / Oeste / Oeste / Oeste / Nulo",
       "Nulo / Nulo / Nulo / Nulo / Nulo"
     ],
-    "answer": "Leste / Oeste / Leste / Oeste / Nulo"
+    "answer": "Leste / Oeste / Leste / Oeste / Nulo",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Com o giroscópio no Equador, o eixo na horizontal apontado na direção Leste-Oeste, e  girando no sentido dos ponteiros do relógio (visto do lado Oeste - ponto A na fig."
   },
   {
-"question": "Quais os quatro fenômenos dos quais depende a operação da agulha giroscópica?",
+    "question": "Quais os quatro fenômenos dos quais depende a operação da agulha giroscópica?",
     "options": [
       "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez.",
       "Nível eletrolítico.",
       "Inerentes ao giroscópio: rigidez no espaço e precessão. Referentes à Terra: força de gravidade e rotação da Terra.",
       "Grande proteção contra choques mecânicos, reduz os efeitos da aceleração, imersão dos elementos em óleo oferece grande proteção contra agentes oxidantes, o peso da girosfera é removido dos rolamentos do eixo vertical devido à flutuação neutra."
     ],
-    "answer": "Inerentes ao giroscópio: rigidez no espaço e precessão. Referentes à Terra: força de gravidade e rotação da Terra."
+    "answer": "Inerentes ao giroscópio: rigidez no espaço e precessão. Referentes à Terra: força de gravidade e rotação da Terra.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Dos quatro (4) fenômenos dos quais depende a operação da agulha giroscópica, os dois (2) primeiros são propriedades inerentes ao giroscópio, denominados de rigidez no espa- ço (inércia giroscópica e precessão, os outros dois (2) referem - se à terra e são denomi- nados de força de gravidade e rotação da terra (HER)."
   },
   {
-"question": "Defina giroscópio e seus graus de liberdade.",
+    "question": "Defina giroscópio e seus graus de liberdade.",
     "options": [
       "É a rotação do giroscópio em relação à sua base, assim observada.",
       "Quanto ao ponto de observação.",
       "Consiste de um rotor perfeitamente balanceado livre para girar em torno de três eixos perpendiculares entre si: eixo de rotação, eixo horizontal e eixo vertical.",
       "Essas agulhas utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento."
     ],
-    "answer": "Consiste de um rotor perfeitamente balanceado livre para girar em torno de três eixos perpendiculares entre si: eixo de rotação, eixo horizontal e eixo vertical."
+    "answer": "Consiste de um rotor perfeitamente balanceado livre para girar em torno de três eixos perpendiculares entre si: eixo de rotação, eixo horizontal e eixo vertical.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - GIROSCÓPIO Um giroscópio básico, figura 1.1, consiste de um rotor (disco) perfeitamente balancea- do, livre para girar em torno de três (3) eixos perpendiculares entre si, que se interceptam no seu centro de gravidade."
   },
   {
-"question": "Defina rigidez no espaço ou inércia giroscópica.",
+    "question": "Defina rigidez no espaço ou inércia giroscópica.",
     "options": [
       "VERTICAL.",
       "A leitura na rosa será maior que o rumo verdadeiro (maior que a real).",
       "Consiste de um núcleo de ferro laminado, em forma \"E\" com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento central é o primário e os dois enrolamentos laterais são os secundários, que são enrolados em série e opostos. O acoplamento magnético entre primário e secundários varia com a posição da armadura.",
       "Propriedade que têm os corpos girantes de conservarem seu plano inicial de rotação."
     ],
-    "answer": "Propriedade que têm os corpos girantes de conservarem seu plano inicial de rotação."
+    "answer": "Propriedade que têm os corpos girantes de conservarem seu plano inicial de rotação.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 1.2 – Rigidez no Espaço OSTENSIVO CIAA-117/037 OSTENSIVO ORIGINAL Se o rotor do giroscópio estiver parado, o atrito nos rolamentos causará a inclinação do rotor devido à inclinação da base; entretanto, se rotor estiver girando, ele manterá o seu plano original de rotação."
   },
   {
-"question": "De que fatores depende a rigidez no espaço ou inércia giroscópica?",
+    "question": "De que fatores depende a rigidez no espaço ou inércia giroscópica?",
     "options": [
       "Inerentes ao giroscópio: rigidez no espaço e precessão. Referentes à Terra: força de gravidade e rotação da Terra.",
       "Velocidade angular, peso e raio de giro.",
       "Quanto ao ponto de observação.",
       "A bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos inferiores é igual."
     ],
-    "answer": "Velocidade angular, peso e raio de giro."
+    "answer": "Velocidade angular, peso e raio de giro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: A inércia giroscópica depende da velocidade angular, do peso e do raio de rotação de cada massa elementar."
   },
   {
-"question": "Defina precessão.",
+    "question": "Defina precessão.",
     "options": [
       "A leitura na rosa será maior que o rumo verdadeiro (maior que a real).",
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
       "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.",
       "VERTICAL."
     ],
-    "answer": "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
+    "answer": "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - PRECESSÃO Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
   },
   {
-"question": "O que é razão de precessão?",
+    "question": "O que é razão de precessão?",
     "options": [
       "Para leste no hemisfério norte (Erro leste) ou para oeste no hemisfério sul (Erro oeste).",
       "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera.",
       "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montados na girosfera. Quando há uma inclinação do conjunto (devido à HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.",
       "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez."
     ],
-    "answer": "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez."
+    "answer": "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - PRECESSÃO Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
   },
   {
-"question": "O que é rotação ou movimento aparente?",
+    "question": "O que é rotação ou movimento aparente?",
     "options": [
       "É a rotação do giroscópio em relação à sua base, assim observada.",
       "Quando a leitura na rosa é menor que a verdadeira.",
       "Utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é applied aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra.",
       "Acelerômetro."
     ],
-    "answer": "É a rotação do giroscópio em relação à sua base, assim observada."
+    "answer": "É a rotação do giroscópio em relação à sua base, assim observada.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2.1 - Giroscópio - GIRÔMETRO Um girômetro em sua forma mais simples, como mostrado na Fig.2.2, Pode ser defini- do como um rotor montado sob uma estrutura que permite liberdade de inclinação do eixo de rotação em relação à base na qual está fixado."
   },
   {
-"question": "Onde o giroscópio é montado?",
+    "question": "Onde o giroscópio é montado?",
     "options": [
       "Consiste de um núcleo de ferro laminado, em forma \"E\" com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento central é o primário e os dois enrolamentos laterais são os secundários, que são enrolados em série e opostos. O acoplamento magnético entre primário e secundários varia com a posição da armadura.",
       "Temos como exemplo as agulhas MK-27, 227, etc.",
       "É montado em uma esfera, e a esfera sustentada pelo anel vertical. A esfera e o anel vertical são montados em uma base chamada fantasma.",
       "Propriedade que têm os corpos girantes de conservarem seu plano inicial de rotação."
     ],
-    "answer": "É montado em uma esfera, e a esfera sustentada pelo anel vertical. A esfera e o anel vertical são montados em uma base chamada fantasma."
+    "answer": "É montado em uma esfera, e a esfera sustentada pelo anel vertical. A esfera e o anel vertical são montados em uma base chamada fantasma.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 1.10, o giroscópio é montado em uma esfera, e a esfera é sustentada pelo anel vertical."
   },
   {
-"question": "Qual o primeiro passo para transformar um giroscópio em uma agulha giroscópica?",
+    "question": "Qual o primeiro passo para transformar um giroscópio em uma agulha giroscópica?",
     "options": [
       "Fazê-lo procurar o meridiano.",
       "Nível eletrolítico.",
       "Essas agulhas utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento.",
       "VERTICAL."
     ],
-    "answer": "Fazê-lo procurar o meridiano."
+    "answer": "Fazê-lo procurar o meridiano.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Uma vez que o norte é a direção representada por uma linha horizontal no plano meridi- ano, alguns meios devem ser empregados para: a) fazer o eixo do giroscópio procurar o plano de meridiano; b) fazer o eixo nivelar; e c) fazê-lo manter sua posição, uma vez encontrada."
   },
   {
-"question": "Qual efeito o peso W causa no giroscópio?",
+    "question": "Qual efeito o peso W causa no giroscópio?",
     "options": [
       "Essas agulhas utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento.",
       "Quanto ao ponto de observação.",
       "Para fazer com que o anel vertical se torne pendular em relação ao eixo horizontal, o peso W é elevado contra a ação da força de gravidade e consequentemente causa um torque no eixo horizontal do giroscópio.",
       "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo."
     ],
-    "answer": "Para fazer com que o anel vertical se torne pendular em relação ao eixo horizontal, o peso W é elevado contra a ação da força de gravidade e consequentemente causa um torque no eixo horizontal do giroscópio."
+    "answer": "Para fazer com que o anel vertical se torne pendular em relação ao eixo horizontal, o peso W é elevado contra a ação da força de gravidade e consequentemente causa um torque no eixo horizontal do giroscópio.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O peso W é elevado contra a a- OSTENSIVO CIAA-117/037 1-11 OSTENSIVO ORIGINAL ção da força de gravidade e conseqüentemente causa um torque no eixo horizontal do giroscópio."
   },
   {
-"question": "Descreva o efeito do peso W1 adicionado ao giroscópio procurador e indicador do Norte.",
+    "question": "Descreva o efeito do peso W1 adicionado ao giroscópio procurador e indicador do Norte.",
     "options": [
       "Quanto ao ponto de observação.",
       "Fazê-lo procurar o meridiano.",
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, ao invés de um caminho elíptico. O giroscópio livre foi convertido em agulha giroscópica."
     ],
-    "answer": "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, ao invés de um caminho elíptico. O giroscópio livre foi convertido em agulha giroscópica."
+    "answer": "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, ao invés de um caminho elíptico. O giroscópio livre foi convertido em agulha giroscópica.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Deste modo, o peso W1 adicionado causa a redu- ção da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um ca- minho espiral, como mostrado na fig."
   },
   {
-"question": "A diferença entre inércia giroscópica e rotação aparente é?",
+    "question": "A diferença entre inércia giroscópica e rotação aparente é?",
     "options": [
       "Grande proteção contra choques mecânicos, reduz os efeitos da aceleração, imersão dos elementos em óleo oferece grande proteção contra agentes oxidantes, o peso da girosfera é removido dos rolamentos do eixo vertical devido à flutuação neutra.",
       "VERTICAL.",
       "É a rotação do giroscópio em relação à sua base, assim observada.",
       "Quanto ao ponto de observação."
     ],
-    "answer": "Quanto ao ponto de observação."
+    "answer": "Quanto ao ponto de observação.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Portanto, a diferença entre a inércia giroscópica e rotação aparente é simplesmente quanto ao ponto de observação."
   },
   {
-"question": "O tempo em minutos exigido para a oscilação completa é chamado?",
+    "question": "O tempo em minutos exigido para a oscilação completa é chamado?",
     "options": [
       "Temos como exemplo as agulhas MK-27, 227, etc.",
       "Quanto ao ponto de observação.",
       "Período de oscilação. (Pode ser modificado variando o peso no fundo do anel vertical).",
       "Para fazer com que o anel vertical se torne pendular em relação ao eixo horizontal, o peso W é elevado contra a ação da força de gravidade e consequentemente causa um torque no eixo horizontal do giroscópio."
     ],
-    "answer": "Período de oscilação. (Pode ser modificado variando o peso no fundo do anel vertical)."
+    "answer": "Período de oscilação. (Pode ser modificado variando o peso no fundo do anel vertical).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O período pode ser modificado vari- ando o peso no fundo do anel vertical."
   },
   {
-"question": "Quais as vantagens que as agulhas dotadas de girosfera proporcionam sobre agulhas anteriores?",
+    "question": "Quais as vantagens que as agulhas dotadas de girosfera proporcionam sobre agulhas anteriores?",
     "options": [
       "Grande proteção contra choques mecânicos, reduz os efeitos da aceleração, imersão dos elementos em óleo oferece grande proteção contra agentes oxidantes, o peso da girosfera é removido dos rolamentos do eixo vertical devido à flutuação neutra.",
       "É a rotação do giroscópio em relação à sua base, assim observada.",
       "Nível eletrolítico.",
       "Quando a leitura na rosa é menor que a verdadeira."
     ],
-    "answer": "Grande proteção contra choques mecânicos, reduz os efeitos da aceleração, imersão dos elementos em óleo oferece grande proteção contra agentes oxidantes, o peso da girosfera é removido dos rolamentos do eixo vertical devido à flutuação neutra."
+    "answer": "Grande proteção contra choques mecânicos, reduz os efeitos da aceleração, imersão dos elementos em óleo oferece grande proteção contra agentes oxidantes, o peso da girosfera é removido dos rolamentos do eixo vertical devido à flutuação neutra.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas características proporcionam, sobre as agulhas anteriores, as seguintes vantagens: 1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra; 2ª - Oferece grande proteção contra choques mecânicos; CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-15 3ª - Reduz os efeitos da aceleração; 4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento  em gás hélio; e 5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxi-  dantes."
   },
   {
-"question": "Para que serve o gás Hélio no interior da esfera?",
+    "question": "Para que serve o gás Hélio no interior da esfera?",
     "options": [
       "Temos como exemplo as agulhas MK-27, 227, etc.",
       "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera.",
       "Fazê-lo procurar o meridiano.",
       "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez."
     ],
-    "answer": "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera."
+    "answer": "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - O gás hélio além de fornecer um empuxo para a flutuação neutra, transfere o ca-  lor produzido pelo motor, para a superfície interna da esfera."
   },
   {
-"question": "Como podem ser classificadas as agulhas giroscópicas quanto ao sistema de controle?",
+    "question": "Como podem ser classificadas as agulhas giroscópicas quanto ao sistema de controle?",
     "options": [
       "Consiste de uma estrutura tipo \"E\" aberta (sem armadura) de lâminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle. Os campos são defasados de 90° elétricos tal qual um motor de indução bifásico. O campo fixo ou de referência é excitado pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque.",
       "Suprimir as oscilações do rotor em tempo do meridiano, este peso é colocado no lado leste da esfera.",
       "É a rotação do giroscópio em relação à sua base, assim observada.",
       "Com controle mecânico e eletrônico."
     ],
-    "answer": "Com controle mecânico e eletrônico."
+    "answer": "Com controle mecânico e eletrônico.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: b) Quanto ao sistema de controle As agulhas dotadas de girosfera utilizam também a força de gravidade para procurar e  indicar o norte verdadeiro da terra, e podem ser com controle mecânico ou eletrônico."
   },
   {
-"question": "Cite os modelos de agulhas que utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivelamento).",
+    "question": "Cite os modelos de agulhas que utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivelamento).",
     "options": [
       "Propriedade que têm os corpos girantes de conservarem seu plano inicial de rotação.",
       "Temos como exemplo as agulhas MK-27, 227, etc.",
       "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez.",
       "Horizontal."
     ],
-    "answer": "Temos como exemplo as agulhas MK-27, 227, etc."
+    "answer": "Temos como exemplo as agulhas MK-27, 227, etc.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Temos como exemplo as agulhas MK - 27, 227, etc."
   },
   {
-"question": "Descreva o balístico de óleo.",
+    "question": "Descreva o balístico de óleo.",
     "options": [
       "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montados na girosfera. Quando há uma inclinação do conjunto (devido à HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.",
       "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera.",
       "Acelerômetro.",
       "É a rotação do giroscópio em relação à sua base, assim observada."
     ],
-    "answer": "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montados na girosfera. Quando há uma inclinação do conjunto (devido à HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte."
+    "answer": "Consiste de dois (2) reservatórios, interligados por um tubo, parcialmente cheios de óleo, montados na girosfera. Quando há uma inclinação do conjunto (devido à HER), o óleo se escoa para o reservatório mais baixo, aplicando um torque no rotor, fazendo o conjunto procurar o norte.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando há uma inclinação do con- CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-16 junto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um tor-  que no rotor, fazendo o conjunto procurar o norte."
   },
   {
-"question": "Discorra sobre agulhas com controle mecânico.",
+    "question": "Discorra sobre agulhas com controle mecânico.",
     "options": [
       "Essas agulhas utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento.",
       "Nível eletrolítico.",
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
       "Temos como exemplo as agulhas MK-27, 227, etc."
     ],
-    "answer": "Essas agulhas utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento."
+    "answer": "Essas agulhas utilizam um balístico de líquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas agulhas utilizam um balístico de liquido (óleo) para aplicar o torque de controle azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivela- mento)."
   },
   {
-"question": "Descreva o princípio de funcionamento das agulhas com controle eletrônico.",
+    "question": "Descreva o princípio de funcionamento das agulhas com controle eletrônico.",
     "options": [
       "Consiste de um rotor perfeitamente balanceado livre para girar em torno de três eixos perpendiculares entre si: eixo de rotação, eixo horizontal e eixo vertical.",
       "Utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é applied aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra.",
       "Consiste de um núcleo de ferro laminado, em forma \"E\" com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento central é o primário e os dois enrolamentos laterais são os secundários, que são enrolados em série e opostos. O acoplamento magnético entre primário e secundários varia com a posição da armadura.",
       "Horizontal."
     ],
-    "answer": "Utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é applied aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra."
+    "answer": "Utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é applied aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando há uma inclinação  do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a  esta inclinação, que depois de amplificado é aplicado aos produtores de torques, para  procurar e indicar o norte verdadeiro da Terra."
   },
   {
-"question": "Cite exemplos de agulhas com controle eletrônico.",
+    "question": "Cite exemplos de agulhas com controle eletrônico.",
     "options": [
       "Temos como exemplo as agulhas MK-27, 227, etc.",
       "MK-19, 23, etc.",
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral, ao invés de um caminho elíptico. O giroscópio livre foi convertido em agulha giroscópica.",
       "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera."
     ],
-    "answer": "MK-19, 23, etc."
+    "answer": "MK-19, 23, etc.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 3-32 3.15 – Operação do sistema.....................................................................................3-35 3.16 – Operação da RCDU e Funções do display...................................................3-38 3.17 – Procedimentos para operação do teclado e menus.......................................3-39 3.18 – FIM / PC.........................................................................................................3-42 3.19 – Sistema de alarmes........................................................................................3-43 3.20 – Manutenção...................................................................................................3-45 ANEXO A - Bibliografia...........................................................................................A-1 OSTENSIVO CIAA-117/037 - V - OSTENSIVO ORIGINAL INTRODUÇÃO 1 - PROPÓSITO Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu- lhas giroscópicas e sistemas de navegação inercial."
   },
   {
-"question": "Quais os componentes utilizados nas agulhas giroscópicas?",
+    "question": "Quais os componentes utilizados nas agulhas giroscópicas?",
     "options": [
       "Nível eletrolítico, produtor de torque e pickoff.",
       "Inerentes ao giroscópio: rigidez no espaço e precessão. Referentes à Terra: força de gravidade e rotação da Terra.",
       "Utilizam um sistema de controle composto por um sensor de inclinação (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores de torques (torquer) de controle azimutal e amortecimento. Quando há uma inclinação do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a esta inclinação, que depois de amplificado é applied aos produtores de torques, para procurar e indicar o norte verdadeiro da Terra.",
       "VERTICAL."
     ],
-    "answer": "Nível eletrolítico, produtor de torque e pickoff."
+    "answer": "Nível eletrolítico, produtor de torque e pickoff.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O sinal de inclinação, proveniente do sensor (nível eletrolítico), aplicará torques em torno dos eixos vertical e horizontal reduzindo a incli- nação e precessionando a giro de volta ao Meridiano, o que, em última análise é o que se deseja, entretanto, assim que a giro se orienta, seu eixo alcance posições onde: 1º - A precessão devido ao torque de controle azimutal balanceie o movimento aparente devido ao “VER”."
   },
   {
-"question": "Descreva o nível eletrolítico.",
+    "question": "Descreva o nível eletrolítico.",
     "options": [
       "A leitura na rosa será maior que o rumo verdadeiro (maior que a real).",
       "Suprimir as oscilações do rotor em tempo do meridiano, este peso é colocado no lado leste da esfera.",
       "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.",
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor."
     ],
-    "answer": "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo."
+    "answer": "Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcialmente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: c) Componentes utilizados nas agulhas giroscópicas 1 - Nível eletrolítico Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcial- mente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo, como mostra a figura 1.17."
   },
   {
-"question": "Quando o nível eletrolítico estiver na horizontal o que acontecerá?",
+    "question": "Quando o nível eletrolítico estiver na horizontal o que acontecerá?",
     "options": [
       "MK-19, 23, etc.",
       "A bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos inferiores é igual.",
       "Para leste no hemisfério norte (Erro leste) ou para oeste no hemisfério sul (Erro oeste).",
       "Consiste de uma estrutura tipo \"E\" aberta (sem armadura) de lâminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle. Os campos são defasados de 90° elétricos tal qual um motor de indução bifásico. O campo fixo ou de referência é excitado pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
     ],
-    "answer": "A bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos inferiores é igual."
+    "answer": "A bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos inferiores é igual.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando o nível estiver na horizontal (indicando que o eixo de rotação do giroscópio está nivelado) a bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-17 inferiores é igual."
   },
   {
-"question": "Descreva o produtor de torque (torquer).",
+    "question": "Descreva o produtor de torque (torquer).",
     "options": [
       "VERTICAL.",
       "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera.",
       "Inerentes ao giroscópio: rigidez no espaço e precessão. Referentes à Terra: força de gravidade e rotação da Terra.",
       "Consiste de uma estrutura tipo \"E\" aberta (sem armadura) de lâminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle. Os campos são defasados de 90° elétricos tal qual um motor de indução bifásico. O campo fixo ou de referência é excitado pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
     ],
-    "answer": "Consiste de uma estrutura tipo \"E\" aberta (sem armadura) de lâminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle. Os campos são defasados de 90° elétricos tal qual um motor de indução bifásico. O campo fixo ou de referência é excitado pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
+    "answer": "Consiste de uma estrutura tipo \"E\" aberta (sem armadura) de lâminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos laterais são os campos de controle. Os campos são defasados de 90° elétricos tal qual um motor de indução bifásico. O campo fixo ou de referência é excitado pela alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2 - Produtor de torques (torquer) Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos late- rais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-19 alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
   },
   {
-"question": "Descreva o pickoff e seu princípio de funcionamento.",
+    "question": "Descreva o pickoff e seu princípio de funcionamento.",
     "options": [
       "É a relação entre o torque aplicado ao rotor do giroscópio e a sua rigidez.",
       "Consiste de um núcleo de ferro laminado, em forma \"E\" com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento central é o primário e os dois enrolamentos laterais são os secundários, que são enrolados em série e opostos. O acoplamento magnético entre primário e secundários varia com a posição da armadura.",
       "Quando a leitura na rosa é menor que a verdadeira.",
       "VERTICAL."
     ],
-    "answer": "Consiste de um núcleo de ferro laminado, em forma \"E\" com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento central é o primário e os dois enrolamentos laterais são os secundários, que são enrolados em série e opostos. O acoplamento magnético entre primário e secundários varia com a posição da armadura."
+    "answer": "Consiste de um núcleo de ferro laminado, em forma \"E\" com três enrolamentos (bobinas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo. O enrolamento central é o primário e os dois enrolamentos laterais são os secundários, que são enrolados em série e opostos. O acoplamento magnético entre primário e secundários varia com a posição da armadura.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - 1.19 - Produtor de torques (torquer) 3 - Pickoff (transformador tipo “E”) Consiste de um núcleo de ferro laminado, em forma de “E” com três enrolamentos (bo- binas) e uma armadura de ferro, móvel em relação ao transformador, que completa o núcleo."
   },
   {
-"question": "Descreva o erro LESTE.",
+    "question": "Descreva o erro LESTE.",
     "options": [
       "Inerentes ao giroscópio: rigidez no espaço e precessão. Referentes à Terra: força de gravidade e rotação da Terra.",
       "Além de fornecer um empuxo para flutuação neutra, transfere o calor produzido pelo motor para a superfície interna da esfera.",
       "A leitura na rosa será maior que o rumo verdadeiro (maior que a real).",
       "Quando a leitura na rosa é menor que a verdadeira."
     ],
-    "answer": "Quando a leitura na rosa é menor que a verdadeira."
+    "answer": "Quando a leitura na rosa é menor que a verdadeira.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando a inclinação se torna menor, a velocidade horizontal e a precessão azimute diminuem."
   },
   {
-"question": "A Terra é um esferóide achatado nas partes superior e inferior, dividida primariamente por uma linha imaginária (equador) em dois hemisférios. Quais são eles?",
+    "question": "A Terra é um esferóide achatado nas partes superior e inferior, dividida primariamente por uma linha imaginária (equador) em dois hemisférios. Quais são eles?",
     "options": [
       "1ª - Peso removido dos rolamentos do eixo vertical pela flutuação neutra; 2ª - Grande proteção contra choques mecânicos; 3ª Reduz efeitos da aceleração; 4ª - Trabalho do motor facilitado por gás hélio; 5ª - Imersão em óleo protege contra agentes oxidantes.",
       "NORTE E SUL.",
       "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial (1ª Lei de Newton).",
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral até estabilizar no meridiano."
     ],
-    "answer": "NORTE E SUL."
+    "answer": "NORTE E SUL.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Na busca por um equipamento que indicasse o norte verdadeiro, em vez do norte magné- tico, a agulha giroscópica foi desenvolvida, pelos norte - americanos, nas primeiras dé-  cadas do século 20 (1911), tendo como base um único giroscópio."
   },
   {
-"question": "Qual a linha (meridiano) que serve como ponto de partida convencionado como Meridiano Zero?",
+    "question": "Qual a linha (meridiano) que serve como ponto de partida convencionado como Meridiano Zero?",
     "options": [
       "VL = 900 x Cos(Latitude).",
       "Meridiano de Greenwich (Inglaterra).",
       "Acelerômetro.",
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral até estabilizar no meridiano."
     ],
-    "answer": "Meridiano de Greenwich (Inglaterra)."
+    "answer": "Meridiano de Greenwich (Inglaterra).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Uma vez que o norte é a direção representada por uma linha horizontal no plano meridi- ano, alguns meios devem ser empregados para: a) fazer o eixo do giroscópio procurar o plano de meridiano; b) fazer o eixo nivelar; e c) fazê-lo manter sua posição, uma vez encontrada."
   },
   {
-"question": "Entre o EQUADOR e os PÓLOS há diversas linhas paralelas formando circunferências que diminuem de perímetro à medida que se aproximam dos PÓLOS. Como são chamadas essas linhas?",
+    "question": "Entre o EQUADOR e os PÓLOS há diversas linhas paralelas formando circunferências que diminuem de perímetro à medida que se aproximam dos PÓLOS. Como são chamadas essas linhas?",
     "options": [
       "a) MERIDIANOS; b) O ponto de partida é o meridiano de Greenwich (Meridiano Zero), contando-se até 180° de longitude Leste e 180° de longitude Oeste.",
       "Vertical (VER).",
       "Consiste em dois reservatórios interligados por tubo com óleo. Com a inclinação (HER), o óleo escoa para o reservatório mais baixo, aplicando torque no rotor para procurar o norte.",
       "PARALELOS."
     ],
-    "answer": "PARALELOS."
+    "answer": "PARALELOS.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Os eixos são orto- gonais coincidentes, ou seja, os eixos sensíveis dos giros e dos acelerômetros devem ser coincidentes (paralelos) e formado ângulos de noventa graus entre si, como mos- tra a figura 2.19, para que possam realizar transformações de coordenadas."
   },
   {
-"question": "Descreva a fórmula da velocidade linear da Terra, no EQUADO",
+    "question": "Descreva a fórmula da velocidade linear da Terra, no EQUADO",
     "options": [
       "0° a 90° NORTE e 0° a 90° SUL.",
       "R: VL = 21.600 milhas / 24H = 900 milhas/hora.",
       "Latitude 0°: VER = 0°/h, HER = 15°/h (Máximo) Latitude 30°: VER = 7,5°/h, HER = 12,99°/h Latitude 60°: VER = 12,99°/h, HER = 7,5°/h Latitude 90°: VER = 15°/h (Máximo), HER = 0°/h",
       "Precessiona em torno do eixo Horizontal (P)."
     ],
-    "answer": "R: VL = 21.600 milhas / 24H = 900 milhas/hora."
+    "answer": "R: VL = 21.600 milhas / 24H = 900 milhas/hora.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Analisando a figura 1.9, chegamos a conclusão que a velocidade angular da Terra (ER) é igual à 15 graus por hora, desta forma, teremos: Ponto     “A”     Latitude     zero     (0°)      Sen."
   },
   {
-"question": "À medida que aumenta a latitude, a velocidade linear diminui. Descreva a fórmula da velocidade linear em qualquer ponto da superfície da Terra:",
+    "question": "À medida que aumenta a latitude, a velocidade linear diminui. Descreva a fórmula da velocidade linear em qualquer ponto da superfície da Terra:",
     "options": [
       "a) MERIDIANOS; b) O ponto de partida é o meridiano de Greenwich (Meridiano Zero), contando-se até 180° de longitude Leste e 180° de longitude Oeste.",
       "Utilizam sensor de inclinação (nível eletrolítico), amplificadores e torquers. Ao detectar inclinação, gera sinal proporcional amplificado para os torquers corrigirem a posição.",
       "0° a 90° NORTE e 0° a 90° SUL.",
       "VL = 900 x Cos(Latitude)."
     ],
-    "answer": "VL = 900 x Cos(Latitude)."
+    "answer": "VL = 900 x Cos(Latitude).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: As agulhas giroscópicas são cada vez mais utilizadas a bordo dos navios modernos, não apenas como referência para obtenção de rumos e posições para a navegação, mas tam- bém como componentes básicos de um sistema de navegação inercial, provendo dados de rumo, posição (latitude e longitude), balanço e caturro, para os sistemas de armas e sistemas integrados de navegação."
   },
   {
-"question": "Se um torque for aplicado em torno do eixo vertical (T), o rotor precessiona em torno de qual eixo?",
+    "question": "Se um torque for aplicado em torno do eixo vertical (T), o rotor precessiona em torno de qual eixo?",
     "options": [
       "O rotor parecerá girar em torno do seu eixo horizontal com velocidade igual (15°/H / 360° em 24h), mas direção oposta à rotação da Terra.",
       "PARALELOS.",
       "Consiste em dois reservatórios interligados por tubo com óleo. Com a inclinação (HER), o óleo escoa para o reservatório mais baixo, aplicando torque no rotor para procurar o norte.",
       "Precessiona em torno do eixo Horizontal (P)."
     ],
-    "answer": "Precessiona em torno do eixo Horizontal (P)."
+    "answer": "Precessiona em torno do eixo Horizontal (P).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Diz - se assim, que o giroscópio tem três (3) graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos, denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical."
   },
   {
-"question": "Supondo o rotor no Equador com eixo Leste-Oeste, qual a rotação aparente observada?",
+    "question": "Supondo o rotor no Equador com eixo Leste-Oeste, qual a rotação aparente observada?",
     "options": [
       "Nível eletrolítico.",
       "O rotor parecerá girar em torno do seu eixo horizontal com velocidade igual (15°/H / 360° em 24h), mas direção oposta à rotação da Terra.",
       "Tenderá para Oeste navegando com rumo Norte (em qualquer hemisfério). Navegando com rumo Sul, o erro será Leste.",
       "Acelerômetro."
     ],
-    "answer": "O rotor parecerá girar em torno do seu eixo horizontal com velocidade igual (15°/H / 360° em 24h), mas direção oposta à rotação da Terra."
+    "answer": "O rotor parecerá girar em torno do seu eixo horizontal com velocidade igual (15°/H / 360° em 24h), mas direção oposta à rotação da Terra.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Se o observador estiver sobre a Terra, o rotor parecerá girar em torno do seu eixo hori- zontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas)."
   },
   {
-"question": "Supondo o rotor no Pólo Norte ou Pólo Sul com eixo horizontal, qual a rotação aparente observada?",
+    "question": "Supondo o rotor no Pólo Norte ou Pólo Sul com eixo horizontal, qual a rotação aparente observada?",
     "options": [
       "Rumo Verdadeiro = Rumo Lido - Erro Leste (+ se Erro Oeste). Ex: Se Erro for Leste, Leitura < Verdadeiro.",
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
       "O rotor parecerá girar em torno de seu eixo vertical (Reite Vertical da Terra - VER).",
       "Tornar o anel vertical pendular, aplicando torque de gravidade quando a ponta se eleva ou abaixa para gerar precessão em direção ao meridiano."
     ],
-    "answer": "O rotor parecerá girar em torno de seu eixo vertical (Reite Vertical da Terra - VER)."
+    "answer": "O rotor parecerá girar em torno de seu eixo vertical (Reite Vertical da Terra - VER).",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Se o observador estiver sobre a Terra, o rotor parecerá girar em torno do seu eixo hori- zontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação 360º em 24 horas)."
   },
   {
-"question": "Descreva as fórmulas de HER e VE",
+    "question": "Descreva as fórmulas de HER e VE",
     "options": [
       "R: a) HER = 15°/H × Cos(lat); b) VER = 15°/H × Sen(lat).",
       "Núcleo de ferro laminado em \"E\" com 3 enrolamentos e armadura móvel. Primário central, secundários laterais em série oposta. O acoplamento varia com a posição da armadura.",
       "Tornar o anel vertical pendular, aplicando torque de gravidade quando a ponta se eleva ou abaixa para gerar precessão em direção ao meridiano.",
       "Meridiano de Greenwich (Inglaterra)."
     ],
-    "answer": "R: a) HER = 15°/H × Cos(lat); b) VER = 15°/H × Sen(lat)."
+    "answer": "R: a) HER = 15°/H × Cos(lat); b) VER = 15°/H × Sen(lat).",
+    "topic": "2.1 - Introdução...................................................................................................",
+    "explanation": "Conforme o manual: 2-1"
   },
   {
-"question": "Calcule os valores de HER e VER nos pontos:",
+    "question": "Calcule os valores de HER e VER nos pontos:",
     "options": [
       "Erro Leste: Leitura < Rumo Real. Erro Oeste: Leitura > Rumo Real.",
       "Meridiano de Greenwich (Inglaterra).",
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
       "Latitude 0°: VER = 0°/h, HER = 15°/h (Máximo) Latitude 30°: VER = 7,5°/h, HER = 12,99°/h Latitude 60°: VER = 12,99°/h, HER = 7,5°/h Latitude 90°: VER = 15°/h (Máximo), HER = 0°/h"
     ],
-    "answer": "Latitude 0°: VER = 0°/h, HER = 15°/h (Máximo) Latitude 30°: VER = 7,5°/h, HER = 12,99°/h Latitude 60°: VER = 12,99°/h, HER = 7,5°/h Latitude 90°: VER = 15°/h (Máximo), HER = 0°/h"
+    "answer": "Latitude 0°: VER = 0°/h, HER = 15°/h (Máximo) Latitude 30°: VER = 7,5°/h, HER = 12,99°/h Latitude 60°: VER = 12,99°/h, HER = 7,5°/h Latitude 90°: VER = 15°/h (Máximo), HER = 0°/h",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: O efeito da Reite Horizontal da Terra é máximo no equador e zero nos pólos e varia com o co-seno da latitude, enquanto que o efeito da Reite Vertical da Terra variará com o seno da lati- tude, sendo máximo nos pólos e zero no Equador, desta forma, seus valores podem ser determinados, em qualquer ponto da Terra, utilizando as seguintes expressões: HER = ER."
   },
   {
-"question": "Qual é a função do peso W no giroscópio para procurar o meridiano?",
+    "question": "Qual é a função do peso W no giroscópio para procurar o meridiano?",
     "options": [
       "Horizontal (HER).",
       "R: a) HER = 15°/H × Cos(lat); b) VER = 15°/H × Sen(lat).",
       "Tenderá para Oeste navegando com rumo Norte (em qualquer hemisfério). Navegando com rumo Sul, o erro será Leste.",
       "Tornar o anel vertical pendular, aplicando torque de gravidade quando a ponta se eleva ou abaixa para gerar precessão em direção ao meridiano."
     ],
-    "answer": "Tornar o anel vertical pendular, aplicando torque de gravidade quando a ponta se eleva ou abaixa para gerar precessão em direção ao meridiano."
+    "answer": "Tornar o anel vertical pendular, aplicando torque de gravidade quando a ponta se eleva ou abaixa para gerar precessão em direção ao meridiano.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Este torque causa precessão em torno do eixo vertical na direção indicada em C; o giroscópio assim moveu-se para fora de sua posição original Leste-Oeste."
   },
   {
-"question": "Cite as 5 vantagens das agulhas dotadas de girosfera:",
+    "question": "Cite as 5 vantagens das agulhas dotadas de girosfera:",
     "options": [
       "1ª - Peso removido dos rolamentos do eixo vertical pela flutuação neutra; 2ª - Grande proteção contra choques mecânicos; 3ª Reduz efeitos da aceleração; 4ª - Trabalho do motor facilitado por gás hélio; 5ª - Imersão em óleo protege contra agentes oxidantes.",
       "Precessiona em torno do eixo Horizontal (P).",
       "É uma propriedade do giroscópio que causa a mudança de direção do eixo de rotação quando é aplicado um torque no rotor.",
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral até estabilizar no meridiano."
     ],
-    "answer": "1ª - Peso removido dos rolamentos do eixo vertical pela flutuação neutra; 2ª - Grande proteção contra choques mecânicos; 3ª Reduz efeitos da aceleração; 4ª - Trabalho do motor facilitado por gás hélio; 5ª - Imersão em óleo protege contra agentes oxidantes."
+    "answer": "1ª - Peso removido dos rolamentos do eixo vertical pela flutuação neutra; 2ª - Grande proteção contra choques mecânicos; 3ª Reduz efeitos da aceleração; 4ª - Trabalho do motor facilitado por gás hélio; 5ª - Imersão em óleo protege contra agentes oxidantes.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas características proporcionam, sobre as agulhas anteriores, as seguintes vantagens: 1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação neutra; 2ª - Oferece grande proteção contra choques mecânicos; CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-15 3ª - Reduz os efeitos da aceleração; 4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento  em gás hélio; e 5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxi-  dantes."
   },
   {
-"question": "Cite os modelos de agulhas que utilizam balístico de líquido (óleo) e pesos para amortecimento:",
+    "question": "Cite os modelos de agulhas que utilizam balístico de líquido (óleo) e pesos para amortecimento:",
     "options": [
       "NORTE E SUL.",
       "1ª - Peso removido dos rolamentos do eixo vertical pela flutuação neutra; 2ª - Grande proteção contra choques mecânicos; 3ª Reduz efeitos da aceleração; 4ª - Trabalho do motor facilitado por gás hélio; 5ª - Imersão em óleo protege contra agentes oxidantes.",
       "MK-27, MK-227, etc.",
       "O rotor parecerá girar em torno do seu eixo horizontal com velocidade igual (15°/H / 360° em 24h), mas direção oposta à rotação da Terra."
     ],
-    "answer": "MK-27, MK-227, etc."
+    "answer": "MK-27, MK-227, etc.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 3-32 3.15 – Operação do sistema.....................................................................................3-35 3.16 – Operação da RCDU e Funções do display...................................................3-38 3.17 – Procedimentos para operação do teclado e menus.......................................3-39 3.18 – FIM / PC.........................................................................................................3-42 3.19 – Sistema de alarmes........................................................................................3-43 3.20 – Manutenção...................................................................................................3-45 ANEXO A - Bibliografia...........................................................................................A-1 OSTENSIVO CIAA-117/037 - V - OSTENSIVO ORIGINAL INTRODUÇÃO 1 - PROPÓSITO Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu- lhas giroscópicas e sistemas de navegação inercial."
   },
   {
-"question": "Descreva o balístico de óleo:",
+    "question": "Descreva o balístico de óleo:",
     "options": [
       "PARALELOS.",
       "Consiste em dois reservatórios interligados por tubo com óleo. Com a inclinação (HER), o óleo escoa para o reservatório mais baixo, aplicando torque no rotor para procurar o norte.",
       "Rumo Verdadeiro = Rumo Lido - Erro Leste (+ se Erro Oeste). Ex: Se Erro for Leste, Leitura < Verdadeiro.",
       "Suprimir as oscilações do rotor em tempo do meridiano (amortecimento), adicionando um pequeno peso W1 na esfera do lado Leste."
     ],
-    "answer": "Consiste em dois reservatórios interligados por tubo com óleo. Com a inclinação (HER), o óleo escoa para o reservatório mais baixo, aplicando torque no rotor para procurar o norte."
+    "answer": "Consiste em dois reservatórios interligados por tubo com óleo. Com a inclinação (HER), o óleo escoa para o reservatório mais baixo, aplicando torque no rotor para procurar o norte.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Quando há uma inclinação do con- CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-16 junto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um tor-  que no rotor, fazendo o conjunto procurar o norte."
   },
   {
-"question": "Qual dispositivo as agulhas dotadas de girosfera utilizam como elemento sensível?",
+    "question": "Qual dispositivo as agulhas dotadas de girosfera utilizam como elemento sensível?",
     "options": [
       "Nível eletrolítico.",
       "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial (1ª Lei de Newton).",
       "Leitura na rosa MAIOR que o rumo verdadeiro.",
       "PARALELOS."
     ],
-    "answer": "Nível eletrolítico."
+    "answer": "Nível eletrolítico.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação  (nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores  de torques (torquer) de controle azimutal e amortecimento."
   },
   {
-"question": "Em alguns modelos mais modernos, o nível eletrolítico foi substituído por qual dispositivo?",
+    "question": "Em alguns modelos mais modernos, o nível eletrolítico foi substituído por qual dispositivo?",
     "options": [
       "0° a 90° NORTE e 0° a 90° SUL.",
       "R: VL = 21.600 milhas / 24H = 900 milhas/hora.",
       "Acelerômetro.",
       "Precessiona em torno do eixo Horizontal (P)."
     ],
-    "answer": "Acelerômetro."
+    "answer": "Acelerômetro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: - Em alguns modelos mais modernos de agulha, o nível eletrolítico foi substituído por um acelerômetro, que será estudado no capítulo seguinte."
   },
   {
-"question": "Descreva o produtor de torques (torquer):",
+    "question": "Descreva o produtor de torques (torquer):",
     "options": [
       "Estrutura tipo \"E\" aberta. Enrolamento central é campo de referência (fixo) e laterais são de controle (saída do amplificador), defasados de 90° elétricos.",
       "a) MERIDIANOS; b) O ponto de partida é o meridiano de Greenwich (Meridiano Zero), contando-se até 180° de longitude Leste e 180° de longitude Oeste.",
       "Meridiano de Greenwich (Inglaterra).",
       "É a propriedade do giroscópio pela qual ele tenta manter o eixo de rotação na sua posição inicial (1ª Lei de Newton)."
     ],
-    "answer": "Estrutura tipo \"E\" aberta. Enrolamento central é campo de referência (fixo) e laterais são de controle (saída do amplificador), defasados de 90° elétricos."
+    "answer": "Estrutura tipo \"E\" aberta. Enrolamento central é campo de referência (fixo) e laterais são de controle (saída do amplificador), defasados de 90° elétricos.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: 2 - Produtor de torques (torquer) Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos late- rais são os campos de controle, os campos são defasados de 90º elétricos tal qual um motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela CIAA-117/037 OSTENSIVO ORIGINAL OSTENSIVO 1-19 alimentação da linha, enquanto que os campos de controle são excitados pela saída do amplificador de torque."
   },
   {
-"question": "Qual será a marcação verdadeira de uma agulha que apresenta erro?",
+    "question": "Qual será a marcação verdadeira de uma agulha que apresenta erro?",
     "options": [
       "Meridiano de Greenwich (Inglaterra).",
       "Rumo Verdadeiro = Rumo Lido - Erro Leste (+ se Erro Oeste). Ex: Se Erro for Leste, Leitura < Verdadeiro.",
       "PARALELOS.",
       "Tubo de vidro cilíndrico com 3 eletrodos de platina e parcialmente cheio de eletrólito, formando uma bolha de ar na parte superior."
     ],
-    "answer": "Rumo Verdadeiro = Rumo Lido - Erro Leste (+ se Erro Oeste). Ex: Se Erro for Leste, Leitura < Verdadeiro."
+    "answer": "Rumo Verdadeiro = Rumo Lido - Erro Leste (+ se Erro Oeste). Ex: Se Erro for Leste, Leitura < Verdadeiro.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Para rumo sul ocorreria o contrário (Erro leste), entretanto, se o rumo for leste ou oeste verdadeiro, o movimento do navio não tenderia a inclinar a giro uma vez que a veloci- dade do navio estaria no mesmo ângulo que o rotor do giroscópio (Sem erro)."
   },
   {
-"question": "Qual a diferença entre Erro Leste e Erro Oeste na indicação?",
+    "question": "Qual a diferença entre Erro Leste e Erro Oeste na indicação?",
     "options": [
       "Erro Leste: Leitura < Rumo Real. Erro Oeste: Leitura > Rumo Real.",
       "R: VL = 21.600 milhas / 24H = 900 milhas/hora.",
       "Nível eletrolítico.",
       "Causa a redução da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um caminho espiral até estabilizar no meridiano."
     ],
-    "answer": "Erro Leste: Leitura < Rumo Real. Erro Oeste: Leitura > Rumo Real."
+    "answer": "Erro Leste: Leitura < Rumo Real. Erro Oeste: Leitura > Rumo Real.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Para rumo sul ocorreria o contrário (Erro leste), entretanto, se o rumo for leste ou oeste verdadeiro, o movimento do navio não tenderia a inclinar a giro uma vez que a veloci- dade do navio estaria no mesmo ângulo que o rotor do giroscópio (Sem erro)."
   },
   {
-"question": "Quais os erros de latitude nos hemisférios?",
+    "question": "Quais os erros de latitude nos hemisférios?",
     "options": [
       "Tenderá para Oeste navegando com rumo Norte (em qualquer hemisfério). Navegando com rumo Sul, o erro será Leste.",
       "O rotor parecerá girar em torno do seu eixo horizontal com velocidade igual (15°/H / 360° em 24h), mas direção oposta à rotação da Terra.",
       "Hemisfério Norte: Erro Leste. Hemisfério Sul: Erro Oeste.",
       "Rumo Verdadeiro = Rumo Lido - Erro Leste (+ se Erro Oeste). Ex: Se Erro for Leste, Leitura < Verdadeiro."
     ],
-    "answer": "Hemisfério Norte: Erro Leste. Hemisfério Sul: Erro Oeste."
+    "answer": "Hemisfério Norte: Erro Leste. Hemisfério Sul: Erro Oeste.",
+    "topic": "3.14 - Modos operacionais com o navio no mar (Sea).......................................",
+    "explanation": "Conforme o manual: Como resultado, o eixo do giroscópio supera o movimento da Terra e orienta – se com a extremidade norte levantado e a “leste” do meridiano nas latitudes norte (Erro leste) ou com a extremidade norte para baixo e a “oeste” do meridiano nas latitudes sul (Erro oeste)."
   }
 ];
