@@ -1,0 +1,1217 @@
+ID da Questão: Gagau-1
+Enunciado: Cite os testes realizados na unidade de retransmissão do Anemômetro EVERSHED.
+Alternativas: N/A
+Gabarito: Velocidade e direção.
+Tema Principal: Testes na unidade de retransmissão
+
+ID da Questão: Gagau-2
+Enunciado: Quais os potenciômetros responsáveis pelo ajuste de amortecimento e ajuste do zero do servo de velocidade do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: RV3 e RV5.
+Tema Principal: Componentes do servo de velocidade
+
+ID da Questão: Gagau-3
+Enunciado: No subconjunto de direção do vento do sistema tipo B, qual componente que aciona o transmissor síncro 5HG?
+Alternativas: N/A
+Gabarito: motor de acompanhamento.
+Tema Principal: Subconjunto de direção (Tipo B)
+
+ID da Questão: Gagau-4
+Enunciado: O que ocorrerá no sistema tipo B quando os rotores do transmissores de direção da alheta e do transformador síncro de controle(CT) estiverem em correspondência?
+Alternativas: N/A
+Gabarito: A saída(sinal de erro) do CT será zero.
+Tema Principal: Síncros e CT (Tipo B)
+
+ID da Questão: Gagau-5
+Enunciado: No anemômetro tipo B, quando os rotores 1HG e 1HCT estiverem em correspondência, a saída do transformador de controle(CT) será:
+Alternativas: N/A
+Gabarito: 0 Volts.
+Tema Principal: Síncros e CT (Tipo B)
+
+ID da Questão: Gagau-6
+Enunciado: Qual alimentação necessária para iluminação do painel de controle do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: 24 Volts.
+Tema Principal: Alimentação de iluminação
+
+ID da Questão: Gagau-7
+Enunciado: No anemômetro EVERSHED. Qual a variação de voltagem medida entre os pontos TP6 e TP7?
+Alternativas: N/A
+Gabarito: 0 a 100mV.
+Tema Principal: Medidas de tensão (EVERSHED)
+
+ID da Questão: Gagau-8
+Enunciado: No anemômetro tipo B, o sinal elétrico que chega no amplificador é oriundo do síncro do tipo:
+Alternativas: N/A
+Gabarito: 1HCT.
+Tema Principal: Sinais do amplificador (Tipo B)
+
+ID da Questão: Gagau-9
+Enunciado: Qual a chave do sistema EVERSHED habilitará 10V proveniente do transformador T1?
+Alternativas: N/A
+Gabarito: Chave S1.
+Tema Principal: Chaves e alimentação (EVERSHED)
+
+ID da Questão: Gagau-10
+Enunciado: Descreva como está instalado o transmissor síncro de velocidade do sistema tipo B.
+Alternativas: N/A
+Gabarito: Instalado na PCI, composto pelo subconjunto de veloc e direção do vento, montados em chapa base individuais para formar uma só unidade envolvida em uma caixa ou carcaça metálica para instalação em antepara.
+Tema Principal: Instalação física (Tipo B)
+
+ID da Questão: Gagau-11
+Enunciado: Analisando o diagrama do conjunto de direção do vento do sistema tipo F. Qual a frequência de operação do transmissor de controle?
+Alternativas: N/A
+Gabarito: 400 Hz. (Na imagem está corrigido à mão de 18CX4 para 400 Hz)
+Tema Principal: Frequência de operação (Tipo F)
+
+ID da Questão: Gagau-12
+Enunciado: Analisando o diagrama do sistema EVERSHED, o que acontecerá se houve uma avaria em R13?
+Alternativas: N/A
+Gabarito: Não haverá a regulagem de tensão para chave S3 (115V/400Hz).
+Tema Principal: Avarias e esquemas (EVERSHED)
+
+ID da Questão: Gagau-13
+Enunciado: O síncro LINVAR do sistema EVERSHED fornece uma realimentação de quantos volts?
+Alternativas: N/A
+Gabarito: 40VCA.
+Tema Principal: Realimentação do LINVAR
+
+ID da Questão: Gagau-14
+Enunciado: No anemômetro EVERSHED, o sinal elétrico que vai do CX para a unidade de correção de dados do vento alimenta o estator de um:
+Alternativas: N/A
+Gabarito: CT(Transformador de controle)
+Tema Principal: Correção de dados do vento
+
+ID da Questão: Gagau-15
+Enunciado: No sistema EVERSHED, quando o sinal medido em RV4 e em R11 são iguais e opostos, a velocidade do servo motor é de:
+Alternativas: N/A
+Gabarito: 0 RPM.
+Tema Principal: Controle do servo motor
+
+ID da Questão: Gagau-16
+Enunciado: Quem comanda o sincro LINVAR do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: Redutor de erro.
+Tema Principal: Comando do LINVAR
+
+ID da Questão: Gagau-17
+Enunciado: No sistema tipo B, no conjunto de velocidade, a unidade síncro que gira na mesma razão do TX acoplado á hélice é um:
+Alternativas: N/A
+Gabarito: TR.
+Tema Principal: Unidades síncronas (Tipo B)
+
+ID da Questão: Gagau-18
+Enunciado: Qual componente do sistema tipo B que converte o movimento rotativo em angular no conjunto de velocidade do vento?
+Alternativas: N/A
+Gabarito: Equipamento de frequência constante.
+Tema Principal: Conversão de movimento (Tipo B)
+
+ID da Questão: Gagau-19
+Enunciado: A informação elétrica que sai do Transformador de Controle, vinda diretamente do transmissor de direção do anemômetro tipo F, é chamada sinal de:
+Alternativas: N/A
+Gabarito: Erro.
+Tema Principal: Sinal do Transformador de Controle
+
+ID da Questão: Gagau-20
+Enunciado: Cite as posições da chave de teste de velocidade do sistema de anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: RUN, 15, 30 e 45 nós.
+Tema Principal: Chaves de teste (EVERSHED)
+
+ID da Questão: Gagau-21
+Enunciado: No sistema tipo B, a unidade síncrona que aciona os discos de fricção do integrador mecânico é o:
+Alternativas: N/A
+Gabarito: motor de frequência constante.
+Tema Principal: Integrador mecânico (Tipo B)
+
+ID da Questão: Gagau-22
+Enunciado: Ao deslocarmos a chave S1 da posição normal para as posições de teste, estamos aplicando quantos volts no estator do Transformador de Controle(CT)?
+Alternativas: N/A
+Gabarito: 10V/400HZ.
+Tema Principal: Teste e Transformador de Controle
+
+ID da Questão: Gagau-23
+Enunciado: Qual é a alimentação do síncro LINVAR, do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: 60V/400HZ.
+Tema Principal: Alimentação do LINVAR
+
+ID da Questão: Gagau-24
+Enunciado: No sistema EVERSHED, no servo de direção, o componente que posiciona o Transformador de Controle(CT) para anular o sinal de erro é um:
+Alternativas: N/A
+Gabarito: Servo motor.
+Tema Principal: Servo de direção (EVERSHED)
+
+ID da Questão: Gagau-25
+Enunciado: No anemômetro tipo B, a unidade síncro que é diretamente acoplada á aleta é um:
+Alternativas: N/A
+Gabarito: transmissor síncro.
+Tema Principal: Acoplamento na aleta (Tipo B)
+
+ID da Questão: Gagau-26
+Enunciado: Qual a finalidade da micro chave do sistema tipo B, localizada no conjunto de velocidade do vento?
+Alternativas: N/A
+Gabarito: Abrir o circuito FC quando a velocidade for nula(zero).
+Tema Principal: Micro chave de velocidade (Tipo B)
+
+ID da Questão: Gagau-27
+Enunciado: Qual componente do servo de direção que aciona mecanicamente os transmissores de direção?
+Alternativas: N/A
+Gabarito: Redutor de erros.
+Tema Principal: Acionamento mecânico de direção
+
+ID da Questão: Gagau-28
+Enunciado: Qual é alimentação da unidade síncro que envia um sinal elétrico para a unidade de correções de dados do vento?
+Alternativas: N/A
+Gabarito: 115Volts?400HZ.
+Tema Principal: Alimentação e correções
+
+ID da Questão: Gagau-29
+Enunciado: No anemômetro EVERSHED, qual componente cujo sinal de saída se opõe ao sinal que aparece em R11 é o:
+Alternativas: N/A
+Gabarito: O potenciômetro RV4.
+Tema Principal: Sinais e potenciômetros (EVERSHED)
+
+ID da Questão: Gagau-30
+Enunciado: Qual é a alimentação do transmissor síncro de direção do vento do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: 26V/400hz.
+Tema Principal: Alimentação de direção (EVERSHED)
+
+ID da Questão: Gagau-31
+Enunciado: Qual é a alimentação para o painel de controle do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: 115V/400HZ.
+Tema Principal: Alimentação do painel
+
+ID da Questão: Gagau-32
+Enunciado: Qual o principio de funcionamento do detetor do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: Gerador de indução.
+Tema Principal: Princípio de funcionamento do detetor
+
+ID da Questão: Gagau-33
+Enunciado: No sistema EVERSHED, no detetor da unidade de velocidade, qual componente vem com ajuste de fábrica?
+Alternativas: N/A
+Gabarito: Reostato.
+Tema Principal: Ajuste de fábrica
+
+ID da Questão: Gagau-34
+Enunciado: Quais os transmissores síncronos do anemômetro tipo F são posicionados pelo servo de direção?
+Alternativas: N/A
+Gabarito: 37TX6 e 31TX4.
+Tema Principal: Transmissores de direção (Tipo F)
+
+ID da Questão: Gagau-35
+Enunciado: Quais os tipos de indicadores síncronos são utilizados pelo sistema tipo F?
+Alternativas: N/A
+Gabarito: 18TR6 e 18TR4.
+Tema Principal: Indicadores síncronos (Tipo F)
+
+ID da Questão: Gagau-36
+Enunciado: Qual é o intervalo em nós do dial de velocidade do sistema tipo F?
+Alternativas: N/A
+Gabarito: 5 nós.
+Tema Principal: Dial de velocidade (Tipo F)
+
+ID da Questão: Gagau-37
+Enunciado: No sistema EVERSHED, cite que dispositivo do servo de direção trabalha como gerador de sinal de erro?
+Alternativas: N/A
+Gabarito: TX
+Tema Principal: Gerador de sinal de erro
+
+ID da Questão: Gagau-38
+Enunciado: Cite a alimentação principal para o anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: 115V/400HZ.
+Tema Principal: Alimentação principal
+
+ID da Questão: Gagau-39
+Enunciado: Que dispositivo do servo de direção do sistema EVERSHED é responsável em reposicionar o rotor do CT, o sinal de erro?
+Alternativas: N/A
+Gabarito: Motor de acompanhamento M2 ou Servo motor.
+Tema Principal: Reposicionamento do rotor
+
+ID da Questão: Gagau-40
+Enunciado: Cite um dispositivo do servo de velocidade do sistema EVERSHED, responsável pelo amortecimento das oscilações.
+Alternativas: N/A
+Gabarito: Engrenagem redutora 2000/1, o potenciômetroRV3.
+Tema Principal: Amortecimento (EVERSHED)
+
+ID da Questão: Gagau-41
+Enunciado: Qual é a razão de transformação do conjunto de engrenagem no servo de velocidade caso o navio necessite usar receptores de 180 nós?
+Alternativas: N/A
+Gabarito: 2,4:1
+Tema Principal: Razão de transformação
+
+ID da Questão: Gagau-42
+Enunciado: Qual a finalidade do capacitor C3 do servo de velocidade do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: Aumentar o ganho do servo motor(aumentar o fator de potência).
+Tema Principal: Capacitor C3
+
+ID da Questão: Gagau-43
+Enunciado: Qual a unidade aloja o transformador de 115/6Volts do anemômetro tipo B?
+Alternativas: N/A
+Gabarito: Indicadora.
+Tema Principal: Alojamento do transformador (Tipo B)
+
+ID da Questão: Gagau-44
+Enunciado: Qual componente do servo de velocidade do sistema EVERSHED funciona como transdutor?
+Alternativas: N/A
+Gabarito: LINVAR.
+Tema Principal: Transdutor (EVERSHED)
+
+ID da Questão: Gagau-45
+Enunciado: Qual a função do motor de acompanhamento do anemômetro tipo F, do conjunto de direção do vento?
+Alternativas: N/A
+Gabarito: Transmite o deslocamento da aleta.
+Tema Principal: Motor de acompanhamento (Tipo F)
+
+ID da Questão: Gagau-46
+Enunciado: Qual é a função do potenciômetro RV4 do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: Faz o ajuste do zero.
+Tema Principal: Potenciômetro RV4 (EVERSHED)
+
+ID da Questão: Gagau-47
+Enunciado: Qual é a função do potenciômetro RV3 só sistema EVERSHED?
+Alternativas: N/A
+Gabarito: Faz o amortecimento.
+Tema Principal: Potenciômetro RV3 (EVERSHED)
+
+ID da Questão: Gagau-48
+Enunciado: Qual o propósito da RTU do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: Converter os fracos sinais de velocidade e direção do vento vindo do detetor.
+Tema Principal: RTU (EVERSHED)
+
+ID da Questão: Gagau-49
+Enunciado: Quais os potenciômetros do servo de direção do sistema EVERSHED, são responsáveis pela sensibilidade e amortecimento?
+Alternativas: N/A
+Gabarito: RV1 e RV2.
+Tema Principal: Sensibilidade e amortecimento (EVERSHED)
+
+ID da Questão: Gagau-50
+Enunciado: Mencione em que consiste o sistema tipo B.
+Alternativas: N/A
+Gabarito: Detetor, transmissor e indicador.
+Tema Principal: Composição do sistema tipo B
+
+ID da Questão: Gagau-51
+Enunciado: Quais enrolamentos que fazem parte do servo motor de direção e velocidade do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: Fixo e de controle.
+Tema Principal: Enrolamentos do servo motor
+
+ID da Questão: Gagau-52
+Enunciado: No anemômetro tipo B, qual será a posição do RODETE na velocidade máxima?
+Alternativas: N/A
+Gabarito: Na periferia do disco.
+Tema Principal: Posição do RODETE (Tipo B)
+
+ID da Questão: EX-1
+Enunciado: Qual a finalidade do DIAC no conjunto de direção do anemômetro tipo F?
+Alternativas: N/A
+Gabarito: Regular a tensão para o amplificador PC 115A 101.
+Tema Principal: Finalidade do DIAC (Tipo F)
+
+ID da Questão: EX-2
+Enunciado: Qual o valor ôhmico do resistor (R-103) do conjunto de velocidade do anemômetro tipo F?
+Alternativas: N/A
+Gabarito: 60 OHM.
+Tema Principal: Resistor R-103 (Tipo F)
+
+ID da Questão: EX-3
+Enunciado: Qual a frequência de operação do síncro 18CT4 do conjunto de velocidade do anemômetro tipo F?
+Alternativas: N/A
+Gabarito: 400Hz.
+Tema Principal: Frequência de operação 18CT4
+
+ID da Questão: EX-4
+Enunciado: Qual a função do LINVAR no servo de velocidade do sistema de anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: Transdutor.
+Tema Principal: Função do LINVAR (EVERSHED)
+
+ID da Questão: EX-5
+Enunciado: Qual amplificador está incluindo em cada um dos servos, na RTU do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: PA-112-A
+Tema Principal: Amplificadores da RTU
+
+ID da Questão: EX-6
+Enunciado: Qual a finalidade do conjunto de engrenagens de razão 2,4:1 no servo de velocidade, do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: É um sobressalente, usado caso o navio necessite receptores de 180 nós, basta fazer a troca entre os dois conjuntos de engrenagem.
+Tema Principal: Engrenagens de razão 2,4:1
+
+ID da Questão: EX-7
+Enunciado: Cite a finalidade do capacitor C3 no servo de velocidade do anemômetro EVERSHED.
+Alternativas: N/A
+Gabarito: Aumentar o fator de potência do servo motor do sistema de velocidade.
+Tema Principal: Capacitor C3 (EVERSHED)
+
+ID da Questão: EX-8
+Enunciado: Descreva respectivamente a finalidade dos capacitores C-105 e C-106 do conjunto de velocidade do anemômetros tipo F.
+Alternativas: N/A
+Gabarito: Melhorar o fator de potência(rendimento).Capacitores em paralelo aumenta a capacitância.
+Tema Principal: Capacitores C-105 e C-106
+
+ID da Questão: EX-9
+Enunciado: Caso falha o Transformador T1 do sistema de alimentação do anemômetro EVERSHED o que ocorrerá?
+Alternativas: N/A
+Gabarito: O amplificador de potência ficará sem alimentação, não teremos como realizar o teste de direção o Transmissor (TX) do detector de direção ficará sem alimentação e DIODO D1 sem alimentação.
+Tema Principal: Falha no Transformador T1
+
+ID da Questão: EX-10
+Enunciado: Quais os fusíveis do Anemômetro EVERSHED , quais os fusíveis fazem a proteção dos amplificadores (PA112-1 e 2)?
+Alternativas: N/A
+Gabarito: FS1 e FS2.
+Tema Principal: Fusíveis de proteção
+
+ID da Questão: EX-11
+Enunciado: Analisando o circuito de teste de velocidade do anemômetro EVERSHED. O que acontecerá se houver uma avaria em R15, estando a chave de teste na posição número 4?
+Alternativas: N/A
+Gabarito: Não haverá alimentação para o teste de velocidade.
+Tema Principal: Avaria em R15 (Teste de velocidade)
+
+ID da Questão: EX-12
+Enunciado: Analisando o diagrama do anemômetro, qual a finalidade da alimentação de 1 volt, oriunda do Transformador T2?
+Alternativas: N/A
+Gabarito: Alimenta o teste de velocidade.
+Tema Principal: Alimentação de 1 volt (T2)
+
+ID da Questão: EX-13
+Enunciado: Descreva a finalidade do diodo 1 no servo de velocidade do Anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: Retificar em meia onda o sinal de 10volts 400Hz vindo de T1.
+Tema Principal: Diodo 1 (EVERSHED)
+
+ID da Questão: EX-14
+Enunciado: O que acontecerá se houver uma avaria no R14(CIRCUITO DE TESTE DE VELOCIDADE)do anemômetro EVERSHED, estando a chave na posição 4?
+Alternativas: N/A
+Gabarito: Não haverá alimentação para o teste de velocidade.
+Tema Principal: Avaria em R14
+
+ID da Questão: EX-15
+Enunciado: Qual a finalidade dos diodos D5 e D6, do painel de distribuição de alimentação, do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: Funcionam como reguladores de tensão.
+Tema Principal: Diodos D5 e D6
+
+ID da Questão: EX-16
+Enunciado: No anemômetro EVERSHED, qual é o ponto de teste é usado como referência para todas as outras medições?
+Alternativas: N/A
+Gabarito: Ponto de teste TP6 (Terra).
+Tema Principal: Ponto de teste de referência
+
+ID da Questão: U1-1
+Enunciado: Nos navios de origem Americana os circuitos são identificados pelas designações:
+Alternativas: N/A
+Gabarito: "HE" – intensidade do vento e "HD" – direção do vento.
+Tema Principal: Designações americanas
+
+ID da Questão: U1-2
+Enunciado: Descreva as características visuais do anemômetro tipo B.
+Alternativas: N/A
+Gabarito: Conjunto transmissor de velocidade (com copos/cubas) e de direção (com aleta/cata-vento), alojados em suas respectivas unidades.
+Tema Principal: Características visuais do tipo B
+
+ID da Questão: U1-3
+Enunciado: O dial de direção do vento do sistema do anemômetro tipo B é graduado em intervalos de:
+Alternativas: N/A
+Gabarito: 10º de 0º a 360º.
+Tema Principal: Dial de direção tipo B
+
+ID da Questão: U1-4
+Enunciado: Quais ás variações do anemômetro tipo B?
+Alternativas: N/A
+Gabarito: B1 e B2.
+Tema Principal: Variações do tipo B
+
+ID da Questão: U1-5
+Enunciado: No anemômetro tipo B a iluminação para cada conjunto é feita por duas lâmpadas de:
+Alternativas: N/A
+Gabarito: 6 volts ligados em paralelo.
+Tema Principal: Iluminação do tipo B
+
+ID da Questão: U1-6
+Enunciado: De que consiste o conjunto de direção do anemômetro tipo B?
+Alternativas: N/A
+Gabarito: Transmissor síncro acoplado diretamente a uma aleta (cata-vento).
+Tema Principal: Conjunto de direção tipo B
+
+ID da Questão: U1-7
+Enunciado: De que consiste o conjunto de velocidade do anemômetro tipo B?
+Alternativas: N/A
+Gabarito: Copos/cubas, integrador mecânico (rodete e discos de fricção), motor de frequência constante e transmissores síncros.
+Tema Principal: Conjunto de velocidade tipo B
+
+ID da Questão: U2-1
+Enunciado: Quais as características visuais do anemômetros tipo F?
+Alternativas: N/A
+Gabarito: 1 hélice e 1 aleta aerodinâmica.
+Tema Principal: Características visuais do tipo F
+
+ID da Questão: U2-2
+Enunciado: No servossistema de direção do anemômetro tipo F, utiliza dois síncros indicadores do tipo:
+Alternativas: N/A
+Gabarito: 18TR6 e 18TR4 (também referenciados como transmissores 37TX6 e 31TX4 na detecção).
+Tema Principal: Síncros indicadores tipo F
+
+ID da Questão: U2-3
+Enunciado: No anemômetro tipo F, o dial de velocidade é graduado em intervalo de:
+Alternativas: N/A
+Gabarito: 0 a 100 nós, em intervalos de 5 nós.
+Tema Principal: Dial de velocidade tipo F
+
+ID da Questão: U2-4
+Enunciado: Qual a finalidade de se utilizar 400HZ no anemômetro tipo F?
+Alternativas: N/A
+Gabarito: Para operar em conjunto com os computadores de bordo.
+Tema Principal: Frequência 400Hz no tipo F
+
+ID da Questão: U2-5
+Enunciado: Em uma determinada manobra um navio que utiliza o anemômetro tipo F, ao guinar 30º, verificou-se que o indicador de direção continuou girando indefinidamente. Explique o que pode ter ocorrido.
+Alternativas: N/A
+Gabarito: Falta de realimentação (ausência do sinal de erro no circuito do servo de direção).
+Tema Principal: Avaria de direção tipo F
+
+ID da Questão: U2-6
+Enunciado: Qual é a razão das engrenagens do acoplamento entre o transmissor ligado ao hélice e o síncro receptor, no sistema tipo F?
+Alternativas: N/A
+Gabarito: 1:12,5 (a cada uma revolução do síncro a hélice gira 12,5 vezes).
+Tema Principal: Engrenagens de acoplamento tipo F
+
+ID da Questão: U2-7
+Enunciado: Qual a finalidade do integrador mecânico do anemômetro tipo F?
+Alternativas: N/A
+Gabarito: O integrador mecânico pertence essencialmente ao tipo B (converte movimento rotativo em angular). No sistema tipo F, um circuito eletrônico (ou integrador interno ao servo) também pode fazer o amortecimento e ajuste. O correto é converter movimentos proporcionais para indicação.
+Tema Principal: Finalidade do integrador mecânico
+
+ID da Questão: U3-1
+Enunciado: Qual a alimentação principal do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: 115V/400Hz.
+Tema Principal: Alimentação principal EVERSHED
+
+ID da Questão: U3-2
+Enunciado: Qual a alimentação para o teste de velocidade do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: 1 Volt oriundo do Transformador T2.
+Tema Principal: Alimentação de teste de velocidade
+
+ID da Questão: U3-3
+Enunciado: Onde fica localizado os pontos de testes do sistema do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: No painel de controle / unidade RTU.
+Tema Principal: Localização dos pontos de teste
+
+ID da Questão: U3-4
+Enunciado: Qual o propósito da Unidade de Retransmissão do sistema EVERSHED?
+Alternativas: N/A
+Gabarito: Converter os fracos sinais de velocidade e direção do vento provenientes do detetor, tornando-os adequados para os indicadores (RTU).
+Tema Principal: Propósito da RTU
+
+ID da Questão: U3-5
+Enunciado: Como é graduado o dial de direção do vento do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: De 0 a 360º (sendo 0 a 180º vermelho e 0 a 180º verde) com intervalos de 2 em 2º.
+Tema Principal: Dial de direção EVERSHED
+
+ID da Questão: U3-6
+Enunciado: Como é graduado o dial de velocidade do vento do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: 0 a 75 nós com intervalo de 1 nó.
+Tema Principal: Dial de velocidade EVERSHED
+
+ID da Questão: U3-7
+Enunciado: Cite os dispositivos do servo de velocidade, responsáveis pelo amortecimento das oscilações.
+Alternativas: N/A
+Gabarito: Engrenagem redutora 2000/1 e potenciômetro RV3.
+Tema Principal: Amortecimento das oscilações
+
+ID da Questão: U3-8
+Enunciado: Quantas posições possui a chave de teste de velocidade do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: 4 posições (RUN, 15, 30 e 45 nós).
+Tema Principal: Chave de teste de velocidade
+
+ID da Questão: U3-9
+Enunciado: Descreva o funcionamento do sensor de velocidade do anemômetro EVERSHED.
+Alternativas: N/A
+Gabarito: O gerador de indução é acionado pelas cubas e produz um sinal elétrico de saída CA cuja voltagem é proporcional à velocidade do vento.
+Tema Principal: Funcionamento do sensor de velocidade
+
+ID da Questão: U3-10
+Enunciado: Onde fica instalado o detetor do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: No mastro principal das Fragatas.
+Tema Principal: Instalação do detetor
+
+ID da Questão: BIZ-1
+Enunciado: Qual é a realimentação fornecida pelo síncro LINVAR do Anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: 40 VCA.
+Tema Principal: Realimentação do LINVAR
+
+ID da Questão: BIZ-2
+Enunciado: O sinal elétrico que vai do CX do A.E para a unidade de correção de dados do vento alimenta o estator de um:
+Alternativas: N/A
+Gabarito: CT.
+Tema Principal: Alimentação do CT (EVERSHED)
+
+ID da Questão: BIZ-3
+Enunciado: Quando o sinal medido em RV4 e em R11 são iguais e opostos, a velocidade do servo motor do A.E é de:
+Alternativas: N/A
+Gabarito: 0 RPM.
+Tema Principal: Velocidade do servo motor nula
+
+ID da Questão: BIZ-4
+Enunciado: Quem é responsável em comandar o rotor do síncro LINVAR do A.E?
+Alternativas: N/A
+Gabarito: Redutor de erros.
+Tema Principal: Comando do rotor LINVAR
+
+ID da Questão: BIZ-5
+Enunciado: Qual o propósito do equipamento de frequência constante do A.B?
+Alternativas: N/A
+Gabarito: Converter o movimento rotativo em angular no conjunto de velocidade do vento.
+Tema Principal: Equipamento de frequência constante (Tipo B)
+
+ID da Questão: BIZ-6
+Enunciado: A informação que sai do CT, vindo do TX de direção do A.F é chamada sinal de:
+Alternativas: N/A
+Gabarito: Erro.
+Tema Principal: Sinal de saída do CT (Tipo F)
+
+ID da Questão: BIZ-7
+Enunciado: Quando os rotores, do TX de direção da aleta e do CT do A.B estão em correspondência, a saída do CT é:
+Alternativas: N/A
+Gabarito: 0 Volts.
+Tema Principal: Rotores em correspondência
+
+ID da Questão: BIZ-8
+Enunciado: A informação de velocidade do vento do A.E é fornecida por um:
+Alternativas: N/A
+Gabarito: Gerador de indução.
+Tema Principal: Fornecimento de velocidade (EVERSHED)
+
+ID da Questão: BIZ-9
+Enunciado: No servo de direção do A.E, quando os sinais de entrada e saída do sistema estão em correspondência de fase, o sinal de saída do detector é de:
+Alternativas: N/A
+Gabarito: 0 Volts.
+Tema Principal: Correspondência de fase
+
+ID da Questão: BIZ-10
+Enunciado: No A.E, podemos afirmar que o sinal que saí de um Transmissor de Controle é um sinal tipo:
+Alternativas: N/A
+Gabarito: Elétrico.
+Tema Principal: Tipo de sinal do CT
+
+ID da Questão: BIZ-11
+Enunciado: Quando verificamos o funcionamento do servo de direção do A.E, colocamos a chave de teste(S1) para a posição 2, assim estamos aplicando um sinal elétrico ao estator de um síncro:
+Alternativas: N/A
+Gabarito: CT.
+Tema Principal: Chave de teste S1
+
+ID da Questão: BIZ-12
+Enunciado: Como se chama a informação que chega ao Transformador de Controle, vinda diretamente do sincro Transmissor do A.B?
+Alternativas: N/A
+Gabarito: Sinal de direção.
+Tema Principal: Informação que chega ao CT
+
+ID da Questão: BIZ-13
+Enunciado: Dê que consiste o Anemômetro tipo B, variação B2?
+Alternativas: N/A
+Gabarito: Um receptor e um transmissor.
+Tema Principal: Variação B2
+
+ID da Questão: BIZ-14
+Enunciado: No sistema de A.B, a unidade síncro que é diretamente acoplada a aleta é um:
+Alternativas: N/A
+Gabarito: transmissor síncro.
+Tema Principal: Síncro acoplado a aleta (Tipo B)
+
+ID da Questão: BIZ-15
+Enunciado: Em que situação a micro chave localizada no conjunto de velocidade do A.B, irá abrir o circuito FC?
+Alternativas: N/A
+Gabarito: Quando a velocidade for nula(zero).
+Tema Principal: Micro chave de velocidade (Tipo B)
+
+ID da Questão: BIZ-16
+Enunciado: A unidade síncro que transmite informação de direção do vento para as repetidoras, é um:
+Alternativas: N/A
+Gabarito: TX.
+Tema Principal: Transmissão para repetidoras
+
+ID da Questão: BIZ-17
+Enunciado: Qual potenciômetro(dispositivo elétrico) do A.E cujo sinal se opõe ao sinal que aparece em R11?
+Alternativas: N/A
+Gabarito: RV4.
+Tema Principal: Potenciômetro RV4
+
+ID da Questão: BIZ-18
+Enunciado: Qual é a alimentação para o painel de controle do A.E?
+Alternativas: N/A
+Gabarito: 115V/400HZ.
+Tema Principal: Alimentação do painel (EVERSHED)
+
+ID da Questão: BIZ-19
+Enunciado: A iluminação para cada conjunto no A.B, é feita por quantas lâmpadas e como elas são ligadas?
+Alternativas: N/A
+Gabarito: 6 Volts ligados em paralelo.
+Tema Principal: Iluminação tipo B
+
+ID da Questão: BIZ-20
+Enunciado: Quais os dois tipos de síncros que são posicionados pelo servo motor de direção do A.F?
+Alternativas: N/A
+Gabarito: 37TX6 e 31TX4.
+Tema Principal: Síncros posicionados pelo servo (Tipo F)
+
+ID da Questão: BIZ-21
+Enunciado: Cite a finalidade do DIAC do conjunto de direção do A.F?
+Alternativas: N/A
+Gabarito: Regular a tensão p o amplificador PC115a-101.
+Tema Principal: Finalidade do DIAC (Tipo F)
+
+ID da Questão: BIZ-22
+Enunciado: No conjunto de direção do A.B, quem é o detector de erro?
+Alternativas: N/A
+Gabarito: CT.
+Tema Principal: Detector de erro (Tipo B)
+
+ID da Questão: BIZ-23
+Enunciado: No servo de velocidade do A.E, cite a função do LINVAR.
+Alternativas: N/A
+Gabarito: Funciona como um transdutor.
+Tema Principal: Função do LINVAR
+
+ID da Questão: BIZ-24
+Enunciado: No A.E quem aciona o gerador de indução?
+Alternativas: N/A
+Gabarito: copos(cubas).
+Tema Principal: Acionamento do gerador de indução
+
+ID da Questão: BIZ-25
+Enunciado: Cite a principal diferença entre o Anemômetro tipo B e F?
+Alternativas: N/A
+Gabarito: A frequência de 400Hz.
+Tema Principal: Diferença Tipo B e F
+
+ID da Questão: BIZ-26
+Enunciado: Qual dispositivo no A.E trabalha como gerador de sinal de erro do servo de direção?
+Alternativas: N/A
+Gabarito: É o síncro TX da unidade detectora.
+Tema Principal: Gerador de sinal de erro
+
+ID da Questão: BIZ-27
+Enunciado: Qual é a função do motor de acompanhamento(M2) ou servo motor do A.E?
+Alternativas: N/A
+Gabarito: Reposicionar o rotor do CT, reduzindo o sinal de erro.
+Tema Principal: Função do M2 / Servo motor
+
+ID da Questão: BIZ-28
+Enunciado: Qual a alimentação da R.T.U do A.E?
+Alternativas: N/A
+Gabarito: 115V/400Hz.
+Tema Principal: Alimentação da RTU
+
+ID da Questão: BIZ-29
+Enunciado: Qual amplificador está incluído em cada RTU do A.E?
+Alternativas: N/A
+Gabarito: PA112.
+Tema Principal: Amplificador da RTU
+
+ID da Questão: BIZ-30
+Enunciado: Onde está instalado o subconjunto de velocidade do vento do A.B?
+Alternativas: N/A
+Gabarito: Na PCI (Praça de Comunicações Interiores).
+Tema Principal: Instalação de velocidade Tipo B
+
+ID da Questão: BIZ-31
+Enunciado: Cite a razão do rotor do TX para hélice do A.B?
+Alternativas: N/A
+Gabarito: 1:12,5
+Tema Principal: Razão rotor para hélice
+
+ID da Questão: BIZ-32
+Enunciado: Cite os tipos de manutenções realizadas nos anemômetros.
+Alternativas: N/A
+Gabarito: Preventivas e corretivas.
+Tema Principal: Tipos de manutenções
+
+ID da Questão: BIZ-33
+Enunciado: No A.E, qual a função da chave S4?
+Alternativas: N/A
+Gabarito: Habilitar 115V/60Hz.
+Tema Principal: Função da chave S4
+
+ID da Questão: BIZ-34
+Enunciado: No A.E, qual a função da chave S3?
+Alternativas: N/A
+Gabarito: Habilitar 115V/400Hz.
+Tema Principal: Função da chave S3
+
+ID da Questão: BIZ-35
+Enunciado: Onde está localizado o trafo de 115V/6V do A.B?
+Alternativas: N/A
+Gabarito: Na unidade indicadora.
+Tema Principal: Localização do trafo (Tipo B)
+
+ID da Questão: BIZ-36
+Enunciado: Defina o que é velocidade de recolhimento.
+Alternativas: N/A
+Gabarito: é a veloc. á ré do navio.
+Tema Principal: Velocidade de recolhimento
+
+ID da Questão: BIZ-37
+Enunciado: Descreva as partes componentes do transmissor do A.B?
+Alternativas: N/A
+Gabarito: Subconjunto de direção e de velocidade.
+Tema Principal: Componentes do transmissor (Tipo B)
+
+ID da Questão: BIZ-38
+Enunciado: Geralmente onde está localizado o transmissor do A.B?
+Alternativas: N/A
+Gabarito: Na Praça de Comunicações Interiores.
+Tema Principal: Localização do transmissor (Tipo B)
+
+ID da Questão: BIZ-39
+Enunciado: Em que situação o indicador de velocidade e direção do vento ficará na posição zero?
+Alternativas: N/A
+Gabarito: Velocidade: Quando as cubas estiverem paradas. Direção: quando o catavento estiver alinhado no sentido proa popa do navio.
+Tema Principal: Posição zero dos indicadores
+
+ID da Questão: BIZ-40
+Enunciado: No A.E, qual a função dos potenciômetros RV-3; e RV-4?
+Alternativas: N/A
+Gabarito: RV3: Amortecimento. RV4: Ajuste do zero / Calibrador do mostrador. (O manuscrito inverteu os nomes inicialmente, e corrigiu de caneta vermelha)
+Tema Principal: Função RV3 e RV4
+
+ID da Questão: BIZ-41
+Enunciado: Cite o dispositivo do A.E que produz um sinal proporcional ao ângulo do vento e sua alimentação.
+Alternativas: N/A
+Gabarito: TX / 26V400Hz.
+Tema Principal: Sinal proporcional ao ângulo do vento
+
+ID da Questão: BIZ-42
+Enunciado: Qual a finalidade da unidade de retransmissão do A.E?
+Alternativas: N/A
+Gabarito: Converter os fracos sinais de velocidade e direção vindo do detector.
+Tema Principal: Finalidade da retransmissão
+
+ID da Questão: BIZ-43
+Enunciado: O Cabo CE Silva da Fragata Defensora ao ligar o A.E, observou que os indicadores de velocidade começaram a girar sem conseguir parar em uma marcação fixa. Cite as prováveis causas dessa avaria.
+Alternativas: N/A
+Gabarito: Falha de alimentação p o linvar, avaria em D4, curto em C7
+Tema Principal: Avaria girando sem parar (Velocidade)
+
+ID da Questão: BIZ-44
+Enunciado: Qual a função do potenciômetro RV2 do A.E?
+Alternativas: N/A
+Gabarito: Amortecimento / Direção (corrígio à caneta para Direção)
+Tema Principal: Função RV2
+
+ID da Questão: BIZ-45
+Enunciado: Cite a função dos diodos 5 e 6, do painel de distribuição de alimentação, do A.E.
+Alternativas: N/A
+Gabarito: Funcionam como reguladores de tensão.
+Tema Principal: Diodos D5 e D6
+
+ID da Questão: BIZ-46
+Enunciado: Qual a finalidade do diodo 1 no servo de velocidade do A.E?
+Alternativas: N/A
+Gabarito: Retificar em meia onda o sinal de 10V 400Hz vindo de T1.
+Tema Principal: Finalidade do diodo 1
+
+ID da Questão: QUEST-1
+Enunciado: 1. O motor do sincro Linvar do sistema EVERSHED é comandado pela (o):
+Alternativas: N/A
+Gabarito: TG1. Ver diagrama em bloco
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-2
+Enunciado: 2. O transmissor de direção do vento do sistema de anemômetro EVERSHED é um:
+Alternativas: N/A
+Gabarito: TX.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-3
+Enunciado: 3. Quais são as posições da chave de teste de velocidade do sistema de anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: RUN, 15, 30 e 45.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-4
+Enunciado: 4. No sistema de anemômetro EVERSHED, a informação de velocidade é fornecida por um:
+Alternativas: N/A
+Gabarito: Gerador de indução.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-5
+Enunciado: 5. O termo velocidade de recolhimento é a velocidade do vento:
+Alternativas: N/A
+Gabarito: A ré do navio.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-6
+Enunciado: 6. No sistema EVERSHED, no servo de direção, quando os sinais de entrada do sistema estão em correspondência de fase, o sinal de saída do detector é de _____ volts.
+Alternativas: N/A
+Gabarito: 0 (Zero).
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-7
+Enunciado: 7. No sistema de anemômetro EVERSHED, no servo de direção, ao deslocarmos a chave SI (chave teste) da posição “NORMAL” para as posições de teste, estamos aplicando um sinal de ____ ao estator do CT
+Alternativas: N/A
+Gabarito: 10 V/400Hz.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-8
+Enunciado: 8. No sistema de anemômetro EVERSHED, ao verificarmos o funcionamento do servo de direção, colocarmos a chave SI (chave teste) para a posição 2(dois), assim estamos aplicando um sinal elétrico ao estator de um sincro:
+Alternativas: N/A
+Gabarito: CT.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-9
+Enunciado: 9. Qual a finalidade dos diodos D5 e D6 do painel de distribuição de alimentação do anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: Reguladores de voltagem / estabilizador.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-10
+Enunciado: 10. Analisando o diagrama do EVERSHED qual a finalidade da alimentação de 1 volt oriundo do transformador 2?
+Alternativas: N/A
+Gabarito: Ajuste do zero.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-11
+Enunciado: 11. No sistema de anemômetro das fragatas, podemos afirmar que o sinal que sai do CX é um sinal.
+Alternativas: N/A
+Gabarito: Elétrico.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-12
+Enunciado: 12. No sistema de anemômetro das fragatas, o dispositivo que retifica o sinal do LINVAR é a ponte de diodos:
+Alternativas: N/A
+Gabarito: D4.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-13
+Enunciado: 13. A alimentação do sincro LINVAR do sistema de anemômetro EVERSHED é de:
+Alternativas: N/A
+Gabarito: 60V/400Hz.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-14
+Enunciado: 14. No sistema de anemômetro EVERSHED, no servo de direção, o componente que funciona como detector de erros?
+Alternativas: N/A
+Gabarito: CT.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-15
+Enunciado: 15. No sistema de anemômetro EVERSHED, o sinal que alimenta o estator de um CT é um:
+Alternativas: N/A
+Gabarito: Sinal elétrico vindo do TX.(ver diagrama do servo de direçao)
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-16
+Enunciado: 16. No sistema de anemômetro EVERSHED, no servo de direção, o componente que posiciona o CT para anular o sinal de erro é:
+Alternativas: N/A
+Gabarito: Servomotor.(redutor de erros).
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-17
+Enunciado: 17. No sistema de anemômetro EVERSHED, no servo de direção, o componente que aciona mecanicamente os transmissores de direção é o:
+Alternativas: N/A
+Gabarito: Redutor de erros.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-18
+Enunciado: 18. O indicador de velocidade do sistema de anemômetro EVERSHED é graduado de Zero a:
+Alternativas: N/A
+Gabarito: 65 nós, com intervalos de 1 nó.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-19
+Enunciado: 19. O termo “velocidade do vento de lançamento”, usado nas fragatas, é a velocidade do vento:
+Alternativas: N/A
+Gabarito: 50 a 200 pés a vante do navio.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-20
+Enunciado: 20. No anemômetro das fragatas, a unidade sincro que envia um sinal elétrico para unidade de correção de dados do vento, é alimentada com ______ Volts/Hz.
+Alternativas: N/A
+Gabarito: 115V/400Hz.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-21
+Enunciado: 21. No sistema de anemômetro das fragatas, o dispositivo elétrico cujo sinal de saída se opõe ao sinal que aparece em R11 é o:
+Alternativas: N/A
+Gabarito: RV4.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-22
+Enunciado: 22. No sistema de anemômetro das fragatas a informação de direção do vento é enviada ao amplificador através de dois potenciômetros:
+Alternativas: N/A
+Gabarito: RV1 e RV2.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-23
+Enunciado: 23. Quanto ao sistema de anemômetro, quantos tipos leves existem?
+Alternativas: N/A
+Gabarito: Dois.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-24
+Enunciado: 24. A alimentação de 26V 400Hz do anemômetro EVERSHED é para:
+Alternativas: N/A
+Gabarito: O sincro transmissor de direção do vento.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-25
+Enunciado: 25. O painel de controle do EVERSHED é alimentado com:
+Alternativas: N/A
+Gabarito: 115V/400Hz.(do navio)
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-26
+Enunciado: 26. Indicador, transmissor e detector são componentes básicos de um:
+Alternativas: N/A
+Gabarito: Anemômetro.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-27
+Enunciado: 27. Três cubas e uma aleta são características visuais do anemômetro:
+Alternativas: N/A
+Gabarito: EVERSHED.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-28
+Enunciado: 28. O principio de funcionamento do detector do anemômetro EVERSHED é o do:
+Alternativas: N/A
+Gabarito: Gerador de indução.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-29
+Enunciado: 30. O potenciômetro RV2 ajusta o _amortecimento_ do servo de direção do sistema de anemômetro EVERSHED.
+Alternativas: N/A
+Gabarito: Amortecimento.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-30
+Enunciado: 31. No sistema de anemômetro EVERSHED, no servo de direção, o (a) _CT_ compara o sinal de saída com o sinal de entrada.
+Alternativas: N/A
+Gabarito: CT.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-31
+Enunciado: 32. O detetor do sistema de anemômetro EVERSHED produz um sinal elétrico de saída proporcional à posição _angular_ de aleta, em relação a linha Proa-Popa do navio.
+Alternativas: N/A
+Gabarito: Angular.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-32
+Enunciado: 33. O detetor do sistema de anemômetro EVERSHED produz um sinal elétrico de saída _proporcional_ à velocidade de fluxo de ar passando pelos copos do anemômetro.
+Alternativas: N/A
+Gabarito: Proporcional.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-33
+Enunciado: 34. O servo de direção do EVERSHED tem propósito de converter os _fracos_ sinais de direção do vento.
+Alternativas: N/A
+Gabarito: Fracos.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-34
+Enunciado: 35. No servo de direção de anemômetro EVERSHED, o _CT(transformador de controle)_ é o dispositivo que funciona como detector de erro.
+Alternativas: N/A
+Gabarito: CT(transformador de controle).
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-35
+Enunciado: 36. Qual a função do linvar no servo de velocidade do sistema de anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: Transdutor.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-36
+Enunciado: 37. No sistema de anemômetro EVERSHED, a voltagem CA proporcional à velocidade do é desenvolvida em que unidade?
+Alternativas: N/A
+Gabarito: Gerador de indução.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-37
+Enunciado: 38. Qual o dispositivo do anemômetro EVERSHED é acionado pelos copos (cubas) do anemômetro?
+Alternativas: N/A
+Gabarito: Gerador de indução.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-38
+Enunciado: 39. No anemômetro EVERSHED, no servo de direção, qual o disposistivo trabalha como gerador de sinal de erro?
+Alternativas: N/A
+Gabarito: TX da unidade detetora.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-39
+Enunciado: 40. No anemômetro EVERSHED, quais os dispositivos ficarão sem alimentação no caso de falha no transformador T1?
+Alternativas: N/A
+Gabarito: Amplificador de potência, teste de direção, detetor de direção e diodo “D1”.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-40
+Enunciado: 41. No anemômetro EVERSHED, qual a finalidade da RTU?
+Alternativas: N/A
+Gabarito: Converter os fracos sinais de direção e velocidade.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-41
+Enunciado: 42. No servo de direção do anemômetro EVERSHED, qual o dispositivo responsável em reposicionar rotor do CT reduzindo Erro?
+Alternativas: N/A
+Gabarito: Motor de acompanhamento M-2.(servo motor)
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-42
+Enunciado: 43. No anemômetro EVERSHED, de onde vem a alimentação de 26V/400Hz para o TX do detetor, no servo de direção do vento?
+Alternativas: N/A
+Gabarito: Do transformador (T1).
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-43
+Enunciado: 44. Quais as alimentações disponíveis no anemômetro EVERSHED?
+Alternativas: N/A
+Gabarito: 115V/400Hz, 115V/60Hz e 26V/400Hz.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-44
+Enunciado: 45. No servo de direção do anemômetro EVERSHED, qual a função dos seguintes componentes: Potenciômetros RV1, Potenciômetro RV2, Taco-gerador (TG-2)?
+Alternativas: N/A
+Gabarito: RV1 – ajusta a sensibilidade, RV2 – fornece feedback para reduzir overshoot, TG2 – gera sinal elétrico.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-45
+Enunciado: 46. No servo de velocidade do anemômetro EVERSHED, qual a função dos seguintes componentes: Potenciômetros RV4, Potenciômetro RV3, Linvar?
+Alternativas: N/A
+Gabarito: RV4 – calibrador do mostrador, RV3 – amortecimento e Linvar – Transdutor.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-46
+Enunciado: 47. No anemômetro EVERSHED, cite o dispositivo que produz um sinal proporcional no ângulo do vento e sua alimentação:
+Alternativas: N/A
+Gabarito: Sincro transmissor de direção, 26 V/400Hz.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-47
+Enunciado: 48. No anemômetro EVERSHED, cite o potenciômetro que ajusta o amortecimento do servo de velocidade e qual a função do sincro linvar?
+Alternativas: N/A
+Gabarito: RV3 faz o amortecimento e o LINVAR funciona como um transdutor.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-48
+Enunciado: 49. No anemômetro EVERSHED cite os potenciômetros responsáveis pela sensibilidade e amortecimento respectivamente do servo de direção:
+Alternativas: N/A
+Gabarito: RV1 e RV2.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-49
+Enunciado: 50. Descreva a característica visual do sensor de velocidade do vento d anemômetro EVERSHED e o seu principio de funcionamento?
+Alternativas: N/A
+Gabarito: Conjunto de 3 ou 4 cubas e de uma aleta aerodinâmica montada em um suporte vertical. Funcionamento – O gerador de indução acionados pelas cubas produzem sinal elétrico de saída proporcional a velocidade do vento.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-50
+Enunciado: 51. Defina qual o propósito da unidade de retransmissão do anemômetro EVERSHED e localização a bordo das Fragatas?
+Alternativas: N/A
+Gabarito: Converte os fracos sinais de velocidade e direção do vento proveniente do detetor, tornando- os adequados para posições. Sua localização: C.O.C
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-51
+Enunciado: 52. Descreva a finalidade do anemômetro e quais os tipos básicos utilizados na MB?
+Alternativas: N/A
+Gabarito: Fornece indicações continua ou instantânea da intensidade em nós e da direção em graus do vento. Os tipos básicos são: B, F e EVERSHED.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-52
+Enunciado: 53. Descreva as características do anemômetro leve usado na MB e a função de cada uma delas?
+Alternativas: N/A
+Gabarito: 1 – Conjunto anemômetro e catavento usado para detectar a velocidade e direção do vento, 2 – Unidade de retransmissão (RTU) usadas para amplificar os sinais fracos, 3 – Receptores e indicadores de velocidade e direção do vento.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-53
+Enunciado: 54. Qual o tipo de anemômetro usado nas Fragatas MK-10?
+Alternativas: N/A
+Gabarito: EVERSHED. Uso geral.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-54
+Enunciado: 55. Qual o dispositivo do EVERSHED que produz um sinal proporcional ao ângulo do vento?
+Alternativas: N/A
+Gabarito: Sincro transmissor de direção.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-55
+Enunciado: 56. No anemômetro EVRSHED, o indicador possui receptores combinados para indicação de intensidade e direção do vento. Mencione as graduações do indicador de intensidade e direção do vento e seus intervalos?
+Alternativas: N/A
+Gabarito: Direção – 0 a 360º sendo 0 a 180º vermelho e 0 a 180º verde com intervalos de 2 em 2º. Intensidade – 0 a 75 nos com intervalo de 1 nó.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-56
+Enunciado: 57. Quais os dispositivos do servo de velocidade do anemômetro EVERSHED responsáveis pelo amortecimento das oscilações?
+Alternativas: N/A
+Gabarito: Engrenagem redutora 2000/1 e potenciômetro RV3.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-57
+Enunciado: 58. O sincro LINVAR do sistema EVERSHED fornece uma realimentação de:
+Alternativas: N/A
+Gabarito: 0 a 40 VCA.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-58
+Enunciado: 59. No sistema de anemômetro EVERSHED, a diferença em ângulo formado entre o rotor do TX e do CT do servo de direção, determina:
+Alternativas: N/A
+Gabarito: A amplitude do sinal de erro.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-59
+Enunciado: 60. No sistema EVERSHED, o sinal que vai do CX para a unidade de correção de dados do vento alimenta o estator de um.
+Alternativas: N/A
+Gabarito: CT.(ver diag. dos servos e da RTU)
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-60
+Enunciado: 61. No anemômetro EVERSHED, quando o sinal medido em RV4 e em R11 são iguais e opostas, a velocidade do servo motor é de _zero_ RPM.
+Alternativas: N/A
+Gabarito: Zero RPM.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-61
+Enunciado: 62. Quantos síncros transmissores possui a unid colocada no mastro das fragatas Niterói?
+Alternativas: N/A
+Gabarito: Um ( ver diagrama).
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-62
+Enunciado: 63. Quais os tipos de manutenções realizadas nos anemômetros?
+Alternativas: N/A
+Gabarito: preventivas e corretivas.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-63
+Enunciado: 64. Em qual situação a tensão em TP11 e igual a TP12?
+Alternativas: N/A
+Gabarito: quando D2 estiver conduzindo.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-64
+Enunciado: 65. Descreva o teste de direção do vento no anem EVERSHED,  e o que deve ser executado através do acionamento da chave S1.
+Alternativas: N/A
+Gabarito: Ao acionarmos a chave : o indicador de direção deverá ir a zero graus. Nas posições 1=NORMAL; 2= 0º (zero grau); 3º 120º BE. 4º 120º BB.
+Tema Principal: Questionário geral
+
+ID da Questão: QUEST-65
+Enunciado: 66 - No anemômetro “EVERSHED”. Qual componente no servo de velocidade do vento que tem a função de ajustar o zero?
+Alternativas: N/A
+Gabarito: RV4.
+Tema Principal: Questionário geral

@@ -7,6 +7,7 @@ import { anemometrosQuestions } from "./anemometros";
 import { microcontroladoresP2Questions } from "./microcontroladores_p2";
 import { pic16f84Questions } from "./pic16f84";
 import { agulhasGiroscopicasQuestions } from "./agulhas_giroscopicas";
+import { redesEthernetQuestions } from "./redes_ethernet";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -2100,6 +2101,7 @@ export const quizTitles: Record<string, string> = {
   "introducao-aos-microcontroladores-p1": "INTRODUÇÃO AOS MICROCONTROLADORES P1",
   "manutencao-dos-sistemas-de-odometros-p2": "MANUTENÇÃO DOS SISTEMAS DE ODÔMETROS P2",
   "manutencao-dos-sistemas-de-odometros-p2-rapidas": "ODÔMETRO P2 RÁPIDAS",
+  "redes-ethernet": "Redes de Ethernet",
 };
 
 // Quiz de Eletrônica Digital II
@@ -3154,5 +3156,6 @@ quizzes["anemometros"] = anemometrosQuestions;
 quizzes["microcontroladores_p2"] = microcontroladoresP2Questions;
 quizzes["pic16f84"] = pic16f84Questions;
 quizzes["agulhas-giroscopicas"] = agulhasGiroscopicasQuestions;
+quizzes["redes-ethernet"] = redesEthernetQuestions;
 
 export const questions: Question[] = quizzes.telefonia;

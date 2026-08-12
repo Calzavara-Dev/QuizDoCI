@@ -1,0 +1,2390 @@
+OSTENSIVO
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+MARINHA
+MARINHA DO
+DO BRASIL
+BRASIL
+CENTRO
+CENTRO DE
+DE INSTRUÇÃO
+INSTRUÇÃO ALMIRANTE
+ALMIRANTE ALEXANDRINO
+ALEXANDRINO
+MANUTENÇÃO
+MANUTENÇÃO DOS
+DOS SISTEMAS
+SISTEMAS DE
+DE
+AGULHAS
+AGULHAS GIROSCÓPICAS
+GIROSCÓPICAS
+3ª
+3ª REVISÃO
+REVISÃO – 2025
+2025
+OSTENSIVO
+CIAA-117/037
+OSTENSIVO
+- I -
+ORIGINAL
+APOSTILA
+MANUTENÇÃO DOS SISTEMAS DE AGULHAS GIROSCÓPICAS
+MARINHA DO BRASIL
+CENTRO DE INSTRUÇÃO ALMIRANTE ALEXANDRINO
+2025
+FINALIDADE: DIDÁTICA
+3ª EDIÇÃO
+OSTENSIVO
+CIAA-117/037
+- II -
+OSTENSIVO
+ORIGINAL
+ATO DE APROVAÇÃO
+APROVO, para emprego no Centro de Instrução Almirante Alexandrino, para as turmas do
+Curso de Aperfeiçoamento de Comunicações Interiores a apostila de Manutenção dos
+sistemas de agulhas giroscópicas..
+.
+Rio de Janeiro, RJ.
+Em       de                   de 2025
+Gedaias Angelo Lima
+ CC (RM1)
+Coordenador de Cursos
+OSTENSIVO
+CIAA-117/037
+- III -
+OSTENSIVO
+ORIGINAL
+Í N D I C E
+PÁGINAS
+Folha de Rosto....................................................................................................
+I
+Ato de Aprovação...............................................................................................
+II
+Índice..................................................................................................................
+IІІ
+Introdução...........................................................................................................
+IV
+CAPÍTULO 1- FUNDAMENTOS TEÓRICOS DE AGULHAS GIROSCÓPICAS
+            1.1 - Introdução...........................................................................................................1-1
+            1.2 - Giroscópio..........................................................................................................1-1
+            1.3 - Rigidez no espaço ou Inércia Giroscópica.........................................................1-2
+            1.4 - Precessão............................................................................................................1-3
+            1.5 - Rotação Aparente...............................................................................................1-5
+            1.6  - O Giroscópio como uma agulha giroscópica....................................................1-9
+            1.7 - Procurando o meridiano.....................................................................................1-10
+            1.8 - Indicando o norte (Orientando-se no meridiano)...............................................1-12
+            1.9 - Agulhas dotadas de girosfera.............................................................................1-14
+            1.10  - Erros nas agulhas giroscópicas........................................................................1-20
+CAPÍTULO 2 - FUNDAMENTOS TÉORICOS DOS SISTEMAS DE NAVEGAÇÃO 
+INERCIAL
+2.1 - Introdução...................................................................................................
+2-1
+2.2 - Navegação inercial......................................................................................
+2-1
+2.3 - Giroscópio clássico.....................................................................................
+2-2
+2.4 - Girômetro....................................................................................................
+2-3
+2.5 - Acelerômetro...............................................................................................
+2-9
+2.6 - Sistema de navegação inercial (SNI)..........................................................
+2-13
+OSTENSIVO
+CIAA-117/037
+- IV -
+OSTENSIVO
+ORIGINAL
+CAPÍTULO 3 – SISTEMA DE NAVEGAÇÃO INERCIAL MK-39
+3.1 – Introdução..................................................................................................
+3-1
+3.2 – Características do Sistema.........................................................................
+3-2
+3.3 – Dados de Entrada e Saída.................................................................…….
+3-3
+3.4 – Partes Componentes do Sistema................................................................
+3-4
+3.5 – Descrição das Partes Componentes do Sistema........................................
+3-6
+3.6 – Generalidades na distribuição de energia..................................................
+3-17
+3.7 - Fonte (externa) UPS-1...................................................................………
+3-18
+3.8 – Distribuição da Alimentação Principal............................................................3-22
+3.9 – Referência Síncrona (H,R,P)....................................................................
+3-22
+3.10 – Referência Síncrona (LOG.)...........................................................…...
+3-22
+3.11 - Distribuição da Baixa Voltagem...............................................……......
+3-27
+3.12 – Teoria de funcionamento do sistema......................................................
+3-28
+3.13 – Modos operacionais com o navio atracado (Quay).................................
+3-31
+3.14 - Modos operacionais com o navio no mar (Sea).......................................
+3-32
+3.15 – Operação do sistema.....................................................................................3-35
+3.16 – Operação da RCDU e Funções do display...................................................3-38
+3.17 – Procedimentos para operação do teclado e menus.......................................3-39
+3.18 – FIM / PC.........................................................................................................3-42
+3.19 – Sistema de alarmes........................................................................................3-43
+3.20 – Manutenção...................................................................................................3-45
+ANEXO A - Bibliografia...........................................................................................A-1
+OSTENSIVO
+CIAA-117/037
+- V -
+OSTENSIVO
+ORIGINAL
+INTRODUÇÃO
+1 - PROPÓSITO
+Esta publicação foi elaborada para dar uma orientação básica sobre os fundamentos de agu-
+lhas giroscópicas e sistemas de navegação inercial.
+Os assuntos nela contidos foram extraídos de seções e parágrafos selecionados, com base no
+manual das agulhas giroscópicas, preenchidos pelas exigências dos currículos, com o propósi-
+to de facilitar a aprendizagem por parte dos alunos.
+2 - DESCRIÇÃO
+Esta publicação está dividida em dois capítulos. No capítulo 1 os fundamentos teóricos de a-
+gulhas giroscópicas, no capítulo 2 os fundamentos teóricos dos sistemas de navegação iner-
+cial e no capítulo 3 o sistema de navegação inercial MK-39.
+3 - AUTORIA E EDIÇÃO
+Esta publicação é de autoria do SO-CI-RICARDO RAMALHO FORTES e foi elaborada e 
+editada, no CENTRO DE INSTRUÇÃO ALMIRANTE ALEXANDRINO (CIAA).
+4 - DIREITOS DE EDIÇÃO
+Reservados para o CENTRO DE INSTRUÇÃO ALMIRANTE ALEXANDRINO.
+Proibida a reprodução total ou parcial, sob qualquer forma ou meio.
+5 - CLASSIFICAÇÃO
+Esta publicação é classificada, de acordo com o EMA-411 (Manual de Publicações da Marinha)
+em: Publicação da Marinha do Brasil, não controlada, ostensiva, didática e manual.
+OSTENSIVO
+CIAA-117/037
+1-1
+OSTENSIVO
+ORIGINAL
+CAPÍTULO I
+FUNDAMENTOS TEÓRICOS DE AGULHAS GIROSCÓPICAS. 
+– INTRODUÇÃO
+Durante muitos séculos a agulha magnética (bússola) foi o único instrumento disponível,
+a bordo das embarcações (navios), para determinar direções (rumo ou azimute) no mar. 
+Na busca por um equipamento que indicasse o norte verdadeiro, em vez do norte magné-
+tico, a agulha giroscópica foi desenvolvida, pelos norte - americanos, nas primeiras dé- 
+cadas do século 20 (1911), tendo como base um único giroscópio.
+As agulhas giroscópicas são cada vez mais utilizadas a bordo dos navios modernos, não
+apenas como referência para obtenção de rumos e posições para a navegação, mas tam-
+bém como componentes básicos de um sistema de navegação inercial, provendo dados
+de rumo, posição (latitude e longitude), balanço e caturro, para os sistemas de armas e
+sistemas integrados de navegação.
+Basicamente, uma agulha giroscópica depende de quatro (4) fenômenos naturais para sua
+operação e somente os métodos pelos quais estes fenômenos são utilizados, distinguem
+os diversos tipos de agulha giroscópicas.
+A compreensão destes fenômenos proporcionará um melhor entendimento das partes es-
+senciais de uma agulha e auxiliará na operação, condução e manutenção do equipamen-
+to.
+Dos quatro (4) fenômenos dos quais depende a operação da agulha giroscópica, os dois
+(2) primeiros são propriedades inerentes ao giroscópio, denominados de rigidez no espa-
+ço (inércia giroscópica e precessão, os outros dois (2) referem - se à terra e são denomi-
+nados de força de gravidade e rotação da terra (HER).
+A inter - relação destes fenômenos é explanada neste capitulo.
+- GIROSCÓPIO
+Um giroscópio básico, figura 1.1, consiste de um rotor (disco) perfeitamente balancea-
+do, livre para girar em torno de três (3) eixos perpendiculares entre si, que se
+interceptam no seu centro de gravidade. Diz - se assim, que o giroscópio tem três (3)
+graus de liberdade, constituídos pelas possibilidades de girar em torno de três (3) eixos,
+denominados respectivamente de eixo de rotação, eixo horizontal e eixo vertical.
+OSTENSIVO
+CIAA-117/037
+1-2
+OSTENSIVO
+ORIGINAL
+Fig. 1.1 – Giroscópio
+- RIGIDEZ NO ESPAÇO OU INÉRCIA GIROSCÓPICA
+Rigidez no espaço ou Inércia giroscópica,é a propriedade do giroscópio pela qual ele
+tenta manter o eixo do rotor paralelo a sua posição original.
+Esta propriedade é explicada pela lei do movimento - lei de NEWTON - a qual enuncia
+que um corpo em movimento continuará a se mover a uma velocidade constante na
+mesma direção até que ele sofra a ação de uma força externa. Portanto, o volante tende
+a girar no mesmo plano e resiste a qualquer força que tente mudar o seu plano de rota-
+ção. A inércia giroscópica poderá ser mostrada inclinando-se vagarosamente a base do
+giroscópio, como mostrado na fig. 1.2.
+Fig. 1.2 – Rigidez no Espaço
+OSTENSIVO
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+Se o rotor do giroscópio estiver parado, o atrito nos rolamentos causará a inclinação do
+rotor devido à inclinação da base; entretanto, se rotor estiver girando, ele manterá o seu
+plano original de rotação. Ele continuará mantendo o seu plano original de rotação, não
+importando o valor da inclinação sofrida pela base do giroscópio enquanto ele estiver
+com velocidade suficiente. Embora o atrito nos rolamentos continue afetando o giroscó-
+pio, isto o afeta em menor grau do que afetaria se o volante estivesse estacionário.
+A inércia giroscópica depende da velocidade angular, do peso e do raio de rotação de
+cada massa elementar. O máximo efeito de inércia é conseguido com a massa concen-
+trada próximo da borda, deste fato o formato dos rotores empregados nas agulhas mo-
+dernas.
+- PRECESSÃO
+Precessão é uma propriedade do giroscópio que causa a mudança de direção do eixo de
+rotação quando é aplicado um torque no rotor. A precessão poderá ser ilustrada pela a-
+plicação de um torque no eixo horizontal do rotor em funcionamento, como mostrado na
+fig. 1.3.
+Fig. 1.3 – Precessão em torno do eixo vertical.
+O torque aplicado encontra resistência. O rotor ao invés de girar em torno do eixo hori- 
+zontal, como seria normal caso ele não estivesse funcionando, gira ou precessiona em 
+torno de seu eixo vertical na direção indicada pela seta P. Similarmente, se o torque for
+1-3
+1-4
+OSTENSIVO
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+aplicado sobre o eixo vertical, como mostrado por T na fig. 1.4, o rotor gira ou preces-
+siona em torno de seu eixo horizontal como mostrado pela seta P.
+Fig. 1.4 – Precessão em torno do eixo horizontal.
+Se houver uma completa ausência de inércia e atrito em torno do eixo de precessão, a
+reite de precessão fará com que a resistência do rotor seja exatamente igual ao torque
+aplicado em qualquer instante e não haverá nenhum movimento na direção do torque.
+A causa da precessão pode ser explicada simplesmente pela consideração do que acon-
+tece a uma partícula da borda do rotor, como mostrada na fig. 1.5. Suponha que o rotor
+esteja girando na direção da seta R.
+OSTENSIVO
+CIAA-117/037
+1-5
+OSTENSIVO
+ORIGINAL
+Fig. 1.5 – Força causando precessão no rotor do giroscópio.
+Fazendo agora a suposição de que a força seja aplicada contra o volante no ponto B da
+partícula P, a qual está na posição mostrada em determinado instante.
+A força F, que exerce nesta pequena partícula uma força ao longo do vetor BL, acele-
+rando-a, portanto, nessa direção.
+Durante um pequeno intervalo de tempo, a aceleração dará a esta parte uma componente
+de velocidade BL. A velocidade BL e a verdadeira partícula ao longo do vetor BJ (devi-
+do à rotação do volante), que resulta em uma nova velocidade ao longo do vetor BK, di-
+ferente da direção de BJ.
+Isto é equivalente a uma rotação em torno do eixo Y. Portanto, o efeito do torque atuan-
+do em torno do eixo X, causa à rotação do volante em torno do eixo Y. Esta rotação é
+chamada PRECESSÃO.
+Uma maneira de lembrar-se a direção na qual a precessão ocorre é observar a força co-
+mo se atuasse em um ponto simples na borda do volante, como indicado por um ponto
+negro na fig. 1.3.
+Este ponto não se moverá em resposta à força, mas sim num ponto a 90º (na direção da
+rotação do volante) daquele em que foi aplicada a força.
+- ROTAÇÃO APARENTE
+Inicialmente vamos supor que o rotor está montado no Equador com seu eixo apontado
+no sentido Este - Oeste. De um ponto no espaço além do pólo sul, o rotor aparece como
+mostrado na fig. 1.6. Para evitar confusão, os anéis suporte são omitidos e somente o
+volante e o eixo são mostrados. De um ponto de observação no espaço, a Terra pode ser
+vista girando na direção da seta (com uma velocidade angular de uma rotação em 24
+horas), carregando o rotor com ela. Entretanto, devido à inércia giroscópica, o rotor
+permanece fixo no espaço da mesma forma que quando a base foi inclinada fig. (1.2).
+Se o observador estiver sobre a Terra, o rotor parecerá girar em torno do seu eixo hori-
+zontal com uma velocidade igual, mas a direção oposta à rotação da Terra (uma rotação
+360º em 24 horas). Este efeito é comumente denominado Reite Horizontal da Terra
+(HER).
+OSTENSIVO
+CIAA-117/037
+1-6
+OSTENSIVO
+ORIGINAL
+Fig. 1.6 – Rotação aparente no equador.
+Igualmente supondo-se que o rotor seja montado no Pólo Norte ou Pólo Sul com seu ei-
+xo de rotação horizontal (nivelado com a superfície da Terra), como mostrado na fig.
+1.7, o rotor parecerá girar em torno de seu eixo vertical. Este efeito é comumente cha-
+mado de Reite Vertical da Terra (VER).
+Fig. 1.7 – Rotação aparente nos pólos.
+OSTENSIVO
+CIAA-117/037
+1-7
+OSTENSIVO
+ORIGINAL
+Nos pontos intermediários, ou seja, entre o Equador e os pólos, o rotor aparenta girar
+parcialmente em torno dos dois (2) eixos horizontal e vertical, como mostrado na fig.
+1.8, devido ao efeito causado por ambas as componentes, Vertical e Horizontal da Ter-
+ra.
+Fig. 1.8 – Rotação aparente entre o equador e os polos
+As grandezas relativas dos efeitos das componentes, são funções de latitude. O efeito da
+Reite Horizontal da Terra é máximo no equador e zero nos pólos e varia com o co-seno
+da latitude, enquanto que o efeito da Reite Vertical da Terra variará com o seno da lati-
+tude, sendo máximo nos pólos e zero no Equador, desta forma, seus valores podem ser
+determinados, em qualquer ponto da Terra, utilizando as seguintes expressões:
+HER = ER. Co-seno da latitude ou HER = 15°/ H. Cós lat.
+VER = ER. Seno da latitude ou VER = 15°/ H . Sen lat.
+Analisando a figura 1.9, chegamos a conclusão que a velocidade angular da Terra (ER)
+é igual à 15 graus por hora, desta forma, teremos:
+Ponto
+ 
+  “A”
+ 
+  Latitude
+ 
+  zero 
+ 
+ (0°)
+ 
+  
+Sen. 0° é igual a zero, Logo VER = 0
+Cos. 0° é igual a um (1), Logo HER = 15° / h (Máximo) 
+Ponto “B” Latitude 30°
+Sen. 30° é igual a 0,5, Logo VER = 15° / h . 0,5 = 7.5°/h
+Cos. 30° é igual a 0,866, Logo HER = 15° / h . 0,866 = 12.99°/h.
+Ponto
+ 
+  “C”
+ 
+  Latitude
+ 
+  60°
+ 
+ 
+OSTENSIVO
+CIAA-117/037
+1-8
+OSTENSIVO
+ORIGINAL
+Sen. 60° é igual a 0,866, logo VER = 15° / h . 0,866 = 12.99°/h. 
+Cos. 60° é igual a 0,5, Logo HER = 15° / h . 0,5 = 7.5°/h.
+Ponto
+ 
+  “D”
+ 
+  Latitude
+ 
+  90°
+ 
+  
+Sen. 90° é igual a um (1), Logo VER = 15° / h . 1 = 15°/h (Máximo). 
+Cos. 90° é igual a zero, Logo HER = 0.
+Fig. - 1.9 - Quadro de resoluções de HER e VER de acordo com a latitude
+Em geral, a Reite Horizontal da Terra ocasiona a inclinação do rotor, e a reite vertical
+da Terra ocasiona um movimento do rotor em azimute com relação à superfície da Ter-
+ra.
+Se for lembrado que o movimento aparente das estrelas através do céu tem uma rotação
+contrária à dos ponteiros do relógio com relação à estrela polar, uma maneira de lem-
+brar o efeito da rotação da Terra em um giroscópio livre é considerar o eixo do rotor
+apontando para uma estrela. O eixo continuará apontado para a mesma estrela (uma vez
+OSTENSIVO
+CIAA-117/037
+1-9
+que as estrelas são fixas no espaço) e descreverá um círculo em relação à estrela polar.
+Portanto, a diferença entre a inércia giroscópica e rotação aparente é simplesmente
+quanto ao ponto de observação.
+Em relação ao espaço, o rotor permanecerá fixo; em relação à Terra, contudo, o rotor 
+aparenta girar como descrito acima. Como será visto mais tarde, é esta rotação aparente
+do rotor em relação à Terra que possibilita a aplicação da força de gravidade para con- 
+verter o giroscópio livre em uma agulha giroscópica procuradora do norte.
+- O GIROSCÓPIO COMO UMA AGULHA GIROSCÓPICA
+Antes que um giroscópio livre possa ser convertido em uma agulha giroscópica, a estru-
+tura de montagem deve ser alterada ligeiramente por razões que serão discutidas mais
+tarde nesta seção. Como é mostrado na fig. 1.10, o giroscópio é montado em uma esfera,
+e a esfera é sustentada pelo anel vertical.
+A esfera e o anel vertical são montados em uma base chamado fantasma. Neste ponto de
+discussão, admite-se que o anel vertical e o fantasma giram com o giroscópio em torno
+do eixo vertical quando ele gira em azimute. O giroscópio mostrado na fig. 1.1, despre-
+zando o atrito, manterá sua posição no espaço enquanto não sofrer a ação de uma força.
+Para fazer de um giroscópio uma agulha giroscópica, é necessária fazê-lo procurar e
+manter a indicação do norte verdadeiro.
+Uma vez que o norte é a direção representada por uma linha horizontal no plano meridi-
+ano, alguns meios devem ser empregados para:
+a) fazer o eixo do giroscópio procurar o plano de meridiano;
+b) fazer o eixo nivelar; e
+c) fazê-lo manter sua posição, uma vez encontrada.
+OSTENSIVO
+ORIGINALFig.
+1.10 – Rotor do giroscópio dentro de uma esfera.
+OSTENSIVO
+CIAA-117/037
+1-10
+OSTENSIVO
+ORIGINAL
+1-4
+- PROCURANDO O MERIDIANO
+O primeiro passo para transformar um giroscópio em uma agulha giroscópica é fazê-lo
+procurar o meridiano.
+Para isto, um peso W é adicionado na parte inferior do anel vertical, como mostrado na
+fig. 1.11. Isto faz com que o anel vertical se torne pendular em relação ao eixo horizon-
+tal.
+Fig. 1.11 – Giroscópio modificado com peso “W”.
+Com o giroscópio no Equador, o eixo na horizontal apontado na direção Leste-Oeste, e 
+girando no sentido dos ponteiros do relógio (visto do lado Oeste - ponto A na fig. 1.12),
+o giroscópio e o anel vertical estão na vertical e nenhum torque é criado pelo peso 
+adicionado.
+Neste ponto, ambas as propriedades do giroscópio, inércia giroscópica e precessão, en-
+tram em ação: como a Terra gira, o eixo gira e o anel vertical torna-se inclinado em re-
+lação à horizontal como mostrado em “B” da fig. 1.12. O peso W é elevado contra a a-
+OSTENSIVO
+CIAA-117/037
+1-11
+OSTENSIVO
+ORIGINAL
+ção da força de gravidade e conseqüentemente causa um torque no eixo horizontal do
+giroscópio. Este torque causa precessão em torno do eixo vertical na direção indicada
+em C; o giroscópio assim moveu-se para fora de sua posição original Leste-Oeste.
+Como a extremidade do giroscópio que estava apontando inicialmente para Leste (sem
+referência como sendo a ponta norte) continua a elevar, o torque causado pelo peso tor
+na-se maior devido ao aumento do braço de momento através o qual o peso atua; isto é
+devido à maior inclinação. Como a velocidade da precessão é aproximadamente propor
+cional à inclinação, o giroscópio gira em torno do eixo vertical (em azimute) como
+mostrados em D, com um aumento de velocidade, até que o eixo esteja no meridiano
+como mostrado em E.
+No meridiano, a inclinação, o torque causado pelo peso e a velocidade de precessão es-
+tão todos em um valor máximo. Deve ser notado aqui que é o conjugado endireitador
+aplicado ao eixo inclinado pelo peso pendular que causa o giroscópio precessionar além
+do meridiano e não a energia cinética da precessão, por ser esta inteiramente desprezí-
+vel.
+Após a ponta norte do eixo do giroscópio cruzar o meridiano, a ponta mais alta (Norte)
+do eixo, inclinado, está a Oeste do meridiano. Como resultado (voltando-se a fig. 1.6) a
+rotação da Terra reduz a inclinação. Quando a inclinação se torna menor, a velocidade
+horizontal e a precessão azimute diminuem. Finalmente, o eixo se torna horizontal e a
+precessão em direção a oeste cessa, o peso no anel vertical não ocasiona torque no eixo
+horizontal porque ele está na vertical. Neste ponto o eixo sofreu uma precessão tanto
+para Oeste do meridiano como anteriormente para Leste.
+Como a Terra continua a girar, a ponta norte começa a declinar.
+O peso W é elevado no lado oposto do eixo horizontal na direção oposta, trazendo o ei-
+xo do giroscópio de volta, através do meridiano, para sua posição original.
+Neste ponto, o ciclo é repetido e prosseguirá indefinidamente. A oscilação em torno do
+meridiano pode ser claramente entendida pela fig. 1.12 (F) que mostra o movimento da
+ponta do eixo do giroscópio projetado em um plano vertical. O elipse é o resultado de
+um deslocamento do eixo do giroscópio de apenas poucos graus do meridiano. Se o ei-
+xo do giroscópio estiver apontando na direção Leste-Oeste no início do ciclo, como
+mostrado em A, a precessão se processará através de 180º em cada direção. Em um ex-
+tremo o eixo apontará para Leste e no outro, para Oeste. Em qualquer caso, o giroscó-
+pio nunca repousará porque não haverá força tentando restaurar a posição do eixo na
+horizontal até que ele tenha passado o meridiano.
+A razão entre o movimento em torno do eixo horizontal (causado pela rotação aparente)
+OSTENSIVO
+CIAA-117/037
+1-12
+OSTENSIVO
+ORIGINAL
+e o movimento precessional do eixo vertical (causado pela oscilação do peso) determina
+o formato da elipse. Se o peso for aumentado, a velocidade da precessão aumentará e a
+elipse será mais achatada. Se o peso for diminuído a velocidade de precessão será dimi-
+nuída e a elipse, teoricamente, será quase circular. O tempo, em minutos, exigido para a
+oscilação completa, é chamado de PERÍODO DE OSCILAÇÃO. Para um dado rotor
+e velocidade, num certo ponto da Terra, o período será aproximadamente o mesmo a
+despeito do ângulo através do qual o rotor oscila. O período pode ser modificado vari-
+ando o peso no fundo do anel vertical.
+Através da suspensão de um peso no anel vertical, a primeira exigência para transfor-
+mar um giroscópio em uma agulha giroscópica (fazendo-o procurar o meridiano) foi
+preenchida.
+Resta agora suprimir estas oscilações, de modo que o giroscópio repouse rapidamente
+com seu eixo nivelado na direção Norte-Sul.
+Fig. 1.12 – Precessão do giroscópio devido à ação do peso “W”.
+OSTENSIVO
+CIAA-117/037
+1-13
+OSTENSIVO
+ORIGINAL
+- INDICANDO O NORTE (ORIENTANDO-SE NO MERIDIANO)
+Para suprimir as oscilações do rotor em tempo do meridiano, um pequeno 
+W1 é adicio- nado à esfera na qual o giroscópio está contido. Este peso é 
+colocado no lado Leste da girosfera numa posição mostrada pela fig. 1.13.
+Fig. 1.13 – Giroscópio modificado com peso no anel vertical e girosfera.
+Com o eixo do giroscópio nivelado, o torque produzido pela gravidade atuando sobre o
+peso W1 é atenuado pelos mancais do eixo vertical.
+Com ambos os pesos o giroscópio começará a inclinar devido à rotação da Terra; tão lo-
+go ele se incline, precessiona em azimute em direção ao meridiano e para baixo em dire-
+ção à posição de nivelamento. Como resultado da ação de nivelamento do peso W1, o
+eixo do giroscópio não se inclina tanto ao alcançar o meridiano, como antes, quando ele
+estava apenas com o peso W. Devido ao eixo do giroscópio não ter se inclinado tanto, o
+torque produzido pelo peso W não é tão grande. Portanto, o eixo do giroscópio não pre-
+cessiona tanto para oeste do meridiano quando foi para leste quando foi dada a partida
+no ciclo.
+Após atingir um ponto onde o eixo esteja nivelado e tanto para Oeste do meridiano quan-
+to ele estava indo anteriormente devido a ação do peso W, a rotação da Terra continua
+ainda a causar a inclinação do eixo para baixo. Como resultado, as forças devidas aos
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-14
+pesos são revertidas, e são criados torques que precessionam o giroscópio para Leste e
+para cima. A mesma ação ocorre na direção inversa. O giroscópio não sofrerá precessão
+para Leste tanto quanto foi para Oeste. Deste modo, o peso W1 adicionado causa a redu-
+ção da elipse em cada oscilação sucessiva; a ponta norte do eixo do rotor seguirá um ca-
+minho espiral, como mostrado na fig. 1.14, ao invés de um caminho elíptico como previ-
+amente indicado. Uma consideração cuidadosa da ação dos dois pesos evidenciará que a
+única posição de repouso que o giroscópio pode encontrar será com seu eixo na horizon-
+tal e no meridiano. Em outras palavras, o giroscópio livre foi convertido em agulha gi-
+roscópica.
+Fig. 1.14 – Movimento do giroscópio.
+- AGULHAS DOTADAS DE GIROSFERA
+a) Introdução
+As agulhas dotadas de girosfera são imersas em óleo especial e seu rotor gira em alta
+rotação no interior de uma esfera contendo gás hélio.
+Essas características proporcionam, sobre as agulhas anteriores, as seguintes vantagens:
+1ª - O peso da girosfera é removido dos rolamentos do eixo vertical, devido a flutuação
+neutra;
+2ª - Oferece grande proteção contra choques mecânicos;
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-15
+3ª - Reduz os efeitos da aceleração;
+4ª - O trabalho do motor (rotor), dentro da girosfera, é facilitado pelo condicionamento 
+em gás hélio; e
+5ª - A imersão dos elementos em óleo, oferece grande proteção contra os agentes oxi- 
+dantes.
+Obs. - O gás hélio além de fornecer um empuxo para a flutuação neutra, transfere o ca- 
+lor produzido pelo motor, para a superfície interna da esfera.
+b) Quanto ao sistema de controle
+As agulhas dotadas de girosfera utilizam também a força de gravidade para procurar e 
+indicar o norte verdadeiro da terra, e podem ser com controle mecânico ou eletrônico.
+1 - Controle mecânico (Fig. - 1.15).
+Essas agulhas utilizam um balístico de liquido (óleo) para aplicar o torque de controle
+azimutal (período) e pesos para aplicar o torque de controle de amortecimento (nivela-
+mento). Temos como exemplo as agulhas MK - 27, 227, etc.
+Fig. - 1.15 -Agulha com balístico e peso de amortecimento
+Nota: O balístico de óleo consiste de dois (2) reservatórios, interligados por um tubo, 
+parcialmente cheios de óleo, montado na girosfera. Quando há uma inclinação do con-
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-16
+junto (devido a HER), o óleo se escoa para o reservatório mais baixo, aplicando um tor- 
+que no rotor, fazendo o conjunto procurar o norte.
+2 - Controle
+ 
+  eletrônico
+ 
+  (Fig. - 1.16).
+Essas agulhas utilizam um sistema de controle composto por um sensor de inclinação 
+(nível eletrolítico), amplificadores de controle azimutal e amortecimento e produtores 
+de torques (torquer) de controle azimutal e amortecimento. Quando há uma inclinação 
+do conjunto, o sensor detecta esta inclinação e produz um sinal elétrico proporcional a 
+esta inclinação, que depois de amplificado é aplicado aos produtores de torques, para 
+procurar e indicar o norte verdadeiro da Terra. Temos como exemplo as agulhas MK - 
+19, 23, etc.
+Fig. - 1.16 - Agulhas com controle eletrônico.
+c) Componentes utilizados nas agulhas giroscópicas
+1 - Nível eletrolítico
+Consiste de um tubo de vidro, cilíndrico, contendo três (3) eletrodos de platina, parcial-
+mente cheio de eletrólito, de modo a formar uma bolha de ar na parte superior do tubo,
+como mostra a figura 1.17.
+Quando o nível estiver na horizontal (indicando que o eixo de rotação do giroscópio está
+nivelado) a bolha estará no centro, e a resistência entre o eletrodo superior e os eletrodos
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-17
+inferiores é igual. Se o nível inclina de modo que a bolha se mova para a esquerda, exis-
+tirá menos eletrólito entre o eletrodo superior e o inferior da esquerda, conseqüentemen-
+te, haverá um aumento de resistência entre os dois. A resistência entre o eletrodo supe-
+rior e o inferior da direita diminui proporcionalmente, sendo a diferença no valor da re-
+sistência proporcional ao movimento da bolha.
+Os dois eletrodos inferiores são excitados pelos terminais opostos do enrolamento se-
+cundário do transformador.
+O sinal de inclinação (saída) é obtido do eletrodo superior e o terminal central do secun-
+dário do transformador.
+Quando o nível está na horizontal, a tensão entre o eletrodo superior e cada eletrodo in-
+ferior é igual e oposta e o sinal de saída é zero. Quando o nível é inclinado, uma tensão
+de saída é produzida e é proporcional tanto em amplitude quanto em fase à inclinação.
+Fig. - 1.17 - Nível eletrolítico
+Nota: Nas agulhas giroscópicas, dotadas de girosfera, o nível eletrolítico é montado no
+elemento sensível (anel vertical) de modo a ficar paralelo ao seu eixo de rotação, como
+mostra a figura 1.18.
+Obs. - Em alguns modelos mais modernos de agulha, o nível eletrolítico foi substituído
+por um acelerômetro, que será estudado no capítulo seguinte.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-18
+Fig. - 1.18 - Elemento sensível de uma agulha dotada de girosfera.
+2 - Produtor de torques (torquer)
+Consiste de uma estrutura tipo “E” aberta (sem armadura) de laminas de ferro, onde o
+enrolamento central é o campo de referência (fixo), enquanto que os enrolamentos late-
+rais são os campos de controle, os campos são defasados de 90º elétricos tal qual um
+motor de indução bifásico, o campo fixo ou de referência é excitado (alimentado) pela
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-19
+alimentação da linha, enquanto que os campos de controle são excitados pela saída do
+amplificador de torque.
+Quando o campo de referência é energizado, produz na superfície da esfera, um campo
+magnético com uma determinada polaridade, enquanto que os campos de controle, enro-
+lados em série e opostos, ao serem excitados, produzirão campos magnéticos que ten-
+dem a atrair e repelir o campo magnético gerado pelo campo de referência, como mostra
+a figura 1.19, obtendo se assim os torques desejados, cuja direção e intensidade é pro-
+porcional à polaridade e amplitude do sinal de controle, proveniente do amplificador.
+Fig. - 1.19 - Produtor de torques (torquer)
+3 - Pickoff (transformador tipo “E”)
+Consiste de um núcleo de ferro laminado, em forma de “E” com três enrolamentos (bo-
+binas) e uma armadura de ferro, móvel em relação ao transformador, que completa o
+núcleo. O enrolamento (bobina) central é o primário e os dois enrolamentos (bobinas)
+laterais são os secundários, que são enroladas em série e opostas. O acoplamento mag-
+nético entre primário e secundários, vária com a posição da armadura.
+Quando a armadura está no centro da estrutura do transformador, como mostra a figura
+1.20, tensões iguais são induzidas nos secundários, e a diferença entre elas é zero, devi-
+do estar enrolados em oposição, assim a tensão (sinal) de saída é zero.
+Porém, se a armadura for movida, as tensões induzidas serão desiguais, de modo que a
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-20
+diferença das duas não mais será zero, neste caso teremos tensão (sinal) de saída, que
+será proporcional, tanto em amplitude quanto em fase ao desalinhamento entre trans-
+formador e armadura.
+Obs. - O pickoff é usado como sensor ou detector de erro.
+Fig. - 1.20 - Pickoff (transformador tipo “E”)
+– ERROS NAS AGULHAS GIROSCÓPICAS.
+a) Introdução
+A explanação precedente, dos fundamentos da ação da Agulha Giroscópica foi simplifi-
+cada e aplica – se particularmente à Agulha no Equador.
+Em outros pontos quaisquer da superfície da Terra que não o Equador, a bordo de um
+navio em movimento, são introduzidos certos fatores que resultariam em erros se não
+fossem compensados ou corrigidos.
+b) Erro devido à latitude.
+Se uma Agulha Giroscópica for nivelada e colocada sobre o Meridiano, no Equador,
+onde somente a componente “HER” afeta a agulha, ela se orienta no Meridiano apon-
+tando para o norte (sem erro) com seu eixo de rotação nivelado, em uma latitude nor-
+te, o movimento vertical da Terra (VER) faria com que a extremidade “Norte” da giro
+se deslocasse para o Leste. Uma vez que o eixo do giroscópio tenha perdido o plano do
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-21
+Meridiano, o movimento horizontal da Terra (HER) faria com que a extremidade Norte
+subisse, como mostra a figura 1.21. O sinal de inclinação, proveniente do sensor (nível
+eletrolítico), aplicará torques em torno dos eixos vertical e horizontal reduzindo a incli-
+nação e precessionando a giro de volta ao Meridiano, o que, em última análise é o que
+se deseja, entretanto, assim que a giro se orienta, seu eixo alcance posições onde:
+1º - A precessão devido ao torque de controle azimutal balanceie o movimento aparente
+devido ao “VER”.
+2º- A precessão devido ao torque de controle de amortecimento (nivelamento) balanceie
+o movimento aparente devido ao “HER”.
+Como resultado, o eixo do giroscópio supera o movimento da Terra e orienta – se com a
+extremidade norte levantado e a “leste” do meridiano nas latitudes norte (Erro leste) ou
+com a extremidade norte para baixo e a “oeste” do meridiano nas latitudes sul (Erro
+oeste).
+Figura - 1.21 - Efeito de VER.
+O pequeno ângulo formado entre o meridiano e o ponto no qual o eixo da giro orienta –
+se (erro de latitude), varia com a latitude e por essa razão deve ser introduzida uma cor-
+reção, na qual compense esse erro em qualquer latitude que a agulha seja usada.
+Para corrigir este erro, deve ser aplicado continuamente um sinal proporcional ao mo-
+vimento vertical da Terra (VER) ao sistema de controle azimutal, como mostra a figura
+1.21, que irá causar uma precessão na agulha exatamente igual, porém em sentido opos-
+to ao “VER”. A agulha irá orientar – se nivelada, sobre o meridiano verdadeiro, ou seja,
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-22
+sem erro.
+Obs. - O controle de latitude é graduado de zero (0) a 90° norte e sul.
+c) Erro devido à velocidade e rumo do navio.
+Se um navio está navegando nas direções (rumo) norte ou sul, a extremidade norte do
+eixo de rotação do giroscópio, que tende a permanecer fixa no espaço, por causa da sua
+rigidez aparenta ter uma inclinação, como mostra a figura 1.21.
+Para um rumo norte, o sinal de inclinação, proveniente do sensor (nível eletrolítico) fa-
+ria a giro precessionar para oeste, até que a tendência da extremidade norte do eixo de
+rotação do giroscópio de subir, devido à velocidade norte, fosse igual e oposta ao mo-
+vimento de “HER”. Este equilíbrio se dá à oeste do meridiano verdadeiro (Erro oeste).
+Para rumo sul ocorreria o contrário (Erro leste), entretanto, se o rumo for leste ou oeste
+verdadeiro, o movimento do navio não tenderia a inclinar a giro uma vez que a veloci-
+dade do navio estaria no mesmo ângulo que o rotor do giroscópio (Sem erro).
+A proporção da inclinação do eixo de rotação do giroscópio, depende da velocidade do
+navio em um rumo norte ou sul, se a giro se inclinar, ocorrerá um erro em azimute para
+oeste ou para leste, entretanto, se for aplicado um torque que precessione o eixo de rota-
+ção da giro para baixo ou para cima de intensidade igual e em sentido contrário ao que
+causa sua elevação ou depressão (velocidade norte ou sul), a giro permanecerá nivelada
+e não ocorrerá nenhum erro.
+Para corrigir este erro, deve ser aplicado continuamente um sinal que é igual à velocida-
+de, norte ou sul, do navio multiplicado pelo co-seno do rumo, ao sistema de amorteci-
+mento (nivelamento), como mostra a figura 1.22, que irá causar uma precessão na agu-
+lha exatamente igual, porém em sentido oposto a que causa o erro. A agulha irá orientar
+– se nivelada, sobre o meridiano verdadeiro, sem erro.
+Obs. - A compensação da velocidade (N - S), consiste de uma unidade que produz um
+sinal elétrico proporcional à velocidade do navio, através de um potenciômetro, e o co-
+seno do rumo é obtido pela adição de um resolver, na unidade mestra, acionado pelo
+motor azimutal, como mostra a figura 1.22.
+A correção da velocidade, dependendo da marca e modelo da agulha, pode ser de entra-
+da manual ou automática, onde o controle manual é graduado de zero (0) a 40 nós.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+1-23
+Fig. - 1.22 - Sistema de controle e correções de uma agulha dotada de girosfera
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-1
+CAPÍTULO 2
+FUNDAMENTOS TEÓRICOS DE NAVEGAÇÃO INERCIAL
+- INTRODUÇÃO
+Desde a década de 40, os sistemas de navegação, em especial os sistemas de navegação
+inercial (INS) tornaram-se importantes componentes em aplicações científicas e milita-
+res .
+O sistema de navegação inercial para navios (SINS - Ships Inertial Navigation System)
+foi desenvolvido no final dos anos 50 e início da década seguinte, para preencher os re-
+quisitos de posicionamento preciso dos submarinos nucleares, norte americanos, porta-
+dores de mísseis balísticos. Desde então, tem sido continuamente aperfeiçoado e reduzi-
+do em tamanho e custo, de modo que, atualmente, seu uso foi estendido a todas as clas-
+ses de navio.
+- NAVEGAÇÃO INERCIAL
+a) Navegação
+Ao processo de direcionar os movimentos de um veículo (navio) de um ponto a outro,
+determinando a sua posição e a sua velocidade, ao longo do tempo, em relação a um sis-
+tema referencial conhecido e guiá-lo, ou seja, modificar o seu curso de tal forma que o
+destino desejado seja alcançado, dá-se o nome de navegação.
+A navegação pode ser ainda definida como o processo de comandar os movimentos de
+um corpo móvel de modo a fazê-lo seguir para o ponto desejado. Entretanto, faz-se ne-
+cessário que os comandos realizados, possam alterar os movimentos do corpo conforme
+o desejado, surgindo assim o controle, desta forma, pode-se dizer que o processo de le-
+var um veículo de um ponto a outro desejado, envolve três (3) operações:
+Navegação - Que diz respeito a determinação da posição e velocidade do veículo em
+relação a um sistema de referência conhecido.
+Guiagem - Que consiste no envio dos comandos, para alteração do curso do veículo, tal
+que o destino desejado seja alcançado.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-2
+Controle - Que faz com que os comandos gerem, de fato, as alterações desejadas no cur-
+so do veículo.
+A navegação em sua forma mais simples,utiliza-se de referências externas para deter-
+minar a posição do veículo.
+A necessidade da existência de um auxilio externo, constitui-se, num fator que limita a
+navegação, tendo em vista que este auxilio pode não estar disponível ou sua utilização
+não ser desejada, desta forma, surge o conceito de navegação inercial.
+b) Navegação Inercial
+Ao processo de determinar a posição do veículo (navio) e os seus movimentos com base
+na medida das suas acelerações em direções espaciais conhecidas, dá -se o nome de na-
+vegação inercial.
+A navegação inercial pode ser ainda definida como a navegação baseada em informa-
+ções provenientes de sensores inerciais, que recebem esta denominação pelo fato de u-
+sarem como principio de funcionamento o principio da inércia dos corpos, ou seja, em
+resistirem às mudanças em suas quantidades de movimento linear e angular.
+Estes sensores inerciais são girômetros e acelerômetros, que detectam mudanças de po-
+sição e de orientação angular do veículo, o que permite, a partir do conhecimento da
+posição e orientação inerciais do mesmo, determinar estas grandezas a cada instante,
+permitindo assim a guiagem do veículo ao ponto desejado, podendo prescindir de in-
+formações externas.
+NOTA: Os Sensores Inerciais empregam as leis do movimento de Newton.
+- GIROSCÓPIO CLÁSSICO
+Como mostrado na Fig. 2.1. O Giroscópio consiste de um rotor (volante ou toro), perfei-
+tamente balanceado, que ao girar em alta velocidade, mantém, de acordo com as leis de
+Newton. A orientação do seu eixo de rotação, ou seja, apontado sempre para um mesmo
+ponto no espaço, exceto quando perturbado por uma força externa.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-3
+Fig. 2.1 - Giroscópio
+- GIRÔMETRO
+Um girômetro em sua forma mais simples, como mostrado na Fig.2.2, Pode ser defini-
+do como um rotor montado sob uma estrutura que permite liberdade de inclinação do
+eixo de rotação em relação à base na qual está fixado. A estrutura mecânica, dá-se o
+nome de gimbal ( Suspensão cardan ).
+O funcionamento de um girômetro, assim como o giroscópio, é baseado nas proprieda-
+des de inércia giroscópica e precessão.
+Fig. 2.2 – girômetro Básico
+O conjunto possui sensores (pickoffs) que medem variações da posição angular entre
+rotor e base.
+No presente trabalho usaremos a denominação “Giroscópio” para os sensores inerciais
+que medem a posição angular, reservando–se a expressão “Girômetro”, ou simplesmen-
+te “Giro” (Gyro), para os sensores que fornecem as variações da posição angular, ou ve-
+locidades angulares.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-4
+2.4 .1- Girômetros Mecânicos
+a) Definição
+ 
+ 
+São aqueles que utilizam as propriedades inerciais de massas girantes, para medir as ve-
+locidades de rotações angulares, as quais estão sendo submetidas.
+Os principais elementos de um giro mecânico são: Rotor, motor, cardans e componen-
+tes auxiliares ( Sensores, produtores de torques, etc.).
+Nota: O número de cardans e a natureza do suporte determinam o tipo de giro.
+Quanto ao número de cardans os giros mecânicos podem ser de um ou dois graus de li-
+berdade.
+Quanto a natureza do torque de reação os giros mecânicos podem ser classificados co-
+mo”Rate Gyro” (Saída Proporcional à velocidade inercial do conjunto), ou “Integrated
+Gyro” (Saída proporcional à atitude, ou posição angular do conjunto).
+b) Tipos
+ 
+  
+1- Giro
+ 
+  sintonizado
+ 
+ 
+Como mostrado na Fig. 2.3, O conjunto e feito de maneira que o anel externo (Rotor)
+possua momento de inércia superior ao anel interno (Gimbal).
+Fig. 2.3 – girômetro Sintonizado
+Quando o conjunto gira, o rotor tende a manter seu plano de rotação. Ocorrendo assim
+uma mudança de orientação (Atitude) do conjunto, o acoplamento entre os anéis e o
+motor produz uma oscilação até que os anéis (Rotor e Gimbal) Assumam o novo plano
+de rotação. Análise dinâmica do fenômeno, mostra que o torque de reação sobre o ro-
+tor possui uma característica que é proporcional ao deslocamento angular, cujo valor é
+detectado por Pickoffs.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-5
+2- Giro
+ 
+  Eletrostático
+ 
+ 
+Entre os avanços para aprimorar os sistemas de navegação inercial, destaca-se o desen-
+volvimento do giro eletrostático, mostrado na Fig. 2.4. Seu rotor consiste de uma esfera
+sólida (normalmente oca) de berílio, com um ou dois centímetros de diâmetro, gira (Por
+meio de campos magnéticos girantes), a uma velocidade de dezenas de milhares de ro-
+tações por minuto (216.000 RPM) em um vácuo quase perfeito. O rotor é suspenso uni-
+camente por um campo eletrostático, que mantém a esfera afastada poucos centésimos
+de milímetro da superfície interna do invólucro (estojo) que a contém.
+Assim o giro eletrostático (ESG / Eletrostatic Gyro) fica livre de atrito nos rolamentos,
+que afeta os giros mecânicos.
+A leitura do deslocamento angular (velocidade angular) é feita por meios óticos.
+Este giro repreEntre os avanços para aprimorar os sistemas de navegação inercial,
+destaca-se o desen- volvimento do giro eletrostático, mostrado na Fig. 2.4. Seu rotor
+consiste de uma esfera sólida (normalmente oca) de berílio, com um ou dois
+centímetros de diâmetro, gira (Por meio de campos magnéticos girantes), a uma
+velocidade de dezenas de milhares de ro- tações por minuto (216.000 RPM) em um
+vácuo quase perfeito. O rotor é suspenso uni- camente por um campo eletrostático, que
+mantém a esfera afastada poucos centésimos de milímetro da superfície interna do
+invólucro (estojo) que a contém.senta a melhor aproximação jamais alcançada pelo
+homem ao giroscópio perfeito teórico.
+Fig. 2.4 – Giro eletrostático
+.2 - Girômetros não Mecânicos
+a) Giro a laser
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-6
+1 - Principio de
+ 
+  funcionamento
+ 
+  
+O giro a laser tem seu funcionamento baseado no principio físico, descoberto pelo físi- 
+co francês, Georges Marc Marie Sagnac, nas primeiras décadas do século XIX (1913).
+“Sagnac” descobriu que a diferença de tempo entre dois feixes de luz girando em senti-
+dos opostos, em torno de um trajeto fechado e montados em uma plataforma, é direta-
+mente proporcional a velocidade em que a plataforma está girando.
+Embora “Sagnac’ e outros cientistas demonstrassem este conceito em laboratório, no i-
+nício dos anos 60 com o advento do feixe do laser com suas propriedades originais,
+(Feixe coerente ou em fase, possui única freqüência, facilmente focalizado, etc), che-
+gou-se a conclusão que este princípio poderia ser usado em um giroscópio (giro) práti-
+co.
+2 - DescriçãoEntre os avanços para aprimorar os sistemas de navegação inercial, destaca-se
+o desen- volvimento do giro eletrostático, mostrado na Fig. 2.4. Seu rotor consiste de
+uma esfera sólida (normalmente oca) de berílio, com um ou dois centímetros de
+diâmetro, gira (Por meio de campos magnéticos girantes), a uma velocidade de dezenas
+de milhares de ro- tações por minuto (216.000 RPM) em um vácuo quase perfeito. O
+rotor é suspenso uni- camente por um campo eletrostático, que mantém a esfera afastada
+poucos centésimos de milímetro da superfície interna do invólucro (estojo) que a contém.
+O giro a laser consiste de um bloco de quartzo com umas cavidades óticas, que permite
+a propagação de um feixe de laser em toda sua extensão e nos dois sentidos, os feixes
+encontra-se com um sensor (Detector) para medir a freqüência, com grande precisão. O
+conjunto possui espelhos altamente refletivos e convenientemente alinhados para fazer
+girar os feixes de laser, como mostra a figura 2.5 .
+Fig. – 2.5 – Giro a laser
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-7
+O laser é resultado da alta tensão aplicada entre catodo e ânodo, usados para ionizar o
+gás (Mistura de gás hélio e néon) excitado por um prisma.
+O giro a laser utiliza espelhos dinâmicos que se posicionam para ajustar o compri-
+mento do trajeto, neste projeto, dois espelhos são montado sobre transdutores piezo elé-
+tricos que permitem que sejam movidos para dentro ou para fora, ajustando assim o
+comprimento do trajeto.
+3 –Teoria
+ 
+  de
+   funcionamento
+ 
+ 
+O equipamento não é um giroscópio (Giro) no sentido tradicional, pois não há uma
+massa giratória central. Em vez disso, existe uma trajetória a laser geométrica fechada
+(triangular ou retangular), centrada em um eixo de rotação virtual, como mostra a figura
+2.6. Esta trajetória é percorrida em sentidos opostos por feixes de laser com fases idên-
+ticas, que são gerados continuamente. Qualquer rotação do dispositivo (conjunto) em
+torno do eixo causará uma diferença de fase aparente nos dois feixes, pois a trajetória
+do feixe que se propaga na direção da rotação do dispositivo é efetivamente aumentada,
+enquanto que a trajetória do feixe que se propaga na direção oposta é diminuída.O giro
+a laser consiste de um bloco de quartzo com umas cavidades óticas, que permite a
+propagação de um feixe de laser em toda sua extensão e nos dois sentidos, os feixes
+encontra-se com um sensor (Detector) para medir a freqüência, com grande precisão. O
+conjunto possui espelhos altamente refletivos e convenientemente alinhados para fazer
+girar os feixes de laser, como mostra a figura 2.5 .
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-8
+Fig. 2.6 – Giro a laser
+Normalmente de forma triangular o giro a laser é geralmente conhecido como giro do
+anel de laser (RLG – Ring Laser Gyro). Possui espelhos em cada canto para permitir o
+giro do feixe luminoso, e um sensor para medir as diferenças nas freqüências óticas
+(Franjas de Interferências) entre os dois feixes.
+O feixe que se propaga no sentido da rotação do dispositivo (conjunto) tem trajeto mais
+longo e assim uma freqüência mais baixa, enquanto que o feixe que se propaga no sen-
+tido contrário tem um trajeto menor e assim uma freqüência maior.
+Quando o dispositivo (conjunto) se encontra em rotação sobre seus eixos (virtual), cada
+franja (diferença de freqüência) é detectada, caracterizando o ângulo de rotação, en-
+quanto que a variação da freqüência é proporcional à velocidade de rotação do eixo,
+desta forma pode-se dizer que o giro a laser fornece sinais proporcionais ao ângulo de
+rotação e à velocidade de rotação angular.
+4 – Precisão
+A princípio este giro parece ideal, não possuindo os inconvenientes dos giros mecâni-
+cos, além de ser imune às acelerações, pois não possui massas móveis ou suspensas.
+Existem, contudo, fenômenos que introduzem erros nas leituras efetuadas por estes ti-
+pos de sensores.
+Um destes fenômenos é um acoplamento que surge nos modos de propagação devido
+ao fenômeno de espalhamento, que se dá nas superfícies de reflexão (espelhos). Tal a-
+coplamento pode deturpar as leituras executadas quando a velocidade de rotação do
+dispositivo é demasiadamente baixa.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-9
+Podemos dizer também que este fenômeno provoca travamento de onda luminosa, em
+baixas taxas de rotação do dispositivo, ou seja, a onda tende ao fechamento do anel de
+laser. Como o anel gira, este efeito é análogo a fricção nos giros mecânicos.
+Um dispositivo de ativação (agitador) é utilizado para fazer vibrar o dispositivo (giro)
+em torno do seu eixo (aplica vibrações de alta freqüência nos espelhos), de modo a sair
+da sua área cega que surge nas baixas velocidades do dispositivo.
+Um outro problema é que os elétrons no gás derivam para o ânodo positivo e os íons
+positivos são atraídos para o catado negativo. Esta ação induz um fluxo líquido nos á-
+tomos neutros do gás em torno do anel.
+Para compensar este efeito, é usado um circuito equilibrado de ionização que consiste
+de um cátodo e dois ânodos uniformemente espaçados e colocados um em cada lado do
+anel. Medindo a corrente em cada trajeto e controlando as tensões da ionização.
+5 – Vantagens
+1ª - Não possui partes móveis 
+2ª - Maior precisão
+3ª - Maior segurança
+4ª - Não requer manutenção
+5ª - Robustez a variações ambientais 
+6ª - Peso reduzido
+7ª - Baixo custo
+8ª - Baixo índice de ruído
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-10
+b) Giro à fibra ótica
+Os giros à fibra ótica são os mais utilizados nos dias de hoje, devido ao seu baixo custo
+e suas qualidades técnicas. Tal giro muito se assemelha ao giro a laser descrito anteri-
+ormente, com a diferença que o caminho fechado que o feixe de laser percorre é consti-
+tuído de um enrolamento de fibras óticas. Os fenômenos fundamentais de operação são
+os mesmos do caso anterior mas há particularidades principalmente quanto às fontes de
+erro presente. A figura 2.7 mostra um diagrama simplificado de um giro à fibra ótica.
+Fig. 2.7 – Giro à fibra ótica
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-11
+ACELERÔMETRO
+a) Introdução
+ 
+ 
+Dispositivo projetado para computar (medir) as acelerações (a) ao longo de um deter-
+minado eixo, pela medida da força (F) exercida ao longo desse eixo sobre uma dada
+massa (m) usando a 2° lei do movimento de Newton (F = ma).
+Um acelerômetro pode ser considerado em sua expressão mais simples, como uma mas-
+sa suspensa por um fio (um pêndulo) ou que pode correr ao longo de um guia reto. Es-
+tando o suporte do pêndulo ou do guia em repouso, ou em estado de movimento retilí-
+neo uniforme, a massa estará em seu ponto neutro. Mas se o suporte inicia movimento,
+ou altera sua velocidade isto é, se há uma aceleração, a massa se desloca da posição
+neutra e a quantidade de deslocamento é proporcional ao valor da aceleração.
+b) Acelerômetro linear
+1 - Descrição
+Consiste de uma massa, chamada massa de inércia ou massa de prova, que pode desli-
+zar ao longo do eixo sensor, dentro da caixa. O movimento da massa é limitado pelas
+molas. Quando a caixa é acelerada, a massa de prova, por causa de sua inércia, tende a
+permanecer estacionária. Isso resultará num movimento relativo da massa em relação a
+caixa. Quando a distensão das molas ultrapassa a inércia da massa, as molas farão a
+massa parar de se mover em relação a caixa. O deslocamento da massa em relação a
+caixa é diretamente proporcional à aceleração da caixa. Quando a caixa parar de acele-
+rar, as molas trarão a massa de volta a sua posição zero (posição de referência). Para se
+evitar que as molas causem ultrapassagens ou oscilações da massa em relação à posição
+de referência, algum tipo de amortecimento é utilizado. Isso normalmente é feito usan-
+do-se uma caixa cheia de óleo, como mostrado na figura 2.8.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-12
+Fig. - 2.8 - Acelerômetro linear básico
+2- Funcionamento
+A fig. 2.9 mostra um tipo básico (simples) de acelerômetro linear. Quando a armação
+está em repouso, ou se deslocando em movimento retilíneo uniforme, a massa está em
+sua posição neutra, como mostrado na fig. – 2.9 (A). Quando a armação é acelerada pa-
+ra a direita (alteração de velocidade), como mostrado na fig. – 2.9 (B), a massa se move
+para trás em relação à armação, o que é indicado pelo ponteiro na escala. Quando cessa
+a aceleração no caso de ser mantida uma velocidade uniforme (constante), as molas de
+controle fazem com que a massa de teste retorne a sua posição zero (inicial) com rela-
+ção à armação.
+Fig. 2.8 – Funcionamento do acelerômetro linear
+c) Acelerômetro de força balanceada
+Comumente utilizado nos sistemas de navegação inercial, consiste de um sensor (Pic-
+koff), uma massa de prova e um produtor de torques (torquer), todos situados num eixo
+móvel comum (Pêndulo), como mostrado na figura 2.9.
+Com aceleração zero, a corrente induzida nos secundários do pickoff está balanceada e
+as bobinas dos campos de controle do torquer mantêm a massa na posição nula. Entre-
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-13
+tanto, quando ocorrer uma aceleração a massa (pêndulo) se desloca, na direção oposta à
+da aceleração, movendo a armadura do pickoff da sua posição central (de referência),
+gerando assim,um sinal de erro, que após amplificado é aplicado as bobinas dos campos
+de controle do torquer, que produzirão uma ação magnética contrária ao deslocamento
+da massa, devido a aceleração, amortecendo as oscilações. Como a corrente de saída do
+pickoff é proporcional à aceleração, torna-se então a saída elétrica do acelerômetro, ou
+sinal de aceleração.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-14
+Fig 2.9 – Acelerômetro de força balanceada (elétrico)
+c) Operação
+ 
+  do
+   acelerômetro
+ 
+  linear
+ 
+  a   bordo
+ 
+  de um
+ 
+  navio
+ 
+  
+A Fig. – 2.10 mostra uma ilustração do que ocorreria em um navio hipotético que nave-
+gasse em linha reta, e cujo acelerômetro só estivesse sujeito a forças devidas à marcha
+normal do navio.
+Em (A) o acelerômetro marca zero, o navio está parado.
+Em (B) o navio inicia o movimento, dando lugar a uma aceleração de 1g, sua integração
+proporciona uma velocidade de 20 nós, e ao integrar a velocidade começa a marcar a
+distância.
+Em (C), alcançada a velocidade de 20 nós, a mesma é mantida constantemente, o acele-
+rômetro volta a marcar zero, a velocidade prossegue marcando 20 nós e a distância con-
+tinua aumentando.
+Em (D) há uma aceleração negativa, ou seja, uma desaceleração, o que é indicado no
+acelerômetro, há, portanto, uma redução da velocidade, que diminui para 10 nós, a dis-
+tância continua aumentando, mas de maneira mais lenta.
+Em (E) o navio para, depois de percorrer 1.000 milhas, o acelerômetro marca zero, pois
+está em repouso, a velocidade é zero e a escala de distância marca 1.000 milhas, paran-
+do de aumentar.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-15
+Fig. 2.10 – Operação do acelerômetro linear
+Um sistema inercial, com plataforma estabilizada e orientada para o norte geográfico,
+só necessita medir as acelerações nos sentidos Norte/Sul e Leste/Oeste. As demais de-
+vem ser eliminadas.
+Enquanto que um sistema inercial com plataforma fixa ao veículo (navio) todas as ace-
+lerações devem ser medidas (proa/popa, boreste/bombordo e gravidade) por acelerôme-
+tros e (balanço, caturro e mudanças de rumo) por girômetros.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-16
+– SISTEMA DE NAVEGAÇÃO INERCIAL (SNI)
+a) Introdução
+ 
+ 
+Todos os sistemas de navegação eletrônica (OMEGA, LORAN, NAVISAT, GPS, etc)
+dependem de informações externas ao navio, transmitidas por estações terrestres ou por
+satélite.
+O sistema de navegação inercial, entretanto, não depende de qualquer sinal transmitido
+externamente ou pelo próprio navio.
+Há uma grande vantagem em um sistema de navegação que possa fornecer a direção e
+posição do navio continuamente e com precisão, sem necessidade de qualquer informa-
+ção externa. Esse sistema não requer a emissão ou recepção de sinais, ou seja, é imune a
+interferências.
+Os componentes básicos utilizados em todos os sistemas de navegação inercial são gi-
+rômetros, acelerômetros e computadores.
+b)
+Conceito
+ 
+  Fundamental
+ 
+ 
+Um sistema de navegação inercial é aquele capaz de determinar a posição e as veloci-
+dades de um veiculo (navio) através da integração em tempo real das equações diferen-
+ciais, a partir de medidas dos movimentos obtidos por sensores que utilizam proprieda-
+des inerciais, tais como giroscópios (girômetros) e acelerômetros.
+Os sensores inerciais (Giros e acelerômetros) devem ser montados preferencialmente,
+portanto de tal maneira que seus eixos sensíveis formem um triedro, ou seja, três (3) ei-
+xos perpendiculares entre si, como mostra a figura 2.11.
+Fig. - 2.11 - Montagem dos sensores inerciais
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-17
+Há duas montagens básicas; a plataforma inercial convencional (física / estabilizada) e
+a plataforma inercial analítica (solidária / strap down).
+– Plataforma convencional (Estabilizada)
+a) Introdução
+ 
+ 
+Nesta configuração os sensores inerciais são montados sobre um suporte, denominado
+elemento estável, que é isolado dos movimentos angulares que o navio executa, por
+meio do emprego de um sistema de suspensão cardam, conforme mostrado na fig.2.12,
+como os giros formam um triedro ortogonal, pode-se detectar qualquer tendência de va-
+riação de atitude (balanço e caturro) e estas variações são realimentadas para os servo-
+motores, nos eixos dos anéis cardans, e assim obtém-se uma manutenção ativa da orien-
+tação inercial do elemento estável.
+Fig. - 2.12 - Plataforma estabilizada
+b) Teoria de Funcionamento
+A teoria deste sistema fundamenta-se na aplicação do principio da inércia a um sistema
+giroscópio, orientado para o norte, tal qual uma agulha giroscópica. O sistema é consti-
+tuído de forma que tende a permanecer estável no espaço em três planos perpendicula-
+res entre si, sendo isto obtido pelo uso de três giros. Assim quando o navio se desloca, o
+sistema pela propriedade da inércia, tende a permanecer fixo em relação ao espaço.
+Para estabilizar o sistema em três planos, são requeridos três giros, montados perpendi-
+culares entre si, com seus eixos de rotação (sensíveis) apontados, respectivamente, para
+o pólo norte geográfico (eixo X) na direção oposta ao centro da terra (eixo Z) e na tan-
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-18
+gente à superfície da Terra (eixo Y), conforme mostrado na fig. 2.13, onde as setas in-
+dicam a direção dos eixos de rotação dos giros (para o eixo Y está mostrada a ponta da
+seta).
+Fig. 2.13 – Orientação dos três giro
+O sistema como mostrado até aqui, devido à inércia, tenderia a permanecer fixo no es-
+paço, o que significa para um observador na superfície da Terra, parecer girar de 360
+graus a cada dia, devido à rotação da terá (HER) como mostra a figura - 2.14.
+Fig. - 2.14 – Efeitos da rotação da terra
+Entretanto, através de torques de controle, o eixo Y deve ser mantido no plano horizon-
+tal, apontando para leste, por razões que se tornarão aparentes mais tarde. Então o giro
+do eixo Y recebe um toque de controle, numa razão igual é oposta à rotação da terra
+(HER). Por esta razão o sistema mantém sua atitude com relação a horizontal, conforme
+mostra a figura - 2.15.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-19
+Fig. 2.15 – Efeito do torque no giro (Eixo Y)
+Os acelerômetros são montados de modo que seus eixos sensíveis sejam N/S (eixo X),
+E/W (eixo Y) e vertical (eixo Z). Isto é importante, porque eles devem ser capazes de
+medir as acelerações e indicar à vertical nos planos Norte/Sul e Leste/Oeste.
+O equipamento até aqui descrito, constitui o elemento estável do sistema de navegação
+inercial. Para isolar este elemento do balanço (ROLL) e caturro (PITCH) do navio, ele é
+montado em uma suspensão cardam. O sistema completo, mostrado na fig. 2.16, é de-
+nominado plataforma estabilizada.
+Fig. 2.16 – Plataforma Estabilizada
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-20
+c) Medida
+ 
+  da
+   Latitude
+ 
+ 
+A latitude é medida diretamente em um sistema de navegação inercial, a partir da plata-
+forma estável, pois é o ângulo entre o “eixo Z” (giro) é a vertical do lugar, como mostra
+a figura 2.17.
+Fig. 2.17 – Medida da latitude
+d) Cômputo
+ 
+  da 
+ 
+ Longitude
+ 
+ 
+A longitude não pode ser medida diretamente mais o torque adicional exigido para
+manter o elemento sensível (estável) vertical em relação ao eixo de rotação da Terra,
+em qualquer latitude, como mostra a figura 2.18, é uma medida da velocidade na dire-
+ção Leste/Oeste. A integração desta velocidade dará a distância navegada no sentido
+Leste/Oeste, que pode ser usada como diferença entre a longitude atual e a anteriormen-
+te indicada, de modo a manter a posição do navio constantemente atualizada
+Fig. 2.18 – Efeito das mudanças de latitude
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-21
+Em resumo os “SINS” (Sistema de Navegação Inercial para Navios) medem diretamen-
+te a latitude, a longitude é obtida por integração da velocidade E/W. O movimento do
+navio considerado pelo “SINS” é o movimento verdadeiro, sobre a superfície da Terra,
+levada em conta todas as influências; correntes, ventos, marés, etc.
+Além da latitude e longitude, o sistema proporciona ainda as seguintes informações:
+1- Rumo do navio, indicado com muita precisão pelo giroscópio E-W (eixo Y), assim, o
+“SINS” Pode substituir uma agulha giroscópica.
+2-Balanço e caturro, a plataforma estável é mantida, com muita precisão, nos planos ho-
+rizontal e vertical, então é capaz de proporcionar dados exatos de balanço e caturro, pa-
+ra alimentar os sistemas de armas e sensores para a sua estabilização.
+3-Velocidade, a razão de toque dos acelerômetros fornece as componentes de velocida-
+de Norte/Sul e Leste/Oeste com isso, o sistema calcula a velocidade verdadeira do na-
+vio (velocidade de referência).
+e) Precisão
+ 
+  do 
+ 
+ Sistema
+ 
+ 
+A exatidão de “SNI” depende fundamentalmente da precisão e confiabilidade dos seus
+principais componentes.
+As principais fontes de erros significativas são:
+1- Erros causados pelo movimento de rotação diário da Terra.
+2- Atrito dos giros.
+3- Desalinhamento da plataforma estável, proporcionando erros de verticalidade.
+4- Outros erros provocados pelas imperfeições na construção dos giros e acelerômetros
+Nota: Devido ao erro combinado, causado por estes e outros fatores, todos os “SNI” a-
+presentam algum grau de erro cumulativo, que aumenta com o tempo de operação, as-
+sim a posição fornecida pelo sistema deve ser periodicamente comparada com posições
+obtidas por outros meios, ou seja, o sistema deve ser atualizado em determinados inter-
+valos de tempo, utilizando, por exemplo, um “GPS”.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-22
+– Plataforma analítica (Strap down)
+a) Introdução
+ 
+ 
+Nesta configuração os sensores inerciais, três giros e três acelerômetros, são monta-
+dos sobre uma mesma base rígida (módulo de medição inercial). Os eixos são orto-
+gonais coincidentes, ou seja, os eixos sensíveis dos giros e dos acelerômetros devem
+ser coincidentes (paralelos) e formado ângulos de noventa graus entre si, como mos-
+tra a figura 2.19, para que possam realizar transformações de coordenadas. Esta tría-
+de de sensores é então fixada em um veículo (navio) e passa a formar o sistema de
+coordenada do veiculo (navio). Denominado sistema de coordenada móvel, ou siste-
+ma de coordenada Rool / Pitch / Way.
+Fig. 2.19 – Módulo de medição inercial
+Os eixos dos sensores são fixos em relação à base, constituindo assim uma estrutura
+denominada plataforma. O eixo “X” (Roll / Balanço) deve apontar para proa, o eixo
+“Y” (Pitch / Caturro) deve ser ortogonal ao eixo “X” e apontar para boreste, enquanto
+que o eixo “Z” (Yaw / Guinada) deve apontar para baixo (vertical), como mostra a
+figura 2.20.
+Quando um sistema de sensores inerciais é instalado a bordo juntamente com um sis-
+tema de controle eletrônico dedicado (processador), tem-se então uma estrutura de-
+nominada unidade de medição inercial, ou simplesmente “UMI”.
+Fixando-se uma “UMI” em um veiculo (navio) temos um sistema denominado pla-
+taforma Strap down.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-23
+Fig. 2.20 - Plataforma Strap down
+NOTA: A figura 2.21 mostra um módulo de medição inercial utilizado no sistema de
+navegação inercial SIGMA - 40, instalado a bordo do navio aeródromo São Paulo.
+Fig. - 2.21 - Módulo de medição inercial
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-24
+b) Teoria
+ 
+  de
+   Funcionamento
+ 
+ 
+A teoria deste sistema fundamenta-se na aplicação do principio da inércia a um sis-
+tema de coordenadas móvel (Plataforma Strap down) cujos sinais são integrados a
+um sistema de coordenadas de referência (Plataforma analítica ou computadorizada)
+como mostrado na figura 2. 22.
+Fig. 2.22 – Plataforma analítica
+Desta forma, é necessário que as medidas feitas em relação ao sistema de coordena-
+das do corpo (giros) sejam convertidas em grandezas medidas em relação ao sistema
+de coordenadas inerciais de referência. Esta tarefa de transformação de coordenadas é
+feita pelo computador de navegação; este computador calcula então a atitude do vei-
+culo (navio) e a matriz de transformação de coordenadas.
+Os acelerômetros medem e fornecem as medidas de forças especificas (acelerações)
+que são vetorialmente somadas as estimativas do vetor gravitacional e tal soma e in-
+tegrada para determinar a velocidade do veiculo (navio) e novamente integrada para
+se determinar a sua posição.
+Todo este processo é automático e ocorre dentro de tempos pré - estabelecidos para
+os seguintes modos operacionais:
+1- Modo de
+ 
+  alinhamento
+ 
+ 
+Durante um determinado período a plataforma computadorizada é colocada na hori-
+zontal e em seguida orientada para norte geográfico; ao final desta seqüência, o erro
+relativo ao rumo (Proa) do navio é de alguns graus.
+2 – Modo
+ 
+  de
+   Alinhamento
+ 
+  Preciso
+ 
+ 
+Durante este modo o alinhamento é afinado progressivamente para se obter níveis de
+desempenho nominais para a passagem ao modo de navegação.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-25
+3 – Modo de
+ 
+  Navegação
+ 
+ 
+As informações de atitude, rumo, posição e velocidade do navio, são geradas a partir
+da plataforma inercial computadorizada.
+As medições dos acelerômetros são projetadas na plataforma analítica e em seguida,
+integradas de modo a proporcionar as informações sobre a posição (Lat./ Long.) e ve-
+locidade do navio (Vn / Ve / Vref), enquanto que a atitude (Ball / Cat) e o rumo são
+obtidos a partir dos ângulos (giro) que determinam a transição da estrutura de refe-
+rência do navio para a plataforma analítica.
+Nota: Durante estes modos de operação, o sistema pode ser atualizado com a veloci-
+dade do navio e sua posição fornecida pelo operador ou por um receptor “GPS”.
+c) Precisão
+ 
+  do
+   Sistema
+ 
+  Strap
+ 
+  Down
+ 
+  
+A construção de um sistema de navegação inercial preciso é uma tarefa bastante
+complexa, pois os ciclos inerciais sem qualquer suporte externo levam para resulta-
+dos errôneos, que aumentam com o tempo. Por este motivo, estes erros devem ser
+compensados (corrigidos).
+1- Fontes
+ 
+  de
+   Erros
+ 
+  
+As fontes de erros mais significativas que degradam o processo de navegação inercial
+Strap Down são:
+1° - Bias
+Este erro pode ser interpretado como sendo um nível de sinal constante ou que varia
+muito lentamente. Independentemente do sinal de entrada. Mesmo um sinal de Bias
+constante pode mudar em algumas condições. Por exemplo, ao se religar o equipa-
+mento.
+2° - Drift 
+ 
+ Térmico
+ 
+ 
+Os sensores são afetados pela temperatura e devem ser compensados eletrônicamen-
+te. Como esta compensação nunca é perfeita a deriva térmica (Drift) deve ser com-
+pensada como um processo aleatório.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-26
+3° - Desalinhamento
+Refere-se ao desalinhamento mecânico entre eixos. O ideal é que os girômetros e
+acelerômetros definam uma base ortogonal como estrutura da plataforma. Como é
+impossível se obter um perfeito alinhamento mecânico da plataforma na prática, des-
+crevem-se então os erros de alinhamento de cada sensor com relação aos eixos da
+plataforma como constantes aleatórios.
+4° - Interferências (Ruídos ou Desvios)
+Esses problemas são causados pelos efeitos da gravidade e rotação da terra, que afe-
+tam a leitura dos acelerômetros.
+2 – Correções 
+Devido à combinação de erros, causados pelos fatores do item anterior, o sistema “S-
+trap Down” apresenta erro cumulativo que aumenta com o tempo de operação. As-
+sim, as informações fornecidas pelo sistema devem ser comparadas com as informa-
+ções externas, cujas características complementam as características das informações
+inerciais, limitando assim este erro, de modo a dar uma maior precisão nas informa-
+ções obtidas.
+Em navios estas informações externas consistem principalmente na entrada de velo-
+cidade do navio (Odômetro) e posição (Lat./Long.), que é fornecida periodicamente
+pelo operador ou por um sistema de navegação por freqüência (GPS).
+Nota: A integração (atualização de dados) das informações é conseguida por meio de
+um filtro de otimização estatística (Filtro de Kalman), como mostra a fig. 2.23.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+2-27
+Fig. 2.23 – Diagrama de Bloco Funcional 
+3 – Filtro de Kalman
+O filtro de Kalman é o método mais usado para combinar dados obtidos de diferentes
+sensores em uma estimativa estatisticamente ótima.
+A estimação de trajetórias em navegação inercial é um importante caso particular de
+estimação de estados na teoria de sistemas. A navegação inercial utiliza girômetros
+(sensores que medem velocidade de rotação angular) e acelerômetros ( sensores que
+medem aceleração) para manter estimativas de posição (Lat/Long) e velocidade do
+navio no qual uma plataforma inercial esta embarcada. Os sistemas de navegação i-
+nercial modernos (Plataforma Strap Down) normalmente utilizam o filtro de Kalman
+para calcular estimativas de trajetórias de veículos o que constitui um sistema de fu-
+são sensorial.
+Nota: O filtro de Kalman nada mais é do que um algoritmo recursivo muito eficiente
+capaz de estimar as variáveis de sistemas representados por equações lineares. Ele
+incorpora as informações obtidas a partir de medições para estimar as variáveis dese-
+jadas.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-1
+OSTENSIVO
+CAPITULO 3
+DESCRIÇÃO GERAL DO SISTEMA MK-39 
+– INTRODUÇÃO
+O sistema de navegação inercial Sperry MK-39 Mod.3 A, è uma unidade independente que
+emprega como sensor inercial (IMU) três anéis de giro a laser (RLG) e três acelerômetro
+em uma configuração “Strap down”. Ao contrário de um sistema estabilizado, o processa-
+mento digital de alta velocidade é empregado para determinar a atitude (rumo, balanço e
+caturro) do navio.
+O sistema requer a entrada de velocidade (Odômetro) e a posição do navio, que é fornecida
+periodicamente pelo operador ou por um “GPS” e fornece como saída, latitude, longitude,
+velocidade norte, velocidade leste, velocidade de referência e dados para o alinhamento ini-
+cial.
+Interfaces e conversores D/S permitem que o sistema se comunique diretamente com os
+sistemas modernos de armamento e forneça dados para a navegação.
+As funções adicionais podem ser acionadas (lidas) usando-se a unidade de controle a dis-
+tância e display (RCDU). Esta unidade permite a operação realçada e um diagnóstico do
+funcionamento.
+Normalmente, o “SNI” opera automaticamente, após as alimentações terem sido completa-
+das, não exigindo nenhuma intervenção do operador, entretanto, para aqueles usuários que
+preferem o controle independente, todas as funções do “SNI” podem ser controladas atra-
+vés do “RCDU”.
+Nota: A “MB” utiliza os modelos 3A e 3C. A diferença é que a mod. 3C possui uma plata-
+forma eletro-mecânica e circuitos (cartões) específicos ao sistema, cuja finalidade é propor-
+cionar um movimento giratório periódico (a cada 20 minutos) de 180 graus, para que haja
+correção dos desvios de verticalidade, fazendo com que este modelo seja mais preciso do
+que a Mod. 3A.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-2
+OSTENSIVO
+– CARACTERÍSTICAS DO SISTEMA
+a) Elétricas
+1 - Alimentação principal: 24 a 28 VDC nominais, para uma faixa de 18 a 36 VDC, 
+com dissipação máxima de 130W.
+2 - Voltagem de referência síncrona (não vital): 115 Volts 400 Hz, proveniente da
+ali-
+mentação principal de 400 Hz do navio, com máximo de 75 W.
+3 - Voltagem de referência do sinal de velocidade: 115 Volts 60 ou 400 Hz.
+b) Físicas
+1 - Peso da “INS“: 175 Libras ou 79,2 Kg
+2 - Dimensões da “INS”: Altura 23,5 polegadas ou 59,6 cm, Comprimento 19,4 polegadas
+ou 49,2 cm, Largura 17,5 polegadas ou 44,5 cm.
+c) Temperaturas e Umidade do Sistema
+1– Em operação 0 a 55°C (32 a 131°F)
+2– Desligado 40 a 70°C (-40 a 158°F)
+3– Umidade Relativa 0 a 95%
+d) Performance do Sistema
+1 – Rumo
+ 
+  (Heading)
+ 
+ 
+- 3 Min. ARC / Seg. “RMS” (Estático)
+- 7 Min. ARC / Seg. Pico ( Movimento Máximo)
+2 – Balanço
+ 
+  e   Caturro
+ 
+  (Roll/Pitch)
+ 
+ 
+- 1.2 Min. ARC “RMS” (Estática)
+- 1.7 Min. ARC “RMS” (Dinâmico)
+- 3.0 Min. ARC Pico ( Mov. Máximo)
+3 - Velocidade
+ 
+  (SPEED)
+ 
+ 
+- 0.6 Nós “RMS”
+4 – Posição
+ 
+  (Lat/Long)
+ 
+ 
+- Com “GPS”, 100% Preciso
+- Sem “GPS”, 1.0 Milha náutica em 8 horas “TRMS”
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-3
+OSTENSIVO
+e) Movimento
+ 
+  Dinâmico
+ 
+  
+1 – Balanço (Roll) ± 40 graus
+2 – Caturro (Pitch) ± 15 graus
+3 – Guinada (Yaw) ± 10 graus
+4 – Velocidade (Speed) - 10 a 90 nós
+– DADOS DE ENTRADA E SAÍDA
+a) Entradas
+1 – Sinal de velocidade (Odômetro)
+2 – Sinais do “GPS”
+3 – Sinais introduzidos através do teclado
+b) Saídas:
+1 – Analógicas;
+- Rumo (Heading): Sinais sincros nas velocidades 1:1 e 36:1
+- Balanço e Caturro (Roll / Pitch): Sinais sincros nas velocidades 1:1e 36:1 ou 2:1 e 36:1
+2 – Digitais;
+- Balanço (Roll), Caturro (Pitch), Rumo (Heading), e Rates (variações - Roll , Pitch e He-
+ading )
+3 – Alarmes;
+- Indicação sonora e visual
+4 – Referência síncrona (H.P.R); e
+- 115 Volts 400 Hz
+5 – Informações Através do display.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-4
+OSTENSIVO
+– PARTES COMPONENTES DO SISTEMA
+O sistema de navegação inercial MK- 39 Mod. 3A (Fig. - 1.1) é composto basicamente de 
+uma unidade principal de navegação inercial (INS) é de um controle remoto (Opcional):
+Fig. 1.1 – Unidades do sistema MK-39
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-5
+OSTENSIVO
+a) Unidade Principal de Navegação Inercial (INS)
+Consiste de um único gabinete, montado em uma base (Plataforma) de montagem, fixa (a-
+parafusada) ao navio, em local protegido, em uma superfície horizontal e alinhada nos sen-
+tido transversal e longitudinal do navio, permitindo assim a substituição da unidade sem
+alterar a precisão do alinhamento.
+b) Unidade de Controle Remoto e Display (RCDU)
+Este controle é conectado a unidade principal de navegação inercial, através de cabo e
+plug (J106). Contém todos os controles e indicadores referentes a SNI, possibilitando a o-
+peração remota do sistema.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-6
+OSTENSIVO
+– DESCRIÇÃO DAS PARTES COMPONENTES DO SISTEMA
+– Unidade Principal de Navegação Inercial
+Esta unidade consiste de um gabinete dividido em duas partes, como mostra a Fig. 1.2, na
+parte superior está a unidade do gabinete eletrônico “ECU” (Eletronic Cabinet Unit) e na
+parte inferior a unidade de medição inercial “IMU” (Inertial Measurement Unit).
+Fig. 1.2 – Unidade I
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-7
+OSTENSIVO
+a) Unidade do Gabinete Eletrônico (ECU)
+Esta unidade é dividida em: Painel de controle e Rack dos cartões.
+І – Painel
+ 
+  de
+   Controle
+ 
+ 
+È a parte frontal da ECU, como mostrado na Fig. 1.3, contém todas as chaves e 
+indicadores necessários à partida do sistema.
+- Controles e Indicadores:
+Fig. 1.3 – Painel de Controle
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-8
+OSTENSIVO
+1 – Chave Mestra de Alimentação (S1)
+É uma chave com três (3) posições e duas funções:
+1ª – Posição (OFF) desligada desconecta os 28 VDC (do navio) para alimentação do siste-
+ma.
+2ª – Posição (Remota) conecta os 28 VDC para operação do sistema a disponibiliza 24
+VDC para a chave com a marcação system power na “RCDU”, possibilitando a operação
+remota.
+3ª – Posição (ON) ligada, conecta os 28 VDC para a operação do sistema e alimenta a
+“RCDU” independente da posição da chave system power na “RCDU”.
+2 – Chave de alimentação Principal (CB1)
+Consiste de um disjuntor que alimenta o sistema com 28 VDC do navio.
+3 – Chave de alimentação da Referência Síncrona (CB2)
+Consiste de um disjuntor que alimenta com 115 Volts 400 Hz os circuitos da transmissão
+(R, P e H).
+4 – Chave de alimentação da “RCDU” (CB3)
+Consiste de um disjuntor que alimenta com 24 VDC a “RCDU” e alarmes.
+5 – Lâmpada Indicadora (DS1)
+Quando acesa, indica que a alimentação de 24 a 28 VDC (do navio) está disponível para 
+alimentação do sistema.
+6 – Lâmpada Indicadora (DS2)
+Quando acesa, indica mau funcionamento nos circuitos do sistema.
+7 – Medidor de Tempo (M1)
+Totaliza as horas de funcionamento do sistema.
+II – Rack
+ 
+  dos
+ 
+  Cartões
+ 
+  (A2)
+ 
+  
+Localizado na parte interna da “ECU” (Posterior ao Painel de Controle) como mostra a Fig.
+1.4, o Rack possui, além dos cartões com os diversos circuitos eletrônicos, uma fonte de
+alimentação ( PS1 ) com filtro.
+1 – Cartões do Rack
+A3 – Processador Central (CPU) 
+A4 – Status And Command (PCB)
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-9
+OSTENSIVO
+A5 – Quad Serial Interface (PCB) 
+A6 – Sensor (IMU) Interface (PCB) 
+A7 - Synchro Converter Assembly 
+A8 – Synchro Converter Assembly
+Obs. - A1 - Unidade de Medição Inercial (IMU).
+2 – Suplemento de energia (PS1)
+Consiste de uma fonte de alimentação CC/CC e filtro de linha, alimentada com 28 VDC do
+navio e fornece 5, 15 e 24 VDC, para alimentar os diversos circuitos do sistema .
+Fig. 1.4 – Rack dos cartões
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-10
+OSTENSIVO
+b) Unidade de Medição Inercial (IMU)
+Considerada o coração do sistema, pois contém os sensores inerciais e suportes eletrônicos.
+Como mostra a figura 1.5, esta unidade é dividida em módulo de medição inercial (IMM - 
+Inertial Measurement Module) e módulo eletrônico inercial (IEM – Inertial Eletronics Mo- 
+dule).
+Fig. 1.5 – Unidade de Medição Inercial
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-11
+OSTENSIVO
+1 – Módulo de Medição Inercial (IMM)
+Este módulo possui três (3) anéis de giro a laser, formando um triedro ortogonal e três (3)
+acelerômetros, com seus eixos sensíveis paralelos aos eixos (virtuais) dos giros.
+2 – Módulo Eletrônico Inercial (IEM)
+Este módulo possui um cartão de controle de temperatura dos acelerômetros, um micro
+processador, uma interface RS 422, um controle de sincronização dos acelerômetros, um
+calibrador “PROM” e um History Prom.
+2.5.2 – Unidade de Controle Remoto e Display (RCDU)
+a) Descrição
+Esta unidade contém todos os controles e indicadores, referentes ao sistema de navegação
+inercial, como mostra a figura 1.6, possibilitando a operação remota do mesmo.
+Estão incluídos nesta unidade, um controle da fonte de alimentação, indicação do sistema
+de alarmes, operação das fontes de controle e dados e funções do display.
+Um teclado é usado em conjunto com o display de menus para trabalhar todos os controles
+e funções dos dados de entrada.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-12
+OSTENSIVO
+b)
+Controles e indicadores da “RCDU”:
+Fig. 1.6 – RCDU
+1 – Chave de Alimentação System Power
+Alimenta a “RCDU” com 24 VDC oriundo da “INS”, através da chave master power (S1).
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-13
+OSTENSIVO
+Nota: Quando a chave master power (S1) na “INS”, estiver selecionada para “ON”, não
+importa em qual posição a chave power system esteja, pois ela não ira influenciar no fun-
+cionamento do sistema.
+2 - Lâmpada Power
+Quando acesa indica alimentação de 24 VDC disponível.
+3 – Lâmpada Alarm
+Quando acesa indica falha de sistema.
+4 – Mostrador Digital
+Display de cristal líquido com 240 caracteres, em seis (6) linhas. Velocidade de comunica-
+ção 9600 bauds. Intervalo de transmissão 100 milisegundos (10 mensagens por segundo).
+5 – Teclado
+É uma interface controlada por um operador, usada em conjunto com o display, para apre-
+sentação dos menus e comunicação com o sistema. As teclas são agrupadas em três (3) ca-
+tegorias; seleção de menu, entrada de dados e controle do display, a figura 1.7 mostra o
+teclado, com a posição e função de cada tecla.
+Fig. 1.7 – Teclado
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-14
+OSTENSIVO
+c) Categoria e Funções das 
+Teclas I – Teclas de Seleção de 
+Menus
+l – Tecla Sensor (Menu com duas páginas).
+Ao ser acionada possibilita a modificação dos parâmetros dos sensores inseridos no siste- 
+ma.
+1ª página (1/2):
+1 – VMAN OFF/ON – habilitar ou desabilitar a entrada do sinal de velocidade manual.
+2 – LOG OFF/ON – habilitar ou desabilitar o sinal oriundo do odômetro do navio.
+3 –DLOG OFF/ON – habilita ou desabilita o sinal oriundo do odômetro digital do navio 
+(se houver).
+Obs. - Para mostrar a página seguinte, pressione a tecla NEXT PAGE.
+2ª página (2/2):
+1 – GPS OFF/ON – habilitar ou desabilitar o sinal de posicionamento do GPS.
+2 – DOCK OFF/ON – habilitar ou desabilitar o modo DOCKSIDE. Quando for acionado o
+modo DOCKSIDE os seguintes parâmetros deverão ser atualizados: (utilizando-se as teclas
+MODE e FIX) GMT, LAT e LONG.
+2 -Tecla mode (Menu com uma página).
+Ao ser acionada possibilita a modificação de parâmetros de funcionamento do sistema.
+Página única (1/1):
+1 – Damping – trocar modo de amortecimento (AUTO, MAND e MANU).
+2 – Slew – permitir ao operador visualizar os dados contidos no modo SLEW.
+3 – KF Reinit – permitir ao operador visualizar os dados contidos nas configurações do
+FILTRO DE KALMAN.
+4 – Nav Enable – habilitar o modo navegação.
+5 – Fix – permitir ao operador alterar os fixos do sistema (GMT, LAT e LONG).
+6 – Reset Mode – reinicializar o sistema e retornar as configurações originais.
+3 – Tecla display (Menu com três páginas).
+Ao ser acionada, Permite ao operador selecionar varias saídas e parâmetros, inseridos no 
+sistema, para serem exibidos no display.
+1ª Página (1/3)
+1 - Roll / Rate - Seleciona o display para apresentar a leitura da variação do ângulo e ângu-
+lo de balanço.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-15
+OSTENSIVO
+2 - Pitch / Rate - Seleciona o display para apresentar a leitura da variação do ângulo e ân-
+gulo de caturro.
+3 - Hdg / Rate - Seleciona o display para apresentar a leitura do rumo e sua variação.
+4 - Vn / Ve - Seleciona o display para apresentar os valores de velocidade calculada norte e
+leste do navio.
+5 - Lat / Long - Seleciona o display para apresentar a latitude e longitude calculada.
+6 - Last Reset -
+Obs. - Para mostrar a página seguinte, pressione a tecla NEXT PAGE.
+2ª Página (2/3):
+1 - Day / Time - Seleciona o display para mostrar a hora de Greenwich (GMT), hora, minu-
+to e segundo (24 horas) e o dia (atualizados no fix), para operação com o GPS.
+2 - Part Nos -
+Obs. - Para mostrar a página seguinte, pressione a tecla NEXT PAGE.
+3ª Página (3/3):
+1 - Vfa / Vps -
+2 - Ocn / Oce -
+3 - Course -
+4 - Vt (Velocidade total) -
+5 - Set / Drift -
+4 – Tecla Aux func (Menu com uma página).
+Ao ser acionada, permite ao operador executar as funções auxiliares do sistema.
+Página única (1/1):
+1 - Serial Buses -
+2 - Faults -
+3 - Display Test -
+4 - Display Rate -
+5 – Tecla Test.
+Habilita a função “Auto-teste” durante o processo de partida.
+6 – Tecla Next Page.
+Seleciona as páginas seguintes do menu.
+II – Teclas
+ 
+  para Entradas
+ 
+  de
+   Dados
+ 
+ 
+1 – Teclas de 0 a 9
+Usadas para inserir as funções numéricas.
+2 – Teclas de A a F
+Usadas para inserir valores hexadecimais.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-16
+OSTENSIVO
+3 – Tecla Clear
+Deleta as informações exibidas no display.
+4 – Tecla Enter
+Confirma os dados exibidos no display.
+5 – Tecla Back Space.
+Apaga dados digitados erradamente.
+6 – Tecla NE +
+Seleciona o norte ou leste e introduz o sinal +, para valores numéricos.
+7 – Tecla SW –
+Seleciona o sul ou oeste e introduz o sinal -, para valores numéricos.
+III – Teclas
+ 
+  para
+ 
+  Controle do
+ 
+  Display
+ 
+ 
+1 – Tecla Track Hold
+Congela e descongela as informações do display
+2 – Invert Vídeo
+Inverte o controle de iluminação do display (ilumina ou apaga).
+3 – Bright
+Aumenta a iluminação do display.
+4 – Dim
+Diminui a iluminação do display.
+5 – Back Light
+Liga e desliga a iluminação do display
+6 – Alarm Ack
+Reconhece um alarme e deleta o código de falha.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-17
+OSTENSIVO
+DISTRIBUIÇÃO DE ENERGIA
+– GENERALIDADES
+a) O equipamento da INS MK - 39 Mod. 3A é alimentado com 24 a 28 Volts C.C.
+b) A fonte de alimentação interna (CC / CC) PS1, desenvolve as voltagens CC necessárias 
+à operação do sistema.
+c) A voltagem de alimentação da fonte interna PS1 (24 / 28 VCC) é obtida do sistema do 
+na- vio, 115V 60 Hz e convertida pela fonte UPS-1 para os 24 a 28 Volts C.C., como mostra
+o diagrama de blocos da figura 2.1.
+d) Em caso de falha na alimentação do navio ou na fonte UPS-1, a bateria (alimentação de
+emergência) de 24 VCC passa a alimentar a fonte interna PS1 na unidade do gabinete ele-
+trônico (Rack dos cartões).
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-18
+OSTENSIVO
+Fig. 2.1 - Diagrama de blocos da alimentação principal
+- FONTE (externa) UPS-1 (Fig. 2.2 A e B)
+Localizada no compartimento da giro, alimentada pela fonte de 115 volts 60 Hz do navio,
+fornece 24 à 28 volts CC para o sistema da INS MK - 39, através do plug J101, como mos-
+tra as figuras 2.4 A e B, a bateria da alimentação de emergência (24 VDC) é parte integran-
+te desta fonte, como mostra a figura 2.3.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-19
+OSTENSIVO
+Fig. - 2.2 (A) - Fonte UPS-1
+Fig. 2.2 (B) - Fonte UPS-1 e Bateria
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-20
+OSTENSIVO
+Fig. 2.3 - Bateria de emergência
+Fig. 2.4 (A) -Conexões externas
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-21
+OSTENSIVO
+Fig. 2.4 (B) - Diagrama de Identificação dos Cabos Internos e Plugs da INS
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+3-22
+OSTENSIVO
+– DISTRIBUIÇÃO DA ALIMENTAÇÃO PRINCIPAL
+Durante a operação normal, o sistema MK – 39 é alimentado pela fonte de 28 Volts DC do
+navio fonte UPS1, como mostra o diagrama da figura 2.5, esta alimentação é controlada
+pelo disjuntor “CB1” (Main Power) e chave mestra S1 (Master power Switch).
+Estando o disjuntor “CB1” ligado e a chave mestra na posição “OFF” (Desligada) o supri-
+mento de 28 VDC para a fonte “PS1” (Power Supply 1) é aberto, um retorno (24 Volts DC)
+é aplicado ao processador central, o sistema não opera.
+Quando a chave mestra é colocada na posição “ON” (Ligada) o suprimento de 28 VDC pa-
+ra a fonte “PS1” é completado, o retorno para o processador é retirado o sistema opera
+normalmente.
+Ao usar uma “RCDU” (Unidade de Controle Remoto e Display), com um controle de ener-
+gia remoto (System power), a chave mestra é normalmente colocada na posição remote,
+isto permite que a chave system power, na “RCDU”, como mostra o diagrama da figura
+2.6; controle a alimentação para o sistema.
+Quando em “OFF” (Desligada) um retorno (24VDC) é aplicado, tanto ao processador cen-
+tral, como a fonte PS1, inibindo a operação do sistema.
+Quando em “ON” (ligada), além de abrir os retornos, permitindo assim a operação do sis-
+tema, completa a alimentação de 24 VDC, proveniente da PS1, através do disjuntor CB3
+(Remoto power) na “INS”, para os circuitos do display e teclado.
+Nota: A fonte interna PS1, possui um filtro (EMI), com a finalidade de reduzir interferên-
+cias de freqüência rádio, banda larga, na alimentação de 24 a 28 VDC do navio (fonte
+UPS1), para o sistema MK – 39.
+– REFERÊNCIA SINCRONA (H,R,P)
+Como mostram os diagramas da Figuras 2.5 e 2.7 a alimentação de 115 Volts 400 Hz
+(J102), proveniente da alimentação do navio, é controlada pelo disjuntor CB2 (Synchro ref)
+e através dos contatos do relé K1 e TB-5, é aplicada aos conversores, cartões A7 e A8 cuja
+função é formatar os sinais sincros de saída de rumo (Heading). balanço (Roll) e caturro
+(Pitch) para serem enviados às repetidoras.
+O sistema proporciona ainda uma saída de 115 Volts 400 Hz (referência sincrona de
+H, R e P) para CRUs ou chave de transferência.
+– REFERÊNCIA SINCRONA (LOG)
+Como mostram os diagramas das Figuras 2.5 e 2.8, a alimentação de 115 Volts 60 ou
+400Hz (J107), proveniente da alimentação do odômetro, é controlada através dos contatos
+do relé K1 e TB1-5, aplicada aos conversores, cartões A7 e A8, como referência do sinal de
+velocidade para formatar os sinais sincros.
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-23
+OSTENSIVO
+Fig. 2.5 – Diagrama de Distribuição de Energia Principal e Ref. Síncron
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-24
+OSTENSIVO
+Fig. 2.6 – Diagrama Funcional de Interligação da RCDU
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-25
+OSTENSIVO
+Fig. 2.7 - Diagrama do sistema sincro de saída HPR (Formatação)
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-26
+OSTENSIVO
+Fig. 2.8 - Diagrama de entrada do sinal sincro de velocidade (LOG)
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-26
+OSTENSIVO
+– DISTRIBUIÇÃO DA BAIXA VOLTAGEM
+A fonte interna PS1 (Power Supply 1) é alimentada com 24 a 28 VDC do navio Fonte
+(UPS1) e fornece todo o suprimento de voltagem C.C ( + 5, - 15, + 15, e + 24 VDC) usados
+pelos diversos circuitos do “INS” Sperry MK – 39 Mod. 3A.
+a) Distribuição dos + 24 VDC
+Como mostra o diagrama da Figura 2.9, os 24 Volts D.C produzidos pela fonte “PS1” (TB1
+– 1 e 2) alimenta diretamente o relé K1, o medidor de tempo M1, lâmpadas power (DS1) e
+mau funcionamento (DS2), e através do disjuntor CB3 (TB1-3 e 4) alimenta a unidade
+“RCDU” e a unidade (Externa) do anunciador de falhas.
+Os 24 Volts DC também alimentam, independentemente do dijuntor CB3 (Plug J4), os car-
+tões A4, A7, A8 e A9 (Opcional), assim como os relés K3, K4 e K5, do sistema de alarmes
+(Fig. 2.9).
+b) Distribuição da Baixa Voltagem (-5, +15 e +15 VDC)
+Como mostra o diagrama da Figura 2.10, a baixa voltagem que além de alimentar os car-
+tões A3, A4, A5, A6, A7 e A8 com os diversos circuitos eletrônicos, alimenta também a
+unidade de medição inercial (A1), onde cada giro possui um circuito gerador de alta volta-
+gem para operação do anel de laser. Este circuito opera com a alimentação de + 15 e -15
+VDC provenientes da fonte interna PS1 (Power supply 1).
+CIAA – 117/036
+OSTENSIVO
+OSTENSIVO
+ORIGINAL
+3-27
+Fig. 2.10 – Diagrama de Distribuição de energia (Baixa Voltagem)
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-28
+OSTENSIVO
+TEORIA OPERACIONAL
+- TEORIA DE FUNCIONAMENTO DO SISTEMA
+Os sistemas de navegação inercial se baseiam nas leis da mecânica de Newton. Medindo -
+se as acelerações e velocidades angulares de um corpo, torna-se possível calcular as mu-
+danças de velocidade, posição e atitude deste corpo através de sucessivas integrações nu-
+méricas.
+Um sistema de navegação inercial do tipo plataforma rígida (strap down), tal qual o sistema
+MK - 39, é formado por duas unidades básicas:
+Unidade de medição inercial (IMU) onde são montados os sensores inerciais, sendo três
+(3) acelerômetros, que fornecem as medidas das componentes da aceleração linear, e três
+(3) girômetros (gyros) que fornecem as componentes de velocidades angulares.
+Unidade de processamento (computador de navegação) onde as medidas dos sensores i-
+nerciais são processadas.
+As velocidades lineares e as posições são obtidas a partir da integração dos sinais dos acele-
+rômetros, enquanto que a integração dos sinais dos girômetros fornece a atitude (proa / ba-
+lanço / caturro) do navio, como mostra a figura 3.1.
+Fig. 3.1 - IMU e Computador de navegação
+Quando o sistema MK - 39 é colocado em funcionamento, a unidade de medição inercial e
+a unidade de processamento trabalham em conjunto, de modo que, através de cálculos
+complexos (integração de aceleração e velocidade) o computador de navegação (processa-
+dor central) construa dois (2) sistemas de coordenadas:
+Sistema de coordenada de referência (virtual), cuja origem está no centro da terra (eixos
+x, y e z) e que após um determinado período (modos operacionais) é colocado na horizontal
+e com um dos seus eixos (x) apontando para o norte geográfico, como mostra a figura 3.2.
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-29
+OSTENSIVO
+Sistema de coordenadas do navio (fixo ao navio), cuja origem coincide com o centro de
+gravidade do navio (eixos x, y, e z), com um dos seus eixos apontando para a proa (x), co-
+mo mostra a figura a seguir 3.2.
+Fig. 3.2 - Sistemas de coordenadas
+O rumo do navio ou proa (heading / yaw) é determinado pelo eixo “Z” que é perpendicular
+a superfície da terra (vertical), enquanto que o eixo “X” determina o balanço (roll) e o eixo
+“Y” determina o caturro (pitch), como mostra a figura 3.3.
+Fig. 3.3 - Sistema de coordenadas do navio
+Deste modo, a unidade de processamento compara os dois sistemas de coordenadas e de-
+termina a posição (latitude / longitude) e a velocidade do navio, através da integração dos
+sinais dos três (3) acelerômetros com o sinal de velocidade proveniente do odômetro e de-
+termina também o rumo (heading), e a atitude roll (balanço) e pitch (caturro) do navio, a
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-30
+OSTENSIVO
+través dos cálculos de velocidade angular, processados em cima dos sinais provenientes dos
+três girômetros (gyros). Em outras palavras, para o sistema MK - 39, os sinais provenientes
+dos acelerômetros informam o quanto os eixos do sistema de coordenadas do navio se mo-
+vem, linearmente, em relação aos eixos do sistema de coordenadas de referência (virtual)
+da terra, figura 3.4, já os sinais provenientes dos gyros informam o quanto os eixos do sis-
+tema de coordenadas do navio (fixo) giram, (angularmente) em relação aos eixos do siste-
+ma de coordenadas de referência (virtual) da terra, figura 3.5.
+Fig. 3.4 - Movimento linear
+Fig. 3.5 - Movimento angular
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-31
+OSTENSIVO
+- MODOS OPERACIONAIS COM O NAVIO ATRACADO (QUAY)
+a) Modo alinhamento grosseiro (0 à 3 minutos)
+Obs. - Durante alguns segundos o sistema faz um auto-teste.
+Durante este período o sistema ajusta o nivelamento inicial (pitch e roll) e a proa estará com 
+indicação zero (000º) no momento da partida.
+Neste período o operador deve selecionar dockside (navio no cais), como mostra a figura 
+3.6, e digitar a proa do navio com aproximação (precisão) de 0,05 mm.
+De 3 a 8.5 minutos:
+Neste período o sistema calcula o alinhamento grosseiro da proa, utilizando a posição do 
+cais.
+Fig. 3.6 - Modo de alinhamento grosseiro (navio no porto)
+b) Modo alinhamento fino ou preciso (de 8.5 a 240 minutos)
+1 - Com dockside selecionado, o sistema, após 10 minutos, conclui a atitude (pitch e roll) e
+o alinhamento preciso estará em progressão. Neste caso o sistema poderá ser utilizado para
+navegação e antes do navio sair do cais o operador deve desligar dockside e selecionar uma
+fonte de referência de velocidade (odômetro ou manual), como mostra a parte pontilhada da
+figura 3.7, o sistema passa para o sub - modo NAV - C.
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-32
+OSTENSIVO
+Fig. 3.7 - Modo de operação alinhamento preciso
+2 - Modo alinhamento preciso completado (240 minutos)
+No modo NAV - C, no caso de o sistema não ter sido utilizado, ele continua com dockside
+ligado, neste caso o operador deve selecionar uma fonte de referência de velocidade (odô-
+metro ou manual), selecionar GPS ou inserir periodicamente os fixos manualmente, o sis-
+tema passa para o modo navigate.
+b) Modo navigate (após 240 minutos)
+Neste modo o sistema proporciona saídas de dados de atitude e posição de alta precisão.
+- MODOS OPERACIONAIS COM O NAVIO NO MAR (SEA)
+a) Modo alinhamento grosseiro (0 à 3 minutos)
+Obs. - Durante alguns segundos o sistema faz um auto - teste.
+Durante este período o sistema ajusta o nivelamento inicial (pitch e roll) e a proa estará com
+indicação zero (000º) no momento da partida.
+Neste período o operador deve selecionar a velocidade de referência (odômetro ou manual) e
+a posição (GPS ou manual / fixos) como mostra a figura 3.8. e digitar a proa do navio com
+aproximação (precisão) de 0,05 mm.
+De 3 a 8.5 minutos:
+Neste período o sistema calcula o alinhamento grosseiro da proa, a partir de dados inseri- dos,
+o sistema determina o valor da latitude a ser utilizada para o alinhamento, ou seja, se a
+latitude é introduzida por GPS ou é inserida manualmente.
+Obs. - O operador deve inserir a proa aproximada.
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-33
+OSTENSIVO
+Fig. 3.9 - Modo de alinhamento grosseiro (navio no mar)
+b) Modo de align - C (8,5 à 30 minutos)
+Neste período o modo de alinhamento preciso estará em andamento e será concluído em 30
+minutos, o sistema poderá ser utilizado para navegação, passando para o modo NAV - C.
+c) Modo NAV - C (10, 30 ou 240 minutos)
+Neste período o modo de alinhamento preciso é concluído, figura 3.9.
+Fig. 3.9 - Modo de operação alinhamento preciso
+b) Modo navigate (navegação)
+Neste modo o sistema proporciona saídas de dados de atitude e posição de alta precisão. 
+O sistema continuará com a auto - calibração.
+Obs. - A figura 3.10 mostra um diagrama de blocos simplificado “INS
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-34
+OSTENSIVO
+Fig. 3.10 - Diagrama de blocos simplificado “ INS “
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-35
+OSTENSIVO
+INSTRUÇÃO DE OPERAÇÃO E MANUTENÇÃO 
+– OPERAÇÃO DO SISTEMA
+a) Introdução:
+O sistema INS MK – 39 é projetado para operar automaticamente, pórem, com controle de
+operação limitado de certas funções e desde que o mesmo tenha sido corretamente instalado
+e configurado com as referências externas disponíveis, tais como odômetro (sinal de velo-
+cidade do navio) e GPS (posição do navio).
+b) Tipos de partida:
+O sistema INS MK – 39, disponibiliza dois (2) modos de partida.
+1 - Modo normal
+Neste modo a partida pode ser feita pela unidade principal INS ou pela unidade RCDU.
+Notas:
+1ª - Com o navio atracado, o sistema, estará pronto para navegação após dez (10) minutos e
+para o armamento após duzentos e quarenta (240) minutos.
+2ª - Com o navio no mar, trinta (30) minutos e duzentos e quarenta (240) minutos, respecti-
+vamente.
+2 - Modo teste
+Este modo é selecionado pela RCDU, colocando-se a chave S1, na INS para remote e a 
+chave system power, na RCDU para ON e calca-se a tecla test.
+Este modo é utilizado para configuração do sistema e verificação de parâmetros. 
+Neste modo estará disponível uma simulação de falhas de alimentação.
+OBS: Quando o modo teste é selecionado, a unidade principal ”INS” não fornece dados de 
+posição (latitude, longitude e rumo).
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-36
+OSTENSIVO
+– Partida normal pela “INS”
+a) Pré – requisitos
+1–Verifique se estão disponíveis os sinais de informação de velocidade (odômetro) e recep- 
+tor GPS.
+2–Ter disponível as alimentações de 28 VDC e 115 Volts 400 Hz.
+b) Procedimentos para a partida
+1- Ligue na INS as chaves:
+Main power (CB1), remote power (CB3) e synchro reference 
+(CB2). 3- Selecione a chave master power (S1) para ON.
+– Partida normal pela “RCDU”
+Após cumprir os pré – requisitos, proceda como a seguir:
+1- Caso a RCDU possua uma chave de controle de alimentação (System power), selecione
+a chave master power (S1), na INS, para remote e na RCDU, passe a chave system power
+para ON. Caso a RCDU não possua uma chave de controle remoto de alimentação, selecio-
+ne, na INS, a chave master power (S1) para ON.
+2- Observe se as lâmpadas indicadoras power e malfunction, na INS estão apagadas. Ob-
+serve que uma mensagem de modo de configuração aparece brevemente no display e se ne-
+nhum código de falha é apresentado no mesmo.
+3- Calque a tecla Aux Func na RCDU, para selecionar o menu de função auxiliar e então
+selecione a função Display test calcando a tecla 3 e verifique na exibição do display se está
+tudo funcionando corretamente.
+OBS – Para sair do modo teste do display, selecione qualquer menu.
+– Procedimentos para desligar o sistema
+a) Coloque a chave system power, na RCDU, em OFF.
+b) Coloque a chave master power (S1), na INS, em OFF.
+OBS: O sistema salvará todos os dados válidos para serem usados, quando o sistema for
+novamente ligado.
+CIAA – 117/036
+OSTENSIVO
+3-37
+ORIGINAL
+OSTENSIVO
+c) Desligue, na INS, as chaves Main power (CB1), Synchro reference (CB2) e remote po-
+wer (CB3).
+– Troca do modo de configuração com o display ligado
+Quando o sistema for ligado, as colocações previamente configuradas para normal invert
+vídeo, back light ON/OFF e buzina ON/OFF, permanecem ativas na página principal. Na
+fonte ligada inicialmente, o operador tem oportunidade de mudar estas funções para posi-
+ções diferentes.
+Para mudar as indicações no display, proceda como a seguir:
+a) Quando a mensagem de modo de configuração aparecer no display, calque a tecla mode.
+Um menu de configuração aparecerá na parte inferior do display use as teclas 1,2 ou 3 para
+mudar as indicações.
+Nota: Não calque a tecla 4, calcando esta tecla, enquanto o menu de configuração é ativa-
+do, o sistema fará com que a RCDU entre no modo RS232, e fará com que ela pare de se
+comunicar com a INS. Se a tecla 4 for calcada acidentalmente, selecione a chave remote
+power (CB3), na INS para OFF por alguns segundos, depois então, volte a chave CB3 para
+ON, para reajustar o display.
+1) Calque a tecla 1, para escolher entre normal e invert vídeo (display com pouco brilho).
+Esta função é utilizada para reduzir a luz transmitida em condições de baixa luminosidade.
+2) Calque a tecla 2, para escolher entre iluminação oculta ligada e iluminação oculta desli-
+gada.
+OBS: Quando a iluminação oculta for selecionada (ligada) e o operador não introduzir da-
+dos por um período de 10 minutos, a luz de fundo fechará automaticamente. Ao ser calcado
+qualquer tecla, a iluminação oculta voltará a ser ligada.
+3) Calque a tecla 3, para escolher entre beep ligado ou beep desligado, quando o modo Be-
+ep é ligado, um tom audível soará continuamente até alguma tecla ser calcada.
+b) Calque a tecla Mode para sair do menu de configuração, continue com a partida do sis-
+tema. A configuração do display aparece sempre que a tecla Mode for calcada, e ficará fi-
+xada nesta página até que a configuração seja trocada.
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+– OPERAÇÃO DA RCDU E FUNÇÕES DO DISPLAY
+As figuras 4.1 e 4.2 mostram as informações que podem ser verificadas através do display, e
+os menus que estão associados com a operação e seleções feitas, usando-se o teclado de
+funções.
+Uma lista completa dos códigos de falhas, que podem ser exibidos no campo “FAULT”, é
+fornecida no apendix “B” do manual do fabricante, junto com uma descrição e analise da
+condição que, provavelmente, causou o código exibido.
+Fig. 4.1 - Display de menus
+Fig. 4.2 - Informações do display
+Nota: O teste é indicado somente quando o INS é selecionado para o modo test. Referência
+no capitulo 5 no manual do fabricante.
+3-38
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-39
+OSTENSIVO
+– PROCEDIMENTOS PARA OPERAÇÃO DO TECLADO E MENUS
+a) Calque uma tecla de seleção de menu (SENSOR, MODE, DISPLAY OU AUX
+FUNC.), para selecionar o menu desejado (ver figura 4.4).
+OBS: caso seja selecionado um menu com mais de uma página, calque a tecla NEXT PA-
+GE para mudar para a página seguinte.
+b) Quando a função desejada for localizada, calque a tecla de número correspondente, para
+selecionar esta função.
+OBS: Se algum valor for exigido, use as teclas para entrada de dados. Se houver algum erro
+durante a introdução dos dados, faça a correção usando as teclas CLEAR ou BACKSPA-
+CE.
+c) Caso precise abortar a operação do menu selecionado, calque qualquer tecla de seleção
+de menu (MODE, AUX FUNC, SENSOR OU DISPLAY).
+d) Após ter sido introduzido os dados, calque a tecla ENTER para confirmar a operação ou
+CLEAR para cancelar os dados introduzidos, permitindo que sejam introduzidos novos
+valores (corretos).
+Exemplo: Ao se pressionar a tecla de seleção de menu SENSOR, surgirá à primeira página
+(1/2) do display sensor, como mostra na figura 4.3, observe que foi selecionada, anterior-
+mente, a fonte manual de velocidade. O operador poderá selecionar uma das fontes de velo-
+cidade disponível, calcando a tecla de número correspondente e a tecla ENTER.
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-40
+OSTENSIVO
+Fig. 4.3 - Menu dos parâmetros inseridos
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-41
+OSTENSIVO
+Fig. 4.4 – Menus de operação e entradas de dados
+CIAA – 117/036
+OSTENSIVO
+ORIGINAL
+3-42
+OSTENSIVO
+– FIM/PC
+Normalmente o programa “FIM” (Factory Interface Monitor) è usado no laboratório (fabri-
+ca) da Sperry Marine, para configurar o sistema “INS”.
+Quando está usando o monitor da oficina de fabricação (FIM), ou um computador pessoal
+(PC), com software para operar a “INS”, um comando com menu, parecido com o do dis-
+play de apresentação (RCDU), aparece na tela do “PC”, como mostra a figura 1.7, com o
+objetivo de mostrar a distribuição e função das teclas, que a elas correspondam ao comando
+descrito. Ou seja, leituras, números, sinais e a tecla “enter”, que representam suas próprias
+funções em situações aplicadas.
+Nota: O Monitor “FIM/PC”, quando utilizado, baypassa ou substitui a “RCDU”.
+Fig. 4.5 – Mapeamento do Teclado do PC
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+3-43
+– SISTEMA DE ALARMES
+Os sistemas INS MK – 39 mod.3, possuem um completo e versátil sistema de indicação de
+falhas. O sistema prove seis fontes de anúncio de falhas, sendo que três (3) destas fontes indi-
+cam também as falhas provenientes da RCDU.
+O sistema MK – 39 mod. 3A possui os seguintes dispositivos de indicação:
+a) Na INS (System Navigation Inertial)
+1 – Três conjuntos de relés para acionar alarmes sonoro ou visual.
+2 – Duas lâmpadas para indicação de alarme visual.
+3 – Indicação de alarme visual no painel frontal (lâmpada malfunction).
+b) Na RCDU (Remote Control Display Unit)
+1 – Exibição das falhas no display, em código de três (3) dígitos.
+2 – Lâmpada de indicação de “Alarm system” no painel frontal.
+- Tabelas do apendix B (códigos de falhas)
+a) Tabela B-1 (Fault status indicators)
+Contém uma lista de indicações de falhas (system malfunction, malfunction, advisory e sys- 
+tem fail ou not ready) e fornece uma sugestão breve de verificação da avaria.
+b) Tabela B-2 (fault codes)
+Contém todos os códigos que podem ser mostrados pela RCDU durante operação on-line.
+Muitos desses códigos estão associados com programas limitados e podem representar condi-
+ções passageiras, resultantes da aceitação de valores incorretos ou fora das posições de valo-
+res fixos. Outros códigos associados ao sistema e intervalo de erros podem ser, também, pas-
+sageiros, como resultado de ruído de linha de transmissão ou equipamento externo sendo des-
+ligado ou parado por falta de alimentação.
+As falhas estão agrupadas pelo software de erro (Ferr), onde cada falha corresponde a um có-
+digo que esteja armazenado. O primeiro grupo (número de código) corresponde a “00” (FER-
+ROO) e o último número corresponde a 13 (FERR13).
+O cabeçalho de cada coluna da tabela “B – 2”, fornece informações adicionais sobre a catego-
+ria de cada falha (fig.3.3).
+Através da categoria e dos códigos de falhas, o operador pode analisar o estado de operação
+global do sistema e fazer uma avaliação se é possível ou não continuar operando o sistema.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+3-44
+Fig. 3.3 – Parte da tabela B – 2 (Lista de códigos de falhas)
+1 - Coluna “O” (Operator advisory)
+Esta coluna indica um código de falha que normalmente pode ser consultado pelo operador.
+Os códigos de falhas identificados com um asterísco nesta coluna, indicam lembretes que são
+principalmente planejados para informar ao operador que deve ser feita uma verificação, ou
+que a aceitação manual de dados deve ser feita.
+A letra “C” nesta coluna indica que o código de falha representa uma avaria, somente se a fa-
+lha permanecer continuamente.
+2 – Colunas “1 a 3” (Fault advisory, system fail, malfunction)
+Esta coluna indica o estado dos relés de falha. Um asterísco nestas colunas indica que o relé
+associado está desenergizado e rearmado quando a falha for detectada.
+3 – Coluna “4” (System malfunction)
+Esta coluna informa o estado do indicador de mau funcionamento. Um asterísco nesta coluna
+informa que o indicador de mau funcionamento do painel frontal, estará iluminado quando
+uma falha for detectada.
+CIAA-117/037
+OSTENSIVO
+ORIGINAL
+OSTENSIVO
+3-45
+4 – Coluna “5” (System alarm)
+Esta coluna indica o estado do sistema de alarme. Um asterisco nesta coluna indica que a
+lâmpada esta piscando, quando uma falha é detectada.
+5 – Coluna “6” (Shutdown status)
+Esta coluna indica que o sistema entrou no modo Shut Down. Um asterísco nesta coluna in-
+dica que o sistema desarma (desliga) automaticamente, quando a falha é detectada.
+6 – Coluna “7” (Reset fault bit)
+Esta coluna indica o estado reset fault bit na formulação de erro associado. Um asterísco nesta
+coluna indica que o código de falha está automaticamente limpo após ser reconhecido.
+7 – Coluna “8” (Delay nvram update)
+Esta coluna indica que a NVRAM não está atualizada com dados recentes, se a condição de
+falha estiver anunciada. Isso evita que os dados armazenados na NVRAM sejam corrompi-
+dos.
+8-Coluna “9” (Ignore fault)
+Esta coluna indica que a condição de falha é passageira, externa ao sistema, ou não é critica
+para operação e performance do sistema, pode ser ignorada.
+c) Tabela B – 3 (Fault code descriptions and diagnostic information)
+Fornece procedimentos adicionais para isolar uma falha, baseada no código de falha indicado.
+Se mais de um código de falha for exibido, as informações de diagnóstico para cada código
+devem ser revisadas para determinar causas que são comuns aos códigos exibidos, e as causas
+mais prováveis devem ser endereçadas primeiro.
+– MANUTENÇÃO
+a) Introdução
+Os sistemas INS MK – 39, foram projetados para serem ligados e desligados constantemente,
+tendo em vista que a vida útil é determinada pelas horas de funcionamento, que é de 200 mil
+horas, pelo manual do fabricante, mas na prática seria entre 60 e 70 mil horas.
+b) Rotinas de manutenção
+Não existe uma rotina de manutenção, mas a cada seis (6) meses o sistema deve ser partido
+(posto em funcionamento) em teste e feito a leitura dos valores de voltagem entre os anéis de
+laser, que não poderá ultrapassar de ± 0,4 volts. Caso isto ocorra é sinal que a IMU estará se
+deteriorando.
+c) IMU (Inertial Measurement Unit)
+A unidade de medição inercial não é reparada, em caso de degradação, deve ser substituída.
+d) BITE TEST (Teste Dinâmico de Circuitos)
+Tem a função de interrogar o sistema.
+CIAA-117/018
+OSTENSIVO
+ANEXO A
+BIBLIOGRAFIA
+a) EUA - Manual de Instrução da Agulha Giroscópica - NAVPERS 10606-A - 1952.
+b) EUA – Sperry Marine. Manual de Operação e Serviço do sistema de navegação
+Inercial MK – 39 Mod. 3A. Charlotteville : 2004.
+OSTENSIVO
+                                 A-1
+                                                ORIGINAL
