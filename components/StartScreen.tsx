@@ -96,6 +96,11 @@ export function StartScreen({ rankings, selectedQuiz, onStart, onOpenSelector, o
       label: "MAN. SIST. AGU. GIRO .pdf",
       url: new URL('../assets/MAN. SIST. AGU. GIRO .pdf', import.meta.url).href,
     },
+    {
+      id: "apostila-6",
+      label: "GUIA DE ESTUDO – REDES ETHERNET.pdf",
+      url: new URL('../assets/redes-ethernet.pdf', import.meta.url).href,
+    },
   ];
   const selectedApostilaData = apostilas.find((apostila) => apostila.id === selectedApostila) ?? apostilas[0];
 
