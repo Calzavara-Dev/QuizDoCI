@@ -10,8 +10,7 @@ export const redesGagauQuestions: Question[] = [
       "A necessidade de uso de multiplexadores analógicos.",
       "O tamanho físico da placa de rede."
     ],
-    "answer": "O nível de interferência eletromagnética.",
-    "explanation": "A alternativa correta é a letra B. O nível de interferência eletromagnética."
+    "answer": "O nível de interferência eletromagnética."
   },
   {
     "question": "Qual o conector mais utilizado em cabos coaxiais?",
@@ -22,8 +21,7 @@ export const redesGagauQuestions: Question[] = [
       "BNC",
       "USB"
     ],
-    "answer": "BNC",
-    "explanation": "A alternativa correta é a letra D. BNC"
+    "answer": "BNC"
   },
   {
     "question": "Qual método de identificação foi usado na transmissão a seguir? \"Transmissões em que o campo de nome TYPE FIELD é usado para especificar o conteúdo dos frames.\"",
@@ -34,8 +32,7 @@ export const redesGagauQuestions: Question[] = [
       "Tipo de frame de banda base.",
       "Tipo de frame dinâmico."
     ],
-    "answer": "Tipo de frame explícito.",
-    "explanation": "A alternativa correta é a letra B. Tipo de frame explícito."
+    "answer": "Tipo de frame explícito."
   },
   {
     "question": "Como o computador consegue lidar com os dados da rede sem interromper o uso da CPU?",
@@ -46,8 +43,7 @@ export const redesGagauQuestions: Question[] = [
       "Enviando os dados apenas quando a CPU não está em uso, através de comandos da BIOS.",
       "Desativando o protocolo TCP/IP e usando apenas a camada física."
     ],
-    "answer": "Através da Placa de Interface de Rede (NIC), que possui um circuito capaz de enviar e receber bits independentemente e só avisa a CPU por interrupção ao terminar a tarefa.",
-    "explanation": "A alternativa correta é a letra C. Através da Placa de Interface de Rede (NIC), que possui um circuito capaz de enviar e receber bits independentemente e só avisa a CPU por interrupção ao terminar a tarefa."
+    "answer": "Através da Placa de Interface de Rede (NIC), que possui um circuito capaz de enviar e receber bits independentemente e só avisa a CPU por interrupção ao terminar a tarefa."
   },
   {
     "question": "Quais fatores na rede são amplificados pelo evento a seguir? \"Em uma empresa com uma rede local concebida originalmente para um cabeamento de 50 m, teve sua rede alterada por uma reforma onde o cabeamento foi aumentado para 160 m sem nenhum outro equipamento tenha entrado na rede.\"",
@@ -58,8 +54,7 @@ export const redesGagauQuestions: Question[] = [
       "O número de computadores na rede e as colisões no hub.",
       "O delay (atraso) e a atenuação de sinal do cabo."
     ],
-    "answer": "O delay (atraso) e a atenuação de sinal do cabo.",
-    "explanation": "A alternativa correta é a letra E. O delay (atraso) e a atenuação de sinal do cabo."
+    "answer": "O delay (atraso) e a atenuação de sinal do cabo."
   },
   {
     "question": "O que é Internet?",
@@ -70,8 +65,7 @@ export const redesGagauQuestions: Question[] = [
       "Um sistema de transmissão analógico focado apenas em topologias estrela.",
       "O termo utilizado para classificar qualquer computador que acessa um switch."
     ],
-    "answer": "Uma conexão entre redes, formando um grupo de redes interconectadas por roteadores usando um serviço universal.",
-    "explanation": "A alternativa correta é a letra C. Uma conexão entre redes, formando um grupo de redes interconectadas por roteadores usando um serviço universal."
+    "answer": "Uma conexão entre redes, formando um grupo de redes interconectadas por roteadores usando um serviço universal."
   },
   {
     "question": "Assinale a topologia de rede que tem todos os computadores interligados a um único ponto.",
@@ -82,8 +76,7 @@ export const redesGagauQuestions: Question[] = [
       "Malha",
       "Árvore"
     ],
-    "answer": "Estrela",
-    "explanation": "A alternativa correta é a letra C. Estrela"
+    "answer": "Estrela"
   },
   {
     "question": "Assinale a opção que contém o sistema utilizado para coordenar as transmissões em uma rede de barramento ethernet:",
@@ -94,8 +87,7 @@ export const redesGagauQuestions: Question[] = [
       "Através do CARRIER SENSE MULTIPLE ACCESS WITH COLISION DETECT (CSMA/CD).",
       "Os computadores só recebem no barramento Ethernet, nunca transmitem."
     ],
-    "answer": "Através do CARRIER SENSE MULTIPLE ACCESS WITH COLISION DETECT (CSMA/CD).",
-    "explanation": "A alternativa correta é a letra D. Através do CARRIER SENSE MULTIPLE ACCESS WITH COLISION DETECT (CSMA/CD)."
+    "answer": "Através do CARRIER SENSE MULTIPLE ACCESS WITH COLISION DETECT (CSMA/CD)."
   },
   {
     "question": "Os erros em transmissões de rede são variáveis indesejáveis mas reais. Assinale a opção que contém o nome do erro que só altera um (1) bit da mensagem enviada.",
@@ -106,8 +98,7 @@ export const redesGagauQuestions: Question[] = [
       "Erro de Byte",
       "Erro de Mbits"
     ],
-    "answer": "Erro de bit",
-    "explanation": "A alternativa correta é a letra C. Erro de bit"
+    "answer": "Erro de bit"
   },
   {
     "question": "Marque a opção que contém uma característica de uma transmissão de BROADCASTING.",
@@ -118,8 +109,7 @@ export const redesGagauQuestions: Question[] = [
       "As mensagens são obrigatoriamente barradas por switches locais.",
       "A mensagem é dividida em fragmentos menores para evitar sobrecarga."
     ],
-    "answer": "Todas as estações na rede recebem cópias dos dados enviados.",
-    "explanation": "A alternativa correta é a letra B. Todas as estações na rede recebem cópias dos dados enviados."
+    "answer": "Todas as estações na rede recebem cópias dos dados enviados."
   },
   {
     "question": "Redes com BRIDGES são mais eficientes que as com repetidores. Com o devido cuidado na sua organização, podemos ter redes com segmentos que podem se comunicar, independentemente do outro. Assinale a alternativa que contém uma exigência para que isso seja possível.",
@@ -130,8 +120,7 @@ export const redesGagauQuestions: Question[] = [
       "Configurar todos os computadores para o modo de transmissão sem conexão.",
       "Instalar apenas repetidores analógicos de banda larga."
     ],
-    "answer": "Colocar computadores que se comuniquem com mais frequência no mesmo segmento de rede.",
-    "explanation": "A alternativa correta é a letra C. Colocar computadores que se comuniquem com mais frequência no mesmo segmento de rede."
+    "answer": "Colocar computadores que se comuniquem com mais frequência no mesmo segmento de rede."
   },
   {
     "question": "A empresa KARHU S/A possui uma rede para permitir a comunicação de suas unidades, fazendo uso de meios alugados para permitir a interligação de suas estações. Assinale a opção que contém uma característica dessa rede em relação à propriedade.",
@@ -142,8 +131,7 @@ export const redesGagauQuestions: Question[] = [
       "WAN Privada",
       "MAN Governamental"
     ],
-    "answer": "WAN Privada",
-    "explanation": "A alternativa correta é a letra D. WAN Privada"
+    "answer": "WAN Privada"
   },
   {
     "question": "Ao analisarmos o desempenho de uma rede de dados encontramos um parâmetro importante que é o DELAY. Sabendo que essa característica é inerente às redes de forma distinta, uma rede com quatro computadores, dois repetidores, dois SWITCH e 50 metros de cabo terá um DELAY prioritariamente de:",
@@ -154,8 +142,7 @@ export const redesGagauQuestions: Question[] = [
       "Delay de Acesso",
       "Delay Estático"
     ],
-    "answer": "Switching Delay (SWITCHING)",
-    "explanation": "A alternativa correta é a letra B. Switching Delay (SWITCHING)"
+    "answer": "Switching Delay (SWITCHING)"
   },
   {
     "question": "Sabendo que a camada de sessão adicionou um dado a um pacote que será transmitido na rede, assinale a opção com a camada responsável por retirar essa informação na recepção.",
@@ -166,8 +153,7 @@ export const redesGagauQuestions: Question[] = [
       "Camada de Aplicação",
       "Camada de Sessão"
     ],
-    "answer": "Camada de Sessão",
-    "explanation": "A alternativa correta é a letra E. Camada de Sessão"
+    "answer": "Camada de Sessão"
   },
   {
     "question": "Qual é a principal utilização dos Frames em uma rede local?",
@@ -178,8 +164,7 @@ export const redesGagauQuestions: Question[] = [
       "Amplificar o sinal em cabos de longa distância substituindo roteadores e repetidores.",
       "Traduzir nomes de domínio simbólicos para endereços IP através do servidor DNS."
     ],
-    "answer": "Atuar como \"envelopes\" para encapsular os pacotes, adicionando endereços de hardware (endereços MA",
-    "explanation": "A alternativa correta é a letra B. Atuar como \"envelopes\" para encapsular os pacotes, adicionando endereços de hardware (endereços MA"
+    "answer": "Atuar como \"envelopes\" para encapsular os pacotes, adicionando endereços de hardware (endereços MA"
   },
   {
     "question": "Como um computador na rede consegue aceitar apenas as mensagens direcionadas a ele?",
@@ -190,8 +175,7 @@ export const redesGagauQuestions: Question[] = [
       "Utilizando criptografia avançada onde só o destinatário possui a chave de desencriptação.",
       "Utilizando o endereço IP em todos os segmentos sem que a interface de hardware precise processar nada."
     ],
-    "answer": "A placa de rede examina o \"Endereço de Destino\" do frame que passa pelo meio; se o endereço for igual ao seu endereço físico, ela o aceita e repassa ao sistema, caso contrário, descarta o frame.",
-    "explanation": "A alternativa correta é a letra C. A placa de rede examina o \"Endereço de Destino\" do frame que passa pelo meio; se o endereço for igual ao seu endereço físico, ela o aceita e repassa ao sistema, caso contrário, descarta o frame."
+    "answer": "A placa de rede examina o \"Endereço de Destino\" do frame que passa pelo meio; se o endereço for igual ao seu endereço físico, ela o aceita e repassa ao sistema, caso contrário, descarta o frame."
   },
   {
     "question": "Como se conceitua o \"Serviço Universal\" (Universal Service) no contexto de redes?",
@@ -202,8 +186,7 @@ export const redesGagauQuestions: Question[] = [
       "O método exclusivo pelo qual cabos de par trançado se comunicam com cabos de fibra óptica sem precisar de hubs.",
       "Uma aplicação de correio eletrônico que padroniza os anexos enviados."
     ],
-    "answer": "Um esquema que permite a comunicação transparente entre quaisquer computadores, independentemente de estarem ligados a tipos de redes e tecnologias físicas completamente diferentes.",
-    "explanation": "A alternativa correta é a letra B. Um esquema que permite a comunicação transparente entre quaisquer computadores, independentemente de estarem ligados a tipos de redes e tecnologias físicas completamente diferentes."
+    "answer": "Um esquema que permite a comunicação transparente entre quaisquer computadores, independentemente de estarem ligados a tipos de redes e tecnologias físicas completamente diferentes."
   },
   {
     "question": "Qual é a principal finalidade de se utilizar o cabo de par trançado na fiação de redes de computadores?",
@@ -214,8 +197,7 @@ export const redesGagauQuestions: Question[] = [
       "Evitar o uso de conectores RJ-45.",
       "Garantir que o endereçamento MAC mude dinamicamente."
     ],
-    "answer": "Minimizar a interferência eletromagnética (tanto a emitida pelo cabo quanto a recebida de fora).",
-    "explanation": "A alternativa correta é a letra B. Minimizar a interferência eletromagnética (tanto a emitida pelo cabo quanto a recebida de fora)."
+    "answer": "Minimizar a interferência eletromagnética (tanto a emitida pelo cabo quanto a recebida de fora)."
   },
   {
     "question": "No mecanismo CSMA/CD, o que caracteriza tecnicamente uma colisão?",
@@ -226,8 +208,7 @@ export const redesGagauQuestions: Question[] = [
       "A interferência entre dois ou mais sinais elétricos viajando no mesmo cabo ao mesmo tempo.",
       "O rompimento físico do cabo principal de rede."
     ],
-    "answer": "A interferência entre dois ou mais sinais elétricos viajando no mesmo cabo ao mesmo tempo.",
-    "explanation": "A alternativa correta é a letra D. A interferência entre dois ou mais sinais elétricos viajando no mesmo cabo ao mesmo tempo."
+    "answer": "A interferência entre dois ou mais sinais elétricos viajando no mesmo cabo ao mesmo tempo."
   },
   {
     "question": "Qual a função do endereço de broadcast (broadcast address) em uma rede local?",
@@ -238,8 +219,7 @@ export const redesGagauQuestions: Question[] = [
       "Estabelecer uma rede virtual privada (VPN) para usuários remotos de forma invisível.",
       "Eliminar completamente as colisões no meio físico de transmissão."
     ],
-    "answer": "Realizar a transmissão de dados para uma larga audiência, permitindo que todos os computadores da rede recebam uma cópia dos dados.",
-    "explanation": "A alternativa correta é a letra B. Realizar a transmissão de dados para uma larga audiência, permitindo que todos os computadores da rede recebam uma cópia dos dados."
+    "answer": "Realizar a transmissão de dados para uma larga audiência, permitindo que todos os computadores da rede recebam uma cópia dos dados."
   },
   {
     "question": "Qual o objetivo da instalação de um terminal nas extremidades do cabo principal em sistemas Thick Ethernet?",
@@ -250,8 +230,7 @@ export const redesGagauQuestions: Question[] = [
       "Amplificar o sinal elétrico para que ele atinja áreas metropolitanas (MAN).",
       "Fazer a função de firewall para proteger a rede contra intrusos externos."
     ],
-    "answer": "Evitar que o sinal elétrico seja “refletido” ao chegar ao fim do cabo, o que causaria severas interferências.",
-    "explanation": "A alternativa correta é a letra C. Evitar que o sinal elétrico seja “refletido” ao chegar ao fim do cabo, o que causaria severas interferências."
+    "answer": "Evitar que o sinal elétrico seja “refletido” ao chegar ao fim do cabo, o que causaria severas interferências."
   },
   {
     "question": "Qual a vantagem funcional de uma bridge em relação a um repetidor analógico?",
@@ -262,8 +241,7 @@ export const redesGagauQuestions: Question[] = [
       "A bridge consegue identificar frames completos e verifica se eles chegam intactos antes de enviá-los, além de não transmitir frames desnecessariamente (filtro).",
       "A bridge diminui propositalmente a taxa de transferência para evitar sobrecarga."
     ],
-    "answer": "A bridge consegue identificar frames completos e verifica se eles chegam intactos antes de enviá-los, além de não transmitir frames desnecessariamente (filtro).",
-    "explanation": "A alternativa correta é a letra D. A bridge consegue identificar frames completos e verifica se eles chegam intactos antes de enviá-los, além de não transmitir frames desnecessariamente (filtro)."
+    "answer": "A bridge consegue identificar frames completos e verifica se eles chegam intactos antes de enviá-los, além de não transmitir frames desnecessariamente (filtro)."
   },
   {
     "question": "De acordo com o modelo de camadas OSI, qual camada é responsável por organizar os dados em frames e transmiti-los pela rede?",
@@ -274,8 +252,7 @@ export const redesGagauQuestions: Question[] = [
       "Camada 4: Transporte",
       "Camada 7: Aplicação"
     ],
-    "answer": "Camada 2: Enlace",
-    "explanation": "A alternativa correta é a letra B. Camada 2: Enlace"
+    "answer": "Camada 2: Enlace"
   },
   {
     "question": "As fibras ópticas apresentam vantagens em relação aos fios de cobre porque:",
@@ -286,8 +263,7 @@ export const redesGagauQuestions: Question[] = [
       "Utilizam sinais elétricos para codificar informações.",
       "Possuem baixa largura de banda."
     ],
-    "answer": "A luz não sofre nem produz interferência elétrica.",
-    "explanation": "A alternativa correta é a letra B. A luz não sofre nem produz interferência elétrica."
+    "answer": "A luz não sofre nem produz interferência elétrica."
   },
   {
     "question": "No padrão RS-232, o receptor utiliza o start bit para:",
@@ -298,8 +274,7 @@ export const redesGagauQuestions: Question[] = [
       "Atuar como um bit fantasma de parada.",
       "Realizar a modulação por fase."
     ],
-    "answer": "Iniciar um timer para reconhecer os tempos dos bits sucessivos.",
-    "explanation": "A alternativa correta é a letra B. Iniciar um timer para reconhecer os tempos dos bits sucessivos."
+    "answer": "Iniciar um timer para reconhecer os tempos dos bits sucessivos."
   },
   {
     "question": "Na topologia de estrela, o ponto central ao qual todos os computadores se conectam é chamado de:",
@@ -310,8 +285,7 @@ export const redesGagauQuestions: Question[] = [
       "Anel",
       "Bus"
     ],
-    "answer": "Hub",
-    "explanation": "A alternativa correta é a letra C. Hub"
+    "answer": "Hub"
   },
   {
     "question": "Um endereço físico estático é aquele que:",
@@ -322,8 +296,7 @@ export const redesGagauQuestions: Question[] = [
       "É definido pelo fabricante e é único no mundo.",
       "Depende dos endereços de outros computadores conectados na mesma rede."
     ],
-    "answer": "É definido pelo fabricante e é único no mundo.",
-    "explanation": "A alternativa correta é a letra D. É definido pelo fabricante e é único no mundo."
+    "answer": "É definido pelo fabricante e é único no mundo."
   },
   {
     "question": "O sistema de cabeamento 10Base-T utiliza qual tipo de conector para a placa de rede?",
@@ -334,8 +307,7 @@ export const redesGagauQuestions: Question[] = [
       "DB-9",
       "Transceiver"
     ],
-    "answer": "RJ-45",
-    "explanation": "A alternativa correta é a letra C. RJ-45"
+    "answer": "RJ-45"
   },
   {
     "question": "Os hubs ativos possuem como característica principal:",
@@ -346,8 +318,7 @@ export const redesGagauQuestions: Question[] = [
       "Funcionarem apenas como painéis de fios de manobra.",
       "Serem imunes a colisões no barramento."
     ],
-    "answer": "Regenerarem ativamente os sinais entre os dispositivos.",
-    "explanation": "A alternativa correta é a letra C. Regenerarem ativamente os sinais entre os dispositivos."
+    "answer": "Regenerarem ativamente os sinais entre os dispositivos."
   },
   {
     "question": "O ritmo de transferência (throughput) de uma rede é definido como:",
@@ -358,8 +329,7 @@ export const redesGagauQuestions: Question[] = [
       "O delay de enfileiramento dentro de um pacote switch.",
       "A largura de banda total suportada fisicamente pelo hardware."
     ],
-    "answer": "A taxa de bits que podem entrar na rede por unidade de tempo.",
-    "explanation": "A alternativa correta é a letra B. A taxa de bits que podem entrar na rede por unidade de tempo."
+    "answer": "A taxa de bits que podem entrar na rede por unidade de tempo."
   },
   {
     "question": "No modelo de camadas OSI, a Camada 4 é a camada de:",
@@ -370,8 +340,7 @@ export const redesGagauQuestions: Question[] = [
       "Transporte",
       "Apresentação"
     ],
-    "answer": "Transporte",
-    "explanation": "A alternativa correta é a letra D. Transporte"
+    "answer": "Transporte"
   },
   {
     "question": "Explique como funciona o mecanismo de Acesso Múltiplo com Sensoriamento da Portadora (CSM",
@@ -382,8 +351,7 @@ export const redesGagauQuestions: Question[] = [
       "A placa de rede emite pulsos luminosos de alerta para as outras máquinas pararem seus envios antes dela iniciar o seu.",
       "O computador envia um broadcast constante para reservar o cabo em sua totalidade durante a comunicação."
     ],
-    "answer": "O computador monitora o cabo buscando por uma portadora; se o cabo estiver livre, ele transmite; se houver um sinal ativo, ele aguarda o término da transmissão em andamento.",
-    "explanation": "A alternativa correta é a letra B. O computador monitora o cabo buscando por uma portadora; se o cabo estiver livre, ele transmite; se houver um sinal ativo, ele aguarda o término da transmissão em andamento."
+    "answer": "O computador monitora o cabo buscando por uma portadora; se o cabo estiver livre, ele transmite; se houver um sinal ativo, ele aguarda o término da transmissão em andamento."
   },
   {
     "question": "Qual a principal diferença de funcionamento entre um hub e um switch em relação ao tráfego de dados?",
@@ -394,8 +362,7 @@ export const redesGagauQuestions: Question[] = [
       "O hub impede as colisões ativamente através de hardware, enquanto o switch só resolve problemas usando a técnica CSMA/CD.",
       "O hub opera na camada de rede (Camada 3) e o switch opera na camada física (Camada 1)."
     ],
-    "answer": "O hub simula um segmento único e compartilhado, onde apenas dois computadores podem trocar informações simultaneamente; já o switch trabalha de forma paralela simulando uma rede com bridges, permitindo que vários pares de computadores se comuniquem ao mesmo tempo.",
-    "explanation": "A alternativa correta é a letra C. O hub simula um segmento único e compartilhado, onde apenas dois computadores podem trocar informações simultaneamente; já o switch trabalha de forma paralela simulando uma rede com bridges, permitindo que vários pares de computadores se comuniquem ao mesmo tempo."
+    "answer": "O hub simula um segmento único e compartilhado, onde apenas dois computadores podem trocar informações simultaneamente; já o switch trabalha de forma paralela simulando uma rede com bridges, permitindo que vários pares de computadores se comuniquem ao mesmo tempo."
   },
   {
     "question": "O que descreve corretamente o funcionamento do sistema \"store and forward\" utilizado em packet switches de redes WAN?",
@@ -406,7 +373,6 @@ export const redesGagauQuestions: Question[] = [
       "O switch cria buffer e guarda na memória uma cópia exata do frame que chega (store); em seguida, o processador examina o cabeçalho para decidir por qual interface enviar e inicia a transmissão (forward).",
       "O switch transmite o pacote cegamente para todas as portas de imediato (forward) e depois guarda um registro (store) para faturamento."
     ],
-    "answer": "O switch cria buffer e guarda na memória uma cópia exata do frame que chega (store); em seguida, o processador examina o cabeçalho para decidir por qual interface enviar e inicia a transmissão (forward).",
-    "explanation": "A alternativa correta é a letra D. O switch cria buffer e guarda na memória uma cópia exata do frame que chega (store); em seguida, o processador examina o cabeçalho para decidir por qual interface enviar e inicia a transmissão (forward)."
+    "answer": "O switch cria buffer e guarda na memória uma cópia exata do frame que chega (store); em seguida, o processador examina o cabeçalho para decidir por qual interface enviar e inicia a transmissão (forward)."
   }
 ];

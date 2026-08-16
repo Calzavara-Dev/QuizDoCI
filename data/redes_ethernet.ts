@@ -10,8 +10,7 @@ export const redesEthernetQuestions: Question[] = [
       "O encapsulamento de fótons por meio do CSMA/CD.",
       "A geração de loops magnéticos nas antenas do receptor."
     ],
-    "answer": "A codificação de informações em uma troca de energia e a transferência dessa energia através de um meio.",
-    "explanation": "A alternativa correta é a letra B. A codificação de informações em uma troca de energia e a transferência dessa energia através de um meio."
+    "answer": "A codificação de informações em uma troca de energia e a transferência dessa energia através de um meio."
   },
   {
     "question": "O uso do fio de cobre é justificado na maioria das conexões LAN por três motivos básicos:",
@@ -22,8 +21,7 @@ export const redesEthernetQuestions: Question[] = [
       "Capacidade de não gerar radiação magnética alguma.",
       "Ausência da necessidade de conectores mecânicos."
     ],
-    "answer": "Baixo custo, facilidade de instalação e baixa resistência elétrica.",
-    "explanation": "A alternativa correta é a letra B. Baixo custo, facilidade de instalação e baixa resistência elétrica."
+    "answer": "Baixo custo, facilidade de instalação e baixa resistência elétrica."
   },
   {
     "question": "Qual é a principal função do trançamento dos fios no cabo de par trançado?",
@@ -34,8 +32,7 @@ export const redesEthernetQuestions: Question[] = [
       "Permitir que o sinal de infravermelho trafegue no núcleo.",
       "Estabelecer um endereço IP dinâmico diretamente pelo hardware."
     ],
-    "answer": "Limitar a energia eletromagnética que o fio emite e torná-lo menos suscetível à energia eletromagnética de outros fios, reduzindo a interferência.",
-    "explanation": "A alternativa correta é a letra C. Limitar a energia eletromagnética que o fio emite e torná-lo menos suscetível à energia eletromagnética de outros fios, reduzindo a interferência."
+    "answer": "Limitar a energia eletromagnética que o fio emite e torná-lo menos suscetível à energia eletromagnética de outros fios, reduzindo a interferência."
   },
   {
     "question": "O que especifica exatamente a nomenclatura \"10BASE2\" em redes de computadores?",
@@ -46,8 +43,7 @@ export const redesEthernetQuestions: Question[] = [
       "Velocidade de 10 Gbps em conexões de 2 km de fibra óptica.",
       "Capacidade de 10 computadores suportando 2 bridges."
     ],
-    "answer": "Velocidade de 10 Mbps, transmissão digital (banda base/BASE) e limite de transmissão de aproximadamente 200 metros (Thinnet).",
-    "explanation": "A alternativa correta é a letra B. Velocidade de 10 Mbps, transmissão digital (banda base/BASE) e limite de transmissão de aproximadamente 200 metros (Thinnet)."
+    "answer": "Velocidade de 10 Mbps, transmissão digital (banda base/BASE) e limite de transmissão de aproximadamente 200 metros (Thinnet)."
   },
   {
     "question": "Na categorização de cabos par trançado, qual é a principal finalidade da Categoria 1 (Cat 1)?",
@@ -58,8 +54,7 @@ export const redesEthernetQuestions: Question[] = [
       "Transmissão de ondas de rádio.",
       "Suporte a Jumbo Frames."
     ],
-    "answer": "Serviços telefônicos e dados de baixa velocidade.",
-    "explanation": "A alternativa correta é a letra A. Serviços telefônicos e dados de baixa velocidade."
+    "answer": "Serviços telefônicos e dados de baixa velocidade."
   },
   {
     "question": "Cabos UTP (Par Trançado Sem Blindagem) possuem uma forte restrição de ambiente, que é:",
@@ -70,8 +65,7 @@ export const redesEthernetQuestions: Question[] = [
       "Exigem o uso obrigatório de modems de banda larga.",
       "Obrigam o uso de comunicação assíncrona analógica."
     ],
-    "answer": "Não podem ser instalados próximos a equipamentos geradores de campos magnéticos (como motores ou fios de rede elétrica) e em ambientes de alta umidade, devido à ausência total de blindagem.",
-    "explanation": "A alternativa correta é a letra C. Não podem ser instalados próximos a equipamentos geradores de campos magnéticos (como motores ou fios de rede elétrica) e em ambientes de alta umidade, devido à ausência total de blindagem."
+    "answer": "Não podem ser instalados próximos a equipamentos geradores de campos magnéticos (como motores ou fios de rede elétrica) e em ambientes de alta umidade, devido à ausência total de blindagem."
   },
   {
     "question": "A Categoria de Cabos Par Trançado certificada para transmitir \"até 16 MHz\", englobando as antigas redes 10Base-T e 100Base-T, é a:",
@@ -82,8 +76,7 @@ export const redesEthernetQuestions: Question[] = [
       "Cat 4.",
       "Cat 6."
     ],
-    "answer": "Cat 3.",
-    "explanation": "A alternativa correta é a letra C. Cat 3."
+    "answer": "Cat 3."
   },
   {
     "question": "Qual a diferença fundamental na construção do cabo ScTP (Foil Twisted Pair) em relação ao UTP?",
@@ -94,8 +87,7 @@ export const redesEthernetQuestions: Question[] = [
       "O ScTP possui blindagem magnética isolada em cada um dos 8 fios separadamente.",
       "O ScTP dispensa conectores RJ-45 de metal."
     ],
-    "answer": "No ScTP, além do revestimento plástico, todos os pares são envolvidos juntos por uma única capa metálica (Foil) que atua como blindagem, exigindo maior cuidado no aterramento.",
-    "explanation": "A alternativa correta é a letra C. No ScTP, além do revestimento plástico, todos os pares são envolvidos juntos por uma única capa metálica (Foil) que atua como blindagem, exigindo maior cuidado no aterramento."
+    "answer": "No ScTP, além do revestimento plástico, todos os pares são envolvidos juntos por uma única capa metálica (Foil) que atua como blindagem, exigindo maior cuidado no aterramento."
   },
   {
     "question": "Em redes que atingem velocidades de 1 Gbps (1000 Mbps), por que a afirmação de que \"apenas dois pares importam no RJ-45\" está incorreta?",
@@ -106,8 +98,7 @@ export const redesEthernetQuestions: Question[] = [
       "Porque redes de 1 Gbps utilizam os 4 pares (8 fios) simultaneamente para realizar a transmissão.",
       "Porque dependem de cabo coaxial para manter o checksum."
     ],
-    "answer": "Porque redes de 1 Gbps utilizam os 4 pares (8 fios) simultaneamente para realizar a transmissão.",
-    "explanation": "A alternativa correta é a letra D. Porque redes de 1 Gbps utilizam os 4 pares (8 fios) simultaneamente para realizar a transmissão."
+    "answer": "Porque redes de 1 Gbps utilizam os 4 pares (8 fios) simultaneamente para realizar a transmissão."
   },
   {
     "question": "Por que as cores e a ordem dos pinos num cabo trançado não podem ser colocadas de maneira arbitrária/aleatória?",
@@ -118,8 +109,7 @@ export const redesEthernetQuestions: Question[] = [
       "Porque isso transforma o cabo direto em um Token Ring.",
       "Porque o protocolo IP da camada 3 invalida a existência da camada física."
     ],
-    "answer": "Porque os cabos pares trançados foram projetados com uma certa ordem (pinagem) que provê o cancelamento de ruído (crosstalk) entre os pares específicos.",
-    "explanation": "A alternativa correta é a letra B. Porque os cabos pares trançados foram projetados com uma certa ordem (pinagem) que provê o cancelamento de ruído (crosstalk) entre os pares específicos."
+    "answer": "Porque os cabos pares trançados foram projetados com uma certa ordem (pinagem) que provê o cancelamento de ruído (crosstalk) entre os pares específicos."
   },
   {
     "question": "Qual a finalidade do cabo \"cross-over\"?",
@@ -130,8 +120,7 @@ export const redesEthernetQuestions: Question[] = [
       "Ligar roteadores em portas de console para configuração.",
       "Formar redes em anel com FDDI."
     ],
-    "answer": "Interligar equipamentos da mesma categoria (Ex: PC-PC, Switch-Switch, Roteador-Roteador) através do cruzamento dos pinos 1-3 e 2-6.",
-    "explanation": "A alternativa correta é a letra C. Interligar equipamentos da mesma categoria (Ex: PC-PC, Switch-Switch, Roteador-Roteador) através do cruzamento dos pinos 1-3 e 2-6."
+    "answer": "Interligar equipamentos da mesma categoria (Ex: PC-PC, Switch-Switch, Roteador-Roteador) através do cruzamento dos pinos 1-3 e 2-6."
   },
   {
     "question": "Quando o cabeamento entre um PC e um Switch é realizado, utiliza-se qual tipo de cabo?",
@@ -142,8 +131,7 @@ export const redesEthernetQuestions: Question[] = [
       "RG-58 Coaxial.",
       "Transceiver de fibra óptica."
     ],
-    "answer": "Cabo pino-a-pino ou direto (pois são dispositivos de categorias diferentes).",
-    "explanation": "A alternativa correta é a letra C. Cabo pino-a-pino ou direto (pois são dispositivos de categorias diferentes)."
+    "answer": "Cabo pino-a-pino ou direto (pois são dispositivos de categorias diferentes)."
   },
   {
     "question": "O que é o cabo \"roll-over\" e qual sua utilidade na rede?",
@@ -154,8 +142,7 @@ export const redesEthernetQuestions: Question[] = [
       "É a fiação interna responsável pela rotação reversa no FDDI.",
       "É o termo comercial do UTP Categoria 7."
     ],
-    "answer": "É um cabo utilizado para realizar conexão entre a porta serial de um PC e a porta de console de roteadores (normalmente via conversor RJ-45 para DB-9).",
-    "explanation": "A alternativa correta é a letra C. É um cabo utilizado para realizar conexão entre a porta serial de um PC e a porta de console de roteadores (normalmente via conversor RJ-45 para DB-9)."
+    "answer": "É um cabo utilizado para realizar conexão entre a porta serial de um PC e a porta de console de roteadores (normalmente via conversor RJ-45 para DB-9)."
   },
   {
     "question": "A principal justificativa de segurança e física para se usar cabo coaxial em oposição ao par trançado na Ethernet original (distâncias longas) é:",
@@ -166,8 +153,7 @@ export const redesEthernetQuestions: Question[] = [
       "Elimina a necessidade da camada 2 (Enlace).",
       "Não sofre colapso por colisões (CSMA/CD inexistente)."
     ],
-    "answer": "Ele mantém capacitância constante e baixa, isolando o fio central através de uma barreira cilíndrica (malha) que evita a irradiação eletromagnética e blinda interferências externas, suportando maiores distâncias sem distorções.",
-    "explanation": "A alternativa correta é a letra C. Ele mantém capacitância constante e baixa, isolando o fio central através de uma barreira cilíndrica (malha) que evita a irradiação eletromagnética e blinda interferências externas, suportando maiores distâncias sem distorções."
+    "answer": "Ele mantém capacitância constante e baixa, isolando o fio central através de uma barreira cilíndrica (malha) que evita a irradiação eletromagnética e blinda interferências externas, suportando maiores distâncias sem distorções."
   },
   {
     "question": "O cabeamento coaxial de \"Banda Larga\" (RG-8 ou Thicknet) apresenta quais especificações técnicas fundamentais?",
@@ -178,8 +164,7 @@ export const redesEthernetQuestions: Question[] = [
       "Conexão pino-a-pino sem transceivers e uso de HUB passivo.",
       "Dependência de fibra óptica para atuar como banda larga."
     ],
-    "answer": "Impedância de 75 Ohms, capa amarela, transmissão analógica dividida em canais, alcança até 500 metros.",
-    "explanation": "A alternativa correta é a letra A. Impedância de 75 Ohms, capa amarela, transmissão analógica dividida em canais, alcança até 500 metros."
+    "answer": "Impedância de 75 Ohms, capa amarela, transmissão analógica dividida em canais, alcança até 500 metros."
   },
   {
     "question": "O cabeamento coaxial de \"Banda Base\" ou RG-58 (10BASE2), conhecido como Thin Ethernet, tem limitação máxima de distância e conexões estabelecidas em:",
@@ -190,8 +175,7 @@ export const redesEthernetQuestions: Question[] = [
       "50 metros em cabos de 75 ohms com envio analógico.",
       "Quilômetros infinitos desde que embutidos em VPN."
     ],
-    "answer": "185 metros de tamanho de segmento, permitindo até 30 conexões usando conector BNC e espaçamento mínimo de 1/2 metro.",
-    "explanation": "A alternativa correta é a letra B. 185 metros de tamanho de segmento, permitindo até 30 conexões usando conector BNC e espaçamento mínimo de 1/2 metro."
+    "answer": "185 metros de tamanho de segmento, permitindo até 30 conexões usando conector BNC e espaçamento mínimo de 1/2 metro."
   },
   {
     "question": "\"A luz pode codificar mais informações do que sinais elétricos\". Essa premissa teórica fundamenta qual vantagem da Fibra Óptica?",
@@ -202,8 +186,7 @@ export const redesEthernetQuestions: Question[] = [
       "A não necessidade de envio de bits no cabeçalho IP.",
       "A tolerância a dobras e torções mecânicas severas nas paredes."
     ],
-    "answer": "A imensa largura de banda e ausência de interferências elétricas/eletromagnéticas, permitindo que os sinais viajem distâncias incrivelmente longas usando apenas um único fio.",
-    "explanation": "A alternativa correta é a letra C. A imensa largura de banda e ausência de interferências elétricas/eletromagnéticas, permitindo que os sinais viajem distâncias incrivelmente longas usando apenas um único fio."
+    "answer": "A imensa largura de banda e ausência de interferências elétricas/eletromagnéticas, permitindo que os sinais viajem distâncias incrivelmente longas usando apenas um único fio."
   },
   {
     "question": "As principais desvantagens das redes de fibras ópticas recaem sobre:",
@@ -214,8 +197,7 @@ export const redesEthernetQuestions: Question[] = [
       "A fácil interceptação e quebra de criptografia da luz.",
       "A interferência constante com fios elétricos vizinhos."
     ],
-    "answer": "A dificuldade e o alto custo da instalação/reparo, exigindo equipamentos precisos para polir, alinhar e unir extremidades rompidas, além de ser difícil localizar as fraturas.",
-    "explanation": "A alternativa correta é a letra C. A dificuldade e o alto custo da instalação/reparo, exigindo equipamentos precisos para polir, alinhar e unir extremidades rompidas, além de ser difícil localizar as fraturas."
+    "answer": "A dificuldade e o alto custo da instalação/reparo, exigindo equipamentos precisos para polir, alinhar e unir extremidades rompidas, além de ser difícil localizar as fraturas."
   },
   {
     "question": "Nas transmissões de rádio (RF), qual o diferencial físico dessas redes?",
@@ -226,8 +208,7 @@ export const redesEthernetQuestions: Question[] = [
       "Exigem a aprovação de todos os hubs da topologia anel.",
       "Restringem a comunicação a conexões orientadas."
     ],
-    "answer": "Não necessitam de nenhum meio físico fixo (cabo/fibra) conectando os computadores; a comunicação ocorre pelas antenas irradiando energia.",
-    "explanation": "A alternativa correta é a letra A. Não necessitam de nenhum meio físico fixo (cabo/fibra) conectando os computadores; a comunicação ocorre pelas antenas irradiando energia."
+    "answer": "Não necessitam de nenhum meio físico fixo (cabo/fibra) conectando os computadores; a comunicação ocorre pelas antenas irradiando energia."
   },
   {
     "question": "Os Satélites retransmitem os sinais de radiofrequência usando um equipamento específico. Como ele atua e qual o gargalo dessa tecnologia?",
@@ -238,8 +219,7 @@ export const redesEthernetQuestions: Question[] = [
       "Switch Store and forward / gargalo é o tamanho da fila.",
       "Multiplexador / gargalo é o cabo AUI."
     ],
-    "answer": "Transponder: recebe o sinal RF, amplifica e retransmite num ângulo/frequência diferente. O gargalo é o elevadíssimo custo de colocar o satélite em órbita.",
-    "explanation": "A alternativa correta é a letra B. Transponder: recebe o sinal RF, amplifica e retransmite num ângulo/frequência diferente. O gargalo é o elevadíssimo custo de colocar o satélite em órbita."
+    "answer": "Transponder: recebe o sinal RF, amplifica e retransmite num ângulo/frequência diferente. O gargalo é o elevadíssimo custo de colocar o satélite em órbita."
   },
   {
     "question": "Por que as torres de comunicação por micro-ondas são instaladas em pontos elevados, no topo de edifícios?",
@@ -250,8 +230,7 @@ export const redesEthernetQuestions: Question[] = [
       "Para facilitar o aterramento do cabeamento ScTP.",
       "Devido à exigência do padrão 10BASE5."
     ],
-    "answer": "Porque diferentemente das ondas de rádio comuns, micro-ondas são direcionais e não penetram em metais, obstáculos, edificações ou vegetação alta, precisando de linha de visada limpa.",
-    "explanation": "A alternativa correta é a letra C. Porque diferentemente das ondas de rádio comuns, micro-ondas são direcionais e não penetram em metais, obstáculos, edificações ou vegetação alta, precisando de linha de visada limpa."
+    "answer": "Porque diferentemente das ondas de rádio comuns, micro-ondas são direcionais e não penetram em metais, obstáculos, edificações ou vegetação alta, precisando de linha de visada limpa."
   },
   {
     "question": "A tecnologia de Infravermelho em redes de computadores é conveniente, mas sofre de quais limitações básicas?",
@@ -262,8 +241,7 @@ export const redesEthernetQuestions: Question[] = [
       "Interfere fortemente em fios de cobre UTP nas paredes.",
       "Bloqueia a pilha TCP/IP."
     ],
-    "answer": "É limitada a pequenas distâncias dentro do mesmo ambiente, dependendo frequentemente do apontamento direto (visada) para o receptor.",
-    "explanation": "A alternativa correta é a letra A. É limitada a pequenas distâncias dentro do mesmo ambiente, dependendo frequentemente do apontamento direto (visada) para o receptor."
+    "answer": "É limitada a pequenas distâncias dentro do mesmo ambiente, dependendo frequentemente do apontamento direto (visada) para o receptor."
   },
   {
     "question": "O Laser atua de forma parecida com as micro-ondas, mas utilizando feixes de luz. A maior desvantagem climática do Laser é:",
@@ -274,8 +252,7 @@ export const redesEthernetQuestions: Question[] = [
       "A absorção por transponders.",
       "A mudança do endereço MAC pela luz UV."
     ],
-    "answer": "A transmissão deve viajar em linha reta estrita e o raio pode ser totalmente bloqueado por vegetação, chuva forte, fumaça ou neve.",
-    "explanation": "A alternativa correta é a letra C. A transmissão deve viajar em linha reta estrita e o raio pode ser totalmente bloqueado por vegetação, chuva forte, fumaça ou neve."
+    "answer": "A transmissão deve viajar em linha reta estrita e o raio pode ser totalmente bloqueado por vegetação, chuva forte, fumaça ou neve."
   },
   {
     "question": "O que define uma \"Comunicação Local Assíncrona\" entre dois computadores?",
@@ -286,8 +263,7 @@ export const redesEthernetQuestions: Question[] = [
       "O cabo BNC inverte a polaridade a cada milissegundo.",
       "O pacote utiliza duas pilhas OSI idênticas invertidas."
     ],
-    "answer": "Emissor e receptor não precisam se coordenar (ou sincronizar clocks rigidamente) antes dos dados serem transmitidos; o emissor pode enviar a qualquer momento arbitrário.",
-    "explanation": "A alternativa correta é a letra C. Emissor e receptor não precisam se coordenar (ou sincronizar clocks rigidamente) antes dos dados serem transmitidos; o emissor pode enviar a qualquer momento arbitrário."
+    "answer": "Emissor e receptor não precisam se coordenar (ou sincronizar clocks rigidamente) antes dos dados serem transmitidos; o emissor pode enviar a qualquer momento arbitrário."
   },
   {
     "question": "A padronização da comunicação (ex: ITU, EIA, IEEE) garante fisicamente:",
@@ -298,8 +274,7 @@ export const redesEthernetQuestions: Question[] = [
       "A remoção do \"Start bit\" no padrão TCP/IP.",
       "Que todo hardware tenha roteamento dinâmico SPF."
     ],
-    "answer": "Que equipamentos de marcas diferentes operem sem inoperância, padronizando especificações como tempo de sinal, voltagem e níveis de corrente.",
-    "explanation": "A alternativa correta é a letra C. Que equipamentos de marcas diferentes operem sem inoperância, padronizando especificações como tempo de sinal, voltagem e níveis de corrente."
+    "answer": "Que equipamentos de marcas diferentes operem sem inoperância, padronizando especificações como tempo de sinal, voltagem e níveis de corrente."
   },
   {
     "question": "No Padrão RS-232, como é representado o bit de valor \"1\" e a ociosidade do fio?",
@@ -310,8 +285,7 @@ export const redesEthernetQuestions: Question[] = [
       "A ociosidade desliga a interface do transceiver e corta a energia.",
       "Representa o bit \"0\" via tensão positiva de 15v."
     ],
-    "answer": "A tensão no fio nunca é zero volt; quando oco, mantém-se em tensão negativa que representa o bit de valor 1.",
-    "explanation": "A alternativa correta é a letra C. A tensão no fio nunca é zero volt; quando oco, mantém-se em tensão negativa que representa o bit de valor 1."
+    "answer": "A tensão no fio nunca é zero volt; quando oco, mantém-se em tensão negativa que representa o bit de valor 1."
   },
   {
     "question": "No padrão RS-232, para que um transmissor envie caracteres e o receptor não se perca no tempo sem relógio (clock) prévio, utiliza-se:",
@@ -322,8 +296,7 @@ export const redesEthernetQuestions: Question[] = [
       "O MAC address encapsulado.",
       "O bit de roteamento padrão."
     ],
-    "answer": "O \"Start bit\", um bit extra (valor 0) enviado sempre antes do pacote de dados para alertar e iniciar o timer preciso do receptor.",
-    "explanation": "A alternativa correta é a letra C. O \"Start bit\", um bit extra (valor 0) enviado sempre antes do pacote de dados para alertar e iniciar o timer preciso do receptor."
+    "answer": "O \"Start bit\", um bit extra (valor 0) enviado sempre antes do pacote de dados para alertar e iniciar o timer preciso do receptor."
   },
   {
     "question": "No RS-232, o \"Stop bit\" (bit fantasma ou de parada) é definido como:",
@@ -334,8 +307,7 @@ export const redesEthernetQuestions: Question[] = [
       "Um pulso usado no Token Ring para derrubar a rede.",
       "O tempo máximo para efetuar o \"binary exponential backoff\"."
     ],
-    "answer": "O tempo mínimo estipulado para que o emissor mantenha a tensão no estado negativo (1) após enviar um caractere, garantindo a separação entre os dados.",
-    "explanation": "A alternativa correta é a letra A. O tempo mínimo estipulado para que o emissor mantenha a tensão no estado negativo (1) após enviar um caractere, garantindo a separação entre os dados."
+    "answer": "O tempo mínimo estipulado para que o emissor mantenha a tensão no estado negativo (1) após enviar um caractere, garantindo a separação entre os dados."
   },
   {
     "question": "O que significa afirmar que uma placa opera com 2400 \"baud rate\"?",
@@ -346,8 +318,7 @@ export const redesEthernetQuestions: Question[] = [
       "Que o erro de bit ocorrerá 2400 vezes num arquivo grande.",
       "Que a fibra óptica pulsa a 2400 Mhz."
     ],
-    "answer": "Que o sinal eletrônico no canal de comunicação muda seu estado (ex: varia a voltagem/fase) até 2400 vezes por segundo.",
-    "explanation": "A alternativa correta é a letra C. Que o sinal eletrônico no canal de comunicação muda seu estado (ex: varia a voltagem/fase) até 2400 vezes por segundo."
+    "answer": "Que o sinal eletrônico no canal de comunicação muda seu estado (ex: varia a voltagem/fase) até 2400 vezes por segundo."
   },
   {
     "question": "Na modulação FSK (Frequency Shift Keying), qual a relação exata entre baud rate e bps (bits por segundo)?",
@@ -358,8 +329,7 @@ export const redesEthernetQuestions: Question[] = [
       "São proporcionais ao logaritmo da distância.",
       "Não há nenhuma relação."
     ],
-    "answer": "Eles são idênticos/iguais, pois cada \"baud\" (mudança de estado) na FSK transmite exatamente 1 único bit.",
-    "explanation": "A alternativa correta é a letra C. Eles são idênticos/iguais, pois cada \"baud\" (mudança de estado) na FSK transmite exatamente 1 único bit."
+    "answer": "Eles são idênticos/iguais, pois cada \"baud\" (mudança de estado) na FSK transmite exatamente 1 único bit."
   },
   {
     "question": "Se uma placa aplica \"Modulação por Fase\" transferindo 4 bits por baud em uma rede com baud rate de 2400, o Bit Rate real (bps) será:",
@@ -370,8 +340,7 @@ export const redesEthernetQuestions: Question[] = [
       "4800 bps.",
       "9600 bps."
     ],
-    "answer": "9600 bps.",
-    "explanation": "A alternativa correta é a letra E. 9600 bps."
+    "answer": "9600 bps."
   },
   {
     "question": "Os \"Frames Ethernet\" funcionam essencialmente como \"envelopes\" no ecossistema TCP/IP, qual o papel das placas de rede nesse aspecto?",
@@ -382,8 +351,7 @@ export const redesEthernetQuestions: Question[] = [
       "A NIC não mexe no frame, deixando isso para o Hub passivo.",
       "Transformam os dados em linguagem C++."
     ],
-    "answer": "A placa de rede (NIC) apenas trata o pacote TCP/IP como dados puros e os empacota (\"envelopa\") num quadro (frame) com os endereços físicos (MAC) para transitar na fiação local.",
-    "explanation": "A alternativa correta é a letra B. A placa de rede (NIC) apenas trata o pacote TCP/IP como dados puros e os empacota (\"envelopa\") num quadro (frame) com os endereços físicos (MAC) para transitar na fiação local."
+    "answer": "A placa de rede (NIC) apenas trata o pacote TCP/IP como dados puros e os empacota (\"envelopa\") num quadro (frame) com os endereços físicos (MAC) para transitar na fiação local."
   },
   {
     "question": "Um frame possui tamanho fixo máximo pelo padrão original (1500 bytes de carga). Por que decidiram limitar o tamanho do frame na criação da Ethernet?",
@@ -394,8 +362,7 @@ export const redesEthernetQuestions: Question[] = [
       "Porque o CSMA não detecta a portadora se passar 1500 nanosegundos.",
       "Foi o limite exigido pelo modelo TCP puro das redes Token Ring."
     ],
-    "answer": "Para que frames colossais não monopolizassem o cabo compartilhado (agravando colisões) e reduzissem o enorme tempo de retransmissão em caso de um dado ser corrompido.",
-    "explanation": "A alternativa correta é a letra A. Para que frames colossais não monopolizassem o cabo compartilhado (agravando colisões) e reduzissem o enorme tempo de retransmissão em caso de um dado ser corrompido."
+    "answer": "Para que frames colossais não monopolizassem o cabo compartilhado (agravando colisões) e reduzissem o enorme tempo de retransmissão em caso de um dado ser corrompido."
   },
   {
     "question": "Em redes que possuem hardware mais lento frente ao Gigabit Ethernet atual, o processamento de milhões de pacotes de 1500 bytes asfixia a máquina. A solução (\"Jumbo Frames\") baseada em pacotes de 9000 bytes ajuda porque:",
@@ -406,8 +373,7 @@ export const redesEthernetQuestions: Question[] = [
       "Envia o IP sem máscara de rede nativa.",
       "Desliga as proteções de MAC address de destino."
     ],
-    "answer": "Reduz drasticamente a carga do processador ao exigir menos validações de CRC (cíclico) totais, e diminui a proporção da perda gerada pelos 26 bytes de cabeçalho obrigatório contidos em cada frame.",
-    "explanation": "A alternativa correta é a letra C. Reduz drasticamente a carga do processador ao exigir menos validações de CRC (cíclico) totais, e diminui a proporção da perda gerada pelos 26 bytes de cabeçalho obrigatório contidos em cada frame."
+    "answer": "Reduz drasticamente a carga do processador ao exigir menos validações de CRC (cíclico) totais, e diminui a proporção da perda gerada pelos 26 bytes de cabeçalho obrigatório contidos em cada frame."
   },
   {
     "question": "A desvantagem política dos \"Jumbo Frames\" no ambiente corporativo é:",
@@ -418,8 +384,7 @@ export const redesEthernetQuestions: Question[] = [
       "Requerem modems de fibra caros em cabos cross-over.",
       "Reduzem a rede a 10 Mbps."
     ],
-    "answer": "A quebra com os padrões Ethernet estritos (IEEE). Os jumbo frames ainda não são oficialmente aceitos universalmente, sendo implementados como hacks isolados incompatíveis entre algumas marcas.",
-    "explanation": "A alternativa correta é a letra C. A quebra com os padrões Ethernet estritos (IEEE). Os jumbo frames ainda não são oficialmente aceitos universalmente, sendo implementados como hacks isolados incompatíveis entre algumas marcas."
+    "answer": "A quebra com os padrões Ethernet estritos (IEEE). Os jumbo frames ainda não são oficialmente aceitos universalmente, sendo implementados como hacks isolados incompatíveis entre algumas marcas."
   },
   {
     "question": "Na teoria de falhas de transmissão, se a interferência eletromagnética mudar os valores de 10101 para 11111 em um único frame enviado, isso é formalmente tipificado como:",
@@ -430,8 +395,7 @@ export const redesEthernetQuestions: Question[] = [
       "Start bit corrompido.",
       "Colapso por roteamento."
     ],
-    "answer": "Erro em Rajada.",
-    "explanation": "A alternativa correta é a letra B. Erro em Rajada."
+    "answer": "Erro em Rajada."
   },
   {
     "question": "Por que os fios de cobre sofrem uma limitação física chamada de \"Largura de Banda\"?",
@@ -442,8 +406,7 @@ export const redesEthernetQuestions: Question[] = [
       "Porque o endereço IPv6 é longo demais (128 bits).",
       "Nenhuma das alternativas."
     ],
-    "answer": "Porque o hardware emissor/receptor das placas não consegue alterar ou reconhecer tensões elétricas instantaneamente; há uma taxa máxima de variação possível do metal antes do sinal se perder num \"borrão\".",
-    "explanation": "A alternativa correta é a letra A. Porque o hardware emissor/receptor das placas não consegue alterar ou reconhecer tensões elétricas instantaneamente; há uma taxa máxima de variação possível do metal antes do sinal se perder num \"borrão\"."
+    "answer": "Porque o hardware emissor/receptor das placas não consegue alterar ou reconhecer tensões elétricas instantaneamente; há uma taxa máxima de variação possível do metal antes do sinal se perder num \"borrão\"."
   },
   {
     "question": "Qual a diferença elementar entre os Teoremas de Nyquist e o de Shannon na Engenharia de Redes?",
@@ -454,8 +417,7 @@ export const redesEthernetQuestions: Question[] = [
       "Nyquist é exclusivo para TCP, Shannon para UDP.",
       "Shannon diz que a criptografia atrasa a rede; Nyquist nega."
     ],
-    "answer": "Nyquist estabeleceu a fronteira de velocidade teórica num meio perfeitamente isento de ruído. Shannon foi além, impondo o limite matemático inquebrável num mundo real sujeito a interferências/termodinâmica.",
-    "explanation": "A alternativa correta é a letra C. Nyquist estabeleceu a fronteira de velocidade teórica num meio perfeitamente isento de ruído. Shannon foi além, impondo o limite matemático inquebrável num mundo real sujeito a interferências/termodinâmica."
+    "answer": "Nyquist estabeleceu a fronteira de velocidade teórica num meio perfeitamente isento de ruído. Shannon foi além, impondo o limite matemático inquebrável num mundo real sujeito a interferências/termodinâmica."
   },
   {
     "question": "Na topologia de rede \"Ponto-a-Ponto\" conectando N computadores em malha total, qual é a fórmula matemática e a sua maior desvantagem?",
@@ -466,8 +428,7 @@ export const redesEthernetQuestions: Question[] = [
       "N/4. Desvantagem: Interceptação total do tráfego.",
       "N-1. Desvantagem: Necessidade de hub."
     ],
-    "answer": "(N² - N) / 2. Desvantagem: O altíssimo custo e a inviabilidade física de cabos duplicados passando pelas mesmas calhas e paredes quando o número de máquinas cresce.",
-    "explanation": "A alternativa correta é a letra B. (N² - N) / 2. Desvantagem: O altíssimo custo e a inviabilidade física de cabos duplicados passando pelas mesmas calhas e paredes quando o número de máquinas cresce."
+    "answer": "(N² - N) / 2. Desvantagem: O altíssimo custo e a inviabilidade física de cabos duplicados passando pelas mesmas calhas e paredes quando o número de máquinas cresce."
   },
   {
     "question": "Por que as \"Redes LAN\" foram inventadas focando nos meios \"compartilhados\" (todos no mesmo cabo/hub) em oposição ao Ponto-a-Ponto?",
@@ -478,8 +439,7 @@ export const redesEthernetQuestions: Question[] = [
       "Para abolir o endereço físico MAC.",
       "Exclusivamente para usar o sistema Gigabit por cabos RG-58."
     ],
-    "answer": "Para eliminar o excesso e a duplicação monstruosa de cabos/custos. Apesar de compartilhados, atuam bem localmente porque o tempo perdido em \"coordenar o tráfego\" no mesmo fio é tolerável em curtas distâncias.",
-    "explanation": "A alternativa correta é a letra C. Para eliminar o excesso e a duplicação monstruosa de cabos/custos. Apesar de compartilhados, atuam bem localmente porque o tempo perdido em \"coordenar o tráfego\" no mesmo fio é tolerável em curtas distâncias."
+    "answer": "Para eliminar o excesso e a duplicação monstruosa de cabos/custos. Apesar de compartilhados, atuam bem localmente porque o tempo perdido em \"coordenar o tráfego\" no mesmo fio é tolerável em curtas distâncias."
   },
   {
     "question": "Se o meio físico é compartilhado, por que não se usa redes no estilo \"LAN\" para cruzar estados e formar a Internet (Longas Distâncias)?",
@@ -490,8 +450,7 @@ export const redesEthernetQuestions: Question[] = [
       "Porque os cabos Thinnet derretem acima de 200m.",
       "Porque o protocolo OSI proíbe LANs maiores que prédios."
     ],
-    "answer": "Porque os micros precisam \"coordenar\" turnos e esperar o cabo ficar livre; em distâncias gigantes, o sinal elétrico demoraria tanto que o tempo perdido de espera/coordenação seria infinitamente maior que o envio dos dados em si.",
-    "explanation": "A alternativa correta é a letra A. Porque os micros precisam \"coordenar\" turnos e esperar o cabo ficar livre; em distâncias gigantes, o sinal elétrico demoraria tanto que o tempo perdido de espera/coordenação seria infinitamente maior que o envio dos dados em si."
+    "answer": "Porque os micros precisam \"coordenar\" turnos e esperar o cabo ficar livre; em distâncias gigantes, o sinal elétrico demoraria tanto que o tempo perdido de espera/coordenação seria infinitamente maior que o envio dos dados em si."
   },
   {
     "question": "Qual topologia de LAN descreve um equipamento eletrônico central responsável por receber os cabos isolados de cada host?",
@@ -502,8 +461,7 @@ export const redesEthernetQuestions: Question[] = [
       "Topologia Store and Forward.",
       "Topologia Ponto-a-Ponto."
     ],
-    "answer": "Topologia de Estrela.",
-    "explanation": "A alternativa correta é a letra A. Topologia de Estrela."
+    "answer": "Topologia de Estrela."
   },
   {
     "question": "Nas propriedades estruturais de LANs, se o cabo quebrar, o que ocorre nas Topologias de Estrela e de Barramento (Ethernet)?",
@@ -514,8 +472,7 @@ export const redesEthernetQuestions: Question[] = [
       "Ambas disparam o processo self healing revertendo pacotes.",
       "As duas continuam comunicando através do anel secundário."
     ],
-    "answer": "Na Estrela, apenas a máquina daquele fio cai (a rede sobrevive). No Barramento, a ruptura do cabo principal (espinha dorsal) paralisa/desabilita toda a rede.",
-    "explanation": "A alternativa correta é a letra B. Na Estrela, apenas a máquina daquele fio cai (a rede sobrevive). No Barramento, a ruptura do cabo principal (espinha dorsal) paralisa/desabilita toda a rede."
+    "answer": "Na Estrela, apenas a máquina daquele fio cai (a rede sobrevive). No Barramento, a ruptura do cabo principal (espinha dorsal) paralisa/desabilita toda a rede."
   },
   {
     "question": "Na versão original da Ethernet dos anos 1970 (10BASE5), qual era a mídia, velocidade e limites?",
@@ -526,8 +483,7 @@ export const redesEthernetQuestions: Question[] = [
       "Cabo Thinnet BNC (10 Mbps), 185m.",
       "Ponto-a-ponto RS-232, 2400 baud."
     ],
-    "answer": "Cabo Coaxial \"Ether\" (10 Mbps), limite de segmento de 500m e conectores afastados em no mínimo 3 metros.",
-    "explanation": "A alternativa correta é a letra B. Cabo Coaxial \"Ether\" (10 Mbps), limite de segmento de 500m e conectores afastados em no mínimo 3 metros."
+    "answer": "Cabo Coaxial \"Ether\" (10 Mbps), limite de segmento de 500m e conectores afastados em no mínimo 3 metros."
   },
   {
     "question": "Compartilhar um cabo na Topologia de Barramento significa que:",
@@ -538,8 +494,7 @@ export const redesEthernetQuestions: Question[] = [
       "O cabo envia o pacote fragmentado em modulação FSK infinita.",
       "Não é necessário detectar colisões, apenas rotear os erros."
     ],
-    "answer": "Apenas um computador transmite por vez com \"uso exclusivo\" do cabo naquele microssegundo, enquanto os demais obrigatoriamente entram na fila e esperam.",
-    "explanation": "A alternativa correta é a letra C. Apenas um computador transmite por vez com \"uso exclusivo\" do cabo naquele microssegundo, enquanto os demais obrigatoriamente entram na fila e esperam."
+    "answer": "Apenas um computador transmite por vez com \"uso exclusivo\" do cabo naquele microssegundo, enquanto os demais obrigatoriamente entram na fila e esperam."
   },
   {
     "question": "A lógica CSMA (Carrier Sense Multiple Access) numa Ethernet em Barramento estipula que a inteligência do fluxo não está centralizada no HUB, mas sim que:",
@@ -550,8 +505,7 @@ export const redesEthernetQuestions: Question[] = [
       "As placas AUI barram as portas indesejadas pelo CSMA/CD.",
       "O CSMA envia \"Pings\" eternos bloqueando as portas seriais."
     ],
-    "answer": "Todos os nós conectados participam da verificação cooperativa; o próprio computador procura (sente) se há sinal/portadora no cabo antes de liberar sua transmissão.",
-    "explanation": "A alternativa correta é a letra A. Todos os nós conectados participam da verificação cooperativa; o próprio computador procura (sente) se há sinal/portadora no cabo antes de liberar sua transmissão."
+    "answer": "Todos os nós conectados participam da verificação cooperativa; o próprio computador procura (sente) se há sinal/portadora no cabo antes de liberar sua transmissão."
   },
   {
     "question": "No CSMA/CD, o que ocorre na \"Detecção de Colisão\" (CD)?",
@@ -562,8 +516,7 @@ export const redesEthernetQuestions: Question[] = [
       "Troca a frequência das micro-ondas.",
       "Permite a transmissão simultânea convertendo sinais em duplex."
     ],
-    "answer": "A estação monitora o cabo durante sua própria transmissão; se o sinal que ela capta no fio for diferente/distorcido do sinal limpo que ela enviou, ela conclui que dois sinais se chocaram, abortando imediatamente o envio.",
-    "explanation": "A alternativa correta é a letra B. A estação monitora o cabo durante sua própria transmissão; se o sinal que ela capta no fio for diferente/distorcido do sinal limpo que ela enviou, ela conclui que dois sinais se chocaram, abortando imediatamente o envio."
+    "answer": "A estação monitora o cabo durante sua própria transmissão; se o sinal que ela capta no fio for diferente/distorcido do sinal limpo que ela enviou, ela conclui que dois sinais se chocaram, abortando imediatamente o envio."
   },
   {
     "question": "Como se chama a técnica do padrão Ethernet para solucionar as repetições de colisões, forçando o PC a \"dobrar o limite máximo\" que ele pode sortear como tempo de espera a cada choque?",
@@ -574,8 +527,7 @@ export const redesEthernetQuestions: Question[] = [
       "Binary exponential backoff.",
       "Protocolo de Atraso Vetorial (Distance Delay)."
     ],
-    "answer": "Binary exponential backoff.",
-    "explanation": "A alternativa correta é a letra D. Binary exponential backoff."
+    "answer": "Binary exponential backoff."
   },
   {
     "question": "O que ocorre se um computador na topologia de Anel (Ring) apresentar queima da placa mãe ou rompimento de cabo?",
@@ -586,8 +538,7 @@ export const redesEthernetQuestions: Question[] = [
       "A rede em Anel não sofre nenhuma instabilidade.",
       "As placas de rede usam infravermelho de escape."
     ],
-    "answer": "Uma vez que os bits precisam trafegar passando fisicamente dentro de cada máquina em círculo, a falha de um único computador ou fio interrompe/desabilita toda a rede instantaneamente.",
-    "explanation": "A alternativa correta é a letra C. Uma vez que os bits precisam trafegar passando fisicamente dentro de cada máquina em círculo, a falha de um único computador ou fio interrompe/desabilita toda a rede instantaneamente."
+    "answer": "Uma vez que os bits precisam trafegar passando fisicamente dentro de cada máquina em círculo, a falha de um único computador ou fio interrompe/desabilita toda a rede instantaneamente."
   },
   {
     "question": "Redes FDDI usam cabos de Fibra Óptica operando originalmente em 100 Mbps. Como solucionam o risco fatal da quebra do anel?",
@@ -598,8 +549,7 @@ export const redesEthernetQuestions: Question[] = [
       "Acionam a roteagem de Distance Vector para transpor o bloqueio.",
       "Invertendo a codificação RS-232 via porta Roll-over."
     ],
-    "answer": "Usando dois anéis redundantes em fluxo invertido (Counter Rotation). Na ruptura grave dos cabos, o hardware vizinho interliga os anéis formando uma rota em \"U\" e reconstruindo a malha de modo autônomo (Self Healing).",
-    "explanation": "A alternativa correta é a letra B. Usando dois anéis redundantes em fluxo invertido (Counter Rotation). Na ruptura grave dos cabos, o hardware vizinho interliga os anéis formando uma rota em \"U\" e reconstruindo a malha de modo autônomo (Self Healing)."
+    "answer": "Usando dois anéis redundantes em fluxo invertido (Counter Rotation). Na ruptura grave dos cabos, o hardware vizinho interliga os anéis formando uma rota em \"U\" e reconstruindo a malha de modo autônomo (Self Healing)."
   },
   {
     "question": "O Endereço MAC (Endereço Físico) de 48 bits serve na camada de interface LAN para:",
@@ -610,8 +560,7 @@ export const redesEthernetQuestions: Question[] = [
       "Traduzir IPv4 para endereços de classe A.",
       "Permitir o uso exclusivo do TCP cego."
     ],
-    "answer": "Atuar como filtro primitivo sem depender do CPU; a placa verifica o Destino do pacote e aceita a mensagem para aquele PC ou a ignora se o MAC for alheio.",
-    "explanation": "A alternativa correta é a letra C. Atuar como filtro primitivo sem depender do CPU; a placa verifica o Destino do pacote e aceita a mensagem para aquele PC ou a ignora se o MAC for alheio."
+    "answer": "Atuar como filtro primitivo sem depender do CPU; a placa verifica o Destino do pacote e aceita a mensagem para aquele PC ou a ignora se o MAC for alheio."
   },
   {
     "question": "O Endereço Físico de \"Broadcasting\" (Todos Uns / FF:FF:...) cumpre a função de:",
@@ -622,8 +571,7 @@ export const redesEthernetQuestions: Question[] = [
       "Transmitir unicamente para roteadores de borda num IP de porta serial.",
       "Reduzir as colisões via CSMA/CD passivo."
     ],
-    "answer": "Forçar que todas as interfaces de rede de todos os PCs no meio compartilhado aceitem e enviem o pacote às suas CPUs simultaneamente para análise.",
-    "explanation": "A alternativa correta é a letra A. Forçar que todas as interfaces de rede de todos os PCs no meio compartilhado aceitem e enviem o pacote às suas CPUs simultaneamente para análise."
+    "answer": "Forçar que todas as interfaces de rede de todos os PCs no meio compartilhado aceitem e enviem o pacote às suas CPUs simultaneamente para análise."
   },
   {
     "question": "Qual a queixa principal apontada pela apostila contra o uso abusivo do \"Broadcasting\" na rede?",
@@ -634,8 +582,7 @@ export const redesEthernetQuestions: Question[] = [
       "Torna os roteadores passivos.",
       "Quebra as senhas das máquinas remotas em texto limpo."
     ],
-    "answer": "É absurdamente ineficiente computacionalmente; obriga a CPU de todos os microcomputadores (até os que não precisam do dado) a parar e analisar o frame para descobrir que devem descartá-lo, desperdiçando tempo enorme na rede global.",
-    "explanation": "A alternativa correta é a letra C. É absurdamente ineficiente computacionalmente; obriga a CPU de todos os microcomputadores (até os que não precisam do dado) a parar e analisar o frame para descobrir que devem descartá-lo, desperdiçando tempo enorme na rede global."
+    "answer": "É absurdamente ineficiente computacionalmente; obriga a CPU de todos os microcomputadores (até os que não precisam do dado) a parar e analisar o frame para descobrir que devem descartá-lo, desperdiçando tempo enorme na rede global."
   },
   {
     "question": "Em contraposição ao Broadcast, o \"Multicasting\" ajuda a poupar CPUs porque:",
@@ -646,8 +593,7 @@ export const redesEthernetQuestions: Question[] = [
       "Envia apenas um pulso elétrico fixo em 75 Ohms.",
       "Multicast não existe em LANs e só na internet com IP."
     ],
-    "answer": "O hardware das placas de rede (NICs) só captura do cabo e entrega à CPU os pacotes daqueles endereços multicast de serviços específicos nos quais as aplicações já haviam avisado previamente a placa para \"assinar/escutar\". O resto o hardware mesmo destrói sem incomodar a CPU.",
-    "explanation": "A alternativa correta é a letra C. O hardware das placas de rede (NICs) só captura do cabo e entrega à CPU os pacotes daqueles endereços multicast de serviços específicos nos quais as aplicações já haviam avisado previamente a placa para \"assinar/escutar\". O resto o hardware mesmo destrói sem incomodar a CPU."
+    "answer": "O hardware das placas de rede (NICs) só captura do cabo e entrega à CPU os pacotes daqueles endereços multicast de serviços específicos nos quais as aplicações já haviam avisado previamente a placa para \"assinar/escutar\". O resto o hardware mesmo destrói sem incomodar a CPU."
   },
   {
     "question": "O que os métodos de identificação de frame do tipo \"Implícito\" exigem entre emissor e receptor?",
@@ -658,8 +604,7 @@ export const redesEthernetQuestions: Question[] = [
       "O hub estático rotear o sinal a partir do CRC.",
       "A inclusão de um protocolo exclusivo de segurança no frame explicitamente."
     ],
-    "answer": "Como não há campo padrão anexado pelo hardware para avisar o conteúdo, as máquinas emissoras e receptoras já devem concordar rigidamente sobre o formato ou usar os próprios bytes de dados puros para identificar o que conversam.",
-    "explanation": "A alternativa correta é a letra B. Como não há campo padrão anexado pelo hardware para avisar o conteúdo, as máquinas emissoras e receptoras já devem concordar rigidamente sobre o formato ou usar os próprios bytes de dados puros para identificar o que conversam."
+    "answer": "Como não há campo padrão anexado pelo hardware para avisar o conteúdo, as máquinas emissoras e receptoras já devem concordar rigidamente sobre o formato ou usar os próprios bytes de dados puros para identificar o que conversam."
   },
   {
     "question": "Na seção de \"Análise de Rede\", para evitar que ferramentas de interceptação lícitas operando no modo promíscuo (sniffers) sejam usadas para espiar dados valiosos, a apostila exige:",
@@ -670,8 +615,7 @@ export const redesEthernetQuestions: Question[] = [
       "A substituição de todas as placas de rede do formato Estático para Dinâmico.",
       "Operar os PCs apenas em CSMA/CA."
     ],
-    "answer": "O uso obrigatório de protocolos de criptografia na comunicação de dados e a manutenção ostensiva de sistemas sentinelas (IDS) que detectem o grampeamento nas máquinas fora dos testes.",
-    "explanation": "A alternativa correta é a letra C. O uso obrigatório de protocolos de criptografia na comunicação de dados e a manutenção ostensiva de sistemas sentinelas (IDS) que detectem o grampeamento nas máquinas fora dos testes."
+    "answer": "O uso obrigatório de protocolos de criptografia na comunicação de dados e a manutenção ostensiva de sistemas sentinelas (IDS) que detectem o grampeamento nas máquinas fora dos testes."
   },
   {
     "question": "Ao processar dados da LAN (1 Gbps), as CPUs são ajudadas pela \"Placa de Rede\" (NIC), que tem como característica essencial de hardware:",
@@ -682,8 +626,7 @@ export const redesEthernetQuestions: Question[] = [
       "Fazer o reencapsulamento de dados MAC diretamente no IP da máquina.",
       "Substituir os multiplexadores pela AUI localmente."
     ],
-    "answer": "Operar como circuito eletrônico independente. Envia e recebe os bits validando cabeçalhos fisicamente e avisa o processador via interrupção (IRQ) somente quando um pacote útil terminar de chegar, livrando a CPU da mastigação binária constante.",
-    "explanation": "A alternativa correta é a letra C. Operar como circuito eletrônico independente. Envia e recebe os bits validando cabeçalhos fisicamente e avisa o processador via interrupção (IRQ) somente quando um pacote útil terminar de chegar, livrando a CPU da mastigação binária constante."
+    "answer": "Operar como circuito eletrônico independente. Envia e recebe os bits validando cabeçalhos fisicamente e avisa o processador via interrupção (IRQ) somente quando um pacote útil terminar de chegar, livrando a CPU da mastigação binária constante."
   },
   {
     "question": "Placas de rede híbridas antigas suportavam 10BASE2 (Thinnet), 10BASE5 (Thicknet) e 10BASE-T (Par Trançado) simultaneamente, sendo correto afirmar que:",
@@ -694,8 +637,7 @@ export const redesEthernetQuestions: Question[] = [
       "Os cabos Thin e Thick eram plugados no RJ-45 de par trançado por bridges.",
       "Se o computador desligar a rede inteira cai independentemente do cabo ativo."
     ],
-    "answer": "Apenas um dos conectores físicos poderia estar em funcionamento/habilitado por software de cada vez; porém o Endereço Físico (MAC) permanecia 100% inalterado (pois reside no firmware da NIC, e não no cabo).",
-    "explanation": "A alternativa correta é a letra B. Apenas um dos conectores físicos poderia estar em funcionamento/habilitado por software de cada vez; porém o Endereço Físico (MAC) permanecia 100% inalterado (pois reside no firmware da NIC, e não no cabo)."
+    "answer": "Apenas um dos conectores físicos poderia estar em funcionamento/habilitado por software de cada vez; porém o Endereço Físico (MAC) permanecia 100% inalterado (pois reside no firmware da NIC, e não no cabo)."
   },
   {
     "question": "No cabeamento \"Thick Ethernet\" (10BASE5), qual peça externa e cabo são requeridos entre o computador e o coaxial principal?",
@@ -706,8 +648,7 @@ export const redesEthernetQuestions: Question[] = [
       "RJ-45 blindado ligado no terminal elétrico central.",
       "A placa pino-a-pino cruzada no cabo Roll-over."
     ],
-    "answer": "Transceiver acoplado cirurgicamente no coaxial mestre e o cabo AUI ligando este transceiver ao encaixe na placa de rede da máquina.",
-    "explanation": "A alternativa correta é a letra C. Transceiver acoplado cirurgicamente no coaxial mestre e o cabo AUI ligando este transceiver ao encaixe na placa de rede da máquina."
+    "answer": "Transceiver acoplado cirurgicamente no coaxial mestre e o cabo AUI ligando este transceiver ao encaixe na placa de rede da máquina."
   },
   {
     "question": "Em relação ao fim do cabo \"Thick Ethernet\", o que seria o \"Refletor de sinal\" evitado pelos Terminais?",
@@ -718,8 +659,7 @@ export const redesEthernetQuestions: Question[] = [
       "É o resultado de operar em 75 Ohms em banda base pura.",
       "É o sinal de ACK perdido em falhas de roteamento estático."
     ],
-    "answer": "A repulsão eletrônica (o sinal elétrico bater e voltar) na ausência do Terminal (Terminador) fechando o circuito, o que causaria um efeito \"espelho\", injetando ruído anômalo de retorno no cabo que engolfaria as transmissões úteis.",
-    "explanation": "A alternativa correta é a letra A. A repulsão eletrônica (o sinal elétrico bater e voltar) na ausência do Terminal (Terminador) fechando o circuito, o que causaria um efeito \"espelho\", injetando ruído anômalo de retorno no cabo que engolfaria as transmissões úteis."
+    "answer": "A repulsão eletrônica (o sinal elétrico bater e voltar) na ausência do Terminal (Terminador) fechando o circuito, o que causaria um efeito \"espelho\", injetando ruído anômalo de retorno no cabo que engolfaria as transmissões úteis."
   },
   {
     "question": "A vantagem da introdução do Hub no cabeamento 10BASE-T (Par Trançado) foi:",
@@ -730,8 +670,7 @@ export const redesEthernetQuestions: Question[] = [
       "Isolar perfeitamente o meio, pois o hub se comporta como bridge analógica atuante no nível 3.",
       "Transformar cabos elétricos em radiofrequências satelitais."
     ],
-    "answer": "Centralizar a topologia em estrela. Isolou conexões ponto-a-ponto (da placa até o hub); logo, uma desconexão física num micro acidentalmente paralisa unicamente ele, mantendo o restante da empresa blindado, superando a instabilidade física da Thinnet.",
-    "explanation": "A alternativa correta é a letra C. Centralizar a topologia em estrela. Isolou conexões ponto-a-ponto (da placa até o hub); logo, uma desconexão física num micro acidentalmente paralisa unicamente ele, mantendo o restante da empresa blindado, superando a instabilidade física da Thinnet."
+    "answer": "Centralizar a topologia em estrela. Isolou conexões ponto-a-ponto (da placa até o hub); logo, uma desconexão física num micro acidentalmente paralisa unicamente ele, mantendo o restante da empresa blindado, superando a instabilidade física da Thinnet."
   },
   {
     "question": "O fator crucial em \"Extensão das LANs\" (Capítulo 2) que impede desenhar e \"esticar\" uma LAN por milhares de quilômetros é o \"Hardware\" e o \"Delay\" que:",
@@ -742,8 +681,7 @@ export const redesEthernetQuestions: Question[] = [
       "Limita conexões de switch ao número N².",
       "Nega cabos RJ-45 com capa Foil blindados."
     ],
-    "answer": "Impede a placa de emitir sinais elétricos potentes suficientes para não sumir pelo atrito/resistência (distância limite). A LAN exige tempos curtos de resposta no barramento para que todos sintam portadoras precisas síncronas.",
-    "explanation": "A alternativa correta é a letra A. Impede a placa de emitir sinais elétricos potentes suficientes para não sumir pelo atrito/resistência (distância limite). A LAN exige tempos curtos de resposta no barramento para que todos sintam portadoras precisas síncronas."
+    "answer": "Impede a placa de emitir sinais elétricos potentes suficientes para não sumir pelo atrito/resistência (distância limite). A LAN exige tempos curtos de resposta no barramento para que todos sintam portadoras precisas síncronas."
   },
   {
     "question": "\"Hubs Ativos\" se distanciam dos \"Hubs Passivos\" porque:",
@@ -754,8 +692,7 @@ export const redesEthernetQuestions: Question[] = [
       "Hubs ativos isolam as colisões criando segmentos únicos independentes virtuais sem compartilhar barramentos lógicos.",
       "O hub ativo troca os Macs dos computadores dinamicamente."
     ],
-    "answer": "Hubs ativos exigem fonte de energia externa (tomada) e funcionam regenerando (\"amplificando\" ativamente) os pulsos elétricos degradados ao enviar às outras portas, comportando-se efetivamente como Repetidores multiportas.",
-    "explanation": "A alternativa correta é a letra C. Hubs ativos exigem fonte de energia externa (tomada) e funcionam regenerando (\"amplificando\" ativamente) os pulsos elétricos degradados ao enviar às outras portas, comportando-se efetivamente como Repetidores multiportas."
+    "answer": "Hubs ativos exigem fonte de energia externa (tomada) e funcionam regenerando (\"amplificando\" ativamente) os pulsos elétricos degradados ao enviar às outras portas, comportando-se efetivamente como Repetidores multiportas."
   },
   {
     "question": "Ao administrar a Rede local, se o gestor impõe uma restrição que checa especificamente o Endereço de Hardware do micro intruso tentando ligar-se à rede, a apostila qualifica isso como o mecanismo do Hub/Switch focado em:",
@@ -766,8 +703,7 @@ export const redesEthernetQuestions: Question[] = [
       "Repetir sinal na proteção contra interceptação paralela.",
       "Transmitir VPN codificada diretamente para a porta física externa."
     ],
-    "answer": "Proteção contra Intrusão (onde só a máquina com o MAC exato configurado pelo administrador pode ativar fisicamente o fluxo naquela porta).",
-    "explanation": "A alternativa correta é a letra C. Proteção contra Intrusão (onde só a máquina com o MAC exato configurado pelo administrador pode ativar fisicamente o fluxo naquela porta)."
+    "answer": "Proteção contra Intrusão (onde só a máquina com o MAC exato configurado pelo administrador pode ativar fisicamente o fluxo naquela porta)."
   },
   {
     "question": "De forma distinta da Intrusão, a \"Proteção contra Interceptação\" no texto defende:",
@@ -778,8 +714,7 @@ export const redesEthernetQuestions: Question[] = [
       "Bloquear Pings eternos enviados por Hackers para colapsar o CPU do hub.",
       "Eliminar os Jumbo frames com vírus disfarçado."
     ],
-    "answer": "A garantia de que um dado (frame) só vai de fato descer rumo àquela porta específica se a porta coincidir com o endereço do destino do pacote, não injetando tráfego de terceiro em portas indevidas (como o Switch faz nativamente contra grampeadores de hubs passivos).",
-    "explanation": "A alternativa correta é a letra A. A garantia de que um dado (frame) só vai de fato descer rumo àquela porta específica se a porta coincidir com o endereço do destino do pacote, não injetando tráfego de terceiro em portas indevidas (como o Switch faz nativamente contra grampeadores de hubs passivos)."
+    "answer": "A garantia de que um dado (frame) só vai de fato descer rumo àquela porta específica se a porta coincidir com o endereço do destino do pacote, não injetando tráfego de terceiro em portas indevidas (como o Switch faz nativamente contra grampeadores de hubs passivos)."
   },
   {
     "question": "Na Extensão da LAN via Fibra Óptica usando dois \"Modems de Fibra\", a limitação principal dessa façanha em quilômetros reside em:",
@@ -790,8 +725,7 @@ export const redesEthernetQuestions: Question[] = [
       "Perde os frames CSMA/CD completamente por latência da propagação nula.",
       "Funciona exclusivamente no modelo de Camadas IPv5."
     ],
-    "answer": "Possui um altíssimo custo de infraestrutura e aluguel de linha/equipamentos para aplicar modems ópticos a cada conexão individual remota exigida pela arquitetura.",
-    "explanation": "A alternativa correta é a letra C. Possui um altíssimo custo de infraestrutura e aluguel de linha/equipamentos para aplicar modems ópticos a cada conexão individual remota exigida pela arquitetura."
+    "answer": "Possui um altíssimo custo de infraestrutura e aluguel de linha/equipamentos para aplicar modems ópticos a cada conexão individual remota exigida pela arquitetura."
   },
   {
     "question": "Repetidores Analógicos trazem a enorme desvantagem de não identificarem um frame Ethernet. E por isso:",
@@ -802,8 +736,7 @@ export const redesEthernetQuestions: Question[] = [
       "Propagam absolutamente todo lixo/onda captado cegamente, replicando sinais já alterados por ruídos ou colisões (corrompidos) adiante, ampliando a doença elétrica na malha.",
       "Permitem que o roteamento dinâmico entre em loop infinito inquebrável."
     ],
-    "answer": "Propagam absolutamente todo lixo/onda captado cegamente, replicando sinais já alterados por ruídos ou colisões (corrompidos) adiante, ampliando a doença elétrica na malha.",
-    "explanation": "A alternativa correta é a letra D. Propagam absolutamente todo lixo/onda captado cegamente, replicando sinais já alterados por ruídos ou colisões (corrompidos) adiante, ampliando a doença elétrica na malha."
+    "answer": "Propagam absolutamente todo lixo/onda captado cegamente, replicando sinais já alterados por ruídos ou colisões (corrompidos) adiante, ampliando a doença elétrica na malha."
   },
   {
     "question": "O que faz da \"Bridge\" uma tecnologia inteligente à altura da camada 2 (Enlace)?",
@@ -814,8 +747,7 @@ export const redesEthernetQuestions: Question[] = [
       "Encapsula pacotes WAN por redes Thinnet.",
       "Retransmite por rádio FSK se a bridge detectar colapso de infravermelho."
     ],
-    "answer": "Extrai e lê o cabeçalho completo do frame para isolar tráfegos (se as duas máquinas estiverem no mesmo lado da ponte, o quadro nem atravessa para a rede alheia, economizando recursos de forma formidável).",
-    "explanation": "A alternativa correta é a letra C. Extrai e lê o cabeçalho completo do frame para isolar tráfegos (se as duas máquinas estiverem no mesmo lado da ponte, o quadro nem atravessa para a rede alheia, economizando recursos de forma formidável)."
+    "answer": "Extrai e lê o cabeçalho completo do frame para isolar tráfegos (se as duas máquinas estiverem no mesmo lado da ponte, o quadro nem atravessa para a rede alheia, economizando recursos de forma formidável)."
   },
   {
     "question": "Quando uma LAN contendo uma Bridge acabou de ser completamente religada da tomada (fase Startup):",
@@ -826,8 +758,7 @@ export const redesEthernetQuestions: Question[] = [
       "Desliga a rede por 5 minutos devido ao \"binary exponential delay\".",
       "Transforma o cabeamento num circuito Token Ring."
     ],
-    "answer": "Ela atua desmemoriada (como hub) propagando os envios para a \"porta vizinha\" porque não tem tabela de máquinas ainda. Só entra em \"Steady State\" após os micros passarem a conversar e ela mapear ativamente onde está a origem de quem falou.",
-    "explanation": "A alternativa correta é a letra C. Ela atua desmemoriada (como hub) propagando os envios para a \"porta vizinha\" porque não tem tabela de máquinas ainda. Só entra em \"Steady State\" após os micros passarem a conversar e ela mapear ativamente onde está a origem de quem falou."
+    "answer": "Ela atua desmemoriada (como hub) propagando os envios para a \"porta vizinha\" porque não tem tabela de máquinas ainda. Só entra em \"Steady State\" após os micros passarem a conversar e ela mapear ativamente onde está a origem de quem falou."
   },
   {
     "question": "A apostila enfatiza que Roteadores (\"computadores de uso específico\") efetuam uma tarefa inusitada no encapsulamento nos saltos do modelo OSI (Camadas 1, 2 e 3):",
@@ -838,8 +769,7 @@ export const redesEthernetQuestions: Question[] = [
       "O MAC Address é conservado original desde a China até o Brasil intacto em pacotes BGP, garantindo rastreabilidade do computador físico emissor.",
       "A Camada Física (1) embute um novo Endereço MAC em 15 Volts ignorando o cabo UTP."
     ],
-    "answer": "O IP de origem e IP de destino (Camada 3) viajam sem alterações; entretanto a casca da Camada 2 (o Endereço MAC) morre e renasce repetidamente (é refeito) a cada roteador que atua no pulo inter-redes.",
-    "explanation": "A alternativa correta é a letra A. O IP de origem e IP de destino (Camada 3) viajam sem alterações; entretanto a casca da Camada 2 (o Endereço MAC) morre e renasce repetidamente (é refeito) a cada roteador que atua no pulo inter-redes."
+    "answer": "O IP de origem e IP de destino (Camada 3) viajam sem alterações; entretanto a casca da Camada 2 (o Endereço MAC) morre e renasce repetidamente (é refeito) a cada roteador que atua no pulo inter-redes."
   },
   {
     "question": "Um roteador atende sempre no mínimo a quantas sub-redes ativas?",
@@ -850,8 +780,7 @@ export const redesEthernetQuestions: Question[] = [
       "Infinidade ilimitada sem limite de escopos de rádio microondas.",
       "Redes isoladas que não se utilizem do IPv4 e IPv6 simultaneamente."
     ],
-    "answer": "Duas sub-redes (no mínimo), já que roteadores não direcionam pacotes \"dentro da mesma sub-rede\" e conectam vizinhos lógicos diferentes atuando como Gateway.",
-    "explanation": "A alternativa correta é a letra C. Duas sub-redes (no mínimo), já que roteadores não direcionam pacotes \"dentro da mesma sub-rede\" e conectam vizinhos lógicos diferentes atuando como Gateway."
+    "answer": "Duas sub-redes (no mínimo), já que roteadores não direcionam pacotes \"dentro da mesma sub-rede\" e conectam vizinhos lógicos diferentes atuando como Gateway."
   },
   {
     "question": "Sob a ótica do \"Switching\", o que ele simula exatamente se destrinchado tecnicamente?",
@@ -862,8 +791,7 @@ export const redesEthernetQuestions: Question[] = [
       "A substituição completa do modelo OSI pelo protocolo SMTP isolado.",
       "Uma rede Wi-Fi através de meios físicos com cabos de rádio frequência."
     ],
-    "answer": "Uma rede de Bridges ultrarrápidas onde a essência final garante o paralelismo absoluto, conectando canais exclusivos isolados (1 PC por segmento) permitindo dezenas de diálogos sem o CSMA frear ou colidir.",
-    "explanation": "A alternativa correta é a letra C. Uma rede de Bridges ultrarrápidas onde a essência final garante o paralelismo absoluto, conectando canais exclusivos isolados (1 PC por segmento) permitindo dezenas de diálogos sem o CSMA frear ou colidir."
+    "answer": "Uma rede de Bridges ultrarrápidas onde a essência final garante o paralelismo absoluto, conectando canais exclusivos isolados (1 PC por segmento) permitindo dezenas de diálogos sem o CSMA frear ou colidir."
   },
   {
     "question": "Quando discutida a ampliação extrema (WAN), a diferença prática entre LAN e WAN ressalta que:",
@@ -874,8 +802,7 @@ export const redesEthernetQuestions: Question[] = [
       "LANs tem IP fixo e WANs possuem endereçamento unicamente MAC configurável EPROM.",
       "Ambas operam sob as mesmas normas mecânicas IEEE 802.3 padrão 10BASE5."
     ],
-    "answer": "A LAN esticada artificialmente com bridges/fibras não suporta \"ramificações multi-lados\" complexas e interligação infinita massiva simultânea. A WAN foi concebida por hardwares escaláveis e \"Packet Switches\" criados sob medida para crescer sem estourar o limite de gestão da fiação.",
-    "explanation": "A alternativa correta é a letra B. A LAN esticada artificialmente com bridges/fibras não suporta \"ramificações multi-lados\" complexas e interligação infinita massiva simultânea. A WAN foi concebida por hardwares escaláveis e \"Packet Switches\" criados sob medida para crescer sem estourar o limite de gestão da fiação."
+    "answer": "A LAN esticada artificialmente com bridges/fibras não suporta \"ramificações multi-lados\" complexas e interligação infinita massiva simultânea. A WAN foi concebida por hardwares escaláveis e \"Packet Switches\" criados sob medida para crescer sem estourar o limite de gestão da fiação."
   },
   {
     "question": "Nos Equipamentos \"Packet Switches\" das WANs de companhias de telecomunicação, as interfaces de transmissão se comportam assim:",
@@ -886,8 +813,7 @@ export const redesEthernetQuestions: Question[] = [
       "Os links operam com o sinal elétrico FSK invertido em fase logarítmica analógica.",
       "Enviam apenas quadros baseados em infravermelho de 4 bits."
     ],
-    "answer": "As interfaces do núcleo/backbone do Switch voltadas à \"outros Packet Switches\" longínquos disparam altíssimas velocidades em mídias alugadas puras; enquanto as \"pontas\" presas aos computadores dos clientes comuns limitam os enlaces locais a \"baixas velocidades\" assíncronas residenciais/empresariais.",
-    "explanation": "A alternativa correta é a letra C. As interfaces do núcleo/backbone do Switch voltadas à \"outros Packet Switches\" longínquos disparam altíssimas velocidades em mídias alugadas puras; enquanto as \"pontas\" presas aos computadores dos clientes comuns limitam os enlaces locais a \"baixas velocidades\" assíncronas residenciais/empresariais."
+    "answer": "As interfaces do núcleo/backbone do Switch voltadas à \"outros Packet Switches\" longínquos disparam altíssimas velocidades em mídias alugadas puras; enquanto as \"pontas\" presas aos computadores dos clientes comuns limitam os enlaces locais a \"baixas velocidades\" assíncronas residenciais/empresariais."
   },
   {
     "question": "O método de Store and Forward (WANs) assegura:",
@@ -898,8 +824,7 @@ export const redesEthernetQuestions: Question[] = [
       "Evitar travamentos num roteamento convergente. Um frame sendo \"estocado num buffer RAM interno\", com o cabeçalho lido localmente e só então \"encaminhado\" em paz sem chocar com outros trens de pacotes engarrafados naquela via de saída disputada.",
       "A eliminação pura das memórias SRAM do Switch em benefício de latência zero real."
     ],
-    "answer": "Evitar travamentos num roteamento convergente. Um frame sendo \"estocado num buffer RAM interno\", com o cabeçalho lido localmente e só então \"encaminhado\" em paz sem chocar com outros trens de pacotes engarrafados naquela via de saída disputada.",
-    "explanation": "A alternativa correta é a letra D. Evitar travamentos num roteamento convergente. Um frame sendo \"estocado num buffer RAM interno\", com o cabeçalho lido localmente e só então \"encaminhado\" em paz sem chocar com outros trens de pacotes engarrafados naquela via de saída disputada."
+    "answer": "Evitar travamentos num roteamento convergente. Um frame sendo \"estocado num buffer RAM interno\", com o cabeçalho lido localmente e só então \"encaminhado\" em paz sem chocar com outros trens de pacotes engarrafados naquela via de saída disputada."
   },
   {
     "question": "Como a maioria das WANs resolve o endereçamento interno físico num sistema massivo e não engarrafar a gestão mundial?",
@@ -910,8 +835,7 @@ export const redesEthernetQuestions: Question[] = [
       "Revertendo aos cabos Coaxiais grossos de 75 Ohms.",
       "Bloqueando pacotes sem IPv6 (ST)."
     ],
-    "answer": "Com roteamento e Endereçamento Hierárquico: o próprio \"número MAC local\" denuncia e carrega em seu prefixo os dados de qual Switch Mãe abarca aquela zona, facilitando os saltos para caminhos maiores (\"Next-Hop\") sem se aprofundar na porta de imediato.",
-    "explanation": "A alternativa correta é a letra C. Com roteamento e Endereçamento Hierárquico: o próprio \"número MAC local\" denuncia e carrega em seu prefixo os dados de qual Switch Mãe abarca aquela zona, facilitando os saltos para caminhos maiores (\"Next-Hop\") sem se aprofundar na porta de imediato."
+    "answer": "Com roteamento e Endereçamento Hierárquico: o próprio \"número MAC local\" denuncia e carrega em seu prefixo os dados de qual Switch Mãe abarca aquela zona, facilitando os saltos para caminhos maiores (\"Next-Hop\") sem se aprofundar na porta de imediato."
   },
   {
     "question": "Na gerência de \"Rotas Padrão\" (Default Route), o ganho para a Routing Table (Tabela de Roteamento WAN) ocorre porque:",
@@ -922,8 +846,7 @@ export const redesEthernetQuestions: Question[] = [
       "Descobre se o computador foi furtado alterando o endereço por Ping de intrusão.",
       "Reverte todos os modems ao modo Stand-By assíncrono."
     ],
-    "answer": "Permite \"Condensar/Simplificar\" e limpar entradas repetitivas pesadas nas tabelas de milhares de IPs desconhecidos que convergem para uma \"única e mesma saída\" englobante rumo à nuvem externa, aliviando o processamento do hardware.",
-    "explanation": "A alternativa correta é a letra C. Permite \"Condensar/Simplificar\" e limpar entradas repetitivas pesadas nas tabelas de milhares de IPs desconhecidos que convergem para uma \"única e mesma saída\" englobante rumo à nuvem externa, aliviando o processamento do hardware."
+    "answer": "Permite \"Condensar/Simplificar\" e limpar entradas repetitivas pesadas nas tabelas de milhares de IPs desconhecidos que convergem para uma \"única e mesma saída\" englobante rumo à nuvem externa, aliviando o processamento do hardware."
   },
   {
     "question": "Comparando Roteamento Estático x Dinâmico nas WANs, o Estático:",
@@ -934,8 +857,7 @@ export const redesEthernetQuestions: Question[] = [
       "É o algoritmo primário do protocolo OSPF dinâmico.",
       "Limita a largura de banda."
     ],
-    "answer": "É mais simplório e inibe erros computacionais (processa instantâneo e gasta menos RAM do equipamento), mas padece da inflexibilidade terminal onde um pino caído apaga a vida daquela rota e requer manutenção/humana manual in loco ou configuração explícita.",
-    "explanation": "A alternativa correta é a letra B. É mais simplório e inibe erros computacionais (processa instantâneo e gasta menos RAM do equipamento), mas padece da inflexibilidade terminal onde um pino caído apaga a vida daquela rota e requer manutenção/humana manual in loco ou configuração explícita."
+    "answer": "É mais simplório e inibe erros computacionais (processa instantâneo e gasta menos RAM do equipamento), mas padece da inflexibilidade terminal onde um pino caído apaga a vida daquela rota e requer manutenção/humana manual in loco ou configuração explícita."
   },
   {
     "question": "Algoritmo de Dijkstra descreve e prioriza em sua equação computacional:",
@@ -946,8 +868,7 @@ export const redesEthernetQuestions: Question[] = [
       "Buscar o \"Caminho Mais Curto\" entre computadores/nós de rede gerando tabelas usando valores de pesos inteiramente \"não-negativos\" distribuídos por cada borda/vínculo desenhada da topologia analítica do software para otimização de rotas exatas de custo mínimo.",
       "Descarta quadros jumbo para rotear dados em menos de 1221 ns na rede FDDI paralela."
     ],
-    "answer": "Buscar o \"Caminho Mais Curto\" entre computadores/nós de rede gerando tabelas usando valores de pesos inteiramente \"não-negativos\" distribuídos por cada borda/vínculo desenhada da topologia analítica do software para otimização de rotas exatas de custo mínimo.",
-    "explanation": "A alternativa correta é a letra D. Buscar o \"Caminho Mais Curto\" entre computadores/nós de rede gerando tabelas usando valores de pesos inteiramente \"não-negativos\" distribuídos por cada borda/vínculo desenhada da topologia analítica do software para otimização de rotas exatas de custo mínimo."
+    "answer": "Buscar o \"Caminho Mais Curto\" entre computadores/nós de rede gerando tabelas usando valores de pesos inteiramente \"não-negativos\" distribuídos por cada borda/vínculo desenhada da topologia analítica do software para otimização de rotas exatas de custo mínimo."
   },
   {
     "question": "Roteadores que utilizam algoritmos derivados de \"Distância Vetorial\" (Distance Vector) carregam uma assinatura mecânica intrínseca em suas tabelas de banco de dados, sendo ela:",
@@ -958,8 +879,7 @@ export const redesEthernetQuestions: Question[] = [
       "O registro da máscara de Categoria UTP Cat 7 do enlace Físico subjacente.",
       "Os contadores lógicos de retransmissão de parada assíncrona."
     ],
-    "answer": "Campos/Colunas adicionais explícitas obrigando a Tabela a reter as memórias e números gravados brutos relativos a \"Distância (soma de pesos e pulos)\" de cada elo correspondendo a cada porta do destino à frente, onerando trocas pesadas inteiras entre Switches.",
-    "explanation": "A alternativa correta é a letra C. Campos/Colunas adicionais explícitas obrigando a Tabela a reter as memórias e números gravados brutos relativos a \"Distância (soma de pesos e pulos)\" de cada elo correspondendo a cada porta do destino à frente, onerando trocas pesadas inteiras entre Switches."
+    "answer": "Campos/Colunas adicionais explícitas obrigando a Tabela a reter as memórias e números gravados brutos relativos a \"Distância (soma de pesos e pulos)\" de cada elo correspondendo a cada porta do destino à frente, onerando trocas pesadas inteiras entre Switches."
   },
   {
     "question": "Já Roteadores modernos baseados em Link-State (SPF/OSPF), driblam as deficiências brutais mandando que tipos de mensagens a seus pares na internet no lugar das tabelas prontas?",
@@ -970,8 +890,7 @@ export const redesEthernetQuestions: Question[] = [
       "Sinais elétricos limitados em infravermelho de 4 bits em satélites BGP transponders de rajadas.",
       "Notícias do protocolo ST focado em áudio IPv5 nativo do TCP cego."
     ],
-    "answer": "Notícias e avisos contendo apenas o \"Estado/Status do Vínculo\" e do enlace entre os roteadores fronteiriços (ex: \"Meu fio com o PC3 está rápido\"), deixando que cada um ali monte e reconstrua seu gráfico e seu Dijkstra independentemente sem receber massas imensas das rotas inteiras de terceiros.",
-    "explanation": "A alternativa correta é a letra A. Notícias e avisos contendo apenas o \"Estado/Status do Vínculo\" e do enlace entre os roteadores fronteiriços (ex: \"Meu fio com o PC3 está rápido\"), deixando que cada um ali monte e reconstrua seu gráfico e seu Dijkstra independentemente sem receber massas imensas das rotas inteiras de terceiros."
+    "answer": "Notícias e avisos contendo apenas o \"Estado/Status do Vínculo\" e do enlace entre os roteadores fronteiriços (ex: \"Meu fio com o PC3 está rápido\"), deixando que cada um ali monte e reconstrua seu gráfico e seu Dijkstra independentemente sem receber massas imensas das rotas inteiras de terceiros."
   },
   {
     "question": "Os conceitos mercadológicos da Apostila citam as Categorias: Redes de Proprietário (Pública vs Privada). Uma WAN seria ainda considerada \"Rede Privada\" restrita mesmo que se extenda pelo Brasil alugando cabos/espinhas da Embratel Pública e da Telefonia?",
@@ -982,8 +901,7 @@ export const redesEthernetQuestions: Question[] = [
       "Não, WANs só são privadas quando instalam postes próprios e fibras na rua.",
       "Apenas se todas as redes passarem a usar hub pino-a-pino cruzados isolados."
     ],
-    "answer": "Sim, porque o contrato de serviço prevê uma segregação do circuito virtual/alugado (ou tunelado). Nenhum outro assinante ou corporação externa tem visibilidade, injeta quadros ou intercepta os dados dentro daquele tubo logístico alugado aos roteadores daquela empresa.",
-    "explanation": "A alternativa correta é a letra C. Sim, porque o contrato de serviço prevê uma segregação do circuito virtual/alugado (ou tunelado). Nenhum outro assinante ou corporação externa tem visibilidade, injeta quadros ou intercepta os dados dentro daquele tubo logístico alugado aos roteadores daquela empresa."
+    "answer": "Sim, porque o contrato de serviço prevê uma segregação do circuito virtual/alugado (ou tunelado). Nenhum outro assinante ou corporação externa tem visibilidade, injeta quadros ou intercepta os dados dentro daquele tubo logístico alugado aos roteadores daquela empresa."
   },
   {
     "question": "Na mesma vertente, o advento técnico fundamental de Virtual Private Networks (VPNs) viabilizou para os gerentes globais:",
@@ -994,8 +912,7 @@ export const redesEthernetQuestions: Question[] = [
       "Proibir as transmissões via TCP/IP na sub-rede isolando e descartando o checksum defeituoso.",
       "Diminuir radicalmente a latência em redes de VoIP por vídeo, já que o VPN descarta os Jumbo Frames não autenticados pelas portadoras Carrier Sense (CSMA) satelitais."
     ],
-    "answer": "Evadir do elevadíssimo valor de links alugados puros \"Private\", adotando o próprio e confuso mar turbulento das Conexões Públicas de Internet para atuar, mas instalando softwares criptográficos na porta de borda que trancam, envelopam e garantem que o tráfego passe imune pela nuvem suja externa e só se torne legível perante parceiros da mesma companhia nos locais finais, de fato juntando mundos virtualmente.",
-    "explanation": "A alternativa correta é a letra C. Evadir do elevadíssimo valor de links alugados puros \"Private\", adotando o próprio e confuso mar turbulento das Conexões Públicas de Internet para atuar, mas instalando softwares criptográficos na porta de borda que trancam, envelopam e garantem que o tráfego passe imune pela nuvem suja externa e só se torne legível perante parceiros da mesma companhia nos locais finais, de fato juntando mundos virtualmente."
+    "answer": "Evadir do elevadíssimo valor de links alugados puros \"Private\", adotando o próprio e confuso mar turbulento das Conexões Públicas de Internet para atuar, mas instalando softwares criptográficos na porta de borda que trancam, envelopam e garantem que o tráfego passe imune pela nuvem suja externa e só se torne legível perante parceiros da mesma companhia nos locais finais, de fato juntando mundos virtualmente."
   },
   {
     "question": "Em redes e Interfaces, existem transmissões categorizadas como \"Serviço Orientado a Conexão\". Tal como na telefonia, um sistema baseado nesse preceito tem etapas intrínsecas e uma regalia específica:",
@@ -1006,8 +923,7 @@ export const redesEthernetQuestions: Question[] = [
       "Não utiliza de modulação e atua como FSK cego.",
       "Emula a entrega de datagramas soltos independentes via SMTP cego pelo roteador de Borda."
     ],
-    "answer": "Ele requer primeiramente que máquinas negociem e entrem num consenso de aperto de mão abrindo o diálogo lógico firme. Possuindo a enorme regalia e virtude técnica de avisar as partes que operam no tubo IMEDIATAMENTE e abruptamente se aquele laço foi rompido fisicamente ou lógicamente ali pelo trajeto.",
-    "explanation": "A alternativa correta é a letra C. Ele requer primeiramente que máquinas negociem e entrem num consenso de aperto de mão abrindo o diálogo lógico firme. Possuindo a enorme regalia e virtude técnica de avisar as partes que operam no tubo IMEDIATAMENTE e abruptamente se aquele laço foi rompido fisicamente ou lógicamente ali pelo trajeto."
+    "answer": "Ele requer primeiramente que máquinas negociem e entrem num consenso de aperto de mão abrindo o diálogo lógico firme. Possuindo a enorme regalia e virtude técnica de avisar as partes que operam no tubo IMEDIATAMENTE e abruptamente se aquele laço foi rompido fisicamente ou lógicamente ali pelo trajeto."
   },
   {
     "question": "Contraposto, o \"Serviço sem Conexão\" (como as cartas no correio analógico) ganha vantagem por quê?",
@@ -1018,8 +934,7 @@ export const redesEthernetQuestions: Question[] = [
       "Limita conexões de switch ao número de hubs.",
       "Reflete o sinal na ponta do packet switch."
     ],
-    "answer": "Ele detém agilidade imensa num momento vital: dispensa os segundos críticos gastos construindo canais (handshakes e sincronizações longas). A placa cospe os quadros avulsos instantaneamente na vala cega do meio com o rótulo de destino e pronto (o roteador que se vire nas bifurcações e esperas). O ônus trágico é a falta da acusação imediata se a internet morrer nos fios à frente depois da porta.",
-    "explanation": "A alternativa correta é a letra A. Ele detém agilidade imensa num momento vital: dispensa os segundos críticos gastos construindo canais (handshakes e sincronizações longas). A placa cospe os quadros avulsos instantaneamente na vala cega do meio com o rótulo de destino e pronto (o roteador que se vire nas bifurcações e esperas). O ônus trágico é a falta da acusação imediata se a internet morrer nos fios à frente depois da porta."
+    "answer": "Ele detém agilidade imensa num momento vital: dispensa os segundos críticos gastos construindo canais (handshakes e sincronizações longas). A placa cospe os quadros avulsos instantaneamente na vala cega do meio com o rótulo de destino e pronto (o roteador que se vire nas bifurcações e esperas). O ônus trágico é a falta da acusação imediata se a internet morrer nos fios à frente depois da porta."
   },
   {
     "question": "As tecnologias se confundem ao medir \"Delay\" (Retardo global). O tempo puro consumido e refém estritamente do pulso físico e da luz trafegando no vidro das fibras ou do elétron serpenteando pelo emaranhado metálico esticado da América a Europa é o retardo nomeado de:",
@@ -1030,8 +945,7 @@ export const redesEthernetQuestions: Question[] = [
       "Delay de Propagação (Retardo nativo de curso físico intrínseco, que se agiganta e atinge picos nos satélites geoestacionários altíssimos que orbitam e pingam de volta os dados em ondas longas e latentes à Terra, atrasando ligações transoceânicas num silêncio mudo crônico inevitável na casa dos milissegundos longos e limitadores).",
       "Nenhuma é correta e esse tempo é imensurável pelas regras do Protocolo ST."
     ],
-    "answer": "Delay de Propagação (Retardo nativo de curso físico intrínseco, que se agiganta e atinge picos nos satélites geoestacionários altíssimos que orbitam e pingam de volta os dados em ondas longas e latentes à Terra, atrasando ligações transoceânicas num silêncio mudo crônico inevitável na casa dos milissegundos longos e limitadores).",
-    "explanation": "A alternativa correta é a letra D. Delay de Propagação (Retardo nativo de curso físico intrínseco, que se agiganta e atinge picos nos satélites geoestacionários altíssimos que orbitam e pingam de volta os dados em ondas longas e latentes à Terra, atrasando ligações transoceânicas num silêncio mudo crônico inevitável na casa dos milissegundos longos e limitadores)."
+    "answer": "Delay de Propagação (Retardo nativo de curso físico intrínseco, que se agiganta e atinge picos nos satélites geoestacionários altíssimos que orbitam e pingam de volta os dados em ondas longas e latentes à Terra, atrasando ligações transoceânicas num silêncio mudo crônico inevitável na casa dos milissegundos longos e limitadores)."
   },
   {
     "question": "Já o tempo dispendido esperando o Cabo de Barramento ficar com \"sinal livre de ruído portador de rádio e vazio\" após outros computadores terminarem sua cantoria de dados na malha para podermos disparar no modelo Token ou Ethernet/CSMA é o:",
@@ -1042,8 +956,7 @@ export const redesEthernetQuestions: Question[] = [
       "Delay de Criptografia Analítica OSPF da tabela Distância Vetorial.",
       "Delay de Propagação Elétrica de Velocidade Constante e Infinita da Fibrótica de 4 Canais Analógicos."
     ],
-    "answer": "Delay de Acesso.",
-    "explanation": "A alternativa correta é a letra A. Delay de Acesso."
+    "answer": "Delay de Acesso."
   },
   {
     "question": "O Ritmo de Transferência Efetivo (Throughput do mundo real com arquivos da rede IP em bps rodando) medido nos testes é sempre inegavelmente MENOR (tem perda e não atinge o pico teto prometido e estampado como máxima largura de banda pelo vendedor do hardware de cabeamento). Por quê?",
@@ -1054,8 +967,7 @@ export const redesEthernetQuestions: Question[] = [
       "Em grande parte, pois nos limites puros entram inevitavelmente na malha toneladas incontáveis de perdas nos Bytes \"burocráticos\", inúteis aos softwares lógicos (Overhead): Os Cabeçalhos engarrafando o caminho (os Metadados, IPs, MACs, CRCs, Extensões acoplados por cada camada da pilha OSI no dado real na emissão), entupindo e devorando fatias pesadas dos bytes teóricos com papéis de controle não mensuráveis pelo usuário do fim da linha, sangrando capacidade vital do meio perante a propaganda do link limpo sem metadados pesados anexos.",
       "Porque apenas a FDDI opera na largura de banda infinita livre sem headers."
     ],
-    "answer": "Em grande parte, pois nos limites puros entram inevitavelmente na malha toneladas incontáveis de perdas nos Bytes \"burocráticos\", inúteis aos softwares lógicos (Overhead): Os Cabeçalhos engarrafando o caminho (os Metadados, IPs, MACs, CRCs, Extensões acoplados por cada camada da pilha OSI no dado real na emissão), entupindo e devorando fatias pesadas dos bytes teóricos com papéis de controle não mensuráveis pelo usuário do fim da linha, sangrando capacidade vital do meio perante a propaganda do link limpo sem metadados pesados anexos.",
-    "explanation": "A alternativa correta é a letra D. Em grande parte, pois nos limites puros entram inevitavelmente na malha toneladas incontáveis de perdas nos Bytes \"burocráticos\", inúteis aos softwares lógicos (Overhead): Os Cabeçalhos engarrafando o caminho (os Metadados, IPs, MACs, CRCs, Extensões acoplados por cada camada da pilha OSI no dado real na emissão), entupindo e devorando fatias pesadas dos bytes teóricos com papéis de controle não mensuráveis pelo usuário do fim da linha, sangrando capacidade vital do meio perante a propaganda do link limpo sem metadados pesados anexos."
+    "answer": "Em grande parte, pois nos limites puros entram inevitavelmente na malha toneladas incontáveis de perdas nos Bytes \"burocráticos\", inúteis aos softwares lógicos (Overhead): Os Cabeçalhos engarrafando o caminho (os Metadados, IPs, MACs, CRCs, Extensões acoplados por cada camada da pilha OSI no dado real na emissão), entupindo e devorando fatias pesadas dos bytes teóricos com papéis de controle não mensuráveis pelo usuário do fim da linha, sangrando capacidade vital do meio perante a propaganda do link limpo sem metadados pesados anexos."
   },
   {
     "question": "O que significa afirmar teoricamente e medir do produto matemático entre Ritmo de Transferências e o Delay da Rede estipulada da LAN corporativa gigante?",
@@ -1066,8 +978,7 @@ export const redesEthernetQuestions: Question[] = [
       "Mostra quantos hubs são tolerados num anel antes de ruir.",
       "Significa a bitolagem física em milímetros de Grossura na capa amarela (Thicknet coaxial em AUI pinagem transceptor)."
     ],
-    "answer": "Gera o volume bruto/quantidade absurda massiva e perigosa de Dados que preenchem (estão presentes/flutuantes contidos ali invisivelmente) inteiramente o \"cano físico da fiação\" até explodir num receptor na frente. (Mostra que no enlace gordo e latente de satélite a emissora cospe volumes colossais antes de o cara lá sentir a recepção do primeiro byte da resposta dele de volta à malha do cabo, enchendo o trajeto a granel sem limite imediato de controle da colisão terminal e de descarte).",
-    "explanation": "A alternativa correta é a letra C. Gera o volume bruto/quantidade absurda massiva e perigosa de Dados que preenchem (estão presentes/flutuantes contidos ali invisivelmente) inteiramente o \"cano físico da fiação\" até explodir num receptor na frente. (Mostra que no enlace gordo e latente de satélite a emissora cospe volumes colossais antes de o cara lá sentir a recepção do primeiro byte da resposta dele de volta à malha do cabo, enchendo o trajeto a granel sem limite imediato de controle da colisão terminal e de descarte)."
+    "answer": "Gera o volume bruto/quantidade absurda massiva e perigosa de Dados que preenchem (estão presentes/flutuantes contidos ali invisivelmente) inteiramente o \"cano físico da fiação\" até explodir num receptor na frente. (Mostra que no enlace gordo e latente de satélite a emissora cospe volumes colossais antes de o cara lá sentir a recepção do primeiro byte da resposta dele de volta à malha do cabo, enchendo o trajeto a granel sem limite imediato de controle da colisão terminal e de descarte)."
   },
   {
     "question": "Por que as divisões de regras rígidas e segmentadas conceitualmente nas Camadas abstratas (Stacking e OSI) revolucionaram e flexibilizaram a programação das comunicações pelo mundo em \"Pilhas\"?",
@@ -1078,8 +989,7 @@ export const redesEthernetQuestions: Question[] = [
       "Fez com que as colisões virassem pacotes roteados BGP de IPv6 estendidos.",
       "Acabou com a necessidade do \"Caminho Mais Curto\" no SPF."
     ],
-    "answer": "Fragmentar e diluir um único programa monolítico impensável, burro e gigante que controlasse todo o cabo para fatias compartimentadas lógicas especializadas na sua zona e com responsabilidades específicas que só se olham em vizinhos limítrofes acopladas perfeitamente, permitiu que se remodele o software flexivelmente sem ferir todo o arranjo caso uma porta ou hardware (ex. Wi-Fi no lugar de cobre UTP RJ-45 LAN) ali na base física fosse mutacionada pelos anos ou protocolos seletivos rodando acavalados em pares para testes da companhia sem quebrar o prédio).",
-    "explanation": "A alternativa correta é a letra C. Fragmentar e diluir um único programa monolítico impensável, burro e gigante que controlasse todo o cabo para fatias compartimentadas lógicas especializadas na sua zona e com responsabilidades específicas que só se olham em vizinhos limítrofes acopladas perfeitamente, permitiu que se remodele o software flexivelmente sem ferir todo o arranjo caso uma porta ou hardware (ex. Wi-Fi no lugar de cobre UTP RJ-45 LAN) ali na base física fosse mutacionada pelos anos ou protocolos seletivos rodando acavalados em pares para testes da companhia sem quebrar o prédio)."
+    "answer": "Fragmentar e diluir um único programa monolítico impensável, burro e gigante que controlasse todo o cabo para fatias compartimentadas lógicas especializadas na sua zona e com responsabilidades específicas que só se olham em vizinhos limítrofes acopladas perfeitamente, permitiu que se remodele o software flexivelmente sem ferir todo o arranjo caso uma porta ou hardware (ex. Wi-Fi no lugar de cobre UTP RJ-45 LAN) ali na base física fosse mutacionada pelos anos ou protocolos seletivos rodando acavalados em pares para testes da companhia sem quebrar o prédio)."
   },
   {
     "question": "Como é feita tecnicamente nas \"Pilhas (Stack) - Software em Camadas\" o controle lógico e a passagem do Pacote subindo e descendo no emissor de acordo com a cartilha e normas do texto das redes locais?",
@@ -1090,8 +1000,7 @@ export const redesEthernetQuestions: Question[] = [
       "Elas processam em Barramento Paralelo simultâneo (todas injetam os dados de uma vez e se unem no núcleo por CSMA/CD lógico emulativo do Switch).",
       "Nenhuma das alternativas."
     ],
-    "answer": "De modo engessado formal, os softwares no emissor da mensagem operam agregando dados verticalmente em linha contígua estrita (O pacote na camada de \"aplicação\" desce, é entregue unicamente à fronteira inferior abaixo que o envelopa pondo cabeçalho aninhado no topo da mensagem original da de cima e assim afunda até as pontas). Na recepção física lá longe, ele entra na Camada Base, rasga-se o cabeçalho base extraindo a diretriz dele processando e joga a sobra decapitada \"subindo pra camada exata de cima ler seu nível e afins subindo a montanha\", sendo que um nível JAMAIS fura a fila pra falar nativamente com um nível alheio da pilha inteira sem ser com as bordas imediatas que interage (vizinhos limitados da pirâmide).",
-    "explanation": "A alternativa correta é a letra A. De modo engessado formal, os softwares no emissor da mensagem operam agregando dados verticalmente em linha contígua estrita (O pacote na camada de \"aplicação\" desce, é entregue unicamente à fronteira inferior abaixo que o envelopa pondo cabeçalho aninhado no topo da mensagem original da de cima e assim afunda até as pontas). Na recepção física lá longe, ele entra na Camada Base, rasga-se o cabeçalho base extraindo a diretriz dele processando e joga a sobra decapitada \"subindo pra camada exata de cima ler seu nível e afins subindo a montanha\", sendo que um nível JAMAIS fura a fila pra falar nativamente com um nível alheio da pilha inteira sem ser com as bordas imediatas que interage (vizinhos limitados da pirâmide)."
+    "answer": "De modo engessado formal, os softwares no emissor da mensagem operam agregando dados verticalmente em linha contígua estrita (O pacote na camada de \"aplicação\" desce, é entregue unicamente à fronteira inferior abaixo que o envelopa pondo cabeçalho aninhado no topo da mensagem original da de cima e assim afunda até as pontas). Na recepção física lá longe, ele entra na Camada Base, rasga-se o cabeçalho base extraindo a diretriz dele processando e joga a sobra decapitada \"subindo pra camada exata de cima ler seu nível e afins subindo a montanha\", sendo que um nível JAMAIS fura a fila pra falar nativamente com um nível alheio da pilha inteira sem ser com as bordas imediatas que interage (vizinhos limitados da pirâmide)."
   },
   {
     "question": "No contexto dos Envelopes Abrigados Multiplamente (Nested Headers), a Camada \"Física\" (nível 1) diferencia-se abismalmente no agir da topologia por quê?",
@@ -1102,8 +1011,7 @@ export const redesEthernetQuestions: Question[] = [
       "É responsável por dividir o IPv4 e emular a Camada Internet (TCP) convertendo UDP nativamente com Jumbo frames engavetados (store forward físico em placa mãe com hub ativo passivo restrito e IP falso dinâmico RFC1918 da subrede cega do NAT virtual da ponta isolada por bridge em anel Token limitante).",
       "Adiciona CRC reverso."
     ],
-    "answer": "É a única que não atua anexando e acoplando um cabeçalho explícito (não enfia dados extras ali) na engrenagem; já que seu mister puramente elétrico é traduzir tudo numa sintaxe seca de \"voltagem bruta/sinal luminoso (fótons de laser) em rádio no fio solto e vago transmitindo as modulações sem carimbo formal visível\" (ou seja: estica a força no fio e não cria cabeçalhos adicionais à malha pra se ler além do próprio brilho da corrente final do meio Físico rústico onde foi jogada pelos pares RJ-45).",
-    "explanation": "A alternativa correta é a letra B. É a única que não atua anexando e acoplando um cabeçalho explícito (não enfia dados extras ali) na engrenagem; já que seu mister puramente elétrico é traduzir tudo numa sintaxe seca de \"voltagem bruta/sinal luminoso (fótons de laser) em rádio no fio solto e vago transmitindo as modulações sem carimbo formal visível\" (ou seja: estica a força no fio e não cria cabeçalhos adicionais à malha pra se ler além do próprio brilho da corrente final do meio Físico rústico onde foi jogada pelos pares RJ-45)."
+    "answer": "É a única que não atua anexando e acoplando um cabeçalho explícito (não enfia dados extras ali) na engrenagem; já que seu mister puramente elétrico é traduzir tudo numa sintaxe seca de \"voltagem bruta/sinal luminoso (fótons de laser) em rádio no fio solto e vago transmitindo as modulações sem carimbo formal visível\" (ou seja: estica a força no fio e não cria cabeçalhos adicionais à malha pra se ler além do próprio brilho da corrente final do meio Físico rústico onde foi jogada pelos pares RJ-45)."
   },
   {
     "question": "O Protocolo IP (Camada de Rede) aplica e fundamenta o seu serviço mundial baseando-se num conceito técnico impiedoso rotulado na literatura como \"A Qualquer Custo\":",
@@ -1114,8 +1022,7 @@ export const redesEthernetQuestions: Question[] = [
       "Apenas envia pacotes UDP multicast de IPv4 em jumbo frames.",
       "Assegura entrega livre de erros sem a necessidade de retransmissão de ACK."
     ],
-    "answer": "Ao mandar um datagrama pro horizonte do roteamento incerto heterogêneo sem fios nas ilhas do globo, não impõe fidelidade na ponta ou amarra conexões cegas estritas e limpas. Datagramas sofrem toda imundície: desaparecem misteriosamente num poço cego da web morta, chegam fora de ordem, amargam duplicatas espelhadas sem sentido, demoram eras num engarrafamento ou morrem no Checksum sumário rasgado e a rede o descarta calada no silêncio da noite s/ reportar ao pobre emissor no host origem a sua falha ou culpa do fio doente. (E confia e empurra cegamente nas costas das camadas de Cima e do Transceptor TCP o ônus colossal de reprimir e arrumar os erros no final ressuscitando ordens, pedindo e checando pacotes num loop corretivo e heroico que o protocolo IP inferior desprezou por agilidade bruta na vala universal).",
-    "explanation": "A alternativa correta é a letra A. Ao mandar um datagrama pro horizonte do roteamento incerto heterogêneo sem fios nas ilhas do globo, não impõe fidelidade na ponta ou amarra conexões cegas estritas e limpas. Datagramas sofrem toda imundície: desaparecem misteriosamente num poço cego da web morta, chegam fora de ordem, amargam duplicatas espelhadas sem sentido, demoram eras num engarrafamento ou morrem no Checksum sumário rasgado e a rede o descarta calada no silêncio da noite s/ reportar ao pobre emissor no host origem a sua falha ou culpa do fio doente. (E confia e empurra cegamente nas costas das camadas de Cima e do Transceptor TCP o ônus colossal de reprimir e arrumar os erros no final ressuscitando ordens, pedindo e checando pacotes num loop corretivo e heroico que o protocolo IP inferior desprezou por agilidade bruta na vala universal)."
+    "answer": "Ao mandar um datagrama pro horizonte do roteamento incerto heterogêneo sem fios nas ilhas do globo, não impõe fidelidade na ponta ou amarra conexões cegas estritas e limpas. Datagramas sofrem toda imundície: desaparecem misteriosamente num poço cego da web morta, chegam fora de ordem, amargam duplicatas espelhadas sem sentido, demoram eras num engarrafamento ou morrem no Checksum sumário rasgado e a rede o descarta calada no silêncio da noite s/ reportar ao pobre emissor no host origem a sua falha ou culpa do fio doente. (E confia e empurra cegamente nas costas das camadas de Cima e do Transceptor TCP o ônus colossal de reprimir e arrumar os erros no final ressuscitando ordens, pedindo e checando pacotes num loop corretivo e heroico que o protocolo IP inferior desprezou por agilidade bruta na vala universal)."
   },
   {
     "question": "Em contraponto trágico, se todas as Redes baseadas na arquitetura falha do Datagrama IP perdem e misturam \"Fora da Ordem\" (os Roteadores enviam pacotes 1, 2, 3 e 4. Mas os pacotes sofrem saltos loucos nas pontes, Dijkstra de atalho, atrasos na via por enfileiramento cego. Chegando o 2, 4, 3, 1 na outra ponta). O software da camada de Cima repressor de erros usa qual técnica da vida real base pra não fundir as peças embaralhadas na compilação do receptor final antes da tela brilhar?",
@@ -1126,8 +1033,7 @@ export const redesEthernetQuestions: Question[] = [
       "Emissor estampa a frio um \"Número Sequencial de rastreio contínuo e lógico carimbado forte em todo pacote daquele fluxo no cabeçalho\". O cara que recebe no fundo acumula e repousa numa \"Mesa/Buffer (Lista Adicional de pacotes da ordem do caos)\" num compasso de espera de gaveta os que vêm afobados fora da cronologia da roda; retendo as peças até o retardatário de número anterior faltante cair nela ali atrás preenchendo o furo e empurrando no eixo liso final à camada limpa de serviço acima (Software da Aplicação que nada viu dos traumas nas veias de baixo).",
       "Acusa a placa NIC que corta os frames explícitos cegamente na origem de rádio FSK assíncrona."
     ],
-    "answer": "Emissor estampa a frio um \"Número Sequencial de rastreio contínuo e lógico carimbado forte em todo pacote daquele fluxo no cabeçalho\". O cara que recebe no fundo acumula e repousa numa \"Mesa/Buffer (Lista Adicional de pacotes da ordem do caos)\" num compasso de espera de gaveta os que vêm afobados fora da cronologia da roda; retendo as peças até o retardatário de número anterior faltante cair nela ali atrás preenchendo o furo e empurrando no eixo liso final à camada limpa de serviço acima (Software da Aplicação que nada viu dos traumas nas veias de baixo).",
-    "explanation": "A alternativa correta é a letra D. Emissor estampa a frio um \"Número Sequencial de rastreio contínuo e lógico carimbado forte em todo pacote daquele fluxo no cabeçalho\". O cara que recebe no fundo acumula e repousa numa \"Mesa/Buffer (Lista Adicional de pacotes da ordem do caos)\" num compasso de espera de gaveta os que vêm afobados fora da cronologia da roda; retendo as peças até o retardatário de número anterior faltante cair nela ali atrás preenchendo o furo e empurrando no eixo liso final à camada limpa de serviço acima (Software da Aplicação que nada viu dos traumas nas veias de baixo)."
+    "answer": "Emissor estampa a frio um \"Número Sequencial de rastreio contínuo e lógico carimbado forte em todo pacote daquele fluxo no cabeçalho\". O cara que recebe no fundo acumula e repousa numa \"Mesa/Buffer (Lista Adicional de pacotes da ordem do caos)\" num compasso de espera de gaveta os que vêm afobados fora da cronologia da roda; retendo as peças até o retardatário de número anterior faltante cair nela ali atrás preenchendo o furo e empurrando no eixo liso final à camada limpa de serviço acima (Software da Aplicação que nada viu dos traumas nas veias de baixo)."
   },
   {
     "question": "Além das defesas fora de ordem, o Protocolo esbarra no erro da \"Duplicação Incessante\", onde pacotes atrasados espelhados pelo eco cego dos atrasos transbordam repetidos no vizinho receptor do lado final de fora da nuvem e enchem a fila. Para salvar isso a sequência do Software da Aplicação receptora de Borda age de maneira cortante:",
@@ -1138,8 +1044,7 @@ export const redesEthernetQuestions: Question[] = [
       "Oculta usando criptografia as duplicatas nas Bridges de estado dinâmico Startup e reenvia para o servidor mestre no formato de Broadcast limpo.",
       "O hub ativo reencaminha aos terminais BNC das placas UTP do RJ-45 de cruzamentos invertidos nos fios."
     ],
-    "answer": "Verifica o número de série das levas que entram na guarita do software e cruza a ferro com a lista limpa das que já entraram; se o carimbo já preencheu seu espaço do que devia ou já foi repassado acima pra máquina outrora, ele rejeita friamente a carga na cópia zumbi nova que atolou no delay antigo sem cerimônias rasgando da malha de descarte livre, poupando a máquina do loop sujo indesejado da rede caótica que a produziu espelhada na conexão e limpando a trilha paralela da porta.",
-    "explanation": "A alternativa correta é a letra B. Verifica o número de série das levas que entram na guarita do software e cruza a ferro com a lista limpa das que já entraram; se o carimbo já preencheu seu espaço do que devia ou já foi repassado acima pra máquina outrora, ele rejeita friamente a carga na cópia zumbi nova que atolou no delay antigo sem cerimônias rasgando da malha de descarte livre, poupando a máquina do loop sujo indesejado da rede caótica que a produziu espelhada na conexão e limpando a trilha paralela da porta."
+    "answer": "Verifica o número de série das levas que entram na guarita do software e cruza a ferro com a lista limpa das que já entraram; se o carimbo já preencheu seu espaço do que devia ou já foi repassado acima pra máquina outrora, ele rejeita friamente a carga na cópia zumbi nova que atolou no delay antigo sem cerimônias rasgando da malha de descarte livre, poupando a máquina do loop sujo indesejado da rede caótica que a produziu espelhada na conexão e limpando a trilha paralela da porta."
   },
   {
     "question": "Sobre um trágico pilar da física das Redes (\"Congestionamento da Rede\"): Redes Switchadas de pacote sofrem colapso se os links transbordam o limite limpo do hardware contínuo da vala (os pacotes estocados pra envio nas filas e as RAMs se enchem na beira das pontes num esgoto de bytes). Diante de gargalos na borda as Filas no Switch crescem massivamente e a latência/delay estoura pra tetos imorais. Se tal tormenta persistir, a catástrofe deflagrada na vida real dos provedores pelo \"Colapso de Congestionamento\" deflagra que cenário aterrorizador para o TCP IP reverter aos engates nos limites de perda analítica que o ICMP avisa e repara?",
@@ -1150,8 +1055,7 @@ export const redesEthernetQuestions: Question[] = [
       "O cabo coaxial esquenta em 75 Ohms atenuando ruído e CSMA de Thicknet (transceiver em AUI com multiplexadores passivos paralelos nas placas 10BASE5 originais RJ-45) num ambiente fechado do Anel.",
       "Transponders saem de rota e derrubam o IP de 128 Bits em Multicast de FSK baud phase no bit Rate e o RS-232 fecha o stop bit zero volt de limite da modulação fantasma cega."
     ],
-    "answer": "A memória inteira das caixas dos Roteadores/Packet Switches do planeta lota no gargalo. Para não pifar, os softwares do núcleo na rota cospem e cortam do túnel brutalmente todos pacotes vivos ali nas sobras pro abismo (Perda maciça real nos enlaces) a qualquer custo sem remorso; provocando em cadeia numa reação da morte as pontas desesperadas que emitem pacotes originais refazerem e resgatarem os timeouts \"Re-transmitindo\" em avalanche cega tripla a rebarba afogando o mundo, fazendo a rede ruir sobre seu peso no Colapso do Congestionamento absoluto e total gerando o zero throughput e o pânico da latência infinita dos roteadores cegos instáveis nas redes coladas.",
-    "explanation": "A alternativa correta é a letra A. A memória inteira das caixas dos Roteadores/Packet Switches do planeta lota no gargalo. Para não pifar, os softwares do núcleo na rota cospem e cortam do túnel brutalmente todos pacotes vivos ali nas sobras pro abismo (Perda maciça real nos enlaces) a qualquer custo sem remorso; provocando em cadeia numa reação da morte as pontas desesperadas que emitem pacotes originais refazerem e resgatarem os timeouts \"Re-transmitindo\" em avalanche cega tripla a rebarba afogando o mundo, fazendo a rede ruir sobre seu peso no Colapso do Congestionamento absoluto e total gerando o zero throughput e o pânico da latência infinita dos roteadores cegos instáveis nas redes coladas."
+    "answer": "A memória inteira das caixas dos Roteadores/Packet Switches do planeta lota no gargalo. Para não pifar, os softwares do núcleo na rota cospem e cortam do túnel brutalmente todos pacotes vivos ali nas sobras pro abismo (Perda maciça real nos enlaces) a qualquer custo sem remorso; provocando em cadeia numa reação da morte as pontas desesperadas que emitem pacotes originais refazerem e resgatarem os timeouts \"Re-transmitindo\" em avalanche cega tripla a rebarba afogando o mundo, fazendo a rede ruir sobre seu peso no Colapso do Congestionamento absoluto e total gerando o zero throughput e o pânico da latência infinita dos roteadores cegos instáveis nas redes coladas."
   },
   {
     "question": "Como uma Rede engarrafada evita morrer pela queda da fila de pacotes sujos da morte se não há como apagar os atrasos elétricos? \"O protocolo TCP IP e afins tenta escapar e debelar os riscos de morte dos congestionamentos catastróficos monitorando e reagindo como nas aproximações primárias atestadas:\"",
@@ -1162,8 +1066,7 @@ export const redesEthernetQuestions: Question[] = [
       "O hub de concentradores atua no anel FDDI invertendo o fluxo de luz nas fibras ópticas cruzadas (Roll-over).",
       "Usa-se roteamento Static Routing para barrar Dijkstra no modelo de classes C e D do IPv4 estagnado dos endereços dinâmicos puros não NAT do Loopback 127 de classes reservadas por hardware."
     ],
-    "answer": "1. Os fabricantes das peças criam Packet Switches que enviam apitos digitais ativos avisando formalmente (na rota de colisão de volta) para a fonte segurar a banda e reprimir seu fluxo (\"Grite que o bueiro tá lotado\"). E 2. O lado emissor adota inteligência matemática, medindo a \"taxa de perdas/erros cegas de datagramas extintos nos limites do TTL nas pontas cegas de descarte cru sem reposta\" como estimativa pura que tem gargalo gigante e tranca ele mesmo na ponta a sua taxa de sangria e emissão re-escrevendo os re-envios de adaptação do TCP e recuando como defesas vitais.",
-    "explanation": "A alternativa correta é a letra C. 1. Os fabricantes das peças criam Packet Switches que enviam apitos digitais ativos avisando formalmente (na rota de colisão de volta) para a fonte segurar a banda e reprimir seu fluxo (\"Grite que o bueiro tá lotado\"). E 2. O lado emissor adota inteligência matemática, medindo a \"taxa de perdas/erros cegas de datagramas extintos nos limites do TTL nas pontas cegas de descarte cru sem reposta\" como estimativa pura que tem gargalo gigante e tranca ele mesmo na ponta a sua taxa de sangria e emissão re-escrevendo os re-envios de adaptação do TCP e recuando como defesas vitais."
+    "answer": "1. Os fabricantes das peças criam Packet Switches que enviam apitos digitais ativos avisando formalmente (na rota de colisão de volta) para a fonte segurar a banda e reprimir seu fluxo (\"Grite que o bueiro tá lotado\"). E 2. O lado emissor adota inteligência matemática, medindo a \"taxa de perdas/erros cegas de datagramas extintos nos limites do TTL nas pontas cegas de descarte cru sem reposta\" como estimativa pura que tem gargalo gigante e tranca ele mesmo na ponta a sua taxa de sangria e emissão re-escrevendo os re-envios de adaptação do TCP e recuando como defesas vitais."
   },
   {
     "question": "O conceito primordial que fez a \"Internet\" ser tão disruptiva do mundo local (LAN) foi o de ser a Abstração suprema do \"Serviço Universal / Universal Service\". Tal ideia se apoia na filosofia base que viabilizou as ilhas da computação nos lares e na guerra de tecnologias. Isto impõe que:",
@@ -1174,8 +1077,7 @@ export const redesEthernetQuestions: Question[] = [
       "A Internet não lida com hardware e nem tem IP ou TCP. Atua apenas em domínios alocados via RS-232 no modem serial passivo sem Stop Bit, garantindo fluxo estático fixo OSPF puro.",
       "Apenas opera nas VPNs locais restritas da empresa privada estritamente nos Modems RF de 4 Canais Analógicos c/ CSMA CD."
     ],
-    "answer": "Você e sua corporação, na sua ilha e mundo de fios cruzados RJ-45 par trançados Ethernet isolados velhos e tortos com o IP e MAC exótico nas suas estações limitadas podem falar perfeitamente de forma translúcida a transparência mágica sem saber e sem barreira natural num salto digital com o mainframe alienígena colossal do banco na Europa mergulhado em tecnologia de anéis ópticos ATM caríssima síncrona com outra face, formato e arquitetura paralela cega. O software no meio abstrai toda diferença monstruosa. Para as pontas é como estar num quarto unificado cego gigante global onde cada endereço único de IP limpo da placa na tela vira o farol de visibilidade mágica onde as redes heterogêneas da terra batem p/ Roteadores que transcrevem e vertem idiomas sem colapsar a ponte de Universalidade abstrata oculta e sem dono ou limites do cabo da LAN limitante.",
-    "explanation": "A alternativa correta é a letra A. Você e sua corporação, na sua ilha e mundo de fios cruzados RJ-45 par trançados Ethernet isolados velhos e tortos com o IP e MAC exótico nas suas estações limitadas podem falar perfeitamente de forma translúcida a transparência mágica sem saber e sem barreira natural num salto digital com o mainframe alienígena colossal do banco na Europa mergulhado em tecnologia de anéis ópticos ATM caríssima síncrona com outra face, formato e arquitetura paralela cega. O software no meio abstrai toda diferença monstruosa. Para as pontas é como estar num quarto unificado cego gigante global onde cada endereço único de IP limpo da placa na tela vira o farol de visibilidade mágica onde as redes heterogêneas da terra batem p/ Roteadores que transcrevem e vertem idiomas sem colapsar a ponte de Universalidade abstrata oculta e sem dono ou limites do cabo da LAN limitante."
+    "answer": "Você e sua corporação, na sua ilha e mundo de fios cruzados RJ-45 par trançados Ethernet isolados velhos e tortos com o IP e MAC exótico nas suas estações limitadas podem falar perfeitamente de forma translúcida a transparência mágica sem saber e sem barreira natural num salto digital com o mainframe alienígena colossal do banco na Europa mergulhado em tecnologia de anéis ópticos ATM caríssima síncrona com outra face, formato e arquitetura paralela cega. O software no meio abstrai toda diferença monstruosa. Para as pontas é como estar num quarto unificado cego gigante global onde cada endereço único de IP limpo da placa na tela vira o farol de visibilidade mágica onde as redes heterogêneas da terra batem p/ Roteadores que transcrevem e vertem idiomas sem colapsar a ponte de Universalidade abstrata oculta e sem dono ou limites do cabo da LAN limitante."
   },
   {
     "question": "A abstração colossal que gera o fascínio da Internet, e faz parecer perante a placa e ao olho cru de quem digita no computador da beirada (que tudo aquilo é na verdade um cabo gigantesco singular no chão da máquina e que as pontas se conversam numa teia maciça) é definida teoricamente no capítulo de Internet como o nome e estigma conceitual abstrato isolado fundamental de:",
@@ -1186,8 +1088,7 @@ export const redesEthernetQuestions: Question[] = [
       "Rede Virtual (Virtual Network) - Os hardwares, os roteadores que rasgam os quadros, os protocolos de IPs que moldam os endereços isolados ocultam magicamente a física torpe emaranhada do caos do chão das corporações. Trazendo pro emissor na camada superior a ilusão doce, abstrata, limpa e uniforme que tudo é uma só, vasta e \"Única Rede Uniforme\" na qual ele injeta o pulso e viaja liso num plano estático virtual infinito livre de fios heterogêneos despadronizados dos saltos ocultos que ela esconde da tela e das APIs locais nos pacotes limpos do IP mundial unificado da Internet base.",
       "Roteamento Universal de Portas Analógicas dos Packet Switches do Store Forward do TCP do modelo OSI de 5 Camadas de Transferência de Banda Larga Limitada no RJ 45 Físico Híbrido Crossover Estático de EPROMs."
     ],
-    "answer": "Rede Virtual (Virtual Network) - Os hardwares, os roteadores que rasgam os quadros, os protocolos de IPs que moldam os endereços isolados ocultam magicamente a física torpe emaranhada do caos do chão das corporações. Trazendo pro emissor na camada superior a ilusão doce, abstrata, limpa e uniforme que tudo é uma só, vasta e \"Única Rede Uniforme\" na qual ele injeta o pulso e viaja liso num plano estático virtual infinito livre de fios heterogêneos despadronizados dos saltos ocultos que ela esconde da tela e das APIs locais nos pacotes limpos do IP mundial unificado da Internet base.",
-    "explanation": "A alternativa correta é a letra D. Rede Virtual (Virtual Network) - Os hardwares, os roteadores que rasgam os quadros, os protocolos de IPs que moldam os endereços isolados ocultam magicamente a física torpe emaranhada do caos do chão das corporações. Trazendo pro emissor na camada superior a ilusão doce, abstrata, limpa e uniforme que tudo é uma só, vasta e \"Única Rede Uniforme\" na qual ele injeta o pulso e viaja liso num plano estático virtual infinito livre de fios heterogêneos despadronizados dos saltos ocultos que ela esconde da tela e das APIs locais nos pacotes limpos do IP mundial unificado da Internet base."
+    "answer": "Rede Virtual (Virtual Network) - Os hardwares, os roteadores que rasgam os quadros, os protocolos de IPs que moldam os endereços isolados ocultam magicamente a física torpe emaranhada do caos do chão das corporações. Trazendo pro emissor na camada superior a ilusão doce, abstrata, limpa e uniforme que tudo é uma só, vasta e \"Única Rede Uniforme\" na qual ele injeta o pulso e viaja liso num plano estático virtual infinito livre de fios heterogêneos despadronizados dos saltos ocultos que ela esconde da tela e das APIs locais nos pacotes limpos do IP mundial unificado da Internet base."
   },
   {
     "question": "A grande divisão técnica dos criadores e pesquisadores de protocolos dividiu as incumbências e dores do mundo nos agrupamentos de Camadas TCP IP contrapostas ao obsoleto OSI teórico acadêmico engessado da pré-internet. As 5 Camadas da arquitetura do TCP IP que reinam as redes, se escalonam em blocos estritos do chão físico (1) à tela visual do programa (5). Qual afirmação define pontualmente a competência limpa da Camada 3 de Internet nesse miolo das veias da base teórica da rede global descrita e isolada pelo texto da apostila na ordem?",
@@ -1198,8 +1099,7 @@ export const redesEthernetQuestions: Question[] = [
       "É a Camada (Aplicação) onde roda o SMTP para e-mails e protocolos de páginas HTTP do World Web do DNS de domínio nominal oculto.",
       "É a Camada que lida unicamente em empacotar \"Frames/Quadros Físicos\" com endereços MAC EPROMS cruas no Switch Ethernet CSMA CD de acesso de Placa e Fio de 185 metros Thin limitantes p/ colisão em porta física isolada do Hub ativo cego (Enlace Cego / Network Interface Layer Física do LAN local estático UTP Cat 5e de RJ 45 Pino-a-Pino na Estrela / Barramento Ponto-a-Ponto e FDDI Ring).\n\nMúltipla Escolha Complementar (Do 101 ao 122 - Finalizando cada item não mapeado)"
     ],
-    "answer": "Camada 3 (Internet/Rede): É a casca que especifica cravado no quadro do modelo os formatos globais blindados estritos dos \"Pacotes (Datagramas e seus IPs lógicos isolados)\" disparados de ponta a ponta flutuando através da malha da nuvem da Internet abstrata heterogênea cruzada mundial e baliza os \"mecanismos de envio\" para chutar os pacotes no pulo isolado pelas máquinas do host limítrofe até achar seu rastro do destino na teia global invisível da porta Roteada.",
-    "explanation": "A alternativa correta é a letra A. Camada 3 (Internet/Rede): É a casca que especifica cravado no quadro do modelo os formatos globais blindados estritos dos \"Pacotes (Datagramas e seus IPs lógicos isolados)\" disparados de ponta a ponta flutuando através da malha da nuvem da Internet abstrata heterogênea cruzada mundial e baliza os \"mecanismos de envio\" para chutar os pacotes no pulo isolado pelas máquinas do host limítrofe até achar seu rastro do destino na teia global invisível da porta Roteada."
+    "answer": "Camada 3 (Internet/Rede): É a casca que especifica cravado no quadro do modelo os formatos globais blindados estritos dos \"Pacotes (Datagramas e seus IPs lógicos isolados)\" disparados de ponta a ponta flutuando através da malha da nuvem da Internet abstrata heterogênea cruzada mundial e baliza os \"mecanismos de envio\" para chutar os pacotes no pulo isolado pelas máquinas do host limítrofe até achar seu rastro do destino na teia global invisível da porta Roteada."
   },
   {
     "question": "Qual a desvantagem da Fibra Óptica quando rompe?",
@@ -1210,8 +1110,7 @@ export const redesEthernetQuestions: Question[] = [
       "Atrasa a rede a 2400 baud.",
       "Reduz a Categoria 5 UTP ao nível de CSMA analógico lento cego no TCP das camadas OSI."
     ],
-    "answer": "Exige polimento e solda com equipamentos especiais caríssimos e o ponto da quebra subterrâneo do vidro não pode ser mapeado fácil a olho nu.",
-    "explanation": "A alternativa correta é a letra A. Exige polimento e solda com equipamentos especiais caríssimos e o ponto da quebra subterrâneo do vidro não pode ser mapeado fácil a olho nu."
+    "answer": "Exige polimento e solda com equipamentos especiais caríssimos e o ponto da quebra subterrâneo do vidro não pode ser mapeado fácil a olho nu."
   },
   {
     "question": "O satélite orbital retransmite o sinal de Radiofrequência. Quantos transponders costuma comportar para otimizar os custos estratosféricos, segundo a apostila?",
@@ -1222,8 +1121,7 @@ export const redesEthernetQuestions: Question[] = [
       "Usualmente de 6 a 12 transponders, atuando em frequências distintas propiciando o fluxo simultâneo sem estrangular a malha.",
       "Milhares em um único feixe de cabo AUI cego."
     ],
-    "answer": "Usualmente de 6 a 12 transponders, atuando em frequências distintas propiciando o fluxo simultâneo sem estrangular a malha.",
-    "explanation": "A alternativa correta é a letra D. Usualmente de 6 a 12 transponders, atuando em frequências distintas propiciando o fluxo simultâneo sem estrangular a malha."
+    "answer": "Usualmente de 6 a 12 transponders, atuando em frequências distintas propiciando o fluxo simultâneo sem estrangular a malha."
   },
   {
     "question": "O Padrão RS-232 de comunicação assíncrona envia caracteres compostos habitualmente por:",
@@ -1234,8 +1132,7 @@ export const redesEthernetQuestions: Question[] = [
       "128 Bits emulando a máscara MAC da placa de rede.",
       "Sinais FSK logarítmicos paralelos."
     ],
-    "answer": "7 bits úteis (que aliados ao Bit fantasma de Start e Stop cravam transmissões sequenciais assíncronas isoladas lidas e mapeadas no relógio de parada).",
-    "explanation": "A alternativa correta é a letra A. 7 bits úteis (que aliados ao Bit fantasma de Start e Stop cravam transmissões sequenciais assíncronas isoladas lidas e mapeadas no relógio de parada)."
+    "answer": "7 bits úteis (que aliados ao Bit fantasma de Start e Stop cravam transmissões sequenciais assíncronas isoladas lidas e mapeadas no relógio de parada)."
   },
   {
     "question": "Qual é a principal característica (Topologia) de uma Rede \"Ponto a Ponto\"?",
@@ -1246,8 +1143,7 @@ export const redesEthernetQuestions: Question[] = [
       "Usa FDDI com counter rotation cego na topologia anel p/ barramento Thick.",
       "Interliga roteadores por Distance Vector via RS-232 em loop do modelo BGP sem ping externo."
     ],
-    "answer": "Canal de conexão exclusiva, ligando exatamente dois únicos computadores onde ambos detém a posse e regras estritas do caminho, ditando formato e protegendo a segurança máxima e a privacidade dos bits.",
-    "explanation": "A alternativa correta é a letra A. Canal de conexão exclusiva, ligando exatamente dois únicos computadores onde ambos detém a posse e regras estritas do caminho, ditando formato e protegendo a segurança máxima e a privacidade dos bits."
+    "answer": "Canal de conexão exclusiva, ligando exatamente dois únicos computadores onde ambos detém a posse e regras estritas do caminho, ditando formato e protegendo a segurança máxima e a privacidade dos bits."
   },
   {
     "question": "Redes locais de Topologia \"Anel\" agrupam equipamentos enfileirados em círculo e exigem (para seu êxito natural):",
@@ -1258,8 +1154,7 @@ export const redesEthernetQuestions: Question[] = [
       "Isolam as fibras opticas em redes OSPF estáticas no modelo de Distance Vetorial no TCP IPv6 cego.",
       "Permitem paralelismo de 1 PC por segmento num hub emulativo do Router (Switching)."
     ],
-    "answer": "Que um cabo conecte o PC1 ao PC2, e o PC2 ao PC3 sucessivamente até fechar o circuito no 1; tornando absurdamente trivial a coordenação física e rastreio, porém fatalmente vulnerável a quedas no instante que 1 micro ali morre bloqueando as artérias do trânsito na via fechada.",
-    "explanation": "A alternativa correta é a letra A. Que um cabo conecte o PC1 ao PC2, e o PC2 ao PC3 sucessivamente até fechar o circuito no 1; tornando absurdamente trivial a coordenação física e rastreio, porém fatalmente vulnerável a quedas no instante que 1 micro ali morre bloqueando as artérias do trânsito na via fechada."
+    "answer": "Que um cabo conecte o PC1 ao PC2, e o PC2 ao PC3 sucessivamente até fechar o circuito no 1; tornando absurdamente trivial a coordenação física e rastreio, porém fatalmente vulnerável a quedas no instante que 1 micro ali morre bloqueando as artérias do trânsito na via fechada."
   },
   {
     "question": "Por que o modelo \"Hub\" tem limite na eficiência se expandido para redes grandes?",
@@ -1270,8 +1165,7 @@ export const redesEthernetQuestions: Question[] = [
       "O hub estático é incapaz de ler o Start bit do RS 232 do AUI BNC transceiver analógico do SPF link state vetor distância CSMA de CSMA cega emulando a ponte cega e par trançado do Thick Thin FDDI do ping ICMP.",
       "Nada acima."
     ],
-    "answer": "Porque ele simula a arcaica rede coaxial compartilhada onde apenas dois micros podem falar simultaneamente nas portas; e no fundo continua sendo uma rede sujeita a colisões, só aglutinada num emaranhado paralelo plástico da caixa do RJ-45 em topologia estrela de fiação elétrica repetidora no gargalo limitante.",
-    "explanation": "A alternativa correta é a letra A. Porque ele simula a arcaica rede coaxial compartilhada onde apenas dois micros podem falar simultaneamente nas portas; e no fundo continua sendo uma rede sujeita a colisões, só aglutinada num emaranhado paralelo plástico da caixa do RJ-45 em topologia estrela de fiação elétrica repetidora no gargalo limitante."
+    "answer": "Porque ele simula a arcaica rede coaxial compartilhada onde apenas dois micros podem falar simultaneamente nas portas; e no fundo continua sendo uma rede sujeita a colisões, só aglutinada num emaranhado paralelo plástico da caixa do RJ-45 em topologia estrela de fiação elétrica repetidora no gargalo limitante."
   },
   {
     "question": "Sobre a restrição de \"Acesso e Interceptação\" no Hub: como ela veda interceptação física?",
@@ -1282,8 +1176,7 @@ export const redesEthernetQuestions: Question[] = [
       "Isolando todo o cabo na topologia BNC T do cabo 10BASE5.",
       "Criptografando a voltagem da energia do Hub."
     ],
-    "answer": "Restringindo eletronicamente a entrega do tráfego: O pacote só será exposto e jogado ativamente numa porta X se aquele endereço de rede daquela porta bater e coincidir fidedigno ao destino exato do datagrama lido e checado; blindando portas alheias da vizinhança na placa passiva contra os grampos do tráfego de terceiro cruzando as pontes paralelas de intrometidos com promiscuous mode dos snifers e atacantes de intrusão LAN.",
-    "explanation": "A alternativa correta é a letra A. Restringindo eletronicamente a entrega do tráfego: O pacote só será exposto e jogado ativamente numa porta X se aquele endereço de rede daquela porta bater e coincidir fidedigno ao destino exato do datagrama lido e checado; blindando portas alheias da vizinhança na placa passiva contra os grampos do tráfego de terceiro cruzando as pontes paralelas de intrometidos com promiscuous mode dos snifers e atacantes de intrusão LAN."
+    "answer": "Restringindo eletronicamente a entrega do tráfego: O pacote só será exposto e jogado ativamente numa porta X se aquele endereço de rede daquela porta bater e coincidir fidedigno ao destino exato do datagrama lido e checado; blindando portas alheias da vizinhança na placa passiva contra os grampos do tráfego de terceiro cruzando as pontes paralelas de intrometidos com promiscuous mode dos snifers e atacantes de intrusão LAN."
   },
   {
     "question": "Ao longo de 500 metros uma LAN sofre o quê na fiação de cobre?",
@@ -1294,8 +1187,7 @@ export const redesEthernetQuestions: Question[] = [
       "Conversão espontânea p/ RS-232 em fiação BNC UTP 5e pino a pino.",
       "Aumento exponencial do ruído MAC limitante em frames explícitos do FDDI BGP de TCP cego."
     ],
-    "answer": "Sofre o estrangulamento da placa de rede NIC, cujos pulsos e forças elétricas atenuam e decaem pelo tamanho grotesco até diluírem de vez nos íons limitando os bits do sinal na casa morta da propagação do cobre no fio físico desamparado na porta (limitação da física pela distância da fiação limpa).",
-    "explanation": "A alternativa correta é a letra B. Sofre o estrangulamento da placa de rede NIC, cujos pulsos e forças elétricas atenuam e decaem pelo tamanho grotesco até diluírem de vez nos íons limitando os bits do sinal na casa morta da propagação do cobre no fio físico desamparado na porta (limitação da física pela distância da fiação limpa)."
+    "answer": "Sofre o estrangulamento da placa de rede NIC, cujos pulsos e forças elétricas atenuam e decaem pelo tamanho grotesco até diluírem de vez nos íons limitando os bits do sinal na casa morta da propagação do cobre no fio físico desamparado na porta (limitação da física pela distância da fiação limpa)."
   },
   {
     "question": "O Equipamento Switch funciona operando qual preceito para melhorar a velocidade real perante Hubs?",
@@ -1306,8 +1198,7 @@ export const redesEthernetQuestions: Question[] = [
       "Apenas manda Ping para descobrir se a placa quebrou no CSMA.",
       "Exclui a necessidade de placa de rede no host de servidor centralizado e roteia na camada de Apresentação (6)."
     ],
-    "answer": "Aplica do Paralelismo maciço e inteligente: Ele emula pontes e bridges simultâneas por porta individualizando cada micro. Micros no segmento 1 falam simultaneamente ao 2 sem chocar ou parar ou colidir a conversa secreta alheia acontecendo ali do lado nas guias do 3 pro 4. É um tráfego independente e protegido.",
-    "explanation": "A alternativa correta é a letra B. Aplica do Paralelismo maciço e inteligente: Ele emula pontes e bridges simultâneas por porta individualizando cada micro. Micros no segmento 1 falam simultaneamente ao 2 sem chocar ou parar ou colidir a conversa secreta alheia acontecendo ali do lado nas guias do 3 pro 4. É um tráfego independente e protegido."
+    "answer": "Aplica do Paralelismo maciço e inteligente: Ele emula pontes e bridges simultâneas por porta individualizando cada micro. Micros no segmento 1 falam simultaneamente ao 2 sem chocar ou parar ou colidir a conversa secreta alheia acontecendo ali do lado nas guias do 3 pro 4. É um tráfego independente e protegido."
   },
   {
     "question": "O conceito clássico de LAN abrangeu historicamente o seu comprimento num ecossistema de:",
@@ -1318,8 +1209,7 @@ export const redesEthernetQuestions: Question[] = [
       "Uma cidade com hubs analógicos de repetidores finos RG-58 BNC.",
       "Cobre AUI isolado de Thicknet de Hub cat 7 blindado UTP paralelo Ethernet FDDI."
     ],
-    "answer": "Um simples prédio ou estrutura fechada em campus local.",
-    "explanation": "A alternativa correta é a letra A. Um simples prédio ou estrutura fechada em campus local."
+    "answer": "Um simples prédio ou estrutura fechada em campus local."
   },
   {
     "question": "Qual o nome das duas engrenagens/mecanismos estritos fundamentais por onde uma \"WAN Privada Corporativa\", como a do texto, navega na estrutura limitante global?",
@@ -1330,8 +1220,7 @@ export const redesEthernetQuestions: Question[] = [
       "CSMA/CD em rádio enlace s/ VPN.",
       "AUI e Transceiver blindado Ethernet pino a pino 1Gbps Crossover."
     ],
-    "answer": "Circuitos alugados de operadoras telefônicas nas conexões cruzadas do globo, aliadas a potentes Packet Switches e redes criptográficas (VPN) para atarem os pontos como nós privados das cidades cegas.",
-    "explanation": "A alternativa correta é a letra C. Circuitos alugados de operadoras telefônicas nas conexões cruzadas do globo, aliadas a potentes Packet Switches e redes criptográficas (VPN) para atarem os pontos como nós privados das cidades cegas."
+    "answer": "Circuitos alugados de operadoras telefônicas nas conexões cruzadas do globo, aliadas a potentes Packet Switches e redes criptográficas (VPN) para atarem os pontos como nós privados das cidades cegas."
   },
   {
     "question": "WAN atua no Padrão de Roteamento Dinâmico para:",
@@ -1342,8 +1231,7 @@ export const redesEthernetQuestions: Question[] = [
       "Criar cabos de 200m paralelos isolados na camada de OSI 4 de Transportes assíncronos.",
       "Reduzir o Overhead de CRC e MAC para Jumbo Frames em IP de Borda Cega no TCP Assíncrono limitador."
     ],
-    "answer": "Absorver flexibilidade e fugir da morte de nós quebrados da rede: se o cabo do Brasil à NY quebrar na malha mundial o switch contorna a tragédia alterando as rotas da tabela sozinho pelos avisos dinâmicos sem paralizar a rede mundial (coisa impossível na engessada via Estática manual inoperante que requer presença e ação na RAM bruta das máquinas físicas isoladas na beira do asfalto pra funcionar de volta o sistema offline na manutenção dura e seca).",
-    "explanation": "A alternativa correta é a letra A. Absorver flexibilidade e fugir da morte de nós quebrados da rede: se o cabo do Brasil à NY quebrar na malha mundial o switch contorna a tragédia alterando as rotas da tabela sozinho pelos avisos dinâmicos sem paralizar a rede mundial (coisa impossível na engessada via Estática manual inoperante que requer presença e ação na RAM bruta das máquinas físicas isoladas na beira do asfalto pra funcionar de volta o sistema offline na manutenção dura e seca)."
+    "answer": "Absorver flexibilidade e fugir da morte de nós quebrados da rede: se o cabo do Brasil à NY quebrar na malha mundial o switch contorna a tragédia alterando as rotas da tabela sozinho pelos avisos dinâmicos sem paralizar a rede mundial (coisa impossível na engessada via Estática manual inoperante que requer presença e ação na RAM bruta das máquinas físicas isoladas na beira do asfalto pra funcionar de volta o sistema offline na manutenção dura e seca)."
   },
   {
     "question": "Redes de \"Serviços de Conexão Orientada\" atuam no TCP. Isso opera de modo assemelhado e análogo ao sistema arcaico de:",
@@ -1354,8 +1242,7 @@ export const redesEthernetQuestions: Question[] = [
       "Fibra Cega de Hub: Isolo o pacote e repito no UDP.",
       "FSK de Roteamento: Static distance estático de OSI."
     ],
-    "answer": "Telefonia: Ligo, ele atende, o laço de conversa vigiada é cravado na conexão contínua invisível e se o cabo cai no meio eu percebo a linha cair na orelha atenta no instante, e no final fechamos com formalidade exata o enlace blindado cego e as portas atentas (Ótimo Fim de Conexão).",
-    "explanation": "A alternativa correta é a letra A. Telefonia: Ligo, ele atende, o laço de conversa vigiada é cravado na conexão contínua invisível e se o cabo cai no meio eu percebo a linha cair na orelha atenta no instante, e no final fechamos com formalidade exata o enlace blindado cego e as portas atentas (Ótimo Fim de Conexão)."
+    "answer": "Telefonia: Ligo, ele atende, o laço de conversa vigiada é cravado na conexão contínua invisível e se o cabo cai no meio eu percebo a linha cair na orelha atenta no instante, e no final fechamos com formalidade exata o enlace blindado cego e as portas atentas (Ótimo Fim de Conexão)."
   },
   {
     "question": "O Serviço Sem Conexão anula burocracias e joga os bytes crus na banda. O custo grave (desvantagem) ao atuar de modo \"análogo aos E-mails\":",
@@ -1366,8 +1253,7 @@ export const redesEthernetQuestions: Question[] = [
       "Emula a entrega Ethernet UTP 5e pino a pino.",
       "Trava no CRC Jumbo Frame FDDI cego de UTP."
     ],
-    "answer": "Não há garantia formal limpa ou notificação pontual em milissegundo trágica sobre erro ou o rompimento cego brusco dos cabos ou nós perdidos isolados depois que as perdas engolfam os pacotes pelo abismo da Nuvem da Rede (e os PCs na vala cega enviam pro além no vácuo de resposta p/ TCP cego do Router ICMP passivo da Rota padrão em Store and Forward das LANs e Switches c/ VPN do MAC de origem).",
-    "explanation": "A alternativa correta é a letra C. Não há garantia formal limpa ou notificação pontual em milissegundo trágica sobre erro ou o rompimento cego brusco dos cabos ou nós perdidos isolados depois que as perdas engolfam os pacotes pelo abismo da Nuvem da Rede (e os PCs na vala cega enviam pro além no vácuo de resposta p/ TCP cego do Router ICMP passivo da Rota padrão em Store and Forward das LANs e Switches c/ VPN do MAC de origem)."
+    "answer": "Não há garantia formal limpa ou notificação pontual em milissegundo trágica sobre erro ou o rompimento cego brusco dos cabos ou nós perdidos isolados depois que as perdas engolfam os pacotes pelo abismo da Nuvem da Rede (e os PCs na vala cega enviam pro além no vácuo de resposta p/ TCP cego do Router ICMP passivo da Rota padrão em Store and Forward das LANs e Switches c/ VPN do MAC de origem)."
   },
   {
     "question": "Quando uma empresa liga Redes Heterogêneas (uma sala roda ATM, a outra Roda Ethernet de cabo grosso) usando os Roteadores e software, a premissa de união cega é nomeada:",
@@ -1378,8 +1264,7 @@ export const redesEthernetQuestions: Question[] = [
       "FSK Baud do Ethernet Ponto-a-Ponto no Thinnet do IPv5 (ST experimental de Borda cega do ICMP).",
       "Distância Vetorial do OSPF de Link-State no Dijkstra Padrão da Rota Cega do Switch de Pacotes Store Foward em Fila de Acesso do Throughput Nominal Isolado do CSMA/CD em 1500 Bytes cravados de Fóton de Luz do Laser Unidirecional Cego Analítico."
     ],
-    "answer": "Internet e o paradigma mágico de Universal Service na Rede Virtual Abstrata (que emenda os formatos bizarros sob o IP comum nas pontas das aplicações de Cima).",
-    "explanation": "A alternativa correta é a letra A. Internet e o paradigma mágico de Universal Service na Rede Virtual Abstrata (que emenda os formatos bizarros sob o IP comum nas pontas das aplicações de Cima)."
+    "answer": "Internet e o paradigma mágico de Universal Service na Rede Virtual Abstrata (que emenda os formatos bizarros sob o IP comum nas pontas das aplicações de Cima)."
   },
   {
     "question": "Sobre O OSI e TCP/IP, as sete camadas OSI nasceram ANTES da revolução da Internet de TCP/IP, por conta disso o OSI:",
@@ -1390,8 +1275,7 @@ export const redesEthernetQuestions: Question[] = [
       "Restringiu VPN a 1Gbps de Gigabit Ethernet FSK pino a pino.",
       "Emula a entrega de IPv6 Multicast em classes D de MAC Estático EPROM na bridge UTP."
     ],
-    "answer": "Não abriga formalmente as nativas e eficientes Camadas de \"Internet\" desenhadas pro roteamento heterogêneo cruzado de roteadores da base do TCP IP 5 cego (o modelo TCP absorve funções em 4 e 5 blocos densos enquanto OSI dilui em 7 teóricas engessadas).",
-    "explanation": "A alternativa correta é a letra A. Não abriga formalmente as nativas e eficientes Camadas de \"Internet\" desenhadas pro roteamento heterogêneo cruzado de roteadores da base do TCP IP 5 cego (o modelo TCP absorve funções em 4 e 5 blocos densos enquanto OSI dilui em 7 teóricas engessadas)."
+    "answer": "Não abriga formalmente as nativas e eficientes Camadas de \"Internet\" desenhadas pro roteamento heterogêneo cruzado de roteadores da base do TCP IP 5 cego (o modelo TCP absorve funções em 4 e 5 blocos densos enquanto OSI dilui em 7 teóricas engessadas)."
   },
   {
     "question": "Pilhas / \"Stacks\": Computadores rodam softwares e pilhas duplas no Kernel (Ex: IPv4 c/ IPv6). Eles enviam bits pelo mesmo RJ-45 isolados e sem dar pau nas redes porque:",
@@ -1402,8 +1286,7 @@ export const redesEthernetQuestions: Question[] = [
       "Roda MACs cruzados BNC RG-58 limitados em 50 ohms do RS-232 em Modems de luz no anel Token de Borda estática.",
       "Nada acima."
     ],
-    "answer": "As Placas nas pontas embutem nos Metadados um \"Campo Tipo\" (Frame Type Field explícito na borda), que pisca e grita e diz formalmente e cirúrgicamente p/ o lado alheio qual exata Pilha TCP ali debaixo deve abraçar e sugar a leitura da carga do Datagrama na montanha das camadas sem misturar o lixo (e garantindo a harmonia paralela cega de redes).",
-    "explanation": "A alternativa correta é a letra C. As Placas nas pontas embutem nos Metadados um \"Campo Tipo\" (Frame Type Field explícito na borda), que pisca e grita e diz formalmente e cirúrgicamente p/ o lado alheio qual exata Pilha TCP ali debaixo deve abraçar e sugar a leitura da carga do Datagrama na montanha das camadas sem misturar o lixo (e garantindo a harmonia paralela cega de redes)."
+    "answer": "As Placas nas pontas embutem nos Metadados um \"Campo Tipo\" (Frame Type Field explícito na borda), que pisca e grita e diz formalmente e cirúrgicamente p/ o lado alheio qual exata Pilha TCP ali debaixo deve abraçar e sugar a leitura da carga do Datagrama na montanha das camadas sem misturar o lixo (e garantindo a harmonia paralela cega de redes)."
   },
   {
     "question": "Qual técnica defende o protocolo na nuvem contra os maliciosos \"Pacotes Duplicados Zumbis\" oriundos do atraso da RAM cega de retransmissão engarrafada nas Fila?",
@@ -1414,8 +1297,7 @@ export const redesEthernetQuestions: Question[] = [
       "Roteadores invertem e codificam a luz no CSMA de barramento FDDI em U (Self Healing Cego limitante das WANs).",
       "VPN isola e desliga o Cabo UTP RJ-45 de 1Gbps Crossover pino a pino do Multiplexador AUI em Thicknet Ethernet analógico do Transceiver RG-8."
     ],
-    "answer": "Sequência rastreável nas veias e numeração do pacote conferido (e anotado à mão pelo software do alvo final) no buffer de recepção: A duplicação é barrada ao cruzar o carimbo número X com a lista de furos sanados. O lixo que repete ali ele mata do jogo sem perturbar a casca das aplicações. (Receptor checa se já entregou ou tá na gaveta).",
-    "explanation": "A alternativa correta é a letra C. Sequência rastreável nas veias e numeração do pacote conferido (e anotado à mão pelo software do alvo final) no buffer de recepção: A duplicação é barrada ao cruzar o carimbo número X com a lista de furos sanados. O lixo que repete ali ele mata do jogo sem perturbar a casca das aplicações. (Receptor checa se já entregou ou tá na gaveta)."
+    "answer": "Sequência rastreável nas veias e numeração do pacote conferido (e anotado à mão pelo software do alvo final) no buffer de recepção: A duplicação é barrada ao cruzar o carimbo número X com a lista de furos sanados. O lixo que repete ali ele mata do jogo sem perturbar a casca das aplicações. (Receptor checa se já entregou ou tá na gaveta)."
   },
   {
     "question": "A Perda e Omissão do pacote ou a Quebra do Checksum da Camada TCP IP da rede causa um transtorno de luto sem ré no roteador:",
@@ -1426,8 +1308,7 @@ export const redesEthernetQuestions: Question[] = [
       "Pára a rede CSMA e aguarda Delay de Acesso.",
       "Ignora o Teorema de Nyquist de Modulação de Fase a 4 bits por baud rate."
     ],
-    "answer": "Ele morre sumário. O Roteador estraçalha no vazio o pacote falho no lixo e sequer avisa ou resmunga p/ ponte origem (a vítima) do Ping de erro de ICMP. Porque ele sequer atesta a validade dos bits do cabeçalho corrompido que denuncia a Origem, agindo à cega por \"Qualquer Custo\".",
-    "explanation": "A alternativa correta é a letra A. Ele morre sumário. O Roteador estraçalha no vazio o pacote falho no lixo e sequer avisa ou resmunga p/ ponte origem (a vítima) do Ping de erro de ICMP. Porque ele sequer atesta a validade dos bits do cabeçalho corrompido que denuncia a Origem, agindo à cega por \"Qualquer Custo\"."
+    "answer": "Ele morre sumário. O Roteador estraçalha no vazio o pacote falho no lixo e sequer avisa ou resmunga p/ ponte origem (a vítima) do Ping de erro de ICMP. Porque ele sequer atesta a validade dos bits do cabeçalho corrompido que denuncia a Origem, agindo à cega por \"Qualquer Custo\"."
   },
   {
     "question": "No fenômeno assustador e crítico da queda em dominó dos provedores (\"Colapso de Congestionamento\"), o que atinge a exaustão física real lá dentro das caixas?",
@@ -1438,8 +1319,7 @@ export const redesEthernetQuestions: Question[] = [
       "O cabo Thin Ethernet desconecta do PC em 50 Ohms.",
       "A antena micro-onda cai pela neve e fumaça local."
     ],
-    "answer": "A Memória RAM Física interna do Packet Switch arria e colapsa com o lote do Store and Foward cheio de pacotes nas filas de roteamento da Borda, e os datagramas escorrem pra lixeira descartados num massacre silencioso causando o loop insano das máquinas reporem o atraso piorando e derretendo os fios do planeta em Pânico Sistêmico na Rede Inoperante instável mundial das fiações (causa real instável da WAN limitante).",
-    "explanation": "A alternativa correta é a letra C. A Memória RAM Física interna do Packet Switch arria e colapsa com o lote do Store and Foward cheio de pacotes nas filas de roteamento da Borda, e os datagramas escorrem pra lixeira descartados num massacre silencioso causando o loop insano das máquinas reporem o atraso piorando e derretendo os fios do planeta em Pânico Sistêmico na Rede Inoperante instável mundial das fiações (causa real instável da WAN limitante)."
+    "answer": "A Memória RAM Física interna do Packet Switch arria e colapsa com o lote do Store and Foward cheio de pacotes nas filas de roteamento da Borda, e os datagramas escorrem pra lixeira descartados num massacre silencioso causando o loop insano das máquinas reporem o atraso piorando e derretendo os fios do planeta em Pânico Sistêmico na Rede Inoperante instável mundial das fiações (causa real instável da WAN limitante)."
   },
   {
     "question": "Como a indústria lida para fugir do \"Colapso\" e prevenir o gargalo no miolo cego nas filas abarrotadas dos Packet Switches antes que os roteadores pifem a internet?",
@@ -1450,8 +1330,7 @@ export const redesEthernetQuestions: Question[] = [
       "Injetam Jumbo Frames de 9000 bytes e Token Ping de IPv5 (ST).",
       "Restringem tudo à VPN."
     ],
-    "answer": "Os fabricantes e engenheiros implementam 2 abordagens: (1) criaram a inteligência onde os próprios Equipamentos (Switches) enviam alarmes nas costas na via oposta pedindo à força que quem cospe bits recue ou pare de entupir o tubo à frente e (2) usam a taxa da perda passiva estagnada e cega na nuvem da Aplicação ali na frente como estimativa bruta matemática de pane para que as máquinas de origem atenuem e controlem sua vazão à cega retroativamente salvando a rota (Adaptação cega reativa).",
-    "explanation": "A alternativa correta é a letra A. Os fabricantes e engenheiros implementam 2 abordagens: (1) criaram a inteligência onde os próprios Equipamentos (Switches) enviam alarmes nas costas na via oposta pedindo à força que quem cospe bits recue ou pare de entupir o tubo à frente e (2) usam a taxa da perda passiva estagnada e cega na nuvem da Aplicação ali na frente como estimativa bruta matemática de pane para que as máquinas de origem atenuem e controlem sua vazão à cega retroativamente salvando a rota (Adaptação cega reativa)."
+    "answer": "Os fabricantes e engenheiros implementam 2 abordagens: (1) criaram a inteligência onde os próprios Equipamentos (Switches) enviam alarmes nas costas na via oposta pedindo à força que quem cospe bits recue ou pare de entupir o tubo à frente e (2) usam a taxa da perda passiva estagnada e cega na nuvem da Aplicação ali na frente como estimativa bruta matemática de pane para que as máquinas de origem atenuem e controlem sua vazão à cega retroativamente salvando a rota (Adaptação cega reativa)."
   },
   {
     "question": "Na visão acadêmica das Ferramentas (Como ping e traceroute), as falhas das vias que forçam a Internet ser particionada ou datagramas caírem mortos e gerarem avisos retroativos formatados às máquinas sobre a agonia do ambiente isolado, é competência do protocolo amarrado em IP Cego:",
@@ -1462,7 +1341,6 @@ export const redesEthernetQuestions: Question[] = [
       "CSMA de Multiplexador.",
       "Nenhuma é correta."
     ],
-    "answer": "O ICMP (Internet Control Message Protocol). Peça atrelada na pilha que navega à moda de carona (embutido nas vísceras do próprio IP transportador para trafegar nos cabos) entregando aos gestores das estações o retrato doloroso (mensagens formatadas e pré-fabricadas, Echo Request e Reply ou Unreachable) de que as artérias dos fios, saltos, ou TTLs desabaram no roteamento e a entrega crua base da internet arriou na beira do vácuo da porta (Erro menos sério que a corrupção brutal mas essencial nas ferramentas do Administrador da fiação e LANs e Diagnóstico real limitante das redes).",
-    "explanation": "A alternativa correta é a letra B. O ICMP (Internet Control Message Protocol). Peça atrelada na pilha que navega à moda de carona (embutido nas vísceras do próprio IP transportador para trafegar nos cabos) entregando aos gestores das estações o retrato doloroso (mensagens formatadas e pré-fabricadas, Echo Request e Reply ou Unreachable) de que as artérias dos fios, saltos, ou TTLs desabaram no roteamento e a entrega crua base da internet arriou na beira do vácuo da porta (Erro menos sério que a corrupção brutal mas essencial nas ferramentas do Administrador da fiação e LANs e Diagnóstico real limitante das redes)."
+    "answer": "O ICMP (Internet Control Message Protocol). Peça atrelada na pilha que navega à moda de carona (embutido nas vísceras do próprio IP transportador para trafegar nos cabos) entregando aos gestores das estações o retrato doloroso (mensagens formatadas e pré-fabricadas, Echo Request e Reply ou Unreachable) de que as artérias dos fios, saltos, ou TTLs desabaram no roteamento e a entrega crua base da internet arriou na beira do vácuo da porta (Erro menos sério que a corrupção brutal mas essencial nas ferramentas do Administrador da fiação e LANs e Diagnóstico real limitante das redes)."
   }
 ];
