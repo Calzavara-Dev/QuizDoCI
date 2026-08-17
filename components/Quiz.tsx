@@ -515,48 +515,15 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
           >
             <div>
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-                {currentQuestion.topic && (
-                  <span className="text-xs font-medium text-slate-400">
-                    {currentQuestion.topic.replace(/\s*\[.*\]/, '').trim()}
+                {currentQuestion.options && currentQuestion.options.length > 2 ? (
+                  <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm">
+                    ✓ Múltipla Escolha
+                  </span>
+                ) : (
+                  <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm">
+                    ⚡ Questão Direta
                   </span>
                 )}
-                {(() => {
-                  const topicStr = (currentQuestion.topic || "").toLowerCase();
-                  if (topicStr.includes("múltipla escolha") || topicStr.includes("multipla escolha")) {
-                    return (
-                      <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm">
-                        ✓ Múltipla Escolha
-                      </span>
-                    );
-                  }
-                  if (topicStr.includes("questão direta") || topicStr.includes("questao direta")) {
-                    return (
-                      <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm">
-                        ⚡ Questão Direta
-                      </span>
-                    );
-                  }
-                  if (topicStr.includes("questão discursiva") || topicStr.includes("questao discursiva")) {
-                    return (
-                      <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/40 shadow-sm">
-                        📝 Questão Discursiva
-                      </span>
-                    );
-                  }
-                  // Fallback para caso o cache do celular não tenha a tag no texto do topic
-                  if (currentQuestion.options && currentQuestion.options.length > 2) {
-                    return (
-                      <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-sm">
-                        ✓ Múltipla Escolha
-                      </span>
-                    );
-                  }
-                  return (
-                    <span className="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-sm">
-                      ⚡ Questão Direta
-                    </span>
-                  );
-                })()}
               </div>
               <h2 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-4 sm:mb-6 leading-relaxed">
                 {currentQuestion.question}

@@ -96,7 +96,6 @@ export const fetchRemoteQuestions = async (quizId?: string): Promise<Record<stri
           question: row.question,
           options: Array.isArray(parsedOptions) ? parsedOptions : [],
           answer: row.answer,
-          topic: row.topic || undefined,
           image: row.image || undefined,
         });
       }
@@ -120,14 +119,13 @@ export const saveRemoteQuestions = async (quizId: string, questions: Question[])
       question: q.question,
       options: q.options,
       answer: q.answer,
-      topic: q.topic || null,
       image: q.image || null,
       updated_at: new Date().toISOString(),
     }));
 
     const { error } = await supabase.from("quiz_questions").insert(rowsFull);
     if (error) {
-      console.warn("Aviso na inserção completa (tentando fallback sem topic/image):", error.message);
+      console.warn("Aviso na inserção completa (tentando fallback sem image):", error.message);
       const rowsBasic = questions.map((q) => ({
         quiz_id: quizId,
         question: q.question,

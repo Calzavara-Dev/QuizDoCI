@@ -10,8 +10,7 @@ export const anemometrosQuestions: Question[] = [
       "Frequência e fase.",
       "Potência e resistência."
     ],
-    "answer": "Velocidade e direção.",
-    "topic": "Anemômetros"
+    "answer": "Velocidade e direção."
   },
   {
     "question": "Quais os potenciômetros responsáveis pelo ajuste de amortecimento e pelo ajuste do zero (calibrador do mostrador) do servo de velocidade do anemômetro EVERSHED?",
@@ -22,8 +21,7 @@ export const anemometrosQuestions: Question[] = [
       "RV4 e RV1.",
       "RV3 e RV5."
     ],
-    "answer": "RV3 e RV4.",
-    "topic": "Anemômetros"
+    "answer": "RV3 e RV4."
   },
   {
     "question": "No subconjunto de direção do vento do sistema tipo B, qual componente aciona o transmissor síncro 5HG?",
@@ -34,8 +32,7 @@ export const anemometrosQuestions: Question[] = [
       "Gerador de indução.",
       "Motor de frequência constante."
     ],
-    "answer": "Motor de acompanhamento.",
-    "topic": "Anemômetros"
+    "answer": "Motor de acompanhamento."
   },
   {
     "question": "O que ocorrerá no sistema tipo B quando os rotores dos transmissores de direção da aleta e do transformador síncro de controle (CT) estiverem em correspondência?",
@@ -46,8 +43,7 @@ export const anemometrosQuestions: Question[] = [
       "O alarme de avaria soará.",
       "O transmissor 5HG inverterá a fase."
     ],
-    "answer": "A saída (sinal de erro) do CT será zero volts.",
-    "topic": "Anemômetros"
+    "answer": "A saída (sinal de erro) do CT será zero volts."
   },
   {
     "question": "No anemômetro tipo B, quando os rotores 1HG e 1HCT estiverem em correspondência, a saída do transformador de controle (CT) será de:",
@@ -58,8 +54,7 @@ export const anemometrosQuestions: Question[] = [
       "0 Volts.",
       "400 Volts."
     ],
-    "answer": "0 Volts.",
-    "topic": "Anemômetros"
+    "answer": "0 Volts."
   },
   {
     "question": "Qual é a alimentação necessária para a iluminação do painel de controle do anemômetro EVERSHED?",
@@ -70,8 +65,7 @@ export const anemometrosQuestions: Question[] = [
       "26V / 400Hz.",
       "12 Volts."
     ],
-    "answer": "24 Volts.",
-    "topic": "Anemômetros"
+    "answer": "24 Volts."
   },
   {
     "question": "No anemômetro EVERSHED, qual é a variação de voltagem medida entre os pontos de teste TP6 e TP7?",
@@ -82,8 +76,7 @@ export const anemometrosQuestions: Question[] = [
       "100 a 115V.",
       "0 a 6V."
     ],
-    "answer": "0 a 100mV.",
-    "topic": "Anemômetros"
+    "answer": "0 a 100mV."
   },
   {
     "question": "No anemômetro tipo B, o sinal elétrico que chega ao amplificador é oriundo do síncro do tipo:",
@@ -94,8 +87,7 @@ export const anemometrosQuestions: Question[] = [
       "LINVAR.",
       "18TR6."
     ],
-    "answer": "1HCT.",
-    "topic": "Anemômetros"
+    "answer": "1HCT."
   },
   {
     "question": "Qual chave do sistema EVERSHED habilita os 10V provenientes do transformador T1 para os testes de direção?",
@@ -106,8 +98,7 @@ export const anemometrosQuestions: Question[] = [
       "Chave S1.",
       "Chave de limite inferior."
     ],
-    "answer": "Chave S1.",
-    "topic": "Anemômetros"
+    "answer": "Chave S1."
   },
   {
     "question": "Descreva como está instalado o transmissor síncro de velocidade do sistema tipo B.",
@@ -118,8 +109,7 @@ export const anemometrosQuestions: Question[] = [
       "Dentro da Unidade de Retransmissão (RTU), montado em placa de circuito impresso.",
       "Acoplado diretamente ao eixo do servo motor de acompanhamento M2."
     ],
-    "answer": "Na Praça de Comunicações Interiores (PCI), composto pelo subconjunto de velocidade e direção do vento montados em chapa base, envolvidos em uma carcaça metálica para instalação em antepara.",
-    "topic": "Anemômetros"
+    "answer": "Na Praça de Comunicações Interiores (PCI), composto pelo subconjunto de velocidade e direção do vento montados em chapa base, envolvidos em uma carcaça metálica para instalação em antepara."
   },
   {
     "question": "Analisando o diagrama do conjunto de direção do vento do sistema tipo F, qual é a frequência de operação do transmissor de controle?",
@@ -130,8 +120,7 @@ export const anemometrosQuestions: Question[] = [
       "1000 Hz.",
       "100 Hz."
     ],
-    "answer": "400 Hz.",
-    "topic": "Anemômetros"
+    "answer": "400 Hz."
   },
   {
     "question": "Analisando o diagrama do sistema EVERSHED, o que acontecerá se houver uma avaria no resistor R13?",
@@ -142,8 +131,7 @@ export const anemometrosQuestions: Question[] = [
       "Não haverá a regulagem de tensão para a chave S3 (115V / 400Hz).",
       "O sinal de erro do Transformador de Controle (CT) será máximo."
     ],
-    "answer": "Não haverá a regulagem de tensão para a chave S3 (115V / 400Hz).",
-    "topic": "Anemômetros"
+    "answer": "Não haverá a regulagem de tensão para a chave S3 (115V / 400Hz)."
   },
   {
     "question": "O síncro LINVAR do sistema EVERSHED fornece uma realimentação de:",
@@ -154,8 +142,7 @@ export const anemometrosQuestions: Question[] = [
       "0 a 10 VCA.",
       "0 a 100 mV."
     ],
-    "answer": "0 a 40 VCA.",
-    "topic": "Anemômetros"
+    "answer": "0 a 40 VCA."
   },
   {
     "question": "No anemômetro EVERSHED, o sinal elétrico que vai do CX para a unidade de correção de dados do vento alimenta o estator de qual componente?",
@@ -166,8 +153,7 @@ export const anemometrosQuestions: Question[] = [
       "Gerador de Indução.",
       "Integrador Mecânico."
     ],
-    "answer": "Transformador de Controle (CT).",
-    "topic": "Anemômetros"
+    "answer": "Transformador de Controle (CT)."
   },
   {
     "question": "No sistema EVERSHED, quando os sinais medidos no potenciômetro RV4 e no resistor R11 são iguais e opostos, a velocidade do servo motor é de:",
@@ -178,8 +164,7 @@ export const anemometrosQuestions: Question[] = [
       "65 RPM.",
       "0 RPM."
     ],
-    "answer": "0 RPM.",
-    "topic": "Anemômetros"
+    "answer": "0 RPM."
   },
   {
     "question": "No servo de velocidade do sistema EVERSHED, qual componente é responsável por comandar o síncro LINVAR?",
@@ -190,8 +175,7 @@ export const anemometrosQuestions: Question[] = [
       "Chave de teste S1.",
       "Gerador de indução."
     ],
-    "answer": "Redutor de erros.",
-    "topic": "Anemômetros"
+    "answer": "Redutor de erros."
   },
   {
     "question": "No conjunto de velocidade do sistema tipo B, a unidade síncrona que gira na mesma razão do transmissor (TX) acoplado à hélice é um:",
@@ -202,8 +186,7 @@ export const anemometrosQuestions: Question[] = [
       "Transmissor de Controle (CX).",
       "Motor de acompanhamento."
     ],
-    "answer": "Síncro Receptor (TR).",
-    "topic": "Anemômetros"
+    "answer": "Síncro Receptor (TR)."
   },
   {
     "question": "Qual componente do sistema tipo B converte o movimento rotativo em angular no conjunto de velocidade do vento?",
@@ -214,8 +197,7 @@ export const anemometrosQuestions: Question[] = [
       "Gerador de indução.",
       "Servo motor."
     ],
-    "answer": "Integrador mecânico.",
-    "topic": "Anemômetros"
+    "answer": "Integrador mecânico."
   },
   {
     "question": "A informação elétrica que sai do Transformador de Controle (CT), vinda diretamente do transmissor de direção do anemômetro tipo F, é chamada de sinal de:",
@@ -226,8 +208,7 @@ export const anemometrosQuestions: Question[] = [
       "Erro.",
       "Realimentação."
     ],
-    "answer": "Erro.",
-    "topic": "Anemômetros"
+    "answer": "Erro."
   },
   {
     "question": "Quais são as posições da chave de teste de velocidade do sistema de anemômetro EVERSHED?",
@@ -238,8 +219,7 @@ export const anemometrosQuestions: Question[] = [
       "0, 15, 30, 45 e 60 nós.",
       "RUN e TEST."
     ],
-    "answer": "RUN, 15, 30 e 45 nós.",
-    "topic": "Anemômetros"
+    "answer": "RUN, 15, 30 e 45 nós."
   },
   {
     "question": "No sistema tipo B, a unidade síncrona que aciona os discos de fricção do integrador mecânico é o:",
@@ -250,8 +230,7 @@ export const anemometrosQuestions: Question[] = [
       "Gerador de indução.",
       "Síncro transmissor (TX)."
     ],
-    "answer": "Motor de frequência constante.",
-    "topic": "Anemômetros"
+    "answer": "Motor de frequência constante."
   },
   {
     "question": "No anemômetro EVERSHED, ao deslocarmos a chave S1 da posição \"NORMAL\" para as posições de teste, estamos aplicando qual sinal no estator do Transformador de Controle (CT)?",
@@ -262,8 +241,7 @@ export const anemometrosQuestions: Question[] = [
       "60V / 400Hz.",
       "1V / 400Hz."
     ],
-    "answer": "10V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "10V / 400Hz."
   },
   {
     "question": "Qual é a alimentação do síncro LINVAR do sistema EVERSHED?",
@@ -274,8 +252,7 @@ export const anemometrosQuestions: Question[] = [
       "60V / 400Hz.",
       "10V / 400Hz."
     ],
-    "answer": "60V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "60V / 400Hz."
   },
   {
     "question": "No servo de direção do anemômetro EVERSHED, qual componente posiciona o Transformador de Controle (CT) para anular o sinal de erro?",
@@ -286,8 +263,7 @@ export const anemometrosQuestions: Question[] = [
       "Potenciômetro RV1.",
       "Integrador mecânico."
     ],
-    "answer": "Motor de acompanhamento (Servo motor).",
-    "topic": "Anemômetros"
+    "answer": "Motor de acompanhamento (Servo motor)."
   },
   {
     "question": "No anemômetro tipo B, a unidade síncrona que é diretamente acoplada à aleta é um:",
@@ -298,8 +274,7 @@ export const anemometrosQuestions: Question[] = [
       "Motor de frequência constante.",
       "Síncro LINVAR."
     ],
-    "answer": "Transmissor síncro (TX).",
-    "topic": "Anemômetros"
+    "answer": "Transmissor síncro (TX)."
   },
   {
     "question": "Qual é a finalidade da microchave do sistema tipo B, localizada no conjunto de velocidade do vento?",
@@ -310,8 +285,7 @@ export const anemometrosQuestions: Question[] = [
       "Fechar o circuito do integrador mecânico apenas na velocidade máxima.",
       "Acionar os transmissores síncronos de direção de forma assíncrona."
     ],
-    "answer": "Abrir o circuito do motor de frequência constante (FC) quando a velocidade for nula (zero).",
-    "topic": "Anemômetros"
+    "answer": "Abrir o circuito do motor de frequência constante (FC) quando a velocidade for nula (zero)."
   },
   {
     "question": "Qual componente do servo de direção do anemômetro EVERSHED aciona mecanicamente os transmissores de direção?",
@@ -322,8 +296,7 @@ export const anemometrosQuestions: Question[] = [
       "Gerador de indução.",
       "Taco-gerador (TG-2)."
     ],
-    "answer": "Redutor de erros.",
-    "topic": "Anemômetros"
+    "answer": "Redutor de erros."
   },
   {
     "question": "No anemômetro das fragatas, qual é a alimentação da unidade síncro que envia um sinal elétrico para a unidade de correção de dados do vento?",
@@ -334,8 +307,7 @@ export const anemometrosQuestions: Question[] = [
       "115V / 400Hz.",
       "115V / 60Hz."
     ],
-    "answer": "115V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz."
   },
   {
     "question": "No anemômetro EVERSHED das fragatas, o dispositivo elétrico cujo sinal de saída se opõe ao sinal que aparece no resistor R11 é o:",
@@ -346,8 +318,7 @@ export const anemometrosQuestions: Question[] = [
       "Potenciômetro RV4.",
       "Potenciômetro RV5."
     ],
-    "answer": "Potenciômetro RV4.",
-    "topic": "Anemômetros"
+    "answer": "Potenciômetro RV4."
   },
   {
     "question": "Qual é a alimentação específica para o transmissor síncro de direção do vento do anemômetro EVERSHED?",
@@ -358,8 +329,7 @@ export const anemometrosQuestions: Question[] = [
       "26V / 400Hz.",
       "10V / 400Hz."
     ],
-    "answer": "26V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "26V / 400Hz."
   },
   {
     "question": "Qual é a alimentação para o painel de controle do sistema EVERSHED?",
@@ -370,8 +340,7 @@ export const anemometrosQuestions: Question[] = [
       "60V / 400Hz.",
       "10V / 400Hz."
     ],
-    "answer": "115V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz."
   },
   {
     "question": "Qual é o princípio de funcionamento do detetor do sistema EVERSHED?",
@@ -382,8 +351,7 @@ export const anemometrosQuestions: Question[] = [
       "Integrador mecânico.",
       "Motor de passo."
     ],
-    "answer": "Gerador de indução.",
-    "topic": "Anemômetros"
+    "answer": "Gerador de indução."
   },
   {
     "question": "No sistema EVERSHED, no detetor da unidade de velocidade, qual componente vem com ajuste de fábrica?",
@@ -394,8 +362,7 @@ export const anemometrosQuestions: Question[] = [
       "Síncro LINVAR.",
       "Motor M2."
     ],
-    "answer": "Reostato.",
-    "topic": "Anemômetros"
+    "answer": "Reostato."
   },
   {
     "question": "Quais os transmissores síncronos do anemômetro tipo F que são posicionados pelo servo de direção?",
@@ -406,8 +373,7 @@ export const anemometrosQuestions: Question[] = [
       "5HG e 5HCT.",
       "18CX4 e 18CT4."
     ],
-    "answer": "37TX6 e 31TX4.",
-    "topic": "Anemômetros"
+    "answer": "37TX6 e 31TX4."
   },
   {
     "question": "Quais os tipos de indicadores síncronos utilizados pelo sistema tipo F?",
@@ -418,8 +384,7 @@ export const anemometrosQuestions: Question[] = [
       "5HG e 5HCT.",
       "18CX4 e 18CT4."
     ],
-    "answer": "18TR6 e 18TR4.",
-    "topic": "Anemômetros"
+    "answer": "18TR6 e 18TR4."
   },
   {
     "question": "Qual é o intervalo em nós do dial de velocidade do sistema tipo F?",
@@ -430,8 +395,7 @@ export const anemometrosQuestions: Question[] = [
       "10 nós.",
       "15 nós."
     ],
-    "answer": "5 nós.",
-    "topic": "Anemômetros"
+    "answer": "5 nós."
   },
   {
     "question": "No sistema EVERSHED, cite qual dispositivo do servo de direção trabalha como gerador de sinal de erro:",
@@ -442,8 +406,7 @@ export const anemometrosQuestions: Question[] = [
       "Transmissor de Controle (CX).",
       "Síncro LINVAR."
     ],
-    "answer": "Síncro Transmissor (TX) da unidade detetora.",
-    "topic": "Anemômetros"
+    "answer": "Síncro Transmissor (TX) da unidade detetora."
   },
   {
     "question": "Cite a alimentação principal para o anemômetro EVERSHED:",
@@ -454,8 +417,7 @@ export const anemometrosQuestions: Question[] = [
       "60V / 400Hz.",
       "10V / 400Hz."
     ],
-    "answer": "115V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz."
   },
   {
     "question": "Qual dispositivo do servo de direção do sistema EVERSHED é responsável por reposicionar o rotor do CT, reduzindo o sinal de erro?",
@@ -466,8 +428,7 @@ export const anemometrosQuestions: Question[] = [
       "Motor de acompanhamento M2 (Servo motor).",
       "Gerador de indução."
     ],
-    "answer": "Motor de acompanhamento M2 (Servo motor).",
-    "topic": "Anemômetros"
+    "answer": "Motor de acompanhamento M2 (Servo motor)."
   },
   {
     "question": "Cite um dispositivo do servo de velocidade do sistema EVERSHED responsável pelo amortecimento das oscilações:",
@@ -478,8 +439,7 @@ export const anemometrosQuestions: Question[] = [
       "Taco-gerador TG-2.",
       "Motor de acompanhamento M2."
     ],
-    "answer": "Engrenagem redutora 2000/1 e o potenciômetro RV3.",
-    "topic": "Anemômetros"
+    "answer": "Engrenagem redutora 2000/1 e o potenciômetro RV3."
   },
   {
     "question": "Qual é a razão de transformação do conjunto de engrenagens no servo de velocidade caso o navio necessite usar receptores de 180 nós?",
@@ -490,8 +450,7 @@ export const anemometrosQuestions: Question[] = [
       "1:1.",
       "10:1."
     ],
-    "answer": "2,4:1.",
-    "topic": "Anemômetros"
+    "answer": "2,4:1."
   },
   {
     "question": "Qual a finalidade do capacitor C3 no servo de velocidade do sistema EVERSHED?",
@@ -502,8 +461,7 @@ export const anemometrosQuestions: Question[] = [
       "Regular a tensão de saída do LINVAR.",
       "Converter o movimento rotativo em angular."
     ],
-    "answer": "Aumentar o ganho do servo motor (aumentar o fator de potência).",
-    "topic": "Anemômetros"
+    "answer": "Aumentar o ganho do servo motor (aumentar o fator de potência)."
   },
   {
     "question": "Qual unidade aloja o transformador de 115/6 Volts do anemômetro tipo B?",
@@ -514,8 +472,7 @@ export const anemometrosQuestions: Question[] = [
       "Unidade de Retransmissão.",
       "Caixa de Ligação."
     ],
-    "answer": "Unidade Indicadora.",
-    "topic": "Anemômetros"
+    "answer": "Unidade Indicadora."
   },
   {
     "question": "Qual componente do servo de velocidade do sistema EVERSHED funciona como transdutor?",
@@ -526,8 +483,7 @@ export const anemometrosQuestions: Question[] = [
       "Transformador de controle (CT).",
       "Integrador mecânico."
     ],
-    "answer": "Síncro LINVAR.",
-    "topic": "Anemômetros"
+    "answer": "Síncro LINVAR."
   },
   {
     "question": "Qual a função do motor de acompanhamento do anemômetro tipo F, no conjunto de direção do vento?",
@@ -538,8 +494,7 @@ export const anemometrosQuestions: Question[] = [
       "Converter 115V para 26V.",
       "Acionar o gerador de indução."
     ],
-    "answer": "Transmitir o deslocamento da aleta.",
-    "topic": "Anemômetros"
+    "answer": "Transmitir o deslocamento da aleta."
   },
   {
     "question": "Qual é a função do potenciômetro RV4 do sistema EVERSHED?",
@@ -550,8 +505,7 @@ export const anemometrosQuestions: Question[] = [
       "Faz o ajuste do zero (calibrador do mostrador).",
       "Retifica o sinal elétrico do LINVAR."
     ],
-    "answer": "Faz o ajuste do zero (calibrador do mostrador).",
-    "topic": "Anemômetros"
+    "answer": "Faz o ajuste do zero (calibrador do mostrador)."
   },
   {
     "question": "Qual é a função do potenciômetro RV3 no sistema EVERSHED?",
@@ -562,8 +516,7 @@ export const anemometrosQuestions: Question[] = [
       "Regulação de voltagem do painel.",
       "Calibrador do mostrador."
     ],
-    "answer": "Faz o amortecimento das oscilações.",
-    "topic": "Anemômetros"
+    "answer": "Faz o amortecimento das oscilações."
   },
   {
     "question": "Qual o propósito da Unidade de Retransmissão (RTU) do sistema EVERSHED?",
@@ -574,8 +527,7 @@ export const anemometrosQuestions: Question[] = [
       "Retificar a tensão de 115V para 24V contínuos para a iluminação.",
       "Gerar o sinal de erro para o motor de acompanhamento."
     ],
-    "answer": "Converter os fracos sinais de velocidade e direção do vento vindos do detetor, tornando-os adequados.",
-    "topic": "Anemômetros"
+    "answer": "Converter os fracos sinais de velocidade e direção do vento vindos do detetor, tornando-os adequados."
   },
   {
     "question": "Quais potenciômetros do servo de direção do sistema EVERSHED são responsáveis pela sensibilidade e amortecimento, respectivamente?",
@@ -586,8 +538,7 @@ export const anemometrosQuestions: Question[] = [
       "RV2 e RV3.",
       "RV1 e RV4."
     ],
-    "answer": "RV1 e RV2.",
-    "topic": "Anemômetros"
+    "answer": "RV1 e RV2."
   },
   {
     "question": "Mencione em que consiste basicamente o sistema tipo B:",
@@ -598,8 +549,7 @@ export const anemometrosQuestions: Question[] = [
       "Painel de controle, RTU e síncros.",
       "Hélice, aleta e reostato."
     ],
-    "answer": "Detetor, transmissor e indicador.",
-    "topic": "Anemômetros"
+    "answer": "Detetor, transmissor e indicador."
   },
   {
     "question": "Quais enrolamentos fazem parte do servo motor de direção e velocidade do sistema EVERSHED?",
@@ -610,8 +560,7 @@ export const anemometrosQuestions: Question[] = [
       "Estator e rotor.",
       "Série e paralelo."
     ],
-    "answer": "Fixo e de controle.",
-    "topic": "Anemômetros"
+    "answer": "Fixo e de controle."
   },
   {
     "question": "No anemômetro tipo B, qual será a posição do RODETE na velocidade máxima?",
@@ -622,8 +571,7 @@ export const anemometrosQuestions: Question[] = [
       "Na posição zero elétrico.",
       "Acoplado ao motor de frequência constante."
     ],
-    "answer": "Na periferia do disco.",
-    "topic": "Anemômetros"
+    "answer": "Na periferia do disco."
   },
   {
     "question": "Qual a finalidade do componente DIAC no conjunto de direção do anemômetro tipo F?",
@@ -634,8 +582,7 @@ export const anemometrosQuestions: Question[] = [
       "Aumentar o fator de potência do circuito.",
       "Converter o sinal mecânico do mastro em elétrico."
     ],
-    "answer": "Regular a tensão para o amplificador PC 115A 101.",
-    "topic": "Anemômetros"
+    "answer": "Regular a tensão para o amplificador PC 115A 101."
   },
   {
     "question": "Qual o valor ôhmico do resistor (R-103) do conjunto de velocidade do anemômetro tipo F?",
@@ -646,8 +593,7 @@ export const anemometrosQuestions: Question[] = [
       "100 Ohms.",
       "400 Ohms."
     ],
-    "answer": "60 Ohms.",
-    "topic": "Anemômetros"
+    "answer": "60 Ohms."
   },
   {
     "question": "Qual a frequência de operação do síncro 18CT4 do conjunto de velocidade do anemômetro tipo F?",
@@ -658,8 +604,7 @@ export const anemometrosQuestions: Question[] = [
       "400Hz.",
       "1000Hz."
     ],
-    "answer": "400Hz.",
-    "topic": "Anemômetros"
+    "answer": "400Hz."
   },
   {
     "question": "Qual a função do LINVAR no servo de velocidade do sistema de anemômetro EVERSHED?",
@@ -670,8 +615,7 @@ export const anemometrosQuestions: Question[] = [
       "Amplificar a potência do sinal elétrico.",
       "Funcionar como um regulador de voltagem."
     ],
-    "answer": "Funcionar como um transdutor.",
-    "topic": "Anemômetros"
+    "answer": "Funcionar como um transdutor."
   },
   {
     "question": "Qual amplificador está incluído em cada um dos servos, na Unidade de Retransmissão (RTU) do anemômetro EVERSHED?",
@@ -682,8 +626,7 @@ export const anemometrosQuestions: Question[] = [
       "Amplificador 37TX6.",
       "Amplificador tipo RV4."
     ],
-    "answer": "PA-112-A.",
-    "topic": "Anemômetros"
+    "answer": "PA-112-A."
   },
   {
     "question": "Qual a finalidade do conjunto de engrenagens de razão 2,4:1 no servo de velocidade do anemômetro EVERSHED?",
@@ -694,8 +637,7 @@ export const anemometrosQuestions: Question[] = [
       "Aciona o síncro LINVAR em baixas velocidades.",
       "Amortece as oscilações bruscas do ponteiro indicador."
     ],
-    "answer": "É um sobressalente usado caso o navio necessite de receptores de 180 nós, bastando fazer a troca.",
-    "topic": "Anemômetros"
+    "answer": "É um sobressalente usado caso o navio necessite de receptores de 180 nós, bastando fazer a troca."
   },
   {
     "question": "Cite a finalidade do capacitor C3 no servo de velocidade do anemômetro EVERSHED:",
@@ -706,8 +648,7 @@ export const anemometrosQuestions: Question[] = [
       "Retificar o sinal elétrico de 400Hz.",
       "Regular a tensão de entrada do amplificador PA-112."
     ],
-    "answer": "Aumentar o fator de potência (ganho) do servo motor do sistema de velocidade.",
-    "topic": "Anemômetros"
+    "answer": "Aumentar o fator de potência (ganho) do servo motor do sistema de velocidade."
   },
   {
     "question": "Descreva a finalidade dos capacitores C-105 e C-106 do conjunto de velocidade do anemômetro tipo F:",
@@ -718,8 +659,7 @@ export const anemometrosQuestions: Question[] = [
       "Acionar eletronicamente o motor de frequência constante.",
       "Servir como divisores de tensão para os síncros 18TR6."
     ],
-    "answer": "Melhorar o fator de potência (rendimento), visto que capacitores em paralelo aumentam a capacitância.",
-    "topic": "Anemômetros"
+    "answer": "Melhorar o fator de potência (rendimento), visto que capacitores em paralelo aumentam a capacitância."
   },
   {
     "question": "Caso o Transformador T1 do sistema de alimentação do anemômetro EVERSHED falhe, o que ocorrerá?",
@@ -730,8 +670,7 @@ export const anemometrosQuestions: Question[] = [
       "O síncro LINVAR assumirá o controle enviando o sinal de erro.",
       "A unidade de retransmissão inverterá a fase do sinal de erro de 115V para 26V."
     ],
-    "answer": "O amplificador de potência e o Transmissor (TX) do detector de direção ficarão sem alimentação, o Diodo D1 ficará sem alimentação e o teste de direção não poderá ser realizado.",
-    "topic": "Anemômetros"
+    "answer": "O amplificador de potência e o Transmissor (TX) do detector de direção ficarão sem alimentação, o Diodo D1 ficará sem alimentação e o teste de direção não poderá ser realizado."
   },
   {
     "question": "No anemômetro EVERSHED, quais fusíveis fazem a proteção dos amplificadores (PA112-1 e 2)?",
@@ -742,8 +681,7 @@ export const anemometrosQuestions: Question[] = [
       "F5 e F6.",
       "FS5 e FS6."
     ],
-    "answer": "FS1 e FS2.",
-    "topic": "Anemômetros"
+    "answer": "FS1 e FS2."
   },
   {
     "question": "Analisando o circuito de teste de velocidade do anemômetro EVERSHED, o que acontecerá se houver uma avaria no resistor R15, estando a chave de teste na posição número 4?",
@@ -754,8 +692,7 @@ export const anemometrosQuestions: Question[] = [
       "A indicação de velocidade irá a fundo de escala.",
       "Não haverá alimentação para o teste de velocidade."
     ],
-    "answer": "Não haverá alimentação para o teste de velocidade.",
-    "topic": "Anemômetros"
+    "answer": "Não haverá alimentação para o teste de velocidade."
   },
   {
     "question": "Analisando o diagrama do anemômetro EVERSHED, qual é a finalidade da alimentação de 1 volt, oriunda do Transformador T2?",
@@ -766,8 +703,7 @@ export const anemometrosQuestions: Question[] = [
       "Fornecer o sinal de erro para o síncro LINVAR.",
       "Polarizar os diodos D5 e D6."
     ],
-    "answer": "Alimentar o teste de velocidade.",
-    "topic": "Anemômetros"
+    "answer": "Alimentar o teste de velocidade."
   },
   {
     "question": "Descreva a finalidade do diodo 1 (D1) no servo de velocidade do anemômetro EVERSHED:",
@@ -778,8 +714,7 @@ export const anemometrosQuestions: Question[] = [
       "Proteger o amplificador PA-112 contra inversão de polaridade.",
       "Atuar como estabilizador de voltagem em paralelo com D5 e D6."
     ],
-    "answer": "Retificar em meia onda o sinal de 10V / 400Hz vindo do transformador T1.",
-    "topic": "Anemômetros"
+    "answer": "Retificar em meia onda o sinal de 10V / 400Hz vindo do transformador T1."
   },
   {
     "question": "O que acontecerá se houver uma avaria no resistor R14 (circuito de teste de velocidade) do anemômetro EVERSHED, estando a chave na posição 4?",
@@ -790,8 +725,7 @@ export const anemometrosQuestions: Question[] = [
       "A velocidade indicada será exatamente 45 nós.",
       "Não haverá alimentação para o teste de velocidade."
     ],
-    "answer": "Não haverá alimentação para o teste de velocidade.",
-    "topic": "Anemômetros"
+    "answer": "Não haverá alimentação para o teste de velocidade."
   },
   {
     "question": "Qual a finalidade dos diodos D5 e D6, localizados no painel de distribuição de alimentação do anemômetro EVERSHED?",
@@ -802,8 +736,7 @@ export const anemometrosQuestions: Question[] = [
       "Detectar a correspondência de fase entre TX e CT.",
       "Isolar o circuito de velocidade do circuito de direção."
     ],
-    "answer": "Funcionar como reguladores e estabilizadores de tensão.",
-    "topic": "Anemômetros"
+    "answer": "Funcionar como reguladores e estabilizadores de tensão."
   },
   {
     "question": "No anemômetro EVERSHED, qual ponto de teste é usado como referência (terra) para todas as outras medições?",
@@ -814,8 +747,7 @@ export const anemometrosQuestions: Question[] = [
       "TP7.",
       "TP11."
     ],
-    "answer": "TP6.",
-    "topic": "Anemômetros"
+    "answer": "TP6."
   },
   {
     "question": "Nos navios de origem Americana, os circuitos de anemômetros são identificados por quais designações?",
@@ -826,8 +758,7 @@ export const anemometrosQuestions: Question[] = [
       "\"B1\" para velocidade e \"B2\" para direção.",
       "\"TX\" para intensidade e \"TR\" para direção."
     ],
-    "answer": "\"HE\" para intensidade do vento e \"HD\" para direção do vento.",
-    "topic": "Anemômetros"
+    "answer": "\"HE\" para intensidade do vento e \"HD\" para direção do vento."
   },
   {
     "question": "Descreva as características visuais do anemômetro tipo B:",
@@ -838,8 +769,7 @@ export const anemometrosQuestions: Question[] = [
       "É caracterizado pela ausência de componentes móveis externos (estado sólido).",
       "Consiste em um tubo de Pitot e um catavento montados no mastro principal."
     ],
-    "answer": "Conjunto transmissor de velocidade (com copos/cubas) e transmissor de direção (com aleta/cata-vento), alojados em suas respectivas unidades separadas.",
-    "topic": "Anemômetros"
+    "answer": "Conjunto transmissor de velocidade (com copos/cubas) e transmissor de direção (com aleta/cata-vento), alojados em suas respectivas unidades separadas."
   },
   {
     "question": "O dial de direção do vento do sistema do anemômetro tipo B é graduado em intervalos de:",
@@ -850,8 +780,7 @@ export const anemometrosQuestions: Question[] = [
       "15º de 0º a 360º.",
       "1º de 0º a 100º."
     ],
-    "answer": "10º de 0º a 360º.",
-    "topic": "Anemômetros"
+    "answer": "10º de 0º a 360º."
   },
   {
     "question": "Quais são as variações do anemômetro tipo B?",
@@ -862,8 +791,7 @@ export const anemometrosQuestions: Question[] = [
       "Tipo F e EVERSHED.",
       "Tipo A e Tipo C."
     ],
-    "answer": "B1 e B2.",
-    "topic": "Anemômetros"
+    "answer": "B1 e B2."
   },
   {
     "question": "No anemômetro tipo B, a iluminação para cada conjunto é feita por duas lâmpadas de:",
@@ -874,8 +802,7 @@ export const anemometrosQuestions: Question[] = [
       "6 Volts ligadas em paralelo.",
       "6 Volts ligadas em série."
     ],
-    "answer": "6 Volts ligadas em paralelo.",
-    "topic": "Anemômetros"
+    "answer": "6 Volts ligadas em paralelo."
   },
   {
     "question": "De que consiste o conjunto de direção do anemômetro tipo B?",
@@ -886,8 +813,7 @@ export const anemometrosQuestions: Question[] = [
       "Um redutor de erros com engrenagens de 2000/1.",
       "Um Transformador de Controle (CT) acoplado ao motor FC."
     ],
-    "answer": "Um Transmissor síncro (TX) acoplado diretamente a uma aleta (cata-vento).",
-    "topic": "Anemômetros"
+    "answer": "Um Transmissor síncro (TX) acoplado diretamente a uma aleta (cata-vento)."
   },
   {
     "question": "De que consiste o conjunto de velocidade do anemômetro tipo B?",
@@ -898,8 +824,7 @@ export const anemometrosQuestions: Question[] = [
       "Aleta direcional, síncro LINVAR e motor de acompanhamento M2.",
       "Cubas, gerador de indução, síncro TR e engrenagens de 2,4:1."
     ],
-    "answer": "Copos/cubas, integrador mecânico (rodete e discos de fricção), motor de frequência constante e transmissores síncros.",
-    "topic": "Anemômetros"
+    "answer": "Copos/cubas, integrador mecânico (rodete e discos de fricção), motor de frequência constante e transmissores síncros."
   },
   {
     "question": "Quais são as características visuais do anemômetro tipo F?",
@@ -910,8 +835,7 @@ export const anemometrosQuestions: Question[] = [
       "1 hélice e 1 aleta aerodinâmica.",
       "Antena parabólica e sensor ultrassônico."
     ],
-    "answer": "1 hélice e 1 aleta aerodinâmica.",
-    "topic": "Anemômetros"
+    "answer": "1 hélice e 1 aleta aerodinâmica."
   },
   {
     "question": "No servossistema de direção do anemômetro tipo F, são utilizados dois síncros indicadores do tipo:",
@@ -922,8 +846,7 @@ export const anemometrosQuestions: Question[] = [
       "Síncro LINVAR e Gerador de Indução.",
       "PA-112 e PC-115A."
     ],
-    "answer": "18TR6 e 18TR4.",
-    "topic": "Anemômetros"
+    "answer": "18TR6 e 18TR4."
   },
   {
     "question": "No anemômetro tipo F, o dial de velocidade é graduado em que intervalo?",
@@ -934,8 +857,7 @@ export const anemometrosQuestions: Question[] = [
       "0 a 150 nós, em intervalos de 10 nós.",
       "0 a 360 nós, em intervalos de 1 nó."
     ],
-    "answer": "0 a 100 nós, em intervalos de 5 nós.",
-    "topic": "Anemômetros"
+    "answer": "0 a 100 nós, em intervalos de 5 nós."
   },
   {
     "question": "Qual a finalidade de se utilizar a frequência de 400Hz no anemômetro tipo F?",
@@ -946,8 +868,7 @@ export const anemometrosQuestions: Question[] = [
       "Para evitar a necessidade de retificação em meia onda no circuito.",
       "Para aumentar a velocidade de rotação das cubas em ventos fracos."
     ],
-    "answer": "Para operar em conjunto com os computadores de bordo.",
-    "topic": "Anemômetros"
+    "answer": "Para operar em conjunto com os computadores de bordo."
   },
   {
     "question": "Em uma determinada manobra, um navio que utiliza o anemômetro tipo F guinou 30º e verificou-se que o indicador de direção continuou girando indefinidamente. Qual foi a causa provável?",
@@ -958,8 +879,7 @@ export const anemometrosQuestions: Question[] = [
       "O síncro LINVAR sofreu uma inversão de polaridade.",
       "As cubas e a aleta travaram fisicamente."
     ],
-    "answer": "Falta de realimentação (ausência do sinal de erro no circuito do servo de direção).",
-    "topic": "Anemômetros"
+    "answer": "Falta de realimentação (ausência do sinal de erro no circuito do servo de direção)."
   },
   {
     "question": "Qual é a razão das engrenagens do acoplamento entre o transmissor ligado à hélice e o síncro receptor, no sistema tipo F?",
@@ -970,8 +890,7 @@ export const anemometrosQuestions: Question[] = [
       "1:360.",
       "1:1 (acoplamento direto)."
     ],
-    "answer": "1:12,5 (a cada uma revolução do síncro, a hélice gira 12,5 vezes).",
-    "topic": "Anemômetros"
+    "answer": "1:12,5 (a cada uma revolução do síncro, a hélice gira 12,5 vezes)."
   },
   {
     "question": "Qual a principal característica que diferencia o integrador do anemômetro tipo F em relação ao tipo B?",
@@ -982,8 +901,7 @@ export const anemometrosQuestions: Question[] = [
       "O tipo F não converte movimentos rotativos em angulares.",
       "O tipo F usa o gerador de indução como integrador exclusivo."
     ],
-    "answer": "** *(Adaptação conceitual)* O integrador mecânico (com rodete e discos de fricção) pertence essencialmente ao tipo B. No sistema tipo F, a conversão de movimentos proporcionais para indicação é feita eletronicamente (ou por integrador interno ao servo).",
-    "topic": "Anemômetros"
+    "answer": "** *(Adaptação conceitual)* O integrador mecânico (com rodete e discos de fricção) pertence essencialmente ao tipo B. No sistema tipo F, a conversão de movimentos proporcionais para indicação é feita eletronicamente (ou por integrador interno ao servo)."
   },
   {
     "question": "Qual é a alimentação principal do sistema de anemômetro EVERSHED?",
@@ -994,8 +912,7 @@ export const anemometrosQuestions: Question[] = [
       "115V / 400Hz.",
       "40VCA."
     ],
-    "answer": "115V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz."
   },
   {
     "question": "Qual é a alimentação para o circuito de teste de velocidade do anemômetro EVERSHED?",
@@ -1006,8 +923,7 @@ export const anemometrosQuestions: Question[] = [
       "26 Volts oriundos do síncro TX.",
       "40 VCA oriundos do LINVAR."
     ],
-    "answer": "1 Volt oriundo do Transformador T2.",
-    "topic": "Anemômetros"
+    "answer": "1 Volt oriundo do Transformador T2."
   },
   {
     "question": "Onde ficam localizados os pontos de testes do sistema do anemômetro EVERSHED?",
@@ -1018,8 +934,7 @@ export const anemometrosQuestions: Question[] = [
       "No painel de controle / Unidade de Retransmissão (RTU).",
       "Nos terminais do motor de frequência constante."
     ],
-    "answer": "No painel de controle / Unidade de Retransmissão (RTU).",
-    "topic": "Anemômetros"
+    "answer": "No painel de controle / Unidade de Retransmissão (RTU)."
   },
   {
     "question": "Qual o propósito principal da Unidade de Retransmissão (RTU) do sistema EVERSHED?",
@@ -1030,8 +945,7 @@ export const anemometrosQuestions: Question[] = [
       "Substituir o anemômetro em caso de falha elétrica no navio.",
       "Funcionar como redutor de erros mecânico para as cubas."
     ],
-    "answer": "Converter os fracos sinais de velocidade e direção do vento provenientes do detetor, tornando-os adequados e fortes o suficiente para os indicadores.",
-    "topic": "Anemômetros"
+    "answer": "Converter os fracos sinais de velocidade e direção do vento provenientes do detetor, tornando-os adequados e fortes o suficiente para os indicadores."
   },
   {
     "question": "Como é graduado o dial de direção do vento do anemômetro EVERSHED?",
@@ -1042,8 +956,7 @@ export const anemometrosQuestions: Question[] = [
       "De 0 a 180º boreste (verde) e 0 a 180º bombordo (vermelho) com intervalos de 5 em 5º.",
       "De 0 a 65 nós, com intervalos de 1 nó."
     ],
-    "answer": "De 0 a 360º (sendo 0 a 180º vermelho e 0 a 180º verde) com intervalos de 2 em 2º.",
-    "topic": "Anemômetros"
+    "answer": "De 0 a 360º (sendo 0 a 180º vermelho e 0 a 180º verde) com intervalos de 2 em 2º."
   },
   {
     "question": "Como é graduado o dial de velocidade do vento do anemômetro EVERSHED?",
@@ -1054,8 +967,7 @@ export const anemometrosQuestions: Question[] = [
       "0 a 75 nós com intervalo de 1 nó.",
       "0 a 50 nós com intervalo de 2 nós."
     ],
-    "answer": "0 a 75 nós com intervalo de 1 nó.",
-    "topic": "Anemômetros"
+    "answer": "0 a 75 nós com intervalo de 1 nó."
   },
   {
     "question": "Cite os dispositivos do servo de velocidade do EVERSHED responsáveis pelo amortecimento das oscilações:",
@@ -1066,8 +978,7 @@ export const anemometrosQuestions: Question[] = [
       "Engrenagem redutora 2,4:1 e capacitor C3.",
       "Taco-gerador TG-2 e potenciômetro RV1."
     ],
-    "answer": "Engrenagem redutora 2000/1 e potenciômetro RV3.",
-    "topic": "Anemômetros"
+    "answer": "Engrenagem redutora 2000/1 e potenciômetro RV3."
   },
   {
     "question": "Quantas e quais posições possui a chave de teste de velocidade do anemômetro EVERSHED?",
@@ -1078,8 +989,7 @@ export const anemometrosQuestions: Question[] = [
       "5 posições (0, 15, 30, 45 e 60 nós).",
       "4 posições (NORMAL, 0º, 120º BE, 120º BB)."
     ],
-    "answer": "4 posições (RUN, 15, 30 e 45 nós).",
-    "topic": "Anemômetros"
+    "answer": "4 posições (RUN, 15, 30 e 45 nós)."
   },
   {
     "question": "No servo de direção do anemômetro EVERSHED, quando os sinais de entrada e saída do sistema estão em correspondência de fase, o sinal de saída do detector é de:",
@@ -1090,8 +1000,7 @@ export const anemometrosQuestions: Question[] = [
       "0 Volts.",
       "26 Volts."
     ],
-    "answer": "0 Volts.",
-    "topic": "Anemômetros"
+    "answer": "0 Volts."
   },
   {
     "question": "No anemômetro EVERSHED, podemos afirmar que o sinal que sai de um Transformador de Controle (CT) é um sinal do tipo:",
@@ -1102,8 +1011,7 @@ export const anemometrosQuestions: Question[] = [
       "Elétrico (sinal de erro).",
       "Acústico."
     ],
-    "answer": "Elétrico (sinal de erro).",
-    "topic": "Anemômetros"
+    "answer": "Elétrico (sinal de erro)."
   },
   {
     "question": "Quando verificamos o funcionamento do servo de direção do anemômetro EVERSHED e colocamos a chave de teste (S1) para a posição 2, estamos aplicando um sinal elétrico ao estator de um síncro:",
@@ -1114,8 +1022,7 @@ export const anemometrosQuestions: Question[] = [
       "CT (Transformador de Controle).",
       "CX (Transmissor de Controle)."
     ],
-    "answer": "CT (Transformador de Controle).",
-    "topic": "Anemômetros"
+    "answer": "CT (Transformador de Controle)."
   },
   {
     "question": "Como se chama a informação que chega ao Transformador de Controle (CT), vinda diretamente do síncro transmissor (TX) do anemômetro tipo B?",
@@ -1126,8 +1033,7 @@ export const anemometrosQuestions: Question[] = [
       "Sinal de amortecimento.",
       "Sinal de referência."
     ],
-    "answer": "Sinal de direção.",
-    "topic": "Anemômetros"
+    "answer": "Sinal de direção."
   },
   {
     "question": "De que consiste o Anemômetro tipo B, em sua variação B2?",
@@ -1138,8 +1044,7 @@ export const anemometrosQuestions: Question[] = [
       "Tubo de Pitot e manômetro diferencial.",
       "Integrador mecânico e servo motor M2."
     ],
-    "answer": "Um receptor e um transmissor.",
-    "topic": "Anemômetros"
+    "answer": "Um receptor e um transmissor."
   },
   {
     "question": "No sistema do anemômetro tipo B, a unidade síncrona que é diretamente acoplada à aleta (cata-vento) é um:",
@@ -1150,8 +1055,7 @@ export const anemometrosQuestions: Question[] = [
       "Transmissor síncro (TX).",
       "Motor de acompanhamento."
     ],
-    "answer": "Transmissor síncro (TX).",
-    "topic": "Anemômetros"
+    "answer": "Transmissor síncro (TX)."
   },
   {
     "question": "Em que situação a microchave localizada no conjunto de velocidade do anemômetro tipo B irá abrir o circuito do motor de frequência constante (FC)?",
@@ -1162,8 +1066,7 @@ export const anemometrosQuestions: Question[] = [
       "Quando a velocidade do vento for nula (zero).",
       "Apenas quando a tensão cair para menos de 10V."
     ],
-    "answer": "Quando a velocidade do vento for nula (zero).",
-    "topic": "Anemômetros"
+    "answer": "Quando a velocidade do vento for nula (zero)."
   },
   {
     "question": "A unidade síncrona que transmite a informação de direção do vento para as repetidoras é um:",
@@ -1174,8 +1077,7 @@ export const anemometrosQuestions: Question[] = [
       "LINVAR.",
       "Motor M2."
     ],
-    "answer": "TX.",
-    "topic": "Anemômetros"
+    "answer": "TX."
   },
   {
     "question": "Qual dispositivo elétrico (potenciômetro) do anemômetro EVERSHED gera um sinal que se opõe ao sinal que aparece no resistor R11?",
@@ -1186,8 +1088,7 @@ export const anemometrosQuestions: Question[] = [
       "RV4.",
       "RV5."
     ],
-    "answer": "RV4.",
-    "topic": "Anemômetros"
+    "answer": "RV4."
   },
   {
     "question": "Qual é a alimentação específica para o painel de controle do anemômetro EVERSHED?",
@@ -1198,8 +1099,7 @@ export const anemometrosQuestions: Question[] = [
       "24V DC.",
       "10V / 400Hz."
     ],
-    "answer": "115V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz."
   },
   {
     "question": "A iluminação para cada conjunto no anemômetro tipo B é feita por quantas lâmpadas e como elas são ligadas?",
@@ -1210,8 +1110,7 @@ export const anemometrosQuestions: Question[] = [
       "Duas lâmpadas de 6 Volts ligadas em paralelo.",
       "Duas lâmpadas de 6 Volts ligadas em série."
     ],
-    "answer": "Duas lâmpadas de 6 Volts ligadas em paralelo.",
-    "topic": "Anemômetros"
+    "answer": "Duas lâmpadas de 6 Volts ligadas em paralelo."
   },
   {
     "question": "Quais os dois tipos de síncros que são posicionados pelo servo motor de direção do anemômetro tipo F?",
@@ -1222,8 +1121,7 @@ export const anemometrosQuestions: Question[] = [
       "PA-112 e PC-115A.",
       "Síncro LINVAR e Síncro TX."
     ],
-    "answer": "37TX6 e 31TX4.",
-    "topic": "Anemômetros"
+    "answer": "37TX6 e 31TX4."
   },
   {
     "question": "Cite a finalidade do componente DIAC do conjunto de direção do anemômetro tipo F:",
@@ -1234,8 +1132,7 @@ export const anemometrosQuestions: Question[] = [
       "Retificar a corrente alternada para os indicadores.",
       "Aumentar o fator de potência do circuito."
     ],
-    "answer": "Regular a tensão para o amplificador PC115A-101.",
-    "topic": "Anemômetros"
+    "answer": "Regular a tensão para o amplificador PC115A-101."
   },
   {
     "question": "No conjunto de direção do anemômetro tipo B, qual componente atua como o detector de erro?",
@@ -1246,8 +1143,7 @@ export const anemometrosQuestions: Question[] = [
       "Transformador de Controle (CT).",
       "Integrador Mecânico."
     ],
-    "answer": "Transformador de Controle (CT).",
-    "topic": "Anemômetros"
+    "answer": "Transformador de Controle (CT)."
   },
   {
     "question": "No servo de velocidade do anemômetro EVERSHED, cite a função do componente LINVAR:",
@@ -1258,8 +1154,7 @@ export const anemometrosQuestions: Question[] = [
       "Substituir o redutor de erros.",
       "Indicar a velocidade no passadiço."
     ],
-    "answer": "Funcionar como um transdutor (convertendo posição em sinal elétrico).",
-    "topic": "Anemômetros"
+    "answer": "Funcionar como um transdutor (convertendo posição em sinal elétrico)."
   },
   {
     "question": "No anemômetro EVERSHED, qual elemento físico é responsável por acionar o gerador de indução?",
@@ -1270,8 +1165,7 @@ export const anemometrosQuestions: Question[] = [
       "A aleta aerodinâmica.",
       "Os copos (cubas)."
     ],
-    "answer": "Os copos (cubas).",
-    "topic": "Anemômetros"
+    "answer": "Os copos (cubas)."
   },
   {
     "question": "Cite a principal diferença elétrica / operacional entre os sistemas de Anemômetro tipo B e tipo F:",
@@ -1282,8 +1176,7 @@ export const anemometrosQuestions: Question[] = [
       "O tipo B é alimentado por 24VDC, enquanto o F usa 115V.",
       "O tipo F não utiliza transmissores síncronos."
     ],
-    "answer": "A frequência de operação principal (o tipo B opera em 60Hz e o tipo F em 400Hz para computadores de bordo).",
-    "topic": "Anemômetros"
+    "answer": "A frequência de operação principal (o tipo B opera em 60Hz e o tipo F em 400Hz para computadores de bordo)."
   },
   {
     "question": "Qual dispositivo no anemômetro EVERSHED trabalha como gerador de sinal de erro no servo de direção?",
@@ -1294,8 +1187,7 @@ export const anemometrosQuestions: Question[] = [
       "Motor de acompanhamento.",
       "Amplificador PA-112."
     ],
-    "answer": "É o síncro TX da unidade detectora.",
-    "topic": "Anemômetros"
+    "answer": "É o síncro TX da unidade detectora."
   },
   {
     "question": "Qual é a função do motor de acompanhamento (M2) ou servo motor do anemômetro EVERSHED?",
@@ -1306,8 +1198,7 @@ export const anemometrosQuestions: Question[] = [
       "Transmitir o sinal de 115V para a Praça de Máquinas.",
       "Gerar o amortecimento necessário ao LINVAR."
     ],
-    "answer": "Reposicionar o rotor do CT, reduzindo (anulando) o sinal de erro.",
-    "topic": "Anemômetros"
+    "answer": "Reposicionar o rotor do CT, reduzindo (anulando) o sinal de erro."
   },
   {
     "question": "Qual a alimentação da Unidade de Retransmissão (RTU) do anemômetro EVERSHED?",
@@ -1318,8 +1209,7 @@ export const anemometrosQuestions: Question[] = [
       "10V / 400Hz.",
       "24V contínuos."
     ],
-    "answer": "115V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz."
   },
   {
     "question": "Qual amplificador está incluído em cada um dos servos na RTU do anemômetro EVERSHED?",
@@ -1330,8 +1220,7 @@ export const anemometrosQuestions: Question[] = [
       "31TX4.",
       "Amplificador operacional LM324."
     ],
-    "answer": "PA112.",
-    "topic": "Anemômetros"
+    "answer": "PA112."
   },
   {
     "question": "Onde está instalado o subconjunto de velocidade do vento do anemômetro tipo B?",
@@ -1342,8 +1231,7 @@ export const anemometrosQuestions: Question[] = [
       "Na Praça de Comunicações Interiores (PCI).",
       "Acoplado diretamente ao tubo de Pitot."
     ],
-    "answer": "Na Praça de Comunicações Interiores (PCI).",
-    "topic": "Anemômetros"
+    "answer": "Na Praça de Comunicações Interiores (PCI)."
   },
   {
     "question": "Cite a razão de acoplamento do rotor do síncro transmissor (TX) para a hélice do anemômetro tipo F:",
@@ -1354,8 +1242,7 @@ export const anemometrosQuestions: Question[] = [
       "1:1.",
       "1:360."
     ],
-    "answer": "** 1:12,5 (a cada uma revolução do síncro, a hélice gira 12,5 vezes).",
-    "topic": "Anemômetros"
+    "answer": "** 1:12,5 (a cada uma revolução do síncro, a hélice gira 12,5 vezes)."
   },
   {
     "question": "Cite os tipos de manutenções realizadas nos sistemas de anemômetros:",
@@ -1366,8 +1253,7 @@ export const anemometrosQuestions: Question[] = [
       "Diárias e semestrais estritamente.",
       "Eletrônica e de software."
     ],
-    "answer": "Preventivas e corretivas.",
-    "topic": "Anemômetros"
+    "answer": "Preventivas e corretivas."
   },
   {
     "question": "No anemômetro EVERSHED, qual a função da chave S4?",
@@ -1378,8 +1264,7 @@ export const anemometrosQuestions: Question[] = [
       "Realizar o teste de velocidade de 30 nós.",
       "Comutar entre direção relativa e verdadeira."
     ],
-    "answer": "Habilitar a alimentação de 115V / 60Hz.",
-    "topic": "Anemômetros"
+    "answer": "Habilitar a alimentação de 115V / 60Hz."
   },
   {
     "question": "No anemômetro EVERSHED, qual a função da chave S3?",
@@ -1390,8 +1275,7 @@ export const anemometrosQuestions: Question[] = [
       "Acionar o síncro LINVAR.",
       "Aplicar o sinal de 10V para o teste de direção."
     ],
-    "answer": "Habilitar a alimentação de 115V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "Habilitar a alimentação de 115V / 400Hz."
   },
   {
     "question": "Onde está localizado o transformador de 115V/6V (iluminação) do anemômetro tipo B?",
@@ -1402,8 +1286,7 @@ export const anemometrosQuestions: Question[] = [
       "Na unidade indicadora.",
       "Junto ao motor de frequência constante."
     ],
-    "answer": "Na unidade indicadora.",
-    "topic": "Anemômetros"
+    "answer": "Na unidade indicadora."
   },
   {
     "question": "No contexto dos sistemas de medição de vento a bordo, defina o que é \"velocidade de recolhimento\":",
@@ -1414,8 +1297,7 @@ export const anemometrosQuestions: Question[] = [
       "É a velocidade de cruzeiro ideal para manobras de helicóptero.",
       "É a velocidade do vento verdadeiro (True Wind)."
     ],
-    "answer": "É a velocidade à ré do navio.",
-    "topic": "Anemômetros"
+    "answer": "É a velocidade à ré do navio."
   },
   {
     "question": "Descreva as partes componentes da unidade transmissora do anemômetro tipo B:",
@@ -1426,8 +1308,7 @@ export const anemometrosQuestions: Question[] = [
       "Síncro LINVAR e gerador de indução.",
       "Subconjunto de direção e subconjunto de velocidade."
     ],
-    "answer": "Subconjunto de direção e subconjunto de velocidade.",
-    "topic": "Anemômetros"
+    "answer": "Subconjunto de direção e subconjunto de velocidade."
   },
   {
     "question": "Geralmente, onde está localizada a unidade transmissora do anemômetro tipo B?",
@@ -1438,8 +1319,7 @@ export const anemometrosQuestions: Question[] = [
       "No tijupá.",
       "Na Praça de Máquinas."
     ],
-    "answer": "Na Praça de Comunicações Interiores (PCI).",
-    "topic": "Anemômetros"
+    "answer": "Na Praça de Comunicações Interiores (PCI)."
   },
   {
     "question": "Em que situação o indicador de velocidade e o indicador de direção do vento ficarão estacionados na posição zero?",
@@ -1450,8 +1330,7 @@ export const anemometrosQuestions: Question[] = [
       "Quando a velocidade do vento exceder o fundo de escala e a direção for variável.",
       "Quando o integrador mecânico estiver desacoplado e o redutor de erro desativado."
     ],
-    "answer": "Velocidade: quando as cubas estiverem paradas; Direção: quando o catavento estiver alinhado no sentido proa-popa do navio.",
-    "topic": "Anemômetros"
+    "answer": "Velocidade: quando as cubas estiverem paradas; Direção: quando o catavento estiver alinhado no sentido proa-popa do navio."
   },
   {
     "question": "No anemômetro EVERSHED, qual a função dos potenciômetros RV3 e RV4, respectivamente?",
@@ -1462,8 +1341,7 @@ export const anemometrosQuestions: Question[] = [
       "RV3: Calibrador do mostrador; RV4: Sensibilidade do LINVAR.",
       "RV3: Ajuste de ganho; RV4: Ajuste de fase."
     ],
-    "answer": "RV3: Amortecimento do servo de velocidade; RV4: Ajuste do zero / Calibrador do mostrador.",
-    "topic": "Anemômetros"
+    "answer": "RV3: Amortecimento do servo de velocidade; RV4: Ajuste do zero / Calibrador do mostrador."
   },
   {
     "question": "Cite o dispositivo do anemômetro EVERSHED que produz um sinal proporcional ao ângulo do vento e indique sua alimentação:",
@@ -1474,8 +1352,7 @@ export const anemometrosQuestions: Question[] = [
       "Síncro TX / 26V 400Hz.",
       "Redutor de erros / 10V 400Hz."
     ],
-    "answer": "Síncro TX / 26V 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "Síncro TX / 26V 400Hz."
   },
   {
     "question": "Qual a finalidade da unidade de retransmissão (RTU) do anemômetro EVERSHED?",
@@ -1486,8 +1363,7 @@ export const anemometrosQuestions: Question[] = [
       "Retransmitir as informações meteorológicas via rádio.",
       "Alimentar diretamente os motores de acompanhamento com 115V DC."
     ],
-    "answer": "Converter os fracos sinais de velocidade e direção vindos do detector para que possam acionar os indicadores.",
-    "topic": "Anemômetros"
+    "answer": "Converter os fracos sinais de velocidade e direção vindos do detector para que possam acionar os indicadores."
   },
   {
     "question": "Um militar, ao ligar o anemômetro EVERSHED, observou que os indicadores de velocidade começaram a girar sem conseguir parar em uma marcação fixa. Cite as prováveis causas dessa avaria:",
@@ -1498,8 +1374,7 @@ export const anemometrosQuestions: Question[] = [
       "Avaria no transformador T1 cortando os 10V / 400Hz.",
       "Sobretensão causada pelos diodos reguladores D5 e D6."
     ],
-    "answer": "Falta de alimentação para o síncro LINVAR, avaria no diodo D4 ou curto-circuito no capacitor C7.",
-    "topic": "Anemômetros"
+    "answer": "Falta de alimentação para o síncro LINVAR, avaria no diodo D4 ou curto-circuito no capacitor C7."
   },
   {
     "question": "Qual a função específica do potenciômetro RV2 do anemômetro EVERSHED?",
@@ -1510,8 +1385,7 @@ export const anemometrosQuestions: Question[] = [
       "Sensibilidade do servo de velocidade.",
       "Regulação de voltagem do amplificador PA112."
     ],
-    "answer": "Amortecimento do servo de direção.",
-    "topic": "Anemômetros"
+    "answer": "Amortecimento do servo de direção."
   },
   {
     "question": "Cite a função dos diodos D5 e D6, localizados no painel de distribuição de alimentação do anemômetro EVERSHED:",
@@ -1522,8 +1396,7 @@ export const anemometrosQuestions: Question[] = [
       "Impedem a inversão de fase no síncro CT.",
       "Protegem o transformador T1 contra sobrecarga."
     ],
-    "answer": "Funcionam como reguladores e estabilizadores de tensão.",
-    "topic": "Anemômetros"
+    "answer": "Funcionam como reguladores e estabilizadores de tensão."
   },
   {
     "question": "Qual a finalidade do diodo 1 (D1) no servo de velocidade do anemômetro EVERSHED?",
@@ -1534,8 +1407,7 @@ export const anemometrosQuestions: Question[] = [
       "Funcionar como um zener para o LINVAR.",
       "Eliminar o ruído de alta frequência do motor de acompanhamento."
     ],
-    "answer": "Retificar em meia onda o sinal de 10V / 400Hz oriundo do transformador T1.",
-    "topic": "Anemômetros"
+    "answer": "Retificar em meia onda o sinal de 10V / 400Hz oriundo do transformador T1."
   },
   {
     "question": "O rotor do síncro LINVAR do sistema EVERSHED é comandado (movimentado) mecanicamente pela(o):",
@@ -1546,8 +1418,7 @@ export const anemometrosQuestions: Question[] = [
       "Eixo direto da hélice / cubas.",
       "Integrador mecânico através do rodete."
     ],
-    "answer": "Redutor de erros (engrenagem ligada ao motor de acompanhamento).",
-    "topic": "Anemômetros"
+    "answer": "Redutor de erros (engrenagem ligada ao motor de acompanhamento)."
   },
   {
     "question": "O transmissor de direção do vento localizado na unidade detectora do sistema de anemômetro EVERSHED é um síncro do tipo:",
@@ -1558,8 +1429,7 @@ export const anemometrosQuestions: Question[] = [
       "TX.",
       "LINVAR."
     ],
-    "answer": "TX.",
-    "topic": "Anemômetros"
+    "answer": "TX."
   },
   {
     "question": "Quais são as posições da chave de teste de velocidade do sistema de anemômetro EVERSHED?",
@@ -1570,8 +1440,7 @@ export const anemometrosQuestions: Question[] = [
       "0, 10, 20, 30, 40 nós.",
       "RUN e TEST."
     ],
-    "answer": "RUN, 15, 30 e 45 nós.",
-    "topic": "Anemômetros"
+    "answer": "RUN, 15, 30 e 45 nós."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, a informação primária da velocidade do vento (no detector) é fornecida por um:",
@@ -1582,8 +1451,7 @@ export const anemometrosQuestions: Question[] = [
       "Gerador de indução.",
       "LINVAR."
     ],
-    "answer": "Gerador de indução.",
-    "topic": "Anemômetros"
+    "answer": "Gerador de indução."
   },
   {
     "question": "O termo \"velocidade de recolhimento\" refere-se à velocidade do vento:",
@@ -1594,8 +1462,7 @@ export const anemometrosQuestions: Question[] = [
       "Relativa lateral ao navio.",
       "À ré do navio."
     ],
-    "answer": "À ré do navio.",
-    "topic": "Anemômetros"
+    "answer": "À ré do navio."
   },
   {
     "question": "No sistema EVERSHED, no servo de direção, quando os sinais de entrada e saída do sistema estão em correspondência de fase, o sinal de saída do detector (CT) é de:",
@@ -1606,8 +1473,7 @@ export const anemometrosQuestions: Question[] = [
       "0 (Zero) Volts.",
       "60 Volts."
     ],
-    "answer": "0 (Zero) Volts.",
-    "topic": "Anemômetros"
+    "answer": "0 (Zero) Volts."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, no servo de direção, ao deslocarmos a chave S1 (chave de teste) da posição \"NORMAL\" para as posições de teste, estamos aplicando um sinal de _______ ao estator do CT.",
@@ -1618,8 +1484,7 @@ export const anemometrosQuestions: Question[] = [
       "60 V / 400Hz.",
       "40 VCA."
     ],
-    "answer": "10 V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "10 V / 400Hz."
   },
   {
     "question": "Ao verificarmos o funcionamento do servo de direção do sistema EVERSHED e colocarmos a chave S1 para a posição 2, estamos aplicando um sinal elétrico ao estator de um síncro do tipo:",
@@ -1630,8 +1495,7 @@ export const anemometrosQuestions: Question[] = [
       "LINVAR.",
       "CT."
     ],
-    "answer": "CT.",
-    "topic": "Anemômetros"
+    "answer": "CT."
   },
   {
     "question": "Qual a finalidade dos diodos D5 e D6 do painel de distribuição de alimentação do anemômetro EVERSHED?",
@@ -1642,8 +1506,7 @@ export const anemometrosQuestions: Question[] = [
       "Divisores de tensão para o LINVAR.",
       "Filtros de harmônicas de 400Hz."
     ],
-    "answer": "Reguladores de voltagem / estabilizadores.",
-    "topic": "Anemômetros"
+    "answer": "Reguladores de voltagem / estabilizadores."
   },
   {
     "question": "Analisando o diagrama do EVERSHED, qual a finalidade da alimentação de 1 volt oriunda do Transformador T2?",
@@ -1654,8 +1517,7 @@ export const anemometrosQuestions: Question[] = [
       "Polarizar os amplificadores operacionais.",
       "Fornecer referência para o CT."
     ],
-    "answer": "Ajuste do zero e calibração fina no teste de velocidade.",
-    "topic": "Anemômetros"
+    "answer": "Ajuste do zero e calibração fina no teste de velocidade."
   },
   {
     "question": "No sistema de anemômetro das fragatas, podemos afirmar que o sinal que sai do Transmissor de Controle (CX) é um sinal:",
@@ -1666,8 +1528,7 @@ export const anemometrosQuestions: Question[] = [
       "Mecânico.",
       "Elétrico."
     ],
-    "answer": "Elétrico.",
-    "topic": "Anemômetros"
+    "answer": "Elétrico."
   },
   {
     "question": "No sistema de anemômetro das fragatas, o dispositivo que retifica o sinal alternado gerado pelo LINVAR é a ponte de diodos:",
@@ -1678,8 +1539,7 @@ export const anemometrosQuestions: Question[] = [
       "D5.",
       "D6."
     ],
-    "answer": "D4.",
-    "topic": "Anemômetros"
+    "answer": "D4."
   },
   {
     "question": "A alimentação elétrica do síncro LINVAR do sistema de anemômetro EVERSHED é de:",
@@ -1690,8 +1550,7 @@ export const anemometrosQuestions: Question[] = [
       "60V / 400Hz.",
       "10V / 400Hz."
     ],
-    "answer": "60V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "60V / 400Hz."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, no servo de direção, qual componente atua especificamente como o detector de erros do circuito?",
@@ -1702,8 +1561,7 @@ export const anemometrosQuestions: Question[] = [
       "Motor de acompanhamento.",
       "Síncro LINVAR."
     ],
-    "answer": "Síncro CT (Transformador de Controle).",
-    "topic": "Anemômetros"
+    "answer": "Síncro CT (Transformador de Controle)."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, o sinal que alimenta normalmente o estator de um Transformador de Controle (CT) é um:",
@@ -1714,8 +1572,7 @@ export const anemometrosQuestions: Question[] = [
       "Sinal retificado pela ponte D4.",
       "Sinal de 60V / 400Hz."
     ],
-    "answer": "Sinal elétrico vindo do transmissor (TX) da unidade detectora.",
-    "topic": "Anemômetros"
+    "answer": "Sinal elétrico vindo do transmissor (TX) da unidade detectora."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, no servo de direção, o componente que rotaciona fisicamente o eixo do CT para anular o sinal de erro é o:",
@@ -1726,8 +1583,7 @@ export const anemometrosQuestions: Question[] = [
       "Taco-gerador.",
       "Potenciômetro RV1."
     ],
-    "answer": "Servomotor (através do redutor de erros).",
-    "topic": "Anemômetros"
+    "answer": "Servomotor (através do redutor de erros)."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, no servo de direção, o componente mecânico que interliga o servomotor aos transmissores e ao CT para movimentá-los é o:",
@@ -1738,8 +1594,7 @@ export const anemometrosQuestions: Question[] = [
       "Redutor de erros (conjunto de engrenagens).",
       "Cames de posicionamento."
     ],
-    "answer": "Redutor de erros (conjunto de engrenagens).",
-    "topic": "Anemômetros"
+    "answer": "Redutor de erros (conjunto de engrenagens)."
   },
   {
     "question": "O indicador de velocidade do vento do sistema de anemômetro EVERSHED é graduado de zero a:",
@@ -1750,8 +1605,7 @@ export const anemometrosQuestions: Question[] = [
       "150 nós, com intervalos de 10 nós.",
       "75 nós, com intervalos de 5 nós."
     ],
-    "answer": "** 75 nós, com intervalos de 1 nó.",
-    "topic": "Anemômetros"
+    "answer": "** 75 nós, com intervalos de 1 nó."
   },
   {
     "question": "O termo “velocidade do vento de lançamento”, usado especificamente nas operações das fragatas, refere-se à velocidade do vento:",
@@ -1762,8 +1616,7 @@ export const anemometrosQuestions: Question[] = [
       "Verdadeira calculada pelo computador de bordo.",
       "A ré do navio."
     ],
-    "answer": "50 a 200 pés a vante do navio.",
-    "topic": "Anemômetros"
+    "answer": "50 a 200 pés a vante do navio."
   },
   {
     "question": "No anemômetro das fragatas, a unidade síncro que envia um sinal elétrico para a unidade de correção de dados do vento (para cálculo de vento verdadeiro) é alimentada com:",
@@ -1774,8 +1627,7 @@ export const anemometrosQuestions: Question[] = [
       "115V / 400Hz.",
       "115V / 60Hz."
     ],
-    "answer": "115V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz."
   },
   {
     "question": "No sistema de anemômetro das fragatas, o dispositivo elétrico variável cujo sinal de tensão se opõe ao sinal que aparece no resistor R11 é o:",
@@ -1786,8 +1638,7 @@ export const anemometrosQuestions: Question[] = [
       "Potenciômetro RV4.",
       "Potenciômetro RV5."
     ],
-    "answer": "Potenciômetro RV4.",
-    "topic": "Anemômetros"
+    "answer": "Potenciômetro RV4."
   },
   {
     "question": "No sistema de anemômetro das fragatas, a informação de direção do vento para fins de controle e amortecimento é enviada (e ajustada) ao amplificador através de dois potenciômetros denominados:",
@@ -1798,8 +1649,7 @@ export const anemometrosQuestions: Question[] = [
       "RV4 e RV5.",
       "RV1 e RV5."
     ],
-    "answer": "RV1 e RV2.",
-    "topic": "Anemômetros"
+    "answer": "RV1 e RV2."
   },
   {
     "question": "Quanto aos sistemas de anemômetros leves utilizados na Marinha, quantos tipos principais (sem contar o EVERSHED) existem?",
@@ -1810,8 +1660,7 @@ export const anemometrosQuestions: Question[] = [
       "Quatro (MK-1, MK-2, Tipo B e Tipo F).",
       "Vários modelos eletrônicos sem partes móveis."
     ],
-    "answer": "Dois (Tipo B e Tipo F).",
-    "topic": "Anemômetros"
+    "answer": "Dois (Tipo B e Tipo F)."
   },
   {
     "question": "A alimentação de 26V / 400Hz do anemômetro EVERSHED é destinada especificamente para:",
@@ -1822,8 +1671,7 @@ export const anemometrosQuestions: Question[] = [
       "O amplificador PA-112 da Unidade de Retransmissão.",
       "O transformador T2 de teste."
     ],
-    "answer": "O síncro transmissor (TX) de direção do vento.",
-    "topic": "Anemômetros"
+    "answer": "O síncro transmissor (TX) de direção do vento."
   },
   {
     "question": "O painel de controle do anemômetro EVERSHED é alimentado com:",
@@ -1834,8 +1682,7 @@ export const anemometrosQuestions: Question[] = [
       "115V / 400Hz (do navio).",
       "10V / 400Hz."
     ],
-    "answer": "115V / 400Hz (do navio).",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz (do navio)."
   },
   {
     "question": "Indicador, transmissor (ou detetor) e unidade de retransmissão são componentes básicos de um sistema de:",
@@ -1846,8 +1693,7 @@ export const anemometrosQuestions: Question[] = [
       "Radar de Navegação.",
       "Ecobatímetro."
     ],
-    "answer": "Anemômetro.",
-    "topic": "Anemômetros"
+    "answer": "Anemômetro."
   },
   {
     "question": "A presença de um conjunto detector visualmente composto por três ou quatro cubas giratórias e uma aleta aerodinâmica montada no mesmo suporte vertical é característica do anemômetro:",
@@ -1858,8 +1704,7 @@ export const anemometrosQuestions: Question[] = [
       "Tipo MK-1.",
       "EVERSHED."
     ],
-    "answer": "EVERSHED.",
-    "topic": "Anemômetros"
+    "answer": "EVERSHED."
   },
   {
     "question": "O princípio de funcionamento do detector de velocidade do vento no anemômetro EVERSHED é baseado no:",
@@ -1870,8 +1715,7 @@ export const anemometrosQuestions: Question[] = [
       "Taco-gerador DC.",
       "Transformador de Controle (CT)."
     ],
-    "answer": "Gerador de indução.",
-    "topic": "Anemômetros"
+    "answer": "Gerador de indução."
   },
   {
     "question": "O potenciômetro RV2 ajusta o _________ do servo de direção do sistema de anemômetro EVERSHED.",
@@ -1882,8 +1726,7 @@ export const anemometrosQuestions: Question[] = [
       "Amortecimento (feedback para reduzir overshoot).",
       "Valor da tensão de saída para 26V."
     ],
-    "answer": "Amortecimento (feedback para reduzir overshoot).",
-    "topic": "Anemômetros"
+    "answer": "Amortecimento (feedback para reduzir overshoot)."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, no servo de direção, qual componente compara o sinal de saída (posição atual) com o sinal de entrada (posição comandada)?",
@@ -1894,8 +1737,7 @@ export const anemometrosQuestions: Question[] = [
       "O redutor de erros.",
       "O gerador de indução."
     ],
-    "answer": "O Transformador de Controle (CT).",
-    "topic": "Anemômetros"
+    "answer": "O Transformador de Controle (CT)."
   },
   {
     "question": "O detector do sistema de anemômetro EVERSHED produz um sinal elétrico de saída proporcional à posição _________ da aleta, em relação à linha Proa-Popa do navio.",
@@ -1906,8 +1748,7 @@ export const anemometrosQuestions: Question[] = [
       "Linear.",
       "De inclinação lateral."
     ],
-    "answer": "Angular.",
-    "topic": "Anemômetros"
+    "answer": "Angular."
   },
   {
     "question": "O detector do sistema de anemômetro EVERSHED produz um sinal elétrico CA de saída de voltagem _________ à velocidade do fluxo de ar passando pelas cubas do anemômetro.",
@@ -1918,8 +1759,7 @@ export const anemometrosQuestions: Question[] = [
       "Independente.",
       "Proporcional."
     ],
-    "answer": "Proporcional.",
-    "topic": "Anemômetros"
+    "answer": "Proporcional."
   },
   {
     "question": "O servo de direção do EVERSHED tem o propósito de converter os _________ sinais de direção do vento provenientes do detector em sinais fortes o suficiente para acionar os indicadores.",
@@ -1930,8 +1770,7 @@ export const anemometrosQuestions: Question[] = [
       "Fracos.",
       "Mecânicos."
     ],
-    "answer": "Fracos.",
-    "topic": "Anemômetros"
+    "answer": "Fracos."
   },
   {
     "question": "No servo de direção do anemômetro EVERSHED, o dispositivo que fisicamente atua / funciona como o detector de erro do circuito é o:",
@@ -1942,8 +1781,7 @@ export const anemometrosQuestions: Question[] = [
       "Gerador de indução.",
       "Taco-gerador TG2."
     ],
-    "answer": "CT (Transformador de Controle).",
-    "topic": "Anemômetros"
+    "answer": "CT (Transformador de Controle)."
   },
   {
     "question": "Qual é a função primordial do síncro LINVAR no servo de velocidade do sistema de anemômetro EVERSHED?",
@@ -1954,8 +1792,7 @@ export const anemometrosQuestions: Question[] = [
       "Alimentar o Transformador de Controle.",
       "Gerar o sinal de 115V / 400Hz."
     ],
-    "answer": "Funcionar como um transdutor.",
-    "topic": "Anemômetros"
+    "answer": "Funcionar como um transdutor."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, a voltagem CA (corrente alternada) proporcional à velocidade do vento é desenvolvida em qual unidade do detector?",
@@ -1966,8 +1803,7 @@ export const anemometrosQuestions: Question[] = [
       "No Taco-gerador TG1.",
       "No Gerador de Indução."
     ],
-    "answer": "No Gerador de Indução.",
-    "topic": "Anemômetros"
+    "answer": "No Gerador de Indução."
   },
   {
     "question": "Qual dispositivo da unidade detectora do anemômetro EVERSHED é acionado fisicamente pela rotação dos copos (cubas)?",
@@ -1978,8 +1814,7 @@ export const anemometrosQuestions: Question[] = [
       "Taco-gerador TG2.",
       "Integrador mecânico com discos de fricção."
     ],
-    "answer": "Gerador de indução.",
-    "topic": "Anemômetros"
+    "answer": "Gerador de indução."
   },
   {
     "question": "No anemômetro EVERSHED, no sistema global do servo de direção, qual dispositivo primário trabalha como \"gerador\" da informação (sinal de erro original)?",
@@ -1990,8 +1825,7 @@ export const anemometrosQuestions: Question[] = [
       "O Redutor de Erros.",
       "O Taco-gerador."
     ],
-    "answer": "O Transmissor Síncro (TX) da unidade detectora.",
-    "topic": "Anemômetros"
+    "answer": "O Transmissor Síncro (TX) da unidade detectora."
   },
   {
     "question": "No anemômetro EVERSHED, quais dispositivos ficarão sem alimentação caso ocorra uma falha no Transformador T1?",
@@ -2002,8 +1836,7 @@ export const anemometrosQuestions: Question[] = [
       "O motor de frequência constante e a chave de limite inferior.",
       "O gerador de indução (ficará inoperante)."
     ],
-    "answer": "O amplificador de potência, o circuito de teste de direção, o Transmissor (TX) do detector de direção e o diodo D1.",
-    "topic": "Anemômetros"
+    "answer": "O amplificador de potência, o circuito de teste de direção, o Transmissor (TX) do detector de direção e o diodo D1."
   },
   {
     "question": "Qual é a finalidade geral da Unidade de Retransmissão (RTU) no anemômetro EVERSHED?",
@@ -2014,8 +1847,7 @@ export const anemometrosQuestions: Question[] = [
       "Atuar como repetidora mestre no passadiço.",
       "Proteger o circuito contra curtos-circuitos utilizando fusíveis FS1 e FS2."
     ],
-    "answer": "Converter os fracos sinais elétricos de direção e velocidade originários da unidade detectora, adequando-os em potência para comandar os indicadores do navio.",
-    "topic": "Anemômetros"
+    "answer": "Converter os fracos sinais elétricos de direção e velocidade originários da unidade detectora, adequando-os em potência para comandar os indicadores do navio."
   },
   {
     "question": "No servo de direção do anemômetro EVERSHED, qual o dispositivo responsável por reposicionar mecanicamente o rotor do CT, com o objetivo de anular (reduzir a zero) o sinal de erro?",
@@ -2026,8 +1858,7 @@ export const anemometrosQuestions: Question[] = [
       "Motor de acompanhamento M2 (Servo motor).",
       "Síncro LINVAR."
     ],
-    "answer": "Motor de acompanhamento M2 (Servo motor).",
-    "topic": "Anemômetros"
+    "answer": "Motor de acompanhamento M2 (Servo motor)."
   },
   {
     "question": "No anemômetro EVERSHED, de onde é extraída a alimentação de 26V / 400Hz para o Transmissor Síncro (TX) do detector no circuito de direção do vento?",
@@ -2038,8 +1869,7 @@ export const anemometrosQuestions: Question[] = [
       "Do transformador T2.",
       "Do enrolamento secundário do transformador T1."
     ],
-    "answer": "Do enrolamento secundário do transformador T1.",
-    "topic": "Anemômetros"
+    "answer": "Do enrolamento secundário do transformador T1."
   },
   {
     "question": "Quais são as três alimentações elétricas (tensões e frequências) requeridas / disponíveis para o funcionamento do sistema anemômetro EVERSHED?",
@@ -2050,8 +1880,7 @@ export const anemometrosQuestions: Question[] = [
       "220V / 400Hz, 400V / 60Hz e 24V DC.",
       "115V / 60Hz, 26V / 60Hz e 12V DC."
     ],
-    "answer": "115V / 400Hz, 115V / 60Hz e 26V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "115V / 400Hz, 115V / 60Hz e 26V / 400Hz."
   },
   {
     "question": "No servo de direção do anemômetro EVERSHED, descreva a função dos potenciômetros RV1 e RV2 e do Taco-gerador (TG-2), respectivamente:",
@@ -2062,8 +1891,7 @@ export const anemometrosQuestions: Question[] = [
       "RV1: Ajuste de ganho; RV2: Ajuste de voltagem; TG-2: Aciona o Síncro TX.",
       "RV1: Teste baixo; RV2: Teste alto; TG-2: Integra o movimento mecânico."
     ],
-    "answer": "RV1: Ajusta a sensibilidade; RV2: Fornece feedback (amortecimento) para reduzir overshoot; TG-2: Gera um sinal elétrico proporcional à rotação para auxiliar no amortecimento.",
-    "topic": "Anemômetros"
+    "answer": "RV1: Ajusta a sensibilidade; RV2: Fornece feedback (amortecimento) para reduzir overshoot; TG-2: Gera um sinal elétrico proporcional à rotação para auxiliar no amortecimento."
   },
   {
     "question": "No servo de velocidade do anemômetro EVERSHED, qual é a função dos componentes: Potenciômetro RV4, Potenciômetro RV3 e síncro LINVAR, respectivamente?",
@@ -2074,8 +1902,7 @@ export const anemometrosQuestions: Question[] = [
       "RV4: Calibrador do mostrador (Ajuste do zero); RV3: Amortecimento; LINVAR: Transdutor.",
       "RV4: Alimentação do painel; RV3: Regulação de tensão; LINVAR: Retificador."
     ],
-    "answer": "RV4: Calibrador do mostrador (Ajuste do zero); RV3: Amortecimento; LINVAR: Transdutor.",
-    "topic": "Anemômetros"
+    "answer": "RV4: Calibrador do mostrador (Ajuste do zero); RV3: Amortecimento; LINVAR: Transdutor."
   },
   {
     "question": "No anemômetro EVERSHED, cite o dispositivo que produz um sinal elétrico proporcional ao ângulo do vento e indique sua alimentação específica:",
@@ -2086,8 +1913,7 @@ export const anemometrosQuestions: Question[] = [
       "Taco-gerador (TG), alimentado por 60V / 400Hz.",
       "Síncro receptor (TR), alimentado por 24V DC."
     ],
-    "answer": "Síncro transmissor de direção (TX), alimentado por 26V / 400Hz.",
-    "topic": "Anemômetros"
+    "answer": "Síncro transmissor de direção (TX), alimentado por 26V / 400Hz."
   },
   {
     "question": "No anemômetro EVERSHED, cite o potenciômetro que ajusta o amortecimento do servo de velocidade e indique a função principal do síncro LINVAR:",
@@ -2098,8 +1924,7 @@ export const anemometrosQuestions: Question[] = [
       "RV4 faz o amortecimento e o LINVAR funciona como um retificador.",
       "RV5 faz o amortecimento e o LINVAR converte a corrente em contínua."
     ],
-    "answer": "RV3 faz o amortecimento e o LINVAR funciona como um transdutor.",
-    "topic": "Anemômetros"
+    "answer": "RV3 faz o amortecimento e o LINVAR funciona como um transdutor."
   },
   {
     "question": "No anemômetro EVERSHED, quais são os potenciômetros responsáveis pelo ajuste da sensibilidade e do amortecimento, respectivamente, no servo de direção?",
@@ -2110,8 +1935,7 @@ export const anemometrosQuestions: Question[] = [
       "RV1 e RV2.",
       "RV1 e RV3."
     ],
-    "answer": "RV1 e RV2.",
-    "topic": "Anemômetros"
+    "answer": "RV1 e RV2."
   },
   {
     "question": "Descreva a característica visual do sensor de velocidade do vento do anemômetro EVERSHED e o seu princípio de funcionamento básico:",
@@ -2122,8 +1946,7 @@ export const anemometrosQuestions: Question[] = [
       "É uma antena radar doppler que mede o arrasto das nuvens e converte em velocidade através do LINVAR.",
       "Possui discos de fricção acoplados a um motor de frequência constante que realizam a integração mecânica."
     ],
-    "answer": "Possui um conjunto de 3 ou 4 cubas (copos) montadas num suporte vertical. O gerador de indução acionado pelas cubas produz um sinal elétrico de saída proporcional à velocidade do vento.",
-    "topic": "Anemômetros"
+    "answer": "Possui um conjunto de 3 ou 4 cubas (copos) montadas num suporte vertical. O gerador de indução acionado pelas cubas produz um sinal elétrico de saída proporcional à velocidade do vento."
   },
   {
     "question": "Defina qual o propósito da Unidade de Retransmissão (RTU) do anemômetro EVERSHED e sua localização a bordo das Fragatas Classe Niterói:",
@@ -2134,8 +1957,7 @@ export const anemometrosQuestions: Question[] = [
       "Integrar os sinais do giroscópio. Localização: Praça de Comunicações Interiores.",
       "Acionar o alarme de mau tempo. Localização: Tijupá."
     ],
-    "answer": "Converter os fracos sinais de velocidade e direção do vento provenientes do detector, tornando-os adequados para comandar os indicadores nas diversas posições do navio. Localização: C.O.C. (Centro de Operações de Combate).",
-    "topic": "Anemômetros"
+    "answer": "Converter os fracos sinais de velocidade e direção do vento provenientes do detector, tornando-os adequados para comandar os indicadores nas diversas posições do navio. Localização: C.O.C. (Centro de Operações de Combate)."
   },
   {
     "question": "Descreva a finalidade principal de um anemômetro e quais são os tipos básicos tradicionalmente utilizados na Marinha do Brasil:",
@@ -2146,8 +1968,7 @@ export const anemometrosQuestions: Question[] = [
       "Mede a profundidade da água abaixo da quilha. Tipos: Doppler e Acústico.",
       "Afere a velocidade do navio em relação à água. Tipos: SAL-24 e Eletromagnético."
     ],
-    "answer": "Fornece indicações contínuas ou instantâneas da intensidade (em nós) e da direção (em graus) do vento. Tipos básicos: Tipo B, Tipo F e Tipo EVERSHED.",
-    "topic": "Anemômetros"
+    "answer": "Fornece indicações contínuas ou instantâneas da intensidade (em nós) e da direção (em graus) do vento. Tipos básicos: Tipo B, Tipo F e Tipo EVERSHED."
   },
   {
     "question": "Descreva as partes componentes gerais que caracterizam o sistema de anemômetro leve usado na Marinha e a função básica de cada uma delas:",
@@ -2158,8 +1979,7 @@ export const anemometrosQuestions: Question[] = [
       "1- Bomba hidráulica (pressuriza o sistema); 2- Atuadores (rotacionam as hastes); 3- Válvulas solenoides (liberam fluido).",
       "1- Antena rotativa (emite radiação eletromagnética); 2- Guia de onda (transmite o sinal); 3- Unidade de Varredura (mostra ecos de chuva)."
     ],
-    "answer": "1- Conjunto anemômetro/catavento (unidade detectora usada para medir a velocidade e direção do vento); 2- Unidade de retransmissão / RTU (usada para amplificar os sinais fracos do detector); 3- Receptores e indicadores (exibem as leituras de velocidade e direção do vento nos conveses).",
-    "topic": "Anemômetros"
+    "answer": "1- Conjunto anemômetro/catavento (unidade detectora usada para medir a velocidade e direção do vento); 2- Unidade de retransmissão / RTU (usada para amplificar os sinais fracos do detector); 3- Receptores e indicadores (exibem as leituras de velocidade e direção do vento nos conveses)."
   },
   {
     "question": "Qual é o tipo de anemômetro tradicionalmente usado (de uso geral) nas Fragatas classe Niterói (MK-10)?",
@@ -2170,8 +1990,7 @@ export const anemometrosQuestions: Question[] = [
       "EVERSHED.",
       "Ultrassônico MK-1."
     ],
-    "answer": "EVERSHED.",
-    "topic": "Anemômetros"
+    "answer": "EVERSHED."
   },
   {
     "question": "Qual dispositivo do anemômetro EVERSHED produz um sinal proporcional ao ângulo do vento detectado?",
@@ -2182,8 +2001,7 @@ export const anemometrosQuestions: Question[] = [
       "Síncro LINVAR.",
       "Síncro transmissor de direção (TX)."
     ],
-    "answer": "Síncro transmissor de direção (TX).",
-    "topic": "Anemômetros"
+    "answer": "Síncro transmissor de direção (TX)."
   },
   {
     "question": "No anemômetro EVERSHED, o indicador no passadiço possui receptores combinados para indicação de intensidade e direção do vento. Como são feitas as graduações destes mostradores e seus intervalos?",
@@ -2194,8 +2012,7 @@ export const anemometrosQuestions: Question[] = [
       "Direção: 0 a 360º contínuo; Intensidade: 0 a 150 nós contínuo.",
       "Direção: de 10 em 10 graus; Intensidade: de 5 em 5 nós."
     ],
-    "answer": "Direção: 0 a 360º, sendo 0 a 180º vermelho (bombordo) e 0 a 180º verde (boreste) com intervalos de 2 em 2 graus; Intensidade: 0 a 75 nós com intervalo de 1 nó.",
-    "topic": "Anemômetros"
+    "answer": "Direção: 0 a 360º, sendo 0 a 180º vermelho (bombordo) e 0 a 180º verde (boreste) com intervalos de 2 em 2 graus; Intensidade: 0 a 75 nós com intervalo de 1 nó."
   },
   {
     "question": "Quais os dispositivos do servo de velocidade do anemômetro EVERSHED são os grandes responsáveis físicos pelo amortecimento das oscilações do sistema?",
@@ -2206,8 +2023,7 @@ export const anemometrosQuestions: Question[] = [
       "Engrenagem redutora 2000/1 e potenciômetro RV3.",
       "Diodos D5 e D6 em conjunto com o amplificador PA-112."
     ],
-    "answer": "Engrenagem redutora 2000/1 e potenciômetro RV3.",
-    "topic": "Anemômetros"
+    "answer": "Engrenagem redutora 2000/1 e potenciômetro RV3."
   },
   {
     "question": "O síncro LINVAR, utilizado no sistema anemômetro EVERSHED, fornece uma realimentação na faixa de:",
@@ -2218,8 +2034,7 @@ export const anemometrosQuestions: Question[] = [
       "0 a 115 VCA.",
       "10 a 60 VCA."
     ],
-    "answer": "0 a 40 VCA.",
-    "topic": "Anemômetros"
+    "answer": "0 a 40 VCA."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, a diferença no ângulo formado entre a posição do rotor do Transmissor (TX) e o rotor do Transformador de Controle (CT) do servo de direção determina:",
@@ -2230,8 +2045,7 @@ export const anemometrosQuestions: Question[] = [
       "A frequência de trabalho (se 60Hz ou 400Hz).",
       "A velocidade final de deslocamento do navio."
     ],
-    "answer": "A amplitude do sinal de erro que acionará o motor de acompanhamento.",
-    "topic": "Anemômetros"
+    "answer": "A amplitude do sinal de erro que acionará o motor de acompanhamento."
   },
   {
     "question": "No sistema EVERSHED, o sinal elétrico de direção que vai do transmissor de controle (CX) para a unidade de correção de dados do vento alimenta o estator de qual componente do outro lado?",
@@ -2242,8 +2056,7 @@ export const anemometrosQuestions: Question[] = [
       "Um Taco-gerador.",
       "Um Amplificador PA-112."
     ],
-    "answer": "Um Transformador de Controle (CT).",
-    "topic": "Anemômetros"
+    "answer": "Um Transformador de Controle (CT)."
   },
   {
     "question": "No anemômetro EVERSHED, quando os sinais medidos no potenciômetro RV4 e no resistor R11 atingem o ponto em que são iguais e opostos, a velocidade do servo motor (M2) estabiliza-se em:",
@@ -2254,8 +2067,7 @@ export const anemometrosQuestions: Question[] = [
       "65 RPM.",
       "Zero RPM (0 RPM)."
     ],
-    "answer": "Zero RPM (0 RPM).",
-    "topic": "Anemômetros"
+    "answer": "Zero RPM (0 RPM)."
   },
   {
     "question": "Quantos síncros transmissores (TX) a unidade detectora colocada no mastro das fragatas classe Niterói possui para a detecção da direção do vento?",
@@ -2266,8 +2078,7 @@ export const anemometrosQuestions: Question[] = [
       "Quatro.",
       "Nenhum, utiliza potenciômetros rotativos no lugar de síncros."
     ],
-    "answer": "Um.",
-    "topic": "Anemômetros"
+    "answer": "Um."
   },
   {
     "question": "Quais são os tipos (classificações) de manutenções realizadas nos sistemas de anemômetros a bordo dos navios da MB?",
@@ -2278,8 +2089,7 @@ export const anemometrosQuestions: Question[] = [
       "Terceirizada e Orgânica.",
       "Nível 1 e Nível 2."
     ],
-    "answer": "Preventivas e Corretivas.",
-    "topic": "Anemômetros"
+    "answer": "Preventivas e Corretivas."
   },
   {
     "question": "Analisando o diagrama esquemático do anemômetro EVERSHED, em qual situação operacional a tensão medida no ponto TP11 será igual à do ponto TP12?",
@@ -2290,8 +2100,7 @@ export const anemometrosQuestions: Question[] = [
       "Apenas durante o teste de 45 nós.",
       "Quando a velocidade do vento for máxima."
     ],
-    "answer": "Quando o diodo D2 estiver conduzindo.",
-    "topic": "Anemômetros"
+    "answer": "Quando o diodo D2 estiver conduzindo."
   },
   {
     "question": "Descreva os resultados esperados durante o teste de direção do vento no anemômetro EVERSHED, que é executado através do acionamento da chave S1:",
@@ -2302,8 +2111,7 @@ export const anemometrosQuestions: Question[] = [
       "Posição 1: NORMAL; Posição 2: 15 nós; Posição 3: 30 nós; Posição 4: 45 nós.",
       "Posição 1: ON; Posição 2: TEST; Posição 3: CALIB; Posição 4: RUN."
     ],
-    "answer": "Posição 1: NORMAL; Posição 2: 0º (zero grau); Posição 3: 120º BE; Posição 4: 120º BB.",
-    "topic": "Anemômetros"
+    "answer": "Posição 1: NORMAL; Posição 2: 0º (zero grau); Posição 3: 120º BE; Posição 4: 120º BB."
   },
   {
     "question": "No sistema de anemômetro EVERSHED, qual componente específico localizado no servo de velocidade do vento tem a função física e elétrica de ajustar o zero (calibrador do mostrador)?",
@@ -2314,10 +2122,8 @@ export const anemometrosQuestions: Question[] = [
       "Potenciômetro RV3.",
       "Potenciômetro RV4."
     ],
-    "answer": "Potenciômetro RV4.",
-    "topic": "Anemômetros"
+    "answer": "Potenciômetro RV4."
   },
-
   {
     "question": "O síncro LINVAR, utilizado no servo de velocidade do anemômetro EVERSHED, opera como um transdutor. Qual é o princípio eletromagnético fundamental que permite sua operação linear?",
     "options": [
@@ -2328,7 +2134,6 @@ export const anemometrosQuestions: Question[] = [
       "Indução eletrostática via anéis coletores de grafite."
     ],
     "answer": "Variação linear do coeficiente de acoplamento magnético entre o rotor e o estator em função do ângulo de rotação.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O LINVAR (Linear Variometer) é construído especialmente para que a tensão induzida no seu secundário (estator/rotor) varie de forma estritamente linear em relação ao deslocamento angular dentro de uma faixa específica de operação."
   },
   {
@@ -2341,7 +2146,6 @@ export const anemometrosQuestions: Question[] = [
       "Retificar a corrente alternada de 115V para o painel principal."
     ],
     "answer": "Opor-se (cancelar) a tensão retificada proveniente do detector para que o servomotor pare quando a posição correta for atingida.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O sinal gerado pelo LINVAR é retificado e introduzido no circuito do amplificador onde é comparado (subtraído) com o sinal vindo do detector. Quando as tensões se igualam, o erro cai a zero, parando o servo motor."
   },
   {
@@ -2354,7 +2158,6 @@ export const anemometrosQuestions: Question[] = [
       "270 graus."
     ],
     "answer": "85 graus (operando em uma faixa linear restrita).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Os LINVARs são projetados para oferecer linearidade apenas em uma faixa restrita (geralmente em torno de +/- 85 graus a partir da posição neutra). Eles não giram livremente como um síncro transmissor (TX)."
   },
   {
@@ -2367,7 +2170,6 @@ export const anemometrosQuestions: Question[] = [
       "Causa saturação magnética no núcleo do LINVAR."
     ],
     "answer": "Faz o motor girar no sentido reverso caso a indicação tente ir abaixo de zero nós.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Ao passar do zero, a inversão de fase indica um erro negativo. O amplificador detecta essa fase reversa e comanda o motor M2 a girar na direção oposta, trazendo a indicação de volta para a faixa de operação."
   },
   {
@@ -2380,7 +2182,6 @@ export const anemometrosQuestions: Question[] = [
       "A luz vermelha do painel apagará."
     ],
     "answer": "O motor perderá a realimentação de oposição, fazendo o mostrador disparar ou oscilar incontrolavelmente até o fim de curso.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Sem a tensão de oposição (feedback) gerada pelo LINVAR, o sinal do detector continuará presente no amplificador como um \"erro constante\". O motor girará sem parar tentando zerar um erro que nunca será compensado."
   },
   {
@@ -2393,7 +2194,6 @@ export const anemometrosQuestions: Question[] = [
       "Potenciômetro RV4."
     ],
     "answer": "Ponte de Diodos D4.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O sinal AC de 0 a 40V do LINVAR passa pela ponte de diodos D4, sendo retificado em onda completa para que possa ser comparado como um nível DC (nível de tensão contínua) com o sinal de velocidade."
   },
   {
@@ -2406,7 +2206,6 @@ export const anemometrosQuestions: Question[] = [
       "O LINVAR não possui anéis coletores."
     ],
     "answer": "O LINVAR possui um rotor especialmente bobinado/perfilado para saída de tensão linear versus ângulo, enquanto o CT fornece um sinal senoidal de erro que varia com o seno do ângulo de desalinhamento.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "A curva de saída do CT é senoidal (erro = sen(θ)). O LINVAR tem enrolamentos conformados para que a relação tensão/ângulo seja uma reta (linear), o que é essencial para um mostrador linear de velocidade (nós)."
   },
   {
@@ -2419,7 +2218,6 @@ export const anemometrosQuestions: Question[] = [
       "Para aumentar a velocidade de rotação das cubas."
     ],
     "answer": "Porque variações de frequência alteram a reatância indutiva dos enrolamentos, modificando a tensão de saída e, consequentemente, a precisão da calibração de velocidade.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Como um dispositivo indutivo (transformador rotativo), a tensão induzida e a impedância dependem da frequência. Uma mudança brusca de 400Hz para 380Hz, por exemplo, faria a tensão de feedback cair, resultando em leituras de velocidade erradas."
   },
   {
@@ -2432,7 +2230,6 @@ export const anemometrosQuestions: Question[] = [
       "Ele é desviado para o servo de direção."
     ],
     "answer": "Sua parcela de variação rápida é filtrada / atenuada no malha de erro para evitar que o motor M2 faça o ponteiro trepidar.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O amortecimento (RV3) atua sobre a parcela dinâmica da malha. Ajustá-lo afeta como a taxa de variação do sinal (incluindo o do LINVAR) influencia a velocidade de resposta do motor, reduzindo as \"trepidações\" do ponteiro perante rajadas de vento."
   },
   {
@@ -2445,7 +2242,6 @@ export const anemometrosQuestions: Question[] = [
       "10 VCA."
     ],
     "answer": "40 VCA.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O LINVAR foi projetado para fornecer um sinal que varia linearmente de 0 a 40 VCA. Logo, no fundo de escala máximo do indicador de velocidade (75 nós), a tensão de oposição gerada atinge seu máximo de 40 VCA."
   },
   {
@@ -2458,7 +2254,6 @@ export const anemometrosQuestions: Question[] = [
       "Não haverá consequência, pois a retificação em ponte (D4) compensa."
     ],
     "answer": "O mostrador indicará uma velocidade maior do que a real.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Se o LINVAR receber menos tensão, ele induzirá um feedback menor para um mesmo ângulo do ponteiro. O amplificador exigirá que o ponteiro vá mais adiante na escala para gerar a tensão de oposição necessária, causando indicação falsamente alta."
   },
   {
@@ -2471,7 +2266,6 @@ export const anemometrosQuestions: Question[] = [
       "Discos de fricção do integrador mecânico."
     ],
     "answer": "Um sistema de engrenagens redutoras (ex: 2000/1).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O motor M2 de alta velocidade é reduzido por um trem de engrenagens (como a relação 2000:1) para movimentar lentamente o rotor do LINVAR e, simultaneamente, o ponteiro indicador, garantindo alto torque e precisão."
   },
   {
@@ -2484,7 +2278,6 @@ export const anemometrosQuestions: Question[] = [
       "Atuam como foto-diodos para o circuito de alarme."
     ],
     "answer": "Operam em condução reversa controlada (Efeito Zener / Avalanche), mantendo uma queda de tensão constante em seus terminais independentemente de flutuações na corrente.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Diodos reguladores (Zener) são polarizados reversamente e projetados para entrar em condução (avalanche) a uma tensão específica, estabilizando as variações de voltagem do suprimento principal para proteger as referências do circuito."
   },
   {
@@ -2497,7 +2290,6 @@ export const anemometrosQuestions: Question[] = [
       "A abertura da ponte de retificação D4."
     ],
     "answer": "A queda da tensão da linha regulada para praticamente zero (terra), desestabilizando ou apagando as malhas de erro associadas.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Um diodo Zener em curto-circuito desviará toda a corrente para o referencial de massa (terra), eliminando a tensão estabilizada que deveria ser distribuída, colapsando a operação do amplificador / malha de controle."
   },
   {
@@ -2510,7 +2302,6 @@ export const anemometrosQuestions: Question[] = [
       "Pico a pico da tensão DC."
     ],
     "answer": "Meia onda do sinal de 10V / 400Hz oriundo do transformador T1.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O diodo D1 é classificado tecnicamente nos manuais como um retificador de meia onda que processa a saída auxiliar (referência/excitação) vinda do enrolamento secundário do T1."
   },
   {
@@ -2523,7 +2314,6 @@ export const anemometrosQuestions: Question[] = [
       "A ponte continuará retificando em onda completa normalmente."
     ],
     "answer": "A ponte passará a atuar como um retificador de meia onda, dobrando o *ripple* (ondulação) e reduzindo o valor médio DC, causando instabilidade no ponteiro.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Quando um diodo de uma ponte de onda completa abre, a ponte passa a retificar apenas metade do ciclo (meia onda). Isso reduz o nível DC e introduz forte ruído (ripple), o que faz o servo motor oscilar ou vibrar."
   },
   {
@@ -2536,7 +2326,6 @@ export const anemometrosQuestions: Question[] = [
       "O transformador T1 explodiria imediatamente."
     ],
     "answer": "Eles conduziriam como diodos comuns, provocando um curto prático com queda de apenas ~0.7V, não regulando a alta tensão e possivelmente queimando o resistor limitador.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Diodos reguladores devem ser instalados com polarização reversa. Em polarização direta, comportam-se como diodos comuns (~0.7V de queda), drenando excessiva corrente através do resistor série e matando a regulação da linha."
   },
   {
@@ -2549,7 +2338,6 @@ export const anemometrosQuestions: Question[] = [
       "Porque o Síncro CT só funciona com pulsos DC."
     ],
     "answer": "O amplificador operacional do PA-112 é desenhado para somar e processar erros diferenciais em níveis de Corrente Contínua (DC). Sinais AC sofreriam cancelamento de fase indesejado ou problemas de frequência.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Amplificadores de erro (somadores) em servos analógicos clássicos geralmente processam variações de tensão DC. Os sinais AC vêm com variação de fase; ao convertê-los em DC, o sistema compara apenas magnitudes (níveis de tensão)."
   },
   {
@@ -2562,7 +2350,6 @@ export const anemometrosQuestions: Question[] = [
       "Taco-gerador TG2."
     ],
     "answer": "Capacitor de filtro associado em paralelo à saída da ponte D4.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "A componente alternada após a retificação é chamada de \"ripple\". Capacitores em paralelo atuam como filtros passa-baixa, alisando esse sinal. Se o capacitor secar ou abrir, o ripple AC aparece forte sobre o sinal DC."
   },
   {
@@ -2575,7 +2362,6 @@ export const anemometrosQuestions: Question[] = [
       "Girar mecanicamente o rodete do integrador."
     ],
     "answer": "Criar uma tensão contínua variável proporcional ao alinhamento angular para comparação no amplificador de direção.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Assim como a velocidade, a direção precisa ser traduzida de sinais síncrono-AC para DC em alguns subsistemas do amplificador PA-112 para calcular o erro diferencial real."
   },
   {
@@ -2588,7 +2374,6 @@ export const anemometrosQuestions: Question[] = [
       "Ao retificador de onda completa D4."
     ],
     "answer": "À malha do circuito de Teste de Direção do Vento (chaves seletoras S1/S2).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Na literatura e bizuários originais de MB, a avaria em R15 é clássica por isolar (inutilizar) o sinal aplicado aos estatores do CT durante a execução do teste rotativo de direção (0º, 120ºBE, 120ºBB)."
   },
   {
@@ -2601,7 +2386,6 @@ export const anemometrosQuestions: Question[] = [
       "Desarma por sobretensão."
     ],
     "answer": "Encontra o estado de nulidade (zero RPM).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O R11 e RV4 fazem parte da rede de soma do amplificador. Quando os sinais são iguais em magnitude mas opostos em polaridade (+ e -), a soma algébrica no amplificador é 0V, causando a parada do servo."
   },
   {
@@ -2614,7 +2398,6 @@ export const anemometrosQuestions: Question[] = [
       "Como shunt de corrente no amperímetro do painel."
     ],
     "answer": "Na limitação de corrente durante as simulações de velocidade da chave S3 (teste de 15, 30, 45 nós). Se queimar, o teste de calibração falha.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Os circuitos de teste (chave S3) baseiam-se em injetar sinais calibrados no sistema através de um divisor resistivo de precisão. O R13 compõe essa malha divisora; sua queima impede a injeção do sinal simulado."
   },
   {
@@ -2627,7 +2410,6 @@ export const anemometrosQuestions: Question[] = [
       "470 Ohms."
     ],
     "answer": "60 Ohms.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "\"Bizu\" clássico da Marinha, derivado de diagramas esquemáticos internos onde resistores de casamento de linha ou shunt como o R-103 no amplificador PA possuem a especificação rígida de 60 Ohms."
   },
   {
@@ -2640,7 +2422,6 @@ export const anemometrosQuestions: Question[] = [
       "Gerar o sinal senoidal de 400Hz."
     ],
     "answer": "Ajustar os níveis das tensões provenientes dos transdutores (LINVAR, Gerador de Indução, CT) para a escala sensível de entrada do amplificador operacional (escala de milivolts).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Amplificadores operacionais exigem sinais de erro minúsculos. Sinais de 40V ou 26V devem ser atenuados via divisores resistivos (redes) antes de serem introduzidos nos pinos de entrada diferencial."
   },
   {
@@ -2653,7 +2434,6 @@ export const anemometrosQuestions: Question[] = [
       "Trimpot interno inacessível."
     ],
     "answer": "Potenciômetro rotativo que ajusta a sensibilidade (ganho de amplificação).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "RV1 é um potenciômetro. O ajuste da sensibilidade altera o ganho. Se a sensibilidade for baixa, o ponteiro tem \"folga\" e demora a responder; se for muito alta, o ponteiro \"vibra\" constantemente em pequenos desvios."
   },
   {
@@ -2666,7 +2446,6 @@ export const anemometrosQuestions: Question[] = [
       "A tensão em TP11 se anulará."
     ],
     "answer": "O circuito operará em ganho de \"malha aberta\", tornando-se altamente instável (overshoot maciço), e o motor oscilará violentamente em torno do ponto desejado.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Sem o resistor de feedback, o amortecimento some. O ganho do amplificador vai ao máximo (malha aberta). Qualquer pequeno erro faz o motor disparar com força total, passar do ponto, inverter, passar do ponto, gerando oscilação perpétua."
   },
   {
@@ -2679,7 +2458,6 @@ export const anemometrosQuestions: Question[] = [
       "O ganho de malha aberta do LINVAR."
     ],
     "answer": "Uma tensão de polarização (offset) variável que soma ou subtrai uma constante DC ao erro, permitindo alinhar o ponteiro no 0 mecânico quando não há sinal do detector.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O RV4 compensa pequenas derivas eletrônicas ou desvios mecânicos introduzindo uma voltagem DC minúscula e ajustável (offset) na rede de soma de resistores (como o R11) para forçar o ponteiro exatamente ao zero mecânico."
   },
   {
@@ -2692,7 +2470,6 @@ export const anemometrosQuestions: Question[] = [
       "É a falta total de resposta ao erro em 0º."
     ],
     "answer": "É a ultrapassagem da marcação correta do ponteiro devido à inércia mecânica, antes de estabilizar.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Overshoot é quando o sistema é comandado para 90º, mas por inércia ou excesso de ganho passa para 95º, retornando depois para 90º. O amortecimento atua contra essa ultrapassagem frenando o motor antes do ponto exato."
   },
   {
@@ -2705,7 +2482,6 @@ export const anemometrosQuestions: Question[] = [
       "A indicação de 75 nós no teste de calibração."
     ],
     "answer": "A queima quase imediata dos diodos reguladores por excesso de corrente em avalanche, ou a perda total de tensão estabilizada se o resistor abrir.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Em um circuito regulador Zener, o resistor limitador em série é mandatório para segurar a queda de tensão e limitar a corrente máxima no diodo. Sem ele, a fonte destroi o Zener."
   },
   {
@@ -2718,7 +2494,6 @@ export const anemometrosQuestions: Question[] = [
       "12 a 24 VDC estabilizados."
     ],
     "answer": "0 a 100 mV (milivolts).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Pontos como TP6 e TP7 representam as entradas ou saídas de pequeno sinal dos amplificadores operacionais da RTU (como o PA-112). A leitura desses erros residuais de balanceamento opera em milivolts."
   },
   {
@@ -2731,7 +2506,6 @@ export const anemometrosQuestions: Question[] = [
       "Potenciômetro RV3."
     ],
     "answer": "Diodo D2.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "É uma peculiaridade cobrada (bizu de esquema do EVERSHED). O diodo D2 faz o acoplamento ou retificação de passagem entre esses dois nós específicos; sua condução nivela os potenciais de TP11 e TP12."
   },
   {
@@ -2744,7 +2518,6 @@ export const anemometrosQuestions: Question[] = [
       "Locais no passadiço onde são feitos testes de velocidade simulada."
     ],
     "answer": "Terminais específicos (pinos de teste) disponibilizados nas placas de circuito impresso da RTU para medir tensões sem precisar dessoldar componentes.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "TP (Test Point) é padrão em circuitos industriais navais; eles fornecem acesso seguro de sondagem para multímetros e osciloscópios no acompanhamento dos sinais desde os síncros até o servo motor."
   },
   {
@@ -2757,7 +2530,6 @@ export const anemometrosQuestions: Question[] = [
       "Exatamente 1 Volt AC para polarização."
     ],
     "answer": "Próximo a 0 Volts AC (idealmente apenas ripple desprezível), pois a tensão deve ser pura Contínua (DC).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O regulador Zener atua no setor de corrente contínua da fonte para entregar uma tensão DC limpa. O multímetro em AC medirá apenas a pequena flutuação residual (ripple), que deve ser quase nula."
   },
   {
@@ -2770,7 +2542,6 @@ export const anemometrosQuestions: Question[] = [
       "Induzir fisicamente a rotação do anemômetro tipo F."
     ],
     "answer": "Amplificar e somar vetorialmente os minúsculos sinais de erro de tensão contínua até um nível de potência suficiente para acionar o motor de acompanhamento M2.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O PA-112 é o Amplificador de Potência principal das servo-malhas. Ele capta os erros das pontes de diodos e potenciômetros (nível de milivolts) e \"bombeia\" potência suficiente para mover mecanicamente os pesados rotores."
   },
   {
@@ -2783,7 +2554,6 @@ export const anemometrosQuestions: Question[] = [
       "Tornar-se corrente contínua negativa."
     ],
     "answer": "Cair progressivamente até atingir o patamar de 0 Volts (nulidade) exatamente quando a posição de 120º for atingida mecanicamente.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O fundamento de qualquer servomecanismo de nulo (nulo-balance) é que o movimento mecânico da engrenagem gira o rotor do CT, subtraindo gradativamente o sinal elétrico de erro até ele ser zerado (posição atingida)."
   },
   {
@@ -2796,7 +2566,6 @@ export const anemometrosQuestions: Question[] = [
       "O potenciômetro RV4 e sua solda de contato."
     ],
     "answer": "As entradas diferenciais (somador) para checar ripple provocado por falha no retificador D4 ou capacitores de filtragem ressecados.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O sintoma clássico de ripple (ondulação não filtrada) atingindo o amplificador de alto ganho é um servomotor que fica instável (jitter/pulos), comumente devido a diodos ou eletrolíticos degradados."
   },
   {
@@ -2809,7 +2578,6 @@ export const anemometrosQuestions: Question[] = [
       "Frequência exata da rede elétrica de 60Hz."
     ],
     "answer": "Velocidade log (odômetro) e a proa verdadeira da girobússola.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Para obter Vento Verdadeiro, o Computador de Dados do Vento soma vetorialmente o Vento Relativo, a Velocidade do Navio (via Odômetro/Log) e o Rumo Verdadeiro do Navio (via Girobússola)."
   },
   {
@@ -2822,7 +2590,6 @@ export const anemometrosQuestions: Question[] = [
       "Universal com escovas de carvão."
     ],
     "answer": "De indução bipolar servo-acionado de duas fases, cuja rotação e direção dependem da defasagem em graus aplicada aos seus dois enrolamentos.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Servomotores clássicos da época, especialmente os de 400Hz operados por amplificadores analógicos de AC ou pulsantes de duas fases dependem do avanço/atraso de fase de um enrolamento de controle em relação a um de referência."
   },
   {
@@ -2835,7 +2602,6 @@ export const anemometrosQuestions: Question[] = [
       "O ajuste do zero do LINVAR queimará o RV1."
     ],
     "answer": "Ocorrerá violento *overshoot* e severa \"caça\" ou oscilação (hunting), porque o amplificador perderá a taxa de feedback dinâmico limitadora da aceleração.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O taco-gerador (gerador tacométrico) fornece um sinal elétrico estritamente proporcional à \"velocidade de giro\" mecânica atual, usado pelo amplificador para prever a frenagem antes da parada. Sem ele, a inércia faz o sistema passar do ponto repetidamente (caça)."
   },
   {
@@ -2848,7 +2614,6 @@ export const anemometrosQuestions: Question[] = [
       "Um software injetor dentro do PC da Fragata."
     ],
     "answer": "Divisores de tensão de precisão interligados pelo circuito elétrico das chaves que introduzem voltagens que representam o erro do gerador.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "A calibração eletrônica desliga o sensor do teto temporariamente e insere uma rede resistiva fixa (como R13) que gera tensões análogas às medições reais destas velocidades para aferir o amplificador e o LINVAR localmente."
   },
   {
@@ -2861,7 +2626,6 @@ export const anemometrosQuestions: Question[] = [
       "Síncros CT empilhados sem motores auxiliares."
     ],
     "answer": "Um integrador mecânico estritamente a fricção, associado a um rodete móvel sobre um disco tracionado por um equipamento de frequência constante (motor constante).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O Tipo B é analógico e pesado: ele usa um integrador de disco de atrito mecânico. O atrito e a posição do rodete, guiado pela inércia contra um motor de relógio, integram o deslocamento criando o ângulo (leitura)."
   },
   {
@@ -2874,7 +2638,6 @@ export const anemometrosQuestions: Question[] = [
       "O EVERSHED não possui cata-vento para a direção."
     ],
     "answer": "O EVERSHED possui cubas e LINVAR; o Tipo F possui hélice giratória e gerador de pulso AC (ou taco-gerador embutido na ponta).",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "A silhueta visual clássica define que o EVERSHED usa cubas para velocidade e aleta para direção, suportados no mesmo eixo. O tipo F clássico utiliza hélice montada horizontalmente na extremidade proa-popa."
   },
   {
@@ -2887,7 +2650,6 @@ export const anemometrosQuestions: Question[] = [
       "Modificação permanente do fundo de escala de 75 nós para 100 nós."
     ],
     "answer": "Uma realimentação \"preguiçosa\" causando perda de amortecimento e oscilação induzida.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "O Taco-Gerador AC depende de excitação magnética estável. Com campo fraco, ele gera pouca tensão por RPM. O amplificador \"pensa\" que o motor está rodando devagar e não freia, ocorrendo o overshoot excessivo."
   },
   {
@@ -2900,7 +2662,6 @@ export const anemometrosQuestions: Question[] = [
       "Caso contrário, o vento real passaria de 75 nós rasgando os componentes."
     ],
     "answer": "O sinal original na gávea (detector) é frágil demais e sofre atenuação na fiação, sem potência para acionar os pesados relés e motores dos receptores no interior do navio.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Sistemas síncronos distantes requerem servomecanismos justamente pela falta de \"músculo\" elétrico do sensor para girar pesados componentes eletromecânicos, ponteiros robustos e vencer atritos mecânicos longos (RTU resolve isso)."
   },
   {
@@ -2913,7 +2674,6 @@ export const anemometrosQuestions: Question[] = [
       "Aterramento da carcaça do anemômetro diretamente ao mar via mastro."
     ],
     "answer": "Capacitores de desacoplamento, reguladores locais Zener e os transformadores de isolamento galvânico T1/T2.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "A robustez naval contra transientes se apoia no isolamento por transformadores na entrada do painel da RTU (que separa fisicamente e magneticamente o circuito de 115V do navio da parte sensível de 10V e 26V), seguido de regulagem."
   },
   {
@@ -2926,7 +2686,6 @@ export const anemometrosQuestions: Question[] = [
       "Na rede AC do painel principal (falha do navio)."
     ],
     "answer": "No desbalanceamento interno da polarização DC das etapas amplificadoras do PA-112 (offset irregular de zero), forçando o transistor de saída a conduzir indevidamente.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Um amplificador operacional perfeito não amplifica quando as entradas diferenciais marcam erro 0. Um amplificador desbalanceado (como por transistores em fuga térmica ou resistores R-shunt alterados) gera erro artificial e move o motor (\"drift\")."
   },
   {
@@ -2939,7 +2698,6 @@ export const anemometrosQuestions: Question[] = [
       "Frequência do LINVAR fixada mecanicamente."
     ],
     "answer": "Pista condutiva do potenciômetro RV1 rompida, suja, ou com um cursor raspador carbonizado, gerando resistências espúrias imprevisíveis durante o ajuste.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Potenciômetros em ambiente de maresia sofrem forte degradação mecânica (oxidação, poeira salina). Quando o contato desliza na trilha defeituosa, a resistência oscila criando \"ruído\", enlouquecendo o comportamento de servo."
   },
   {
@@ -2952,7 +2710,6 @@ export const anemometrosQuestions: Question[] = [
       "O gerador de indução dobra de frequência (para 800Hz) avisando falha."
     ],
     "answer": "Interrompe mecanicamente e eletricamente o curso (ou alimentação direta ao relé final do motor M2), impedindo que o mecanismo tente rodar o ponteiro além das travas físicas para evitar a quebra do eixo e do próprio mostrador de velocidade.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Chaves limite ou limit switches são chaves físicas acionadas por cames próximos ao fim da escala de operação mecânica para abrir a alimentação dos motores, protegendo o instrumento contra forçamento."
   },
   {
@@ -2965,9 +2722,6 @@ export const anemometrosQuestions: Question[] = [
       "1-Rodete mecânico / 2-Transdutor piezoelétrico / 3-Conversor ADC / 4-Painel LCD."
     ],
     "answer": "1-Gerador Indução / 2-Retificador D4 e Filtros / 3-Rede de Soma (R11/RV4) no PA-112 / 4-Motor de Acompanhamento M2.",
-    "topic": "Anemômetros (Aprofundamento/Gaps)",
     "explanation": "Resumo ideal do servo de velocidade: (1) O Gerador capta fisicamente as cubas e dá o sinal fraco de erro original. (2) A ponte D4 o retifica para DC. (3) A rede de entrada soma o sinal DC retificado de erro com o sinal retificado do LINVAR (opposing feedback/offset). (4) A saída de potência reaciona e força o Motor M2 a rodar o dial."
   }
-
 ];
-

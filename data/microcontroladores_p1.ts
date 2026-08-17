@@ -11,8 +11,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Unidade Central de Processamento (CPU)."
     ],
     "answer": "Unidade de GPS.",
-    "explanation": "Por que a resposta correta é \"Unidade de GPS.\"? Conforme a arquitetura dos microcontroladores PIC (Apostila EE 2006-0423), todo PIC possui internamente Unidade Central de Processamento (CPU), memória de programa e dados, temporizador Watchdog (WDT) e portas de Entrada/Saída (I/O). A Unidade de GPS é um módulo de geolocalização por satélite externo e independente, não fazendo parte da estrutura interna nativa do chip.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Unidade de GPS.\"? Conforme a arquitetura dos microcontroladores PIC (Apostila EE 2006-0423), todo PIC possui internamente Unidade Central de Processamento (CPU), memória de programa e dados, temporizador Watchdog (WDT) e portas de Entrada/Saída (I/O). A Unidade de GPS é um módulo de geolocalização por satélite externo e independente, não fazendo parte da estrutura interna nativa do chip."
   },
   {
     "question": "É o recurso disponível do Micro que incrementa um contador RC independente e toda vez que este contador extrapola o seu valor máximo retornando a zero, é provocada a reinicialização do sistema (reset)?",
@@ -24,8 +23,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Unidade de GPS."
     ],
     "answer": "Watchdog.",
-    "explanation": "Por que a resposta correta é \"Watchdog.\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Watchdog.\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema."
   },
   {
     "question": "Estabelece o fluxo de controle dos direcionamentos da memória que o código do programa contém?",
@@ -37,8 +35,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Conversor analógico-digital."
     ],
     "answer": "Contador de Programa (PC).",
-    "explanation": "Por que a resposta correta é \"Contador de Programa (PC).\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais).",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Contador de Programa (PC).\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais)."
   },
   {
     "question": "A função da instrução CLRWDT dentro de um programa é:",
@@ -50,8 +47,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "ligar o temporizador do Watchdog."
     ],
     "answer": "impedir que o Watchdog transborde.",
-    "explanation": "Por que a resposta correta é \"impedir que o Watchdog transborde.\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"impedir que o Watchdog transborde.\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema."
   },
   {
     "question": "De qual fator depende o número de linhas em um barramento de endereços?",
@@ -63,8 +59,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Quantidade de memória que se deseja endereçar."
     ],
     "answer": "Quantidade de memória que se deseja endereçar.",
-    "explanation": "Por que a resposta correta é \"Quantidade de memória que se deseja endereçar.\"? O número de linhas em um barramento de endereços determina diretamente a capacidade máxima de endereçamento do sistema (onde N linhas permitem endereçar 2^N posições de memória). Por essa razão matemática e arquitetural, a quantidade de linhas do barramento é dimensionada em função da quantidade de memória que se deseja endereçar no projeto.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Quantidade de memória que se deseja endereçar.\"? O número de linhas em um barramento de endereços determina diretamente a capacidade máxima de endereçamento do sistema (onde N linhas permitem endereçar 2^N posições de memória). Por essa razão matemática e arquitetural, a quantidade de linhas do barramento é dimensionada em função da quantidade de memória que se deseja endereçar no projeto."
   },
   {
     "question": "Define as regras usadas na troca de dados?",
@@ -76,8 +71,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Barramentos."
     ],
     "answer": "Protocolo.",
-    "explanation": "Por que a resposta correta é \"Protocolo.\"? Na comunicação digital entre o processador e periféricos, um Protocolo de comunicação define rigorosamente o conjunto de regras padronizadas, temporizações (timings), níveis de tensão e formatos dos quadros de dados, garantindo que a informação seja enviada e recebida sem erros ou colisões.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Protocolo.\"? Na comunicação digital entre o processador e periféricos, um Protocolo de comunicação define rigorosamente o conjunto de regras padronizadas, temporizações (timings), níveis de tensão e formatos dos quadros de dados, garantindo que a informação seja enviada e recebida sem erros ou colisões."
   },
   {
     "question": "Quais os 03 tipos de endereçamento que são usados no PC?",
@@ -89,8 +83,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "direto, alternativo e indireto."
     ],
     "answer": "direto, indireto e imediato.",
-    "explanation": "Por que a resposta correta é \"direto, indireto e imediato.\"? A programação em assembly para a família PIC da Microchip utiliza fundamentalmente estes três modos de endereçamento: Imediato (quando o operando numérico constante é fornecido na própria instrução), Direto (quando o endereço de memória/registrador é explícito na instrução) e Indireto (quando o endereço do registrador é apontado dinamicamente via FSR/INDF).",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"direto, indireto e imediato.\"? A programação em assembly para a família PIC da Microchip utiliza fundamentalmente estes três modos de endereçamento: Imediato (quando o operando numérico constante é fornecido na própria instrução), Direto (quando o endereço de memória/registrador é explícito na instrução) e Indireto (quando o endereço do registrador é apontado dinamicamente via FSR/INDF)."
   },
   {
     "question": "Na arquitetura ____________, os barramentos de dados e endereços são compartilhados entre memórias de programas e de dados na comunicação com a CPU.",
@@ -102,8 +95,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Harvard."
     ],
     "answer": "Von-Neumann.",
-    "explanation": "Por que a resposta correta é \"Von-Neumann.\"? Na arquitetura de Von-Neumann, as memórias de programa e de dados compartilham o mesmo barramento físico e espaço de endereçamento. Isso faz com que a CPU não consiga buscar uma instrução e acessar um dado simultaneamente, gerando o chamado gargalo de Von-Neumann.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Von-Neumann.\"? Na arquitetura de Von-Neumann, as memórias de programa e de dados compartilham o mesmo barramento físico e espaço de endereçamento. Isso faz com que a CPU não consiga buscar uma instrução e acessar um dado simultaneamente, gerando o chamado gargalo de Von-Neumann."
   },
   {
     "question": "É a arquitetura na qual em um único ciclo de máquina, faz a busca de nova instrução e a execução da instrução buscada anteriormente:",
@@ -115,8 +107,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Von-Neumann."
     ],
     "answer": "Harvard.",
-    "explanation": "Por que a resposta correta é \"Harvard.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Harvard.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Harvard.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Harvard.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "É a técnica que faz a execução da instrução e localização do código da instrução seguinte em um único ciclo:",
@@ -128,8 +119,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Endereçamento."
     ],
     "answer": "Pipeline.",
-    "explanation": "Por que a resposta correta é \"Pipeline.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pipeline.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Pipeline.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pipeline.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O ciclo de instrução do PIC16F877 com um clock externo de 10MHz, é:",
@@ -141,8 +131,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "0,50us."
     ],
     "answer": "0,4us.",
-    "explanation": "Por que a resposta correta é \"0,4us.\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4).",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"0,4us.\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4)."
   },
   {
     "question": "Registro similar ao registro PC que aponta para a memória de dados RAM:",
@@ -154,8 +143,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "OPTION_REG."
     ],
     "answer": "FSR.",
-    "explanation": "Por que a resposta correta é \"FSR.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"FSR.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"FSR.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"FSR.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual a faixa de alimentação do microcontrolador PIC16F877?",
@@ -167,8 +155,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "2,5V a 5V."
     ],
     "answer": "2V a 5,5V.",
-    "explanation": "Por que a resposta correta é \"2V a 5,5V.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"2V a 5,5V.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"2V a 5,5V.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"2V a 5,5V.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A Pilha serve para:",
@@ -180,8 +167,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "acessar o endereçamento indireto."
     ],
     "answer": "armazenar o endereço de retorno após uma instrução de desvio.",
-    "explanation": "Por que a resposta correta é \"armazenar o endereço de retorno após uma instrução de desvio.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"armazenar o endereço de retorno após uma instrução de desvio.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"armazenar o endereço de retorno após uma instrução de desvio.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"armazenar o endereço de retorno após uma instrução de desvio.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A opção verdadeira abaixo é:",
@@ -193,8 +179,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTA é de 6 bits e PORTB é de 7 bits."
     ],
     "answer": "PORTA é de 6 bits e PORTB é de 8 bits.",
-    "explanation": "Por que a resposta correta é \"PORTA é de 6 bits e PORTB é de 8 bits.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"PORTA é de 6 bits e PORTB é de 8 bits.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"PORTA é de 6 bits e PORTB é de 8 bits.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"PORTA é de 6 bits e PORTB é de 8 bits.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O conjunto de instruções do PIC16F877 é formado por:",
@@ -206,8 +191,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "16 instruções."
     ],
     "answer": "35 instruções.",
-    "explanation": "Por que a resposta correta é \"35 instruções.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"35 instruções.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"35 instruções.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"35 instruções.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quantos e quais são os Timers do PIC16F877 da Microchip?",
@@ -219,8 +203,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "3; Timer 0, Timer 1 e Timer 2."
     ],
     "answer": "3; Timer 0, Timer 1 e Timer 2.",
-    "explanation": "Por que a resposta correta é \"3; Timer 0, Timer 1 e Timer 2.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"3; Timer 0, Timer 1 e Timer 2.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"3; Timer 0, Timer 1 e Timer 2.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"3; Timer 0, Timer 1 e Timer 2.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quais os blocos internos do PIC16F877 da Microchip?",
@@ -232,8 +215,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Processador, Memória de Programa, Memória de Dados, USB e Contadores."
     ],
     "answer": "Processador, Memória de Programa, Memória de Dados, Periféricos, Contadores.",
-    "explanation": "Por que a resposta correta é \"Processador, Memória de Programa, Memória de Dados, Periféricos, Contadores.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Processador, Memória de Programa, Memória de Dados, Periféricos, Contadores.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Processador, Memória de Programa, Memória de Dados, Periféricos, Contadores.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Processador, Memória de Programa, Memória de Dados, Periféricos, Contadores.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quantos bits o Contador de Programa (PC) possui para direcionar os 8K de memória Flash de programa?",
@@ -245,8 +227,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "14."
     ],
     "answer": "13.",
-    "explanation": "Por que a resposta correta é \"13.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais).",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"13.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais)."
   },
   {
     "question": "No PIC16F877 da Microchip, qual é a frequência do clock interno?",
@@ -258,8 +239,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Ckext."
     ],
     "answer": "CKext / 4.",
-    "explanation": "Por que a resposta correta é \"CKext / 4.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"CKext / 4.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"CKext / 4.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"CKext / 4.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O endereço contido no PC durante uma instrução GOTO é formado pelo:",
@@ -271,8 +251,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "opcode da instrução mais os bits IRP, RP1 e RP0 do registro de STATUS."
     ],
     "answer": "opcode da instrução mais os bits <4:3> do registro PCLATH.",
-    "explanation": "Por que a resposta correta é \"opcode da instrução mais os bits <4:3> do registro PCLATH.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"opcode da instrução mais os bits <4:3> do registro PCLATH.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"opcode da instrução mais os bits <4:3> do registro PCLATH.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"opcode da instrução mais os bits <4:3> do registro PCLATH.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O registro que nos mostra o estado geral da ULA é o:",
@@ -284,8 +263,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "OPTION_REG."
     ],
     "answer": "STATUS.",
-    "explanation": "Por que a resposta correta é \"STATUS.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"STATUS.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"STATUS.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"STATUS.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Na escrita ou leitura indiretamente de um registro, usam-se os registros:",
@@ -297,8 +275,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "STATUS e INDF."
     ],
     "answer": "INDF e FSR.",
-    "explanation": "Por que a resposta correta é \"INDF e FSR.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"INDF e FSR.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"INDF e FSR.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"INDF e FSR.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O registro que nos permite o controle geral das interrupções é o:",
@@ -310,8 +287,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "INTCON."
     ],
     "answer": "INTCON.",
-    "explanation": "Por que a resposta correta é \"INTCON.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"INTCON.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "Qual o bit responsável pela habilitação de entrada externa de interrupção no pino RB0/INT?",
@@ -323,8 +299,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "RBIF do registro INTCON."
     ],
     "answer": "INTE do registro INTCON.",
-    "explanation": "Por que a resposta correta é \"INTE do registro INTCON.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"INTE do registro INTCON.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"INTE do registro INTCON.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"INTE do registro INTCON.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Assinale a alternativa INCORRETA, referente à Pilha do PIC16F877:",
@@ -336,8 +311,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "a pilha possui oito níveis com endereços de 14 bits."
     ],
     "answer": "a pilha opera como um buffer circular do tipo LIFO caracterizada por apresentar oito pontos de acesso denominado Topo da Pilha.",
-    "explanation": "Por que a resposta correta é \"a pilha opera como um buffer circular do tipo LIFO caracterizada por apresentar oito pontos de acesso denominado Topo da Pilha.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"a pilha opera como um buffer circular do tipo LIFO caracterizada por apresentar oito pontos de acesso denominado Topo da Pilha.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"a pilha opera como um buffer circular do tipo LIFO caracterizada por apresentar oito pontos de acesso denominado Topo da Pilha.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"a pilha opera como um buffer circular do tipo LIFO caracterizada por apresentar oito pontos de acesso denominado Topo da Pilha.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual o bit responsável pela habilitação geral das interrupções no PIC16F877?",
@@ -349,8 +323,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "GIE do registro INTCON."
     ],
     "answer": "GIE do registro INTCON.",
-    "explanation": "Por que a resposta correta é \"GIE do registro INTCON.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"GIE do registro INTCON.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "A porta que pode usar resistores de pull-ups internos é a:",
@@ -362,8 +335,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "A."
     ],
     "answer": "B.",
-    "explanation": "Por que a resposta correta é \"B.\"? O registrador OPTION_REG gerencia recursos globais de hardware: ativação dos resistores de Pull-up internos da porta B (bit RBPU), seleção da borda de interrupção externa INT, fonte do clock do TMR0 e a alocação e fator de divisão do divisor de frequência Prescaler (entre TMR0 ou Watchdog).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"B.\"? O registrador OPTION_REG gerencia recursos globais de hardware: ativação dos resistores de Pull-up internos da porta B (bit RBPU), seleção da borda de interrupção externa INT, fonte do clock do TMR0 e a alocação e fator de divisão do divisor de frequência Prescaler (entre TMR0 ou Watchdog)."
   },
   {
     "question": "Segundo a organização e características das memórias de dados do PIC16F877 podemos afirmar que:",
@@ -375,8 +347,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "os registros de propósitos gerais fazem parte apenas do banco 1 e 3."
     ],
     "answer": "cada banco da memória RAM possui 128 bytes.",
-    "explanation": "Por que a resposta correta é \"cada banco da memória RAM possui 128 bytes.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"cada banco da memória RAM possui 128 bytes.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"cada banco da memória RAM possui 128 bytes.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"cada banco da memória RAM possui 128 bytes.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "No endereçamento direto de um registro, a seleção dos 4 bancos é feita pelos:",
@@ -388,8 +359,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "registros de STATUS e FSR."
     ],
     "answer": "bits RP1 e RP0 do registro de STATUS.",
-    "explanation": "Por que a resposta correta é \"bits RP1 e RP0 do registro de STATUS.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"bits RP1 e RP0 do registro de STATUS.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"bits RP1 e RP0 do registro de STATUS.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"bits RP1 e RP0 do registro de STATUS.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O endereço contido no PC no retorno de uma sub-rotina é formado pelo:",
@@ -401,8 +371,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "endereço contido na Pilha."
     ],
     "answer": "endereço contido na Pilha.",
-    "explanation": "Por que a resposta correta é \"endereço contido na Pilha.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"endereço contido na Pilha.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"endereço contido na Pilha.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"endereço contido na Pilha.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Com relação ao registro de STATUS, podemos afirmar:",
@@ -414,8 +383,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "indica o estado geral do Micro."
     ],
     "answer": "indica o estado geral do Micro.",
-    "explanation": "Por que a resposta correta é \"indica o estado geral do Micro.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"indica o estado geral do Micro.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM."
   },
   {
     "question": "Qual das opções seguintes define que os pinos do PORTB estão metade como entrada (RB0 a RB3) e a outra metade (RB4 a RB7) como saída?",
@@ -427,8 +395,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "TRISB=00001111b."
     ],
     "answer": "TRISB=00001111b.",
-    "explanation": "Por que a resposta correta é \"TRISB=00001111b.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISB=00001111b.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"TRISB=00001111b.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISB=00001111b.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quando os pinos do registro PORTA do PIC16F877 estiverem sendo utilizados como entradas analógicas, como devem estar os bits do registro TRISA?",
@@ -440,8 +407,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Somente os bits MSB deverão ser zero (0)."
     ],
     "answer": "Deverão se manter setados.",
-    "explanation": "Por que a resposta correta é \"Deverão se manter setados.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Deverão se manter setados.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Deverão se manter setados.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Deverão se manter setados.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual a operação lógica que passam as saídas diferentes dos pinos de entrada (RB7:RB4) que são comparados com valores antigos armazenados na última leitura da porta B para gerar a interrupção por mudança na própria porta B?",
@@ -453,8 +419,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EX-OR."
     ],
     "answer": "EX-OR.",
-    "explanation": "Por que a resposta correta é \"EX-OR.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"EX-OR.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"EX-OR.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"EX-OR.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quais são as portas usadas com o Conversor Analógico-Digital?",
@@ -466,8 +431,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "C e E."
     ],
     "answer": "A e E.",
-    "explanation": "Por que a resposta correta é \"A e E.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"A e E.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"A e E.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"A e E.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual é o recurso que permite que os pinos de I/O no PIC tenham outras funções?",
@@ -479,8 +443,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Duplexação."
     ],
     "answer": "Multiplexação.",
-    "explanation": "Por que a resposta correta é \"Multiplexação.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Multiplexação.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Multiplexação.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Multiplexação.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "É o registro de direção de dados para o pino correspondente ao PORTE:",
@@ -492,8 +455,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTB."
     ],
     "answer": "TRISE.",
-    "explanation": "Por que a resposta correta é \"TRISE.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISE.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"TRISE.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISE.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Um bit do registro TRISD apagado (0), fará com que o pino correspondente da PORTD seja uma _______.",
@@ -505,8 +467,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "saída."
     ],
     "answer": "saída.",
-    "explanation": "Por que a resposta correta é \"saída.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"saída.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"saída.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"saída.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A leitura é feita diretamente no pino, enquanto a escrita passa por um Latch. Qual é a consequência desta operação?",
@@ -518,8 +479,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Ativação de uma função Multiplexada."
     ],
     "answer": "Atraso entre a escrita e leitura.",
-    "explanation": "Por que a resposta correta é \"Atraso entre a escrita e leitura.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Atraso entre a escrita e leitura.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Atraso entre a escrita e leitura.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Atraso entre a escrita e leitura.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Assinale a alternativa INCORRETA quanto ao PSPMODE:",
@@ -531,8 +491,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "é multiplexada com o PORTD."
     ],
     "answer": "controlada leitura por WR ou por escrita RD.",
-    "explanation": "Por que a resposta correta é \"controlada leitura por WR ou por escrita RD.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"controlada leitura por WR ou por escrita RD.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"controlada leitura por WR ou por escrita RD.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"controlada leitura por WR ou por escrita RD.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quais são as funções associadas ao PORTE?",
@@ -544,8 +503,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP."
     ],
     "answer": "Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP.",
-    "explanation": "Por que a resposta correta é \"Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Durante a escrita na memória FLASH de programa, qual registro deve ser carregado com os valores 0x55 e 0xAA sequencialmente para proteção da escrita?",
@@ -557,8 +515,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EEADR."
     ],
     "answer": "EECON2.",
-    "explanation": "Por que a resposta correta é \"EECON2.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"EECON2.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "É o bit utilizado para selecionar entre memórias EEPROM ou Flash:",
@@ -570,8 +527,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "2 do registro EEDATA."
     ],
     "answer": "EEPGD do registro EECON1.",
-    "explanation": "Por que a resposta correta é \"EEPGD do registro EECON1.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging).",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"EEPGD do registro EECON1.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging)."
   },
   {
     "question": "Após a leitura da memória EEPROM de dados, o dado lido é armazenado no registro:",
@@ -583,8 +539,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PC."
     ],
     "answer": "EEDATA.",
-    "explanation": "Por que a resposta correta é \"EEDATA.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging).",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"EEDATA.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging)."
   },
   {
     "question": "Qual é a função do bit EEIF (PIR2<4>), na operação de escrita da Flash de Programa?",
@@ -596,8 +551,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Permitir interromper a operação da escrita a qualquer momento."
     ],
     "answer": "Tratar uma interrupção ao final da escrita.",
-    "explanation": "Por que a resposta correta é \"Tratar uma interrupção ao final da escrita.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Tratar uma interrupção ao final da escrita.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Tratar uma interrupção ao final da escrita.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Tratar uma interrupção ao final da escrita.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual é a indicação de que a operação de escrita finalizou?",
@@ -609,8 +563,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "bit WREN (EECON1<2>) estará resetado."
     ],
     "answer": "bit WR (EECON1<1>) estará resetado.",
-    "explanation": "Por que a resposta correta é \"bit WR (EECON1<1>) estará resetado.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"bit WR (EECON1<1>) estará resetado.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"bit WR (EECON1<1>) estará resetado.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"bit WR (EECON1<1>) estará resetado.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quais os registros são utilizados para leitura da memória EEPROM de Dados?",
@@ -622,8 +575,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EEDATA e SFR."
     ],
     "answer": "EEADR e EEDATA.",
-    "explanation": "Por que a resposta correta é \"EEADR e EEDATA.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging).",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"EEADR e EEDATA.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging)."
   },
   {
     "question": "No processo de leitura, qual é a próxima etapa após o dado lido na EEPROM de Dados ser armazenado no EEDATA?",
@@ -635,8 +587,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O processo de escrita será finalizado."
     ],
     "answer": "O flag RD será apagado automaticamente pelo hardware.",
-    "explanation": "Por que a resposta correta é \"O flag RD será apagado automaticamente pelo hardware.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging).",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"O flag RD será apagado automaticamente pelo hardware.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging)."
   },
   {
     "question": "No processo de leitura da Memória Flash de Programa, em virtude de possuir a capacidade de 8Kb, quais os registros que receberão o endereço e os dados respectivamente?",
@@ -648,8 +599,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EEADR, EEADRH e EEDATA, EEDATAH."
     ],
     "answer": "EEADR, EEADRH e EEDATA, EEDATAH.",
-    "explanation": "Por que a resposta correta é \"EEADR, EEADRH e EEDATA, EEDATAH.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"EEADR, EEADRH e EEDATA, EEDATAH.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "Qual é o bit do registro de configuração que protege a Memória Flash de Programa contra escrita durante a execução do programa?",
@@ -661,8 +611,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "CS."
     ],
     "answer": "WRT.",
-    "explanation": "Por que a resposta correta é \"WRT.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"WRT.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "Qual é a função do bit WREN no registro de configuração / EECON1?",
@@ -674,8 +623,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Proteger a Memória Flash de Programa contra a escrita durante no Power-UP."
     ],
     "answer": "Proteger a Memória Flash de Programa contra a escrita durante no Power-UP.",
-    "explanation": "Por que a resposta correta é \"Proteger a Memória Flash de Programa contra a escrita durante no Power-UP.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Proteger a Memória Flash de Programa contra a escrita durante no Power-UP.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Proteger a Memória Flash de Programa contra a escrita durante no Power-UP.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Proteger a Memória Flash de Programa contra a escrita durante no Power-UP.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual a função do Contador de Programa (PC)?",
@@ -686,8 +634,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controlar o estouro do Watchdog Timer."
     ],
     "answer": "Apontar o endereço da próxima instrução a ser executada.",
-    "explanation": "Por que a resposta correta é \"Apontar o endereço da próxima instrução a ser executada.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais).",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Apontar o endereço da próxima instrução a ser executada.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais)."
   },
   {
     "question": "Defina Pipeline.",
@@ -698,8 +645,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Conversão de sinais analógicos para digitais."
     ],
     "answer": "Técnica que executa uma instrução enquanto busca a próxima.",
-    "explanation": "Por que a resposta correta é \"Técnica que executa uma instrução enquanto busca a próxima.\"? A técnica de Pipeline em microcontroladores Harvard realiza o processamento em paralelo: enquanto a CPU executa (Execute) a instrução do ciclo atual, ela busca (Fetch) simultaneamente a próxima instrução na memória Flash, fazendo com que cada instrução demore efetivamente apenas 1 ciclo de máquina.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Técnica que executa uma instrução enquanto busca a próxima.\"? A técnica de Pipeline em microcontroladores Harvard realiza o processamento em paralelo: enquanto a CPU executa (Execute) a instrução do ciclo atual, ela busca (Fetch) simultaneamente a próxima instrução na memória Flash, fazendo com que cada instrução demore efetivamente apenas 1 ciclo de máquina."
   },
   {
     "question": "A família de microcontroladores \\\"PIC\\\" pertence a qual fabricante?",
@@ -710,8 +656,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Microchip"
     ],
     "answer": "Microchip",
-    "explanation": "Por que a resposta correta é \"Microchip\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Microchip\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Microchip\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Microchip\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quantas instruções podem ser armazenadas na memória Flash do PIC 16F877?",
@@ -722,8 +667,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "8192"
     ],
     "answer": "8192",
-    "explanation": "Por que a resposta correta é \"8192\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"8192\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "Se a frequência do clock externo for 16MHz, a frequência interna será:",
@@ -734,8 +678,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "16 MHz"
     ],
     "answer": "4 MHz",
-    "explanation": "Por que a resposta correta é \"4 MHz\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"4 MHz\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"4 MHz\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"4 MHz\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A frequência do clock externo para um ciclo de instrução de 200 ns é:",
@@ -746,8 +689,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "20 MHz"
     ],
     "answer": "20 MHz",
-    "explanation": "Por que a resposta correta é \"20 MHz\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4).",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"20 MHz\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4)."
   },
   {
     "question": "O tempo de uma instrução de salto com clock externo de 4MHz é:",
@@ -758,8 +700,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "8 µs"
     ],
     "answer": "2 µs",
-    "explanation": "Por que a resposta correta é \"2 µs\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"2 µs\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"2 µs\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"2 µs\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "De acordo com as características do PIC16F877, marque a opção INCORRETA:",
@@ -770,8 +711,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O registro especial STATUS está em todos os bancos."
     ],
     "answer": "O microcontrolador possui 7 tipos de interrupções.",
-    "explanation": "Por que a resposta correta é \"O microcontrolador possui 7 tipos de interrupções.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O microcontrolador possui 7 tipos de interrupções.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"O microcontrolador possui 7 tipos de interrupções.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O microcontrolador possui 7 tipos de interrupções.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual o endereço do vetor de interrupção na memória Flash?",
@@ -782,8 +722,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "0005h"
     ],
     "answer": "0004h",
-    "explanation": "Por que a resposta correta é \"0004h\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"0004h\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "Na memória FLASH quais bits operam como CHAVE SELETORA de página nas instruções GOTO e CALL?",
@@ -794,8 +733,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PS0 e PS1 do OPTION_REG"
     ],
     "answer": "Bits <4:3> do PCLATH",
-    "explanation": "Por que a resposta correta é \"Bits <4:3> do PCLATH\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Bits <4:3> do PCLATH\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "Por que usamos o termo \"Banco\" para a memória RAM?",
@@ -806,8 +744,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Para armazenar variáveis como em um banco de dados."
     ],
     "answer": "Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.",
-    "explanation": "Por que a resposta correta é \"Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pois os 7 bits de instrução endereçam apenas 128 bytes, exigindo agrupamento em bancos.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "No endereçamento direto, a seleção do banco de memória é feita por:",
@@ -818,8 +755,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Bit GIE do INTCON"
     ],
     "answer": "Bits RP1 e RP0 do STATUS",
-    "explanation": "Por que a resposta correta é \"Bits RP1 e RP0 do STATUS\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Bits RP1 e RP0 do STATUS\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Bits RP1 e RP0 do STATUS\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Bits RP1 e RP0 do STATUS\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Cite a principal característica do registro especial W (WORK).",
@@ -830,8 +766,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Configura resistores de pull-up globais."
     ],
     "answer": "Ponte/destino de operações, mas NÃO mapeado na memória RAM.",
-    "explanation": "Por que a resposta correta é \"Ponte/destino de operações, mas NÃO mapeado na memória RAM.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Ponte/destino de operações, mas NÃO mapeado na memória RAM.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Ponte/destino de operações, mas NÃO mapeado na memória RAM.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Ponte/destino de operações, mas NÃO mapeado na memória RAM.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual bit e registro indicam que o Watchdog provocou o reset do micro?",
@@ -842,8 +777,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Bit /TO em 0 no STATUS"
     ],
     "answer": "Bit /TO em 0 no STATUS",
-    "explanation": "Por que a resposta correta é \"Bit /TO em 0 no STATUS\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Bit /TO em 0 no STATUS\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema."
   },
   {
     "question": "Se, num teste, o bit Z (STATUS<2>) está em '1', o que aconteceu?",
@@ -854,8 +788,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Houve transporte de bit (carry) na soma."
     ],
     "answer": "O resultado da operação lógica/aritmética anterior foi zero.",
-    "explanation": "Por que a resposta correta é \"O resultado da operação lógica/aritmética anterior foi zero.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"O resultado da operação lógica/aritmética anterior foi zero.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM."
   },
   {
     "question": "No endereçamento indireto, qual registro aponta para a memória RAM?",
@@ -866,8 +799,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "STATUS"
     ],
     "answer": "FSR",
-    "explanation": "Por que a resposta correta é \"FSR\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"FSR\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"FSR\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"FSR\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O registro que mostra o estado geral do microcontrolador é:",
@@ -878,8 +810,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "STATUS"
     ],
     "answer": "STATUS",
-    "explanation": "Por que a resposta correta é \"STATUS\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"STATUS\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"STATUS\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"STATUS\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual bit é a chave geral das interrupções no PIC16F877?",
@@ -890,8 +821,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "ADIE (PIE1)"
     ],
     "answer": "GIE (INTCON)",
-    "explanation": "Por que a resposta correta é \"GIE (INTCON)\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"GIE (INTCON)\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "O registro que mostra o estado geral das interrupções é o:",
@@ -902,8 +832,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PCON"
     ],
     "answer": "INTCON",
-    "explanation": "Por que a resposta correta é \"INTCON\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"INTCON\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "O endereço contido no PC durante a instrução GOTO é formado por:",
@@ -914,8 +843,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Endereço absoluto apontado pelo FSR."
     ],
     "answer": "11 bits do Opcode + bits <4:3> do PCLATH.",
-    "explanation": "Por que a resposta correta é \"11 bits do Opcode + bits <4:3> do PCLATH.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"11 bits do Opcode + bits <4:3> do PCLATH.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"11 bits do Opcode + bits <4:3> do PCLATH.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"11 bits do Opcode + bits <4:3> do PCLATH.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O endereço contido no PC no retorno de uma sub-rotina (RETURN) é formado por:",
@@ -926,8 +854,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Endereço absoluto apontado por W."
     ],
     "answer": "Endereço recuperado do Topo da Pilha (TOS).",
-    "explanation": "Por que a resposta correta é \"Endereço recuperado do Topo da Pilha (TOS).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Endereço recuperado do Topo da Pilha (TOS).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Endereço recuperado do Topo da Pilha (TOS).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Endereço recuperado do Topo da Pilha (TOS).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual registro controla a operação da porta D como Porta Paralela Escrava (PSP)?",
@@ -938,8 +865,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "OPTION_REG"
     ],
     "answer": "TRISE",
-    "explanation": "Por que a resposta correta é \"TRISE\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISE\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"TRISE\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISE\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Qual porta pode usar resistores de pull-up internos?",
@@ -950,8 +876,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTD"
     ],
     "answer": "PORTB",
-    "explanation": "Por que a resposta correta é \"PORTB\"? O registrador OPTION_REG gerencia recursos globais de hardware: ativação dos resistores de Pull-up internos da porta B (bit RBPU), seleção da borda de interrupção externa INT, fonte do clock do TMR0 e a alocação e fator de divisão do divisor de frequência Prescaler (entre TMR0 ou Watchdog).",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"PORTB\"? O registrador OPTION_REG gerencia recursos globais de hardware: ativação dos resistores de Pull-up internos da porta B (bit RBPU), seleção da borda de interrupção externa INT, fonte do clock do TMR0 e a alocação e fator de divisão do divisor de frequência Prescaler (entre TMR0 ou Watchdog)."
   },
   {
     "question": "Qual opção define o PORTC metade SAÍDA (RC0 a RC3) e metade ENTRADA (RC4 a RC7)?",
@@ -962,8 +887,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "TRISC = 10101010b"
     ],
     "answer": "TRISC = 11110000b",
-    "explanation": "Por que a resposta correta é \"TRISC = 11110000b\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISC = 11110000b\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"TRISC = 11110000b\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISC = 11110000b\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "LED ligado em RB4 (acende com nível alto). Se TRISB = 45h (0100 0101b) e PORTB = AAh (1010 1010b), o LED está:",
@@ -974,8 +898,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Aceso, independentemente do registro TRISB."
     ],
     "answer": "Apagado, pois RB4 é saída (0), mas o pino recebe nível baixo (0).",
-    "explanation": "Por que a resposta correta é \"Apagado, pois RB4 é saída (0), mas o pino recebe nível baixo (0).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Apagado, pois RB4 é saída (0), mas o pino recebe nível baixo (0).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"Apagado, pois RB4 é saída (0), mas o pino recebe nível baixo (0).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Apagado, pois RB4 é saída (0), mas o pino recebe nível baixo (0).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Após a leitura da memória EEPROM de dados, o dado lido é armazenado em qual registro?",
@@ -986,8 +909,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "EEDATA"
     ],
     "answer": "EEDATA",
-    "explanation": "Por que a resposta correta é \"EEDATA\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging).",
-    "topic": "Capítulo 5 - Memória EEPROM e Flash [Múltipla Escolha]"
+    "explanation": "Por que a resposta correta é \"EEDATA\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging)."
   },
   {
     "question": "Sobre a 'Unidade de GPS' no contexto dos microcontroladores PIC, é correto afirmar que:",
@@ -999,8 +921,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "É responsável pela multiplexação dos pinos de entrada e saída."
     ],
     "answer": "Não é uma função interna comum à maioria dos modelos de PIC.",
-    "explanation": "Por que a resposta correta é \"Não é uma função interna comum à maioria dos modelos de PIC.\"? Conforme a arquitetura dos microcontroladores PIC (Apostila EE 2006-0423), todo PIC possui internamente Unidade Central de Processamento (CPU), memória de programa e dados, temporizador Watchdog (WDT) e portas de Entrada/Saída (I/O). A Unidade de GPS é um módulo de geolocalização por satélite externo e independente, não fazendo parte da estrutura interna nativa do chip.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Não é uma função interna comum à maioria dos modelos de PIC.\"? Conforme a arquitetura dos microcontroladores PIC (Apostila EE 2006-0423), todo PIC possui internamente Unidade Central de Processamento (CPU), memória de programa e dados, temporizador Watchdog (WDT) e portas de Entrada/Saída (I/O). A Unidade de GPS é um módulo de geolocalização por satélite externo e independente, não fazendo parte da estrutura interna nativa do chip."
   },
   {
     "question": "O recurso Watchdog em um microcontrolador caracteriza-se por:",
@@ -1012,8 +933,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controlar o espelhamento da memória RAM entre os diferentes bancos."
     ],
     "answer": "Incrementar um contador RC independente que, ao transbordar, provoca a reinicialização (reset) do sistema.",
-    "explanation": "Por que a resposta correta é \"Incrementar um contador RC independente que, ao transbordar, provoca a reinicialização (reset) do sistema.\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Incrementar um contador RC independente que, ao transbordar, provoca a reinicialização (reset) do sistema.\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema."
   },
   {
     "question": "Qual é o principal papel do Contador de Programa (PC) no microcontrolador?",
@@ -1025,8 +945,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Selecionar o banco de memória RAM ativo para endereçamento direto."
     ],
     "answer": "Estabelecer o fluxo de controle dos direcionamentos da memória que o código do programa contém.",
-    "explanation": "Por que a resposta correta é \"Estabelecer o fluxo de controle dos direcionamentos da memória que o código do programa contém.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais).",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Estabelecer o fluxo de controle dos direcionamentos da memória que o código do programa contém.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais)."
   },
   {
     "question": "Para impedir que o Watchdog transborde e cause o reset indesejado do microcontrolador, o programador deve utilizar a instrução:",
@@ -1038,8 +957,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "NOP."
     ],
     "answer": "CLRWDT.",
-    "explanation": "Por que a resposta correta é \"CLRWDT.\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"CLRWDT.\"? O Watchdog Timer (Cão de Guarda) é o único recurso de temporização com oscilador RC próprio e independente do clock principal. A lógica de segurança exige que o programa execute periodicamente a instrução CLRWDT (Clear Watchdog Timer). Se o código travar ou entrar em loop infinito, o CLRWDT não será acionado no tempo previsto, fazendo o contador transbordar e gerar um Reset no hardware para destravar e recuperar o sistema."
   },
   {
     "question": "A quantidade de memória que se deseja endereçar em um microcontrolador determina diretamente:",
@@ -1051,8 +969,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "A quantidade de registradores no topo da pilha de chamadas."
     ],
     "answer": "O número de linhas em um barramento de endereços.",
-    "explanation": "Por que a resposta correta é \"O número de linhas em um barramento de endereços.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O número de linhas em um barramento de endereços.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"O número de linhas em um barramento de endereços.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O número de linhas em um barramento de endereços.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O conjunto de regras preestabelecidas que governam a troca ordenada e segura de dados entre dispositivos é denominado:",
@@ -1064,8 +981,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Microcódigo."
     ],
     "answer": "Protocolo.",
-    "explanation": "Por que a resposta correta é \"Protocolo.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Protocolo.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Protocolo.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Protocolo.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Os modos 'direto, indireto e imediato' referem-se a:",
@@ -1077,8 +993,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os protocolos de barramento de dados suportados pelas portas seriais e paralelas."
     ],
     "answer": "Quais os 03 tipos de endereçamento que são usados no PC / instruções de PIC.",
-    "explanation": "Por que a resposta correta é \"Quais os 03 tipos de endereçamento que são usados no PC / instruções de PIC.\"? A programação em assembly para a família PIC da Microchip utiliza fundamentalmente estes três modos de endereçamento: Imediato (quando o operando numérico constante é fornecido na própria instrução), Direto (quando o endereço de memória/registrador é explícito na instrução) e Indireto (quando o endereço do registrador é apontado dinamicamente via FSR/INDF).",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Quais os 03 tipos de endereçamento que são usados no PC / instruções de PIC.\"? A programação em assembly para a família PIC da Microchip utiliza fundamentalmente estes três modos de endereçamento: Imediato (quando o operando numérico constante é fornecido na própria instrução), Direto (quando o endereço de memória/registrador é explícito na instrução) e Indireto (quando o endereço do registrador é apontado dinamicamente via FSR/INDF)."
   },
   {
     "question": "A arquitetura Von-Neumann diferencia-se por:",
@@ -1090,8 +1005,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Não permitir o uso de pilhas de sub-rotinas nem de vetores de interrupção em hardware."
     ],
     "answer": "Compartilhar os barramentos de dados e endereços entre as memórias de programas e de dados na comunicação com a CPU.",
-    "explanation": "Por que a resposta correta é \"Compartilhar os barramentos de dados e endereços entre as memórias de programas e de dados na comunicação com a CPU.\"? A arquitetura Harvard, adotada nos microcontroladores PIC, elimina o gargalo de Von-Neumann por possuir barramentos físicos e memórias totalmente independentes para instruções (Flash) e dados (RAM), permitindo acessos simultâneos.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Compartilhar os barramentos de dados e endereços entre as memórias de programas e de dados na comunicação com a CPU.\"? A arquitetura Harvard, adotada nos microcontroladores PIC, elimina o gargalo de Von-Neumann por possuir barramentos físicos e memórias totalmente independentes para instruções (Flash) e dados (RAM), permitindo acessos simultâneos."
   },
   {
     "question": "Qual arquitetura permite, por meio de barramentos separados, fazer a busca de nova instrução ao mesmo tempo em que executa a instrução buscada anteriormente em um único ciclo?",
@@ -1103,8 +1017,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Mista."
     ],
     "answer": "Harvard.",
-    "explanation": "Por que a resposta correta é \"Harvard.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Harvard.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Harvard.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Harvard.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A execução da instrução atual simultaneamente com a localização do código da instrução seguinte em um único ciclo de máquina descreve a técnica de:",
@@ -1116,8 +1029,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Espelhamento de registradores."
     ],
     "answer": "Pipeline.",
-    "explanation": "Por que a resposta correta é \"Pipeline.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pipeline.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Pipeline.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pipeline.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Um tempo de ciclo de instrução de 0,4us corresponde a qual configuração de clock no PIC16F877?",
@@ -1129,8 +1041,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Clock externo de 8MHz."
     ],
     "answer": "Clock externo de 10MHz.",
-    "explanation": "Por que a resposta correta é \"Clock externo de 10MHz.\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4).",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"Clock externo de 10MHz.\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4)."
   },
   {
     "question": "O registrador FSR no PIC16F877 tem como principal característica:",
@@ -1142,8 +1053,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Configurar a direção dos pinos digitais do PORTA como entradas ou saídas."
     ],
     "answer": "Ser um registro similar ao PC, que aponta para a memória de dados RAM (endereçamento indireto).",
-    "explanation": "Por que a resposta correta é \"Ser um registro similar ao PC, que aponta para a memória de dados RAM (endereçamento indireto).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Ser um registro similar ao PC, que aponta para a memória de dados RAM (endereçamento indireto).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"Ser um registro similar ao PC, que aponta para a memória de dados RAM (endereçamento indireto).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Ser um registro similar ao PC, que aponta para a memória de dados RAM (endereçamento indireto).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A faixa de tensão de 2V a 5,5V representa:",
@@ -1155,8 +1065,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "A tensão mínima necessária para gravar dados na memória Flash."
     ],
     "answer": "A faixa de alimentação do microcontrolador PIC16F877.",
-    "explanation": "Por que a resposta correta é \"A faixa de alimentação do microcontrolador PIC16F877.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"A faixa de alimentação do microcontrolador PIC16F877.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"A faixa de alimentação do microcontrolador PIC16F877.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"A faixa de alimentação do microcontrolador PIC16F877.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Armazenar o endereço de retorno após uma instrução de desvio ou chamada de sub-rotina é a função fundamental da:",
@@ -1168,8 +1077,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Memória de Programa Flash."
     ],
     "answer": "Pilha (Stack).",
-    "explanation": "Por que a resposta correta é \"Pilha (Stack).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pilha (Stack).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"Pilha (Stack).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pilha (Stack).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Sobre a largura de bits das portas PORTA e PORTB no microcontrolador PIC16F877, é correto afirmar que:",
@@ -1181,8 +1089,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTA possui 6 bits e PORTB possui 7 bits."
     ],
     "answer": "PORTA possui 6 bits e PORTB possui 8 bits.",
-    "explanation": "Por que a resposta correta é \"PORTA possui 6 bits e PORTB possui 8 bits.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"PORTA possui 6 bits e PORTB possui 8 bits.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"PORTA possui 6 bits e PORTB possui 8 bits.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"PORTA possui 6 bits e PORTB possui 8 bits.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O número total de 35 instruções no PIC16F877 indica que:",
@@ -1194,8 +1101,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O temporizador Watchdog possui um pre-scaler com 35 estágios divisores."
     ],
     "answer": "O conjunto de instruções do PIC16F877 é do tipo RISC, formado por 35 instruções.",
-    "explanation": "Por que a resposta correta é \"O conjunto de instruções do PIC16F877 é do tipo RISC, formado por 35 instruções.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O conjunto de instruções do PIC16F877 é do tipo RISC, formado por 35 instruções.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"O conjunto de instruções do PIC16F877 é do tipo RISC, formado por 35 instruções.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O conjunto de instruções do PIC16F877 é do tipo RISC, formado por 35 instruções.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Os temporizadores Timer 0, Timer 1 e Timer 2 representam:",
@@ -1207,8 +1113,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os conversores analógico-digitais multiplexados do PORTA e PORTE."
     ],
     "answer": "Os 3 Timers que compõem os módulos de temporização/contagem do PIC16F877.",
-    "explanation": "Por que a resposta correta é \"Os 3 Timers que compõem os módulos de temporização/contagem do PIC16F877.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Os 3 Timers que compõem os módulos de temporização/contagem do PIC16F877.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"Os 3 Timers que compõem os módulos de temporização/contagem do PIC16F877.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Os 3 Timers que compõem os módulos de temporização/contagem do PIC16F877.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Os componentes 'Processador, Memória de Programa, Memória de Dados, Periféricos, Contadores' definem:",
@@ -1220,8 +1125,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os circuitos de proteção contra descargas eletrostáticas das portas de entrada."
     ],
     "answer": "Quais os blocos internos do PIC16F877 da Microchip.",
-    "explanation": "Por que a resposta correta é \"Quais os blocos internos do PIC16F877 da Microchip.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Quais os blocos internos do PIC16F877 da Microchip.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"Quais os blocos internos do PIC16F877 da Microchip.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Quais os blocos internos do PIC16F877 da Microchip.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Por que o Contador de Programa (PC) no PIC16F877 possui exatamente 13 bits?",
@@ -1233,8 +1137,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Para empacotar os 8 bits de dados juntamente com os 5 bits do registro TRISA."
     ],
     "answer": "Para conseguir direcionar/endereçar todos os 8K de palavras da memória Flash de programa.",
-    "explanation": "Por que a resposta correta é \"Para conseguir direcionar/endereçar todos os 8K de palavras da memória Flash de programa.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais).",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"Para conseguir direcionar/endereçar todos os 8K de palavras da memória Flash de programa.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais)."
   },
   {
     "question": "A relação 'CKext / 4' (frequência do clock externo dividida por quatro) define no PIC16F877:",
@@ -1246,8 +1149,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O tempo de espera no acionamento (Power-up Timer) durante o reset."
     ],
     "answer": "A frequência do clock interno (ciclo de máquina).",
-    "explanation": "Por que a resposta correta é \"A frequência do clock interno (ciclo de máquina).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"A frequência do clock interno (ciclo de máquina).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"A frequência do clock interno (ciclo de máquina).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"A frequência do clock interno (ciclo de máquina).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O opcode da instrução combinado com os bits <4:3> do registro PCLATH é utilizado pelo Contador de Programa (PC) para:",
@@ -1259,8 +1161,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Determinar o valor inicial do temporizador Timer0 durante a inicialização."
     ],
     "answer": "Formar o endereço de desvio durante a execução de uma instrução GOTO ou CALL.",
-    "explanation": "Por que a resposta correta é \"Formar o endereço de desvio durante a execução de uma instrução GOTO ou CALL.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Formar o endereço de desvio durante a execução de uma instrução GOTO ou CALL.\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais)."
   },
   {
     "question": "O registrador STATUS no microcontrolador PIC16F877 possui a função primordial de:",
@@ -1272,8 +1173,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Manter o endereço de retorno da pilha sempre que ocorrer uma interrupção."
     ],
     "answer": "Mostrar o estado geral da Unidade Lógica e Aritmética (ULA), indicando Zero, Carry e seleção de banco.",
-    "explanation": "Por que a resposta correta é \"Mostrar o estado geral da Unidade Lógica e Aritmética (ULA), indicando Zero, Carry e seleção de banco.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Mostrar o estado geral da Unidade Lógica e Aritmética (ULA), indicando Zero, Carry e seleção de banco.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM."
   },
   {
     "question": "Os registradores INDF e FSR trabalham em conjunto com qual finalidade?",
@@ -1285,8 +1185,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Determinar a paridade e a velocidade dos dados na interface serial USART."
     ],
     "answer": "Realizar a escrita ou leitura indiretamente na memória RAM de dados.",
-    "explanation": "Por que a resposta correta é \"Realizar a escrita ou leitura indiretamente na memória RAM de dados.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Realizar a escrita ou leitura indiretamente na memória RAM de dados.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Realizar a escrita ou leitura indiretamente na memória RAM de dados.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Realizar a escrita ou leitura indiretamente na memória RAM de dados.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A qual registrador especial do PIC16F877 pertence o controle geral das interrupções (GIE, PEIE, INTE, T0IE)?",
@@ -1298,8 +1197,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "INDF."
     ],
     "answer": "INTCON.",
-    "explanation": "Por que a resposta correta é \"INTCON.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"INTCON.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "O bit 'INTE do registro INTCON' tem como função específica no PIC16F877:",
@@ -1311,8 +1209,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Permitir o acesso de escrita à memória não-volátil EEPROM de dados."
     ],
     "answer": "Habilitar a entrada externa de interrupção no pino RB0/INT.",
-    "explanation": "Por que a resposta correta é \"Habilitar a entrada externa de interrupção no pino RB0/INT.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Habilitar a entrada externa de interrupção no pino RB0/INT.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "Qual característica descreve corretamente a Pilha (Stack) do PIC16F877, diferenciando-a das alternativas incorretas?",
@@ -1324,8 +1221,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Emite automaticamente uma interrupção não-mascarável sempre que o oitavo nível é ultrapassado."
     ],
     "answer": "Possui oito níveis de profundidade, endereços de 13 bits e opera como buffer circular sem flag de overflow no STATUS.",
-    "explanation": "Por que a resposta correta é \"Possui oito níveis de profundidade, endereços de 13 bits e opera como buffer circular sem flag de overflow no STATUS.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Possui oito níveis de profundidade, endereços de 13 bits e opera como buffer circular sem flag de overflow no STATUS.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Possui oito níveis de profundidade, endereços de 13 bits e opera como buffer circular sem flag de overflow no STATUS.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Possui oito níveis de profundidade, endereços de 13 bits e opera como buffer circular sem flag de overflow no STATUS.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O bit 'GIE do registro INTCON' age no sistema como:",
@@ -1337,8 +1233,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O indicador de estouro da pilha de endereços após múltiplas chamadas CALL."
     ],
     "answer": "A chave responsável pela habilitação geral de todas as interrupções no PIC16F877.",
-    "explanation": "Por que a resposta correta é \"A chave responsável pela habilitação geral de todas as interrupções no PIC16F877.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"A chave responsável pela habilitação geral de todas as interrupções no PIC16F877.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "Qual porta do PIC16F877 é caracterizada pela capacidade exclusiva de ativar resistores de pull-up internos controlados via software?",
@@ -1350,8 +1245,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTE."
     ],
     "answer": "PORTB.",
-    "explanation": "Por que a resposta correta é \"PORTB.\"? O registrador OPTION_REG gerencia recursos globais de hardware: ativação dos resistores de Pull-up internos da porta B (bit RBPU), seleção da borda de interrupção externa INT, fonte do clock do TMR0 e a alocação e fator de divisão do divisor de frequência Prescaler (entre TMR0 ou Watchdog).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"PORTB.\"? O registrador OPTION_REG gerencia recursos globais de hardware: ativação dos resistores de Pull-up internos da porta B (bit RBPU), seleção da borda de interrupção externa INT, fonte do clock do TMR0 e a alocação e fator de divisão do divisor de frequência Prescaler (entre TMR0 ou Watchdog)."
   },
   {
     "question": "A afirmação 'cada banco da memória RAM possui 128 bytes' refere-se diretamente à:",
@@ -1363,8 +1257,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Configuração dos registradores de direção do PORTC em modo paralela escrava."
     ],
     "answer": "Organização e características arquiteturais das memórias de dados do PIC16F877.",
-    "explanation": "Por que a resposta correta é \"Organização e características arquiteturais das memórias de dados do PIC16F877.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Organização e características arquiteturais das memórias de dados do PIC16F877.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Organização e características arquiteturais das memórias de dados do PIC16F877.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Organização e características arquiteturais das memórias de dados do PIC16F877.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Os bits RP1 e RP0 do registro de STATUS são os responsáveis diretos pela:",
@@ -1376,8 +1269,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Definição das páginas superiores da memória Flash para saltos longos."
     ],
     "answer": "Seleção dos 4 bancos no endereçamento direto de um registrador da memória RAM.",
-    "explanation": "Por que a resposta correta é \"Seleção dos 4 bancos no endereçamento direto de um registrador da memória RAM.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Seleção dos 4 bancos no endereçamento direto de um registrador da memória RAM.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM."
   },
   {
     "question": "Ao executar uma instrução RETURN ou RETFIE, de onde provém o endereço que é carregado no Contador de Programa (PC)?",
@@ -1389,8 +1281,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Do endereço inicial do vetor de interrupção de hardware (0004h)."
     ],
     "answer": "Do endereço recuperado diretamente do topo da Pilha (TOS).",
-    "explanation": "Por que a resposta correta é \"Do endereço recuperado diretamente do topo da Pilha (TOS).\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais).",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Do endereço recuperado diretamente do topo da Pilha (TOS).\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais)."
   },
   {
     "question": "A afirmativa 'indica o estado geral do Micro' descreve sinteticamente o propósito do registro:",
@@ -1402,8 +1293,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PCLATH."
     ],
     "answer": "STATUS.",
-    "explanation": "Por que a resposta correta é \"STATUS.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"STATUS.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Registros e Memória RAM [Inverso]"
+    "explanation": "Por que a resposta correta é \"STATUS.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"STATUS.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A configuração TRISB=00001111b define que os pinos do PORTB operarão com qual disposição?",
@@ -1415,8 +1305,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Pinos analógicos ativados para leitura simultânea pelo módulo conversor A/D."
     ],
     "answer": "Metade como entrada (RB0 a RB3) e a outra metade como saída (RB4 a RB7).",
-    "explanation": "Por que a resposta correta é \"Metade como entrada (RB0 a RB3) e a outra metade como saída (RB4 a RB7).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Metade como entrada (RB0 a RB3) e a outra metade como saída (RB4 a RB7).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Metade como entrada (RB0 a RB3) e a outra metade como saída (RB4 a RB7).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Metade como entrada (RB0 a RB3) e a outra metade como saída (RB4 a RB7).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Para que os pinos do PORTA possam operar corretamente como entradas analógicas para o conversor A/D, como devem estar configurados os bits do registro TRISA?",
@@ -1428,8 +1317,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Deverão ser alternados entre 0 e 1 a cada ciclo de amostragem analógica."
     ],
     "answer": "Deverão se manter setados (em nível 1, configurados como entradas).",
-    "explanation": "Por que a resposta correta é \"Deverão se manter setados (em nível 1, configurados como entradas).\"? O módulo Conversor Analógico-Digital (ADC) realiza a medição de grandezas analógicas externas (como temperatura ou tensão em um potenciômetro), convertendo essa amostra em uma palavra digital de N bits proporcional à tensão de referência Vref, possibilitando o processamento digital pela CPU.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Deverão se manter setados (em nível 1, configurados como entradas).\"? O módulo Conversor Analógico-Digital (ADC) realiza a medição de grandezas analógicas externas (como temperatura ou tensão em um potenciômetro), convertendo essa amostra em uma palavra digital de N bits proporcional à tensão de referência Vref, possibilitando o processamento digital pela CPU."
   },
   {
     "question": "A operação lógica EX-OR realizada pelo hardware interno nos pinos de entrada RB7:RB4 em relação ao último valor lido do PORTB tem a finalidade de:",
@@ -1441,8 +1329,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Ativar o buffer de travamento Latch das saídas digitais do PORTD."
     ],
     "answer": "Gerar a interrupção por mudança de estado na própria porta B (RBIF).",
-    "explanation": "Por que a resposta correta é \"Gerar a interrupção por mudança de estado na própria porta B (RBIF).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Gerar a interrupção por mudança de estado na própria porta B (RBIF).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Gerar a interrupção por mudança de estado na própria porta B (RBIF).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Gerar a interrupção por mudança de estado na própria porta B (RBIF).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "As portas 'A e E' compartilham no PIC16F877 a funcionalidade de:",
@@ -1454,8 +1341,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Gerarem todas as saídas de modulação por largura de pulso (PWM) dos módulos CCP."
     ],
     "answer": "Serem utilizadas junto com o Conversor Analógico-Digital (entradas analógicas / referências).",
-    "explanation": "Por que a resposta correta é \"Serem utilizadas junto com o Conversor Analógico-Digital (entradas analógicas / referências).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Serem utilizadas junto com o Conversor Analógico-Digital (entradas analógicas / referências).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Serem utilizadas junto com o Conversor Analógico-Digital (entradas analógicas / referências).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Serem utilizadas junto com o Conversor Analógico-Digital (entradas analógicas / referências).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O recurso arquitetural que permite que um mesmo pino físico de I/O do PIC exerça múltiplas funções (como entrada analógica, saída PWM ou pino digital) é chamado de:",
@@ -1467,8 +1353,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Tri-state."
     ],
     "answer": "Multiplexação.",
-    "explanation": "Por que a resposta correta é \"Multiplexação.\"? A Modulação por Largura de Pulso (PWM) gera uma onda quadrada de frequência fixa onde o tempo em nível lógico alto (Duty Cycle) é ajustado por software. Isso permite controlar a potência média entregue a cargas como motores DC (ajuste de velocidade) e LEDs (ajuste de brilho) mantendo alta eficiência energética.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Multiplexação.\"? A Modulação por Largura de Pulso (PWM) gera uma onda quadrada de frequência fixa onde o tempo em nível lógico alto (Duty Cycle) é ajustado por software. Isso permite controlar a potência média entregue a cargas como motores DC (ajuste de velocidade) e LEDs (ajuste de brilho) mantendo alta eficiência energética."
   },
   {
     "question": "O registrador TRISE no microcontrolador PIC16F877 é responsável por:",
@@ -1480,8 +1365,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Configurar a contagem inicial e o divisor de frequência do temporizador Timer 2."
     ],
     "answer": "Controlar a direção de dados (entradas ou saídas) dos pinos correspondentes ao PORTE.",
-    "explanation": "Por que a resposta correta é \"Controlar a direção de dados (entradas ou saídas) dos pinos correspondentes ao PORTE.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Controlar a direção de dados (entradas ou saídas) dos pinos correspondentes ao PORTE.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Controlar a direção de dados (entradas ou saídas) dos pinos correspondentes ao PORTE.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Controlar a direção de dados (entradas ou saídas) dos pinos correspondentes ao PORTE.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Quando um bit do registrador TRISD é configurado em nível baixo (0), qual comportamento o pino correspondente no PORTD adota?",
@@ -1493,8 +1377,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Atua como pino multiplexado do barramento paralela escrava."
     ],
     "answer": "Atua como uma saída digital.",
-    "explanation": "Por que a resposta correta é \"Atua como uma saída digital.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Atua como uma saída digital.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Atua como uma saída digital.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Atua como uma saída digital.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O fato de a leitura de uma porta ser feita diretamente no pino físico enquanto a escrita passa por um Latch intermediário pode causar qual fenômeno em operações de I/O rápidas no PIC?",
@@ -1506,8 +1389,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O travamento permanente do conversor analógico-digital de 10 bits."
     ],
     "answer": "Atraso entre a escrita e a leitura, ou problemas em instruções do tipo Read-Modify-Write.",
-    "explanation": "Por que a resposta correta é \"Atraso entre a escrita e a leitura, ou problemas em instruções do tipo Read-Modify-Write.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Atraso entre a escrita e a leitura, ou problemas em instruções do tipo Read-Modify-Write.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Atraso entre a escrita e a leitura, ou problemas em instruções do tipo Read-Modify-Write.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Atraso entre a escrita e a leitura, ou problemas em instruções do tipo Read-Modify-Write.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Sobre o modo PSPMODE (Porta Paralela Escrava), a afirmação 'controlada leitura por WR ou por escrita RD' é considerada incorreta porque:",
@@ -1519,8 +1401,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O controle de fluxo no PSPMODE depende apenas dos bits do Timer 0 e da USART."
     ],
     "answer": "Na verdade, a leitura é controlada pelo sinal /RD e a escrita pelo sinal /WR, e não o inverso.",
-    "explanation": "Por que a resposta correta é \"Na verdade, a leitura é controlada pelo sinal /RD e a escrita pelo sinal /WR, e não o inverso.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Na verdade, a leitura é controlada pelo sinal /RD e a escrita pelo sinal /WR, e não o inverso.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Na verdade, a leitura é controlada pelo sinal /RD e a escrita pelo sinal /WR, e não o inverso.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Na verdade, a leitura é controlada pelo sinal /RD e a escrita pelo sinal /WR, e não o inverso.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "As capacidades 'Portas de I/O digitais, Portas de entradas Analógicas e Porta de controle do PSP' resumem o conjunto de funções associadas a qual porta do PIC16F877?",
@@ -1532,8 +1413,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "PORTD."
     ],
     "answer": "PORTE.",
-    "explanation": "Por que a resposta correta é \"PORTE.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"PORTE.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"PORTE.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"PORTE.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O carregamento sequencial dos valores 0x55 e 0xAA no registrador EECON2 é uma etapa obrigatória que serve para:",
@@ -1545,8 +1425,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Zerar o contador do Watchdog e configurar o pre-scaler no registrador OPTION_REG."
     ],
     "answer": "Desbloquear a proteção e permitir o ciclo de escrita na memória FLASH ou EEPROM de dados.",
-    "explanation": "Por que a resposta correta é \"Desbloquear a proteção e permitir o ciclo de escrita na memória FLASH ou EEPROM de dados.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Desbloquear a proteção e permitir o ciclo de escrita na memória FLASH ou EEPROM de dados.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Desbloquear a proteção e permitir o ciclo de escrita na memória FLASH ou EEPROM de dados.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Desbloquear a proteção e permitir o ciclo de escrita na memória FLASH ou EEPROM de dados.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O bit EEPGD, localizado no registrador EECON1, desempenha a função de:",
@@ -1558,8 +1437,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Iniciar manualmente o processo de escrita na EEPROM após a sequência de desbloqueio."
     ],
     "answer": "Selecionar qual memória será acessada nas operações de leitura/escrita: EEPROM de dados ou Flash de programa.",
-    "explanation": "Por que a resposta correta é \"Selecionar qual memória será acessada nas operações de leitura/escrita: EEPROM de dados ou Flash de programa.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Selecionar qual memória será acessada nas operações de leitura/escrita: EEPROM de dados ou Flash de programa.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Selecionar qual memória será acessada nas operações de leitura/escrita: EEPROM de dados ou Flash de programa.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Selecionar qual memória será acessada nas operações de leitura/escrita: EEPROM de dados ou Flash de programa.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O registrador EEDATA é utilizado pelo hardware do PIC16F877 para:",
@@ -1571,8 +1449,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Receber os bits superiores do endereço de 14 bits ao ler a memória Flash de programa."
     ],
     "answer": "Armazenar o dado de 8 bits após a conclusão da leitura da memória EEPROM de dados.",
-    "explanation": "Por que a resposta correta é \"Armazenar o dado de 8 bits após a conclusão da leitura da memória EEPROM de dados.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Armazenar o dado de 8 bits após a conclusão da leitura da memória EEPROM de dados.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Armazenar o dado de 8 bits após a conclusão da leitura da memória EEPROM de dados.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Armazenar o dado de 8 bits após a conclusão da leitura da memória EEPROM de dados.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A função do flag de interrupção EEIF (PIR2<4>) durante operações na memória não-volátil é:",
@@ -1584,8 +1461,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Desabilitar o Watchdog Timer enquanto a escrita na Flash estiver em andamento."
     ],
     "answer": "Sinalizar ou tratar a ocorrência de interrupção indicando o final de um ciclo de escrita.",
-    "explanation": "Por que a resposta correta é \"Sinalizar ou tratar a ocorrência de interrupção indicando o final de um ciclo de escrita.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Sinalizar ou tratar a ocorrência de interrupção indicando o final de um ciclo de escrita.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Sinalizar ou tratar a ocorrência de interrupção indicando o final de um ciclo de escrita.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Sinalizar ou tratar a ocorrência de interrupção indicando o final de um ciclo de escrita.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O término físico do ciclo interno de gravação/escrita na memória é indicado pelo hardware quando:",
@@ -1597,8 +1473,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O flag T0IF no registrador INTCON vai a nível alto em sincronia com o clock."
     ],
     "answer": "O bit WR (EECON1<1>) é resetado/apagado automaticamente pelo circuito interno.",
-    "explanation": "Por que a resposta correta é \"O bit WR (EECON1<1>) é resetado/apagado automaticamente pelo circuito interno.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O bit WR (EECON1<1>) é resetado/apagado automaticamente pelo circuito interno.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"O bit WR (EECON1<1>) é resetado/apagado automaticamente pelo circuito interno.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O bit WR (EECON1<1>) é resetado/apagado automaticamente pelo circuito interno.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A dupla de registradores 'EEADR e EEDATA' é utilizada em conjunto especificamente para:",
@@ -1610,8 +1485,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Mapear as portas digitais do PORTD no barramento paralelo escravo com interrupção."
     ],
     "answer": "Realizar a leitura ou escrita na memória EEPROM de dados (endereço em EEADR e dado em EEDATA).",
-    "explanation": "Por que a resposta correta é \"Realizar a leitura ou escrita na memória EEPROM de dados (endereço em EEADR e dado em EEDATA).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Realizar a leitura ou escrita na memória EEPROM de dados (endereço em EEADR e dado em EEDATA).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Realizar a leitura ou escrita na memória EEPROM de dados (endereço em EEADR e dado em EEDATA).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Realizar a leitura ou escrita na memória EEPROM de dados (endereço em EEADR e dado em EEDATA).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O flag de controle 'RD (EECON1<0>)' apresenta qual comportamento no processo de leitura da EEPROM após o dado estar disponível no EEDATA?",
@@ -1623,8 +1497,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Trava o acesso ao barramento de dados até que a instrução NOP seja executada."
     ],
     "answer": "É apagado/resetado automaticamente pelo hardware logo após a conclusão da leitura.",
-    "explanation": "Por que a resposta correta é \"É apagado/resetado automaticamente pelo hardware logo após a conclusão da leitura.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging).",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"É apagado/resetado automaticamente pelo hardware logo após a conclusão da leitura.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging)."
   },
   {
     "question": "Os registradores 'EEADR, EEADRH e EEDATA, EEDATAH' são necessários durante a leitura da Memória Flash de Programa do PIC16F877 porque:",
@@ -1636,8 +1509,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O módulo de comunicação paralela escrava transfere dados de 16 em 16 bits com o processador mestre."
     ],
     "answer": "A memória Flash possui capacidade de 8Kb (endereços de 13 bits em EEADR/EEADRH) e palavras de 14 bits (dados em EEDATA/EEDATAH).",
-    "explanation": "Por que a resposta correta é \"A memória Flash possui capacidade de 8Kb (endereços de 13 bits em EEADR/EEADRH) e palavras de 14 bits (dados em EEDATA/EEDATAH).\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"A memória Flash possui capacidade de 8Kb (endereços de 13 bits em EEADR/EEADRH) e palavras de 14 bits (dados em EEDATA/EEDATAH).\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "O bit de configuração WRT do PIC16F877 é responsável por:",
@@ -1649,8 +1521,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Mudar o mapeamento dos vetores de interrupção de 0004h para o topo do bloco de memória RAM."
     ],
     "answer": "Proteger a Memória Flash de Programa contra escritas/gravações indesejadas durante a execução do programa.",
-    "explanation": "Por que a resposta correta é \"Proteger a Memória Flash de Programa contra escritas/gravações indesejadas durante a execução do programa.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Proteger a Memória Flash de Programa contra escritas/gravações indesejadas durante a execução do programa.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Proteger a Memória Flash de Programa contra escritas/gravações indesejadas durante a execução do programa.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Proteger a Memória Flash de Programa contra escritas/gravações indesejadas durante a execução do programa.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O bit WREN (Write Enable) no registrador EECON1 é utilizado com o propósito fundamental de:",
@@ -1662,8 +1533,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Proteger as portas digitais de I/O contra alterações acidentais de direção no registro TRIS."
     ],
     "answer": "Habilitar ou desabilitar a permissão para operações de escrita/gravação na memória Flash e EEPROM.",
-    "explanation": "Por que a resposta correta é \"Habilitar ou desabilitar a permissão para operações de escrita/gravação na memória Flash e EEPROM.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Habilitar ou desabilitar a permissão para operações de escrita/gravação na memória Flash e EEPROM.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Habilitar ou desabilitar a permissão para operações de escrita/gravação na memória Flash e EEPROM.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Habilitar ou desabilitar a permissão para operações de escrita/gravação na memória Flash e EEPROM.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Apontar o endereço da próxima instrução a ser executada na memória Flash é a definição da função do:",
@@ -1675,8 +1545,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Divisor de frequência Prescaler."
     ],
     "answer": "Contador de Programa (PC).",
-    "explanation": "Por que a resposta correta é \"Contador de Programa (PC).\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Contador de Programa (PC).\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "A técnica que executa uma instrução enquanto busca a próxima no mesmo ciclo de máquina é denominada:",
@@ -1688,8 +1557,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Endereçamento Imediato."
     ],
     "answer": "Pipeline.",
-    "explanation": "Por que a resposta correta é \"Pipeline.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pipeline.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"Pipeline.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Pipeline.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A fabricante 'Microchip' é conhecida mundialmente por desenvolver a famosa família de microcontroladores:",
@@ -1701,8 +1569,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "MSP430."
     ],
     "answer": "PIC.",
-    "explanation": "Por que a resposta correta é \"PIC.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"PIC.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 1 - Introdução aos Microcontroladores [Inverso]"
+    "explanation": "Por que a resposta correta é \"PIC.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"PIC.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "A capacidade de 8192 palavras (8K) na memória Flash do PIC16F877 indica que o microcontrolador é capaz de armazenar exatamente:",
@@ -1714,8 +1581,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "2048 vetores de interrupção e sub-rotinas independentes."
     ],
     "answer": "8192 instruções de 14 bits.",
-    "explanation": "Por que a resposta correta é \"8192 instruções de 14 bits.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"8192 instruções de 14 bits.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "Uma frequência interna de ciclo de instrução de 4 MHz no microcontrolador PIC16F877 é obtida quando se utiliza um clock externo de:",
@@ -1727,8 +1593,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "32 MHz."
     ],
     "answer": "16 MHz.",
-    "explanation": "Por que a resposta correta é \"16 MHz.\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4).",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"16 MHz.\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4)."
   },
   {
     "question": "Um ciclo de instrução com duração de 200 ns requer a aplicação de um clock externo de:",
@@ -1740,8 +1605,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "8 MHz."
     ],
     "answer": "20 MHz.",
-    "explanation": "Por que a resposta correta é \"20 MHz.\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4).",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"20 MHz.\"? Na arquitetura PIC clássica de 8 bits, o clock principal do oscilador (Fosc) é dividido internamente por 4 para gerar as quatro fases de processamento de cada instrução (busca, decodificação, execução e escrita). Assim, cada ciclo de máquina ou instrução equivale exatamente a 4 ciclos de clock (Fosc/4)."
   },
   {
     "question": "O tempo de 2 us para a execução de uma instrução de salto (como GOTO ou CALL, que gastam 2 ciclos de máquina) é obtido quando o clock externo é de:",
@@ -1753,8 +1617,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "20 MHz."
     ],
     "answer": "4 MHz.",
-    "explanation": "Por que a resposta correta é \"4 MHz.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"4 MHz.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"4 MHz.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"4 MHz.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Sobre o número de fontes/tipos de interrupções no microcontrolador PIC16F877, a afirmação 'O microcontrolador possui 7 tipos de interrupções' é INCORRETA porque:",
@@ -1766,8 +1629,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "As interrupções são divididas em exatamente 3 níveis de prioridade controlados pelo registro PCLATH."
     ],
     "answer": "O PIC16F877 possui, na verdade, 14 ou 15 fontes de interrupção (entre internas e externas), e não apenas 7.",
-    "explanation": "Por que a resposta correta é \"O PIC16F877 possui, na verdade, 14 ou 15 fontes de interrupção (entre internas e externas), e não apenas 7.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 2 - Visão Geral do PIC16F877 [Inverso]"
+    "explanation": "Por que a resposta correta é \"O PIC16F877 possui, na verdade, 14 ou 15 fontes de interrupção (entre internas e externas), e não apenas 7.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "O endereço hexadecimal 0004h na memória Flash do PIC16F877 é reservado por hardware para:",
@@ -1779,8 +1641,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O endereço de topo do primeiro banco da memória não-volátil EEPROM."
     ],
     "answer": "O vetor de interrupção (onde o PC desvia ao ocorrer qualquer interrupção).",
-    "explanation": "Por que a resposta correta é \"O vetor de interrupção (onde o PC desvia ao ocorrer qualquer interrupção).\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"O vetor de interrupção (onde o PC desvia ao ocorrer qualquer interrupção).\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "Os bits <4:3> do registrador PCLATH operam na memória FLASH de programa como:",
@@ -1792,8 +1653,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os indicadores de que ocorreu um estouro de contagem no temporizador Watchdog."
     ],
     "answer": "A chave seletora de página nas instruções que modificam o PC, como GOTO e CALL.",
-    "explanation": "Por que a resposta correta é \"A chave seletora de página nas instruções que modificam o PC, como GOTO e CALL.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"A chave seletora de página nas instruções que modificam o PC, como GOTO e CALL.\"? A memória Flash é uma tecnologia não-volátil (mantém os dados gravados mesmo quando a alimentação elétrica é cortada) e reprogramável eletricamente. Por essa confiabilidade e velocidade de regravação, é nela que se armazena de forma permanente o firmware (código do programa) do microcontrolador."
   },
   {
     "question": "O fato de os 7 bits de endereço presentes nas instruções da CPU conseguirem endereçar apenas 128 bytes por vez justifica:",
@@ -1805,8 +1665,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "A impossibilidade de ler ou gravar dados diretamente nas portas PORTD e PORTE."
     ],
     "answer": "O uso do termo 'Banco' e a divisão da memória RAM em bancos selecionáveis.",
-    "explanation": "Por que a resposta correta é \"O uso do termo 'Banco' e a divisão da memória RAM em bancos selecionáveis.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O uso do termo 'Banco' e a divisão da memória RAM em bancos selecionáveis.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"O uso do termo 'Banco' e a divisão da memória RAM em bancos selecionáveis.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O uso do termo 'Banco' e a divisão da memória RAM em bancos selecionáveis.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "Os bits RP1 e RP0 do registrador STATUS têm a função vital de:",
@@ -1818,8 +1677,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controlar o divisor de frequência programável atribuído ao Timer 0."
     ],
     "answer": "Fazer a seleção do banco de memória RAM no endereçamento direto.",
-    "explanation": "Por que a resposta correta é \"Fazer a seleção do banco de memória RAM no endereçamento direto.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"Fazer a seleção do banco de memória RAM no endereçamento direto.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM."
   },
   {
     "question": "Qual característica define singularmente o registrador de trabalho W (WORK) nos microcontroladores PIC?",
@@ -1831,8 +1689,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controla de forma direta os resistores de pull-up internos associados aos pinos de entrada."
     ],
     "answer": "Atua como ponte/destino principal de operações da ULA, mas NÃO está mapeado com endereço na memória RAM.",
-    "explanation": "Por que a resposta correta é \"Atua como ponte/destino principal de operações da ULA, mas NÃO está mapeado com endereço na memória RAM.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Atua como ponte/destino principal de operações da ULA, mas NÃO está mapeado com endereço na memória RAM.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"Atua como ponte/destino principal de operações da ULA, mas NÃO está mapeado com endereço na memória RAM.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Atua como ponte/destino principal de operações da ULA, mas NÃO está mapeado com endereço na memória RAM.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O bit /TO em nível baixo (0) dentro do registrador STATUS indica ao programador que:",
@@ -1844,8 +1701,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O conversor analógico-digital finalizou a conversão do canal selecionado."
     ],
     "answer": "O temporizador Watchdog transbordou e provocou o reset do microcontrolador.",
-    "explanation": "Por que a resposta correta é \"O temporizador Watchdog transbordou e provocou o reset do microcontrolador.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"O temporizador Watchdog transbordou e provocou o reset do microcontrolador.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM."
   },
   {
     "question": "O resultado da operação lógica ou aritmética anterior ter sido exatamente zero faz com que o hardware modifique qual indicador do PIC?",
@@ -1857,8 +1713,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Desabilita temporariamente o transbordo do contador Watchdog."
     ],
     "answer": "Coloca o bit Z (STATUS<2>) em nível lógico '1'.",
-    "explanation": "Por que a resposta correta é \"Coloca o bit Z (STATUS<2>) em nível lógico '1'.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Coloca o bit Z (STATUS<2>) em nível lógico '1'.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"Coloca o bit Z (STATUS<2>) em nível lógico '1'.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Coloca o bit Z (STATUS<2>) em nível lógico '1'.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "No modo de endereçamento indireto, o registrador FSR desempenha qual papel?",
@@ -1870,8 +1725,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Mantém o histórico dos 8 últimos saltos de sub-rotina executados pelo programa."
     ],
     "answer": "Aponta para o endereço da memória RAM que será lido ou escrito através de INDF.",
-    "explanation": "Por que a resposta correta é \"Aponta para o endereço da memória RAM que será lido ou escrito através de INDF.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Aponta para o endereço da memória RAM que será lido ou escrito através de INDF.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"Aponta para o endereço da memória RAM que será lido ou escrito através de INDF.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Aponta para o endereço da memória RAM que será lido ou escrito através de INDF.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O registrador STATUS no PIC16F877 é indispensável porque:",
@@ -1883,8 +1737,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Controla a tensão de referência para os comparadores analógicos internos."
     ],
     "answer": "Mostra o estado geral do microcontrolador e da ULA, além dos bits de seleção de banco.",
-    "explanation": "Por que a resposta correta é \"Mostra o estado geral do microcontrolador e da ULA, além dos bits de seleção de banco.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"Mostra o estado geral do microcontrolador e da ULA, além dos bits de seleção de banco.\"? O registrador STATUS armazena as bandeiras de sinalização (Flags) da ALU: Z (Zero - sinaliza se o resultado da última operação foi zero), C (Carry - sinaliza estouro/transporte do bit 7) e DC (Digit Carry - transporte do bit 3 para o 4 em operações BCD), além dos bits de seleção de banco de memória RAM."
   },
   {
     "question": "A chave geral 'GIE (INTCON)' tem por missão no PIC16F877:",
@@ -1896,8 +1749,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Desligar os periféricos analógicos para reduzir o consumo no modo Sleep."
     ],
     "answer": "Permitir ou bloquear globalmente todas as interrupções habilitadas individualmente no sistema.",
-    "explanation": "Por que a resposta correta é \"Permitir ou bloquear globalmente todas as interrupções habilitadas individualmente no sistema.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"Permitir ou bloquear globalmente todas as interrupções habilitadas individualmente no sistema.\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "O registrador INTCON centraliza no microcontrolador:",
@@ -1909,8 +1761,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O controle de acesso simultâneo às páginas de memória Flash e EEPROM de dados."
     ],
     "answer": "O estado geral e o controle das principais interrupções (como GIE, PEIE, T0IE e INTE).",
-    "explanation": "Por que a resposta correta é \"O estado geral e o controle das principais interrupções (como GIE, PEIE, T0IE e INTE).\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF).",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"O estado geral e o controle das principais interrupções (como GIE, PEIE, T0IE e INTE).\"? O registrador INTCON centraliza a habilitação e o monitoramento das interrupções do PIC, possuindo a chave geral GIE (Global Interrupt Enable), as chaves individuais de cada fonte (como T0IE para transbordo do TMR0 e INTE para o pino externo RB0/INT) e suas respectivas bandeiras de sinalização (T0IF, INTF)."
   },
   {
     "question": "A combinação dos '11 bits do Opcode + bits <4:3> do PCLATH' é utilizada para:",
@@ -1922,8 +1773,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Verificar a integridade dos dados na memória não-volátil após um ciclo de gravação."
     ],
     "answer": "Formar o endereço completo de 13 bits carregado no PC durante uma instrução GOTO.",
-    "explanation": "Por que a resposta correta é \"Formar o endereço completo de 13 bits carregado no PC durante uma instrução GOTO.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Formar o endereço completo de 13 bits carregado no PC durante uma instrução GOTO.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"Formar o endereço completo de 13 bits carregado no PC durante uma instrução GOTO.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Formar o endereço completo de 13 bits carregado no PC durante uma instrução GOTO.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O endereço recuperado do Topo da Pilha (TOS) é automaticamente inserido no Contador de Programa (PC) quando:",
@@ -1935,8 +1785,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O programador realiza uma leitura indireta na memória RAM utilizando o registro INDF."
     ],
     "answer": "O processador executa o retorno de uma sub-rotina (instrução RETURN ou RETLW) ou interrupção (RETFIE).",
-    "explanation": "Por que a resposta correta é \"O processador executa o retorno de uma sub-rotina (instrução RETURN ou RETLW) ou interrupção (RETFIE).\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais).",
-    "topic": "Capítulo 3 - Organização da Memória do PIC [Inverso]"
+    "explanation": "Por que a resposta correta é \"O processador executa o retorno de uma sub-rotina (instrução RETURN ou RETLW) ou interrupção (RETFIE).\"? O Contador de Programa (PC - Program Counter) é o registrador que aponta continuamente para o endereço de memória da próxima instrução a ser buscada (fetch) e executada pela CPU. É ele quem comanda o fluxo sequencial do código e executa os desvios (instruções GOTO, CALL e saltos condicionais)."
   },
   {
     "question": "A operação do PORTD como Porta Paralela Escrava (PSP) de 8 bits é controlada e habilitada por bits situados em qual registrador?",
@@ -1948,8 +1797,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "INTCON."
     ],
     "answer": "TRISE.",
-    "explanation": "Por que a resposta correta é \"TRISE.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISE.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"TRISE.\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"TRISE.\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O PORTB destaca-se entre os demais portos digitais do PIC16F877 pela habilidade de:",
@@ -1961,8 +1809,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Dispensar totalmente o uso de registradores TRIS para definir a direção de seus pinos."
     ],
     "answer": "Usar resistores de pull-up internos ativáveis por software (via bit /RBPU no OPTION_REG).",
-    "explanation": "Por que a resposta correta é \"Usar resistores de pull-up internos ativáveis por software (via bit /RBPU no OPTION_REG).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Usar resistores de pull-up internos ativáveis por software (via bit /RBPU no OPTION_REG).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"Usar resistores de pull-up internos ativáveis por software (via bit /RBPU no OPTION_REG).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"Usar resistores de pull-up internos ativáveis por software (via bit /RBPU no OPTION_REG).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O valor TRISC = 11110000b aplicado ao registrador de direção da porta C estabelece que:",
@@ -1974,8 +1821,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "Os canais de comunicação serial I2C e SPI assumem o controle prioritário dos pinos."
     ],
     "answer": "A metade inferior (RC0 a RC3) opera como SAÍDA (0) e a metade superior (RC4 a RC7) opera como ENTRADA (1).",
-    "explanation": "Por que a resposta correta é \"A metade inferior (RC0 a RC3) opera como SAÍDA (0) e a metade superior (RC4 a RC7) opera como ENTRADA (1).\"? A arquitetura RISC (Reduced Instruction Set Computer) designa processadores que possuem um conjunto reduzido de instruções simples e otimizadas para execução rápida em 1 ciclo de instrução (como nos PICs, que têm apenas de 35 a 75 instruções), diferentemente da arquitetura CISC com instruções complexas de múltiplos ciclos.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"A metade inferior (RC0 a RC3) opera como SAÍDA (0) e a metade superior (RC4 a RC7) opera como ENTRADA (1).\"? A arquitetura RISC (Reduced Instruction Set Computer) designa processadores que possuem um conjunto reduzido de instruções simples e otimizadas para execução rápida em 1 ciclo de instrução (como nos PICs, que têm apenas de 35 a 75 instruções), diferentemente da arquitetura CISC com instruções complexas de múltiplos ciclos."
   },
   {
     "question": "O motivo técnico para um LED ligado entre RB4 e o GND (que acende em nível alto) permanecer apagado quando TRISB = 45h (0100 0101b) e PORTB = AAh (1010 1010b) é que:",
@@ -1987,8 +1833,7 @@ export const microcontroladoresP1Questions: Question[] = [
       "O resistor de pull-up interno do PORTB foi desativado, impedindo a condução do LED."
     ],
     "answer": "O bit 4 no TRISB vale 0 (portanto RB4 é saída), mas o bit 4 no PORTB vale 0 (o pino recebe nível baixo 0V).",
-    "explanation": "Por que a resposta correta é \"O bit 4 no TRISB vale 0 (portanto RB4 é saída), mas o bit 4 no PORTB vale 0 (o pino recebe nível baixo 0V).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O bit 4 no TRISB vale 0 (portanto RB4 é saída), mas o bit 4 no PORTB vale 0 (o pino recebe nível baixo 0V).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica.",
-    "topic": "Capítulo 4 - Portas de Entrada e Saída (I/O) [Inverso]"
+    "explanation": "Por que a resposta correta é \"O bit 4 no TRISB vale 0 (portanto RB4 é saída), mas o bit 4 no PORTB vale 0 (o pino recebe nível baixo 0V).\"? Conforme a Apostila de Microcontroladores (Apostila EE 2006-0423), a alternativa \"O bit 4 no TRISB vale 0 (portanto RB4 é saída), mas o bit 4 no PORTB vale 0 (o pino recebe nível baixo 0V).\" reflete com exatidão a especificação, funcionamento elétrico ou organização de memória da arquitetura PIC, justificando plenamente essa escolha e descartando as demais alternativas por incongruência técnica."
   },
   {
     "question": "O registrador EEDATA cumpre qual papel fundamental ao final de uma rotina de leitura da memória EEPROM de dados?",
@@ -2000,7 +1845,6 @@ export const microcontroladoresP1Questions: Question[] = [
       "Zera o bit RD no registrador EECON1 para sinalizar que o barramento está liberado."
     ],
     "answer": "Armazena o byte lido da célula da EEPROM, disponibilizando-o para leitura do processador.",
-    "explanation": "Por que a resposta correta é \"Armazena o byte lido da célula da EEPROM, disponibilizando-o para leitura do processador.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging).",
-    "topic": "Capítulo 5 - Memória Flash e EEPROM [Inverso]"
+    "explanation": "Por que a resposta correta é \"Armazena o byte lido da célula da EEPROM, disponibilizando-o para leitura do processador.\"? A memória EEPROM interna de dados diferencia-se da RAM por ser não-volátil: ela preserva suas variáveis intactas mesmo após o microcontrolador ser desligado (power-off). É ideal para salvar configurações do usuário, calibrações de sensores, recordes ou históricos (datalogging)."
   }
 ];

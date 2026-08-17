@@ -28,26 +28,11 @@ function shuffleArray<T>(array: T[]): T[] {
 
 export function getShuffledQuestions(quizId = "telefonia"): Question[] {
   const q = (quizzes as Record<string, Question[]>)[quizId] ?? quizzes[Object.keys(quizzes)[0]];
-  function inferTopicFromText(text: string): string | undefined {
-    const t = text.toLowerCase();
-    if (t.includes("ttl") || t.includes("74") || t.includes("54")) return "Tópico: 1.4 - Família TTL";
-    if (t.includes("cmos") || t.includes("4000") || t.includes("vdd")) return "Tópico: 1.5 - Família CMOS";
-    if (t.includes("fan-out") || t.includes("fan out") || t.includes("fanout")) return "Tópico: 1.1 - Conceitos e parâmetros (Fan-Out)";
-    if (t.includes("vih") || t.includes("vil") || t.includes("nível alto") || t.includes("nível baixo")) return "Tópico: 1.4 - Níveis de entrada/saída (VIH/VIL)";
-    if (t.includes("dtmf") || t.includes("dual tone")) return "Tópico: DTMF";
-    if (t.includes("voip") || t.includes("codec") || t.includes("jitter") || t.includes("latência")) return "Tópico: VoIP / CODECs";
-    if (t.includes("matriz") || t.includes("produtos canônicos")) return "Tópico: Geração de produtos canônicos / Matrizes";
-    if (t.includes("mux") || t.includes("multiplexador") || t.includes("demultiplex")) return "Tópico: Multiplex / Mux";
-    if (t.includes("porta") || t.includes("nand") || t.includes("nor") || t.includes("and") || t.includes("or")) return "Tópico: Portas Lógicas";
-    if (t.includes("temperatura") || t.includes("graus")) return "Tópico: Faixas de temperatura / Séries";
-    return undefined;
-  }
 
   return q
     .map((item) => ({
       ...item,
       options: shuffleArray(item.options),
-      topic: item.topic ?? inferTopicFromText(item.question),
     }))
     .sort(() => Math.random() - 0.5);
 }

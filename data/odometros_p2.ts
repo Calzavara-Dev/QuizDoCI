@@ -14,8 +14,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Desligar a alimentação elétrica principal antes de remover ou inserir qualquer cartão eletrônico e adotar procedimentos de proteção contra Descargas Eletrostáticas (ESD).",
     explanation: "Conforme o manual e a apostila técnica do Odômetro AGI-LOG, a remoção ou inserção de cartões (módulos) com a S.D.T.U. energizada pode causar arcos elétricos, picos sobretensão e curtos-circuitos no barramento (backplane), danificando severamente os componentes de estado sólido e circuitos integrados CMOS/MOS. Além disso, o uso de pulseira de aterramento (proteção ESD) é indispensável ao manusear placas eletrônicas sensíveis, como o Módulo 02 (Microprocessador e memórias).",
-    topic: "Precauções de Segurança na Troca de Módulos da SDTU"
-  },
+},
   {
     question: "Durante a remoção e substituição física de um módulo defeituoso na S.D.T.U. do Odômetro AGI-LOG, que cuidado mecânico e ambiental é obrigatório para preservar o equipamento?",
     options: [
@@ -26,8 +25,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Alinhar perfeitamente o cartão com as guias deslizantes do chassi antes de empurrá-lo contra o conector de fundo e garantir que a tampa de alumínio da caixa à prova d'água seja hermeticamente fechada após a troca.",
     explanation: "O alinhamento mecânico preciso do cartão em suas guias deslizantes é crucial para evitar que os pinos do conector de fundo (backplane) entortem ou quebrem durante a inserção. Após a substituição e verificação, a vedação da caixa de alumínio robusta deve ser integralmente restabelecida com seu anel de vedação limpo e bem fechado, preservando a proteção hermética à prova d'água contra a umidade e maresia do passadiço.",
-    topic: "Procedimentos de Remoção e Substituição na SDTU"
-  },
+},
   {
     question: "Como se caracteriza a construção mecânica e o conceito arquitetônico da S.D.T.U. (Signal Distribution / Sensor Distribution Terminal Unit) no Odômetro AGI-LOG?",
     options: [
@@ -38,8 +36,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É alojada em uma caixa de alumínio robusta e à prova d'água, estruturada com um conceito totalmente modular onde cartões eletrônicos individuais deslizam em guias até se conectarem ao backplane.",
     explanation: "A S.D.T.U. do Odômetro AGI-LOG foi projetada para operar nas condições severas do ambiente naval. Sua caixa de alumínio fundido de alta resistência garante imunidade a choques e vedação à prova d'água (grau militar/naval). O conceito modular divide as funções em cartões plug-in (Módulos 01 a 12), permitindo expansão, isolamento de falhas por módulo e fácil substituição.",
-    topic: "Construção da S.D.T.U. - Odômetro AGI-LOG"
-  },
+},
   {
     question: "Graças à construção em conceito modular da S.D.T.U. alojada em caixa robusta e à prova de água, qual é o Tempo de Reparo Médio (MTTR - Mean Time To Repair) típico para a substituição de um módulo no Odômetro AGI-LOG?",
     options: [
@@ -50,8 +47,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Extremamente reduzido, tipicamente inferior a 15 minutos (ou na faixa de 15 a 30 minutos) na substituição do cartão avariado.",
     explanation: "O conceito modular e a presença do autoteste integrado (BIT/BITE) reduzem drasticamente o MTTR (Mean Time To Repair). Uma vez que o diagnóstico indica qual módulo falhou (ex: Módulo 04 ou Módulo 08), o técnico de bordo abre a caixa, puxa a placa defeituosa das guias e insere um cartão sobressalente funcional, restabelecendo a operação do odômetro em menos de 15 minutos.",
-    topic: "MTTR e Manutenção Modular da S.D.T.U."
-  },
+},
   {
     question: "Qual é o propósito fundamental da S.D.T.U. (Unidade Terminal de Distribuição de Sinais/Dados) no sistema do Odômetro AGI-LOG?",
     options: [
@@ -62,8 +58,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Atuar como unidade central que gera a excitação da bobina da haste, processa a tensão induzida dos eletrodos via microprocessador, exibe a velocidade e a distância percorrida e distribui esses sinais aos repetidores do navio.",
     explanation: "A S.D.T.U. é o cérebro e coração do sistema Odômetro AGI-LOG. Ela centraliza todas as etapas: alimenta a bobina do sensor na água, recebe o sinal induzido proporcional à velocidade da água, realiza a conversão A/D e o processamento matemático com curvas de calibração, apresenta a leitura nos displays digitais frontais e disponibiliza saídas digitais, analógicas e pulsadas para os sistemas repetidores, radar ARPA, ECDIS e agulha giroscópica.",
-    topic: "Propósito da S.D.T.U. - Odômetro AGI-LOG"
-  },
+},
   {
     question: "Qual é o propósito geral do Odômetro AGI-LOG no contexto da navegação e dos sistemas navais do navio?",
     options: [
@@ -74,8 +69,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Medir com precisão a velocidade da embarcação em relação à água (Speed Through the Water), totalizar a distância navegada em milhas náuticas e fornecer essas informações aos sistemas táticos e de navegação de bordo.",
     explanation: "O propósito primordial do Odômetro AGI-LOG (odômetro eletromagnético) é fornecer a velocidade linear do navio em relação à massa de água envolvente (STW) e calcular a distância total navegada pela integração do tempo. Esses dados alimentam a navegação estimada do passadiço e são distribuídos para sistemas críticos como radares anticolisão, ECDIS, registradores de viagem e centrais de controle de tiro.",
-    topic: "Propósito Geral do Odômetro AGI-LOG"
-  },
+},
   {
     question: "De quantas partes constituintes principais (ou conjuntos fundamentais de hardware) compõe-se o sistema completo do Odômetro AGI-LOG?",
     options: [
@@ -86,8 +80,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Três (3) partes principais: A Unidade S.D.T.U., o Conjunto do Sensor (Haste e caixa de junção no casco) e os Repetidores/Periféricos externos de distribuição.",
     explanation: "A arquitetura do Odômetro AGI-LOG divide-se classicamente em três grandes blocos funcionais e estruturais: 1) A S.D.T.U. no passadiço (processamento e controle); 2) O Conjunto do Sensor/Haste com o caixão de conexão (Hull Fitting/Junction Box) instalado na quilha/casco em contato com a água; e 3) As Unidades Repetidoras e interfaces de navegação distribuídas pelo navio (proa, popa, passadiço, CCM).",
-    topic: "Composição e Partes do Odômetro AGI-LOG"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 2: SENSORES (HASTES), PRINCÍPIO DE FUNCIONAMENTO E CONEXÕES (Q2, Q3, Q28-Q35)
@@ -102,8 +95,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Lei da Indução Eletromagnética de Faraday: uma bobina no sensor gera um campo magnético na água; como a água do mar é condutora e está em movimento, induz uma tensão proporcional à velocidade nos eletrodos da haste.",
     explanation: "O Odômetro AGI-LOG opera com base na Lei de Faraday (EM Log). A bobina de excitação interna da haste é alimentada por corrente alternada da SDTU e cria um campo magnético ao redor da extremidade submersa. A água do mar atua como o condutor em movimento cortando as linhas de fluxo magnético. Esse deslocamento induz uma força eletromotriz (E = B * L * v) diretamente linear e proporcional à velocidade do navio através da água, que é captada em milivolts pelos dois eletrodos metálicos de contato.",
-    topic: "Princípio de Funcionamento da Haste (Lei de Faraday)"
-  },
+},
   {
     question: "Quais são os quatro (4) tipos de sensores (hastes) que podem ser usados com o sistema do Odômetro AGI-LOG montados no casco do navio?",
     options: [
@@ -114,8 +106,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Haste Retrátil, Haste Fixa (estilo OTAN), Haste com Perfil de Barbatana e Sensor Revés (Montagem Plana/Almofada ao casco).",
     explanation: "O sistema AGI-LOG é altamente versátil e foi projetado para aceitar quatro tipos distintos de montagem de sensores hidrodinâmicos no casco: 1) Haste Retrátil (Retractable Probe); 2) Haste Fixa estilo OTAN (NATO Fixed Probe); 3) Haste com Perfil de Barbatana (Fin Profile Probe); e 4) Sensor Revés / Flush Mounted Probe (almofada/faceado). O tipo utilizado é selecionado e configurado no microprocessador da SDTU via teclado.",
-    topic: "Os 4 Tipos de Sensores do Odômetro AGI-LOG"
-  },
+},
   {
     question: "Aonde e com qual finalidade operacional é empregada a Haste Retrátil (Retractable Probe) do Odômetro AGI-LOG?",
     options: [
@@ -126,8 +117,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Em navios mercantes, de passageiros e embarcações navais onde é necessário recolher (retrair) ou inspecionar/limpar a haste com o navio na água sem necessidade de docagem, ou para protegê-la ao navegar em águas muito rasas.",
     explanation: "A Haste Retrátil é montada dentro de um conjunto com válvula de fundo (sea valve / sluice valve). Ela permite que a tripulação recolha a haste para dentro do casco ou a remova inteiramente para limpeza de cracas ou substituição sem que o navio precise ir para o dique seco (docagem). Também é recolhida ao adentrar portos rasos ou rios com entulhos submersos que poderiam quebrar o sensor.",
-    topic: "Aplicação da Haste Retrátil - AGI-LOG"
-  },
+},
   {
     question: "Aonde é empregada preferencialmente a Haste Fixa (estilo OTAN / NATO Fixed Probe) do Odômetro AGI-LOG?",
     options: [
@@ -138,8 +128,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Em navios de guerra, submarinos e embarcações militares ou especiais construídas com furações e flanges padronizados pela OTAN, onde a máxima robustez estrutural contra choques mecânicos é prioritária sobre a remoção flutuando.",
     explanation: "A Haste Fixa estilo OTAN atende a normas de padronização mecânica e resistência a choques navais de alto impacto da Organização do Tratado do Atlântico Norte. Por ser aparafusada e fixada de forma permanente ao flange de casco, ela não pode ser recolhida com o navio flutuando (exige docagem ou mergulhador para troca), sendo escolhida quando a rigidez estrutural sob condições de combate ou altas pressões é o requisito crítico.",
-    topic: "Aplicação da Haste Fixa Estilo OTAN - AGI-LOG"
-  },
+},
   {
     question: "Aonde e por que é empregada a Haste com Perfil de Barbatana (Fin Profile Probe) do Odômetro AGI-LOG?",
     options: [
@@ -150,8 +139,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Em embarcações de alta velocidade (como patrulhas rápidas, corvetas e fragatas), pois seu formato hidrodinâmico otimizado reduz o arrasto, a turbulência e o risco de cavitação/aeração dos eletrodos em velocidades elevadas.",
     explanation: "Em velocidades elevadas (acima de 25 a 35+ nós), hastes cilíndricas normais geram arrasto excessivo, descolamento da camada limite e cavitação (bolhas de ar) que cegam ou distorcem o sinal nos eletrodos. A Haste com Perfil de Barbatana (Fin Profile) possui contorno aerodinâmico/hidrodinâmico afiado que corta a água suavemente, garantindo fluxo laminar e medições limpas de microvolts em embarcações velozes.",
-    topic: "Aplicação da Haste com Perfil de Barbatana - AGI-LOG"
-  },
+},
   {
     question: "Aonde é empregado o Sensor Revés (ou Flush Mounted Probe / Sensor Almofada montado rente ao casco) do Odômetro AGI-LOG?",
     options: [
@@ -162,8 +150,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Em submarinos, embarcações de águas muito rasas, quebra-gelos e navios onde qualquer projeção/protrusão sob o casco é inaceitável ou altamente vulnerável a impactos com o fundo ou gelo.",
     explanation: "O Sensor Revés (Flush Mounted) é instalado de modo que sua face sensora fique perfeitamente alinhada (rente/faceada) com a chapa exterior do casco da embarcação, sem se projetar para a água. É a solução ideal e segura para submarinos e embarcações que operam em águas rasas, canais congelados (onde o gelo arrancaria uma haste saliente) ou missões táticas onde não pode haver saliências na quilha.",
-    topic: "Aplicação do Sensor Revés (Flush Mounted) - AGI-LOG"
-  },
+},
   {
     question: "Quantas partes componentes estruturais e elétricas compõem tipicamente os sensores (haste) tipo OTAN do Odômetro AGI-LOG?",
     options: [
@@ -174,8 +161,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Quatro (4) partes principais: Corpo mecânico da haste/flange, Bobina de excitação magnética interna, Eletrodos de detecção de sinal em metal nobre e Cabeçote/Cabo de interligação para a caixa de junção.",
     explanation: "A Haste Fixa padrão OTAN do AGI-LOG é um conjunto encapsulado de alta precisão composto por quatro partes fundamentais que trabalham em conjunto: o corpo robusto com flange para montagem no casco; a bobina magnética na extremidade inferior que gera o campo alternado; o par de eletrodos metálicos de contato na superfície que capta a força eletromotriz induzida; e o cabo/cabeçote superior com vedação para ligação à caixa de junção da embarcação.",
-    topic: "As 4 Partes Componentes da Haste OTAN"
-  },
+},
   {
     question: "Em quais terminais específicos do bloco de conexões da haste do Odômetro AGI-LOG está ligada a alimentação elétrica da bobina de excitação magnética?",
     options: [
@@ -186,8 +172,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Terminais A e B (ou terminais 1 e 2 do circuito de excitação), que recebem a corrente alternada/pulsada fornecida pelo Módulo 08 da S.D.T.U.",
     explanation: "Na padronização das conexões entre o sensor/haste e a S.D.T.U. (passando pela caixa de junção), os Terminais A e B são estritamente reservados para o circuito da Bobina de Excitação magnética. Eles conduzem a corrente regulada alternada vinda do Módulo 08 (Fonte de Alimentação) para criar o campo magnético na água. Identificar corretamente os terminais A e B é vital para testes de continuidade e impedância da bobina sem danificar os eletrodos de sinal.",
-    topic: "Terminais de Alimentação da Bobina (A e B)"
-  },
+},
   {
     question: "Em quais terminais específicos da haste do Odômetro AGI-LOG estão conectados os eletrodos de captação do sinal diferencial de milivolts e a blindagem/terra de referência?",
     options: [
@@ -198,8 +183,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Terminais C, D (Eletrodo 1 e Eletrodo 2 de sinal diferencial induzido) e Terminal E (Terra de Referência / Blindagem e contato com a água do mar).",
     explanation: "A minúscula tensão induzida na água pela movimentação do navio é captada pelos dois eletrodos diferenciais conectados aos Terminais C e D. O Terminal E corresponde à blindagem e ao terra de referência (referência da água do mar e carcaça do sensor). Essa configuração em três terminais (C, D e E) é conectada diretamente à entrada de alta impedância do Módulo 04 (Conversor A/D e pré-amplificação diferencial) da S.D.T.U., garantindo imunidade a ruídos.",
-    topic: "Terminais dos Eletrodos de Sinal e Terra (C, D e E)"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 3: CONTROLES, TECLAS E PAINEL FRONTAL DA S.D.T.U. (Q4, Q5, Q6, Q7)
@@ -214,8 +198,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Permite alternar entre o Modo Normal de Operação (RUN / Velocidade e Distância), o Modo de Calibração (CAL / Calibration) e o Modo de Teste ou Simulação (TEST / SIM / BITE).",
     explanation: "A tecla momentânea MODE é o controle de navegação de modos operacionais da S.D.T.U. Pressionando-a sequencialmente, o operador transita entre o modo padrão de leitura diária (`RUN`, que exibe velocidade atual em nós e distância em milhas), o modo de ajuste técnico de curvas de velocidade (`CAL`) e o modo de diagnóstico/simulação (`TEST`/`SIM`), que gera sinais internos para testar circuitos e repetidores sem o navio se mover.",
-    topic: "Teclas de Comando: Tecla MODE"
-  },
+},
   {
     question: "No painel da S.D.T.U. do Odômetro AGI-LOG, quais são as seleções e funções que operam a tecla PROBE (Sensor)?",
     options: [
@@ -226,8 +209,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Permite selecionar e informar ao microprocessador qual tipo/modelo de sensor (haste) está instalado (ex: Retrátil, OTAN, Barbatana, Revés) ou selecionar o canal/status da sonda ativa na configuração do sistema.",
     explanation: "A tecla PROBE (Sensor) é utilizada para configurar a interface com o transdutor no mar. Através dela, o operador ou técnico seleciona o tipo exato de haste que está acoplada à S.D.T.U., permitindo que o Módulo 02 (Microprocessador) selecione na memória EPROM os parâmetros corretos de excitação magnética e ganho diferencial de entrada (Módulo 04) adequados à geometria hidrodinâmica daquela sonda específica.",
-    topic: "Teclas de Comando: Tecla PROBE (Sensor)"
-  },
+},
   {
     question: "Quais são as seleções e funcionalidades operadas pela tecla CURVE no painel frontal da S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -238,8 +220,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Permite selecionar as diferentes curvas de calibração armazenadas na memória (ex: Curva 1, Curva 2) e acessar/ajustar os pontos de linearização de velocidade ao longo da faixa de operação.",
     explanation: "A tecla CURVE gerencia a calibração hidrodinâmica do sistema. Como o fluxo de água ao redor do casco sofre distorções não-lineares (camada limite / boundary layer) que variam com o calado, trim e velocidade do navio, a S.D.T.U. armazena curvas multiponto na EPROM/EEPROM. A tecla CURVE permite selecionar qual curva aplicar ou navegar pelos pontos de calibração durante as provas em milha medida.",
-    topic: "Teclas de Comando: Tecla CURVE"
-  },
+},
   {
     question: "Qual é a função do regulador de intensidade luminosa denominado DIMMER (ou Dimer Display) localizado no painel frontal da S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -250,8 +231,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ajustar de forma contínua a intensidade luminosa dos displays digitais de velocidade/distância e dos indicadores LED do painel frontal, otimizando a visualização para navegação diurna ou noturna sem ofuscar a visão do oficial no passadiço.",
     explanation: "O controle DIMMER é o regulador de brilho do painel da S.D.T.U. Durante a navegação noturna no passadiço (ponte de comando escurecida), um brilho excessivo nos mostradores comprometeria a adaptação visual noturna dos oficiais. O DIMMER permite atenuar suavemente a luz dos dígitos e LEDs para a noite ou aumentá-la para o máximo brilho sob luz solar intensa durante o dia.",
-    topic: "Controles do Painel: Regulador DIMMER"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 4: PARTIDA, CALIBRAÇÃO, ESPECIFICAÇÕES E PRECISÃO (Q10, Q11, Q14, Q21-Q23, Q25-Q27)
@@ -266,8 +246,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Precisão de conversão e processamento eletrônico muito elevada, tipicamente melhor que ±0,1 nó (ou ±0,1% da leitura) na indicação de velocidade e totalização de distância na própria unidade.",
     explanation: "No Odômetro AGI-LOG, deve-se distinguir entre a precisão do instrumento eletrônico (a S.D.T.U. em si) e a precisão do sistema global na água. Em termos instrumentais puros (conversão A/D no Módulo 04, cálculos digitais de 16/32 bits na CPU Módulo 02 e geração de saídas no Módulo 05/07), a S.D.T.U. apresenta exatidão superior a ±0,1 nó, garantindo que o processamento eletrônico não introduza erros na medição hidrodinâmica.",
-    topic: "Precisão na Especificação do Instrumento (S.D.T.U.)"
-  },
+},
   {
     question: "Quais são os procedimentos sequenciais corretos para a partida (energização e inicialização operacional) do sistema do Odômetro AGI-LOG?",
     options: [
@@ -278,8 +257,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Verificar a correta instalação e travamento da haste no casco, ligar a alimentação elétrica principal da S.D.T.U., aguardar e acompanhar a execução automática do autoteste inicial (Power-On BIT) e verificar a entrada automática no modo normal RUN e o acendimento correto dos displays.",
     explanation: "Para a partida segura do sistema AGI-LOG, o técnico/operador primeiro garante a segurança física da haste submersa. Em seguida, aciona a chave principal da S.D.T.U. Ao receber energia, o microprocessador inicia o autoteste (BIT de partida), acendendo todos os segmentos dos mostradores (teste visual) e verificando memórias e conversores. Concluído com sucesso o BIT, o equipamento entra no modo `RUN` mostrando a velocidade e distância em tempo real.",
-    topic: "Procedimentos de Partida e Operação do Sistema"
-  },
+},
   {
     question: "Como é realizada e em que consiste a calibração hidrodinâmica da S.D.T.U. no Odômetro AGI-LOG?",
     options: [
@@ -290,8 +268,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Consiste na correlação entre a tensão induzida captada pelos eletrodos e a velocidade real do navio através da água, realizando passagens em uma milha medida (ou com referência DGPS em sentidos opostos para anular correntes) e ajustando na memória da SDTU, via teclas MODE e CURVE, os pontos de calibração que compensam a camada limite.",
     explanation: "O fluxo de água que banha a haste é afetado pelo perfil do casco e pela 'camada limite' (boundary layer). Por isso, a calibração é feita em mar aberto em uma base medida (corridas em sentidos opostos para eliminar o efeito da corrente de maré/vento). O técnico entra no modo `CAL` e ajusta através da tecla `CURVE` os coeficientes digitais de ganho/linearização na memória da S.D.T.U. para coincidir com a velocidade real do navio na água.",
-    topic: "Calibração Hidrodinâmica da S.D.T.U."
-  },
+},
   {
     question: "Qual é a precisão e a resolução na especificação quanto ao que se refere à Exibição de Velocidade (Speed Display) no mostrador frontal da S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -302,8 +279,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Exibição digital contínua em nós com resolução de 0,01 nó (ou 0,1 nó) e precisão instrumental típica de ±0,1 nó em toda a faixa operacional de velocidade da embarcação.",
     explanation: "Os mostradores digitais frontais da S.D.T.U. fornecem a leitura imediata de velocidade da embarcação em nós (knots). A resolução e exatidão eletrônica do display garantem que a velocidade seja apresentada em incrementos de centésimos ou décimos de nó (com precisão instrumental global na casa de ±0,1 nó), permitindo que o oficial de serviço detecte acelerações ou desacelerações mínimas em tempo real.",
-    topic: "Especificação de Precisão na Exibição de Velocidade"
-  },
+},
   {
     question: "Qual é a precisão e o método de funcionamento quanto à Exibição de Distância (Distance Display / Hodômetro) no mostrador digital da S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -314,8 +290,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "A distância percorrida é calculada pela integração matemática da velocidade em função do tempo pelo microprocessador e totalizada em um mostrador cumulativo com resolução de 0,01 milha náutica e precisão eletrônica melhor que ±0,1% da distância navegada.",
     explanation: "O Módulo 02 (Microprocessador) realiza a integração digital exata da medição de velocidade no decorrer do tempo ($\int v(t) dt$) para totalizar a distância percorrida na água. Esse hodômetro digital de alta resolução (0,01 nm ou 0,1 nm) atinge precisão instrumental superior a ±0,1% da distância total efetuada, sendo a base primária para o registro de milhas navegadas no livro de quarto de navegação.",
-    topic: "Especificação de Precisão na Exibição de Distância"
-  },
+},
   {
     question: "Qual é a especificação padrão para a Alimentação Elétrica Principal (Power Input) que entra no Módulo 08 da S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -326,8 +301,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "115 V AC ou 230 V AC monofásica (50 Hz / 60 Hz, selecionável internamente ou em transformador), podendo também aceitar ou contar com entrada de emergência em 24 V DC das baterias do navio.",
     explanation: "O sistema AGI-LOG foi dimensionado para se adequar universalmente à rede elétrica padrão dos navios mercantes e navais. A S.D.T.U. (através do seu Módulo 08 de Fonte de Alimentação e transformador primário) opera de série com 115 VAC ou 230 VAC em 50/60 Hz (com versões navais compatíveis com 400 Hz), e frequentemente possui entrada e comutação para operação contínua em 24 V DC de baterias do passadiço em caso de blecaute.",
-    topic: "Alimentação Elétrica Principal do Odômetro AGI-LOG"
-  },
+},
   {
     question: "Qual é a potência elétrica total consumida tipicamente pelo sistema do Odômetro AGI-LOG (S.D.T.U. e bobina de excitação do sensor)?",
     options: [
@@ -338,8 +312,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Baixíssimo consumo, tipicamente em torno de 30 Watts (na faixa típica de 25 W a 35 W) em operação normal contínua.",
     explanation: "Apesar de alimentar a bobina magnética submersa no mar e energizar um chassi de 12 cartões eletrônicos com microprocessadores e conversores D/A, a eficiência do projeto AGI-LOG (tecnologia CMOS e fontes reguladas de alto rendimento no Módulo 08) limita a potência absorvida da rede elétrica do navio a apenas cerca de 30 Watts, não sobrecarregando os quadros de navegação ou baterias de emergência.",
-    topic: "Potência Consumida pelo Odômetro AGI-LOG"
-  },
+},
   {
     question: "Na especificação do Odômetro AGI-LOG, que nível de precisão possui a Haste Fixa operando na faixa de baixas velocidades de 0 a 10 nós?",
     options: [
@@ -350,8 +323,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Precisão de ±0,1 nó (±0,1 knot) na medição de velocidade entre 0 e 10 nós.",
     explanation: "Em baixas velocidades de deslocamento (de 0 a 10 nós), a precisão da medição é extremamente crítica para a segurança em manobras portuárias, aproximação de cais, atracação, navegação em canais estreitos e operações dinâmicas de navios militares/científicos. O Odômetro AGI-LOG garante com a haste fixa uma exatidão rigorosa de ±0,1 nó em toda essa faixa sensível (0 a 10 nós).",
-    topic: "Precisão da Haste na Faixa de 0 a 10 Nós"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 5: MANUTENÇÃO PREVENTIVA, DIAGNÓSTICA E CORRETIVA / CIRCUITO BIT (Q12, Q13, Q15-Q19)
@@ -366,8 +338,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É um sistema de autodiagnóstico gerenciado pelo microprocessador (Módulo 02) e circuitos de monitoramento que verifica continuamente ou sob comando a integridade das tensões da fonte (Módulo 08), das memórias EPROM/RAM, da conversão A/D, continuidade da bobina e cartões de saída.",
     explanation: "O circuito BIT (Built-In Test) confere ao AGI-LOG sua alta confiabilidade de diagnóstico. O Módulo 02 inspeciona ativamente o hardware do chassi: monitora se o Módulo 08 entrega exatamente +5V e ±12V, valida os checksums da EPROM e leitura/escrita da RAM, injeta referências no conversor A/D (Módulo 04) para verificar calibração do canal analógico e supervisiona o loop da bobina do sensor e barramentos de saída.",
-    topic: "Circuito de Teste Integrado (BIT) na S.D.T.U."
-  },
+},
   {
     question: "O que ocorre exatamente e quais indicações visuais são geradas pela S.D.T.U. quando uma falha (avaria técnica) é detectada pelo circuito BIT ou pelo microprocessador do Odômetro AGI-LOG?",
     options: [
@@ -378,8 +349,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O sistema ativa um alarme visual no painel frontal, exibe um Código de Falha / Código de Erro de diagnóstico nos mostradores digitais identificando o módulo ou circuito avariado, e pode travar ou sinalizar as saídas para evitar o envio de dados erráticos aos sistemas de navegação (como Radar/ECDIS).",
     explanation: "Quando o autoteste BIT constata uma anomalia em qualquer parte da cadeia (ex: falha de RAM, perda do sinal da haste ou falha da tensão ±12V), a S.D.T.U. alerta o passadiço acionando o indicador visual de alarme e exibindo o código de diagnóstico correspondente no display frontal. Para preservar a segurança da navegação, a unidade sinaliza como inválidos os pulsos e dados seriais enviados ao Radar ARPA, ECDIS e giroscópica.",
-    topic: "Detecção de Falha e Comportamento do Sistema"
-  },
+},
   {
     question: "Quais são os três (3) tipos principais de manutenções empregados na doutrina de suporte técnico e operação do Odômetro AGI-LOG?",
     options: [
@@ -390,8 +360,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Manutenção Preventiva (inspeções de rotina, limpeza e verificação), Manutenção por Diagnóstico (uso sistemático do BIT para monitoramento e isolamento) e Manutenção Corretiva (substituição do módulo ou componente defeituoso).",
     explanation: "A filosofia de manutenção do Odômetro AGI-LOG baseia-se no tripé clássico dos sistemas navais modernos: 1) Manutenção Preventiva (garantir vedação, limpeza mecânica das lentes/eletrodos e verificação das conexões); 2) Manutenção por Diagnóstico (tirar máximo proveito dos recursos inteligentes de autoteste e códigos de erro do BIT); e 3) Manutenção Corretiva (ação de restabelecimento rápido via troca de cartões modulares ou reparo físico da haste).",
-    topic: "Os 3 Tipos de Manutenções no Odômetro AGI-LOG"
-  },
+},
   {
     question: "Como se caracteriza e qual é a grande vantagem da Manutenção por Diagnóstico no sistema do Odômetro AGI-LOG?",
     options: [
@@ -402,8 +371,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É uma metodologia estruturada que utiliza a inteligência dos circuitos BIT e os códigos de erro do microprocessador para monitorar, localizar e isolar hierarquicamente as avarias em Nível Baixo e Nível Alto, sem necessidade de testes demorados em bancada para descobrir a placa falha.",
     explanation: "A Manutenção por Diagnóstico é o elo de transição entre a operação e o reparo. O AGI-LOG aproveita sua arquitetura microprocessada e modular para auto-inspecionar seus circuitos em duas camadas de profundidade (Nível Baixo para operadores e Nível Alto para técnicos), localizando com velocidade e exatidão qual dos 12 cartões ou subconjuntos apresentou defeito sem exigir análise intrusiva com soldador ou multímetro na ponte.",
-    topic: "Característica da Manutenção por Diagnóstico"
-  },
+},
   {
     question: "O que caracteriza e como é realizada a Manutenção por Diagnóstico em Nível Baixo (Low Level Diagnostic Maintenance) no Odômetro AGI-LOG?",
     options: [
@@ -414,8 +382,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É realizada diretamente no painel frontal da S.D.T.U. pelo operador/técnico sem abrir o gabinete ou usar instrumentos externos, baseando-se na leitura dos códigos de falha visuais do autoteste inicial/contínuo e na verificação do modo TEST via teclado para isolar se a falha é na alimentação de bordo, na haste ou na unidade central.",
     explanation: "O Nível Baixo de Diagnóstico é a primeira linha de verificação rápida. Operado sem abrir a S.D.T.U. e sem qualquer multímetro, o tripulante observa o comportamento inicial do Power-On BIT, checa se há códigos de alarme ou falha nos displays e interage através do teclado (`MODE` / `TEST` / `PROBE`) para verificar imediatamente se a alimentação primária está chegando, se o cabo externo/haste está respondendo ou se a avaria é interna.",
-    topic: "Manutenção por Diagnóstico em Nível Baixo"
-  },
+},
   {
     question: "O que caracteriza e em que consiste a Manutenção por Diagnóstico em Nível Alto (High Level Diagnostic Maintenance) no Odômetro AGI-LOG?",
     options: [
@@ -426,8 +393,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É o diagnóstico avançado realizado por pessoal técnico qualificado abrindo o gabinete da S.D.T.U., executando sub-rotinas de teste especializadas, verificando os pontos de teste (test points) nos cartões individuais e fontes com multímetro/osciloscópio ou simulador para isolar com exatidão o cartão eletrônico avariado.",
     explanation: "Quando o diagnóstico de Nível Baixo aponta falha interna na S.D.T.U., entra em ação o Nível Alto. Executado por especialistas de eletrônica com a tampa da unidade aberta, envolve checar os pontos de teste (P.T.) nos slots do backplane, inspecionar as tensões do Módulo 08 com multímetro, usar simuladores de sinal na entrada do Módulo 04 e aplicar rotinas de teste detalhadas para discriminar exatamente qual cartão (Módulo 01 a 12) apresenta avaria no chassi.",
-    topic: "Manutenção por Diagnóstico em Nível Alto"
-  },
+},
   {
     question: "Em que consiste fundamentalmente a Manutenção Corretiva na S.D.T.U. do Odômetro AGI-LOG após o isolamento do defeito pela fase de diagnóstico?",
     options: [
@@ -438,8 +404,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Consiste no reparo rápido e efetivo do equipamento por meio da substituição física do cartão/módulo eletrônico identificado como defeituoso por um módulo sobressalente testado (conceito plug-and-play modular), restabelecendo o funcionamento com baixíssimo MTTR.",
     explanation: "A doutrina de Manutenção Corretiva na S.D.T.U. do AGI-LOG em nível de bordo não prevê o reparo de componentes avulsos soldados nas placas (como trocar resistores ou transistores na bancada). Graças à sua arquitetura modular, a ação corretiva padrão é a extração e substituição direta da placa avariada (por exemplo, trocar o Módulo 04 ou Módulo 07 inteiro) por uma sobressalente do estoque do navio, garantindo a retomada imediata da medição.",
-    topic: "Filosofia da Manutenção Corretiva (Troca Modular)"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 6: ARQUITETURA MODULAR COMPLETA DA S.D.T.U. - MÓDULOS 01 A 12 (Q38-Q50)
@@ -454,8 +419,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Armazenar e fornecer ao microprocessador os dados de identificação, codificação do modelo, número de série da unidade e configuração/opções de hardware instaladas no chassi, garantindo a perfeita compatibilidade do sistema.",
     explanation: "O Módulo 01 (Cartão de Identificação) é a placa de identidade eletrônica e configuração do chassi da S.D.T.U. Ele contém codificações, jumpers e memórias de identificação que dizem ao Módulo 02 (Microprocessador) qual é a versão exata do equipamento, que opcionais estão habilitados (ex: conversores D/A 05/06 instalados ou canais duplos) e qual o número de série/modelo, assegurando que o firmware execute as rotinas corretas para aquele hardware.",
-    topic: "Função do Módulo 01 (Cartão de Identificação)"
-  },
+},
   {
     question: "Qual é a função central desempenhada pelo Módulo 02 (Cartão do Micro Processador e Memórias) na S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -466,8 +430,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É o cérebro digital e controlador central do sistema: abriga a CPU, gerencia os barramentos de dados/endereço, executa o firmware operacional da EPROM, executa os testes BIT, processa os dados do conversor A/D com as curvas de calibração na RAM e controla os displays e saídas.",
     explanation: "O Módulo 02 (Cartão do Microprocessador e Memórias) centraliza toda a inteligência computacional e lógica digital de controle da S.D.T.U. Ele coordena o ritmo de amostragem dos eletrodos no Módulo 04, aplica as equações e curvas de linearização hidrodinâmica para computar velocidade em nós, calcula a integração da distância em milhas, supervisiona o circuito BIT de diagnóstico em tempo real e comanda as placas de saída analógicas, digitais e pulsadas.",
-    topic: "Função do Módulo 02 (Microprocessador e Memórias)"
-  },
+},
   {
     question: "Dentro do Módulo 02 (Cartão do Micro Processador e Memórias) do Odômetro AGI-LOG, qual é a função e o papel da Memória EPROM (Erasable Programmable Read-Only Memory)?",
     options: [
@@ -478,8 +441,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Armazenar de forma permanente (não-volátil) o programa operacional principal do sistema (Firmware), as rotinas de autoteste BIT/BITE, os algoritmos matemáticos de cálculo hidrodinâmico e as curvas/tabelas de calibração do odômetro.",
     explanation: "A Memória EPROM no Módulo 02 é uma memória não-volátil (não perde os dados quando o AGI-LOG é desligado da rede do navio). É nela que repousa o software de sistema (firmware) gravado na fábrica e/ou durante a calibração, contendo todo o conjunto de instruções, rotinas de autodiagnóstico do BIT, tabelas de conversão A/D e as curvas definitivas de compensação da camada limite que traduzem os milivolts da água em nós exatos de velocidade.",
-    topic: "Função da Memória EPROM no Módulo 02"
-  },
+},
   {
     question: "No Módulo 02 (Cartão do Micro Processador e Memórias) da S.D.T.U. do Odômetro AGI-LOG, qual é a função específica da Memória RAM (Random Access Memory)?",
     options: [
@@ -490,8 +452,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Armazenar de forma dinâmica e temporária os dados em tempo de execução, como o bloco de rascunho de cálculos da CPU, as leituras digitalizadas em tempo real, as seleções de teclado em uso e o valor contínuo do hodômetro de distância acumulada.",
     explanation: "A Memória RAM é a memória de trabalho de leitura e escrita do microprocessador central. Ela aloca as variáveis de tempo de execução (como resultados intermediários das multiplicações da curva de calibração), armazena as amostras mais recentes vindas do conversor A/D para cálculo de médias, retém as opções de teclado selecionadas pelo oficial (`MODE`/`CURVE`) e atualiza a todo instante a totalização dinâmica da distância navegada (que é retida com backup ou salva no desligamento).",
-    topic: "Função da Memória RAM no Módulo 02"
-  },
+},
   {
     question: "Qual é a função desempenhada pelo Módulo 03 (Cartão de Interface de Controle de Temporização / Interface com Painel, Display e Teclado) na S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -502,8 +463,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Atuar como cartão de interface intermediário entre o barramento do Microprocessador e os periféricos do painel frontal: controla a varredura e drive dos displays digitais de velocidade/distância, faz a leitura multiplexada das teclas de ação momentânea e condiciona o sinal do DIMMER.",
     explanation: "O Módulo 03 faz a ponte entre o processador (Módulo 02) e a interface humana no painel frontal da S.D.T.U. Ele gerencia o acionamento (display drive/varredura multiplexada) dos mostradores de LEDs ou 7-segmentos de velocidade e distância, faz a varredura anti-repique (debouncing) das 5 teclas momentâneas (`MODE`, `PROBE`, `CURVE`, etc.), converte/condiciona o ajuste contínuo do potenciômetro DIMMER e sincroniza os clocks auxiliares do chassi.",
-    topic: "Função do Módulo 03 (Interface de Painel/Display/Teclado)"
-  },
+},
   {
     question: "Na S.D.T.U. do Odômetro AGI-LOG, qual é a função essencial do Módulo 04 (Conversor de Sinais Analógico para Digital - Conversor A/D)?",
     options: [
@@ -514,8 +474,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Receber, amplificar com alta impedância, filtrar e converter em palavras digitais numéricas a minúscula tensão induzida diferencial de milivolts captada pelos eletrodos da haste/sensor na água do mar, enviando esses dados para o barramento do microprocessador.",
     explanation: "O Módulo 04 (Conversor A/D) é a porta de entrada dos sinais hidrodinâmicos analógicos do transdutor. Como a tensão induzida pela Lei de Faraday nos eletrodos da haste (conectados em C, D e E) possui amplitude na casa de microvolts ou milivolts e está sobreposta a ruídos marinhos, o Módulo 04 pré-amplifica com alta rejeição de modo comum, filtra o ruído e executa a conversão analógico-digital de alta precisão, gerando o dado binário que o microprocessador processa.",
-    topic: "Função do Módulo 04 (Conversor A/D)"
-  },
+},
   {
     question: "Qual é a função e a aplicação dos Módulos 05 e 06 (Conversores de Sinais Digital para Analógico - Conversores D/A, opcionais) na S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -526,8 +485,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Receber as palavras digitais processadas e calibradas de velocidade (e/ou distância) enviadas pelo Módulo 02 e convertê-las em tensões ou correntes analógicas contínuas padronizadas (ex: 0 a +10V, -10 a +10V ou 4-20 mA) para alimentar repetidores e agulhas analógicas do navio.",
     explanation: "Muitos navios utilizam repetidores remotamente instalados no camarim ou asas do passadiço com ponteiros mecânicos/galvanômetros ou sistemas antigos que requerem sinal analógico contínuo proporcional à velocidade. Os Módulos 05 e 06 (Conversores D/A opcionais) cumprem esse papel: transformam as palavras digitais de velocidade exatas calculadas pela CPU em saídas analógicas limpas e isoladas em tensão (ex: 0-10V) ou loop de corrente industrial (4-20mA).",
-    topic: "Função dos Módulos 05 e 06 (Conversores D/A Opcionais)"
-  },
+},
   {
     question: "Na S.D.T.U. do Odômetro AGI-LOG, qual é a função primordial e crítica do Módulo 07 (Cartão de Saída Auxiliar = Saídas Pulsadas / Pulse Output Card)?",
     options: [
@@ -538,8 +496,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Gerar e distribuir pulsos elétricos ou fechamentos de contatos limpos/relés em taxa estritamente proporcional à distância navegada (ex: saídas padrão de 200 pulsos por milha náutica - 200 pulses/nm) para alimentar sistemas críticos como Radar ARPA, ECDIS e VDR do navio.",
     explanation: "O Módulo 07 (Saídas Pulsadas) é a principal fonte de interface do hodômetro com os sistemas táticos e de navegação que requerem pulsos de distância. A cada fração de milha percorrida (integrada pela CPU), o Módulo 07 emite um pulso de saída temporizado de precisão (por exemplo, no padrão universal de 200 pulsos/milha ou 100/400 pulsos/milha). Essa entrada é utilizada por Radares de varredura (ARPA), Sistemas ECDIS, pilotos automáticos e gravadores VDR para plotar o movimento real do navio na carta gráfica.",
-    topic: "Função do Módulo 07 (Saídas Pulsadas por Milha Náutica)"
-  },
+},
   {
     question: "Qual é a dupla função técnica exercida pelo Módulo 08 (Cartão da Fonte de Alimentação / Power Supply Module) na S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -550,8 +507,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Receber a energia primária (115/230 VAC ou 24 VDC do navio) para convertê-la nas tensões reguladas (+5V e ±12V/±15V) que alimentam os cartões da S.D.T.U., e gerar a corrente alternada/pulsada regulada para excitação da bobina magnética da haste submersa.",
     explanation: "O Módulo 08 é o coração de energia do AGI-LOG e cumpre duas missões vitais: 1) Retifica, filtra e regula a energia primária do navio em tensões contínuas altamente estabilizadas (+5V para os circuitos digitais TTL/CMOS/CPU e ±12V ou ±15V para amplificadores operacionais e conversores A/D-D/A); e 2) Fornece a energia de excitação de corrente controlada (AC ou pulsada) que flui até os Terminais A e B da bobina da haste para criar o campo magnético na água.",
-    topic: "Função do Módulo 08 (Fonte de Alimentação e Excitação)"
-  },
+},
   {
     question: "Quais são especificamente as saídas de tensão contínua e sinais elétricos que o Módulo 08 (Fonte de Alimentação) do Odômetro AGI-LOG produz e fornece para os circuitos internos da S.D.T.U. e para a haste?",
     options: [
@@ -562,8 +518,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "+5 V DC regulado para a lógica digital/CPU/memórias, ±12 V DC (ou ±15 V DC, compostas por +12V/+15V e -12V/-15V) para os circuitos analógicos/conversores A/D e D/A, e a Saída Específica de Excitação da Bobina (Probe Excitation Output) nos terminais A e B da haste.",
     explanation: "A arquitetura eletrônica da S.D.T.U. exige tensões separadas com rigorosa estabilidade: o barramento digital opera com +5 V DC (lógica microprocessada Módulo 02); o barramento analógico de precisão (amplificadores diferenciais de entrada do Módulo 04 e conversores D/A Módulos 05/06) necessita de tensões bipolares simétricas de ±12 V DC (ou ±15 V DC, com trilhas positivas e negativas); e a bobina magnética necessita de sua saída dedicada de corrente de excitação controlada via pinos A e B.",
-    topic: "Saídas Específicas do Módulo 08 (Fonte de Alimentação)"
-  },
+},
   {
     question: "Quais são as funções e aplicações dos Módulos 09 e 10 (Cartões de Interface Digital / Saídas Seriais ou Sincro-Passo) na S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -574,8 +529,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Atuar como cartões de interface digital que transmitem os dados numéricos de velocidade e distância calculados pelo microprocessador utilizando protocolos seriais navais padronizados (como NMEA 0183 RS-422/RS-232, sentenças $VDVHW/$VDVLW) ou sinais Sincro/Passo para repetidores e sistemas integrados de passadiço (IBS).",
     explanation: "Nos navios modernos, a comunicação entre o odômetro e os computadores de navegação (IBS, ECDIS, Agulhas Giroscópicas e VDR) ocorre por barramentos digitais. Os Módulos 09 e 10 cumprem essa tarefa de comunicação: eles formatam as informações contínuas calculadas pela CPU em sentenças seriais padrão internacional (NMEA 0183 em padrão RS-422 ou RS-232, com prefixo `$VD` para Velocity Sensor/Doppler/Log), ou em sinais digitais de sincro (Synchro/Stepper) para repetidores analógicos de bússolas e indicadores remotos.",
-    topic: "Função dos Módulos 09 e 10 (Interfaces Digitais/Seriais/NMEA)"
-  },
+},
   {
     question: "Quais são as funções e as aplicações típicas dos Módulos 11 e 12 na S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -586,8 +540,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Atuar como Cartões de Expansão, Interfaces Auxiliares para múltiplos repetidores remotos adicionais (asas do passadiço, CCM, camarim) ou Cartões de Diagnóstico e Teste especializado para funções customizadas ou militares da embarcação.",
     explanation: "Os slots para os Módulos 11 e 12 conferem à S.D.T.U. do AGI-LOG sua notável flexibilidade de expansão naval. Quando uma embarcação de grande porte ou navio de guerra exige a distribuição da informação de velocidade e distância para inúmeras estações remotas simultâneas (por exemplo, repetidores nas asas de bombordo e boreste do passadiço, sala de controle de máquinas - CCM, camarim de navegação, estações de controle de avarias e centrais de combate), ou necessita de circuitos de teste/isolamento adicionais, os Módulos 11 e 12 são instalados para suprir essas saídas auxiliares e customizações.",
-    topic: "Função dos Módulos 11 e 12 (Expansão e Repetidores Remotos)"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 7: DESTRINCHANDO A PROFUNDIDADE - SEGURANÇA ELÉTRICA E PROCEDIMENTOS (Q48-Q51)
@@ -602,8 +555,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Certificar-se de abrir a chave ou disjuntor da alimentação auxiliar de 24 V DC do banco de baterias do passadiço, para evitar que o circuito de comutação automática mantenha o chassi energizado internamente.",
     explanation: "Como a S.D.T.U. possui um sistema redundante que comuta automaticamente para 24 V DC do banco de baterias de emergência caso a rede AC falhe ou seja cortada, o técnico deve obrigatoriamente seccionar tanto a alimentação principal (AC) quanto a alimentação de reserva (DC) antes de iniciar qualquer substituição de cartões ou medição ohmica.",
-    topic: "Precauções de Segurança com Alimentação Redundante"
-  },
+},
   {
     question: "Por que o manuseio específico do Módulo 02 (Cartão do Microprocessador e Memórias) exige rigorosa proteção contra Descargas Eletrostáticas (ESD) durante a manutenção?",
     options: [
@@ -614,8 +566,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Porque os circuitos integrados MOS/CMOS, o microprocessador e as memórias RAM/EPROM de alta densidade no Módulo 02 possuem portas isoladas extremamente sensíveis, podendo ser destruídas por tensões estáticas invisíveis geradas pelo corpo humano.",
     explanation: "A tecnologia de circuitos integrados e memórias (como o microprocessador e chips EPROM/RAM em tecnologia MOS/CMOS) apresenta altíssima impedância de entrada. Uma simples descarga eletrostática de poucos centenas ou milhares de volts (imperceptível ao tato humano) acumulada na roupa ou corpo do operador é suficiente para perfurar o óxido da porta dos transistores do chip, inutilizando o Módulo 02.",
-    topic: "Proteção ESD no Módulo 02 (Microprocessador e Memórias)"
-  },
+},
   {
     question: "O que deve ser criteriosamente inspecionado de forma mecânica nos pinos do conector de fundo (backplane) e no cartão plug-in da S.D.T.U. antes da inserção de um novo módulo sobressalente?",
     options: [
@@ -626,8 +577,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Verificar visualmente se todos os pinos de contato estão perfeitamente retos, sem entortamentos, corrosão verde, oxidação ou corpos estranhos nos soquetes, pois forçar um cartão desalinhado causará danos mecânicos e curtos graves.",
     explanation: "O conceito modular em cartões deslizantes depende da integridade do conector traseiro (backplane). A introdução de uma placa sobre pinos empenados ou oxidados pode dobrar os terminais do chassi, provocar curto-circuito entre barramentos de alimentação (+5V/±15V) e linhas de dados do microprocessador e exigir um reparo prolongado de bancada.",
-    topic: "Inspeção Mecânica dos Conectores do Backplane"
-  },
+},
   {
     question: "Qual é a importância da manutenção corretiva e preventiva sobre o anel de vedação de borracha (gasket) da tampa de alumínio da caixa da S.D.T.U. após cada abertura do gabinete?",
     options: [
@@ -638,8 +588,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Preservar a vedação hermética e à prova d'água da S.D.T.U., impedindo a penetração de ar salino, umidade marinha e maresia do passadiço que causariam oxidação galvânica no backplane e fugas de milivolts nos circuitos sensíveis.",
     explanation: "A caixa de alumínio robusta do AGI-LOG possui classificação naval de vedação. Se o anel de vedação (gasket) ficar mordido, ressecado ou sujo ao fechar a tampa, a maresia e umidade penetrarão rapidamente no chassi. Como o sinal vindo da haste é da ordem de poucos milivolts e alta impedância no Módulo 04, qualquer filme de salina nas placas gerará correntes de fuga e medições erráticas.",
-    topic: "Manutenção da Vedação da Caixa de Alumínio da S.D.T.U."
-  },
+},
 
   // ============================================================================
   // SEÇÃO 8: DESTRINCHANDO SENSORES, LEI DE FARADAY E TERMINAIS (Q52-Q60)
@@ -654,8 +603,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Para evitar a polarização eletroquímica, a eletrólise da água do mar e a corrosão galvânica acelerada nos eletrodos de contato, além de permitir rejeitar potenciais DC espúrios gerados pelo casco do navio.",
     explanation: "A aplicação de um campo magnético constante (DC) faria com que a corrente contínua nos eletrodos em contato com a água salgada causasse intensa eletrólise, acumulação de íons em redor dos eletrodos (polarização) e severa corrosão galvânica. Com a excitação em Corrente Alternada (AC), o sinal induzido também é alternado, eliminando a eletrólise e possibilitando que o Módulo 04 (Conversor A/D) filtre facilmente tensões contínuas parasitas provenientes da proteção catódica do casco do navio.",
-    topic: "Por que a Haste usa Excitação AC (Lei de Faraday)"
-  },
+},
   {
     question: "Como é descrita matematicamente e na prática a relação entre a velocidade linear do navio e a força eletromotriz (tensão em milivolts) induzida nos eletrodos da haste de acordo com a Lei de Faraday?",
     options: [
@@ -666,8 +614,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "A relação é estritamente linear e diretamente proporcional (E = B * L * v); dobrando-se a velocidade do fluxo de água, dobra-se exatamente a amplitude do sinal de milivolts induzido.",
     explanation: "Na indução eletromagnética governada pela Lei de Faraday (EM Log), a força eletromotriz induzida E é proporcional à densidade do fluxo magnético (B), à distância entre os eletrodos (L) e à velocidade de corte do condutor/água (v). Como B e L são constantes construtivas e controladas pela SDTU, a tensão AC induzida em milivolts é perfeitamente linear e diretamente proporcional à velocidade da embarcação em relação à água.",
-    topic: "Relação Linear da Indução na Lei de Faraday"
-  },
+},
   {
     question: "De que maneira a variação de salinidade e temperatura da água do mar (por exemplo, ao transitar do oceano salgado para um rio de água doce) afeta a precisão da leitura hidrodinâmica do Odômetro AGI-LOG?",
     options: [
@@ -678,8 +625,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Desde que a água possua uma condutividade elétrica mínima suficiente para fechar o circuito entre os eletrodos, a medição é teoricamente independente das variações de salinidade e temperatura.",
     explanation: "Uma das grandes virtudes do odômetro eletromagnético é a sua imunidade à variação das propriedades físicas da água. A tensão induzida é gerada no próprio fluido que se move através do campo magnético. Desde que a água não seja água destilada pura (ou seja, desde que contenha íons e condutividade suficiente para que os eletrodos captem a tensão sem queda de potencial por impedância infinita), o sinal induzido independe da temperatura, densidade ou concentração salina.",
-    topic: "Independência de Salinidade e Temperatura na Haste EM"
-  },
+},
   {
     question: "No caso de utilização da Haste Retrátil (Retractable Probe) no Odômetro AGI-LOG, como o conjunto mecânico garante a segurança da embarcação durante a operação de recolhimento no mar?",
     options: [
@@ -690,8 +636,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Através do emprego de uma válvula de fundo (sluice/sea valve) de esferas ou gaveta acoplada ao tubo de montagem, em conjunto com travas, hastes de guia e correntes de segurança que impedem a ejeção acidental pela pressão da água.",
     explanation: "A haste retrátil opera dentro de um caixão estanque provido de válvula de passagem plena (sea valve). Para inspecionar ou limpar a haste flutuando, o operador afrouxa a porca de engaxeta, puxa a haste para cima até a câmara intermediária com o auxílio das correntes e hastes de segurança (que evitam que a pressão da água empurre violentamente o tubo contra o técnico), fecha a válvula de fundo para estancar a água e, finalmente, retira o sensor por completo em segurança.",
-    topic: "Segurança Mecânica e Válvula da Haste Retrátil"
-  },
+},
   {
     question: "Por que a Haste Fixa (estilo OTAN / NATO Fixed Probe) é construída de acordo com normas e flanges padronizados pelas especificações militares da OTAN?",
     options: [
@@ -702,8 +647,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Para garantir padronização, intercambiabilidade de componentes navais de defesa e máxima resistência estrutural contra choques balísticos, vibrações extremas e altas pressões hidrostáticas em navios de guerra e submarinos.",
     explanation: "A padronização OTAN (NATO) especifica perfis de furação, flanges, anéis de vedação, materiais não ferrosos de alta resistência mecânica e conectores estanques de grau militar. Isso garante que a Haste Fixa suporte condições extremas de combate, pressões hidrostáticas profundas (em aplicações submarinas) e ondas de choque provocadas por explosões subaquáticas sem apresentar rompimento estrutural ou infiltração no casco do navio.",
-    topic: "Padronização Militar e Flange da Haste OTAN"
-  },
+},
   {
     question: "Qual é o fenômeno físico hidrodinâmico adverso que a Haste com Perfil de Barbatana (Fin Profile Probe) foi projetada para minimizar em embarcações de alta velocidade?",
     options: [
@@ -714,8 +658,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "A cavitação hidrodinâmica, a turbulência excessiva e a formação de bolhas de ar sobre os eletrodos de contato, que causariam perda de sinal ou leituras de velocidade flutuantes e incorretas.",
     explanation: "Em velocidades elevadas (acima de 25 nós, como em patrulhas e corvetas), sensores cilíndricos ou rombudos geram esteiras turbulentas e zonas de baixa pressão local que provocam cavitação (fervura da água por baixa pressão e bolhas de ar). Se essas bolhas passarem sobre os eletrodos, o contato elétrico é interrompido e a medição do odômetro falha. O perfil aerodinâmico/hidrodinâmico em forma de barbatana (fin profile) mantém o fluxo de água laminar e suave sobre os eletrodos mesmo em velocidades extremas.",
-    topic: "Prevenção de Cavitação na Haste com Perfil de Barbatana"
-  },
+},
   {
     question: "Em que cenário de navegação ou arquitetura naval o Sensor Revés (Flush Mounted Probe / Sensor Almofada) apresenta sua maior vantagem técnica sobre as hastes projetadas?",
     options: [
@@ -726,8 +669,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Em navegação em águas rasas, rios com detritos flutuantes e áreas com gelo onde sensores salientes seriam arrancados, ou em cascos onde se exige arrasto hidrodinâmico absolutamente zero.",
     explanation: "O Sensor Revés (almofada ou flush mounted) é montado em um nicho faceado perfeitamente rente à superfície externa do casco do navio, sem nenhuma parte protuberante apontando para a água. Assim, é imune ao arrasto mecânico e impossível de ser quebrado por troncos de árvores, blocos de gelo ou encalhes leves em bancos de areia em águas rasas.",
-    topic: "Vantagem Operacional do Sensor Revés (Flush Mounted)"
-  },
+},
   {
     question: "Por que a Haste Fixa do Odômetro AGI-LOG possui especificações técnicas e calibrações dedicadas com extrema precisão na faixa de baixas velocidades de 0 a 10 nós?",
     options: [
@@ -738,8 +680,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Porque em baixas velocidades (críticas para manobras portuárias, atracação, posições de combate e navegação restrita) a força eletromotriz induzida é de ínfima magnitude (milivolts muito baixos), exigindo pré-amplificação de alta estabilidade e baixo ruído para garantir exatidão de ±0,1 nó.",
     explanation: "A navegação de alta precisão em manobras delicadas de porto, canais estreitos, aproximação de plataformas ou operações militares exige conhecimento exato e contínuo do deslocamento do navio entre 0 e 10 nós. Como o sinal gerado é diretamente proporcional à velocidade ($E = B \cdot L \cdot v$), em 1 nó a tensão induzida nos eletrodos é extremamente pequena. O sistema AGI-LOG garante nessa faixa baixa um pré-processamento de precisão ultraestável no Módulo 04 para não mascarar a leitura com ruído térmico.",
-    topic: "Alta Precisão da Haste na Faixa Baixa (0 a 10 nós)"
-  },
+},
   {
     question: "Como deve ser constituída a blindagem e a fiação do cabo de interligação entre a Haste no casco do navio e a S.D.T.U. no passadiço?",
     options: [
@@ -750,8 +691,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O cabo dos eletrodos deve ser par trançado e blindado com malha de aterramento contínua ligada corretamente à referência do sistema, para evitar a indução de ruídos eletromagnéticos de radares, rádios e cabos de força adjacentes no navio.",
     explanation: "Os eletrodos da haste conduzem sinais na faixa de milivolts a longas distâncias (desde o porão de quilha até o passadiço superior). Se esse cabo não possuir blindagem eficaz com par trançado perfeitamente aterrado na caixa de junção e no chassi da SDTU, ele funcionará como uma antena, captando interferências severas de radares de bordo, transmissores de rádio HF/VHF e cabos de energia AC de 440V, o que corromperia totalmente a medição da velocidade da água.",
-    topic: "Blindagem e Aterramento da Fiação da Haste"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 9: DESTRINCHANDO CONTROLES, TECLAS, DIMMER E PARTIDA (Q61-Q68)
@@ -766,8 +706,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Permitir que o operador ou técnico gere internamente velocidades artificiais programáveis para verificar a resposta dos mostradores, testar saídas analógicas/pulsadas e validar equipamentos integrados (como Radar ARPA e ECDIS) com o navio parado no porto ou sem sinal da haste.",
     explanation: "O modo `SIMULATION` (acionado via tecla MODE) desconecta logicamente a leitura da haste submersa e permite inserir pelo teclado uma velocidade simulada fixa ou variável. É um recurso inestimável de diagnóstico e treinamento para validar o funcionamento do próprio display da SDTU e para testar se os radares anticolisão (ARPA), registradores de viagem (VDR) e repetidores de passadiço estão recebendo corretamente as sentenças de velocidade NMEA 0183 e pulsos sem precisar que o navio saia ao mar.",
-    topic: "Modo SIMULATION da Tecla MODE"
-  },
+},
   {
     question: "Em embarcações equipadas com mais de um sensor no casco (por exemplo, Sensor de Proa e Sensor de Popa, ou Haste Retrátil + Haste Fixa), qual é o papel da tecla PROBE no painel da S.D.T.U.?",
     options: [
@@ -778,8 +717,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Permitir ao operador selecionar de forma rápida qual dos sensores montados no casco (Probe 1, Probe 2, etc.) será a fonte ativa do sinal hidrodinâmico processado para a leitura corrente da velocidade e distância.",
     explanation: "A tecla PROBE atua na comutação das entradas de sensores no sistema. Navios de grande porte ou militares frequentemente instalam dois ou mais sensores de velocidade (ex: um perto da proa para águas profundas e outro na popa ou centro para manobras, ou sensor de bombordo/boreste para compensar adernamento). A tecla PROBE permite ao oficial selecionar qual sensor está enviando o sinal ativo ou comutar em caso de avaria ou incrustação de uma das hastes.",
-    topic: "Seleção Multi-Sensor através da Tecla PROBE"
-  },
+},
   {
     question: "Por que a tecla CURVE da S.D.T.U. permite selecionar e ajustar múltiplas curvas de calibração hidrodinâmica na memória do microprocessador do Odômetro AGI-LOG?",
     options: [
@@ -790,8 +728,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Para compensar de forma matemática e precisa as não linearidades da Camada Limite (Boundary Layer) da água ao redor do casco em diferentes calados do navio (ex: navio carregado em calado máximo vs navio em lastro) e faixas de velocidade.",
     explanation: "A hidrodinâmica ao redor de um casco de navio é complexa: a espessura e velocidade da camada limite de água que flui junto à quilha variam drasticamente dependendo se o navio está leve (em lastro, com pouco calado) ou pesado (carregado até a linha d'água máxima), bem como entre baixas e altas velocidades. A tecla CURVE permite armazenar e comutar entre curvas de calibração multiponto na CPU para garantir exatidão absoluta em qualquer condição de calado da embarcação.",
-    topic: "Compensação de Camada Limite através da Tecla CURVE"
-  },
+},
   {
     question: "Além de modular o brilho dos mostradores digitais frontais da S.D.T.U., qual é a função estendida do circuito do DIMMER DISPLAY para o ambiente operacional de navegação do navio?",
     options: [
@@ -802,8 +739,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Controlar de forma sincronizada a intensidade luminosa dos LEDs de alarme/status e dos mostradores dos repetidores remotos compatíveis de passadiço, preservando a visão noturna adaptada do oficial de quarto durante a escuta à noite.",
     explanation: "No passadiço de um navio durante a navegação noturna em mar aberto, qualquer fonte de luz intensa ou ofuscante prejudica severamente a visão noturna adaptada (escotópica) do oficial de quarto e da equipe de navegação que procura por boias, faróis ou outros navios. O DIMMER DISPLAY permite a atenuação suave até níveis muito tênues, tanto dos displays da S.D.T.U. quanto de repetidores interligados, sem comprometer a leitura nítida de dia sob sol forte.",
-    topic: "Preservação da Visão Noturna pelo DIMMER DISPLAY"
-  },
+},
   {
     question: "O que acontece com o registro de milhas acumuladas no mostrador de distância (Hodômetro / Distance Display) se a S.D.T.U. for desligada ou se ocorrer uma queda total de energia na embarcação?",
     options: [
@@ -814,8 +750,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O valor acumulado de distância em milhas é preservado com segurança em memória não volátil (EPROM/EEPROM ou RAM suportada por bateria interna no Módulo 02), não sendo zerado pela falta de energia.",
     explanation: "O hodômetro de distância (Distance Display) é o documento eletrônico da totalização da viagem do navio, sendo usado na navegação estimada e no registro de manutenção. Por projeto, a CPU (Módulo 02) armazena em tempo real cada milha percorrida em memória não volátil ou suportada por bateria com autonomia de longa duração, garantindo que o acumulador não se perca durante desligamentos de manutenção ou blecautes de bordo.",
-    topic: "Retenção de Memória do Hodômetro de Distância"
-  },
+},
   {
     question: "Como são formatadas as indicações numéricas e suas resoluções decimais nos mostradores de Velocidade (Speed) e Distância (Distance) do painel frontal da S.D.T.U. do Odômetro AGI-LOG?",
     options: [
@@ -826,8 +761,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O display de velocidade indica com resolução em décimos ou centésimos de nó (ex: `18.5` nós), enquanto o display de distância acumula e totaliza em milhas náuticas com casas decimais programáveis e capacidade de reset ou bloqueio.",
     explanation: "Os displays de LED de 7 segmentos de alta visibilidade da S.D.T.U. fornecem leitura direta e exata. A velocidade (Speed Through Water) apresenta décimos ou centésimos de nó de resolução (indicando inclusive velocidades de marcha à ré / astern com sinal negativo quando configurável), e o totalizador de distância (Distance) apresenta de 6 a 8 dígitos acumulando milhas náuticas navegadas desde a última reinicialização autorizada.",
-    topic: "Resolução Decimal dos Displays de Velocidade e Distância"
-  },
+},
   {
     question: "Durante os procedimentos de partida do sistema AGI-LOG em navio equipado com Haste Retrátil, qual é a verificação física fundamental e prioritária antes do acionamento da chave principal?",
     options: [
@@ -838,8 +772,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Verificar se a haste retrátil foi abaixada e inserida por completo através da válvula de fundo na posição correta de trabalho na água e se a trava mecânica de segurança está firmemente travada.",
     explanation: "Se a chave da S.D.T.U. for ligada com o sensor recolhido dentro da câmara da válvula de fundo no porão (ou seja, sem contato com o fluxo de água do mar aberta e cercado por metal), o autoteste inicial ou a indicação de velocidade indicarão falha de sensor (`FAIL` / erro de sinal) ou velocidade zero com ruído severo. Além disso, garantir o travamento mecânico da haste abaixada evita o acidente de o sensor ser empurrado para dentro pela força hidrodinâmica ao navio zarpar.",
-    topic: "Verificação Física da Haste Retrátil na Partida"
-  },
+},
   {
     question: "Qual é o comportamento exato da transição de energia no Módulo 08 (Fonte de Alimentação) quando ocorre a interrupção súbita da rede AC principal de 115 ou 230 Volts do navio?",
     options: [
@@ -850,8 +783,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O Módulo 08 comuta automaticamente e sem tempo de interrupção (zero break) para a entrada auxiliar de 24 V DC do banco de baterias de emergência do passadiço, mantendo o odômetro em operação contínua e acionando o alarme de falha AC.",
     explanation: "Para garantir a segurança da navegação e não deixar o radar ARPA nem o ECDIS cegos sem dados de velocidade durante um blecaute do navio, a fonte de alimentação do AGI-LOG (Módulo 08) possui entradas independentes e comutação automática sem interrupção de serviço. O circuito comuta instantaneamente para a rede de 24 V DC das baterias e sinaliza a avaria na alimentação AC, continuando a excitar a bobina no mar e a calcular a velocidade com exatidão.",
-    topic: "Comutação Automática AC/DC no Módulo 08"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 10: DESTRINCHANDO BIT, CALIBRAÇÃO E MANUTENÇÃO (Q69-Q73)
@@ -866,8 +798,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O navio percorre uma distância referenciada exata de 1 milha náutica entre marcos de terra (ou via DGPS de precisão) em ambos os sentidos (ida e volta) para anular o efeito da correnteza marinha; compara-se a média das velocidades lidas na S.D.T.U. com a velocidade real, inserindo o fator de correção resultante através do teclado no modo CALIBRATION/CURVE.",
     explanation: "A calibração definitiva de um odômetro eletromagnético compensa as perturbações reais do casco na água. No teste de Milha Medida (ou com DGPS RTK de alta precisão), navegar em rumos opostos (ex: rumo Norte e depois rumo Sul) é essencial para cancelar matematicamente o vetor da corrente marítima local ($V_{real} = (V_{ida} + V_{volta})/2$). A relação entre essa velocidade real e a lida pelo odômetro determina o coeficiente/fator de escala que é gravado no modo CAL da CPU do Módulo 02.",
-    topic: "Procedimento da Milha Medida na Calibração"
-  },
+},
   {
     question: "Como o Circuito de Teste Integrado (BIT/BITE) do Odômetro AGI-LOG informa visualmente ao técnico sobre a localização e o tipo de defeito encontrado em uma placa interna da S.D.T.U.?",
     options: [
@@ -878,8 +809,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Apresentando códigos numéricos ou mensagens de erro de teste específicas nos displays digitais (ex: `ERR 02`, `FAIL`, etc.) e acionando LEDs de alarme em vermelho que identificam diretamente qual cartão modular ou circuito (CPU, A/D ou Haste) está com falha.",
     explanation: "A inteligência do BIT (Built-In Test) no Odômetro AGI-LOG foi projetada para que o oficial de quarto ou eletricista de bordo não precise de ferramentas complexas para localizar o problema. Ao rodar o BIT (seja ao ligar ou pressionando a tecla MODE -> TEST), a CPU testa memórias, barramentos e conversores A/D e D/A. Se um módulo não responde corretamente, o display numérico mostra o código da falha e o LED correspondente acende no painel frontal ou na própria borda da placa avariada.",
-    topic: "Indicação de Códigos e LEDs de Erro pelo BIT"
-  },
+},
   {
     question: "Que conjunto de ações práticas caracteriza estritamente a Manutenção por Diagnóstico em Nível Baixo executada pela tripulação do navio sem recorrer a instrumentos externos de laboratório?",
     options: [
@@ -890,8 +820,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Acionar o autoteste BIT pelo teclado frontal, observar as indicações dos LEDs e códigos de display, inspecionar visualmente os fusíveis do Módulo 08 e os conectores externos e identificar qual módulo modular avariado deve ser trocado pelo sobressalente.",
     explanation: "A Manutenção por Diagnóstico em Nível Baixo é o primeiro escalão de suporte técnico naval. Sua doutrina baseia-se na exploração rápida do autoteste do equipamento (BITE) e verificação dos itens físicos óbvios (fusíveis, cabos soltos, oxidação ou alarme visual) para segregar o defeito até o nível de cartão (SRU - Shop Replaceable Unit) e trocá-lo em poucos minutos, restaurando a operacionalidade do navio no mar.",
-    topic: "Ações da Manutenção em Nível Baixo (Tripulação)"
-  },
+},
   {
     question: "Quando um defeito persistente na S.D.T.U. exige Manutenção por Diagnóstico em Nível Alto com a embarcação no porto ou sem sinal de mar, que equipamento de teste especializado é conectado às entradas do sensor?",
     options: [
@@ -902,8 +831,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Um Simulador de Haste / Caixa de Teste de Milivolts (Probe Simulator), que injeta tensões diferenciais AC calibradas exatas (simulando ex: 10, 15 ou 20 nós) para verificar o ganho do Conversor A/D Módulo 04 e a resposta do microprocessador independentemente da água do mar.",
     explanation: "Na Manutenção em Nível Alto, técnicos especializados ou equipes de base utilizam o Simulador de Haste (Probe Simulator). Como a haste na água gera milivolts proporcionais à velocidade por indução da Lei de Faraday, o simulador substitui a haste real, recebendo a tensão de excitação da bobina (+30V AC) do odômetro e retornando um sinal preciso em milivolts simulando velocidades estáticas. Isso permite aferir com perfeição osciloscópica se a falha está no conversor A/D, nas memórias ou na fiação do navio.",
-    topic: "Uso do Simulador de Haste em Nível Alto"
-  },
+},
   {
     question: "Após a substituição de um módulo avariado a bordo do navio (Manutenção Corretiva modular de 1º escalão), qual é o destino e o tratamento técnico conferido ao cartão eletrônico defeituoso na oficina de terra?",
     options: [
@@ -914,8 +842,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O cartão é enviado a um laboratório ou oficina naval onde passa por Manutenção Corretiva detalhada a nível de componente com osciloscópio, trocando-se os circuitos integrados, capacitores ou transistores avariados para calibrá-lo e devolvê-lo ao estoque de sobressalentes testados.",
     explanation: "O ciclo de vida logístico e de manutenção naval do AGI-LOG preserva os valiosos cartões modulares. A substituição a bordo garante um MTTR curto (navio operando). O cartão com avaria (ex: Módulo 04 ou 08) é encaminhado para a oficina de eletrônica de terra (2º/3º escalão), onde técnicos com manuais esquemáticos, injetores de sinal e estação de solda localizam o componente discreto exato que queimou (ex: um chip A/D ou capacitor de filtro), consertam, testam em bancada e restabelecem o cartão no estoque de spare parts.",
-    topic: "Reparo a Nível de Componente na Oficina de Terra"
-  },
+},
 
   // ============================================================================
   // SEÇÃO 11: DESTRINCHANDO CIRCUITOS DOS MÓDULOS 01 A 12 (Q74-Q85)
@@ -930,8 +857,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O Módulo 01 informa à CPU o modelo exato do odômetro, os parâmetros de calibração padrão do casco, a taxa de pulsos configurada para o navio e a presença de módulos opcionais instalados, adaptando o software do sistema automaticamente ao hardware existente sem reescrever a EPROM.",
     explanation: "O Módulo 01 (ID Card) funciona como a 'carteira de identidade' do odômetro no navio. Como o mesmo firmware de EPROM no Módulo 02 pode ser usado em dezenas de navios diferentes (veleiros, fragatas, petroleiros, com sensores retráteis ou fixos), o Módulo 01 informa ao microprocessador via barramento no boot quais são as opções contratadas, tipo de haste, fator de divisão de pulsos e configuração, permitindo modularidade universal e plug-and-play.",
-    topic: "Função de Configuração do Módulo 01 (ID Card)"
-  },
+},
   {
     question: "Além do chip microprocessador principal, dos buffers de barramento e das memórias, que circuito de segurança de hardware é vital no Módulo 02 para prevenir travamentos de software no mar?",
     options: [
@@ -942,8 +868,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O circuito temporizador 'Watchdog Timer' (Cão de Guarda) em conjunto com o cristal oscilador mestre, que reinicia automaticamente o microprocessador caso ocorra um travamento na execução do código provocado por ruído elétrico severo ou surto transiente na rede do navio.",
     explanation: "Em ambientes navais críticos, surtos eletromagnéticos de radares ou relampejos podem ocasionalmente corromper o ponteiro de programa de um microprocessador, fazendo o software travar em um loop infinito. O 'Watchdog Timer' no Módulo 02 é um contador de hardware que precisa ser zerado periodicamente pela CPU; se a CPU travar e parar de zerar o watchdog, o circuito gera um pulso de RESET automático em milissegundos, destravando o odômetro imediatamente sem intervenção do operador.",
-    topic: "Watchdog Timer e Segurança do Módulo 02"
-  },
+},
   {
     question: "Por que a Memória EPROM (ou EEPROM/Flash nas versões avançadas) do Módulo 02 é a tecnologia ideal para armazenar o sistema operacional do odômetro e as curvas hidrodinâmicas da embarcação?",
     options: [
@@ -954,8 +879,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Porque retém o programa de forma permanente, estável e não volátil por anos sem necessidade de energia elétrica, ao mesmo tempo em que permite a regravação ou atualização controlada quando o navio passa por modificações no casco ou calibração em dique seco.",
     explanation: "A EPROM (Erasable Programmable Read-Only Memory) garante que as rotinas complexas de cálculo da Lei de Faraday, autoteste BIT e tabelas de curvas do Odômetro AGI-LOG não se percam quando o equipamento é desligado. Nas manutenções maiores ou evoluções de software, a EPROM pode ser apagada por luz ultravioleta (ou reprogramada via chave de calibração se EEPROM), atualizando o odômetro com máxima confiabilidade militar.",
-    topic: "Retenção Não Volátil na EPROM do Módulo 02"
-  },
+},
   {
     question: "Como o Módulo 02 (Microprocessador e Memórias) protege a Memória RAM e seus dados vitais (como o acumulador de milhas navegadas e parâmetros temporários) durante a desenergização da S.D.T.U.?",
     options: [
@@ -966,8 +890,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Através da utilização de memórias RAM estáticas de baixíssimo consumo (CMOS RAM) alimentadas em standby por uma bateria de lítio ou supercapacitor montado diretamente na placa do Módulo 02, mantendo os dados intactos por anos de desligamento.",
     explanation: "Enquanto a EPROM guarda o programa fixo, a RAM armazena as variáveis que mudam a cada segundo, principalmente o totalizador contínuo do hodômetro de distância (milhas percorridas). Para que esse número não zere quando o navio desliga a chave geral no porto, a RAM estática (CMOS) no Módulo 02 recebe uma tensão contínua de suporte (backup) de uma bateria de longa duração ou supercapacitor embarcado na própria placa-mãe do cartão.",
-    topic: "Proteção com Bateria de Backup na RAM do Módulo 02"
-  },
+},
   {
     question: "Como o Módulo 03 (Cartão de Interface de Controle de Temporização / Interface com Teclado e Display) gerencia a leitura das 5 teclas momentâneas do painel sem sobrecarregar a CPU com falsos contatos mecânicos?",
     options: [
@@ -978,8 +901,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Realiza a varredura multiplexada dos botões e aplica circuitos ou rotinas de filtro anti-rebote (debouncing), eliminando as vibrações dos contatos mecânicos e entregando à CPU do Módulo 02 apenas interrupções digitais limpas e exatas de tecla pressionada.",
     explanation: "Teclas mecânicas geram ruídos eletromecânicos intensos de fechamento (bouncing) durante alguns milissegundos. Se o processador Módulo 02 lidasse diretamente com o teclado cru, um único toque na tecla MODE ou CURVE poderia ser interpretado como 10 ou 20 cliques rápidos. O Módulo 03 faz a temporização, multiplexação de varredura dos displays de LED e debouncing eletrônico do teclado, libertando a CPU para o cálculo hidrodinâmico contínuo.",
-    topic: "Multiplexação e Debouncing no Módulo 03"
-  },
+},
   {
     question: "Sabendo que o sinal diferencial induzido na haste na água é da ordem de poucos milivolts e alta impedância, que circuitos analógicos especializados estão presentes no Módulo 04 (Conversor A/D) antes da digitalização?",
     options: [
@@ -990,8 +912,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Estágios pré-amplificadores de instrumentação de altíssima impedância de entrada, filtros analógicos passa-baixa e circuitos de rejeição de modo comum (CMRR) para eliminar ruídos da rede do navio e amplificar o sinal limpo antes de entregá-lo ao conversor A/D de precisão.",
     explanation: "A conversão Analógico-Digital no Módulo 04 é uma obra de engenharia de precisão. O sinal em milivolts captado pelos eletrodos traz consigo ruídos de 50/60 Hz e potenciais galvânicos de modo comum. O Módulo 04 utiliza amplificadores de instrumentação diferenciais com elevado CMRR (Common Mode Rejection Ratio) e filtros ativos passa-baixa para limpar a onda de milivolts induzida pela água antes de digitalizá-la em palavras binárias exactas para a CPU.",
-    topic: "Pré-Amplificação e Rejeição de Ruído no Módulo 04 (A/D)"
-  },
+},
   {
     question: "Qual é a razão técnica indispensável para que as saídas analógicas proporcionais à velocidade (ex: 4-20 mA ou 0-10 V) geradas pelos Módulos 05 e 06 (Conversores D/A) possuam isolação galvânica?",
     options: [
@@ -1002,8 +923,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Para evitar que loops de aterramento (ground loops), diferenças de potencial elétrico entre consolas do passadiço ou curtos-circuitos em cabos de radares/repetidores externos retornem e danifiquem a S.D.T.U. ou distorçam a medição de milivolts na haste.",
     explanation: "Em um navio, a consola do radar ARPA ou do ECDIS pode estar aterrada em um ponto do casco com potencial elétrico ligeiramente diferente do terra da S.D.T.U. Se os Módulos 05 e 06 enviassem o sinal de velocidade analógico sem isolação galvânica (acoplamento óptico ou por transformador de isolamento), correntes de terra circulariam pelos cabos do odômetro, introduzindo erros absurdos no conversor A/D da haste ou queimando as placas em caso de surto elétrico em outros equipamentos do passadiço.",
-    topic: "Isolação Galvânica das Saídas D/A (Módulos 05 e 06)"
-  },
+},
   {
     question: "Além de fornecer saídas pulsadas proporcionais à distância (ex: 100 ou 200 pulsos/milha) para hodômetros e ECDIS, que contatos de relé de segurança fundamentais o Módulo 07 (Cartão de Saída Auxiliar) disponibiliza?",
     options: [
@@ -1014,8 +934,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Contatos secos de relé dedicados ao Alarme de Falha do Sistema (System Fail Alarm) e, configuravelmente, a alarmes de limite de velocidade (alta/baixa velocidade ou profundidade compatível), que sinalizam à central de alarmes do passadiço caso ocorra qualquer avaria no odômetro.",
     explanation: "O Módulo 07 (Saída Auxiliar / Pulsada) é a grande interface de saídas discretas do AGI-LOG. Além de enviar trens de pulsos de distância que fazem avançar contadores mecânicos ou sistemas eletrônicos em cada fração de milha navegada, ele incorpora os relés de vigilância de alarme (`FAIL ALARM`). Se o BIT detectar falha no sensor, no conversor ou perda de energia, o relé do Módulo 07 abre/fecha seus contatos secos, disparando a campainha visual e sonora no painel central de alarmes da navegação.",
-    topic: "Contatos de Relé de Alarme no Módulo 07"
-  },
+},
   {
     question: "Durante a inspeção de manutenção de rotina ou corretiva sobre o Módulo 08 (Fonte de Alimentação), que sintomas técnicos em componentes devem ser verificados de imediato com osciloscópio e multímetro?",
     options: [
@@ -1026,8 +945,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Verificar se as tensões reguladas (+5 V, ±12/15 V e +30 V da bobina) estão rigorosamente dentro da tolerância, se não há 'ripple' (ondulação AC residual) excessivo nos capacitores eletrolíticos e se os dissipadores térmicos não apresentam superaquecimento.",
     explanation: "A maioria das falhas intermitentes e comportamentos erráticos no microprocessador (Módulo 02) ou nas conversões analógicas da haste (Módulo 04) provém da degradação térmica e envelhecimento de capacitores de filtro no Módulo 08. Quando um capacitor eletrolítico da fonte seca ou perde capacidade, surge 'ripple' (ondulação AC) sobre o barramento de +5 V DC. O técnico com osciloscópio deve checar se a ondulação residual é mínima e se as tensões de referência são perfeitamente estáveis.",
-    topic: "Inspeção de Ripple e Tensão no Módulo 08 (Fonte)"
-  },
+},
   {
     question: "Nos Módulos 09 e 10 (Cartões de Interface Digital / Saída Serial), qual é o formato internacional padronizado das sentenças de dados NMEA 0183 emitidas em RS-422 para transmitir a velocidade na água e a distância para o ECDIS e Radar?",
     options: [
@@ -1038,8 +956,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Sentenças seriais ASCII que utilizam cabeçalhos padronizados marítimos de odômetro de água, tais como `$VDVHW` (Water Speed and Heading) para velocidade através da água e `$VDVLW` (Distance Traveled through Water) para o hodômetro de milhas acumuladas.",
     explanation: "A integração digital do passadiço (Integrated Bridge System - IBS) depende do protocolo NMEA 0183 (sobre padrão elétrico diferencial RS-422 de alta imunidade a ruído). Os Módulos 09 e 10 codificam em tempo real as medições contínuas da CPU em sentenças ASCII universalmente reconhecidas por qualquer fabricante naval: `$VDVHW` informando a velocidade em nós em relação à água (`STW`) e `$VDVLW` relatando as milhas náuticas totais e parciais percorridas desde o reset do hodômetro.",
-    topic: "Sentenças NMEA 0183 ($VDVHW / $VDVLW) nos Módulos 09 e 10"
-  },
+},
   {
     question: "Como funciona na prática a saída do tipo 'Passo a Passo' (Step by Step / Sincro) disponibilizada pelos Módulos 09, 10 ou 11 para acionar repetidores mecânicos de ponteiro em navios clássicos ou militares?",
     options: [
@@ -1050,8 +967,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O módulo gera sequências de comutação de tensão bifásicas ou trifásicas em relés de potência de estado sólido (ex: em 24V ou 35V DC) que energizam sucessivamente as bobinas do estator do motor de passo no repetidor, girando o ponteiro de velocidade com precisão mecânica sincronizada com a água.",
     explanation: "Repetidores analógicos tradicionais (com mostrador de ponteiro e hodômetro mecânico de roletes no passadiço e asas) operam pelo sistema 'Step-by-Step' (Sincro-Passo). Para comandá-los sem perda de passos, os Módulos 09/10 ou cartões especiais embutem chaves eletrônicas (transistores de potência ou relés de estado sólido) que comutam os passos de bobina do repetidor na razão exata de avanço hidrodinâmico (ex: 1 passo por cada centésimo de milha), movendo o ponteiro instantaneamente sem lag.",
-    topic: "Funcionamento da Saída Sincro/Passo (Step-by-Step)"
-  },
+},
   {
     question: "Por que a existência de posições livres ou expansíveis para os Módulos 11 e 12 no backplane confere uma vantagem estratégica ao Odômetro AGI-LOG em aplicações navais de defesa e frotas comerciais?",
     options: [
@@ -1062,8 +978,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Porque permite a expansão modular plug-and-play e a customização do sistema com interfaces dedicadas (ex: cartões para múltiplas repetidoras em todas as estações de combate, canais extras de saídas pulsadas ou redes digitais militares) sem qualquer necessidade de reformar o gabinete ou o backplane principal do navio.",
     explanation: "A filosofia de arquitetura aberta e modular da S.D.T.U. AGI-LOG prevê que cada classe de navio tenha exigências de interface únicas. Em um navio mercante simples, os Módulos 11 e 12 podem ficar como slots de reserva; já em um navio de guerra (fragata ou porta-aviões), esses slots são povoados por cartões customizados de alta segurança que distribuem saídas analógicas, pulsadas e digitais para centros de controle de tiro (FCS), radares táticos e dezenas de repetidores blindados ao longo de todo o casco.",
-    topic: "Modularidade Estratégica e Expansão (Módulos 11 e 12)"
-  },
+},
   // ============================================================================
   // QUESTIONÁRIO DE DETALHAMENTO TÉCNICO: CAPÍTULO 3 - ODÔMETRO ELETROMAGNÉTICO AGI-LOG (Q1 A Q50)
   // ============================================================================
@@ -1078,8 +993,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Medir a velocidade do navio em relação à água e a distância percorrida, transmitindo esses dados para repetidoras e sistemas de armas.",
     explanation: "A função principal da SDTU (Unidade Terminal de Distribuição de Sinais) do Odômetro AGI-LOG é medir com precisão a velocidade do navio em relação à água e integrar essa velocidade para calcular a distância percorrida, distribuindo essas informações para repetidoras, radares e sistemas de armas.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O que significa a sigla \"BITE\" amplamente utilizada no AGI-LOG?",
     options: [
@@ -1090,8 +1004,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Significa Circuito de Teste Integrado (Built-In Test Equipment).",
     explanation: "A sigla BITE refere-se a Built-In Test Equipment (Equipamento/Circuito de Teste Integrado), um recurso orgânico de autodiagnóstico que monitora continuamente ou por comando os circuitos da SDTU para identificar falhas nos módulos.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O manual prevê quatro tipos físicos de sensores (hastes) para o sistema. Quais são eles?",
     options: [
@@ -1102,8 +1015,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Haste retrátil, Sensor fixo estilo OTAN, Sensor de perfil de barbatana e Sensor Revés (para águas rasas).",
     explanation: "O sistema AGI-LOG suporta quatro configurações de transdutores (sensores/hastes) adaptadas às necessidades operacionais das embarcações: Haste retrátil (padrão com válvula de gaveta), Sensor fixo estilo OTAN, Sensor de perfil de barbatana e Sensor Revés projetado para águas rasas.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual é o princípio eletromagnético físico usado para ler a velocidade da água?",
     options: [
@@ -1114,8 +1026,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "A bobina no sensor gera um campo magnético, e a água (agindo como condutor) corta essas linhas de fluxo; pela Lei de Faraday, isso induz uma Força Eletromotriz (FEM) nos eletrodos estritamente proporcional à velocidade do navio.",
     explanation: "O odômetro eletromagnético baseia-se na Lei da Indução de Faraday: uma bobina no sensor cria um campo magnético alternado na água circundante. Como a água do mar é um condutor elétrico em movimento, o corte das linhas de fluxo induz uma Força Eletromotriz (tensão) nos eletrodos da haste, sendo essa tensão linearmente proporcional à velocidade do navio em relação à água.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual é o consumo elétrico e a faixa de alimentação tolerada pela SDTU do AGI-LOG?",
     options: [
@@ -1126,8 +1037,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Consome menos que 170 VA e opera recebendo 115V (50/60Hz) ou 230V (50/60Hz) monofásico.",
     explanation: "A SDTU apresenta alta eficiência e versatilidade de instalação na rede de bordo, consumindo menos de 170 VA de potência aparente e podendo ser configurada para operar com rede monofásica de 115V ou 230V, em frequências industriais/navais de 50 ou 60 Hz.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Quanto tempo exato a eletrônica exige após ligada para estabilizar e exibir uma velocidade precisa?",
     options: [
@@ -1138,8 +1048,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O tempo necessário para se obter uma velocidade estável a partir da alimentação do sistema é de 30 segundos.",
     explanation: "Após a energização (chave ON/OFF ligada), os circuitos de alimentação, processamento analógico e microprocessamento do AGI-LOG necessitam de apenas 30 segundos de aquecimento e estabilização para fornecer medições de velocidade precisas e confiáveis no painel frontal.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   // --- Módulos da Unidade SDTU (Funções de Hardware) ---
   {
     question: "Qual é a função central do Cartão Microprocessador (Módulo 2)?",
@@ -1151,8 +1060,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É o coração da SDTU, responsável por efetuar toda a computação, armazenar os dados de calibração em memória não volátil (RAM) e administrar as rotinas do BITE.",
     explanation: "O Módulo 2 (Cartão Microprocessador) é a unidade de processamento central da SDTU. Ele realiza os cálculos matemáticos de velocidade (aplicando as curvas de calibração salvas em sua memória não volátil), integra a velocidade para obter as milhas navegadas e controla as rotinas de autoteste (BITE).",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O que o Cartão Analógico (Módulo 4) faz com o sinal sujo oriundo do mar?",
     options: [
@@ -1163,8 +1071,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele amplifica o sinal e remove ruídos de quadratura por meio de um rigoroso processo de multiplicação, só deixando passar sinais que estejam em fase com a bobina do sensor.",
     explanation: "O micro-sinal vindo dos eletrodos contém ruídos de quadratura e interferências da água. O Módulo 4 amplifica esse sinal e realiza uma demodulação síncrona (processo rigoroso de multiplicação), filtrando ruídos indesejados e deixando passar apenas o componente de tensão que está perfeitamente em fase com a corrente da bobina de excitação do sensor.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual é o papel do Cartão de Interface (Módulo 1)?",
     options: [
@@ -1175,8 +1082,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele ativa os displays frontais (NÓS e MILHAS) e processa digitalmente as informações para prover a saída serial de comunicação padrão RS-422.",
     explanation: "O Módulo 1 (Cartão de Interface) faz a ponte entre o processamento central e o mundo externo digital: ele codifica e aciona a exibição nos displays frontais de velocidade (NÓS) e distância (MILHAS NAVEGADAS), além de formatar e transmitir as informações em padrão serial balanceado RS-422 para os sistemas externos do navio.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O que os Cartões de Saída Síncro (Módulos 5 e 6) geram?",
     options: [
@@ -1187,8 +1093,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Eles contêm conversores digital-síncro que transformam a velocidade digital em saídas síncronas mecânicas (equivalentes a síncros 15CX4) para alimentar outros equipamentos.",
     explanation: "Os Módulos 5 e 6 são placas dedicadas a sistemas que necessitam de dados de velocidade no formato analógico síncrono tradicional. Eles possuem conversores Digital-para-Síncro (D/S) que geram sinais elétricos síncronos de três fios equivalentes a transmissores mecânicos padrão 15CX4 para acionar repetidoras analógicas e sistemas de armas.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual a versatilidade do Cartão de Saída Auxiliar (Módulo 7)?",
     options: [
@@ -1199,8 +1104,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele fornece saídas do tipo potenciômetro simulado (analógico em Volts/Nó) e disponibiliza quatro contatos de relé de estado sólido totalmente livres de potencial.",
     explanation: "O Módulo 7 confere grande flexibilidade de interfaceamento à SDTU, entregando saídas analógicas proporcionais (como um potenciômetro simulado em Volts/Nó para registradores de velocidade) e fornecendo quatro relés de estado sólido (opticamente isolados/livres de potencial) configuráveis para envio de pulsos de distância ou alarmes independentes.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Quais os componentes contidos na Fonte de Alimentação (Módulo 8)?",
     options: [
@@ -1211,8 +1115,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Aloja capacitores, pontes retificadoras, reguladores de tensão e a chave mecânica principal ON/OFF (Liga/Desliga).",
     explanation: "O Módulo 8 é a Fonte de Alimentação da SDTU. Ele abriga os circuitos de retificação (pontes), filtragem (capacitores de potência), regulação das tensões operacionais contínuas (+5V, +12V, -12V, +21V) e o disjuntor/chave mecânica de alavanca frontal ON/OFF que energiza todo o equipamento.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual a função tática do Terminal de Calibração (Módulo 12)?",
     options: [
@@ -1223,8 +1126,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Permitir que o usuário insira as tabelas de calibração resultantes das provas de mar na memória do equipamento, além de servir como display redundante para exibir falhas (BITE) caso as telas principais pifem.",
     explanation: "O Módulo 12 (Terminal de Calibração) é uma interface tática e de manutenção que permite a digitação e gravação dos perfis de curvas de calibração obtidos durante as provas de mar. Além disso, por possuir um display LCD isolado, funciona como visor redundante vital, permitindo ler códigos de diagnóstico (BITE) mesmo se os displays principais da tampa frontal quebrarem.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Para que serve o Cartão de Display (Módulo 10)?",
     options: [
@@ -1235,8 +1137,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele abriga os circuitos de acionamento que iluminam os LEDs de 7 segmentos dos displays de NÓS e de MILHAS NAVEGADAS, e instala a microchave do teste BITE completo (SW1).",
     explanation: "O Módulo 10 é a placa de circuito do painel frontal de visualização. Ele contém os drivers que multiplexam e acendem os displays numéricos de LED de 7 segmentos (velocidade em NÓS e distância em MILHAS NAVEGADAS) e monta estrategicamente a microchave SW1, que detecta a abertura da tampa frontal para acionar o diagnóstico BITE Completo.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   // --- Processamento Analógico e Relés ---
   {
     question: "Qual é a finalidade elétrica do Relé de Seleção RL-1 localizado sob a placa mãe?",
@@ -1248,8 +1149,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele roteia ativamente a tensão de 57V para excitar a bobina da haste que foi selecionada no painel.",
     explanation: "O Relé RL-1, montado no chassi inferior sob a placa-mãe (motherboard), tem a função chave de comutar a corrente elétrica de excitação (57V AC) para a bobina do sensor que estiver selecionado pelo operador no painel da SDTU.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O que o Relé de Transferência RL-2 faz com a escuta do mar?",
     options: [
@@ -1260,8 +1160,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele recebe o micro-sinal captado da água pelo sensor ativo e o direciona para o transformador isolador de entrada (T-1).",
     explanation: "O Relé de Transferência RL-2 trabalha em conjunto com a seleção de haste: ele recebe os micro-sinais de milivolts induzidos nos eletrodos da haste ativa (escuta do mar) e os direciona com máxima integridade para o transformador de entrada de sinal T-1.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O sinal de recepção passa pelo Transformador T-1. Quais são as suas duas funções de blindagem?",
     options: [
@@ -1272,8 +1171,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Prover isolamento galvânico/elétrico absoluto entre a agressiva água do mar e as placas da SDTU, e cancelar ruídos de fundo induzidos nas linhas balanceadas.",
     explanation: "O Transformador T-1 desempenha um papel duplo e vital no estágio de entrada: 1) Oferece total isolamento galvânico (elétrico) entre o ambiente hostil da água do mar (eletrodos) e os circuitos sensíveis da SDTU; e 2) Atua com rejeição em modo comum na linha balanceada para cancelar ruídos elétricos induzidos nos longos cabos que vêm do fundo do casco.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Como a SDTU calcula a \"Velocidade Média Verdadeira\" (VMV) para exibir no display?",
     options: [
@@ -1284,8 +1182,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ela capta a velocidade analógica (VMH) e compara sua amplitude com uma curva de correção (dados de calibração VMV vs VMH) que o usuário gravou permanentemente na memória não volátil (RAM) do Módulo 2.",
     explanation: "A tensão induzida na haste fornece uma medição bruta hidrodinâmica chamada VMH (Velocidade Média da Haste). O microprocessador do Módulo 2 consulta a tabela/curva de calibração gravada pelo usuário na memória não volátil (que mapeia VMH em relação à VMV) e faz a interpolação digital para exibir no painel a Velocidade Média Verdadeira do navio em nós.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Na ponte do Cartão Analógico, o erro é convertido num sinal chamado HI/LO. O que é isso?",
     options: [
@@ -1296,8 +1193,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É uma onda quadrada onde a relação sinal/zero aponta a diferença entre a leitura real do mar e a estimativa do processador. Quando a proporção é 1:1, a velocidade calculada tornou-se perfeitamente igual à verdadeira.",
     explanation: "No circuito de malha fechada do Cartão Analógico, o erro entre o sinal do transdutor e a tensão de referência do DAC é convertido no sinal HI/LO (onda quadrada ou razão de ciclo de trabalho). A largura relativa dos pulsos (relação sinal/zero) indica ao processador o erro de medição; quando a relação atinge exatamente o equilíbrio (proporção 1:1 ou 50% duty cycle), a velocidade computada é igual à leitura real do mar.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Quais são as faixas (magnitude) dos micro-sinais captados nos sensores pela SDTU?",
     options: [
@@ -1308,8 +1204,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Os sensores de saída alta entregam de 275 a 425 μV/nó, e os de saída baixa mandam apenas 80 a 200 μV/nó para o sistema.",
     explanation: "Os eletrodos do odômetro eletromagnético induzem tensões extremamente minúsculas (microvolts). Conforme as especificações do sistema AGI-LOG, sensores classificados como de saída alta fornecem sinais entre 275 e 425 μV por cada nó de velocidade, enquanto sensores de saída baixa geram apenas de 80 a 200 μV por nó.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   // --- Painel, Teclado e Operação ---
   {
     question: "O visor (LCD) principal impõe limites físicos para a leitura de NÓS e MILHAS. Quais são?",
@@ -1321,8 +1216,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O display de NÓS exibe 4 dígitos variando de -25 a +60 nós, enquanto o de MILHAS exibe 7 dígitos cravados na faixa de 0 a 9999,99 milhas.",
     explanation: "A matriz frontal de visualização dispõe de 4 dígitos para velocidade em NÓS, com capacidade de indicação de velocidade a ré e a vante na faixa operacional de -25 a +60 nós; o hodômetro de MILHAS NAVEGADAS possui 7 dígitos, registrando distâncias cumulativas na faixa precisa de 0 até 9999,99 milhas náuticas.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Para que serve e o que ilumina a Tecla MODE no teclado do painel?",
     options: [
@@ -1333,8 +1227,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Alterna o sistema entre a operação normal de \"haste\" (acionando as luzes de PROBE/CURVE) e o modo de simulação, acendendo o LED \"SIM\" no visor superior.",
     explanation: "A tecla emborrachada MODE do painel frontal alterna o modo fundamental de trabalho do odômetro entre a operação real de navegação com o transdutor (\"Haste/Probe\", acendendo os indicadores PROBE e CURVE) e o modo de teste interno simulado (onde o operador testa os circuitos sem o sensor d'água, acendendo o LED \"SIM\").",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual é a utilidade operacional da Tecla CURVE (Curva)?",
     options: [
@@ -1345,8 +1238,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Permite alternar entre os dados de calibração da \"Curva 1\" (C1) ou da \"Curva 2\" (C2) armazenados em memória para aquele determinado sensor.",
     explanation: "O sistema AGI-LOG permite armazenar em memória duas curvas ou tabelas de calibração distintas para o transdutor (por exemplo, calibrações em condições diferentes de calado ou tipo de haste). A tecla CURVE permite ao marinheiro selecionar de forma rápida e segura qual curva de correção hidrodinâmica (\"C1\" ou \"C2\") está sendo aplicada ao cálculo da velocidade.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Se o usuário segurar o botão \"SIM UP\" na faina de testes, o que a placa processa?",
     options: [
@@ -1357,8 +1249,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "A velocidade simulada dispara em crescimento contínuo enquanto o botão é pressionado; ao largá-lo, o número é imediatamente fixado (congelado) no painel de NÓS.",
     explanation: "No modo de simulação (SIM), pressionar e manter pressionado o botão emborrachado \"SIM UP\" instrui a CPU a incrementar continuamente a velocidade simulada exibida no mostrador frontal. No momento em que o operador solta a tecla, a contagem para e a velocidade simulada fica congelada naquele valor exato para verificações e acionamento de repetidoras.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Como o painel sinaliza luminosamente ao marinheiro que a SDTU está rodando de forma perigosa no \"modo descalibrado\"?",
     options: [
@@ -1369,8 +1260,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O indicador numérico de curva apropriado (C1 ou C2) começará a piscar para emitir um alerta visual ao usuário.",
     explanation: "Se a memória não possui dados de calibração válidos ou se o odômetro está operando sem a devida compensação hidrodinâmica (modo descalibrado), a SDTU alerta o operador de passadiço fazendo com que o indicador luminoso da curva selecionada (LED C1 ou C2) pisque intermitentemente no painel.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O controle DIMMER age sobre a claridade de quais partes na carcaça?",
     options: [
@@ -1381,8 +1271,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele atua ditando o brilho analógico da matriz dos displays (NÓS e MILHAS NAVEGADAS) e também das cinco teclas emborrachadas iluminadas adjacentes.",
     explanation: "O potenciômetro ou controle DIMMER frontal da carcaça ajusta de forma suave e analógica a intensidade luminosa de todos os elementos visuais do painel frontal: os dígitos de LEDs de 7 segmentos (velocidade e distância) e a retroiluminação das cinco teclas de borracha do teclado de operação.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   // --- Diagnóstico BITE (Built-In Test Equipment) ---
   {
     question: "O que acontece visualmente no painel quando ocorre o BITE Nível Restrito (com a tampa de metal aparafusada e fechada)?",
@@ -1394,8 +1283,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Sem parar as transmissões do navio, os displays de NÓS e de MILHAS NAVEGADAS começam a piscar a 0,5 Hz de forma intermitente indicando que a CPU achou uma anomalia interna.",
     explanation: "Durante a operação normal (tampa de metal fechada e aparafusada), a CPU executa continuamente o BITE Nível Restrito sem interromper o processamento da navegação. Se uma anomalia não fatal ou falha interna for detectada durante essa varredura, os displays frontais de NÓS e MILHAS passam a piscar em uma frequência de 0,5 Hz (uma vez a cada 2 segundos) alertando a tripulação.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Como o técnico engatilha o nível supremo de diagnóstico (BITE Completo)?",
     options: [
@@ -1406,8 +1294,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Retirando os quatro parafusos e soltando a tampa dianteira para fora; isso libera fisicamente a microchave SW1 que alimenta um \"zero\" lógico na placa para forçar um reset completo.",
     explanation: "O BITE Completo (autoteste profundo do hardware) é engatilhado por intervenção mecânica: quando o técnico solta os 4 parafusos da tampa frontal e a abre, a microchave intertravada SW1 (montada no Módulo 10) é liberada. Isso injeta um sinal de \"zero lógico\" ao Módulo 2, forçando um reset da CPU e iniciando a varredura completa de diagnóstico de todos os cartões.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O que ocorre com os repasses de dados da SDTU ao navio enquanto a tampa está aberta e o BITE Completo roda?",
     options: [
@@ -1418,8 +1305,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Todas as funções operacionais essenciais da SDTU são severamente interrompidas, e as saídas não serão corretas nem críveis para navegação.",
     explanation: "Quando a tampa está aberta e o BITE Completo entra em execução, a SDTU sai do modo de navegação operacional. Todas as funções normais de processamento de velocidade e pulso são interrompidas; por consequência, as saídas analógicas, síncronas e seriais emitidas durante o teste não representam a velocidade real da água e não devem ser utilizadas pelos sistemas do navio.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O diagnóstico BITE Completo terminou. Onde o maquinista lê a causa exata do defeito?",
     options: [
@@ -1430,8 +1316,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Os displays cravam códigos numéricos de falha. A falha prioritária fica no visor superior (NÓS), e até duas falhas alternativas secundárias ficam no visor inferior (MILHAS NAVEGADAS).",
     explanation: "Ao finalizar os testes do BITE Completo, a SDTU apresenta o diagnóstico diretamente nos displays de 7 segmentos: o código do módulo apontado como falha primária (maior probabilidade de defeito) é fixado no visor de NÓS (superior), enquanto até dois códigos de falha secundária ou alternativa são exibidos no mostrador de MILHAS NAVEGADAS (inferior).",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Se os LEDs de 7 segmentos do vidro principal estilhaçarem ou queimarem, o navio ficará cego para manutenções de BITE?",
     options: [
@@ -1442,8 +1327,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Não; o Módulo 12 (Terminal de Calibração) funciona organicamente como um display escravo paralelo (redundante) exibindo no seu próprio crivo isolado de LCD os códigos de pane para resguardar as frotas.",
     explanation: "A arquitetura do AGI-LOG prevê redundância para missões críticas: caso a matriz frontal de LEDs de 7 segmentos do painel se quebre ou queime, o Módulo 12 (Terminal de Calibração montado no interior do chassi) atua como display escravo paralelo, apresentando em sua própria tela de cristal líquido (LCD) isolada todas as mensagens e códigos do BITE para os mantenedores.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Caso o diagnóstico jogue na tela 3 códigos de módulos danificados ao mesmo tempo, qual ordem o soldado deve atacar?",
     options: [
@@ -1454,8 +1338,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele deve realizar a troca focando obrigatoriamente primeiro no código com \"maior probabilidade\", ou seja, o erro gritado isoladamente no painel superior (NÓS).",
     explanation: "A metodologia de reparo do BITE estabelece uma hierarquia clara de probabilidade de falha: quando múltiplos códigos aparecem, o mantenedor deve substituir primeiro e isoladamente o cartão indicado no mostrador superior (NÓS), pois este representa o módulo que tem a maior probabilidade técnica de ter originado a pane e cascateado erros nos demais cartões.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O que acontece no sistema AGI-LOG ao se atarraxar novamente a tampa dianteira após os reparos?",
     options: [
@@ -1466,8 +1349,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O botão SW1 é apertado pelo metal e a CPU sai do congelamento para restabelecer sumariamente a operação de navio normal de todos os módulos que estiverem saudáveis.",
     explanation: "Quando os parafusos da tampa frontal são reapertados, a estrutura de metal aciona fisicamente a microchave SW1. Esse fechamento de contato indica ao Módulo 2 o encerramento da manutenção, tirando a CPU do modo de diagnóstico/congelamento e restabelecendo de imediato o funcionamento normal e operacional de navegação em todos os cartões saudáveis.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   // --- Protocolos, Portas e Saídas para o Navio ---
   {
     question: "Em qual bit/padrão industrial o Módulo 1 (Cartão Interface) digitaliza o sinal de velocidade para conversar com radares e computadores modernos?",
@@ -1479,8 +1361,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele usa caracteres estritos em código ASCII encapsulados na transmissão serial balanceada formato RS-422.",
     explanation: "Para integração com sistemas modernos de passadiço, computadores de bordo e radares, o Módulo 1 (Cartão de Interface) processa e emite os dados de velocidade e distância utilizando caracteres padronizados em código ASCII transmitidos via interface serial balanceada de alta imunidade a ruídos em padrão RS-422.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "As chaves/relés do Módulo 7 (Cartão Auxiliar) podem acionar a cadência mecânica da \"Distância\". Quais são os cravos de pulsos disponíveis para os cabos (PPM)?",
     options: [
@@ -1491,8 +1372,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Elas podem ser conectadas na fábrica para despejar pulsos isolados na cadência de 100, 200 ou 400 PPM (Pulsos Por Milha).",
     explanation: "O Módulo 7 (Cartão Auxiliar) possui saídas de relé de estado sólido que podem ser configuradas/conectadas (através de jumpers ou ligações de fábrica/instalação) para fechar contatos de pulsos de distância mecânica/eletrônica nas taxas padronizadas navais de 100, 200 ou 400 Pulsos Por Milha náutica percorrida (PPM).",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Além da distância, quais alarmes independentes esses quatro relés do Módulo 7 podem sinalizar aos marinheiros da fragata?",
     options: [
@@ -1503,8 +1383,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Eles podem gritar alarme de velocidade muito alta, alarme de velocidade muito baixa, estado de \"Falha da SDTU\", ou delatar que a SDTU está falseando sob \"Modo Simulado\".",
     explanation: "Os quatro relés de estado sólido do Módulo 7 são canais versáteis de alarme e status operacional. Eles podem ser dedicados para alertar a ponte e o controle de danos sobre: Velocidade excessivamente alta (High Speed Alarm), Velocidade muito baixa (Low Speed Alarm), status de avaria grave/defeito (SDTU Failure) e indicação visual/remota de que o odômetro não está lendo a água, mas rodando em Modo Simulado (Simulated Mode).",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O painel AGI-LOG emite um Relé contínuo de Falha de Alimentação. O que esse relé monitora nas placas base?",
     options: [
@@ -1515,8 +1394,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "É um contato isolado fechado tolerando 1A, com a missão exclusiva de atestar a sobrevivência constante do barramento vital interno de +5 VDC (a tensão que irriga os chips CMOS).",
     explanation: "O relé de Falha de Alimentação (Power Failure Relay) possui contatos isolados tolerando 1A e é projetado especificamente para monitorar a integridade do barramento contínuo vital de +5 VDC no backplane (a tensão lógica responsável pela alimentação dos microprocessadores e circuitos integrados CMOS). Se a tensão de +5 VDC cair ou falhar, o relé desarma e sinaliza a perda de energia para os alarmes do navio.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual a voltagem DC produzida pela PSU (Módulo 8) no pino exclusivo e restritivo apenas para \"exigências especiais/opcionais\" das marinhas?",
     options: [
@@ -1527,8 +1405,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O Módulo 8 possui uma via cravada de +21 Vdc deixada acessível no bloco terminal unicamente para exigências elétricas especiais do navio.",
     explanation: "Além das tensões padrão de operação dos cartões (+5V, +12V e -12V), a Fonte de Alimentação Módulo 8 gera e disponibiliza no bloco de terminais uma linha de tensão contínua especial de +21 Vdc, reservada estritamente para alimentar interfaces opcionais ou exigências específicas e customizadas de instalações navais.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   // --- Manutenção e Normas Restritivas CMOS ---
   {
     question: "Graças à sua arquitetura avançada de cartões (Módulos 1 ao 12), qual é o Tempo Médio Para Reparo (MTTR) prometido para a faina?",
@@ -1540,8 +1417,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Aproximadamente apenas 30 minutos em caso de troca ostensiva.",
     explanation: "A divisão funcional em cartões modulares facilmente removíveis (Módulos 01 ao 12), combinada ao preciso diagnóstico autônomo do BITE que aponta a placa defeituosa, garante à SDTU um Tempo Médio Para Reparo (MTTR) extremamente curto, estimado em apenas cerca de 30 minutos na rotina operacional a bordo através da simples troca ostensiva do módulo avariado.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual é a regra de substituição absolutamente restritiva aplicada ao Cartão Microprocessador (Módulo 2)?",
     options: [
@@ -1552,8 +1428,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele não aceita permutas aleatórias de almoxarifado; O Módulo 2 só pode ser trocado obrigatoriamente por uma versão idêntica \"programada/gravada com as mesmas opções aplicáveis à instalação particular\" daquele navio na planta de software.",
     explanation: "O Módulo 2 (Microprocessador) contém as memórias EPROM/RAM com o firmware e as configurações e tabelas de calibração exclusivas do casco e dos transdutores daquela embarcação específica. Por norma técnica severa, ele não pode ser trocado por um módulo genérico de almoxarifado: o substituto deve estar obrigatoriamente programado com a exata versão de software e opções aplicáveis àquela instalação naval.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Quais circuitos integrados utilizados no AGI demandam proteção contra toque direto das mãos devido ao perigo de eletricidade estática (implosão orgânica)?",
     options: [
@@ -1564,8 +1439,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "As placas foram concebidas em tecnologia \"CMOS\" sensíveis; sendo impositiva a proteção anti-estática de descarga humana sob pena de morte dos chips durante a puxada na baia.",
     explanation: "Os cartões eletrônicos do odômetro AGI-LOG utilizam extensivamente circuitos integrados em tecnologia CMOS (Complementary Metal-Oxide-Semiconductor). Esses dispositivos possuem camadas de óxido extremamente finas em seus gates, sendo altamente vulneráveis à ruptura dielétrica e destruição instantânea por Descargas Eletrostáticas (ESD) geradas pelo corpo humano durante o manuseio sem pulseira de aterramento.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "No painel interno de manobra visual do Módulo 8 (Fonte), quantos LEDs existem e o que indicam ao eletricista?",
     options: [
@@ -1576,8 +1450,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Possui quatro LEDs brilhantes na cor verde engatilhados quando \"as quatro tensões operatórias cravadas DC estiverem saudáveis e jorrando na saída contínua do bastidor da PSU\".",
     explanation: "Na parte frontal interna do Módulo 8 (Fonte de Alimentação) existem quatro LEDs verdes de monitoramento visual de status. O acendimento brilhante e contínuo de cada um desses quatro LEDs atesta ao eletricista/mantenedor que as quatro tensões contínuas operacionais geradas pela fonte (+5V, +12V, -12V e +21V DC) estão saudáveis, reguladas e normais no barramento do chassi.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "O que deve ser feito primariamente no quadro energético do navio ANTES do soldado sequer puxar uma placa modular eletrônica para diagnóstico no AGI?",
     options: [
@@ -1588,8 +1461,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "As tensões agressivas nominais de 115V ou 230V são fatais às vias CMOS, impondo que a \"alimentação principal do equipamento SDTU deve ser terminantemente ISOLADA na chave fusível do Painel de Distribuição de Bordo do Navio\" antes do destravamento da alavanca.",
     explanation: "Devido à presença de tensões perigosas de rede (115V ou 230V AC) no interior do chassi e ao extremo risco de dano por arcos elétricos nos circuitos CMOS ao plugar/desplugar placas sob tensão, a norma de segurança impõe como primeiro passo obrigatório que a alimentação principal da SDTU seja totalmente isolada e desenergizada no Painel de Distribuição de Bordo (disjuntor/fusível do navio) antes de qualquer abertura ou remoção de cartões.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Durante a rotina trimestral da fragata, qual o número que os displays frontais (7 segmentos) precisam rolar em teste para atestar higidez total?",
     options: [
@@ -1600,8 +1472,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Sob a função simulada, os técnicos apertam SIM UP/DOWN varrendo exaustivamente os blocos na varredura numérica cruzada rodando os algarismos de 0 a 9 em cada casa de nó.",
     explanation: "Na inspeção e verificação preventiva de rotina (manutenção trimestral), a integridade dos segmentos de LED dos visores frontais é testada colocando a SDTU em modo Simulado (SIM) e acionando as teclas \"SIM UP\" e \"SIM DOWN\" para fazer a velocidade percorrer toda a escala. Essa varredura contínua garante que todos os algarismos de 0 a 9 sejam perfeitamente exibidos em cada dígito dos displays, identificando eventuais segmentos queimados.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Qual o valor limitador exato e absurdo de limite extremo numérico que o painel trava no \"SIM UP\" trimestral se testado à exaustão?",
     options: [
@@ -1612,8 +1483,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "A velocidade de limite superior mecânico computacional batida no teste cravará exatamente na quebra de 60,99 nós, travando a conta.",
     explanation: "Durante o teste de simulação em subida contínua pressionando \"SIM UP\" até a exaustão da escala, a computação da SDTU e a matriz do display de velocidade atingem o teto máximo operacional do odômetro, travando e congelando a indicação exatamente no limite superior computado de 60,99 nós.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Um navio está fundeado com a haste totalmente fora d'água no dique. O mantenedor vai realizar a inspeção visual semestral que roda o sistema. O que ele TEM QUE usar sob risco de explodir o sensor?",
     options: [
@@ -1624,8 +1494,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "O marinheiro é proibido de emitir a seco. O sistema/cartões requer e exige conexões a um aparelho rústico em hardware chamado \"Simulador de Haste AGI\" enganando o painel de bordo a fim do transdutor nativo não entrar em modo \"aeração/superaquecimento destrutivo\" pelas vias abertas de escuta na bobina isolada.",
     explanation: "A bobina do sensor eletromagnético gera campo magnético e dissipa calor, sendo projetada para trabalhar submersa na água do mar (que atua como meio condutor e de resfriamento). Se o navio estiver em doca seca ou com a haste fora d'água e a SDTU for energizada para testes de manutenção, é expressamente obrigatório desconectar a haste real e conectar o \"Simulador de Haste AGI\" (Dummy Sensor / Simulator), evitando o superaquecimento destrutivo da bobina e danos aos circuitos do amplificador do Módulo 4.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Após verificar os terminais, que produto químico é ordenado na faina preventiva a fim de lacrar a tampa robusta de alumínio das placas para navegação marítima?",
     options: [
@@ -1636,8 +1505,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Aplicar uma \"leve camada rigorosa de graxa de puro silicone\" espalhando estritamente apenas nas emborrachadas das vedações nativas do visor da janela de tela frontão e da moldura tampa isoladora frontal pesada para prevenir asfalto/oxidação pela maresia agressiva.",
     explanation: "Na manutenção preventiva e fechamento do chassi do odômetro, a norma técnica ordena a aplicação de uma leve e uniforme camada de graxa de silicone pura exclusivamente sobre os anéis de vedação de borracha (gaskets) da tampa frontal de alumínio e da janela do display. Isso preserva a elasticidade da vedação hermética à prova d'água e impede a entrada da atmosfera agressiva, salina e úmida marítima, sem degradar a borracha ou contaminar os circuitos.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "De quantas vias no total é formada a arquitetura para gravação de curva calibrada de arrasto no sistema de \"águas\"?",
     options: [
@@ -1648,8 +1516,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "As rotinas base requerem e gravam perfis escalonados em sub-tabelas interpoladas estritas em marcações de \"até 14 pontos físicos de calibração alocadas isoladas para cada Haste\" no limite entre (0 e 60 Nós de velocidade náutica).",
     explanation: "Para compensar as não-linearidades do fluxo de água ao redor do casco e da haste (curva de arrasto e camada limite em diferentes faixas de velocidade), a arquitetura do AGI-LOG permite gravar na memória não volátil do Módulo 2 uma curva de calibração detalhada com até 14 pontos físicos de calibração discretos distribuídos ao longo da faixa de medição de 0 a 60 nós para cada transdutor selecionado.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Onde está localizado o \"Cartão do Relé da Haste\" segundo o diagrama das baias da placa?",
     options: [
@@ -1660,8 +1527,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Ele é englobado e anexado aos pés físicos/bases do esqueleto interno; sendo conceituado como peça integral orgânica fundida em parte estrutural ao (Conjunto de Chassis / Módulo Cego 9) repousando abaixo da placa barramento mãe isoladora de base (\"motherboard\") da carcaça do Odômetro central de ponte.",
     explanation: "O Cartão do Relé da Haste (ou conjunto de relés de seleção do transdutor) não é um módulo plug-in vertical comum nas guias de 1 a 12; ele é montado na estrutura inferior da carcaça, posicionado fisicamente abaixo da placa-mãe (motherboard/backplane) no conjunto de chassi, atuando no roteamento seguro de sinais e potência de excitação do sensor.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   {
     question: "Quais resistências as saídas de relé isoladas (livres de potencial) suportam sem derreter nas saídas auxiliares do Módulo 7 das repetidoras navais?",
     options: [
@@ -1672,8 +1538,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "São chaves de transição brutas aguentando 1 Amperè sob 125 Volts AC em RMS e suportam na tolerância cargas cegas cruas resistivas em cravado (1 Ampére e 150 Volts DC); munidas de rigoroso isolamento superior magnético nativo isolando picos acima de marca \"200 Volts\" da rede paralela naval para que o sistema de tiro nunca acione as chaves da CPU internamente.",
     explanation: "Os quatro contatos de relé opto/magneticamente isolados do Módulo 7 possuem especificações elétricas robustas para interfaceamento naval: suportam cargas resistivas de até 1 Ampère com tensões de até 125 Volts AC (RMS) ou até 150 Volts DC (com corrente máxima de 1A), contando com alto isolamento dielétrico (superior a 200V/picos) que blinda os circuitos lógicos da CPU da SDTU contra surtos e retornos da rede externa do navio ou do controle de tiro.",
-    topic: "Capítulo 3 - Odômetro Eletromagnético AGI-LOG"
-  },
+},
   // ============================================================================
   // QUESTÕES SUPLEMENTARES - ESPECIFICAÇÕES, CONEXÕES E MÓDULOS (AGI-LOG)
   // ============================================================================
@@ -1687,8 +1552,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Até 160 VA",
     explanation: "Conforme as especificações técnicas gerais do Odômetro eletromagnético AGI-LOG, a potência máxima consumida pela S.D.T.U. e pela excitação do sensor é de até 160 VA.",
-    topic: "Especificações Técnicas - Potência Consumida"
-  },
+},
   {
     question: "Que precisão possui a haste fixa na velocidade de 0 a 10 nós?",
     options: [
@@ -1699,8 +1563,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "+/- 0,1 nó",
     explanation: "Na faixa de baixa velocidade (de 0 a 10 nós), onde a precisão é crítica para manobras e navegação em águas restritas, a haste fixa do Odômetro AGI-LOG garante uma precisão de +/- 0,1 nó.",
-    topic: "Especificações do Sensor - Precisão da Haste Fixa"
-  },
+},
   {
     question: "Quantas partes componentes possuem os sensores (haste) tipo OTAN do Odômetro AGI-LOG?",
     options: [
@@ -1711,8 +1574,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "03",
     explanation: "O conjunto do sensor (haste) tipo OTAN do Odômetro AGI-LOG é composto estrutural e operacionalmente por 03 partes componentes principais.",
-    topic: "Sensores - Componentes da Haste Tipo OTAN"
-  },
+},
   {
     question: "Em quais terminais do sensor (haste) tipo OTAN do Odômetro AGI-LOG está a alimentação da bobina?",
     options: [
@@ -1723,8 +1585,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Terminais 1 e 2 (alimentação da bobina).",
     explanation: "Nas conexões do sensor tipo OTAN do Odômetro AGI-LOG, a alimentação de corrente alternada para excitação da bobina magnética está ligada aos Terminais 1 e 2.",
-    topic: "Sensores - Conexões e Terminais da Haste OTAN"
-  },
+},
   {
     question: "Em quais terminais do sensor (haste) tipo OTAN do Odômetro AGI-LOG está o Sinal de Velocidade?",
     options: [
@@ -1735,8 +1596,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Terminais 3 e 4 (Sinal de Velocidade).",
     explanation: "A minúscula tensão de milivolts induzida pelo movimento da água através do campo magnético é captada pelos eletrodos e enviada à S.D.T.U. através dos Terminais 3 e 4 (Sinal de Velocidade).",
-    topic: "Sensores - Conexões e Terminais da Haste OTAN"
-  },
+},
   {
     question: "Em quais terminais do sensor (haste) tipo OTAN do Odômetro AGI-LOG está o terra?",
     options: [
@@ -1747,8 +1607,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Terminais 5 e 6 (Terra).",
     explanation: "A blindagem e a referência de terra (contato com a água do mar e carcaça do sensor) são ligadas aos Terminais 5 e 6 na caixa de junção da haste tipo OTAN.",
-    topic: "Sensores - Conexões e Terminais da Haste OTAN"
-  },
+},
   {
     question: "Qual é a Alimentação da bobina do sensor (haste) tipo OTAN do Odômetro AGI-LOG?",
     options: [
@@ -1759,8 +1618,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "54 a 60 v / 60hz",
     explanation: "A bobina magnética de excitação da haste tipo OTAN do Odômetro AGI-LOG é alimentada com tensão alternada regulada na faixa de 54 a 60 v com frequência de 60hz, fornecida pela S.D.T.U.",
-    topic: "Especificações Elétricas - Alimentação da Bobina"
-  },
+},
   {
     question: "A S.D.T.U. do Odômetro AGI-LOG é uma unidade alojada em caixa de alumínio robusta e à prova de água, sendo de conceito modular. Qual é o tempo de reparo médio (MTTR)?",
     options: [
@@ -1771,8 +1629,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "30 minutos",
     explanation: "Devido ao conceito totalmente modular e aos circuitos de autodiagnóstico (BIT/BITE) integrados na S.D.T.U., a identificação e substituição de um módulo avariado apresenta um Tempo Médio para Reparo (MTTR - Mean Time To Repair) de apenas 30 minutos.",
-    topic: "Manutenção da S.D.T.U. - MTTR"
-  },
+},
   {
     question: "Qual é a função do Módulo 01 (Cartão de Identificação) do Odômetro AGI-LOG?",
     options: [
@@ -1783,8 +1640,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Utilizado para fazer a interface entre o processador (M-02) e o painel de controle (M-11).",
     explanation: "O Módulo 01 (Cartão de Identificação / Interface) tem a função específica de realizar o interfaceamento de comunicação de dados e controle entre o Cartão do Microprocessador (Módulo 02) e o Cartão do Painel de Controle frontal (Módulo 11).",
-    topic: "S.D.T.U. - Funções dos Módulos (Módulo 01)"
-  },
+},
   {
     question: "Qual é a função do Módulo 02 (Cartão do Micro Processador e memórias) do Odômetro AGI-LOG?",
     options: [
@@ -1795,8 +1651,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Tem a função de processar o sinal proveniente da haste, fornecendo saídas de velocidade e distância através dos módulos 05, 06 e 07. Possui intercomunicação com os módulos 01, 10, 11 e 12.",
     explanation: "O Módulo 02 é o cérebro da S.D.T.U., contendo o microprocessador e as memórias (EPROM/RAM). Ele processa matematicamente os dados convertidos do sensor com base nas curvas de calibração, calcula velocidade e distância integradas e comanda as saídas nos módulos 05, 06 e 07, além de comunicar-se com os módulos 01, 10, 11 e 12.",
-    topic: "S.D.T.U. - Funções dos Módulos (Módulo 02)"
-  },
+},
   {
     question: "Qual é a função do Módulo 04 (Conversor de Sinais A/D) do Odômetro AGI-LOG?",
     options: [
@@ -1807,8 +1662,7 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Tem a função de converter o sinal proveniente da haste, em um sinal digital equivalente e após amplificá-lo envia ao Módulo 02.",
     explanation: "O Módulo 04 (Conversor A/D) recebe o sinal analógico de baixo nível induzido nos eletrodos da haste, realiza a pré-amplificação diferencial com alta rejeição a ruídos e converte esse sinal analógico para formato digital (A/D), enviando-o em seguida para processamento no Módulo 02.",
-    topic: "S.D.T.U. - Funções dos Módulos (Módulo 04)"
-  },
+},
   {
     question: "Qual é a função dos Módulos 05 e 06 (Conversores de Sinais D/A = opcional) do Odômetro AGI-LOG?",
     options: [
@@ -1819,6 +1673,5 @@ export const odometrosP2Questions: Question[] = [
     ],
     answer: "Proporcionam saídas síncronas de 400 Hz. Sinais de velocidade equivalente a sincros 15CX4.",
     explanation: "Os Módulos 05 e 06 (Conversores D/A opcionais) são cartões de interface de saída responsáveis por converter a informação digital do microprocessador em sinais analógicos síncronos de 400 Hz, equivalentes aos transmissores sincros padrão 15CX4, permitindo que repetidores eletromecânicos de velocidade do navio acompanhem a medição do odômetro.",
-    topic: "S.D.T.U. - Funções dos Módulos (Módulos 05 e 06)"
-  }
+}
 ];
