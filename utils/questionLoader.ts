@@ -15,6 +15,7 @@ function enrichWithTags(data: Record<string, Question[]>): Record<string, Questi
     const staticList = staticQuizzes[modKey] || [];
     if (Array.isArray(list)) {
       result[modKey] = list.map((q, idx) => {
+        const staticQ = staticList[idx];
         return {
           ...q,
           image: q.image || (staticQ ? staticQ.image : undefined),

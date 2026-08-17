@@ -279,6 +279,14 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
     setShowRestartConfirm(false);
   };
 
+  if (!currentQuestion) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-app">
+        <p className="text-white text-xl">Carregando quiz ou nenhuma questão disponível...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen flex flex-col p-3 sm:p-4 md:p-6 bg-app">
 
