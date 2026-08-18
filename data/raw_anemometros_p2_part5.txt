@@ -1,0 +1,15 @@
+**76. Se durante o teste semestral ou na rotina de voo for detectada a degradação da Unidade de Medição Inercial (IMU), qual o procedimento correto?**
+a) A IMU deve ser calibrada no navio usando o teclado
+b) A IMU não é reparada (no nível local); em caso de degradação, ela deve ser totalmente substituída
+c) Os espelhos dos anéis de laser devem ser polidos
+d) Os acelerômetros devem ser recarregados
+*Resposta Correta: B*
+explanation: "Diferentemente das placas do rack da ECU que admitem limpezas fáceis com ar comprimido, a Unidade de Medição Inercial (IMU) é concebida como um item hermético monolítico selado sem conserto mecânico autorizado no navio. Uma vez condenada sua precisão por avaria das tolerâncias, a caixa pesada da bola inferior é descartada por inteiro, exigindo uma troca modular limpa por outra IMU certificada."
+
+**77. O que é o "BITE TEST" no sistema de manutenção do MK-39?**
+a) Um teste de impacto físico para avaliar a durabilidade do chassi
+b) Um Teste Dinâmico de Circuitos que tem a função de interrogar o estado do sistema
+c) Uma avaliação química dos componentes de bateria
+d) Uma rotina apenas para testar a comunicação RS232 com o PC
+*Resposta Correta: B*
+explanation: "BITE é o acrônimo mundial para Built-In Test Equipment (Equipamento de Teste Embutido). Como o sistema precisa se policiar perante uma matriz sem chaves de fenda externas, existe essa função intrínseca (Dinâmica de Circuitos) imbuída que atua ativamente provocando e varrendo (interrogando) logicamente as portas, voltagens e respostas de placas para assegurar que nenhum bit esteja preso no navio antes de decolar."

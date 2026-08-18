@@ -1,0 +1,79 @@
+**67. O que acontece se a tecla "4" for calcada acidentalmente enquanto o menu de configuração inicial estiver ativado?**
+a) O sistema é formatado aos padrões de fábrica
+b) Os alarmes de todo o navio são ativados
+c) O sistema fará com que a RCDU entre no modo RS232, e ela parará de se comunicar com a INS
+d) O teste de bateria é iniciado
+*Resposta Correta: C*
+explanation: "A opção oculta associada ao número 4 na página de configuração é para virar as chaves seriais da placa do display de modo a forçá-la a falar no protocolo industrial clássico RS232 para manutenções. Ao se clicar a RCDU muda seu idioma e fica surda para a INS principal que usa nas outra porta RS422."
+
+**68. Onde o operador pode consultar uma lista completa dos códigos de falha de três dígitos exibidos no campo "FAULT"?**
+a) Numa placa colada atrás da INS
+b) No Apêndice "B" do manual do fabricante, junto com descrições e causas prováveis
+c) Digitando "HELP" no teclado hexadecimal
+d) Apenas ligando para o suporte da Sperry
+*Resposta Correta: B*
+explanation: "Sendo impossível gravar na memória da tela toda a tabela complexa analítica de tolerância a software a fabricante Sperry condensou o erro a 3 dígitos que necessitam de cruzamento com o manual de bordo (presentes no Apêndice B) para desvendar suas descrições precisas."
+
+**69. Se, durante a entrada de dados num menu, o operador precisar abortar a operação do menu atualmente selecionado, o que deve ser feito?**
+a) Desligar o disjuntor CB3
+b) Pressionar repetidamente a tecla "Clear"
+c) Calcar qualquer tecla de seleção de menu (Mode, Aux Func, Sensor ou Display)
+d) Calcar "Back Space" até o fim
+*Resposta Correta: C*
+explanation: "A programação das interfaces do LCD foi elaborada permitindo fuga flexível rápida. Quando o operador está travado numa edição numérica incompleta e decide cancelar, ele não precisa apagar caractere por caractere (como um clear limpo), ele pode simplesmente calcar qualquer tecla macro de navegação (Mode, Aux Func etc.) que o ponteiro esquecerá a tela antiga e pulará para a nova raiz intacta sem travar o navio."
+
+**70. O que significa "FIM" no contexto de laboratório para o sistema MK-39?**
+a) Frequency Interruption Module
+b) Factore Interface Monitor, um equipamento usado no laboratório (que substitui a RCDU) para configurar o sistema
+c) Final Inertial Measurement
+d) Fast Initialization Mode
+*Resposta Correta: B*
+explanation: "Quando a placa-mãe é dissecada nos testes finos na bancada longe do conforto do barco a conexão direta com a INS Mestra para re-calibrar é providenciada através do equipamento Factory Interface Monitor (FIM) que emula integralmente as conversas da RCDU na porta serial."
+
+**71. Quando se usa o FIM ou um PC simulando a interface da RCDU, qual atalho de teclado corresponde à tecla "AUX FUNC"?**
+a) F1 ou M
+b) F3 ou R
+c) F2 ou X
+d) F4 ou V
+*Resposta Correta: C*
+explanation: "Uma vez que teclados de computador padrão não detém as setas de silicone dedicadas ao Sperry o emulador re-mapeou as entradas vinculando a ação na FIM para invocar Funções Auxiliares para as teclas pareadas nativas F2 ou a letra X do teclado QWERTY comum."
+
+**72. Quantas fontes distintas de anúncio de falhas o sistema MK-39 Mod. 3A provê de forma geral?**
+a) 3 fontes
+b) 4 fontes
+c) 6 fontes (sendo 3 delas provenientes da RCDU)
+d) 10 fontes
+*Resposta Correta: C*
+explanation: "Buscando máxima abrangência naval, o manual elenca 6 fontes independentes de alerta geral para a falha cruzada. Destas 6 pontes, 3 residem atadas ao monobloco principal da ECU Mestra (relés sonoros e lâmpada) e os outros 3 braços cruzam pelo fio para estourar alertas espelhados na unidade secundária remota (a própria RCDU com sua campainha, led e tela)."
+
+**73. Como os erros específicos da RCDU são comunicados ao operador pelo display?**
+a) Por alertas piscando a tela toda
+b) Em código de três (3) dígitos exibidos no campo FAULT
+c) Em texto longo por escrito no display
+d) Via impressão em fita de papel
+*Resposta Correta: B*
+explanation: "Embora possua 240 caracteres a tela não exibe sentenças literais para não roubar espaço das coordenadas. Ao invés disso a CPU cospe na coluna engessada FAULT à direita no topo da página apenas um identificador numérico conciso de 3 dígitos mapeando o incidente, exigindo que o técnico cruze depois esse número no manual."
+
+**74. O fabricante estipula uma vida útil para a INS baseada nas horas de funcionamento. Qual é o valor no manual e qual é o observado na prática?**
+a) 10.000 horas no manual; 5.000 horas na prática
+b) 500.000 horas no manual; 200.000 horas na prática
+c) 200.000 horas pelo manual; mas na prática situa-se entre 60 a 70 mil horas
+d) 50.000 horas em ambos os casos
+*Resposta Correta: C*
+explanation: "A propaganda de bancada do fabricante afere em laboratório que a máquina é eterna suportando até 200.000 horas de luz ligada. Contudo, a rotina marinha que desliga a força contínua e liga gera desgaste térmico acentuado condensando as lentes provando que as perdas e ruídos reais limitam a calibração precisa estourando um limite útil de uso na casa prudente de 60 a 70 mil horas máximas."
+
+**75. Existe uma rotina de manutenção a ser feita a cada seis meses com o sistema posto em teste. Qual leitura é verificada nessa rotina e qual seu limite máximo de tolerância?**
+a) Temperatura dos acelerômetros, máximo 55°C
+b) Corrente do processador, máximo 5A
+c) Valores de voltagem entre os anéis de laser, que não podem ultrapassar ± 0,4 Volts (caso ultrapasse, indica deterioração da IMU)
+d) Frequência do sinal síncrono, máximo de 410 Hz
+*Resposta Correta: C*
+explanation: "A despeito de ser selado sem partes móveis esmagadoras, a equipe precisa checar a degradação base dos espelhos refletivos nos aros a laser. Isso é medido não com foto-sensor mas observando a voltagem gerada na malha em volta deles para manter o limiar. Esse teste que acorda semestralmente impõe que o limiar do diferencial da diferença elétrica medida lendo a margem do diferencial de fase no anel não extrapole a linha vermelha estrita perante os limites estipulados firmemente em ± 0,4 Volts. Acima disso, atesta-se exaustão e falência do bloco."
+
+**76. Se durante o teste semestral ou na rotina de voo for detectada a degradação da Unidade de Medição Inercial (IMU), qual o procedimento correto?**
+a) A IMU deve ser calibrada no navio usando o teclado
+b) A IMU não é reparada (no nível local); em caso de degradação, ela deve ser totalmente substituída
+c) Os espelhos dos anéis de laser devem ser polidos
+d) Os acelerômetros devem ser recarregados
+*Resposta Correta: B*
+explanation: "Diferentemente das placas do rack da"

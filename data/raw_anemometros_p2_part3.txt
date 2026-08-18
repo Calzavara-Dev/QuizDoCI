@@ -1,0 +1,55 @@
+**61. O sistema INS MK-39 disponibiliza dois tipos (modos) de partida. Quais são eles?**
+a) Analógica e Digital
+b) Rápida e Lenta
+c) Automática e Manual
+d) Modo Normal e Modo Teste
+*Resposta Correta: D*
+explanation: "Conforme ilustrado nos procedimentos básicos, o MK-39 não admite arranques complexos para o usuário. Ele bifurca a ignição em duas vias pragmáticas: Modo Normal (para operar no cais todo dia) e Modo Teste (para averiguar os leds e falhas embutidas)."
+
+**62. O modo Teste (utilizado para configurar e verificar parâmetros) é selecionado configurando-se quais chaves?**
+a) Chave S1 na INS para "REMOTE", System Power na RCDU para "ON" e pressionando a tecla "TEST"
+b) Chave S1 na INS para "OFF"
+c) Disjuntor CB3 para "OFF" e pressionando "ENTER"
+d) Desligando a UPS-1 e rodando na bateria
+*Resposta Correta: A*
+explanation: "Para não permitir que um operador esbarre no Teste em pleno mar e reinicie a placa-mãe acidentalmente essa rotina exige um acionamento coordenado a quatro mãos de propósito: A chave base S1 deve ser delegada fisicamente para Remote para que a RCDU possa então ser comutada e a rotina invocada calcando firmemente o atalho TEST."
+
+**63. Para dar a partida normal pela INS (após os pré-requisitos), qual a ordem das chaves?**
+a) Ligar chaves S1, S2, S3 e depois CB1
+b) Ligar Main Power (CB1), Remote Power (CB3) e Synchro Reference (CB2), e em seguida colocar a chave Master Power (S1) em ON
+c) Ligar apenas CB1 e aguardar 10 minutos
+d) Colocar S1 em REMOTE e ligar pela RCDU
+*Resposta Correta: B*
+explanation: "A operação de partida a frio num módulo vital naval jamais é arremessada sem armar primeiro os defletores estáticos. Os barramentos (CB1, CB2 e CB3) precisam ser engatados para proteger a malha fria elétrica antes do tranco massivo ser liberado no sistema rodando a alavanca mestra para ON."
+
+**64. Após partir o sistema pela RCDU, como é feito o teste para verificar se o display está funcionando corretamente?**
+a) Calcando a tecla "Display" e depois a tecla 0
+b) Calcando a tecla "Aux Func" para selecionar o menu de função auxiliar e, então, a função "Display test" calcando a tecla 3
+c) Calcando a tecla "Alarm Ack" 3 vezes seguidas
+d) Segurando a tecla "Test" por 5 segundos
+*Resposta Correta: B*
+explanation: "Considerando que em displays verde com cristal líquido a perda isolada de um traço num dígito pode transformar um número 8 num 3 e causar tragédias de leitura, o operador deve provocar o acendimento forçado de todos os pixels. Ele faz isso invocando a hierarquia Aux Func (Funções auxiliares) e acionando a via de atalho 3 que despeja um bloco preenchido na tela."
+
+**65. O que ocorre com os dados do sistema quando ele é desligado através do procedimento correto (S1 para OFF, System Power para OFF etc.)?**
+a) Todos os dados de calibração são apagados por segurança
+b) A CPU é formatada automaticamente
+c) O sistema salvará todos os dados válidos para serem usados quando o sistema for novamente ligado
+d) O GPS armazena os dados, não a INS
+*Resposta Correta: C*
+explanation: "Para garantir que o hardware não precise jogar 4 horas no lixo caçando o norte verdadeiro de novo numa segunda partida, o desligamento dócil acionado pela sequência das chaves de segurança permite gravar na memória viva do History PROM todos os dados de calibração estabilizados para reuso."
+
+**66. Durante a partida, quando a mensagem de modo de configuração aparece no display e o operador calca a tecla "Mode", é possível mudar quais parâmetros usando as teclas 1, 2 ou 3?**
+a) Latitude, Longitude e Velocidade
+b) Invert Video, Back Light (ON/OFF) e Buzina (ON/OFF)
+c) Rumo, Balanço e Caturro
+d) Data, Hora e Fuso Horário
+*Resposta Correta: B*
+explanation: "O display em sua tela limpa e rápida logo após subir possui um menu isolado na janela a de base para conforto: Se houver muito sol a tela de cristal precisa de Invert Video, se for noite precisa de Back Light e se a buzina estiver perturbando ela pode ser desligada (ON/OFF). Essas 3 preferências estáticas rodam nas teclas numéricas 1, 2 e 3."
+
+**67. O que acontece se a tecla "4" for calcada acidentalmente enquanto o menu de configuração inicial estiver ativado?**
+a) O sistema é formatado aos padrões de fábrica
+b) Os alarmes de todo o navio são ativados
+c) O sistema fará com que a RCDU entre no modo RS232, e ela parará de se comunicar com a INS
+d) O teste de bateria é iniciado
+*Resposta Correta: C*
+explanation: "A opção oculta associada ao número 4 na página de configuração é para virar as chaves seriais da placa do display de modo a forçá-la a falar no protocolo industrial RS232."

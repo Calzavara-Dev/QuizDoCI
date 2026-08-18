@@ -4,6 +4,7 @@ import { microcontroladoresP1Questions } from "./microcontroladores_p1";
 import { odometrosP2Questions } from "./odometros_p2";
 import { odometrosP2RapidasQuestions } from "./odometros_p2_rapidas";
 import { anemometrosQuestions } from "./anemometros";
+import { anemometrosP2Questions } from "./anemometros_p2";
 import { microcontroladoresP2Questions } from "./microcontroladores_p2";
 import { pic16f84Questions } from "./pic16f84";
 import { agulhasGiroscopicasQuestions } from "./agulhas_giroscopicas";
@@ -3145,5 +3146,6 @@ quizzes["pic16f84"] = pic16f84Questions;
 quizzes["agulhas-giroscopicas"] = agulhasGiroscopicasQuestions;
 quizzes["redes-ethernet"] = redesEthernetQuestions;
 quizzes["redes-gagau"] = redesGagauQuestions;
+quizzes["anemometros-p2"] = anemometrosP2Questions;
 
 export const questions: Question[] = quizzes.telefonia;
