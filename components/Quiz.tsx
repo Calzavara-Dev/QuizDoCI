@@ -82,6 +82,7 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   const [showRestartConfirm, setShowRestartConfirm] = useState(false);
   const [zoomedImage, setZoomedImage] = useState<string | null>(null);
   const [imageScale, setImageScale] = useState(1);
+  const isTransitioningRef = useRef(false);
 
   const currentQuestion = shuffledQuestions[currentIndex];
   const progress = shuffledQuestions.length ? ((currentIndex + 1) / shuffledQuestions.length) * 100 : 0;
@@ -242,18 +243,34 @@ export function Quiz({ onFinish, quizId = "telefonia", onBackToStart }: QuizProp
   };
 
   const handlePrevious = () => {
+    if (isTransitioningRef.current) return;
+    isTransitioningRef.current = true;
+    setTimeout(() => { isTransitioningRef.current = false; }, 300);
+
     if (currentIndex === 0) return;
-    const previousIndex = currentIndex - 1;
-    setCurrentIndex(previousIndex);
+    setCurrentIndex((c) => c - 1);
   };
 
   const handleNext = () => {
+    if (isTransitioningRef.current) return;
+    isTransitioningRef.current = true;
+    setTimeout(() => { isTransitioningRef.current = false; }, 300);
+
     if (currentIndex === shuffledQuestions.length - 1) {
       clearProgress();
+      const filledAnswers = shuffledQuestions.map((q, i) => {
+        return answers[i] || {
+          question: q.question,
+          isCorrect: false,
+          userAnswer: "Não respondida",
+          correctAnswer: q.answer,
+          explanation: q.explanation,
+        };
+      });
       onFinish({
         correct,
         total: shuffledQuestions.length,
-        answers,
+        answers: filledAnswers,
       });
     } else {
       setCurrentIndex((c) => c + 1);
