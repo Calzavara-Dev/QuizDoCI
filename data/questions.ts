@@ -10,6 +10,7 @@ import { pic16f84Questions } from "./pic16f84";
 import { agulhasGiroscopicasQuestions } from "./agulhas_giroscopicas";
 import { redesEthernetQuestions } from "./redes_ethernet";
 import { redesGagauQuestions } from "./redes_gagau";
+import { estabilizadoresQuestions } from "./estabilizadores";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -3147,5 +3148,6 @@ quizzes["agulhas-giroscopicas"] = agulhasGiroscopicasQuestions;
 quizzes["redes-ethernet"] = redesEthernetQuestions;
 quizzes["redes-gagau"] = redesGagauQuestions;
 quizzes["giro-p2"] = giroP2Questions;
+quizzes["estabilizadores"] = estabilizadoresQuestions;
 
 export const questions: Question[] = quizzes.telefonia;
