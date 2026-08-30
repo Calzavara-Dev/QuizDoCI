@@ -242,5 +242,247 @@ export const estabilizadoresQuestions: Question[] = [
     ],
     answer: "Parar o sistema imediatamente, sendo proibido trabalhar com o equipamento sob pressão.",
     explanation: "Regra estrita de segurança de sistemas de altíssima pressão. Fluidos hidráulicos a 150 BAR podem causar danos severos ou amputações (injeção de óleo na pele); todo o maquinário deve ser parado e despressurizado antes da inspeção.*"
+  },
+  {
+    question: "Qual é o objetivo principal do sistema de estabilizadores do navio?",
+    options: [
+      "Aumentar o deslocamento e a velocidade do navio em mar grosso.",
+      "Reduzir o jogo do navio, a fim de prover uma plataforma estável para armamento e operações com helicópteros.",
+      "Diminuir o consumo de combustível isolando a praça de máquinas.",
+      "Controlar automaticamente a direção (leme) do navio em fainas restritas."
+    ],
+    answer: "Reduzir o jogo do navio, a fim de prover uma plataforma estável para armamento e operações com helicópteros.",
+    explanation: "O objetivo primário é atenuar o balanço lateral (jogo) da embarcação para garantir a precisão e a segurança no uso de armamentos e nas fainas de voo com helicópteros."
+  },
+  {
+    question: "Além do seu objetivo principal, o sistema de estabilizadores faz outras operações. Qual das alternativas abaixo NÃO é uma característica ou operação do sistema?",
+    options: [
+      "É aconselhável para prover jogo forçado em caso de guerra NBQ (Nuclear, Biológica e Química).",
+      "Reduz o jogo do navio utilizando duas aletas.",
+      "Pode funcionar com metade da sua capacidade total, embora com restrições.",
+      "Funciona operando três aletas simultâneas para fainas de carga leve."
+    ],
+    answer: "Funciona operando três aletas simultâneas para fainas de carga leve.",
+    explanation: "O navio utiliza exclusivamente duas aletas (uma em cada bordo) para obter a estabilidade, e não três. Todas as demais operações (A, B e C) são características reais mencionadas no manual."
+  },
+  {
+    question: "Qual é o ângulo aproximado que as aletas dos estabilizadores formam com o plano horizontal quando se projetam para fora do casco?",
+    options: [
+      "90 graus",
+      "60 graus",
+      "45 graus",
+      "30 graus"
+    ],
+    answer: "45 graus",
+    explanation: "As duas aletas ficam abaixo da linha d'água e formam um ângulo de aproximadamente 45 graus com o plano horizontal em relação ao casco."
+  },
+  {
+    question: "O movimento das aletas é dado por um sistema eletro-hidráulico semelhante ao dos lemes. Sobre o comando destas aletas, é correto afirmar que:",
+    options: [
+      "Cada aleta possui um sistema independente para movimentá-la, porém ambas são comandadas por um único sistema de controle.",
+      "As aletas compartilham o mesmo sistema hidráulico de acionamento mecânico direto.",
+      "Cada aleta possui seu próprio sistema de controle primário, operando de forma autônoma e sem ligação uma com a outra.",
+      "O movimento angular é comandado mecanicamente de forma manual pelo passadiço."
+    ],
+    answer: "Cada aleta possui um sistema independente para movimentá-la, porém ambas são comandadas por um único sistema de controle.",
+    explanation: "Fisicamente, cada bordo tem seu mecanismo eletro-hidráulico independente, mas o cérebro que comanda (quando inclinar e quanto) é um único sistema de controle central."
+  },
+  {
+    question: "Onde ficam localizados, respectivamente, o Painel de Controle (Painel da Vosper) e a Unidade de Controle do Sistema (Painel da Muirhead)?",
+    options: [
+      "Passadiço e COC (Centro de Operações de Combate).",
+      "CCM e Compartimento dos Conversores.",
+      "CCM e Passadiço.",
+      "Praça de Máquinas e COC."
+    ],
+    answer: "CCM e Compartimento dos Conversores.",
+    explanation: "O Painel da Vosper (controle remoto e monitoramento) fica no CCM (Centro de Controle de Máquinas). Já o Painel da Muirhead, considerado o cérebro do sistema, fica no compartimento dos conversores."
+  },
+  {
+    question: "Em qual rotação (velocidade) trabalha o rotor do giroscópio do sistema de estabilizadores?",
+    options: [
+      "1.500 RPM",
+      "2.000 RPM",
+      "3.000 RPM",
+      "6.000 RPM"
+    ],
+    answer: "3.000 RPM",
+    explanation: "O giroscópio, que sente o torque gerado pelo jogo do navio, atua girando a uma velocidade fixa e contínua de cerca de 3.000 RPM."
+  },
+  {
+    question: "No Painel de Cartões de Circuitos Impressos, qual é a função específica do Amplificador de Adição (PCB 968)?",
+    options: [
+      "Diferenciar os picos de energia do giroscópio.",
+      "Funcionar como oscilador para alimentar o CX1 com 115V.",
+      "Somar os sinais de aceleração, velocidade, ângulo e banda.",
+      "Emitir a corrente final (20V 250mA) para a válvula MOOG."
+    ],
+    answer: "Somar os sinais de aceleração, velocidade, ângulo e banda.",
+    explanation: "O próprio nome diz 'adição'. O PCB 968 soma diversas variáveis captadas pelos sensores (aceleração do navio, velocidade, ângulo das aletas e inclinação de banda) para gerar o cálculo de estabilização."
+  },
+  {
+    question: "Qual a finalidade e a localização do 'Linvar do Odômetro'?",
+    options: [
+      "Localizado no CCM, sua função é dar partida no sistema elétrico de 440V.",
+      "Localizado no passadiço, sua função é acionar o pino de travamento de emergência.",
+      "Localizado no compartimento dos conversores, sua função é gerar os 50 VDC.",
+      "Localizado na Unidade de Retransmissão do Odômetro (no COC), sua função é fornecer um sinal de compensação automática baseado na velocidade do navio."
+    ],
+    answer: "Localizado na Unidade de Retransmissão do Odômetro (no COC), sua função é fornecer um sinal de compensação automática baseado na velocidade do navio.",
+    explanation: "A eficiência das aletas depende da velocidade do navio. O Linvar do odômetro pega a informação da velocidade real (no COC) e envia ao sistema para ele fazer a restrição ou ampliação do ângulo automaticamente."
+  },
+  {
+    question: "O sistema utiliza vários níveis de tensão para diferentes componentes. Qual equipamento abaixo é o responsável por utilizar a tensão de 440 VCA 60Hz Trifásico?",
+    options: [
+      "Unidade do Giroscópio.",
+      "Lâmpadas indicadoras do painel.",
+      "Motores elétricos das bombas de óleo hidráulico.",
+      "Indicadores de pressão e relés da válvula solenoide."
+    ],
+    answer: "Motores elétricos das bombas de óleo hidráulico.",
+    explanation: "Como as bombas precisam de muita potência motriz para pressurizar o óleo, usam força pesada (440V Trifásico dos CDE 1-34 e 2-39). Os indicadores usam 24VDC, lâmpadas 50VDC e o controle usa 115VCA."
+  },
+  {
+    question: "Por que a Unidade de Controle do Sistema (MUIRED) é considerada o 'cérebro' do sistema de estabilizadores?",
+    options: [
+      "Porque ela aciona fisicamente e diretamente as aletas em alto mar.",
+      "Porque ela sente o jogo e a banda do navio, recebe o sinal de velocidade e produz os sinais de comando exatos para as aletas.",
+      "Porque nela fica instalado o botão de emergência de travamento mecânico das pás.",
+      "Porque distribui a energia elétrica trifásica para os motores principais."
+    ],
+    answer: "Porque ela sente o jogo e a banda do navio, recebe o sinal de velocidade e produz os sinais de comando exatos para as aletas.",
+    explanation: "Ela centraliza todos os 'sensores' e toma a decisão eletrônica de estabilização, gerando o sinal para a Unidade de Controle da Aleta obedecer."
+  },
+  {
+    question: "Qual a relação matemática fundamental entre o esforço das aletas para endireitar o navio e a velocidade da embarcação?",
+    options: [
+      "O esforço é inversamente proporcional à velocidade.",
+      "O esforço é proporcional ao quadrado da velocidade do navio.",
+      "O esforço é diretamente proporcional à raiz quadrada da banda do navio.",
+      "A velocidade não afeta o esforço hidráulico, apenas afeta a angulação do giroscópio."
+    ],
+    answer: "O esforço é proporcional ao quadrado da velocidade do navio.",
+    explanation: "A física de fluidos determina que a força de sustentação/pressão (esforço) cresça exponencialmente. É por isso que em velocidades muito altas, o ângulo da aleta deve ser obrigatoriamente reduzido para evitar sobrecarga."
+  },
+  {
+    question: "Nas Fragatas MK-10, qual é o ângulo máximo imposto às aletas se o navio estiver operando em uma velocidade alta, entre 25 a 30 nós?",
+    options: [
+      "30°",
+      "18° a 20°",
+      "12° a 15°",
+      "9° a 0°"
+    ],
+    answer: "12° a 15°",
+    explanation: "O sistema escala os limites de ângulo. A 10-20 nós o máximo é 30º. De 20-25 nós restringe para 18-20º. De 25 a 30 nós, reduz para 12-15º de ângulo máximo. Acima de 30 nós é quase zerado (9º a 0º)."
+  },
+  {
+    question: "A Unidade de Controle das Aletas fornece um sinal elétrico de saída para controlar a servo válvula eletro-hidráulica (Válvula MOOG). Qual é a especificação desse sinal elétrico?",
+    options: [
+      "115V 60Hz.",
+      "24VDC 5A.",
+      "20V 250mA.",
+      "440V."
+    ],
+    answer: "20V 250mA.",
+    explanation: "A válvula MOOG é extremamente sensível e atua baseada em um sinal de controle elétrico de baixa voltagem e corrente: 20V e 250 miliamperes."
+  },
+  {
+    question: "Na sequência normal de parada do sistema de controle, qual ação obrigatória destaca-se no processo?",
+    options: [
+      "O travamento manual do pino de aço.",
+      "A centralização automática das aletas.",
+      "O esvaziamento imediato do tanque de gravidade.",
+      "O desengate do rotor do giroscópio a 3000 RPM."
+    ],
+    answer: "A centralização automática das aletas.",
+    explanation: "O sistema garante que, ao ser desligado, as aletas não fiquem travadas num ângulo, executando a centralização para a posição zero/neutra (paralela ao fluxo de água) para evitar arrasto."
+  },
+  {
+    question: "Qual é a pressão ideal de operação pré-ajustada para o sistema hidráulico e qual componente a mantém?",
+    options: [
+      "50 bar, mantida pela bomba de gravidade.",
+      "86 bar, mantida pela válvula de descompressão e escape.",
+      "110 bar, mantida pela servo válvula MOOG.",
+      "150 bar, mantida pelo lubrificador radial."
+    ],
+    answer: "86 bar, mantida pela válvula de descompressão e escape.",
+    explanation: "O óleo excedente gerado pela bomba retorna ao tanque graças à válvula de descompressão e escape, mantendo a pressão operacional do fluido estável sempre em 86 bar."
+  },
+  {
+    question: "Caso soe um alarme audiovisual no painel do sistema de controle, qual a consequência imediata de o operador apertar o botão 'FALHA ACEITA'?",
+    options: [
+      "Desliga as bombas principais e recolhe as aletas.",
+      "Reinicia o sistema eletronicamente.",
+      "Silencia o alarme (sirene) e estabelece o brilho fixo para a lâmpada indicadora.",
+      "Engraza instantaneamente o pino de travamento de emergência."
+    ],
+    answer: "Silencia o alarme (sirene) e estabelece o brilho fixo para a lâmpada indicadora.",
+    explanation: "Trata-se de uma confirmação padrão (acknowledge). A luz piscante passa a ficar fixa e o som é interrompido, mostrando que o operador registrou o evento. O problema ainda precisa ser sanado."
+  },
+  {
+    question: "Durante a partida do sistema hidráulico, quanto tempo dura a circulação de óleo em 'by-pass' (retornando ao tanque) para que o motor da bomba adquira plena rotação antes de enviar pressão ao sistema?",
+    options: [
+      "2 segundos.",
+      "7 segundos.",
+      "15 segundos.",
+      "30 segundos."
+    ],
+    answer: "7 segundos.",
+    explanation: "Um Relé de Tempo no sistema é programado para atrasar a válvula direcional. Ele dá exatamente 7 segundos para que o motor elétrico pesado e a bomba adquiram plena rotação sem esforço hidráulico."
+  },
+  {
+    question: "Qual das seguintes regras pertence às 'Precauções Hidráulicas' obrigatórias do sistema?",
+    options: [
+      "É possível fazer reapertos de mangueiras enquanto o sistema está a 86 bar.",
+      "Após solucionar problema de nível baixo de óleo, o operador deve acionar o botão REARME para habilitar novas detecções.",
+      "Vazamentos leves durante a operação podem ser tolerados até a atracação.",
+      "A chave do suprimento 115VCA/24VCC deve ser desligada somente após a parada das bombas hidráulicas."
+    ],
+    answer: "Após solucionar problema de nível baixo de óleo, o operador deve acionar o botão REARME para habilitar novas detecções.",
+    explanation: "Trabalhar com o sistema sob pressão e ignorar vazamentos é proibido. A chave S2 (115VCA/24VCC) deve ser desligada ANTES das bombas. O 'Rearme' no painel é o procedimento correto após sanar problemas de nível."
+  },
+  {
+    question: "Em relação ao 'Cilindro de Travamento' (Pino de Travamento), assinale a alternativa CORRETA:",
+    options: [
+      "Ele é acionado de forma pneumática pelo painel do passadiço.",
+      "Deve ser usado rotineiramente após desligar o sistema no final do dia.",
+      "Quando está engrazado, um micro-interruptor é acionado, tornando impossível (impraticável) dar partida no sistema.",
+      "Só serve para centralizar as aletas hidraulicamente."
+    ],
+    answer: "Quando está engrazado, um micro-interruptor é acionado, tornando impossível (impraticável) dar partida no sistema.",
+    explanation: "É um recurso puramente mecânico de emergência, acionado manualmente. Se o pino for posto na haste, um sensor corta a partida elétrica por segurança, pois acionar a máquina hidraulicamente quebraria o sistema."
+  },
+  {
+    question: "O que ocorre se o navio precisar dar máquinas para trás e o operador passar a chave 'Controle do Estabilizador' (no Painel do CCM) diretamente para a posição “Desliga” (procedimento de emergência)?",
+    options: [
+      "As aletas invertem seu movimento para ajudar na frenagem hidrodinâmica.",
+      "Ocorre a centralização forçada das aletas.",
+      "As bombas ejetam toda a graxa do lubrificador radial.",
+      "A válvula MOOG perde comunicação com a Unidade de Giroscópio, travando as aletas na angulação de arrasto."
+    ],
+    answer: "Ocorre a centralização forçada das aletas.",
+    explanation: "Bater a chave de controle para 'desligar' em uma emergência neutraliza as aletas, centralizando-as imediatamente para zero grau. Isso evita que manobras reversas repentinas rompam os eixos da aleta."
+  },
+  {
+    question: "Qual é a função do Lubrificador Radial no sistema de estabilizadores?",
+    options: [
+      "Resfriar o óleo hidráulico que retorna do tanque de gravidade.",
+      "Fornecer graxa para 7 pontos específicos do sistema.",
+      "Lubrificar internamente as placas de circuito impresso (PCBs).",
+      "Aliviar a pressão caso a válvula de descompressão falhe."
+    ],
+    answer: "Fornecer graxa para 7 pontos específicos do sistema.",
+    explanation: "O material afirma de forma bem direta na página 66 que a função do Lubrificador Radial é fornecer graxa simultaneamente para 7 pontos do sistema de estabilizadores."
+  },
+  {
+    question: "Como a documentação define a diferença básica entre Manutenção Preventiva e Corretiva para este sistema, e qual é o código do Cartão de Manutenção associado?",
+    options: [
+      "Preventiva corrige peças já quebradas; Corretiva evita que quebrem. Cartão DEN-SMP-02.",
+      "Preventiva foca na limpeza visual; Corretiva foca na troca de óleo. Cartão Vosper-01.",
+      "Preventiva visa prever uma avaria; Corretiva visa corrigir uma avaria, ambas para manter o sistema sem interrupções. Cartão DEN-SMP-01.",
+      "Ambas têm o mesmo objetivo de trocar aletas a cada 5 anos. Cartão Muirhead-01."
+    ],
+    answer: "Preventiva visa prever uma avaria; Corretiva visa corrigir uma avaria, ambas para manter o sistema sem interrupções. Cartão DEN-SMP-01.",
+    explanation: "A página 99 conceitua a preventiva como 'prever uma avaria' e a corretiva como 'corrigir uma avaria' mantendo o funcionamento. A página 100 finaliza o assunto indicando que a referência é o Cartão de Manutenção DEN-SMP-01."
   }
 ];
