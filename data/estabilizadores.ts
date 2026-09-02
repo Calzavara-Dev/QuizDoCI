@@ -933,7 +933,7 @@ export const estabilizadoresQuestions: Question[] = [
       "Nos conversores",
       "No C.C.M."
     ],
-    answer: "Nos conversores  ",
+    answer: "Nos conversores",
     explanation: "Gabarito oficial fornecido."
   },
   {
