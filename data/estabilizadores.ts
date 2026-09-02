@@ -484,7 +484,7 @@ export const estabilizadoresQuestions: Question[] = [
     ],
     answer: "Preventiva visa prever uma avaria; Corretiva visa corrigir uma avaria, ambas para manter o sistema sem interrupções. Cartão DEN-SMP-01.",
     explanation: "A página 99 conceitua a preventiva como 'prever uma avaria' e a corretiva como 'corrigir uma avaria' mantendo o funcionamento. A página 100 finaliza o assunto indicando que a referência é o Cartão de Manutenção DEN-SMP-01."
-  }
+  },
   {
     question: "Quantos sistemas eletro-hidráulicos possui a Fragata Classe Niterói?",
     options: [
