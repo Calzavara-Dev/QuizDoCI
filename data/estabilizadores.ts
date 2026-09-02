@@ -485,4 +485,851 @@ export const estabilizadoresQuestions: Question[] = [
     answer: "Preventiva visa prever uma avaria; Corretiva visa corrigir uma avaria, ambas para manter o sistema sem interrupções. Cartão DEN-SMP-01.",
     explanation: "A página 99 conceitua a preventiva como 'prever uma avaria' e a corretiva como 'corrigir uma avaria' mantendo o funcionamento. A página 100 finaliza o assunto indicando que a referência é o Cartão de Manutenção DEN-SMP-01."
   }
+  {
+    question: "Quantos sistemas eletro-hidráulicos possui a Fragata Classe Niterói?",
+    options: [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    answer: "2",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual é a alimentação das unidades indicadoras das aletas?",
+    options: [
+      "24V / 60Hz",
+      "115V / 60Hz",
+      "440V / 60Hz",
+      "50V CC"
+    ],
+    answer: "115V / 60Hz",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual o ângulo das aletas no sistema a 45º e o ângulo máximo?",
+    options: [
+      "15º / 25º máximo",
+      "45º / 50º máximo",
+      "45º no sistema / 30º ângulo máximo",
+      "30º no sistema / 45º ângulo máximo"
+    ],
+    answer: "45º no sistema / 30º ângulo máximo",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Em quantos segundos as bombas atingem plena rotação e elevam a pressão para 86 bar?",
+    options: [
+      "5 segundos",
+      "7 segundos",
+      "9 segundos",
+      "12 segundos"
+    ],
+    answer: "7 segundos",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quantos são os pontos de lubrificação?",
+    options: [
+      "4 pontos",
+      "5 pontos",
+      "7 pontos",
+      "9 pontos"
+    ],
+    answer: "7 pontos",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quantos transmissores combinados o sistema possui?",
+    options: [
+      "4, sendo 2 para cada aleta",
+      "1 para o sistema todo",
+      "2, sendo 1 para cada aleta",
+      "3, sendo 1 reserva"
+    ],
+    answer: "2, sendo 1 para cada aleta",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais alimentações ficam disponíveis?",
+    options: [
+      "24V e 115V / 60Hz",
+      "50V e 440V",
+      "12V e 115V / 400Hz",
+      "24V e 50V CC"
+    ],
+    answer: "24V e 115V / 60Hz",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a causa que leva ao acendimento do painel Vosper?",
+    options: [
+      "Alta temperatura do óleo",
+      "Queda de tensão na rede principal",
+      "Nível baixo de óleo hidráulico no tanque",
+      "Falha no giroscópio"
+    ],
+    answer: "Nível baixo de óleo hidráulico no tanque",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual é o elo de ligação?",
+    options: [
+      "Unidade de controle",
+      "Painel de controle (Vosper)",
+      "Caixa de junção",
+      "Válvula direcional"
+    ],
+    answer: "Painel de controle (Vosper)",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "O que está situado na U.C.E.?",
+    options: [
+      "Os reles de desarme",
+      "Os conversores",
+      "As válvulas Moog",
+      "O motor principal"
+    ],
+    answer: "Os conversores",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Como é obtido o movimento torsional das aletas?",
+    options: [
+      "Através de um sistema eletro-hidráulico",
+      "Através de engrenagens mecânicas",
+      "Através de um motor elétrico de passo",
+      "Através de cabos de aço e polias"
+    ],
+    answer: "Através de um sistema eletro-hidráulico",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual valor que está setado para alarme do painel da Vosper?",
+    options: [
+      "1/2 -> 50%",
+      "3/4 -> 75%",
+      "1/4 -> 25%",
+      "1/3 -> 33%"
+    ],
+    answer: "1/4 -> 25%",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual é a pressão ideal?",
+    options: [
+      "50 Bar",
+      "65 Bar",
+      "86 Bar",
+      "100 Bar"
+    ],
+    answer: "86 Bar",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual componente regula o fluxo de óleo hidráulico para o sistema?",
+    options: [
+      "Bomba principal",
+      "Servo-válvula eletro-hidráulica (Válvula Moog)",
+      "Válvula de descompressão e escape",
+      "Acumulador hidráulico"
+    ],
+    answer: "Servo-válvula eletro-hidráulica (Válvula Moog)",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual componente é responsável por reforçar a pressão?",
+    options: [
+      "Bomba de escorva",
+      "Tanque de expansão",
+      "Acumulador hidráulico",
+      "Válvula solenóide"
+    ],
+    answer: "Acumulador hidráulico",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quem controla as aletas?",
+    options: [
+      "Painel local",
+      "U.C.E. (Unidade de Controle dos Estabilizadores)",
+      "Giroscópio",
+      "Operador no passadiço"
+    ],
+    answer: "U.C.E. (Unidade de Controle dos Estabilizadores)",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais os tipos de alarmes contidos no painel Vosper?",
+    options: [
+      "Apenas visual",
+      "Apenas sonoro",
+      "Visual e sonoro",
+      "Luminoso e tátil"
+    ],
+    answer: "Visual e sonoro",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual cartão possui oscilador e amplificador de potência?",
+    options: [
+      "Cartão 115/60",
+      "Cartão 24V CC",
+      "Cartão 115/400",
+      "Cartão de retificação"
+    ],
+    answer: "Cartão 115/400",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual componente envia um sinal elétrico para as servo-válvulas eletro-hidráulicas?",
+    options: [
+      "Unidade de controle das aletas",
+      "Painel indicador",
+      "Giroscópio",
+      "Odômetro"
+    ],
+    answer: "Unidade de controle das aletas",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "O que atua em comum no sistema?",
+    options: [
+      "Transmissor de ângulo e bombas",
+      "Unidade de controle e painel de controle",
+      "Aletas e giroscópio",
+      "Tanque de óleo e acumulador"
+    ],
+    answer: "Unidade de controle e painel de controle",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Onde fica montado o transmissor de reajuste de ângulo?",
+    options: [
+      "Na praça de máquinas principal",
+      "CAV 37/38, Cadeira BE/BB",
+      "No mastro principal",
+      "No painel do passadiço"
+    ],
+    answer: "CAV 37/38, Cadeira BE/BB",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a alimentação do linvar do odômetro?",
+    options: [
+      "115V / 400 Hz",
+      "24V / 60 Hz",
+      "20V / 60 Hz",
+      "50V / 60 Hz"
+    ],
+    answer: "20V / 60 Hz",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual é a faixa de angularidade máxima a 30 nós?",
+    options: [
+      "12º a 15º",
+      "18º a 20º",
+      "25º a 30º",
+      "45º"
+    ],
+    answer: "12º a 15º",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual é a operação utilizada em situação de guerra (NBQR)?",
+    options: [
+      "Automática total",
+      "Centralização automática",
+      "Hand Roll, Jogo Forçado (Manual)",
+      "Desligamento de emergência"
+    ],
+    answer: "Hand Roll, Jogo Forçado (Manual)",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual ação obtém o mesmo efeito de levar automaticamente a operação?",
+    options: [
+      "Ligar bombas reservas",
+      "Chave na posição Desligada",
+      "Acionar o alarme",
+      "Resetar a U.C.E."
+    ],
+    answer: "Chave na posição Desligada",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quantos graus as aletas formam com o plano horizontal?",
+    options: [
+      "30º",
+      "45º em relação ao plano horizontal",
+      "90º",
+      "15º"
+    ],
+    answer: "45º em relação ao plano horizontal",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Em caso de falha do linvar do odômetro, como o operador pode introduzir a velocidade no sistema?",
+    options: [
+      "Através de intervenção mecânica nas aletas",
+      "Digitando no terminal do C.C.M.",
+      "Através da chave no painel Vosper a 40 nós",
+      "O sistema não permite introdução manual"
+    ],
+    answer: "Através da chave no painel Vosper a 40 nós",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual válvula é responsável por manter a pressão ideal?",
+    options: [
+      "Válvula Moog",
+      "Válvula de descompressão e escape",
+      "Válvula direcional",
+      "Válvula de retenção"
+    ],
+    answer: "Válvula de descompressão e escape",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "O que se deve fazer quando encontrar vazamento no sistema?",
+    options: [
+      "Isolar a aleta correspondente",
+      "Reduzir a pressão pela metade",
+      "Desligar o sistema",
+      "Ligar a bomba de reserva"
+    ],
+    answer: "Desligar o sistema",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a função (escala de tensão) do linvar proporcional da chave elétrica?",
+    options: [
+      "0 a 40 Volts",
+      "10 a 50 Volts",
+      "24 a 115 Volts",
+      "-20 a +20 Volts"
+    ],
+    answer: "0 a 40 Volts",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Em qual posição a chave deve estar para dar partida local?",
+    options: [
+      "Automático",
+      "Manual",
+      "Remoto",
+      "Isolado"
+    ],
+    answer: "Remoto",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Por quantas unidades principais o sistema é composto?",
+    options: [
+      "3 unidades",
+      "4 unidades",
+      "5 unidades",
+      "7 unidades"
+    ],
+    answer: "5 unidades",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a duração, em segundos, da parada?",
+    options: [
+      "5 segundos",
+      "7 segundos",
+      "9 segundos",
+      "12 segundos"
+    ],
+    answer: "9 segundos",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a alimentação das lâmpadas indicadoras?",
+    options: [
+      "24 VCC",
+      "12 VCC",
+      "50 VCC",
+      "115 VCA"
+    ],
+    answer: "50 VCC",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "O que acontece \"se der ruim\" (avaria parcial)?",
+    options: [
+      "O navio aderna imediatamente",
+      "Inevitável redução na eficiência do sistema",
+      "As aletas são ejetadas",
+      "Ocorre o travamento total na posição de mergulho"
+    ],
+    answer: "Inevitável redução na eficiência do sistema",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a alimentação dos indicadores?",
+    options: [
+      "12 Volts",
+      "24 Volts",
+      "50 Volts",
+      "115 Volts"
+    ],
+    answer: "24 Volts",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a alimentação de todas as lâmpadas?",
+    options: [
+      "24 V",
+      "50 V",
+      "115 V",
+      "220 V"
+    ],
+    answer: "50 V",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a alimentação dos motores e de onde provém?",
+    options: [
+      "440V, 60Hz trifásico - CDG 234 e 239",
+      "115V, 400Hz bifásico - C.C.M.",
+      "440V, 50Hz trifásico - Painel Vosper",
+      "24V CC - Baterias principais"
+    ],
+    answer: "440V, 60Hz trifásico - CDG 234 e 239",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "O que é considerado o \"cérebro\" do sistema?",
+    options: [
+      "O giroscópio",
+      "U.C.E. (Unidade de Controle dos Estabilizadores)",
+      "Painel Vosper",
+      "Válvula Moog"
+    ],
+    answer: "U.C.E. (Unidade de Controle dos Estabilizadores)",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "O que atua como sensor do jogo do navio?",
+    options: [
+      "Transmissor de ângulo",
+      "Odômetro",
+      "Unidade Giroscópica",
+      "Linvar"
+    ],
+    answer: "Unidade Giroscópica",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Onde fica localizado precisamente o painel de controle dos cartões?",
+    options: [
+      "No passadiço",
+      "Na praça de máquinas",
+      "Nos conversores",
+      "No C.C.M."
+    ],
+    answer: "Na praça de máquinas",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Após solucionada a avaria, qual procedimento realizar?",
+    options: [
+      "Desligar bombas",
+      "Trocar o óleo",
+      "Rearme",
+      "Calibração das aletas"
+    ],
+    answer: "Rearme",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Durante a partida, a válvula é energizada após quantos segundos?",
+    options: [
+      "5 segundos",
+      "7 segundos",
+      "9 segundos",
+      "12 segundos"
+    ],
+    answer: "9 segundos",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual o propósito dos estabilizadores?",
+    options: [
+      "Reduzir o jogo do navio",
+      "Aumentar a velocidade do navio",
+      "Controlar a direção do navio",
+      "Estabilizar a temperatura do motor"
+    ],
+    answer: "Aumentar a velocidade do navio",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais alimentações são fornecidas pelo navio e qual é exclusiva do sistema?",
+    options: [
+      "12V, 24V, 115/60; 440V é única do sistema",
+      "24V, 50V; 115/400 e 440V são únicas do sistema",
+      "24V, 50V, 115/60, 440V; 115/400 é a única que não é do navio",
+      "Apenas 440V é do navio; o resto é gerado pelo sistema"
+    ],
+    answer: "12V, 24V, 115/60; 440V é única do sistema",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Descreva as partes componentes dos estabilizadores comuns ao controle das aletas:",
+    options: [
+      "Giroscópio e Bombas",
+      "Painel de controle e U.C.E.",
+      "Acumulador e Válvula Moog",
+      "Conversores e Transmissores"
+    ],
+    answer: "Acumulador e Válvula Moog",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual é o propósito do sistema de estabilização das Fragatas Classe Niterói?",
+    options: [
+      "Reduzir o peso do navio para economizar combustível.",
+      "Reduzir o jogo do navio, a fim de prover uma plataforma estável para o armamento e operações com helicóptero.",
+      "Auxiliar na propulsão e direção em águas rasas.",
+      "Fornecer energia hidráulica de emergência para as bombas principais."
+    ],
+    answer: "Reduzir o jogo do navio, a fim de prover uma plataforma estável para o armamento e operações com helicóptero.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais são as alimentações fornecidas pelo navio ao sistema de controles dos estabilizadores?",
+    options: [
+      "24V CC, 50V CC, 115V 60Hz e 440V 60Hz Trifásico.",
+      "12V CC, 24V CC, 115V 400Hz e 220V 60Hz.",
+      "50V CC, 115V 400Hz, 220V Trifásico e 440V 50Hz.",
+      "Apenas 440V 60Hz Trifásico e 115V 60Hz."
+    ],
+    answer: "24V CC, 50V CC, 115V 60Hz e 440V 60Hz Trifásico.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "No sistema de estabilização das Fragatas MK-10, quais partes componentes são comuns ao controle das Aletas?",
+    options: [
+      "Acumulador hidráulico e Bomba de escorva.",
+      "Unidade de giroscópio e Válvula de descompressão.",
+      "Painel de controle do Sistema e Unidade de controle dos estabilizadores (U.C.E.).",
+      "Painel Vosper e Painel Starter."
+    ],
+    answer: "Painel de controle do Sistema e Unidade de controle dos estabilizadores (U.C.E.).",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Como é constituído o transmissor combinado de reajuste e ângulo e quais as suas funções?",
+    options: [
+      "Por dois potenciômetros; serve para medir a velocidade e o ângulo de inclinação da proa.",
+      "Por um sincro transmissor e um sincro linvar; envia ao painel de controle sinal para indicação de ângulo da aleta e fornece sinal de resposta para controle do sistema.",
+      "Por um giroscópio e um acelerômetro; calcula a velocidade do vento e o jogo do navio.",
+      "Por duas válvulas Moog; direcionam o óleo para o cilindro de reajuste."
+    ],
+    answer: "Por um sincro transmissor e um sincro linvar; envia ao painel de controle sinal para indicação de ângulo da aleta e fornece sinal de resposta para controle do sistema.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Possibilitar o controle remoto e fornecer monitoragem do funcionamento do sistema são características de que unidade e qual a sua localização?",
+    options: [
+      "Centro de informações de combate (CIC).",
+      "Painel de controle do sistema (painel da Vosper) e Centro de controle das máquinas (C.C.M).",
+      ". B) Painel de controle do sistema (painel da Vosper) e Centro de controle das máquinas (C.C.M). C) Unidade de controle das aletas (U.C.E.), no passadiço.",
+      "Transmissor de ângulo, localizado no compartimento da máquina do leme."
+    ],
+    answer: "Painel de controle do sistema (painel da Vosper) e Centro de controle das máquinas (C.C.M).",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Onde tem origem a alimentação do sincro cx1 e quais componentes são utilizados na sua geração?",
+    options: [
+      "No transformador principal do navio.",
+      "No painel de controle Vosper, usando retificadores.",
+      "Em um oscilador no painel de cartões; utiliza um oscilador, um amplificador de potência e um transformador.",
+      "Na bateria de emergência, usando um inversor de 400Hz."
+    ],
+    answer: "Em um oscilador no painel de cartões; utiliza um oscilador, um amplificador de potência e um transformador.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Onde se localizam as unidades de controle das aletas a bordo, qual a sua alimentação e o valor dos sinais de controle para as servo-válvulas?",
+    options: [
+      "Na praça de máquinas (Bravo 2), uma a \"BE\" e outra a \"BB\"; alimentação 115V 60Hz; sinal de 20V D.C 250 mA.",
+      "No C.C.M; alimentação de 440V 60Hz; sinal de 50V D.C 100 mA.",
+      "No passadiço; alimentação de 24V D.C; sinal de 12V D.C 500 mA.",
+      "No compartimento do giroscópio; alimentação de 115V 400Hz; sinal de 20V A.C."
+    ],
+    answer: "Na praça de máquinas (Bravo 2), uma a \"BE\" e outra a \"BB\"; alimentação 115V 60Hz; sinal de 20V D.C 250 mA.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais os sinais de controle aplicados ao amplificador de adição e qual a origem deles?",
+    options: [
+      "Pressão do óleo e temperatura; origem nos sensores do tanque.",
+      "Aceleração, velocidade, ângulo de jogo e banda do navio; origem na Unidade do giroscópio e unidade de banda.",
+      "Posição das aletas e rotação da bomba; origem nos transmissores de ângulo.",
+      "Velocidade do vento e corrente marítima; origem no anemômetro e odômetro."
+    ],
+    answer: "Aceleração, velocidade, ângulo de jogo e banda do navio; origem na Unidade do giroscópio e unidade de banda.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Como é produzido um jogo artificial no navio no sistema de estabilizadores?",
+    options: [
+      "Injetando ar comprimido nos tanques de lastro de um dos bordos.",
+      "Aumentando subitamente a pressão de uma das bombas hidráulicas.",
+      "Passando a chave (S11) para \"Hand Roll\" e operando alternadamente a chave boreste/bombordo, provocando com o movimento das aletas um jogo artificial.",
+      "Desligando o giroscópio e permitindo que as aletas fiquem livres na água."
+    ],
+    answer: "Passando a chave (S11) para \"Hand Roll\" e operando alternadamente a chave boreste/bombordo, provocando com o movimento das aletas um jogo artificial.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Estando o navio com uma banda permanente, como esta é medida e como o sistema estabiliza o navio?",
+    options: [
+      "Por níveis de bolha mecânicos no passadiço, corrigindo pelas válvulas de escape.",
+      "Um pêndulo preso ao rotor de um linvar provoca ângulo entre bobinas gerando sinal elétrico proporcional à banda; em relação à vertical ou banda do navio.",
+      "Pelo odômetro e corrigido girando as aletas sempre 45 graus para baixo.",
+      "Por um sensor a laser que mede a distância até a água."
+    ],
+    answer: "Um pêndulo preso ao rotor de um linvar provoca ângulo entre bobinas gerando sinal elétrico proporcional à banda; em relação à vertical ou banda do navio.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Como é conseguido o movimento torcional dos eixos das aletas e qual a origem do sinal elétrico para controle?",
+    options: [
+      "Por engrenagens mecânicas ligadas ao motor principal; sinal gerado pelo passadiço.",
+      "É obtido por dois cilindros hidráulicos que atuam em um braço de comando do eixo; sinal tem origem na unidade do giroscópio do sistema.",
+      "Por um motor de passo de alta potência; sinal gerado no C.C.M.",
+      "Pelas bombas centrífugas diretamente no eixo; sinal gerado pelo odômetro."
+    ],
+    answer: "É obtido por dois cilindros hidráulicos que atuam em um braço de comando do eixo; sinal tem origem na unidade do giroscópio do sistema.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais são os quatro componentes básicos do sistema hidráulico independente de cada estabilizador?",
+    options: [
+      "Motor elétrico, polias, correias e lubrificador.",
+      "Tanque de óleo hidráulico, Bomba hidráulica, Acumulador hidráulico e Servo-válvula eletro-hidráulica.",
+      "Trocador de calor, filtro de sucção, válvula by-pass e termostato.",
+      "Válvula Moog, cilindro mestre, radiador e manômetro."
+    ],
+    answer: "Tanque de óleo hidráulico, Bomba hidráulica, Acumulador hidráulico e Servo-válvula eletro-hidráulica.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Se as aletas estiverem travadas mecanicamente, como as bombas são impedidas de funcionar e qual a indicação?",
+    options: [
+      "Um sensor de pressão desarma o disjuntor principal, soando uma sirene.",
+      "Uma micro-chave abre o circuito de partida da bomba e outra completa o circuito de uma lâmpada no painel de controle, indicando aleta travada.",
+      "O acoplamento mecânico se rompe (pino fusível) e um alarme visual pisca no C.C.M.",
+      "O fluxo de óleo é bloqueado fisicamente, desarmando o relé térmico."
+    ],
+    answer: "Uma micro-chave abre o circuito de partida da bomba e outra completa o circuito de uma lâmpada no painel de controle, indicando aleta travada.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais as funções da válvula de descompressão e escape no sistema hidráulico?",
+    options: [
+      "Controlar a temperatura do óleo e liberar vapores do tanque.",
+      "Filtrar impurezas da linha de alta pressão e retornar óleo limpo.",
+      "Controlar a pressão quando as aletas estão funcionando e permitir que a bomba funcione com pequena carga quando não há demanda de pressão.",
+      "Direcionar o óleo para a servo-válvula e bloquear o retorno para o acumulador."
+    ],
+    answer: "Controlar a pressão quando as aletas estão funcionando e permitir que a bomba funcione com pequena carga quando não há demanda de pressão.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais as precauções hidráulicas que o operador deve ter com os estabilizadores?",
+    options: [
+      "Ao encontrar vazamento parar o sistema imediatamente e em nenhuma hipótese trabalhar no sistema sob pressão.",
+      "Completar o óleo com o sistema em funcionamento máximo.",
+      "Limpar os filtros apenas quando o alarme de alta temperatura tocar.",
+      "Manter o sistema operando sob pressão constante mesmo com vazamentos leves para não perder estabilidade."
+    ],
+    answer: "Ao encontrar vazamento parar o sistema imediatamente e em nenhuma hipótese trabalhar no sistema sob pressão.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Durante a partida, ao ligar a chave controle, quais alimentações ficam disponíveis para a operação?",
+    options: [
+      "Apenas 440V 60Hz Trifásico.",
+      "50V D.C e 115V 400Hz.",
+      "24V D.C e 115V 60Hz.",
+      "12V D.C e 220V 60Hz."
+    ],
+    answer: "24V D.C e 115V 60Hz.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Na unidade de giroscópio, existem dois sincros linvares (Cx1 e Cx2). Qual a função de cada um?",
+    options: [
+      "Cx1 mede temperatura e Cx2 mede pressão.",
+      "Sincro Cx1 produz sinais proporcionais ao ângulo e aceleração de jogo; Sincro Cx2 produz sinal proporcional à velocidade de jogo do navio.",
+      "Ambos produzem sinais redundantes para controle exclusivo da bomba de boreste.",
+      "Cx1 controla a válvula de escape e Cx2 controla a válvula Moog."
+    ],
+    answer: "Sincro Cx1 produz sinais proporcionais ao ângulo e aceleração de jogo; Sincro Cx2 produz sinal proporcional à velocidade de jogo do navio.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Se o nível de óleo no tanque cair para determinado valor, quais relés operam e o que ocorre no painel?",
+    options: [
+      "RL-1 e RL-2; o sistema desliga imediatamente sem alarme sonoro.",
+      "RL-8 e RL-9; a luz de \"óleo baixo\" acende na cor verde.",
+      "RL-6, RL-10 e RL-11; a lâmpada de alarme (LP1) começa a piscar e o alarme sonoro atua.",
+      "Apenas RL-7; a lâmpada de trava da aleta é acesa."
+    ],
+    answer: "RL-6, RL-10 e RL-11; a lâmpada de alarme (LP1) começa a piscar e o alarme sonoro atua.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Para evitar instabilidade e sobrecarga, compensa-se a velocidade do navio limitando o ângulo das aletas. Quais são os ângulos para as velocidades de 10-20 nós, 20-25 nós e 25-30 nós, respectivamente?",
+    options: [
+      "30 graus (ângulo máximo); De 18 a 20 graus; De 12 a 15 graus.",
+      "45 graus; 30 graus; 15 graus.",
+      "15 graus; 25 graus; 35 graus.",
+      "20 graus; 15 graus; 10 graus."
+    ],
+    answer: "30 graus (ângulo máximo); De 18 a 20 graus; De 12 a 15 graus.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Após um alarme, como o operador deve proceder para rearmar o sistema?",
+    options: [
+      "Pressionar o botão vermelho de emergência e resetar os disjuntores no C.C.M.",
+      "Completar o nível de óleo nos tanques e calçar o botão \"Rearme de Alarmes\" no painel de controle.",
+      "Desligar e ligar a chave principal aguardando 9 segundos.",
+      "Isolar o tanque de óleo e transferir o controle para modo manual."
+    ],
+    answer: "Completar o nível de óleo nos tanques e calçar o botão \"Rearme de Alarmes\" no painel de controle.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Durante um alarme de baixo nível, ao se calcar o botão \"Falha Aceita (BB1)\", o que ocorre com os relés e a lâmpada (LP1)?",
+    options: [
+      "Todos os relés são energizados e a lâmpada apaga.",
+      "RL-7 opera e RL-10 e RL-11 são desenergizados; a lâmpada para de piscar e permanece acesa.",
+      "Os relés são travados e a lâmpada começa a piscar mais rápido.",
+      "RL-7 desenergiza, liberando a partida, e a lâmpada muda de cor."
+    ],
+    answer: "RL-7 opera e RL-10 e RL-11 são desenergizados; a lâmpada para de piscar e permanece acesa.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a função do acumulador hidráulico no sistema dos estabilizadores?",
+    options: [
+      "Armazenar óleo frio para resfriar a bomba.",
+      "Filtrar partículas metálicas do fluido hidráulico.",
+      "Fornecer um reforço de pressão ao sistema caso o débito exigido pelos cilindros seja maior que a capacidade da bomba.",
+      "Manter o nível do tanque constante compensando a evaporação."
+    ],
+    answer: "Fornecer um reforço de pressão ao sistema caso o débito exigido pelos cilindros seja maior que a capacidade da bomba.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Onde o sinal para compensação da velocidade do navio pode ser introduzido e de que forma?",
+    options: [
+      "Apenas no C.C.M de forma automática.",
+      "Linvar do odômetro (automaticamente), linvar no painel de controle (manualmente) e potenciômetro na unidade de controle (manualmente).",
+      "Via rádio com o controle de máquinas, totalmente manual.",
+      "No giroscópio (automaticamente) e na válvula de escape (manualmente)."
+    ],
+    answer: "Linvar do odômetro (automaticamente), linvar no painel de controle (manualmente) e potenciômetro na unidade de controle (manualmente).",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "A unidade considerada o \"cérebro\" do sistema (U.C.E.) integra quais componentes básicos?",
+    options: [
+      "Bombas, Válvulas Moog, Cilindros e Acumulador.",
+      "Unidade do giroscópio, Unidade de banda, Unidade de compensação de velocidade e Unidade de jogo manual.",
+      "Painel Vosper, Oscilador 115/400, Relés e Transformadores.",
+      "Transmissor combinado, Linvar do odômetro, C.C.M e Starter."
+    ],
+    answer: "Unidade do giroscópio, Unidade de banda, Unidade de compensação de velocidade e Unidade de jogo manual.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Quais as funções da válvula solenóide direcional durante a partida e parada do sistema?",
+    options: [
+      "Na partida, permite que o motor atinja plena velocidade antes de receber carga. Na parada, propicia rápido decréscimo da pressão para o travamento hidráulico dos cilindros.",
+      "Na partida ela fornece 86 bar diretos. Na parada ela drena todo o óleo para o porão.",
+      "Na partida acende a luz indicadora. Na parada ativa o alarme sonoro.",
+      "Controla a temperatura do óleo na partida e resfria a bomba na parada."
+    ],
+    answer: "Na partida, permite que o motor atinja plena velocidade antes de receber carga. Na parada, propicia rápido decréscimo da pressão para o travamento hidráulico dos cilindros.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Na partida, ao levar momentaneamente as chaves das bombas \"BE\" e \"BB\" para partida, qual a duração do ciclo indicado pela lâmpada e de onde pode ser dada a partida?",
+    options: [
+      "5 segundos; apenas do painel Vosper.",
+      "9 segundos; do painel de controle no C.C.M e painel de starter na praça de máquinas (B2).",
+      "7 segundos; do passadiço e do giroscópio.",
+      "12 segundos; diretamente nas aletas."
+    ],
+    answer: "9 segundos; do painel de controle no C.C.M e painel de starter na praça de máquinas (B2).",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Que unidade permite trazer uma aleta parada com avaria para a posição a meio (zero grau) e quais as formas de operação desta unidade?",
+    options: [
+      "Cilindro mestre; operado apenas com chave especial.",
+      "Unidade de centralização das aletas; operada manualmente com pressão hidráulica ou sem pressão hidráulica.",
+      "Acumulador de emergência; automático via bateria.",
+      "Válvula Moog reserva; operada pelo C.C.M."
+    ],
+    answer: "Unidade de centralização das aletas; operada manualmente com pressão hidráulica ou sem pressão hidráulica.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Após as verificações, quais os procedimentos do operador para a partida normal do sistema?",
+    options: [
+      "Ligar o giroscópio e aguardar 30 minutos.",
+      "Acionar as válvulas de descompressão manualmente e ligar o disjuntor principal.",
+      "Colocar a chave controle do estabilizador na posição liga e levar momentaneamente as chaves de partida das bombas de BE e BB para a posição partida.",
+      "Pressionar \"Rearme de Alarmes\" e colocar a chave em \"Hand Roll\"."
+    ],
+    answer: "Colocar a chave controle do estabilizador na posição liga e levar momentaneamente as chaves de partida das bombas de BE e BB para a posição partida.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Qual a função das servo-válvulas eletro-hidráulicas e qual outro nome recebem a bordo?",
+    options: [
+      "Controlar a pressão do ar comprimido; chamadas de Válvulas de purga.",
+      "Regulam o fluxo de óleo para os cilindros hidráulicos; recebem o nome de Válvulas Moogs.",
+      "Evitar o retorno de óleo ao tanque; chamadas de Válvulas de retenção.",
+      "Filtrar o fluido do acumulador; chamadas de Válvulas reguladoras de fluxo."
+    ],
+    answer: "Regulam o fluxo de óleo para os cilindros hidráulicos; recebem o nome de Válvulas Moogs.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "O sincro \"Cx1\" fornece um sinal proporcional ao jogo do navio que é dividido em dois outros sinais para melhorar a performance. Quais são esses sinais e quais cartões os produzem?",
+    options: [
+      "Sinais de Aceleração e ângulo de jogo do navio; produzidos pelos Cartões diferenciador e integrador.",
+      "Sinais de velocidade e pressão; produzidos pelo cartão oscilador.",
+      "Sinais de tensão e corrente; produzidos pelo amplificador de potência.",
+      "Sinais de banda e torção; produzidos pelo cartão de alarmes."
+    ],
+    answer: "Sinais de Aceleração e ângulo de jogo do navio; produzidos pelos Cartões diferenciador e integrador.",
+    explanation: "Gabarito oficial fornecido."
+  },
+  {
+    question: "Descreva as partes componentes dos estabilizadores comuns ao controle das aletas:",
+    options: [
+      "Giroscópio e Bombas",
+      "Painel de controle e U.C.E.",
+      "Acumulador e Válvula Moog",
+      "Conversores e Transmissores"
+    ],
+    answer: "Painel de controle e U.C.E.",
+    explanation: "Gabarito oficial fornecido."
+  },
 ];
