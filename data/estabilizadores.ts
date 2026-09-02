@@ -933,7 +933,7 @@ export const estabilizadoresQuestions: Question[] = [
       "Nos conversores",
       "No C.C.M."
     ],
-    answer: "Na praça de máquinas",
+    answer: "Nos conversores  ",
     explanation: "Gabarito oficial fornecido."
   },
   {
@@ -955,7 +955,7 @@ export const estabilizadoresQuestions: Question[] = [
       "9 segundos",
       "12 segundos"
     ],
-    answer: "9 segundos",
+    answer: "7 segundos",
     explanation: "Gabarito oficial fornecido."
   },
   {
@@ -966,7 +966,7 @@ export const estabilizadoresQuestions: Question[] = [
       "Controlar a direção do navio",
       "Estabilizar a temperatura do motor"
     ],
-    answer: "Aumentar a velocidade do navio",
+    answer: "Reduzir o jogo do navio",
     explanation: "Gabarito oficial fornecido."
   },
   {
@@ -977,7 +977,7 @@ export const estabilizadoresQuestions: Question[] = [
       "24V, 50V, 115/60, 440V; 115/400 é a única que não é do navio",
       "Apenas 440V é do navio; o resto é gerado pelo sistema"
     ],
-    answer: "12V, 24V, 115/60; 440V é única do sistema",
+    answer: "24V, 50V, 115/60, 440V; 115/400 é a única que não é do navio",
     explanation: "Gabarito oficial fornecido."
   },
   {
@@ -988,7 +988,7 @@ export const estabilizadoresQuestions: Question[] = [
       "Acumulador e Válvula Moog",
       "Conversores e Transmissores"
     ],
-    answer: "Acumulador e Válvula Moog",
+    answer: "Painel de controle e U.C.E.",
     explanation: "Gabarito oficial fornecido."
   },
   {
