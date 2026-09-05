@@ -11,6 +11,7 @@ import { agulhasGiroscopicasQuestions } from "./agulhas_giroscopicas";
 import { redesEthernetQuestions } from "./redes_ethernet";
 import { redesGagauQuestions } from "./redes_gagau";
 import { estabilizadoresQuestions } from "./estabilizadores";
+import { governoP1Questions } from "./governo_p1";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -2091,6 +2092,7 @@ export const quizTitles: Record<string, string> = {
   "manutencao-dos-sistemas-de-odometros-p2-rapidas": "ODÔMETRO P2 RÁPIDAS",
   "redes-ethernet": "Redes de Ethernet",
   "redes-gagau": "REDES GAGAU",
+  "governo-p1": "GOVERNO P1",
 };
 
 // Quiz de Eletrônica Digital II
@@ -3149,5 +3151,6 @@ quizzes["redes-ethernet"] = redesEthernetQuestions;
 quizzes["redes-gagau"] = redesGagauQuestions;
 quizzes["giro-p2"] = giroP2Questions;
 quizzes["estabilizadores"] = estabilizadoresQuestions;
+quizzes["governo-p1"] = governoP1Questions;
 
 export const questions: Question[] = quizzes.telefonia;
