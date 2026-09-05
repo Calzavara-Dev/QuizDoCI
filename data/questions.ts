@@ -12,6 +12,7 @@ import { redesEthernetQuestions } from "./redes_ethernet";
 import { redesGagauQuestions } from "./redes_gagau";
 import { estabilizadoresQuestions } from "./estabilizadores";
 import { governoP1Questions } from "./governo_p1";
+import { governoP2Questions } from "./governo_p2";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -2093,6 +2094,7 @@ export const quizTitles: Record<string, string> = {
   "redes-ethernet": "Redes de Ethernet",
   "redes-gagau": "REDES GAGAU",
   "governo-p1": "GOVERNO P1",
+  "governo-p2": "GOVERNO P2",
 };
 
 // Quiz de Eletrônica Digital II
@@ -3152,5 +3154,6 @@ quizzes["redes-gagau"] = redesGagauQuestions;
 quizzes["giro-p2"] = giroP2Questions;
 quizzes["estabilizadores"] = estabilizadoresQuestions;
 quizzes["governo-p1"] = governoP1Questions;
+quizzes["governo-p2"] = governoP2Questions;
 
 export const questions: Question[] = quizzes.telefonia;
