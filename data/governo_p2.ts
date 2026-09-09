@@ -53,7 +53,7 @@ export const governoP2Questions: Question[] = [
       "O eixo dos linvares M1 e M2",
       "O relê RL15 do painel traseiro"
     ],
-    "answer": "O eixo dos linvares",
+    "answer": "O eixo dos linvares M1 e M2",
     "explanation": "O manche gira mecanicamente 'O eixo dos linvares M1 e M2'. As 'solenoides direcionais' ficam na máquina do leme, acionadas eletricamente. 'Relês' e 'Chaves S2 do PCB' são comandados por sinais elétricos ou componentes automatizados."
   },
   {
@@ -75,7 +75,7 @@ export const governoP2Questions: Question[] = [
       "A Fonte Estabilizada (PSU)",
       "O Retificador Sensor de Fase (PSR)"
     ],
-    "answer": "Retificador Sensor de Fase (PSR)",
+    "answer": "O Retificador Sensor de Fase (PSR)",
     "explanation": "O 'Retificador Sensor de Fase (PSR)' converte os 400Hz alternados em CC. O 'Amplificador Buffer' apenas isola o sinal na VCS 777. A 'Fonte Estabilizada' provê as tensões de serviço das placas (+12V/-12V)."
   },
   {
@@ -108,7 +108,7 @@ export const governoP2Questions: Question[] = [
       "Pelo atuador pneumático da Unidade RAS.",
       "Por fricção induzida pelo Amplificador Somador."
     ],
-    "answer": "Por duas molas de centralização.",
+    "answer": "Por duas molas mecânicas de centralização.",
     "explanation": "A centralização no modo molas é mecânica, feita por 'duas molas'. A 'solenóide Retém Auto' apenas engaja a tecla no painel frontal. A 'Unidade RAS' e o 'Amplificador Somador' são componentes elétricos sem ação física sobre o eixo do manche."
   },
   {
@@ -119,7 +119,7 @@ export const governoP2Questions: Question[] = [
       "O limite do leme é cortado a 15 graus pelo PCB 7.",
       "A unidade RAS assume o controle de boreste."
     ],
-    "answer": "O manche não retorna a meio após receber deflexão (fica travado).",
+    "answer": "O manche não retorna a meio após receber deflexão (opera por catraca).",
     "explanation": "Na Posição 1, atua o freio de catraca e o manche fica onde for deixado. A Posição 2 faria o manche 'retornar ao centro por molas'. O 'limite do leme' (PCB 7) é configurado apenas no Autopiloto (VCS 777)."
   },
   {
@@ -130,7 +130,7 @@ export const governoP2Questions: Question[] = [
       "Injeta o sinal do odômetro diretamente nos Linvares M1 e M2.",
       "Aumenta o ganho de avanço de fase do Integrador no PCB 47."
     ],
-    "answer": "Desloca o centro do manche em até um máximo de 10 graus para BB ou BE.",
+    "answer": "Desloca o centro elétrico do manche em até um máximo de 10 graus para BB ou BE.",
     "explanation": "O botão mecânico desloca o ponto zero em até '10 graus' para compensar ventos constantes. O 'Odômetro' e o 'Avanço de fase no PCB 47' são processados eletronicamente na Unidade de Governo Automático (VCS 777)."
   },
   {
@@ -174,7 +174,7 @@ export const governoP2Questions: Question[] = [
       "Os Transistores Q6 e Q7 da PSU.",
       "O Capacitor C1 e o Choke L1."
     ],
-    "answer": "Capacitor C1 e Choke L1",
+    "answer": "O Capacitor C1 e o Choke L1.",
     "explanation": "O filtro passa-baixa que amacia o sinal retificado é composto pelo 'Capacitor C1 e Choke L1'. Os 'Diodos Zener' limitam picos reversos e os transistores 'Q6/Q7' são reguladores de tensão da fonte."
   },
   {
@@ -218,7 +218,7 @@ export const governoP2Questions: Question[] = [
       "De 12V a 24V",
       "São blindados e não ajustáveis."
     ],
-    "answer": "9V a 15V",
+    "answer": "De 9V a 15V",
     "explanation": "Através dos potenciômetros VR1 e VR2, as tensões são ajustáveis de '9V a 15V'. A opção 'não ajustável' é incorreta."
   },
   {
@@ -229,7 +229,7 @@ export const governoP2Questions: Question[] = [
       "Fiação do sinal de demanda com baixa/aberta para o painel à ré ou falha na tensão de 115V 400Hz.",
       "Falta do pulso de 24V no motor das bombas principais."
     ],
-    "answer": "Fiação de sinal com baixa/aberta para o painel à ré ou falha nos 115V 400Hz.",
+    "answer": "Fiação do sinal de demanda com baixa/aberta para o painel à ré ou falha na tensão de 115V 400Hz.",
     "explanation": "O circuito de Falha de Linha (SLF) monitora o 'ripple' do PSR de demanda para alertar fios quebrados/abertos ou queda da energia do Linvar. O 'Sincro M3' tem circuito de alarme próprio (Fora Giro)."
   },
   {
@@ -240,7 +240,7 @@ export const governoP2Questions: Question[] = [
       "Compartimento de alumínio selado e sem ventilação.",
       "Módulo tipo rack removível no console do Passadiço."
     ],
-    "answer": "Compartimento de alumínio selado e sem ventilação",
+    "answer": "Compartimento de alumínio selado e sem ventilação.",
     "explanation": "A Feedback Unit fica fisicamente conectada à madre do leme, montada em um 'Compartimento de alumínio selado e sem ventilação' resistente à umidade e sujeira do porão."
   },
   {
@@ -251,7 +251,7 @@ export const governoP2Questions: Question[] = [
       "Pela medição do volume de óleo transferido entre os cilindros.",
       "Pela leitura do sinal do Sincro M3 via telemetria."
     ],
-    "answer": "Acoplada diretamente à barra de ligação (madre) dos lemes através de uma alavanca",
+    "answer": "Acoplada diretamente à barra de ligação (madre) dos lemes através de uma alavanca.",
     "explanation": "A posição é detectada de forma mecânica rígida, 'acoplada à madre do leme' por alavanca. Válvulas, sensores de fluxo e telemetria não são os meios físicos de leitura de feedback direto dos linvares M1/M2."
   },
   {
@@ -438,7 +438,7 @@ export const governoP2Questions: Question[] = [
       "Da Feedback Unit (Sincro M3).",
       "Do Compensador Automático de Mau Tempo."
     ],
-    "answer": "Do odômetro (Log encoder)",
+    "answer": "Do Odômetro (Log encoder).",
     "explanation": "A inércia, calculada pela velocidade do navio para antecipar o contra-leme, vem do 'Odômetro' processada pela PCB 86 do Autopiloto."
   },
   {
@@ -449,7 +449,7 @@ export const governoP2Questions: Question[] = [
       "Aumenta o retardo de ação, deixando o navio navegar mais solto.",
       "Reduz a resistência do avanço, diminuindo o tempo de resposta para injeção de contra-leme."
     ],
-    "answer": "Reduz a resistência do avanço, diminuindo o tempo de resposta para injeção de contra-leme",
+    "answer": "Reduz a resistência do avanço, diminuindo o tempo de resposta para injeção de contra-leme.",
     "explanation": "Se o navio for rápido, tem maior inércia hidrodinâmica; logo, a resistência elétrica cai ('reduz a resistência') para que o piloto injete o contra-leme mais rápido e o navio não 'passe direto' no rumo."
   },
   {
@@ -471,7 +471,7 @@ export const governoP2Questions: Question[] = [
       "A Tolerância de Desvio (Yaw).",
       "A seleção entre os sistemas BB e BE."
     ],
-    "answer": "Tolerância de Desvio (Yaw)",
+    "answer": "A Tolerância de Desvio (Yaw).",
     "explanation": "A 'chave S2' controla a margem de ângulo (yaw) de oscilação permitida antes de acionar o leme, ou seja, a 'Tolerância de Desvio'."
   },
   {
@@ -1010,7 +1010,7 @@ export const governoP2Questions: Question[] = [
       "Sobrecarga de tensão do conversor",
       "Falha de acompanhamento do tacogerador ou giroscópica"
     ],
-    "answer": "Falha de Acompanhamento da Giroscópica",
+    "answer": "Falha de acompanhamento do tacogerador ou giroscópica",
     "explanation": "Quando o sincro desvia mecanicamente/eletricamente mais que 2º da agulha giroscópica-mãe, dispara o alarme de 'Falha de acompanhamento do tacogerador ou giroscópica'."
   },
   {
@@ -1021,7 +1021,7 @@ export const governoP2Questions: Question[] = [
       "Relés termomagnéticos de retardo.",
       "Chaves pneumáticas de fluxo."
     ],
-    "answer": "Transistores PAQ1 a PAQ4 e circuito de diodo retificador PAD2 (nível crítico 0.1V base).",
+    "answer": "Os Transistores PAQ1 a PAQ4 e o circuito de diodo retificador PAD2.",
     "explanation": "A condição rigorosa de engate elétrico ('Permite Auto') é sensoreada pelos 'Transistores PAQ1/PAQ4' em conjunto com diodos de limiar na casa de 0.1V, sem uso de relés de retardo."
   },
   {
@@ -1065,7 +1065,7 @@ export const governoP2Questions: Question[] = [
       "Um eco harmônico vindo dos reatores fluorescentes.",
       "O sinal do radar acoplando nos cabos do leme."
     ],
-    "answer": "É usado como portadora vital de \"vida/falha de linha\"; se o ripple sumir, dispara o alarme SLF.",
+    "answer": "É usado como portadora vital de 'vida/falha de linha'; se o ripple sumir, dispara o alarme SLF.",
     "explanation": "O 'Ripple' não é defeito; o circuito SLF espiona ele ativamente. Se o fio quebrar ('linha aberta'), o ripple de 400Hz retificado cessa, e o SLF grita o alarme (System Line Failure)."
   },
   {
