@@ -4,46 +4,46 @@ export const governoP2Questions: Question[] = [
   {
     "question": "Qual unidade no Passadiço provê a seleção do modo de governo e o controle do modo Principal?",
     "options": [
-      "VCS 773",
-      "VCS 775",
-      "VCS 776",
-      "VCS 777"
+      "VCS 773 (Unidade de Governo por Ângulos)",
+      "VCS 775 (Unidade de Governo Manual)",
+      "VCS 776 (Unidade de Ajuste de Rumo)",
+      "VCS 777 (Unidade de Governo Automático)"
     ],
-    "answer": "VCS 775",
-    "explanation": "A Unidade de Piloto Automático ('VCS 777') armazena o ajuste fino dos ganhos automáticos como o Limite de Leme e a Tolerância de Desvio (Yaw)."
+    "answer": "VCS 775 (Unidade de Governo Manual)",
+    "explanation": "A resposta correta é a VCS 775 (Unidade de Governo Manual), que permite selecionar os modos Auto, Principal ou Ângulos no passadiço. As demais estão incorretas porque: a VCS 773 é apenas para o governo por ângulos (ação direta); a VCS 776 é a Unidade de Ajuste de Rumo usada no modo Automático; e a VCS 777 é o painel de Piloto Automático onde se ajusta yaw e limites de leme."
   },
   {
     "question": "Qual é o formato do controle manual utilizado na VCS 775?",
     "options": [
-      "Joystick analógico",
-      "Botões rotativos (Dials)",
-      "Volante tradicional",
-      "Manche (timão em formato de guidom de bicicleta)"
+      "Volante tradicional rotativo",
+      "Manche (timão em formato de guidom de bicicleta)",
+      "Teclado digital com setas direcionais",
+      "Alavanca de ação direta (tipo joystick)"
     ],
     "answer": "Manche (timão em formato de guidom de bicicleta)",
-    "explanation": "A alternativa correta é o 'Manche (tipo guidom)'. 'Botões rotativos' (Dials) são usados na VCS 776 (Unidade de Ajuste de Rumo). 'Volantes tradicionais' e 'Joysticks' não são usados na VCS 775."
+    "explanation": "A resposta correta é o Manche (tipo guidom). As demais estão incorretas porque: 'Volantes tradicionais' e 'Joysticks' não são os atuadores da VCS 775; as alavancas de ação direta pertencem à VCS 773 (Governo por Ângulos), e teclados digitais não são usados neste sistema analógico."
   },
   {
     "question": "Cada canal duplex de BB e BE na VCS 775 contém quais módulos eletrônicos?",
     "options": [
-      "Transistor Q6, Capacitor C1 e Choke L1",
+      "Amplificador Somador, PCB 32 (Heat Sink) e Circuito SLF",
       "Linvar, Retificador Sensor de Fase (PSR) e Fonte de Alimentação (PSU)",
       "Sincro M3, Amplificador Buffer e Odômetro",
-      "Relês RL15, Triacs e Diodos Zener"
+      "Unidade RAS, Transistores PAQ1/PAQ4 e Chave S1"
     ],
     "answer": "Linvar, Retificador Sensor de Fase (PSR) e Fonte de Alimentação (PSU)",
-    "explanation": "A resposta correta é 'Linvar, PSR e PSU'. A opção com 'Sincro M3 e Odômetro' é incorreta porque alimentam a VCS 777 e indicadores. 'Triacs' pertencem ao Heat Sink no painel a ré."
+    "explanation": "A resposta correta é Linvar, PSR e PSU. As demais opções misturam componentes de outras partes: Amplificador Somador e Heat Sink ficam no painel à ré; Sincro M3 e Odômetro operam junto à VCS 777 e indicadores; e a Unidade RAS é para reabastecimento no mar."
   },
   {
     "question": "Qual é a tensão recebida que alimenta os circuitos primários da VCS 775?",
     "options": [
-      "12V CC",
-      "24Vcc",
+      "115V 400Hz",
       "115V 60Hz",
-      "115V 400Hz"
+      "24Vcc",
+      "440V 60Hz"
     ],
     "answer": "115V 400Hz",
-    "explanation": "Como todos os indicadores de mostrador rotativo, o sincro M3 opera com tensão comercial marítima padrão de '115V 60Hz', diferente dos linvares eletrônicos (400Hz)."
+    "explanation": "A resposta correta é 115V 400Hz, utilizada pelos conversores estáticos e linvares de controle. As alternativas estão incorretas porque: 115V 60Hz alimenta indicadores síncronos comerciais e solenoides; 24Vcc é para alarmes; e 440V 60Hz é a força motriz bruta das bombas hidráulicas na máquina do leme."
   },
   {
     "question": "O que o movimento de deflexão do manche aciona mecanicamente na VCS 775?",
@@ -54,84 +54,84 @@ export const governoP2Questions: Question[] = [
       "O relê RL15 do painel traseiro"
     ],
     "answer": "O eixo dos linvares M1 e M2",
-    "explanation": "O manche gira mecanicamente 'O eixo dos linvares M1 e M2'. As 'solenoides direcionais' ficam na máquina do leme, acionadas eletricamente. 'Relês' e 'Chaves S2 do PCB' são comandados por sinais elétricos ou componentes automatizados."
+    "explanation": "A resposta correta é o eixo dos linvares M1 e M2. As alternativas estão erradas porque o manche possui conexão física (engrenagens) apenas com os linvares e chaves de esbarro; não aciona mecanicamente solenoides (que são remotas no CML), relês (que são elétricos) nem o PCB 52 (que é de alarmes)."
   },
   {
     "question": "O sinal 400Hz do linvar tem sua amplitude e polaridade definidas pelo quê?",
     "options": [
-      "Amplitude pela velocidade do navio (odômetro) e polaridade pela chave S4.",
       "Amplitude pelo grau de deflexão e polaridade pela direção de movimento do manche.",
+      "Amplitude pela velocidade do navio (odômetro) e polaridade pela chave S4.",
       "Amplitude fixada pelo Diodo Zener D1 e polaridade pela VCS 776.",
-      "Ambas são fixas pela tensão primária de 115V 400Hz."
+      "Amplitude pelos resistores de shunt RV1/RV2 e polaridade pela Fonte Estabilizada (PSU)."
     ],
     "answer": "Amplitude pelo grau de deflexão e polaridade pela direção de movimento do manche.",
-    "explanation": "O grau de deflexão dita a amplitude e o sentido da deflexão (BB ou BE) dita a fase/polaridade. O 'odômetro' atua no avanço de fase da VCS 777. Os 'Diodos Zener' apenas limitam as sobretensões reversas."
+    "explanation": "A amplitude é proporcional ao ângulo do timão e a polaridade (fase) indica o bordo (BB ou BE). As outras estão erradas porque o odômetro atua apenas no avanço de fase do Piloto Automático; diodos Zener apenas protegem contra sobretensão; e a Fonte Estabilizada apenas fornece +12V/-12V fixos."
   },
   {
     "question": "Quem converte (retifica) a saída de 400Hz do linvar em um sinal CC de demanda de leme?",
     "options": [
+      "O Retificador Sensor de Fase (PSR)",
       "O Amplificador Buffer (PCB 47)",
-      "Os Diodos Zener D1 e D2",
-      "A Fonte Estabilizada (PSU)",
-      "O Retificador Sensor de Fase (PSR)"
+      "Os transistores de potência Q6 e Q7",
+      "O Amplificador Diferencial (PCB 5)"
     ],
     "answer": "O Retificador Sensor de Fase (PSR)",
-    "explanation": "O 'Retificador Sensor de Fase (PSR)' converte os 400Hz alternados em CC. O 'Amplificador Buffer' apenas isola o sinal na VCS 777. A 'Fonte Estabilizada' provê as tensões de serviço das placas (+12V/-12V)."
+    "explanation": "A resposta correta é o PSR. As demais são incorretas pois o Amplificador Buffer serve apenas para isolar o sinal (impedância); transistores Q6/Q7 regulam a tensão da fonte (+12V/-12V); e o Amplificador Diferencial processa o sinal de mau tempo invertido, não retifica os 400Hz primários."
   },
   {
     "question": "Se o manche for movido abruptamente para o esbarro durante o modo Automático, o que ocorre?",
     "options": [
-      "O circuito Heat Sink corta os Triacs e soa o alarme 'Fora Giro'.",
-      "O leme vai para 35 graus e a bomba desliga como segurança.",
       "O modo Automático é cancelado e o sistema reverte para Principal.",
-      "A chave S4 (Compensador de Mau Tempo) é mecanicamente desarmada."
+      "O leme trava em 35 graus e o Heat Sink corta a alimentação das solenoides.",
+      "A unidade VCS 777 aciona o circuito de alarme 'Saiu de Rumo'.",
+      "O sinal do odômetro é ignorado e o avanço de fase é zerado."
     ],
     "answer": "O modo Automático é cancelado e o sistema reverte para Principal.",
-    "explanation": "A manobra abrupta cancela o 'Retém Auto' e reverte para o modo 'Principal'. Não desliga a bomba nem atua no 'Fora Giro', e a 'chave S4' não possui interligação de desarme mecânico pelo manche."
+    "explanation": "A manobra brusca até o esbarro desenergiza a solenóide de \"Retém Auto\", derrubando o modo Automático para Principal como medida de emergência do timoneiro. As outras opções estão incorretas porque não ocorre travamento hidráulico nem corte do Heat Sink, e o alarme 'Saiu de Rumo' soa por desvios na giro, não por ação do manche."
   },
   {
     "question": "Em qual ângulo (em graus) aproximadamente fica localizado esse esbarro mecânico do manche?",
     "options": [
       "10 graus",
-      "25 graus",
+      "20 graus",
       "34.5 graus",
       "45 graus"
     ],
     "answer": "34.5 graus",
-    "explanation": "O esbarro fica aos '34.5 graus', quase no limite mecânico do leme (35 graus). '10 graus' é o máximo do compensador mecânico de mau tempo."
+    "explanation": "O esbarro mecânico que cancela o automático fica aos 34.5 graus (próximo ao hard-over do leme de 35º). As opções de 10º (compensador de mau tempo), 20º e 45º não possuem contato mecânico de desarme do 'Retém Auto'."
   },
   {
     "question": "Como o eixo do manche da VCS 775 é mantido no centro na condição de repouso?",
     "options": [
-      "Pela excitação da solenóide de Retém Auto.",
       "Por duas molas mecânicas de centralização.",
-      "Pelo atuador pneumático da Unidade RAS.",
-      "Por fricção induzida pelo Amplificador Somador."
+      "Pelo atuador eletromecânico da Unidade RAS.",
+      "Por atrito (fricção) ajustado no painel frontal.",
+      "Pela tensão de +12Vcc aplicada aos Linvares M1 e M2."
     ],
     "answer": "Por duas molas mecânicas de centralização.",
-    "explanation": "A centralização no modo molas é mecânica, feita por 'duas molas'. A 'solenóide Retém Auto' apenas engaja a tecla no painel frontal. A 'Unidade RAS' e o 'Amplificador Somador' são componentes elétricos sem ação física sobre o eixo do manche."
+    "explanation": "A resposta correta é o par de molas. As demais opções estão incorretas porque o sistema de centralização não depende de tensão elétrica nem da Unidade RAS (que é para faina no mar), e o atrito fixo contraria a função de \"retorno ao centro\"."
   },
   {
     "question": "O botão de operação no manche possui duas posições (1 e 2). O que ocorre na posição 1?",
     "options": [
-      "O manche retorna ao centro imediatamente por molas.",
+      "O manche retorna ao centro imediatamente por ação de molas.",
       "O manche não retorna a meio após receber deflexão (opera por catraca).",
-      "O limite do leme é cortado a 15 graus pelo PCB 7.",
-      "A unidade RAS assume o controle de boreste."
+      "O limite do leme é configurado para um máximo de 15 graus.",
+      "A unidade comuta o controle principal para a estação de governo à ré."
     ],
     "answer": "O manche não retorna a meio após receber deflexão (opera por catraca).",
-    "explanation": "Na Posição 1, atua o freio de catraca e o manche fica onde for deixado. A Posição 2 faria o manche 'retornar ao centro por molas'. O 'limite do leme' (PCB 7) é configurado apenas no Autopiloto (VCS 777)."
+    "explanation": "Na Posição 1 atua o freio de catraca, mantendo o manche na posição deixada. As outras são incorretas porque a Posição 2 é a que permite o retorno por molas; limites de leme são definidos na VCS 777; e a comutação para a ré é feita pela chave seletora S3, não pelo botão do manche."
   },
   {
     "question": "Qual é o efeito do botão de controle de mau tempo no manche da VCS 775?",
     "options": [
-      "Desliga a alimentação 24Vcc das lâmpadas de alarme.",
+      "Aumenta o ganho do Integrador no PCB 47 para respostas rápidas.",
       "Desloca o centro elétrico do manche em até um máximo de 10 graus para BB ou BE.",
-      "Injeta o sinal do odômetro diretamente nos Linvares M1 e M2.",
-      "Aumenta o ganho de avanço de fase do Integrador no PCB 47."
+      "Ativa as bombas principais secundárias no CML.",
+      "Insere um filtro passa-baixa adicional no Retificador Sensor de Fase."
     ],
     "answer": "Desloca o centro elétrico do manche em até um máximo de 10 graus para BB ou BE.",
-    "explanation": "O botão mecânico desloca o ponto zero em até '10 graus' para compensar ventos constantes. O 'Odômetro' e o 'Avanço de fase no PCB 47' são processados eletronicamente na Unidade de Governo Automático (VCS 777)."
+    "explanation": "O botão mecânico altera o ponto de \"zero elétrico\" em até 10 graus, compensando o abatimento contínuo. As outras opções estão incorretas porque o ganho do integrador e filtros do PSR não são alterados mecanicamente por este botão, e as bombas são ligadas via Starter."
   },
   {
     "question": "Quando a deflexão do manche ultrapassa 33 graus, qual chave atua para retirar o sinal de \"retém auto\"?",
@@ -139,120 +139,120 @@ export const governoP2Questions: Question[] = [
       "Chave S1",
       "Chave S2",
       "Chave S3",
-      "Chave ODOM"
+      "Chave de Tolerância de Desvio (Yaw)"
     ],
     "answer": "Chave S2",
-    "explanation": "Chave S2 operada por uma came do eixo do manche atua aos 33 graus. A alternativa correta é \"Chave S2\"."
+    "explanation": "A microchave interna S2 é acionada pelo came no eixo do manche aos 33°. As demais opções estão incorretas: S1 é a seletora de modos (Auto/Principal/Ângulos); S3 é o seletor BB/BE; e a chave de Yaw fica na VCS 777."
   },
   {
     "question": "No painel da VCS 775, quem comuta a seleção entre sistema Bombordo (BB) ou Boreste (BE)?",
     "options": [
       "Chave S3",
-      "RL18",
-      "VCS 772",
-      "CML"
+      "Relê RL18 do Painel Traseiro",
+      "Chave Seletora VCS 772",
+      "Transistor Q6 da PSU"
     ],
     "answer": "Chave S3",
-    "explanation": "A Chave S3 do painel frontal da VCS 775. A alternativa correta é \"Chave S3\"."
+    "explanation": "A Chave S3 frontal faz a seleção manual entre BB e BE. O relê RL18 realiza a transferência automática em caso de falha; a VCS 772 seleciona estações (Passadiço/CCM); e o Q6 é apenas regulador da fonte -12V."
   },
   {
     "question": "O sinal retificado de CC de saída do PSR é escalado para qual valor por grau de leme demandado?",
     "options": [
       "0,25V por grau",
       "1,0V por grau",
-      "12V CC constantes",
-      "0 a 35V lineares sem escala"
+      "2,5V por grau",
+      "12V constantes por grau"
     ],
     "answer": "0,25V por grau",
-    "explanation": "A tensão de retorno do PSR da placa à ré, lendo os linvares do feedback, é calibrada para '1,0V por grau' de deflexão do leme."
+    "explanation": "O PSR da VCS 775 escala a demanda a 0,25V/grau. As alternativas estão incorretas: 1,0V/grau é o ganho do amplificador somador após processar a demanda e o feedback; 2,5V e 12V não correspondem a ganhos operacionais por grau de leme."
   },
   {
     "question": "Quais componentes realizam o \"amaciamento\" do sinal de saída no PSR?",
     "options": [
-      "Os Resistores Shunt RV1 e RV2.",
+      "O Capacitor C1 e o Choke L1.",
       "Os Diodos Zener D1 e D2.",
-      "Os Transistores Q6 e Q7 da PSU.",
-      "O Capacitor C1 e o Choke L1."
+      "Os Resistores Shunt RV1 e RV2 do Amplificador.",
+      "Os Transistores de Efeito de Campo TR1 e TR2."
     ],
     "answer": "O Capacitor C1 e o Choke L1.",
-    "explanation": "O filtro passa-baixa que amacia o sinal retificado é composto pelo 'Capacitor C1 e Choke L1'. Os 'Diodos Zener' limitam picos reversos e os transistores 'Q6/Q7' são reguladores de tensão da fonte."
+    "explanation": "O filtro LC (Capacitor C1 e Choke L1) remove os picos ('amacia') o sinal retificado. As outras opções estão erradas porque Diodos Zener limitam tensão (ceifam picos excessivos), e transistores (TR1/TR2) fazem o chaveamento/retificação da onda, mas não o seu amaciamento (filtragem passa-baixa)."
   },
   {
     "question": "Na placa de relês, os relês RL15 e RL18 são responsáveis por quê?",
     "options": [
-      "Desarmar os Triacs do Heat Sink no caso de sobrecarga de corrente.",
       "Transferir automaticamente o controle para o bordo oposto se a alimentação de 115V 400Hz falhar.",
-      "Engatar o volante manual em caso de falha das bombas 440V.",
-      "Acionar as lâmpadas de 'Alarme Saiu de Rumo' no painel frontal."
+      "Desarmar os Triacs do Heat Sink no caso de sobrecarga de corrente.",
+      "Engatar mecanicamente as bombas de 440V no compartimento do leme.",
+      "Acionar os alarmes sonoros e luminosos de 'Falha do Odômetro'."
     ],
     "answer": "Transferir automaticamente o controle para o bordo oposto se a alimentação de 115V 400Hz falhar.",
-    "explanation": "Os relês RL15 e RL18 transferem o controle para o sistema redundante em caso de perda dos 115V 400Hz primários. O desarme do Heat Sink é feito pelo 'Triac de proteção CSR4', e o 'Alarme Saiu Rumo' provém do PCB 52."
+    "explanation": "A queda do 115V 400Hz primário desenergiza os relês RL15/RL18, chaveando imediatamente os contatos para o sistema redundante. As outras alternativas estão erradas pois Triacs são desarmados pelo próprio circuito interno do Heat Sink; bombas não engatam por relês da VCS 775; e o alarme do odômetro é gerenciado no PCB 52."
   },
   {
     "question": "Quantos relês ficam alojados na unidade de Painel de Relês da VCS 775?",
     "options": [
-      "Apenas 4",
-      "7",
+      "4",
+      "10",
       "14",
-      "24"
+      "32"
     ],
     "answer": "14",
-    "explanation": "O painel de relês traseiro possui '14' relés. Valores menores (4, 7) referem-se a placas específicas ou transistores."
+    "explanation": "O painel de relês traseiro abriga exatos 14 relês eletromecânicos, usados na lógica de luzes e alarmes. Valores como 4, 10 ou 32 são incorretos (32 refere-se ao número de pinos dos conectores)."
   },
   {
     "question": "Quais tensões de CC estabilizadas são providas pela Fonte Estabilizada da VCS 775?",
     "options": [
       "+5V e -5V",
       "+12V e -12V",
-      "+24V e -24V",
-      "+48V e GND"
+      "+24V e GND",
+      "+30V e -30V"
     ],
     "answer": "+12V e -12V",
-    "explanation": "A PSU regula as tensões em '+12V e -12V' usando os transistores Q6 e Q7 para os CIs analógicos operarem."
+    "explanation": "A PSU da VCS 775 regula internamente as tensões limpas de +12V e -12V para alimentar todos os amplificadores operacionais do sistema analógico. As opções 5V, 24V e 30V não são tensões reguladas primárias desta placa."
   },
   {
     "question": "Na fonte estabilizada, qual a faixa de ajuste possível para essas saídas (+12V/-12V) através de PVR1 e PVR2?",
     "options": [
-      "De 0V a 5V",
+      "De 5V a 10V",
       "De 9V a 15V",
       "De 12V a 24V",
-      "São blindados e não ajustáveis."
+      "São tensões fixas (blindadas), sem ajuste externo."
     ],
     "answer": "De 9V a 15V",
-    "explanation": "Através dos potenciômetros VR1 e VR2, as tensões são ajustáveis de '9V a 15V'. A opção 'não ajustável' é incorreta."
+    "explanation": "Os trimpots VR1 e VR2 permitem calibrar a tensão de saída simétrica na faixa de 9V a 15V. A opção \"tensões fixas\" é incorreta pois a eletrônica analógica requer compensações por desgaste e variação térmica através desses trimpots."
   },
   {
     "question": "O circuito \"Falha de Linha de Sinal\" (SLF) da VCS 775 detecta qual das anomalias abaixo?",
     "options": [
-      "Nível baixo de óleo no tanque de expansão do CML.",
-      "Falha do sinal do Sincro M3 que informa a repetidora VCS 59.",
       "Fiação do sinal de demanda com baixa/aberta para o painel à ré ou falha na tensão de 115V 400Hz.",
-      "Falta do pulso de 24V no motor das bombas principais."
+      "Nível baixo de óleo no tanque principal da máquina do leme.",
+      "Divergência superior a 2 graus entre a agulha giroscópica e a VCS 776.",
+      "Curto-circuito nas solenoides de controle direcional do CML."
     ],
     "answer": "Fiação do sinal de demanda com baixa/aberta para o painel à ré ou falha na tensão de 115V 400Hz.",
-    "explanation": "O circuito de Falha de Linha (SLF) monitora o 'ripple' do PSR de demanda para alertar fios quebrados/abertos ou queda da energia do Linvar. O 'Sincro M3' tem circuito de alarme próprio (Fora Giro)."
+    "explanation": "O circuito SLF monitora a \"saúde\" do cabeamento (presença do ripple de 400Hz). As outras alternativas estão erradas: nível de óleo é alarmado pela VCS 221; divergência da giro soa o alarme 'Fora Giro'; e curto nas solenoides atua a proteção no Heat Sink (PCB 32)."
   },
   {
     "question": "A Unidade de Realimentação (Feedback Unit) é montada em qual tipo de compartimento?",
     "options": [
-      "Gaiola telada com dissipação térmica a óleo.",
-      "Painel montado com as válvulas hidráulicas direcionais.",
       "Compartimento de alumínio selado e sem ventilação.",
-      "Módulo tipo rack removível no console do Passadiço."
+      "Rack ventilado no console do Passadiço.",
+      "Invólucro de aço aberto para dissipação térmica no CCM.",
+      "Painel integrado junto ao Amplificador Somador à ré."
     ],
     "answer": "Compartimento de alumínio selado e sem ventilação.",
-    "explanation": "A Feedback Unit fica fisicamente conectada à madre do leme, montada em um 'Compartimento de alumínio selado e sem ventilação' resistente à umidade e sujeira do porão."
+    "explanation": "A Feedback Unit atua em ambiente agressivo e úmido no porão (máquina do leme), exigindo uma carcaça de alumínio selada e sem ventilação. Racks ventilados ou montagem em console aplicam-se às unidades VCS 775 e 777."
   },
   {
     "question": "Como a Unidade de Feedback percebe o movimento dos lemes?",
     "options": [
-      "Pelo circuito pneumático das válvulas bypass.",
+      "Pela leitura eletrônica do sinal de demanda das solenoides direcionais.",
+      "Pela medição analógica do fluxo de óleo hidráulico nas bombas principais.",
       "Acoplada diretamente à barra de ligação (madre) dos lemes através de uma alavanca.",
-      "Pela medição do volume de óleo transferido entre os cilindros.",
-      "Pela leitura do sinal do Sincro M3 via telemetria."
+      "Através de giroscópios instalados no leme de bombordo."
     ],
     "answer": "Acoplada diretamente à barra de ligação (madre) dos lemes através de uma alavanca.",
-    "explanation": "A posição é detectada de forma mecânica rígida, 'acoplada à madre do leme' por alavanca. Válvulas, sensores de fluxo e telemetria não são os meios físicos de leitura de feedback direto dos linvares M1/M2."
+    "explanation": "A posição do leme deve ser lida mecanicamente (física e não eletronicamente inferida) a partir do próprio eixo (madre do leme) por uma alavanca rígida, garantindo feedback real contra falhas hidráulicas. Medições de fluxo ou sinais elétricos não confirmam movimento físico do leme."
   },
   {
     "question": "Qual a taxa do trem de engrenagem redutora existente dentro da Feedback Unit?",
@@ -263,29 +263,29 @@ export const governoP2Questions: Question[] = [
       "10:1"
     ],
     "answer": "2:1",
-    "explanation": "O trem de engrenagens possui redução de '2:1' entre a alavanca da madre e os componentes eletromecânicos internos (Linvares e Sincro)."
+    "explanation": "A engrenagem converte mecanicamente o ângulo da alavanca numa proporção de 2:1 para girar o eixo dos linvares e sincro no interior da Feedback Unit. As taxas 1:1, 4:1 e 10:1 são incorretas."
   },
   {
     "question": "Quais são os componentes eletromecânicos geradores de sinal presentes dentro da Feedback Unit?",
     "options": [
-      "Duas chaves fim de curso S2 e S3",
       "Dois linvares (M1, M2) e um sincro (M3)",
-      "Duas bombas de vazão variável e um cilindro mestre",
-      "Dois potenciômetros bobinados de 10k ohms"
+      "Quatro chaves de esbarro eletromecânicas e um codificador óptico.",
+      "Dois potenciômetros de fio e um motor de passo.",
+      "Um transmissor sincro (TX1) e dois conversores analógico-digitais."
     ],
     "answer": "Dois linvares (M1, M2) e um sincro (M3)",
-    "explanation": "A Feedback Unit realimenta o sinal com 'Dois linvares (M1, M2)' para fechar a malha com o painel a ré e o piloto, e 'um sincro (M3)' para indicação visual. Não usa 'chaves fim de curso' (S2/S3 são chaves de esbarro do manche) ou 'potenciômetros'."
+    "explanation": "A unidade lê o ângulo mecanicamente e gera sinais analógicos através de dois Linvares para realimentar as malhas BB/BE e um Sincro M3 para as repetidoras de ângulo do leme. Opções com potenciômetros, encoders ópticos ou motores de passo não correspondem à robusta arquitetura sincro/servo empregada."
   },
   {
     "question": "O sincro (M3) na Feedback Unit envia sinal para qual destino?",
     "options": [
-      "Para o amplificador somador.",
-      "Para a solenoide de controle.",
-      "Para os indicadores de Ângulo Real do leme.",
-      "Para o VCS 776 de ajuste de rumo."
+      "Para o amplificador somador (PCB 47).",
+      "Para a solenoide de controle direcional no CML.",
+      "Para os indicadores de Ângulo Real do leme (VCS 59).",
+      "Para o VCS 776 (Unidade de Ajuste de Rumo)."
     ],
-    "answer": "Para os indicadores de Ângulo Real do leme.",
-    "explanation": "Fornece indicação de grau real. A alternativa correta é \"Para os indicadores de Ângulo Real do leme.\"."
+    "answer": "Para os indicadores de Ângulo Real do leme (VCS 59).",
+    "explanation": "A resposta correta é para os indicadores de Ângulo Real do leme (VCS 59). As demais estão erradas porque: o amplificador somador recebe feedback dos linvares M1/M2, e não do Sincro M3; as solenoides recebem 115V comutado e não sinal de sincro; e a VCS 776 recebe o sinal das giroscópicas, não do leme."
   },
   {
     "question": "Qual a alimentação dos Linvares na unidade de feedback?",
@@ -293,10 +293,10 @@ export const governoP2Questions: Question[] = [
       "115V 60Hz",
       "115V 400Hz",
       "24Vcc",
-      "440V"
+      "440V 60Hz trifásico"
     ],
     "answer": "115V 400Hz",
-    "explanation": "Linvares de controle usam 115V 400Hz. A alternativa correta é \"115V 400Hz\"."
+    "explanation": "Os Linvares M1 e M2 (que são conversores estáticos de controle fino) são alimentados com 115V 400Hz. As outras opções estão incorretas pois: 115V 60Hz alimenta o Sincro M3; 24Vcc é restrito a circuitos de alarme; e 440V alimenta apenas os motores das bombas."
   },
   {
     "question": "O sinal retificado de realimentação dos linvares da Feedback Unit é proporcionado em que escala?",
@@ -307,7 +307,7 @@ export const governoP2Questions: Question[] = [
       "5.0V por grau"
     ],
     "answer": "1.0V por grau",
-    "explanation": "1.0V de saída CC por grau de leme. A alternativa correta é \"1.0V por grau\"."
+    "explanation": "O amplificador IC2a converte e amplifica a leitura de feedback para '1.0V por grau' de leme. A opção '0.25V' corresponde ao ganho do sinal de demanda ANTES da amplificação somadora, e 0.5V e 5.0V não são escalas adotadas por este circuito."
   },
   {
     "question": "O sincro M3 recebe qual tensão de referência?",
@@ -315,21 +315,21 @@ export const governoP2Questions: Question[] = [
       "115V 60Hz",
       "115V 400Hz",
       "24Vcc",
-      "440V"
+      "440V 60Hz"
     ],
     "answer": "115V 60Hz",
-    "explanation": "Sincros usam 115V 60Hz. A alternativa correta é \"115V 60Hz\"."
+    "explanation": "O Sincro M3, assim como o motor da indicadora VCS 59, opera na frequência comercial de '115V 60Hz'. As outras são erradas: 115V 400Hz alimenta apenas a parte eletrônica/linvares; 24Vcc é para sinalização e 440V para bombas hidráulicas."
   },
   {
     "question": "O sistema permite a seleção do Governo Automático apenas se a chave no Painel a Ré (CML) e no CCM estiverem em quais posições?",
     "options": [
-      "CML em REMOTE, CCM em Passadiço",
       "CML em LOCAL, CCM em Desligado",
       "CML em OFF, Passadiço em AUTO",
+      "CML em REMOTE, CCM em Passadiço",
       "CCM em Passadiço, Passadiço em MANUAL"
     ],
     "answer": "CML em REMOTE, CCM em Passadiço",
-    "explanation": "O governo automático só engaja se o navio estiver cedido fisicamente ao Passadiço: 'CML em REMOTE' (painel a ré obedece ao remoto) e 'CCM em Passadiço'."
+    "explanation": "O Piloto Automático (no Passadiço) só tem autoridade se o Compartimento da Máquina do Leme (CML) estiver chaveado para 'REMOTE' e o Centro de Controle de Máquinas (CCM) tiver repassado o controle para 'Passadiço'. Quaisquer combinações contendo LOCAL ou OFF invalidam o governo eletrônico remoto."
   },
   {
     "question": "Qual é a diferença máxima exigida entre a proa e o rumo desejado para que o modo Auto engate (sinal Permite Auto)?",
@@ -340,18 +340,18 @@ export const governoP2Questions: Question[] = [
       "Zero absoluto de diferença"
     ],
     "answer": "Menos de 4 ou 5 graus",
-    "explanation": "Para evitar uma guinada brusca e perigosa (solavanco) ao passar para Automático, a diferença entre a proa real e a desejada deve ser 'Menos de 4 ou 5 graus'."
+    "explanation": "O sinal 'Permite Auto' garante segurança ao proibir o engate do piloto automático se o erro for superior a 4º ou 5º, evitando solavancos perigosos no navio. Erros maiores (10º) cortam o sinal de \"Retém Auto\". Zero absoluto e menos de 1 grau são tolerâncias rigorosas demais que impediriam o engate na prática."
   },
   {
     "question": "Qual painel armazena os controles de Limite de Leme e Tolerância de Desvio para o modo Auto?",
     "options": [
-      "VCS 775",
-      "VCS 776",
-      "VCS 777",
-      "VCS 771"
+      "VCS 775 (Governo Manual)",
+      "VCS 776 (Ajuste de Rumo)",
+      "VCS 777 (Governo Automático)",
+      "VCS 771 (Indicador Desejado)"
     ],
-    "answer": "VCS 777",
-    "explanation": "A VCS 777 é a unidade do Autopiloto. A alternativa correta é \"VCS 777\"."
+    "answer": "VCS 777 (Governo Automático)",
+    "explanation": "A VCS 777 é o painel frontal onde ficam os controles finos do piloto (Yaw, Limites de leme, Odômetro). A VCS 775 concentra os comandos manuais diretos; a VCS 776 provê apenas o ajuste do rumo base; e a VCS 771 é meramente um visor de indicação de ângulo."
   },
   {
     "question": "O piloto automático opera com qual lógica de sistema?",
@@ -362,7 +362,7 @@ export const governoP2Questions: Question[] = [
       "Sistema Bang-Bang simples (On-Off)"
     ],
     "answer": "Malha fechada (Closed loop)",
-    "explanation": "O piloto atua comparando constantemente o rumo ordenado com o rumo medido e medindo a ação corretiva aplicada, configurando uma típica 'Malha fechada' (Closed loop)."
+    "explanation": "A lógica do piloto é de 'Malha fechada' (Closed loop), baseada no erro de rumo (demanda) continuamente comparado com o movimento do leme (feedback). As outras opções estão erradas pois a malha aberta não possui feedback, o sistema não usa redes neurais adaptativas (estocásticas) e é proporcional, não sendo apenas um liga/desliga (\"Bang-Bang\")."
   },
   {
     "question": "Onde ocorre o ajuste do rumo desejado (Manual Course Setting)?",
@@ -373,7 +373,7 @@ export const governoP2Questions: Question[] = [
       "VCS 221"
     ],
     "answer": "VCS 776",
-    "explanation": "Na VCS 776 - Unidade de Ajuste de Rumo. A alternativa correta é \"VCS 776\"."
+    "explanation": "A VCS 776 é a Unidade de Ajuste de Rumo, possuindo o seletor circular com marcações para fixar o rumo desejado. A VCS 777 é o painel de parâmetros do piloto; VCS 59 indica a posição do leme e a VCS 221 é um painel de alarmes."
   },
   {
     "question": "O ajuste de rumo manual na VCS 776 é dividido em dois níveis. Quais são?",
@@ -381,21 +381,21 @@ export const governoP2Questions: Question[] = [
       "Passos de 15º e ajuste fino de 0.5º",
       "Passos de 10º e ajuste contínuo sem vernier",
       "Precisão de 10º e tipo vernier com precisão de 1º",
-      "Ajuste único por volante de grande porte"
+      "Ajuste único por volante de grande porte acoplado aos Linvares"
     ],
     "answer": "Precisão de 10º e tipo vernier com precisão de 1º",
-    "explanation": "O painel da VCS 776 usa um dial principal em dezenas ('Precisão de 10º') e um vernier para as unidades ('precisão de 1º')."
+    "explanation": "O ajuste mecânico tem um mostrador de dezenas ('Precisão de 10º') e um anel graduado em unidades (vernier com 'precisão de 1º'). As demais alternativas descrevem resoluções que não correspondem à mecânica do dial instalado na Fragata."
   },
   {
     "question": "Se o erro do tacogerador / giroscópica exceder 2 graus, qual alarme é gerado?",
     "options": [
-      "Falha no Odômetro",
-      "Falta da fase de 400Hz",
+      "Falha no Odômetro (PCB 34)",
+      "Fiação do sinal de demanda com baixa/aberta",
       "Falha de acompanhamento da giro",
-      "Subtensão no Heat Sink"
+      "Subtensão no Heat Sink (PCB 32)"
     ],
     "answer": "Falha de acompanhamento da giro",
-    "explanation": "A diferença excedente de 2 graus gera o alarme de 'Falha de acompanhamento da giro', indicando que o seguidor elétrico desengatou da leitura real do norte."
+    "explanation": "O anel servo da repetidora detecta esse desvio mecânico/elétrico maior que 2 graus como uma 'Falha de acompanhamento da giro'. As outras alternativas estão erradas porque o odômetro, falhas de cabo ou subtensão operam em outros subcircuitos que não o motor-tacogerador da bússola."
   },
   {
     "question": "O circuito de falha \"Fora de Rumo\" aciona o alarme se o erro exceder quais valores, dependendo da Yaw Switch?",
@@ -406,150 +406,150 @@ export const governoP2Questions: Question[] = [
       "35º ou 40º"
     ],
     "answer": "6º ou 10º",
-    "explanation": "O limite é 6 ou 10 graus. A alternativa correta é \"6º ou 10º\"."
+    "explanation": "Dependendo da seleção de margem na chave Yaw (Tolerância de Desvio), o alarme 'Fora de Rumo' aciona em '6º ou 10º'. As opções 2º/4º referem-se a falhas internas de acompanhamento (giro/permite auto) e os valores de 35º referem-se aos limites físicos da madre do leme."
   },
   {
     "question": "Se o sinal linear de erro de rumo passa de 38 graus, o que a chave \"came\" faz para manter o erro na VCS 777?",
     "options": [
-      "Desarma o sistema",
-      "Insere um sinal fixo de 35V 400Hz para simular erro máximo contínuo",
-      "Transfere para controle manual",
-      "Inverte a polaridade"
+      "Desarma o sistema de governo para Principal imediatamente.",
+      "Insere um sinal fixo de 35V 400Hz para simular erro máximo contínuo.",
+      "Aciona a bomba secundária hidráulica no compartimento da máquina.",
+      "Inverte a polaridade do sinal para produzir contra-leme absoluto."
     ],
-    "answer": "Insere um sinal fixo de 35V 400Hz para simular erro máximo contínuo",
-    "explanation": "A came aplica voltagem fixa máxima. A alternativa correta é \"Insere um sinal fixo de 35V 400Hz para simular erro máximo contínuo\"."
+    "answer": "Insere um sinal fixo de 35V 400Hz para simular erro máximo contínuo.",
+    "explanation": "Como a curva do Sincro perde a linearidade após 38º, a chave came atua injetando \"mecanicamente\" uma voltagem fixa de 35V (fundo de escala) para forçar a correção máxima enquanto o erro for grotesco. Ela não desarma o sistema nem liga bombas diretamente."
   },
   {
     "question": "O que o amplificador \"Buffer\" na entrada do erro de rumo faz?",
     "options": [
-      "Aumenta a velocidade do leme",
-      "Evita sobrecarga (carga pesada) no retificador sensor de fase",
-      "Chaveia a energia do CML",
-      "Desativa a agulha giroscópica"
+      "Aumenta o fluxo volumétrico nas bombas direcionais.",
+      "Evita sobrecarga (carga pesada) no retificador sensor de fase (PSR).",
+      "Converte os pulsos digitais do Odômetro em tensão 24Vcc.",
+      "Desativa a agulha giroscópica caso o 'Retém Auto' seja removido."
     ],
-    "answer": "Evita sobrecarga (carga pesada) no retificador sensor de fase",
-    "explanation": "Atua como isolador/buffer elétrico. A alternativa correta é \"Evita sobrecarga (carga pesada) no retificador sensor de fase\"."
+    "answer": "Evita sobrecarga (carga pesada) no retificador sensor de fase (PSR).",
+    "explanation": "A função primordial de um Buffer em eletrônica analógica é casar impedâncias: ele \"lê\" a saída do PSR sem puxar corrente, 'evitando sobrecarga'. As outras opções citam funções incompatíveis com a natureza de um estágio eletrônico passivo de sinal."
   },
   {
     "question": "Onde o avanço de fase (Phase Advance) recebe o sinal informando a inércia atual do navio?",
     "options": [
-      "Da agulha giroscópica.",
+      "Do Amplificador Buffer no PCB 47.",
       "Do Odômetro (Log encoder).",
-      "Da Feedback Unit (Sincro M3).",
-      "Do Compensador Automático de Mau Tempo."
+      "Da Unidade de Feedback (Sincro M3).",
+      "Do Compensador Automático de Mau Tempo (PCB 5)."
     ],
     "answer": "Do Odômetro (Log encoder).",
-    "explanation": "A inércia, calculada pela velocidade do navio para antecipar o contra-leme, vem do 'Odômetro' processada pela PCB 86 do Autopiloto."
+    "explanation": "A inércia de um navio no mar depende ativamente de sua velocidade, que é medida e informada em pulsos pelo 'Odômetro' ao Log Encoder (PCB 34). O Buffer, a Feedback Unit e o Integrador de mau tempo processam ângulos e desvios de ventos, não a velocidade escalar."
   },
   {
     "question": "Qual o efeito de uma velocidade alta (odômetro) no circuito de avanço de fase?",
     "options": [
       "Eleva o ganho do integrador para maior deflexão de leme por grau de erro.",
-      "Desativa temporariamente o piloto automático acima de 25 nós.",
-      "Aumenta o retardo de ação, deixando o navio navegar mais solto.",
+      "Desativa temporariamente o piloto automático por segurança acima de 25 nós.",
+      "Aumenta o retardo de ação, deixando o navio navegar mais livremente em alto mar.",
       "Reduz a resistência do avanço, diminuindo o tempo de resposta para injeção de contra-leme."
     ],
     "answer": "Reduz a resistência do avanço, diminuindo o tempo de resposta para injeção de contra-leme.",
-    "explanation": "Se o navio for rápido, tem maior inércia hidrodinâmica; logo, a resistência elétrica cai ('reduz a resistência') para que o piloto injete o contra-leme mais rápido e o navio não 'passe direto' no rumo."
+    "explanation": "A resposta correta é a redução da resistência no RC do avanço de fase, injetando o contra-leme mais cedo para \"segurar\" o navio rápido. As outras alternativas estão erradas: o ganho base não muda; o piloto não possui trava de \"alta velocidade\", e atrasar a ação faria o navio fazer curvas perigosas."
   },
   {
     "question": "O que a chave S1 da VCS 777 ajusta?",
     "options": [
-      "Iluminação do console",
-      "Tolerância de desvio",
+      "Iluminação do console via Dimmer",
+      "Tolerância de desvio (Yaw)",
       "Limite máximo do leme",
-      "Compensação de mau tempo"
+      "Compensação de mau tempo no Amplificador Somador"
     ],
     "answer": "Limite máximo do leme",
-    "explanation": "S1 ajusta os \"Limites do leme\" do piloto. A alternativa correta é \"Limite máximo do leme\"."
+    "explanation": "O manual indica explicitamente: a Chave S1 da VCS 777 corta eletricamente a demanda máxima (Limite de Leme). A Tolerância de Desvio fica na S2; a compensação de mau tempo na S4 e o Dimmer de iluminação é um controle separado ou reostato de 35V 60Hz."
   },
   {
     "question": "O que a chave S2 da VCS 777 ajusta?",
     "options": [
-      "O Limite de Leme.",
-      "A velocidade de rotação da giroscópica.",
+      "O Limite máximo de Leme aplicável.",
+      "A velocidade de rotação da repetidora giroscópica.",
       "A Tolerância de Desvio (Yaw).",
-      "A seleção entre os sistemas BB e BE."
+      "A seleção entre as alimentações dos sistemas BB e BE."
     ],
     "answer": "A Tolerância de Desvio (Yaw).",
-    "explanation": "A 'chave S2' controla a margem de ângulo (yaw) de oscilação permitida antes de acionar o leme, ou seja, a 'Tolerância de Desvio'."
+    "explanation": "A Chave S2 opera o amplificador de limite de desvio (Yaw), determinando quanto o navio pode guinar antes do piloto reagir. Limites de leme usam a S1 e seleção de BB/BE é feita pelo S3 na VCS 775."
   },
   {
     "question": "Qual a consequência de ajustar a Tolerância de Desvio para a posição \"MIN\"?",
     "options": [
-      "O ganho atinge seu mínimo e o leme só atua com erros acima de 10º.",
-      "A corrente da bomba diminui para economizar energia.",
-      "O Auto desengata.",
+      "O ganho atinge seu mínimo e o leme só atua com erros severos acima de 10º.",
+      "A corrente da bomba diminui para proteger o Heat Sink.",
+      "O modo Piloto Automático desengata preventivamente.",
       "O ganho do amplificador atinge seu nível máximo, reagindo ao mínimo desvio de proa."
     ],
     "answer": "O ganho do amplificador atinge seu nível máximo, reagindo ao mínimo desvio de proa.",
-    "explanation": "Na posição MIN de Yaw, a tolerância ao erro é quase zero, tornando o circuito super sensível (ganho alto) para manter o navio extremamente travado no rumo num mar liso."
+    "explanation": "\"MIN\" significa Mínima Tolerância a erro. Logo, o ganho eletrônico fica no máximo, atuando bombas ao menor desvio angular (½°). As alternativas contrárias (atuar só acima de 10º, proteger o Heat sink ou desengatar) vão contra o propósito lógico desse controle de estabilidade fina."
   },
   {
     "question": "Para cancelar o alarme visual \"Odom Alarme\", caso o odômetro falhe, o que se deve fazer na VCS 777?",
     "options": [
-      "Desligar o disjuntor.",
+      "Reiniciar o disjuntor de 115V 400Hz no painel traseiro.",
       "Passar a chave S3 (Odom) para o ajuste manual correspondente à velocidade atual.",
-      "Acionar o volante de emergência.",
-      "Trocar para modo Principal."
+      "Acionar o engrazamento do volante mecânico de emergência.",
+      "Chavear o relê RL18 para transferência do canal primário."
     ],
     "answer": "Passar a chave S3 (Odom) para o ajuste manual correspondente à velocidade atual.",
-    "explanation": "S3 chaveia a velocidade para entrada manual. A alternativa correta é \"Passar a chave S3 (Odom) para o ajuste manual correspondente à velocidade atual.\"."
+    "explanation": "Se o sensor de velocidade falhar, a 'Chave S3' sai de 'ODOM' para posições de velocidade fixa (10, 20 nós, etc.) enganando a placa e calando o alarme. Reiniciar disjuntores ou engrazar volantes não substitui a injeção do parâmetro de velocidade no Autopiloto."
   },
   {
     "question": "Para evitar solavancos brutais ao passar de Principal para Auto, qual componente retém a compensação de vento/corrente feita na mão?",
     "options": [
-      "Relê Hand/Auto com circuito Integrador de Mau Tempo",
-      "Amplificador Buffer",
-      "Tacogerador M1-G1",
-      "Transistor de Heat Sink"
+      "Relê Hand/Auto com circuito Integrador de Mau Tempo (PCB 5).",
+      "Amplificador Buffer (PCB 47).",
+      "Motor Tacogerador M1-G1.",
+      "Triacs de potência no Heat Sink."
     ],
-    "answer": "Relê Hand/Auto com circuito Integrador de Mau Tempo",
-    "explanation": "O Integrador armazena o \"Trim\" de mau tempo e usa ao iniciar o Auto. A alternativa correta é \"Relê Hand/Auto com circuito Integrador de Mau Tempo\"."
+    "answer": "Relê Hand/Auto com circuito Integrador de Mau Tempo (PCB 5).",
+    "explanation": "A resposta correta é o Integrador de Mau Tempo, que 'memoriza' (carrega capacitores) a média de \"bordo\" que o timoneiro estava dando para contrabalançar o vento, aplicando de imediato no modo Auto. Buffer, Tacogerador e Triacs processam outras grandezas físicas instantâneas, não possuindo \"memória\" de longo prazo (integração)."
   },
   {
     "question": "Quantos cartões de circuito (PCBs) ficam instalados dentro da VCS 777 (sistema completo)?",
     "options": [
-      "4",
-      "9",
-      "12",
-      "18"
+      "Apenas 4 cartões (um para cada malha).",
+      "9 cartões.",
+      "14 cartões.",
+      "32 cartões (devido ao conector de 32 pinos)."
     ],
-    "answer": "9",
-    "explanation": "O módulo do Autopiloto VCS 777 é fisicamente povoado por '9' placas de circuito impresso com conectores de borda (edge connectors)."
+    "answer": "9 cartões.",
+    "explanation": "O chassi da VCS 777 comporta exatos '9' cartões PCB de 5 tipos diferentes (alguns duplicados para BB/BE). As opções de 14 e 32 são armadilhas: 14 é o número de relês no painel e 32 é o número de pinos dos soquetes SKA/SKB."
   },
   {
     "question": "Em qual PCB fica alojado o \"Amplificador Buffer\" e o \"Amplificador Somador\"?",
     "options": [
-      "PCB 7",
-      "PCB 26",
-      "PCB 47",
-      "PCB 62"
+      "PCB 7 (Limites e Yaw)",
+      "PCB 32 (Heat Sink e Proteções)",
+      "PCB 47 (Amplificadores e Integrador Principal)",
+      "PCB 52 (Circuito de Alarmes)"
     ],
-    "answer": "PCB 47",
-    "explanation": "O processamento vital do erro (Buffer, Somador, Avanço de Fase e Integrador) é concentrado na 'PCB 47' do Autopiloto."
+    "answer": "PCB 47 (Amplificadores e Integrador Principal)",
+    "explanation": "O coração do processamento de ganho do Autopiloto (Buffer e Somador) localiza-se fisicamente no cartão 'PCB 47'. O PCB 7 lida com Yaw/Limites, o PCB 32 é estágio final de potência e o PCB 52 lida com acionamento de buzzer/lâmpadas."
   },
   {
     "question": "O PCB 52 aloja quais circuitos?",
     "options": [
-      "Alarmes (Fora de Rumo, Falha Giro, Falha Odômetro)",
-      "Fontes reguladas 12V",
-      "Triacs de potência",
-      "Codificador de log"
+      "Alarmes (Fora de Rumo, Falha Giro, Falha Odômetro).",
+      "Reguladores das fontes estáticas de +12V.",
+      "Triacs de acionamento das válvulas direcionais.",
+      "O codificador digital de log (Odômetro)."
     ],
-    "answer": "Alarmes (Fora de Rumo, Falha Giro, Falha Odômetro)",
-    "explanation": "Aloja alarmes principais. A alternativa correta é \"Alarmes (Fora de Rumo, Falha Giro, Falha Odômetro)\"."
+    "answer": "Alarmes (Fora de Rumo, Falha Giro, Falha Odômetro).",
+    "explanation": "O PCB 52 é o cartão lógico das sirenes e lâmpadas, detectando as falhas ('Fora de Rumo, Falha Giro, Falha Odômetro'). As outras funções estão nos PCBs PSU, 32 e 34, respectivamente."
   },
   {
     "question": "O codificador de velocidade do odômetro e a lógica do Permite Auto estão em qual PCB?",
     "options": [
       "PCB 34",
-      "PCB 31",
-      "PCB 33",
-      "PCB 52"
+      "PCB 31 (Gating)",
+      "PCB 33 (Retificador de Fase)",
+      "PCB 52 (Alarmes)"
     ],
     "answer": "PCB 34",
-    "explanation": "PCB 34 aloja Log Encoder e Permite Auto. A alternativa correta é \"PCB 34\"."
+    "explanation": "O PCB 34 é dedicado à conversão do trem de pulsos do odômetro (Log Encoder) e monitoramento do sinal de diferença < 4° para o 'Permite Auto'. Os cartões 31, 33 e 52 processam Gating de pulso, PSR de feedback e Alarmes, não a medição inercial."
   },
   {
     "question": "Qual sinal autoriza o engrazamento da solenoide de \"Retém Auto\" na VCS 775?",
