@@ -1122,5 +1122,414 @@ export const scmpaQuestions: Question[] = [
     ],
     "answer": "Vibração em micrômetros (µm) e Queda de pressão em polegadas de água (in H2O).",
     "explanation": "No painel e alarmes da TG, a vibração (T.P. e G.G.) é lida em micrômetros (µm) e a queda de pressão de admissão em polegadas de água (in H2O)."
+  },  {
+    question: "[Imagem: Diagrama de Redes e Estações] De acordo com a imagem, descreva o que a caixa superior, as três caixas do meio e as duas retangulares no inferior representam, respectivamente:",
+    options: [
+      "Estação do passadiço, CCM, remotas de bombordo e boreste.",
+      "Radar de navegação, Passadiço, máquinas principais e auxiliares.",
+      "Satélite de comunicação, Estação SCADA, remotas de vante e de ré.",
+      "Estação meteorológica, Centro de Informações de Combate, geradores e turbinas."
+    ],
+    answer: "Estação do passadiço, CCM, remotas de bombordo e boreste."
+  },
+  {
+    question: "O estado de cada estação é mostrado através de um código de cores. Descreva quais cores são e quais seus significados:",
+    options: [
+      "Verde claro: Estação ativa e com operador; Verde escuro: Só estação de BB e BE ativas; Cinza: Estação ativa sem senha; Vermelho: Estação com falha.",
+      "Azul: Estação ativa; Amarelo: Estação em alerta; Cinza: Estação desligada; Vermelho: Fogo na estação.",
+      "Branco: Operação normal; Verde: Manutenção; Preto: Desligado; Vermelho: Inoperante.",
+      "Verde claro: Sem operador; Verde escuro: Com operador; Cinza: Stand-by; Vermelho: Operação manual."
+    ],
+    answer: "Verde claro: Estação ativa e com operador; Verde escuro: Só estação de BB e BE ativas; Cinza: Estação ativa sem senha; Vermelho: Estação com falha."
+  },
+  {
+    question: "O que indica o objeto com formato de chave na área de informações sobre remotas?",
+    options: [
+      "Indica se a chave de segurança do respectivo bordo está colocada no painel (piscando amarelo) ou não (piscando cinza).",
+      "Indica que o sistema exige senha de acesso de administrador para ser operado.",
+      "Sinaliza que o painel de chaves de ignição dos geradores está travado.",
+      "Demonstra que o modo de manutenção foi ativado no Centro de Informações de Combate."
+    ],
+    answer: "Indica se a chave de segurança do respectivo bordo está colocada no painel (piscando amarelo) ou não (piscando cinza)."
+  },
+  {
+    question: "Quais são os objetos da área de navegação entre telas?",
+    options: [
+      "Boreste, Bombordo, auxiliares, controladores, parâmetros, diagnóstico, manutenção e unitários.",
+      "Passadiço, CCM, Praça de máquinas, Convés, Tanques, Caldeiras, Elétrica e Eletrônica.",
+      "Navegação, Radares, Sonar, Armamento, Comunicações, Propulsão, Avarias e Utilitários.",
+      "Motores principais, Turbinas, Geradores, Bombas de incêndio, Ar condicionado e Ventilação."
+    ],
+    answer: "Boreste, Bombordo, auxiliares, controladores, parâmetros, diagnóstico, manutenção e unitários."
+  },
+  {
+    question: "Do que vai depender alguns botões estarem ativos (legenda preta) e outros inativos (legendas em cinza escuras)?",
+    options: [
+      "Depende do modo de operação, da estação e do usuário.",
+      "Depende exclusivamente do suprimento de energia da rede elétrica principal.",
+      "Depende apenas se a chave de segurança está inserida no painel.",
+      "Depende do estado de alarmes ativos no painel do passadiço."
+    ],
+    answer: "Depende do modo de operação, da estação e do usuário."
+  },
+  {
+    question: "Em relação aos modos de operação, qual o significado de Cruzeiro e Combate?",
+    options: [
+      "Cruzeiro: 1 operador no passadiço e 1 no CCM; Combate: 1 operador no passadiço, 3 no CCM e teclas de emergência liberadas sem confirmação.",
+      "Cruzeiro: 2 operadores no passadiço; Combate: Todos os operadores no passadiço com armas liberadas.",
+      "Cruzeiro: Propulsão a diesel apenas; Combate: Propulsão a turbina e diesel simultaneamente.",
+      "Cruzeiro: Velocidade máxima de 15 nós; Combate: Velocidade máxima sem limite de consumo de combustível."
+    ],
+    answer: "Cruzeiro: 1 operador no passadiço e 1 no CCM; Combate: 1 operador no passadiço, 3 no CCM e teclas de emergência liberadas sem confirmação."
+  },
+  {
+    question: "Descreva a função dos indicadores de temperatura:",
+    options: [
+      "São usados para indicar temperaturas e têm a propriedade de serem sensitivos.",
+      "Apresentam o histórico de calor gerado pelas máquinas em gráficos estáticos.",
+      "Possuem alarmes sonoros ininterruptos para qualquer flutuação de temperatura.",
+      "Exibem a temperatura do ambiente externo e da água do mar exclusivamente."
+    ],
+    answer: "São usados para indicar temperaturas e têm a propriedade de serem sensitivos."
+  },
+  {
+    question: "O que ocorre visualmente no caso de alarme em um indicador?",
+    options: [
+      "A moldura irá piscar em amarelo.",
+      "O indicador fica totalmente vermelho e apaga.",
+      "A tela inteira escurece e o indicador fica branco.",
+      "Aparece um ícone de sirene verde piscando ao lado do indicador."
+    ],
+    answer: "A moldura irá piscar em amarelo."
+  },
+  {
+    question: "O que acontece quando a causa do alarme persistir após o reconhecimento?",
+    options: [
+      "O fundo deixa de piscar e fica aceso continuamente em amarelo até a causa cessar.",
+      "O alarme sonoro soa com o dobro da intensidade até ser desligado.",
+      "O equipamento é desligado automaticamente pelo sistema de segurança.",
+      "A estação transfere o controle para o modo de contingência local."
+    ],
+    answer: "O fundo deixa de piscar e fica aceso continuamente em amarelo até a causa cessar."
+  },
+  {
+    question: "Descreva a diferença entre alarmes de primeiro e segundo nível:",
+    options: [
+      "Primeiro nível: gerados com sensores digitais diretos do campo; Segundo nível: gerados do sensor analógico (não dependem dos digitais).",
+      "Primeiro nível: acionam a sirene no CCM; Segundo nível: acionam a sirene geral do navio.",
+      "Primeiro nível: falhas de software do SCADA; Segundo nível: falhas físicas de hardware nas remotas.",
+      "Primeiro nível: avisos visuais de baixa prioridade; Segundo nível: desligamento imediato de sistemas vitais."
+    ],
+    answer: "Primeiro nível: gerados com sensores digitais diretos do campo; Segundo nível: gerados do sensor analógico (não dependem dos digitais)."
+  },
+  {
+    question: "A válvula num estado indeterminado (que pode ser simbolizada por um '?') representa que:",
+    options: [
+      "O sensor de fim de curso não confirma se ela está totalmente aberta ou totalmente fechada.",
+      "A válvula foi removida do sistema para reparo.",
+      "A pressão do fluido na válvula está acima do limite suportado.",
+      "A válvula está operando em modo automático de segurança."
+    ],
+    answer: "O sensor de fim de curso não confirma se ela está totalmente aberta ou totalmente fechada."
+  },
+  {
+    question: "No que consiste a ação de clicar uma vez com a tecla no meio do TrackBall?",
+    options: [
+      "Corresponde a marcar a linha/objeto com a tecla esquerda e pressionar 'ENTRA' do teclado padrão.",
+      "Cancela qualquer seleção e retorna para a tela inicial do painel.",
+      "Aciona a buzina de alarme geral em caso de emergência no passadiço.",
+      "Muda o esquema de cores da tela de diurno para noturno."
+    ],
+    answer: "Corresponde a marcar a linha/objeto com a tecla esquerda e pressionar 'ENTRA' do teclado padrão."
+  },
+  {
+    question: "Os telégrafos estão divididos em três categorias, quais são elas?",
+    options: [
+      "De partida e parada; seleção de máquinas; demanda de potência (manobra e DESSI).",
+      "De vante e ré; boreste e bombordo; cruzeiro e combate.",
+      "De emergência; de navegação costeira; de navegação em águas restritas.",
+      "Manuais; automáticos; semi-automáticos."
+    ],
+    answer: "De partida e parada; seleção de máquinas; demanda de potência (manobra e DESSI)."
+  },
+  {
+    question: "Qual o efeito no sistema IHM caso ocorra uma falha na estação do Passadiço?",
+    options: [
+      "Os comandos serão enviados através de CI ao CCM, que adiciona comandos através do seu teclado funcional.",
+      "O navio entra automaticamente no modo de sobrevivência com velocidade reduzida.",
+      "A remota do leme de bombordo assume todas as operações críticas.",
+      "O sistema SCADA entra em modo de falha catastrófica até reinicialização física."
+    ],
+    answer: "Os comandos serão enviados através de CI ao CCM, que adiciona comandos através do seu teclado funcional."
+  },
+  {
+    question: "O que acontece caso ocorra falha simultânea nas estações SCADA de bombordo e boreste?",
+    options: [
+      "Todo o sistema de IHM fica inoperante e não há visualização/comando pelas estações.",
+      "A estação do passadiço assume o processamento central de dados provisoriamente.",
+      "O Centro de Operações de Combate toma o controle da propulsão automaticamente.",
+      "As turbinas entram em modo de aceleração de combate."
+    ],
+    answer: "Todo o sistema de IHM fica inoperante e não há visualização/comando pelas estações."
+  },
+  {
+    question: "As condições de partida normal são divididas em inibições e interloques. Diferencie-as:",
+    options: [
+      "Interloques podem ser contornados (by-pass); inibições não podem ser contornadas.",
+      "Inibições podem ser desativadas remotamente; interloques requerem chaves físicas no CCM.",
+      "Interloques afetam apenas válvulas; inibições afetam motores e bombas elétricas.",
+      "Inibições atrasam a partida em 5 minutos; interloques cancelam a partida definitivamente."
+    ],
+    answer: "Interloques podem ser contornados (by-pass); inibições não podem ser contornadas."
+  },
+  {
+    question: "Quais condições de inibição de partida devem ser satisfeitas para que a partida da turbina (TG) ocorra?",
+    options: [
+      "Chave teste normal; alimentação 115v/400hz; Reset manual desarme GG, comandos partida liberados; MCP selecionado/passo zero; GTC operacional.",
+      "Óleo combustível aquecido; passadiço em modo combate; radares desligados; ventilação no máximo.",
+      "Ambos os MCPs parados; tanques de água doce vazios; alarme silenciado; leme a meio.",
+      "Sistema HPC pressurizado acima de 200 bar; disjuntores gerais abertos; by-pass de vibração ativo."
+    ],
+    answer: "Chave teste normal; alimentação 115v/400hz; Reset manual desarme GG, comandos partida liberados; MCP selecionado/passo zero; GTC operacional."
+  },
+  {
+    question: "Qualquer que seja o modo de partida da TG (normal, seca ou teste), na ocorrência de inibição, quais são os seus efeitos?",
+    options: [
+      "Ao se tentar ligar a turbina, isso não será possível e a mensagem exibida será a mesma.",
+      "A turbina partirá apenas em rotação mínima de segurança (idle).",
+      "A turbina realizará a partida seca, mas não acenderá a câmara de combustão.",
+      "Ocorre um alarme geral de incêndio na praça de máquinas."
+    ],
+    answer: "Ao se tentar ligar a turbina, isso não será possível e a mensagem exibida será a mesma."
+  },
+  {
+    question: "Quais são as cores do eixo antes e depois que a turbina ou os motores são selecionados?",
+    options: [
+      "O eixo passa da cor cinza claro para verde.",
+      "O eixo passa de preto para azul.",
+      "O eixo passa de vermelho para amarelo.",
+      "O eixo passa de branco para verde escuro."
+    ],
+    answer: "O eixo passa da cor cinza claro para verde."
+  },
+  {
+    question: "O que é a tela de monitoração de temperaturas do sistema de propulsão?",
+    options: [
+      "Conhecida como tela do ROTRACO, nela estão representadas diversas temperaturas do sistema.",
+      "É a tela do sistema SCADA exclusiva para monitoramento do óleo diesel pesado.",
+      "É a tela de diagnóstico do radar térmico e de ar condicionado dos camarotes.",
+      "É o painel analógico localizado na base dos motores de combustão."
+    ],
+    answer: "Conhecida como tela do ROTRACO, nela estão representadas diversas temperaturas do sistema."
+  },
+  {
+    question: "Na tela do sistema HPC, existem duas áreas básicas (bombordo e boreste) divididas em 6 subáreas. Quais são elas?",
+    options: [
+      "Pressão sistema HPC, Tanque gravidade, Tanque de dreno, Bomba elétrica (HPC), Bomba suplemento e Caixa comando HPC.",
+      "Pressão óleo lubrificante, Nível do porão, Temperatura do redutor, Tensão gerador, Corrente da bateria e Passo reverso.",
+      "Sistema de incêndio, Bomba de lastro, Osmose reversa, Compressor HP, Válvula de interceptação e Bicos injetores.",
+      "Sensores de fumaça, Painel CA, Painel CC, Carregadores, Retificadores e Rede Ethernet."
+    ],
+    answer: "Pressão sistema HPC, Tanque gravidade, Tanque de dreno, Bomba elétrica (HPC), Bomba suplemento e Caixa comando HPC."
+  },
+  {
+    question: "Sobre a área de tanque de gravidade de BB e BE, a lâmpada de estado ou alarme pode ser classificada em:",
+    options: [
+      "Alarme de nível alto do tanque de gravidade e alarme de nível baixo do tanque de dreno.",
+      "Alarme de transbordamento de óleo e alarme de falta de água doce.",
+      "Alarme de superaquecimento e alarme de sobrepressão.",
+      "Alarme de falha na CPU e alarme de falta de comunicação."
+    ],
+    answer: "Alarme de nível alto do tanque de gravidade e alarme de nível baixo do tanque de dreno."
+  },
+  {
+    question: "Qual cor sugere que o movimento e rotação dos eixos das TGs e MCPs e engrenagens estão rodando?",
+    options: [
+      "A cor cinza sofre mudança se tornando na cor verde.",
+      "A cor amarela sofre mudança se tornando vermelha.",
+      "A cor azul pisca de forma intermitente no painel.",
+      "A cor branca muda para preto absoluto."
+    ],
+    answer: "A cor cinza sofre mudança se tornando na cor verde."
+  },
+  {
+    question: "Qual a função da tela de propulsão?",
+    options: [
+      "Apresentar um panorama geral do sistema de propulsão e alguns sistemas auxiliares relevantes envolvidos.",
+      "Permitir o reset de todos os alarmes do Centro de Informações de Combate.",
+      "Mostrar apenas o estado dos radares e sistemas de armas.",
+      "Monitorar o circuito de câmeras de segurança da praça de máquinas."
+    ],
+    answer: "Apresentar um panorama geral do sistema de propulsão e alguns sistemas auxiliares relevantes envolvidos."
+  },
+  {
+    question: "Onde estão localizadas as chaves no SCMPA da fragata Independência e qual sua função?",
+    options: [
+      "Localizam-se na parte de trás do painel das remotas e têm a função de colocar o equipamento em estado de emergência.",
+      "Localizam-se no convés principal e têm a função de cortar o suprimento de combustível.",
+      "Ficam no passadiço e servem para reiniciar o sistema SCADA.",
+      "Ficam dentro do painel elétrico principal e desativam as baterias."
+    ],
+    answer: "Localizam-se na parte de trás do painel das remotas e têm a função de colocar o equipamento em estado de emergência."
+  },
+  {
+    question: "Onde estão localizadas as chaves no SCMPA da fragata Liberal?",
+    options: [
+      "São localizadas no painel frontal das remotas (mesma função da F. Independência, colocar o equipamento em emergência).",
+      "São localizadas na parte traseira das remotas (idêntico à Fragata Independência).",
+      "São instaladas apenas no painel do passadiço.",
+      "Ficam alojadas em uma caixa de vidro no corredor do CCM."
+    ],
+    answer: "São localizadas no painel frontal das remotas (mesma função da F. Independência, colocar o equipamento em emergência)."
+  },
+  {
+    question: "O que ocorre após um equipamento passar para o estado de emergência?",
+    options: [
+      "A lâmpada de emergência fica acesa em vermelho sem piscar e todos os botões de comando da IHM ficam desabilitados.",
+      "A sirene soa e o equipamento passa a operar na sua velocidade máxima.",
+      "O sistema entra em Fail Set desligando todos os motores propulsores.",
+      "Um pop-up solicita senha de manutenção para reverter a operação no prazo de 30 segundos."
+    ],
+    answer: "A lâmpada de emergência fica acesa em vermelho sem piscar e todos os botões de comando da IHM ficam desabilitados."
+  },
+  {
+    question: "Quais são os painéis de chaves de emergência no SCMPA?",
+    options: [
+      "Painéis de Bombordo e Boreste.",
+      "Painéis de Vante e Ré.",
+      "Painéis de Alta e Baixa Tensão.",
+      "Painéis do Passadiço e Centro de Controle."
+    ],
+    answer: "Painéis de Bombordo e Boreste."
+  },
+  {
+    question: "Quais são algumas das chaves de emergência presentes na remota do bombordo?",
+    options: [
+      "Bomba elétrica HPC nº2, Bomba lubrificação nº2, Bombas de transferência/purificação O.C nº2, Bomba suplemento nº2, caldeiras e osmose.",
+      "Todos os geradores principais, bomba de incêndio de vante e sistema de refrigeração de armas.",
+      "Turbina a gás nº1, ventiladores do convés, radares de navegação e bomba de esgoto.",
+      "Máquina do leme, guincho da âncora, sistema de comunicações e luzes de navegação."
+    ],
+    answer: "Bomba elétrica HPC nº2, Bomba lubrificação nº2, Bombas de transferência/purificação O.C nº2, Bomba suplemento nº2, caldeiras e osmose."
+  },
+  {
+    question: "[Imagem: Botão com figura de Maleta/Peso] Ao clicar no botão de 'Maleta' de DESSI, é exibida uma janela. Qual a função dessa janela?",
+    options: [
+      "Fazer pequenas mudanças no valor de DESSI, com utilidade principal durante a transferência de carga leve entre dois navios.",
+      "Abrir o manual de manutenção digital do sistema de propulsão.",
+      "Armazenar temporariamente dados do percurso no diário de navegação.",
+      "Acionar a trava hidráulica do eixo propulsor em caso de vazamento."
+    ],
+    answer: "Fazer pequenas mudanças no valor de DESSI, com utilidade principal durante a transferência de carga leve entre dois navios."
+  },
+  {
+    question: "Defina o que é o auto diagnóstico no SCMPA:",
+    options: [
+      "Verificação periódica pela estação SCADA ativa que estabelece sinais indicando se as estações funcionam (detecta falha na estação/remota).",
+      "Processo onde o operador testa manualmente as luzes e sirenes pressionando o botão de teste.",
+      "Rotina de desfragmentação do disco rígido das estações Vista.",
+      "Programa que reinicia as bombas de combustível quando a pressão cai."
+    ],
+    answer: "Verificação periódica pela estação SCADA ativa que estabelece sinais indicando se as estações funcionam (detecta falha na estação/remota)."
+  },
+  {
+    question: "A falha remota pode ser dividida em quais tipos?",
+    options: [
+      "Falha no cartão (I/O, CPU, memórias refletivas), na alimentação, nos componentes eletrônicos e no cabeamento.",
+      "Falha de software, tela azul do Windows, perda de mouse e erro no disco rígido.",
+      "Falhas hidráulicas, vazamento pneumático, curto-circuito no motor e desgaste mecânico.",
+      "Falha humana de operação, violação de senha, acesso negado e expiração de tempo."
+    ],
+    answer: "Falha no cartão (I/O, CPU, memórias refletivas), na alimentação, nos componentes eletrônicos e no cabeamento."
+  },
+  {
+    question: "O que acontece quando os cartões da remota estão em bom funcionamento?",
+    options: [
+      "Os leds com texto “fail” permanecem piscando (ou leds de status de varredura).",
+      "Os cartões apagam todas as luzes para economizar energia.",
+      "Um alarme sonoro curto é emitido a cada hora.",
+      "Eles emitem uma luz vermelha constante intensa."
+    ],
+    answer: "Os leds com texto “fail” permanecem piscando (ou leds de status de varredura)."
+  },
+  {
+    question: "Ao detectar uma falha nas placas de entrada ou de saída (I/O), qual o procedimento de manutenção?",
+    options: [
+      "A substituição da placa avariada como está no manual de manutenção.",
+      "Aplicar spray limpa-contato e reiniciar o servidor central.",
+      "Ignorar o alarme e colocar a placa em modo by-pass no software.",
+      "Reduzir a velocidade do navio e aguardar o resfriamento da placa."
+    ],
+    answer: "A substituição da placa avariada como está no manual de manutenção."
+  },
+  {
+    question: "Como se detecta a falha no cartão da CPU da remota via interface IHM?",
+    options: [
+      "As telas referentes à remota que teve a CPU danificada perderão suas cores normais, mostrando tudo em preto, indicando inoperância.",
+      "A tela exibe a mensagem de 'Erro fatal' em letras vermelhas gigantes.",
+      "A estação Vista trava na tela de boot e o mouse para de funcionar.",
+      "Os gráficos de temperatura sobem ao máximo simulando incêndio."
+    ],
+    answer: "As telas referentes à remota que teve a CPU danificada perderão suas cores normais, mostrando tudo em preto, indicando inoperância."
+  },
+  {
+    question: "O que acontece quando ocorre uma falha em um dos cartões de memórias reflexivas?",
+    options: [
+      "É gerado um alarme, e automaticamente a outra memória assume não havendo prejuízo na movimentação do sistema.",
+      "O sistema trava completamente e exige reinicialização de emergência.",
+      "Os comandos de propulsão são revertidos para a rotação mínima instantaneamente.",
+      "As telas do passadiço apagam para proteger o circuito de controle."
+    ],
+    answer: "É gerado um alarme, e automaticamente a outra memória assume não havendo prejuízo na movimentação do sistema."
+  },
+  {
+    question: "Defina o que constitui uma 'falha nas redes' no SCMPA:",
+    options: [
+      "É a falha em pelo menos uma placa da respectiva rede ou falha no meio físico.",
+      "É quando a internet externa cai, impossibilitando atualizações remotas.",
+      "É o rompimento da rede de água de resfriamento dos radares.",
+      "É a falta de suprimento de tensão de 440V para o passadiço."
+    ],
+    answer: "É a falha em pelo menos uma placa da respectiva rede ou falha no meio físico."
+  },
+  {
+    question: "Descreva o símbolo da falha nas memórias reflexivas no diagnóstico de rede:",
+    options: [
+      "O retângulo simboliza a memória e ele muda de verde para piscando em vermelho.",
+      "Uma cruz vermelha surge em cima da ilustração do computador central.",
+      "O ícone circular fica amarelo contínuo.",
+      "Um raio azul pisca repetidamente no canto inferior esquerdo da tela."
+    ],
+    answer: "O retângulo simboliza a memória e ele muda de verde para piscando em vermelho."
+  },
+  {
+    question: "Descreva o símbolo da falha na rede Ethernet no diagnóstico de redes:",
+    options: [
+      "O quadrado que simboliza a rede muda de verde para piscando em vermelho.",
+      "Um triângulo amarelo com exclamação no centro do painel.",
+      "A linha conectora entre os nós da rede fica pontilhada e cinza.",
+      "Um globo com um X vermelho é sobreposto ao relógio."
+    ],
+    answer: "O quadrado que simboliza a rede muda de verde para piscando em vermelho."
+  },
+  {
+    question: "Após o teste do circuito de Watchdog (sentinela), poderá aparecer uma entre três mensagens, quais são elas?",
+    options: [
+      "Teste do circuito OK; Falha no teste do circuito; Falha no circuito.",
+      "Watchdog ativo; Watchdog inativo; Reiniciar Watchdog.",
+      "Circuito operando; Circuito by-passado; Alarme sonoro inibido.",
+      "Tensão normal; Subtensão; Sobretensão detectada no circuito."
+    ],
+    answer: "Teste do circuito OK; Falha no teste do circuito; Falha no circuito."
+  },
+  {
+    question: "Qual o objetivo do sistema de fail set?",
+    options: [
+      "Atuar no subsistema de propulsão ao qual ele está associado, congelando os set points fornecidos para manter o estado igual ao imediatamente antes da falha.",
+      "Desligar todas as máquinas imediatamente para evitar explosões.",
+      "Iniciar os geradores de emergência na praça de máquinas de forma automatizada.",
+      "Liberar a pressão de óleo dos sistemas hidráulicos no tanque de dreno."
+    ],
+    answer: "Atuar no subsistema de propulsão ao qual ele está associado, congelando os set points fornecidos para manter o estado igual ao imediatamente antes da falha."
   }
 ];
