@@ -1,0 +1,1035 @@
+
+OPERAÇÃO DO SISTEMA NO MODO DEGRADADO
+Introdução  
+Neste capítulo, são apresentados os diversos tipos de falhas e as ações que o operador deve realizar
+em tais casos. 
+A visualização dos alarmes nas telas ajuda, na grande maioria dos casos, a solucionar as falhas.
+Existem porém situações mais graves onde a operação tem que passar para o modo manual para
+manter o funcionamento dos equipamentos estáveis até que o problema seja solucionado.
+2.1 – FALHA DAS ESTAÇÕES REMOTAS
+Uma falha de estação ou de remota significa que a estação ou remota em questão deixa de estar em
+operação (vide manual de software para saber as causas da falha da estação). Uma estação ou remota
+está em estado de falha tanto se houver uma falha em algum componente (por exemplo, CPU) de
+modo que esta estação ou remota não possa mais operar, quanto se ela perder comunicação com as
+outras (falha de rede). 
+ 
+A janela apresentada na  figura 2.1 abaixo é útil tanto para diagnóstico tanto do estado das redes
+quanto das estações (o que é detalhado mais adiante). Esta janela apresenta a estação em falha com
+um X vermelho sobre ela.
+                                Figura 2.1 Janela de diagrama geral dos estados do sistema 
+OSTENSIVO                                                     1- 115                                                         ORIGINAL
+
+
+--- PAGE 115 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.1.1 - Auto-diagnóstico 
+Uma das formas de se detectar falha de estação ou remota é através do auto-diagnóstico.  
+Cada estação SCADA verifica periodicamente se as outras estações estão ativas, tanto via rede Ether -
+net quanto rede de memória refletiva.  
+ 
+Em cada momento, uma das estações SCADA é responsável por reportar o estado de todas as esta -
+ções restantes, usando para isso tanto as suas próprias informações quanto as informações da outra es -
+tação SCADA. A primeira estação é chamada de ativa, enquanto que a outra é denominada inativa. 
+ 
+A verificação é feita periodicamente pela estação Scada (item 2.1) ativa, que estabelece sinais indi -
+cando se as estações estão funcionando ou não. Esses sinais são verificados pela outra estação Scada.
+Caso o Scada inativo reconheça indicação de falha na estação Scada ativa, o Scada inativo passa para
+o estado ativo. 
+ 
+2.1.2 - Realocação automática de funções  
+ 
+Ao final de cada ciclo de auto-diagnóstico, as funções alocadas a cada estação são automaticamente
+realocadas, se necessário. Assim, por exemplo, se o telégrafo dos comandos de Bombordo estiver as -
+sociado a uma estação que for detectada como em falha, o sistema deve automaticamente realocar
+esta função para uma outra estação ativa.
+ 
+O princípio da realocação é o seguinte: 
+•  caso uma das estações (Bombordo ou Boreste) sejam declaradas em falha, as funções originalmente
+alocadas a ela são transferidas para a estação central; 
+•  caso a estação Central do CCM não esteja funcionando, suas funções são transferidas para a estação
+de Boreste; 
+•  caso 2 estações do CCM não estejam funcionado, todas as funções serão transferidas para a estação
+restante; 
+•  se as estações em falha forem as de Bombordo e Boreste, o sistema passa a ser inoperante devido à
+falta dos Scadas. 
+2.2 -  FALHA DAS REMOTAS 
+Falha da remota ocorre quando a referida remota não está em operação, o que ocorre na seguinte con -
+dição: 
+ - Ambas as placas de memória refletiva não estão operacionais; 
+ - Ambos os sinais de watchdog da respectiva remota acusam falha desta remota. 
+Essa falha é representada na figura 2.2 pela respectiva remota com um X ver -
+melho sobre ela. Pode-se observar que os “quadrados” que representam as pla -
+cas de memória refletiva piscam em vermelho, assim como as placas que repre -
+sentam os watchdogs. 
+ Figura 2.2. Falha da remota 
+OSTENSIVO                                                     1- 116                                                         ORIGINAL
+
+
+--- PAGE 116 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Falhas nas remotas 
+ 
+As falhas na remota ocorrem quando uma das placas apresenta falha, sem necessariamente represen -
+tar uma falha da remota, isto é, remota não operacional. 
+As falhas na remota podem ser subdivididas em: 
+1.  Falha no cartão da CPU; 
+2.  Falha nos cartões de memórias refletivas;
+3.  Falha na alimentação;
+4.  Falha nos cartões de entrada e saída;     
+5.  Falha nos componentes eletrônicos; e
+6.  Falha no cabeamento.
+ 
+Na figura 2.3 abaixo, está representada a visão frontal do  rack, que está dentro da remota, onde estão
+dispostos os cartões de CPU (1), as memórias refletivas (2), o Winchester (disco rígido) (3) e os car -
+tões de entradas e saídas digitais e os cartões de entradas analógicas(4).
+                                    Figura 2.3.Disposição dos cartões eletrônicos no rack 
+ 
+Somente as quatro primeiras categorias de falhas são detectáveis pelo software, de modo que somente
+estas são tratadas neste manual. A seguir, detalha-se o processo de detecção para cada classe de falha.
+Nota: Quando os cartões estão em bom funcionamento,  os leds com o texto “Fail” (alguns deles es -
+tão circulados na figura 2.3 permanecem piscando. Em caso de falha, ele pára de piscar. Esta falha
+gera um alarme que é mostrado na ‘Área de alarmes’, ao mesmo tempo que soa uma buzina até que
+haja o reconhecimento do operador. 
+Isto vale para todos os cartões, exceto o de CPU. 
+OSTENSIVO                                                     1- 117                                                         ORIGINAL
+
+
+--- PAGE 117 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.2.1 -  Falha nos cartões de entradas e saídas 
+Diagnóstico do Status das Remotas  
+Através do botão ‘Diagnóstico’, na área de navegação do lado direito da tela, o operador tem acesso
+aos menus ‘Boreste (ou Bombordo): Remota’. Ao se clicar sobre uma das duas opções (dependendo
+do bordo que deve ser visualizado), abre-se a janela (representada na figura 2.4 abaixo), que traz um
+desenho similar ao do rack ( figura 2.3), para facilitar a localização da falha. A janela de BE é estrutu -
+ralmente igual a de BB.
+                                   Figura 2.4. Janela de status da Remota de Bombordo 
+ 
+Posicionando-se o cursor do trackball sobre a placa ou sobre os canais da janela representada na figu-
+ra 2.4, aparece um rótulo identificando os mesmos, conforme objetos marcados na figura. Apenas um
+rótulo aparece por vez. 
+Quando não existem falhas, os cartões nesta janela permanecem na cor cinza claro. Ao surgir uma fa -
+lha, a respectivo cartão passa a piscar em vermelho. No momento em que o alarme é reconhecido
+pelo operador (ao clicar duas vezes sobre o cartão piscante), esse passa para vermelho estático, indi -
+cando que o cartão deve ser trocado. 
+  
+Obs.: No caso de falha em cartão de entrada, os valores mostrados nas diversas telas ficam congela -
+dos nos últimos  enviados para esse cartão antes da falha ter ocorrido. 
+Janela para diagnóstico de falhas nos cartões
+Ao se clicar com o botão direito do trackball sobre o cartão, aparece
+o menu ao lado(figura 2.5). Ao  se clicar a opção ‘Diagnóstico de
+Falhas’, abre-se a janela da figura 2.6 abaixo,  que  dá maiores deta -
+lhes da falha no cartão em questão. 
+OSTENSIVO                                                     1- 118                                                         ORIGINAL
+
+
+--- PAGE 118 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Como exemplo, no caso particular da placa VMEVMI-1129_N01, no caso de não haver falha, a men -
+sagem “Board OK” é apresentada,  como na f igura 2.6. As mensagens são diferentes para os diferen -
+tes tipos de placas.
+                                          Figura 2.6. Janela de Diagnóstico das placas 
+ 
+Em se selecionando a opção monitorar do menu acima, a uma janela como a da figura 2.7 é exibida. 
+                                                Figura 2.7. Janela para forças os canais  
+OSTENSIVO                                                     1- 119                                                         ORIGINAL
+
+
+--- PAGE 119 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.2.2 - Teste de ligação das placas 
+Estes testes das placas de entrada/saída visam complementar os testes da seção 4.2.1. Toda placa ana -
+lógica de saída é ligada a cada placa analógica de entrada (em canais fixos). Através destes testes, é
+possível saber se o sinal enviado por uma placa está sendo recebido corretamente por outras. 
+ 
+Este teste é feito pela Remota que manda: 
+ - Para o caso de canais analógicos, um sinal de rampa, que vai de 0 a 4095 analógicas, ou; 
+ - Para o caso de canais digitais, manda uma onda quadrada com valores 0 ou 1.  
+ 
+Esses sinais são mandados de uma em uma hora (parâmetro configurável).  
+Para acusar erro, existe uma tolerância de 25 bits para valores analógicos e 15 bits para valores digi -
+tais, parâmetro este também configurável.  
+A janela apresentada na figura 2.8 auxilia o diagnóstico, piscando a linha (em vermelho) que deu
+problema e o rótulo da linha pisca em amarelo. Na figura 2.9, tem-se um exemplo de falha em canal
+analógico.  
+                               Figura 2.8. Teste de ligação das placas de entrada e saída 
+ 
+‘Ver Label dos Cabos’: quando selecionada, habilita a visualização dos códigos dos cabos, mostrando
+cada um ao passar o trackball sobre eles.
+                                    Figura 2.9. Falha na linha ligação entre duas placas.
+OSTENSIVO                                                     1- 120                                                         ORIGINAL
+
+
+--- PAGE 120 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.2.3 - Diagnóstico por visualização e “force” de canais 
+Ainda para detectar falha nos cartões de entrada/saída, existe o recurso de “forçar” um determinado
+canal para um valor desejado e verificar, na respectiva saída da placa, se o valor corresponde ao for -
+çado. Esse teste porém necessita de medidor de tensão. 
+Para forçar o canal, basta clicar com o botão esquerdo do trackball sobre o
+conjunto de canais (ou o botão direito sobre a placa e selecionar o item do
+menu ‘monitorar’) e a janela ao lado será aberta. 
+ 
+Deve-se então clicar no campo do canal que se deseja forçar. Abre-se en -
+tão um menu onde se pode escolher entre deixar o canal no estado normal
+(não forçado), ou, no caso de canal digital, nos estados forçados 0 (valor
+lógico zero) ou 1 (valor lógico 1). No caso de canal analógico, é exibido
+um campo onde se pode digitar o valor desejado (de 0 a 4095). 
+ 
+Os canais forçados têm a cor de fundo do valor corrente mudada de branco
+para amarelo (por exemplo o canal 64 da figura 2.10 ao lado). 
+ 
+Os cartões (mostrados na  figura 2.4) que tiverem algum canal forçado,
+passam também de  cinza claro para  amarelo, facilitando assim a identifi -
+cação para o operador. 
+ 
+Os canais deixam de ser forçados através do botão “Unforce”. 
+ 
+Para o caso de canais de entrada, o procedimento seria inserir o sinal
+elétrico no respectivo canal e verificar, na janela ao lado, se o valor que
+está sendo apresentado corresponde ao que se está injetando eletricamente.
+Figura 2.10. Janela para forças os canais  
+2.2.4 - Procedimento na presença de falha 
+ 
+Ao se detectar, por algum dos métodos acima, uma falha nas placas de entrada ou de saída, o procedi -
+mento de manutenção é a substituição da placa avariada (vide manual de manutenção). 
+Falha no cartão da CPU da Remota 
+A falha no cartão da CPU é fácil de ser visualizada pelo operador, pois as telas referentes à remota
+que teve sua CPU danificada perderão suas cores normais, passando a mostrar tudo em preto, indican -
+do inoperância do sistema. 
+Além do “sintoma” acima descrito, quando a outra remota estiver Ok, aparece também um alarme de
+“Falha Watchdog” e circuitos de fail set serão ativados.  
+ 
+O procedimento de eliminação da falha é: 
+ •  Procedimento do operador do CCM: 
+ 
+- Passar a operação da TURBINA para manual local, ou seja, atuação diretamente do campo. 
+- Passar a operação do HPC para remoto / manual através do SCA (equipamento da SKM). 
+- Passar a operação do DIESEL para remoto / manual através do regulador Woodward 723. 
+OSTENSIVO                                                     1- 121                                                         ORIGINAL
+
+
+--- PAGE 121 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+•  Guarnecer equipamentos no Local 
+Veja o manual de manutenção para: 
+- Verificar a alimentação da remota. 
+- Trocar o cartão da CPU. 
+ 
+Falha nas memórias refletivas das Remotas 
+Quando ocorrer falha em uma dos cartões de memórias refletivas, é gerado um alarme. Automatica -
+mente a outra memória assume, não havendo prejuízo na monitoração do sistema. Para saber qual a
+memória que falhou, basta ir a tela “Diagnóstico - Remota”, já descrita.  
+Havendo falha nas duas memórias, a respectiva remota fica inoperante e as respectivas informações
+nas telas ficam com suas indicações em preto. Neste caso, esta remota fica incapaz de detectar o alar -
+me de “Falha Watchdog” da outra remota.  
+ 
+Falha nas memórias refletivas dos Scadas
+ 
+Em caso de falha na memória refletiva de um dos SCADAS, o objeto indicador do estado da rede in -
+dica que houve a falha, colocando a estação SCADA correspondente, bem como as suas conexões
+com as outras estações, em vermelho), ou na janela da figura 2.11. 
+As estações do sistema, incluindo a própria estação Scada com problemas, selecionam automatica -
+mente o outro Scada como servidor. Em caso de falha semelhante do outro Scada, o sistema de IHM
+fica inutilizado. 
+ 
+Falha na alimentação da remota 
+Mesmo efeito como descrito na queda da CPU.
+                                   Figura 2.11. Tela “Diagrama Geral de Estado do Sistema” 
+OSTENSIVO                                                     1- 122                                                         ORIGINAL
+
+
+--- PAGE 122 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.3 - FALHA DAS REDES
+2.3.1- falhas das redes
+Define-se falha de rede como sendo falha em pelo menos uma placa da respectiva rede (se for na rede
+Ethernet, uma falha na placa de rede Ethernet, ou  na rede de memória reflexiva, uma falha na placa
+de memória reflexiva) ou falha no meio físico (cabos). 
+É possível, através do SCMPA, detectar se um determinado trecho da rede (cabo e placas de rede nas
+duas pontas destes cabos) está em operação normal ou não. 
+ 
+A janela representada na figura 2.12 traz também informações relativas às redes e aos watchdogs.  
+                                   Figura 2.12. Tela “Diagrama Geral de Estado do Sistema” 
+OSTENSIVO                                                     1- 123                                                         ORIGINAL
+
+
+--- PAGE 123 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+As falhas são representadas por mudanças de cor dos objetos, como é mostrado a seguir: 
+Falha nas memórias refletivas:  retângulo que simboliza a memória muda de verde para
+piscando em vermelho. Figura 2.13.
+Fig. 2.13.
+Falha na rede Ethernet:  quadrado que simboliza a rede muda de verde para piscando em
+vermelho. Figura 2.14.
+Fig. 2.14.
+Falha de watchdog:  retângulo que simboliza watchdog muda de verde para piscando em ver -
+melho. Figura 2.15.
+Fig. 2.15.
+Falha na rede: cabos mudam a cor de preto para vermelho, juntamente
+com as placas nos extremos destes cabos (não se pode detectar quais des -
+ses elementos realmente falhou a partir desta tela). Figura 2.16.
+Fig. 2.16.
+2.3.2 -  Teste do circuito de watchdog 
+Um circuito de watchdog (também chamado de circuito de sentinela) pode ser testado clicando-se so -
+bre seu respectivo desenho na janela representada na figura 2.12. A janela da figura 2.17 é então
+apresentada. Para iniciar o teste, basta clicar sobre o botão correspondente à referida janela.  
+ 
+Se os circuitos 1 e 2 da respectiva remota não estiverem em falha, é possível executar o teste (descrito
+a seguir). Caso um dos dois esteja em falha, não é possível executar o teste.   
+                                        Figura 2.17. Teste do circuito de watchdog      
+ 
+Após executado o teste, na mesma janela acima podem aparecer uma dentre as três mensagens abai -
+xo:  
+ 
+ -  “Teste do Circuito OK”;  
+ -  “Falha no Teste do Circuito”; 
+ -  “Falha no Circuito”.
+OSTENSIVO                                                     1- 124                                                         ORIGINAL
+
+
+--- PAGE 124 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.4 – FALHA GERAL (FAIL SET)
+2.4.1 - Fail set  
+ 
+O objetivo dos sistemas de fail set é atuar no subsistema de propulsão ao qual ele está associado
+(MCPs, TGs ou HPCs), congelando os set-points fornecidos, de modo a manter o estado igual ao de
+imediatamente antes da falha. 
+Diz-se então que o subsistema de propulsão em questão está em fail set. 
+ 
+Existem dois grupos de sistemas de fail set (um por bordo). Cada conjunto possui quatro sistemas de
+fail sets (para BE, tem-se os do MCP 1, MCP 3, TG 1 e HPC BE, para BB, tem-se os do MCP 2,
+MCP 4, TG 2 e HPC BB).  
+ 
+As seguintes falhas são causadoras de fail-set :  
+-  Circuito sentinela 
+-   Falha nas fontes 24VDC 1 e 2 do Painel da Remota  
+-   Falha nas fontes 24VDC 3 e 4 do Painel da Remota  
+-   Falha nas fontes 24VDC 5 e 6 do Painel da Remota 
+-   Falha na alimentação de115VAC da Remota  
+-   Falha na CPU da Remota  
+-   Falha na tensão 24VDC do Navio  
+-   Falha na tensão 50VDC do Navio  
+-   Falha nos Controladores das TG´s 
+-   Falha nos Controladores de Passo 
+-   Falha nos Controladores dos MCP´s 
+-   Falha na tensão do painel do 723  
+Para cada subsistema de propulsão que passar para o estado de  fail set, existe um
+procedimento a ser seguido pelo operador, que é descrito mais adiante neste manu -
+al. A ocorrência de fail set é indicada no canto direito da tela, na área de informa -
+ção sobre as remotas (representado na figura 2.18 ao lado e figura 2.19 abaixo).
+Pode-se notar que o texto referente a  fail set aparece em preto com o fundo piscan -
+do em vermelho. 
+Fig. 2.18. Fail-set (fragata Independência)
+                                                                 Figura 2.19. Fail-set (fragata Liberal)
+OSTENSIVO                                                     1- 125                                                         ORIGINAL
+
+
+--- PAGE 125 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Clicando-se sobre este texto, aparece a janela mostrada na figura figura 2.20 e figura 2.21 abaixo,
+que detalha a origem do fail set, bem como qual os subsistemas de propulsão que estão em fail set.
+                                      Figura 2.20. Janela de “Fail-Set” ( fragata Independência )
+                                             Figura 2.21. Janela de “fail-set” ( fragata Liberal)
+OSTENSIVO                                                     1- 126                                                         ORIGINAL
+
+
+--- PAGE 126 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+A seguir, detalham-se os procedimentos que o operador deve seguir quando da ocorrência de fail set.
+2.4.2 -  Fail set no HPC 
+Após a ocorrência do fail set, que implica que o set-point de passo foi congelado, deve-se sanar a cau -
+sa da falha. Entretanto, o operador pode retomar o controle do passo através dos modos de operação
+Remoto / Manual ou Local. A seguir, descrevem-se esses modos de operação. 
+ 
+Operação no modo Remoto / Manual 
+ 
+No CCM, existe um equipamento para o controle do passo chamado de “Painel de Controle Remoto
+Manual do SCA/ HPC” (mostrado na Figura 115) composto de: 
+ 
+1.   Um mostrador que indica a porcentagem relativa à escala do valor de passo, cujos valores mínimo
+e máximo são configuráveis. Esse mostrador indica sempre o valor do passo alcançado. 
+2.  Indicadores luminosos: 
+-  “Controle disponível” quando o controle for REMOTO (chave LOCAL/ REMOTO do “Painel
+Controle Local 
+do SCA/ HPC”, localizado no campo, está na posição REMOTO) 
+-  “Remoto Manual Selecionado” quando a chave do “Painel de Controle Remoto Manual do SCA/
+HPC” for para a posição MANUAL 
+3.  Um botão com o texto “Teste Lâmpadas” que, quando pressionado, testa se todos os indicadores
+acima descritos acendem. 
+4.  Uma chave do modo de operação para comutar entre AUTOMÁTICO e MANUAL. 
+5.  Dois contatos de impulso (pushbutton) para DECREMENTAR (botão vermelho) ou para INCRE -
+MENTAR (botão amarelo) o valor do passo. 
+ 
+Para que o modo Remoto /  Manual funcione, é necessário que a chave “Local / Remoto” do painel
+local (vide figura 2.22 abaixo) esteja na posição “Remoto” e a chave “Auto / Manual” do painel Re -
+moto / Manual esteja na posição “Manual”. 
+Operação no Modo Local 
+ 
+Para que o passo possa ser operado localmente, é necessário que a chave “Local / Remoto” do painel
+local (vide figura 2.23 abaixo) esteja na posição “Local”. O passo deve ser ajustado localmente. 
+OSTENSIVO                                                     1- 127                                                         ORIGINAL
+
+--- PAGE 127 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                                    Figura 2.22. Painel de Controle Remoto Manual do SCA/ HPC  
+Operação no Modo Automático 
+Para retornar o controle do passo ao modo automático, é necessário que:   
+ 
+-   Chave do painel Local do Passo ( figura 2.23 abaixo) na posição “Remoto” 
+-   Chave do painel Remoto do Passo ( figura 2.22 acima) na posição “Automático” 
+-   Set point controlado pela remota baseado na DESSI solicitada via IHM 
+ 
+Isso só pode ser feito após as causas da falha tenham sido sanadas. 
+Operação no Modo Local 
+ 
+Para que o passo possa ser operado localmente, é necessário que a chave “Local / Remoto” do painel
+local (vide figura 2.23 abaixo) esteja na posição “Local”. O passo deve ser ajustado localmente. 
+ 
+Operação no Modo Automático  
+Para retornar o controle do passo ao modo automático, é necessário que:   
+ 
+-   Chave do painel Local do Passo ( figura 2.23 abaixo) na posição “Remoto” 
+-   Chave do painel Remoto do Passo ( figura 2.22 acima) na posição “Automático” 
+-   Set point controlado pela remota baseado na DESSI solicitada via IHM 
+ 
+Isso só pode ser feito após as causas da falha tenham sido sanadas. 
+OSTENSIVO                                                     1- 128                                                         ORIGINAL
+
+
+--- PAGE 128 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Procedimento do operador após fail set 
+ 
+1 - Retornar para modo Remoto / Manual 
+ - Verificar se alimentação 24VDC dos painéis Local e Remoto estão OK 
+ - Ajustar a posição da chave do “Painel de Controle Remoto Manual do SCA / HPC” ( figura 2.22)
+de “AUTOMÁTICO” para “MANUAL”. 
+Nesse momento, o indicador luminoso de modo de operação na área do HPC nas telas mostra o texto 
+“REMOTO MANUAL” e o indicador luminoso (do painel) “Remoto Manual Selecionado” acende. 
+ - Ajustar a posição da chave do “Painel de Controle  Local do SCA/ HPC” ( figura 2.23) para a posi-
+ção “REMOTO” 
+ 
+O passo pode ser controlado utilizando-se o botão amarelo para “INCREMENTAR” ou o botão ver -
+melho para “DECREMENTAR” seu valor. 
+ 
+2 - Retornar para Modo Automático 
+ 
+-   Ajustar a DESSI ou a posição atual do passo para que o alarme de desvio Referência/Retorno do
+SCA seja eliminado. 
+-   Verificar se demais condições de fail set estão atendidas. 
+-   Rearmar fail set. 
+-   Retornar a chave do “Painel de Controle Remoto Manual do SCA/ HPC” ( figura 2.22) para a posi-
+ção “AUTOMÀTICO”. 
+ 
+3 - Controle Local 
+ 
+Para assumir o controle Local, basta colocar a chave Local/Remoto, localizada no “Painel de Contro -
+le Local do SCA/ HPC” (mostrado na figura 2.23 abaixo), na posição Local. Nesse momento, o indi -
+cador luminoso de modo de operação na área do HPC nas telas mostra o texto “LOCAL” e os indica -
+dores luminosos “Controle disponível” e “Remoto Manual Selecionado” do “Painel de Controle Re -
+moto Manual do SCA/ HPC” apagam.
+OSTENSIVO                                                     1- 129                                                         ORIGINAL
+
+--- PAGE 129 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                                        Figura 2.23. Painel de Controle Local do SCA/ HPC 
+2.4.3 - Fail set na turbina
+ 
+Essa seção visa descrever os procedimentos a serem tomados pelos operadores quando houver ocor -
+rência de fail-set da TG.  
+ 
+Modos de operação 
+ 
+  Acelerador Local Indicadores da bomba de recalque:
+-   Chave do painel Local da turbina na posição “Local” 
+-   Posição do acelerador ajustada localmente 
+ 
+  Acelerador Remoto Indicadores da bomba de recalque:
+-   Chave do painel Local da turbina na posição “Remoto” 
+-   Set point controlado pela Remota baseado na DESSI solicitada via IHM 
+ 
+Causas de fail set da turbina: 
+-  Falha na alimentação de 15VAC da Remota 
+-  Falha na CPU da Remota 
+-  Falha nos circuitos de watchdog da CPU da Remota 
+-  Falha nas fontes 24VDC 1 e 2 do Painel da Remota 
+-  Falha nas fontes 24VDC 3 e 4 do Painel da Remota 
+-  Falha nas fontes 24VDC 5 e 6 do Painel da Remota 
+-  Falha na tensão 24VDC do Navio 
+-  Falha na tensão 50VDC do Navio 
+-  Diferença referência/retorno do valor realimentado pelo controlador da Turbina 
+Em caso de qualquer uma das falhas acima, somente é possível operara a turbina em modo Local. 
+OSTENSIVO                                                     1- 130                                                         ORIGINAL
+
+
+--- PAGE 130 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Procedimento do operador após fail set: 
+ 
+ Retornar para modo Remoto Indicadores da bomba de recalque:
+ 
+•  Primeiro passo para se retornar ao modo remoto é compatibilizar a aceleração da turbina com a
+DESSI demandada pela remota. Para isso, existem dois procedimentos: 
+-  ajustar a posição do acelerador da Turbina para nível compatível com o DESSI (para isso, é neces -
+sário que se passe o controle da turbina para modo local); 
+-  alterar a DESSI (via SCMPA) para nível de aceleração atual da turbina. Isto é, o alarme de desvio
+Referência/Retorno do controlador da Turbina deve ser eliminado. 
+•  Verificar se as demais condições de fail set estão atendidas 
+•  Rearmar fail set 
+•  Retornar a chave do painel Local para a posição “Remote” 
+  
+Indicadores da bomba de recalque:Controle Local 
+ 
+Neste caso, deve-se passa o controle da TG para local, o que deve ser feito no painel de controle local
+da TG. 
+Ao fazê-lo, o indicador luminoso de modo de operação na área de “Comando TG n° x” da tela do
+controle da turbina acende em vermelho, mostrando o texto “LOCAL” para alertar o operador do
+CCM. 
+2.4.4 - Fail set nos motores diesel 
+O motor Diesel pode ser controlado por dois controladores distintos: 
+-  Controlador Eletrônico ou “723” 
+-  Controlador Pneumático ou “PGA” 
+Por ter dois controladores, o fail set dos motores é tratado de forma um pouco diferente do passo e da
+turbina, como será visto em seguida. 
+ 
+Escolha do controlador ativo 
+A escolha do controlador ativo é feita de forma automática pelo próprio sistema. O controlador que
+solicita o menor set point ganha o controle e passa a comandar a posição da cremalheira de combustí -
+vel. 
+O set point do “PGA” é posicionado 10% (ajustável via parâmetro – item  3.3.2.6) acima do “723”,
+de forma que este último seja normalmente selecionado como controlador ativo. 
+Todavia, quando qualquer um dos dois apresenta problema, o seu set point é ajustado para o nível
+máximo, de forma que o outro assume o controle. Diz-se, então, que o primeiro está “desacoplado”. 
+ 
+Para Desacoplar 
+Para desacoplar o controlador eletrônico “723”, abre-se o seu sinal de saída, o que significa nível
+máximo de rotação (devido à lógica do “PGA / EG” ser invertida). Isto também ocorre quando se
+desliga o 723, ou quando há falha na tensão de 24V DC do painel do 723. 
+Para desacoplar o controlador “PGA”, abre-se o sinal de referência da válvula “I/P”, o que significa
+nível máximo de rotação. 
+Se o segundo controlador apresentar problema, o mesmo não pode ser ajustado para o máximo, pois
+provocaria o disparo do motor. Assim, neste caso, o segundo controlador seria “congelado” ("fail
+freeze"). 
+ 
+Para Congelar 
+Para congelar o controlador eletrônico “723” basta abrir a sua referência. O sinal de entrada do con -
+trolador é do tipo 4 a 20 mA. Ao abrir a referência, o controlador recebe um sinal de 0 mA, o que sig -
+nifica que a referência foi perdida e o mesmo deve ser congelado. 
+OSTENSIVO                                                     1- 131                                                         ORIGINAL
+
+--- PAGE 131 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Note-se que nem sempre é possível congelar o controlador “723”, isto é, nos casos de falha da tensão
+de alimentação ele é “desacoplado” independente do PGA estar ou não acoplado. 
+Para congelar o controlador pneumático “PGA”, fecha-se a válvula solenóide “VS1”, ver figura abai -
+xo. Esta válvula confina o ar na região de atuação do controlador, mantendo o nível selecionado con -
+gelado. 
+ 
+Os próximos itens analisam as falhas possíveis para cada controlador e modos de operação. Também
+definem os procedimentos recomendados em cada caso. 
+A figura 2.24 abaixo apresenta o diagrama lógico dos sinais dos controladores. Algumas dessas lógi -
+cas são implementadas através de software na respectiva remota. 
+                       Figura 2.24. Diagrama lógico de operação dos Controladores dos Diesel
+OSTENSIVO                                                     1- 132                                                         ORIGINAL
+
+
+--- PAGE 132 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Painel do 723: Figura 2.25 e figura 2.26.
+                                                 Figura 2.25. Painel do 723 (BB). Fragata Independência. 
+                        Figura 2.26. Painel da unidade do 723 – no centro: potenciômetro, mostrador 
+                                             de set-point e chave Auto/Manual. Fragata Liberal.
+OSTENSIVO                                                     1- 133                                                         ORIGINAL
+
+
+--- PAGE 133 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Resumo da falhas dos controladores dos diesel.  Tabela 2.1.
+ 
+Tabela 2.1. Falha dos controladores dos diesel
+Modos de operação. Tabela 2.2.
+ 
+Tabela 2.2. Modos de operação.
+“723 / Auto” (com Backup) 
+ 
+Características: 
+-  Remota operando 
+-  Controlador 723 normal 
+-  Controlador PGA normal 
+-  Chave “Auto/Man” do painel do 723 na posição “AUTO” 
+-  Set point controlado pela Remota baseado na DESSI solicitada via IHM 
+-  Indicação nas telas da IHM: “723/AUTO”; 723 aceso e PGA aceso
+OSTENSIVO                                                     1- 134                                                         ORIGINAL
+
+
+--- PAGE 134 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Efeitos e recomendações na ocorrência de eventos: Tabela 2.3.
+ 
+Tabela 2.3. Efeitos na ocorrência de eventos
+OSTENSIVO                                                     1- 135                                                         ORIGINAL
+
+
+--- PAGE 135 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+“723 / Auto” (sem Backup) 
+ 
+Características: 
+-  Remota operando 
+-  Controlador 723 normal 
+-  Controlador PGA desacoplado 
+-  Chave “Auto/Man” do painel do 723 na posição “AUTO” 
+-  Set point controlado pela Remota baseado na DESSI solicitada via IHM 
+-  Indicação nas telas da IHM: “723 / AUTO”; 723 aceso e PGA apagado 
+ 
+Efeitos e recomendações na ocorrência de eventos: Tabela 2.4.
+ 
+Tabela 2.4. Efeitos na ocorrência de eventos.
+“PGA / Remoto”  
+ 
+Características: 
+-  Remota operando 
+-  Controlador PGA normal 
+-  Controlador 723 desacoplado 
+-  Chave “Auto/Man” do painel do 723 na posição “AUTO” 
+-  Set point controlado pela Remota baseado na DESSI solicitada via IHM 
+-  Indicação nas telas da IHM: “PGA/REMOTO”; 723 apagado e PGA aceso 
+ 
+Efeitos e recomendações na ocorrência de eventos: Tabela 2.5.
+ 
+Tabela 2.5. Efeitos na ocorrência de eventos.
+OSTENSIVO                                                     1- 136                                                         ORIGINAL
+
+
+--- PAGE 136 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+“723 / Manual”  
+Características: 
+-  Estado da Remota: Irrelevante 
+-  Controlador 723 normal 
+-  Controlador PGA desacoplado 
+-  Set point ajustado Manualmente no painel do 723 
+-  Chave “Auto/Man” do painel do 723 na posição “MAN” 
+-  Indicação nas telas da IHM: “723/MANUAL” (se Remota estiver operando) 
+ 
+Efeitos e recomendações na ocorrência de eventos: Tabela 2.6.
+                                           Tabela 2.6. Efeitos na ocorrência de eventos.
+Local 
+Características: 
+-  Estado da Remota: Irrelevante 
+-  Controlador 723 desacoplado 
+-  Controlador PGA desacoplado 
+-  Ajustar set point manualmente no PGA / EG 
+-  Indicação nas telas da IHM: “LOCAL” (se Remota estiver operando) 
+Diagrama de Transição de Estados de Controle do Diesel: Figura 2.27.
+                             Figura 2.27. Diagrama de Transição de Estados de Controle do Diesel
+(*) Nestes casos o motor pode disparar. O operador local deve atuar imediatamente para controlá-lo. 
+OSTENSIVO                                                     1- 137                                                         ORIGINAL
+
+
+--- PAGE 137 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Causas de fail set  
+-  Falha na alimentação de115VAC da Remota 
+-  Falha na CPU da Remota 
+-  Falha nos circuitos de watchdog da CPU da Remota 
+-  Falha nas fontes 24VDC ‘1 e 2’ ou ‘3 e 4’ do Painel da Remota 
+-  Falha na tensão 24VDC ou 50VDC do Navio 
+-  Falha na tensão 24VDC no painel do 723 
+-  Chave de manutenção na posição “DESL” (24V 723) 
+-  Nenhum controlador ativo
+Rearme dos Controladores.
+Rearmar “723” / Man 
+Condições necessárias: 
+-  Alimentação 24V DC no painel local do 723 Ok 
+-  Remota Ok 
+Passos para Rearmar: 
+-  Verificar se o controlador 723 está desligado. Nesse caso não será possível prosseguir a operação
+com o motor ligado. Será necessário, portanto, desligar os motores do bordo. 
+-  Ligar o controlador 723, se estiver desligado 
+-  Posicionar chave “Auto/Man” na posição “Man” 
+-  Ajustar set point Manual para nível compatível com o nível de rotação atual 
+-  Rearmar modo analógico do “723”, na Tela do controlador ou no painel do “723” 
+-  Rearmar fail set do respectivo motor 
+-  Rearmar controlador na respectiva tela. 
+-  Se estava em modo Local, liberar set point Local 
+  
+Rearmar “723” / Auto  
+Condições necessárias: 
+-  Alimentação 24V DC no painel local do 723 Ok 
+-  Remota Ok.
+Passos para Rearmar: 
+-  Verificar se o controlador 723 está desligado. Nesse caso não será possível prosseguir a operação
+com o motor ligado. Será necessário, portanto, desligar os motores do bordo. 
+-  Posicionar chave “Auto/Man” na posição “Auto” 
+-  Ajustar DESSI para nível compatível com o nível de rotação atual 
+-  Rearmar modo analógico do “723”, na Tela do controlador ou no painel do “723” 
+-  Rearmar fail set do respectivo motor. 
+-  Rearmar controlador na respectiva tela. 
+-  Se estava em modo Local, liberar set point Local 
+ 
+Rearmar “PGA” / Auto 
+Condições necessárias: 
+-  Alimentação 24V DC no painel local do 723 Ok 
+-  Remota Ok 
+Passos para Rearmar: 
+-  Fechar Válvula de alívio de pressão do circuito pneumático 
+-  Ligar o controlador PGA 
+-  Posicionar chave “Auto/Man” na posição “Auto” 
+-  Ajustar DESSI para nível compatível com o nível de rotação atual 
+-  Rearmar controlador na respectiva tela. 
+-  Rearmar fail set do respectivo motor. 
+-  Se estava em modo Local, liberar set point Local 
+OSTENSIVO                                                     1- 138                                                         ORIGINAL
+
+--- PAGE 138 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Diagrama do Rearme dos Controladores dos motores Diesel. Figura 2.28.
+                               Figura 2.28. Diagrama do Rearme dos Controladores dos motores Diesel.
+2.4.5 - Painel de rearme do fail set 
+Quando ocorre fail set as lâmpadas [3], acendem. Uma vez sanada a causa do acionamento do fail set,
+basta pressionar o botão de rearme correspondente [2] e a lâmpada verde [1] correspondente acende.
+Botão [4], usado para teste de lâmpadas. 
+A figura 2.29 abaixo mostra o Painel de rearme e informação do fail set localizado nos armários das
+remotas.  
+ 
+ 
+ 
+ 
+ 
+  
+Figura 2.29. Painel do controle de falhas
+OSTENSIVO                                                     1- 139                                                         ORIGINAL
+
+
+--- PAGE 139 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.5 – MANUTENÇÃO
+As ferramentas de manutenção são aquelas exibidas no menu manutenção. Mostrado na figura 2.30
+abaixo sendo que já foi apresentado anteriormente. 
+ 
+Para se ter acesso a esta área é necessário que a chave de segurança esteja na posição manutenção. 
+                                           Figura 2.30. Menu manutenção.
+Entretanto, todas as funções acima só são acessíveis pelos usuários com senha de gerência. Para os
+usuários com senha de supervisor, somente são acessíveis as quatro primeiras funções, que são: 
+ 
+-  Módulo Teste – Boreste; 
+-  Módulo Teste – Bombordo; 
+-  Configuração Estações; 
+-  Ver Tabelas. 
+ 
+A seguir, detalham-se cada uma das funções do menu manutenção.
+2.5.1- Módulos de teste 
+Ao se selecionar a função “Módulo Teste – Bombordo” ou “Módulo
+Teste– Boreste” a janela da figura 2.31 ao lado é exibida. 
+ Figura 2.31. Janela para módulo de teste. 
+OSTENSIVO                                                     1- 140                                                         ORIGINAL
+
+
+--- PAGE 140 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Acessibilidade  
+No caso particular do exemplo, o acesso a esta janela é feito através do botão  “Manutenção/Módulo
+Teste - Bombordo”, porém só é permitido com a chave de segurança acionada e com senha adequada.
+Toma-se como exemplo o Módulo Teste - Bombordo, lembrando sempre que a funcionalidade é a
+mesma para Boreste. 
+ 
+Funcionalidade 
+Existem quatro configurações que se pode colocar o sistema de propulsão:  
+Normal: modo usado para operação normal do sistema. Neste modo, as máquinas selecionadas rece -
+bem set-point de rotação correspondente ao DESSI atual, as máquinas não selecionadas recebem set-
+point de rotação ralanti e o HPC recebe  set-point de passo correspondente à DESSI atual. Neste
+modo, os campos da janela exibida na figura 2.31 ficam todos em cinza, indicando que não estão ha -
+bilitados para receber valores. 
+ 
+Engine test: modo usado para se fazer teste nas máquinas (turbinas e motores Diesel). Neste modo, o
+set-point de passo fornecido pelo SCMPA é sempre zero. Para as máquinas, existe duas formas de se
+forçar a rotação: 
+-  Via DESSI: as máquinas selecionadas recebem set-point de rotação correspondente ao DESSI atual
+e as não selecionadas recebem set-point correspondentes à rotação de ralanti. 
+-  Via digitação de valor: o  set-point de rotação fornecido à cada máquina é aquele digitado no cam -
+po correspondente na janela exibida na figura 2.31. 
+Neste modo, os campos correspondentes às rotações das máquinas da janela citada ficam todos em
+branco, indicando que estão habilitados. O campo do passo fica desabilitado (cinza). 
+ 
+CPP test: modo usado para se fazer teste no HPC. Neste modo, os set-points de rotação para todas as
+máquinas ficam em ralanti. Para o passo, existe duas formas de se forçar o ângulo: 
+-  Via DESSI: o set-point de passo fornecido é o correspondente ao DESSI atual; 
+-  Via digitação de valor: o set-point de passo é igual ao digitado pelo operador no campo correspon -
+dente na janela da figura 2.31. 
+Neste modo, os campos correspondentes às rotações das máquinas ficam desabilitados (em cinza) en -
+quanto que o campo de passo fica branco (habilitado). 
+ 
+Manual: Neste modo, pode-se forçar set-points de duas formas: 
+-  Via DESSI: o set-point das máquinas selecionadas é o do DESSI atual. O set-point de passo é o do
+DESSI atual. 
+-  Via digitação de valor: os set-point de passo e os de rotação são iguais aos digitados nos correspon -
+dentes campos da janela da figura 2.31. 
+Para as máquinas não selecionadas, o SCMPA não impõe a rotação ralanti. O set-point imposto é
+igual ao digitado na janela. 
+ 
+Nota: em qualquer dos casos, os set-points impostos correspondem ou ao último DESSI imposto ou
+ao s últimos valores digitados. 
+Para executar qualquer um deles, deve-se clicar com o botão esquerdo do mouse
+sobre o desenho da chave. O menu de botões da figura 2.32 é então exibido. 
+O centro da chave, ao mudar de posição, indica o teste que está sendo executado. 
+A cor tanto do centro da chave como dos botões também muda de acordo com
+teste:
+ - Normal: Verde 
+ - Engine e CPP test: Vermelho 
+ - Manual: Amarelo 
+Figura 2.32. Chave de teste.
+OSTENSIVO                                                     1- 141                                                         ORIGINAL
+
+
+--- PAGE 141 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.5.2 - Configuração das estações 
+Ao se clicar na opção de configuração das estações, a janela da figura 2.33 é exibida. Através desta, é 
+possível configurar todas as estações, definindo quais telas, telégrafos ou botões podem ser ativados
+ou desativados. 
+ 
+Figura 2.33. Tela de configuração das estações
+No momento em que esta tela é aberta, aparece uma janela para selecionar um perfil de operação
+existente ou criar um novo perfil.  
+ 
+Para escolher as funções, basta clicar com a tecla esquerda do  trackball a “check-box” ou a “radio-
+button” correspondente, marcando ou não o item desejado. 
+ 
+As alterações só passam a valer imediatamente se tiverem sido feitas em um modo de operação cor -
+rente. Por exemplo, se o modo de operação corrente for DEM com controle da propulsão para CCM
+(DEM-CCM), apenas as alterações de configuração feitas para este modo passam a valer.  
+As configurações feitas para outros modos, passam a valer após alteração do modo de operação.   
+ 
+Também pode-se configurar os comandos de emergência de maneira que se contorne a confirmação
+da solicitação, assim os comandos atuam imediatamente. Para isso basta marcar a caixinha localizada
+na parte inferior, à esquerda da tela (Comandos de Emergência: Atuação Direta). 
+OSTENSIVO                                                     1- 142                                                         ORIGINAL
+
+
+--- PAGE 142 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.5.3 -   Interface Remota x IHM 
+Ao selecionar este item do sub-menu, abre-se a janela abaixo( figura 2.34): 
+É possível escolher os campos que vão apare -
+cer na tabela a ser exibida.  
+Pode-se também marcar ou desmarcar todos ao
+mesmo tempo  através  dos botões localizados
+no lado direito da janela. 
+Após a seleção, clicar no botão Prox. >>, para
+acessar a janela da figura 2.35 abaixo. 
+           Figura 2.34.  Interface Remota x IHM
+Aqui é feita a escolha da ordem das colunas, ou
+seja qual será a 1ª, 2ª e assim sucessivamente. 
+Para alterar a posição de uma coluna, é neces -
+sário selecioná-la e mudar sua posição através
+dos botões localizados a direita da janela. 
+  
+Após a seleção, clicar no botão Prox. >>, para
+acessar a janela da figura 2.36 abaixo. 
+             Figura 2.35.  Interface Remota x IHM
+OSTENSIVO                                                     1- 143                                                         ORIGINAL
+
+
+--- PAGE 143 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Existe  a possibilidade  de filtrar  a tabela  por
+qualquer uma das colunas ou fazer uma lógica
+de filtro entre várias colunas. 
+ 
+Por exemplo, tabela referente apenas as rota -
+ções de boreste:  
+([LadoNavio] = 'boreste')  AND 
+([Unidade] = 'rpm') 
+ 
+Após a seleção, clicar no botão Prox. >>, para
+acessar a janela da figura 2.37 abaixo.
+             Figura 2.36.  Interface Remota x IHM
+Nesta janela, é possível selecionar
+qual a forma de ordenação dos re -
+gistros na tabela. 
+ 
+Um exemplo de resultado de pes -
+quisa  é apresentado na tabela da
+figura 2.38 abaixo.
+ 
+Após  a  seleção,  clicar  no  botão
+Prox. >>, para acessar a janela da
+figura 2.38 abaixo. 
+                    Figura 2.37.  Interface Remota x IHM
+OSTENSIVO                                                     1- 144                                                         ORIGINAL
+
+
+--- PAGE 144 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+ 
+Figura 2.38. “Interface Remota X IHM” 
+2.5.4 - Interface Remota x Campo 
+ 
+Os passos para obtenção desta tabela são os mesmos para a tabela do item anterior, diferindo apenas
+nas colunas referentes às informações de campo no lugar das informações sobre a IHM. Na figura
+2.39 abaixo, apresenta-se um exemplo de tabela resultante desta pesquisa.
+ 
+Figura 2.39. “Interface Remota X Campo”
+OSTENSIVO                                                     1- 145                                                         ORIGINAL
+
+
+--- PAGE 145 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Lista de Alarmes 
+Possibilita a criação de uma tabela que mostra todos os eventos do sistema: liga/desliga máquinas, se -
+leções, reconhecimento de alarmes e solicitação de controle. Pode-se ainda saber o horário, usuário,
+estação e sistema nos quais estes eventos ocorreram. Figura 2.40.
+                                                      Figura 2.40. “Lista de alarmes” 
+2.5.5 - Programa de manutenção 
+Ao se selecionar esta opção no menu, abre-se a janela da figura 2.41 abaixo, na qual é possível fazer
+manutenção nos bancos de dados e configuração do Card Wizard.  
+                                                             Figura 2.41. Módulo de manutenção
+OSTENSIVO                                                     1- 146                                                         ORIGINAL
+
+
+--- PAGE 146 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Base de Dados
+Este sub-menu permite trabalhar com as bases de dados existentes no siste -
+ma, através das opções mostradas nos itens seguintes. 
+ 
+Nota: A habilitação de algumas opções depende do funcionamento dos
+Scadas e do cartão local. Por exemplo, a opção ‘Sincronizar’ necessita que
+os dois Scadas estejam presentes; já a opção ‘Reparar’ é habilitada se um
+dos Scadas ou o Cartão de disco local estiverem presentes. 
+Figura 2.42. Base de dados.
+Reparar, Compactar e Compactar Todas.
+As janelas para reparar e compactar arquivos
+são semelhantes em seu aspecto e funciona -
+mento. 
+Sendo assim, usa-se como exemplo a função
+‘reparar’. O que for dito sobre ela pode ser
+aplicado a função ‘compactar’. 
+ 
+Para se selecionar o arquivo a ser reparado,
+escolhe-se o arquivo a partir da janela apre -
+sentada na figura 2.43 ao lado. 
+ 
+Basta então clicar em “OK” para prosseguir
+o processo de reparação. 
+   Figura 2.43. Reparar, Compactar e Compactar Todas
+Existem alguns arquivos que só podem ser
+reparados (ou compactados) no modo off-
+line, pois estão sendo utilizados pelo siste -
+ma. Neste caso aparece a janela apresenta -
+da na figura 2.44 ao lado. 
+                    Figura 2.44. Modo off-line.
+Compactar Todas:  Esta opção compacta todas as bases de dados e para usá-la, é necessário que os
+dois Scadas estejam ativos.  
+OSTENSIVO                                                     1- 147                                                         ORIGINAL
+
+
+--- PAGE 147 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Item Limpar 
+Esta opção é utilizada para se remover registros antigos, a medida que o disco for ficando cheio. De
+fato, recomenda-se que quando o disco chegar a uma situação  de haver somente 100Mbytes  de espa -
+ço disponível, a limpeza deve ser feita de modo a esse limite não ser ultrapassado (o cartão de disco
+utilizado para armazenar os dados tem 520Mbytes). 
+Ao se selecionar este item do menu, a janela da figura 2.45
+ao lado aparece. Esta permite a escolha da data até a qual os
+arquivos serão limpos, ou seja, da data escolhida para trás
+os dados serão apagados. 
+             Figura 2.45. Data limite.
+Ao se clicar sobre a data, um calendário é aberto para que se possa selecionar a data, como é mostra -
+do na figura 2.46 abaixo.
+                                              Figura 2.46. Janela de seleção de data 
+Item Copiar 
+Copia um subdiretório de um diretório para outro. Ao se clicar essa opção, as telas da f igura 2.47
+aparecem.
+                                           Figura 2.47. Janelas de origem e destino das cópias 
+OSTENSIVO                                                     1- 148                                                         ORIGINAL
+
+
+--- PAGE 148 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Sincronizar 
+Os bancos de dados dos Scadas 1 e 2 são idênticos, no sentido que eles possuem o mesmo conjunto
+de tabelas (se, no Scada 1, existe uma tabela com colunas A, B e C, no Scada 2 também existe uma
+tabela, com o mesmo nome, e com as colunas A, B e C). Entretanto, o conteúdo de duas tabelas
+idênticas, uma no Scada 1 e outra no 2, podem ser diferentes num determinado momento (falta de sin -
+cronismo). A função “Sincronizar” visa eliminar esta diferença, isto é, fazer com  que o conteúdo des -
+tas tabelas seja o mesmo. 
+ 
+Após o comando de sincronizar, a mensagem apresentada na figura 2.48 abaixo, é exibida na tela. O
+acompanhamento do processo de sincronização pode ser feito a partir da janela apresentada na figura
+2.49 abaixo.
+                             Figura 2.48. Módulo manutenção.                                 Figura 2.49. Sincronizando.
+Procurar Scadas 
+Localiza os Scadas 1 e 2 na rede. 
+Durante o processo de procura, a jane -
+la da figura 2.50 ao lado é exibida.
+              Figura 2.50. Processo de procura.
+OSTENSIVO                                                     1- 149                                                         ORIGINAL
+
+
+--- PAGE 149 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Off-line
+Ao se clicar no sub-menu ao lado (necessário
+para se trabalhar off-line), aparece a mensagem
+apresentada na figura 2.51  ao lado, que aguarda
+ação do operador. 
+                 Figura 2.51. Modo off-line
+Ao se clicar no botão “Sim”, a estação é reiniciada no modo manutenção com a janela mostrada na fi-
+gura 2.52 (vide manual de software). Após feitas as configurações necessárias, deve-se acionar o
+sub-menu ‘Fim’ e a estação é então reiniciada normalmente. 
+ 
+ 
+                                                         Figura 2.52. Módulo de manutenção
+Ajuda 
+Abre a janela de ajuda explicada anteriormente. 
+ 
+Fim 
+Sai do programa de manutenção. 
+OSTENSIVO                                                     1- 150                                                         ORIGINAL
+
+
+--- PAGE 150 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.5.6 - Alterar foto fragata 
+Ao se selecionar esse item, a janela apresentada na
+figura 2.53 ao lado é exibida. A partir desta, pode-
+se alterar a foto inicial do sistema, tal como mostra -
+da anteriormente. Para tanto, basta selecionar a foto
+desejada. 
+             Figura 2.53. Alterar foto fragata.
+2.5.7 - Definir estação 
+ 
+Esta opção define a estação atual. Isso se faz escolhendo entre as classes de estações que se apresen -
+tam na figura 2.54. Sua utilização se dá de duas formas: 
+ 
+-  Ao se inicializar uma estação pela primeira vez (por exemplo, no caso de ter sido substituída uma
+placa de CPU por uma sobressalente) a janela da figura 2.54 aparece na inicialização, para que o
+usuário possa informar o sistema qual a classe a qual esta estação pertence; 
+-  Para se mudar a configuração da estação durante a operação (com a posterior mudança de configu -
+ração, a estação deve ser reiniciada), pode-se abrir esta janela a partir do menu de Manutenção. 
+                                  Figura 2.54. Janela para configuração das estações
+OSTENSIVO                                                     1- 151                                                         ORIGINAL
+
+
+--- PAGE 151 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+2.5.8 - Navegação
+Mostra as opções que relaciona as teclas de atalho para troca rápida de telas ou chamada de algumas
+funções (vide figura 2.55). 
+ 
+ 
+                                                    Figura 2.55. Teclas de atalho.
+OSTENSIVO                                                     1- 152                                                         ORIGINAL
+
+
+--- PAGE 152 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+OSTENSIVO                                                     1- 153                                                         ORIGINAL
+
+--- PAGE 153 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025

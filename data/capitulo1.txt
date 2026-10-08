@@ -1,0 +1,3598 @@
+
+OPERAÇÃO DO SISTEMA NO MODO NORMAL
+Introdução  
+O objetivo desse documento é ser um manual conciso para os operadores do SCMPA (Sistema de
+Controle e Monitoração da Propulsão e Auxiliares para as fragatas classe “Niterói”), fornecendo as
+informações necessárias à operação normal do sistema através de suas estações de operação e, em
+caso de operação degradada (na presença de falhas), através de suas unidades remotas  (de controle
+do passo e/ou dos motores diesel). Fornece ainda informações resumidas de Manutenção para serem
+usadas na detecção e pesquisa de avarias a partir das estações de operação e como usar as facilidades
+de ajuda on-line que o sistema possui.
+Este documento é uma apostila para o curso de operação e manutenção do sistema de controle da
+propulsão e das máquinas auxiliares das corvetas da classe Inhaúma da Marinha do Brasil.
+O objetivo deste manual é fornecer aos operadores dos consoles CP(CCM), CP(PASSADIÇO) e
+CMAUX as informações necessárias a utilização, operação e manutenção do sistema de controle da
+propulsão, principalmente no que se refere aos controles a ele acoplados.
+1.1 – ABREVIATURAS E VISÃO GERAL DO SISTEMA
+1.1.1- Abreviaturas do sistema:
+ 
+723 – Regulador de Velocidade Digital Woodward 
+AL – Módulo Asa Lateral  
+AR – A ré 
+AUX – Auxiliares  
+AV – Avante  
+BB – Bombordo 
+BE – Boreste 
+BP – Baixa Pressão 
+CCM – Centro de Controle de Máquinas 
+DESSI – Desired Effective Shaft Speed Indicator - Indicador da Velocidade Efetiva Desejada do Eixo
+DI – Inboard Diesel – Motor Diesel Interno 
+DO – Outboard Diesel – Motor Diesel Externo 
+GG – Gerador de gás 
+HD – Hard Disk  (Disco Rígido)  
+HPC – Hélice de Passo Controlado 
+IHM – Interface Homem-Máquina 
+MB – Módulo Básico 
+MCA – Motor de Combustão Auxiliar (Gerador Elétrico)  
+MCP – Motor de Combustão Principal (Gerador Diesel)  
+N/D – Não Disponível 
+OC – Óleo Combustível 
+O.D.Box – Oil Distribution Box 
+OL – Óleo Lubrificante 
+PC – Personal Computer - Computador Pessoal 
+PGA – Pneumatic Governor Actuator - Atuador/ Regulador Pneumático de Velocidade 
+QMC – Quarter Master Console - Console do Passadiço 
+RAA – Unidade Remota de Aquisição e Atuação de sinais 
+RPM – Rotações por  minuto 
+SCA – Sistema de Controle e Acionamento 
+SCADA – Supervisory Control and Data Aquisition – Aquisição de Dados e Controle de Supervisão 
+SCMPA – Sistema  de Controle e Monitoração de Propulsão e Auxiliares 
+OSTENSIVO                                                     1- 2                                                         ORIGINAL
+
+--- PAGE 2 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+SSU – Speed Sense Unit - Unidade Medidora de Velocidade 
+TG – Turbina a gás 
+TP – Turbina de potência
+1.1.2- Visão geral do sistema SCMPA
+ Na figura 1.1 mostra uma visão geral do sistema SCMPA.
+                                                   Figura 1.1. Visão geral do sistema
+1.1.3- Composição física do sistema 
+As estações de operação do SCMPA são em número de quatro, sendo que uma está no passadiço e as
+outras três estão no centro de controle de máquinas (CCM), conforme mostra a figura 1.2.  
+Os consoles do CCM possuem duas estruturas anexas denominadas, cada uma, de módulo asa lateral
+(AL).  
+ 
+Essas estações de trabalho são divididas em: 
+- Estações  Scada, que, além de suportarem a IHM, hospedam o subsistema supervisório e têm a 
+capacidade de comunicação com as remotas. Desta forma, além da operação, elas permitem a obten -
+ção de informações sobre a planta do navio, alteração parâmetros, execução de comandos, etc. 
+OSTENSIVO                                                     1- 3                                                         ORIGINAL
+
+
+--- PAGE 3 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+- Estações Vista,  que permitem a mesma funcionalidade operacional das estações Scada sem, entre -
+tanto, possuir o recurso de comunicação com as remotas e hospedarem as funcionalidades de supervi -
+são. As estações Vista utilizam as estações Scada para ter acesso às informações das remotas. 
+ 
+As estações tipo Scada são em número de duas, que são as estações de BB e a de BE do CCM. As ou -
+tras duas ( passadiço e a central do CCM), são tipo Vista. 
+   
+                                                       Figura 1.2. Composição do sistema
+Tanto as estações tipo scada quando vista, que diferem muito pouco quanto ao hardware, estão repre -
+sentadas mais detalhadamente na figura 1.3.  
+Elas possuem dois teclados de operação ( figura 1.4 e figura 1.7 ) e um trackball, por meio dos quais
+o operador fetua comandos ou digita dados. 
+                                                    Figura 1.3. Estação de trabalho 
+OSTENSIVO                                                     1- 4                                                         ORIGINAL
+
+
+--- PAGE 4 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+ Um dos teclados é denominado  teclado funcional, (vide figura 1.4) cujas teclas são dedicadas a co -
+mandos específicos do sistema. As teclas deste teclado estão agrupadas em duas áreas básicas, bom -
+bordo (BB) e boreste (BE). Os tipos de comandos são os seguintes: 
+ 
+• Comandos de emergência 
+• Comandos de propulsão 
+• Telégrafos 
+                                                           Figura 1.4. Teclado funcional
+As teclas centrais fornecem valores preestabelecidos de DESSI.  
+ 
+- Comandos de Emergência:  São as teclas  “Tudo Adiante”, “Tudo Atrás” , “Cancela Seleção” e 
+“Contorna Desarme TP”.   
+ A duas primeiras, quando pressionadas, demandam  DESSI máximo para frente ou para trás, respec -
+tivamente. 
+Após isso, aparece a janela de confirmação como da Figura 4 na tela da estação correspondente do
+CCM (o texto exibido é “Tudo Adiante” ou “Tudo Atrás”, dependendo da tecla que foi pressionada.
+A cor de fundo da janela também depende do fato de se pressionar a tecla de BB ou de BE). 
+ 
+Nota: a confirmação de um comando de emergência, como a mostrada na f igura 1.5, pode ser confi-
+gurada somente por um usuário da classe Supervisor ou maior. 
+                                                 Figura 1.5. Janela de emergência 
+OSTENSIVO                                                     1- 5                                                         ORIGINAL
+
+
+--- PAGE 5 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+ A tecla  “Cancela Seleção”, após pressionada, apresenta a janela de confirmação da figura 1.6, se es-
+tiver configurada para isso.
+    
+                                                         Figura 1.6. Desselecionar eixo 
+ 
+A tecla “Contorna Desarme da TP” retarda, enquanto for mantida pressionada, a ocorrência do desar -
+me da TP por alguma das condições causadoras de desarme. 
+ 
+O outro teclado é denominado teclado padrão (vide figura 1.7) tendo, à direita, o trackball. As opera -
+ções neste teclado são semelhantes àquelas dos teclados e mouse comuns de microcomputadores.  
+  
+                                            Figura  1 .7.Teclado padrão com trackball 
+OSTENSIVO                                                     1- 6                                                         ORIGINAL
+
+
+--- PAGE 6 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.2 – ACESSO DOS USUÁRIOS AO SISTEMA
+1.2.1 - Procedimento de acesso 
+A primeira tela que surge nos monitores das estações de trabalho, tanto do passadiço (QMC) como no
+CCM, é a tela de apresentação (vide figura 1.9). A foto da fragata pode ser alterada conforme expli -
+cado mais adiante. 
+ Ao se clicar no botão iniciar da tela, o sistema apresenta a janela da figura 1.10, onde o usuário deve
+digitar seu nome de usuário e sua senha de acesso. Na figura 1.8, apresenta-se a tela que aparece
+quando o sistema está fazendo o processamento do login (reconhecimento do usuário) e quando está
+sendo inicializado. Nestas etapas, o usuário deve aguardar. 
+                                        Figura 1.8. Tela de apresentação do sistema
+                                            Figura 1.9. Tela de apresentação do sistema
+OSTENSIVO                                                     1- 7                                                         ORIGINAL
+
+
+--- PAGE 7 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+No canto superior esquerdo desta tela, é exibida a hora e a data atual. 
+                                                         Figura 1.10.  Janela de login
+Quando o operador desejar encerrar a operação na sua estação de trabalho, ele deve executar o “lo -
+gout” (saída do sistema) que será descrito mais adiante. 
+1.2.2 - Níveis de acesso
+Existem 4 diferentes classes de usuários, cada uma possuindo um nível de acesso diferente para as di -
+versas telas e janelas de operação do sistema. Essas classes são: 
+ 
+•  Operadores do Passadiço:  usuários com permissão de operar somente a partir do console do pas -
+sadiço e somente os comandos presentes nas telas do passadiço (apresentadas nas figura 1.14 e figu-
+ra 1.15), ou seja, somente podem atuar sobre os comandos relativos à demanda de potência e propul -
+são. 
+Dependendo da configuração da estação do passadiço (a ser detalhado mais adiante) os comandos de 
+emergência podem ou não necessitar de confirmação pelos operadores das estações do CCM. 
+•  Operadores do CCM:  usuários com permissão de operar a partir das estações do CCM e do passa -
+diço,tendo permissão de operar todos os comandos disponíveis nas telas do sistema, de reconhecer
+todo tipo de alarme ocorrido, de consultar informações de históricos on-line, de disparar procedimen -
+tos de relatório, coleta de dados e demais operações hoje atribuídas a equipe de operação do CCM.
+Esse grupo pode operar a partir do console do passadiço com todos os recursos disponíveis nos con -
+soles do CCM, isto é,todas as telas do CCM podem ser carregadas na estação do passadiço por um
+usuário desta classe. 
+•  Supervisores: além de todas as funções dos grupo de usuários operadores, o grupo dos superviso -
+res possui acesso a algumas funções especiais, que são: configuração de alarmes, configuração de pa -
+râmetros e configuração de funções do sistema.  Para utilizar tais funções, é necessário a utilização da
+chave de segurança. 
+•  Manutenção: este grupo de usuários possui, além das funções de todos os grupos de usuários ante -
+riores,permissões para realizar funções de manutenção do software do sistema de IHM. Para utilizar
+tais funções, é necessário a utilização da chave de segurança. 
+ 
+Nota: Toda vez que uma conta de Supervisão ou Manutenção for  logada em uma estação, será gera -
+do um alarme de sistema informando as demais estações. 
+ 
+OSTENSIVO                                                     1- 8                                                         ORIGINAL
+
+
+--- PAGE 8 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Os níveis de acesso de cada grupo de usuários são apresentados na tabela 1.1 para a fragata Indepen -
+dência e na tabela 1.2 para a fragata Liberal.
+ 
+ 
+ 
+                 Tabela 1.1 Níveis de acesso para todas as classes de usuários(Fragata Independência). 
+ 
+*  Dependendo do perfil de operação ativo 
+** Dependendo de configuração pode atuar diretamente ou via confirmação 
+                     Tabela 1.2 Níveis de acesso para todas as classes de usuários(Fragata Liberal). 
+OSTENSIVO                                                     1- 9                                                         ORIGINAL
+
+
+--- PAGE 9 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.3 – DESCRIÇÃO GERAL DAS TELAS E JANELAS DO SISTEMA
+1.3.1 - Formato geral das telas do sistema  
+A IHM permite, no modo normal de operação (isto é, sem falhas): 
+•  partida e parada de máquinas; 
+•  seleção e troca de máquinas;  
+•  solicitação e comando de DESSI ; 
+•  monitoração e comando de sistemas auxiliares. 
+ 
+Todas essas operações são realizadas através de telas, janelas e objetos visuais que se apresentam nos 
+monitores das estações. Nas seções seguintes, apresentam-se definições e descrições detalhadas sobre
+telas, janelas e objetos visuais que constituem a IHM do SCMPA. 
+A IHM do SCMPA possui diversas telas, exibidas nos monitores de vídeo de onde o operador inicia
+todas as funções de monitoração e controle. Toda tela está estruturada em áreas, como mostram as fi-
+guras 1.11, 1.12 e 1.13 abaixo:
+         Figura 1.11 Forma padrão das telas de IHM( Fragata Independência )
+                Figura 1.12 Forma padrão das telas de IHM( Fragata Liberal) 
+OSTENSIVO                                                     1- 10                                                         ORIGINAL
+
+
+--- PAGE 10 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                                 Figura 1.13 Exemplo de tela de IHM(Fragata Liberal) 
+As seguintes telas de controle e monitoração fazem parte da IHM: 
+•  Controle e monitoração da propulsão: 
+ 
+-  Informações de BB e BE no passadiço (única tela acessível aos operadores do passadiço - classe 1) 
+-  Controle dos M.C.P.’S ( Motores de combustão principais) de BB e BE (uma tela por bordo) 
+-  Controle da turbina a gás de BB e BE (uma tela por bordo) 
+-  Monitoração de temperaturas do sistema de propulsão de BB e BE (ROTRACO). Uma tela por bor -
+do.  
+ •  Monitoração e partida e parada das auxiliares: 
+ 
+-  Sistema de óleo lubrificante (BB/ BE) 
+-  Sistema de óleo combustível 
+-  Sistema hidráulico do H.P.C. 
+-  Rede de incêndio, Aguada, Grupos de Osmose Reversa e Ar Condicionado 
+-  Agouti, Ar comprimido, Diesel geradores e Sistema vapor
+OSTENSIVO                                                     1- 11                                                         ORIGINAL
+
+
+--- PAGE 11 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.3.2 - Telas iniciais do sistema  
+A seguir, apresentam-se as telas que são exibidas logo após o usuário ter sido validado. 
+A tela inicial da estação do passadiço para modo diurno, que é a tela padrão, é apresentada na figura
+1.14 abaixo. 
+  
+   Figura 1.14. Tela inicial “Informações de BB e BE modo diurno” da estação do passadiço (QMC) 
+A tela do passadiço para modo noturno, que utiliza fundo preto contra tons de vermelho, é apresenta -
+da na figura 1.15 abaixo (note que as informações apresentadas são as mesmas que na tela acima). 
+   
+   Figura 1.15 Tela inicial “Informações de BB e BE modo noturno” da estação do passadiço (QMC) 
+Nota: A troca entre “Modo Diurno” e “Modo Noturno” é feita pelos ícones circundados nas figura
+1.14 e figura 1.15 acima. 
+OSTENSIVO                                                     1- 12                                                         ORIGINAL
+
+
+--- PAGE 12 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+As telas iniciais das estações de BB e BE do CCM são as telas de “Controle dos MCP’s- Bombordo”
+e “Controle dos MCP’s- Boreste”, respectivamente. Nas figura 1.16 e figura 1.17, apresenta-se a tela
+de controle dos MCP´s BE. As telas são semelhantes.  
+Note que o título da tela de BB tem o fundo cor vermelho claro e a tela de BE tem a cor verde claro.  
+                          Figura 1.16 Tela inicial “Controle dos MCP’s” da estação de BE
+                                  Figura 1.17 Tela inicial “Controle dos MCP’s” da estação de BB
+OSTENSIVO                                                     1- 13                                                         ORIGINAL
+
+
+--- PAGE 13 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+A estação central do CCM tem sua tela inicial mostrada na figura 1.18 abaixo: 
+   Figura 1.18 Tela inicial “Rede de Incêndio, Aguada, GOR e Ar Condicionado” da estação central 
+Demais telas do sistema 
+ 
+As demais telas do sistema são exibidas pelas estações de trabalho à medida que são solicitadas, me -
+diante comandos executados via teclado ou trackball. Essas telas são explicadas mais detalhadamente
+em itens posteriores. 
+1.3.3 - Tipos de janelas do sistema 
+Existem dois tipos de janelas na IHM do SCMPA.   
+ 
+Quadro de diálogos:  surgem flutuando sobre as demais janelas do sistema e geralmente contém um
+ou mais botões que devem obrigatoriamente ser acionados pelo operador. Enquanto isto não ocorre, o
+sistema fica aguardando a ação do operador. Todas as entradas do teclado (exceto as funções especi -
+ais) e as entradas do  trackball ficam direcionadas para esta janela. Elas também não desaparecem e
+nem podem ser minimizadas. Somente podem ser sobrepostas por janelas-filhas com características 
+semelhantes. Em alguns casos, elas desaparecem por time-out. O quadro de diálogo pode conter tam -
+bém caixas de texto com mensagens para o operador, indicadores analógicos, lâmpadas de alerta, me -
+nus, janelas de comando, etc. Nesses casos, pode-se fechá-lo sem necessidade de uma ação.
+OSTENSIVO                                                     1- 14                                                         ORIGINAL
+
+
+--- PAGE 14 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+ Um exemplo de quadro de diálogo é apresentado na figura 1.19. Observe que ela não possui os bo -
+tões de minimização/maximização, e o botão de fechamento da janela, no canto superior direito, só
+será ativado depois de uma ação por parte do operador.  
+                                     Figura 1.19. Exemplo de janela modal ou de prioridade 
+ 
+ Janelas: quando abertas, não podem ser escondidas atrás das telas . Diferentemente dos quadros de 
+diálogo, as janelas permitem que entradas de teclado ou do trackball sejam direcionadas a outras jane -
+las abertas. Em termos técnicos, estas janelas são configuradas no topo da ordem das janelas, denomi -
+nada “Z-ordem”, isto é, possuem um atributo chamado –  “STAY ON TOP”. Tais janelas podem ser 
+movimentadas e minimizadas. Neste último caso, são sempre reativadas através da tecla “+”. O 
+fechamento de tais janelas é condicionado a condições específicas de cada uma delas. Os quadros de 
+telégrafo são exemplo de janelas desse tipo. Observe que ela não possui os botões de 
+minimização/maximização, e o botão de fechamento da janela, no canto superior direito, só será ati -
+vado depois de uma ação por parte do operador. 
+1.4 – DESCRIÇÃO DETALHADA DOS OBJETOS DE TELA E DE JANELAS
+A seguir, apresentam-se os objetos componentes das diferentes telas da IHM do SCMPA. Não se pre -
+tende,  nesta seção, apresentar todas as telas e janelas do sistema, mas somente os objetos que as
+compõe. Na seção 3.3, apresentam-se todas as telas e janelas do sistema com as suas funcionalidades
+detalhadas. 
+ 
+1.4.1 - Objetos da área de indicações de estações de trabalho em serviço 
+Esta área, que aparece em todas as telas, incluindo as do passadiço, indica o estado de cada uma das 
+estações e remotas, onde o controle da propulsão está alocado (passadiço ou CCM) e qual estação
+está servindo como SCADA da estação vista onde esta tela está sendo apresentada.  
+A caixa superior representa a estação do passadiço. As três do meio representam o CCM e as duas 
+retangulares representam as remotas de bombordo e boreste. Figura 1.20.
+ A indicação de onde está o controle da propulsão se dá através de uma flecha verme 
+ lha.  
+ O bordo branco indica em qual estação está servindo como SCADA para o vista que
+ está exibindo esta tela. 
+ O estado de cada estação é mostrado através de um código de cores, que é:  
+     Fig. 1.20.
+- verde claro - estação ativa e com operador 
+- verde escuro - só estação de BB e BE estão ativas 
+- cinza - estação ativa mas não “logada”, ou seja, não foi acessada através de senha 
+- vermelho - estação com falha 
+Ao clicar este objeto abre-se a tela de diagnóstico da rede, explicada mais adiante. 
+OSTENSIVO                                                     1- 15                                                         ORIGINAL
+
+
+--- PAGE 15 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.4.2 - Objetos da área de informações sobre remotas 
+Os objetos com formato de chave indicam se a chave de segurança do respectivo bordo está colocado
+no painel ( chave piscando em amarelo) ou se não está (chave na cor cinza). Figura 1.21.
+O texto “force” em preto com o fundo aceso em amarelo indica que existe algum ca -
+nal na respectiva remota que foi forçado. Quando o texto está em cinza com fundo
+em cinza (tal como na figura ao lado) não há canal forçado nesta remota. 
+O texto “fontes” em preto com fundo aceso em amarelo indica que existe algum pro -
+blema com as fontes da respectiva remota. Quando o texto está em cinza com fundo
+em cinza (tal como na figura) não há problema com as referidas fontes.
+     Figura 1.21.
+O texto “force” em preto com o fundo piscando em vermelho indica que a remota em questão está em
+estado de fail set, e, tal como em qualquer alarme, este estado persiste enquanto não houver reconhe -
+cimento. 
+ Tendo havido reconhecimento, mas o fail set não tiver sido rearmado, o fundo permanece aceso em
+vermelho enquanto o rearme não tiver ocorrido. 
+ 
+Ao clicar sobre os textos as seguintes janelas serão abertas: 
+ 
+-  Force: Diagnóstico da remota de BB ou BE 
+-  Fontes: Estado das fontes  
+-  Fail-set: Controle de falhas 
+ 
+Estas telas podem ser acessadas também através do botão de navegação ‘Diagnóstico’ e em seguida
+nos itens: Bombordo/Boreste: Remota ou Fontes ou Controle de falhas. 
+1.4.3 - Objetos da área de navegação entre telas 
+Estes objetos aparecem em todas as telas, exceto as telas padrão do passadiço e têm a mesma 
+funcionalidade em todas elas. 
+Na figura 1.22 ao lado, apresenta-se a área dos botões de navegação entre telas
+(as telas padrão do passadiço, apresentadas nas  figura 1.14 e  figura 1.15, não
+possuem esta área). 
+ 
+Dependendo do modo de operação, da estação e do usuário, alguns botões podem
+estar ativos (legendas em preto) e outros inativos (legendas em cinza escuro).  Por
+exemplo,no modo de operação DEM, onde deve haver um operador por estação, a
+área de navegação entre telas da estação de BB mostra somente os botões ligados
+ao sistema de BB, enquanto a de BE só os botões ligados ao sistema de BB. As te -
+las de auxiliares, que são somente apresentadas na estação central, só apresentam
+ativos os botões relativos aos sistemas auxiliares.  
+ 
+Nota:  No caso de desativação ou falha de uma das estações, as estações que 
+assumirem as suas funções devem apresentar ativos os botões que estariam ativos
+na estação que foi desativada. A hierarquia de prioridade das estações é: 1° esta -
+ção central, 2° estação de BB e 3° estação de BE. 
+     Figura 1.22.
+Cada botão desta área, quando clicado, apresenta um menu onde se pode escolher a tela que se deseja 
+apresentar. 
+OSTENSIVO                                                     1- 16                                                         ORIGINAL
+
+
+--- PAGE 16 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Botões Bombordo e Boreste 
+Ao se pressionar os botões “Boreste” ou “Bombordo” do menu acima, o menu ao 
+lado é exibido(figura 1.23), de onde se pode escolher qual tela dos subsistemas de
+propulsão será exibida. Vide seção mais adiante para detalhes sobre as telas dos
+MCP´s, para detalhes sobre as telas das turbinas, para detalhes sobre as telas de
+temperatura e  para detalhes sobre as janelas de turbina a ar.
+      Figura 1.23.
+Botão Auxiliares 
+Neste menu, que abre ao se pressionar o botão “Auxiliares” da área de
+navegação(figura 1.24), é possível selecionar qualquer uma das seis
+telas. 
+ 
+Nota:  
+•  Existe uma única tela que agrupa o sistema de geradores, o sistema
+de vapor, o sistema de ar comprimido e o sistema agouti. 
+•  sistema de aguada, a rede de incêndio, os grupos de osmose reversa
+e o sistema de ar condicionado estão agrupados em outra tela. 
+•  As telas de temperaturas de BB e BE também podem ser acessadas
+deste menu.
+               Figura 1.24.
+Para mais detalhes sobre a tela de óleo lubrificante, vide seção mais adiante: para tela de óleo com -
+bustível, para tela do sistema hidráulico do HPC, para tela do sistema de geradores, do sistema de va -
+por, do sistema de ar comprimido e do sistema agouti, para tela do sistema de aguada, rede de incên -
+dio, grupos de osmose reversa e sistema de ar condicionado, para telas de temperatura. 
+Botão Controladores 
+Através deste botão, exibe-se o menu dos controladores  (visto na  figura
+1.25) donde  se pode exibir as telas correspondentes aos controladores dos
+subsistemas de propulsão. 
+Para detalhes sobre as telas de controladores das TG´s, para as telas de con -
+troladores dos MCP´s, para as telas de controladores de HPC´s .
+          Figura 1.25.
+OSTENSIVO                                                     1- 17                                                         ORIGINAL
+
+
+--- PAGE 17 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Botão Parâmetros 
+Através desse botão, pode-se ter acesso aos parâmetros dos principais subsistemas da propulsão, po -
+dendo-se inclusive modificar os valores e/ou carregar um novo conjunto de valores a partir de um ar -
+quivo (isso será visto com mais detalhes mais adiante). 
+Botão Diagnóstico
+Ao se pressionar o botão “Diagnóstico”, exibe-se o menu ao lado( figura
+1.26). 
+Cada item do menu corresponde a uma ferramenta de auxílio ao diag -
+nóstico.
+Essas devem ser usadas em conjunto de modo a se poder detectar uma
+falha no sistema.  
+              Figura 1.26.
+Botão Manutenção 
+ 
+Através desse menu( figura 1.27), tem-se acesso às funções de manuten-
+ção do sistema (mais detalhes sobre essas funções a serem dados mais
+adiante).
+           Figura 1.27.
+Botão Utilitários 
+Esse menu contém várias funcionalidades adicionais do sistema:
+Como detalhes sobre a tabela de Dessi, para entrada manual de dados, para a
+janela de estado geral das máquinas, para informações sobre geração de re -
+latório,  para detalhes sobre lista de eventos, e para teste de teclado.
+         Figura 1.28.
+OSTENSIVO                                                     1- 18                                                         ORIGINAL
+
+
+--- PAGE 18 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.4.3.1 - Objetos da área de modo de operação e usuários 
+Modos de operação 
+Este objeto indica em qual modo de operação o sistema está configurado. Fig. 1.29. 
+      Fig. 1.29.
+Para se mudar a configuração de modo de operação, basta clicar uma vez com o botão esquerdo do
+trackball sobre o objeto. A janela “Seleção do Modo de Operação” ( mostrada na figura 1.30 ) é en-
+tão exibida. As funções fornecidas por essas janelas são:
+(1)→ Seleção de controle da propulsão: o controle está no
+CCM ou Passadiço. 
+ 
+(2)→Seleção do modo de operação, que são: 
+ -  DEM → 3 operadores no CCM, um por estação. 
+ -  CRUZEIRO → 1 operador no passadiço e 1 no CCM.
+ -  COMBATE→ 1 operador no passadiço, 3 no CCM e te -
+clas de emergência liberadas sem necessidade de confirma -
+ção.
+Figura 1.30.Seleção do modo de operação.
+Usuário Logado 
+Esse objeto(figura 1.31) exibe qual o usuário que está logado na estação em questão
+naquele dado momento. 
+     Fig. 1.31
+ 1.4.3.2 - Objetos da área de botões para chamada de janelas 
+ 
+ Ícone para saída do sistema 
+Esse botão(figura 1.32) permite ao operador encerrar sua sessão de trabalho, voltando à tela
+inicial representada na figura 1.9. 
+Fig. 1.32
+Ícone maximizador da lista de alarmes 
+Ao clicar esse botão( figura 1.33), o operador abre uma tela onde é mostrada a lista de alar -
+mes. As funções desta lista são explicadas mais adiante.
+Fig. 1.33.
+Ícone transferência de carga leve
+Este botão(figura 1.34) chama a janela para acompanhamento de dessi no momento de trans -
+ferência de carga leve entre navios. 
+Fig. 1.34.
+OSTENSIVO                                                     1- 19                                                         ORIGINAL
+
+
+--- PAGE 19 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.4.3.3 - Objetos da área de indicação de hora, data e cores do monitor 
+ 
+Indicador de funcionamento das cores do monitor
+Esse objeto(figura 1.35) indica o funcionamento das cores básicas componentes do canhão de
+cores do monitor da estação em questão, ou seja, vermelho, verde e azul. É útil pars detectar se
+o monitor está funcionando corretament.
+Fig. 1.35.
+Indicador de hora e data do sistema 
+Esse objeto(figura 1.36) indica hora e data do sistema.
+Fig. 1.36.
+ 1.4.3.4 - Objetos da área de Informações Gerais do Sistema 
+ 
+Na figura 1.37, apresenta-se a área de informações gerais do sistema. O objetivo deste conjunto de
+indicadores  é apresentar as informações principais da propulsão (máquinas  selecionadas, rotações,
+DESSI e ângulos de passo) independentemente da tela que estiver sendo exibida na estação em ques -
+tão. 
+Nota:  Essa área não é exibida para as telas padrão do passadiço (apresentadas nas figura 1.14 e figu-
+ra 1.15 ).
+                                    Figura 1.37. Área de Informações Gerais do Sistema
+Nas seções seguintes, detalham-se os diversos indicadores que compõem esta área. 
+ 
+Indicador analógico de rotação dos MCP´s e TG´s 
+Mostra o valor atual da rotação dos MCP´s e TG´s. Na figura 1.38 ao lado, por exemplo,
+tem-se a indicação da rotação do motor diesel n° 2 ( MCP2 ).
+Fig. 1.38.
+O fundo deste indicador assume cores que indicam estados diferentes, que são: 
+ 
+- vermelho piscando: parando 
+-  vermelho claro: parado 
+-  verde piscando: máquina partindo 
+-  verde claro: funcionando
+Indicadores analógicos de passo, DESSI e rotação do eixo 
+São usados para indicar o ângulo do passo, rotação do eixo e valor da dessi( figu-
+ra 1.39). A cor do indicador é sempre azul turquesa, e não tem significado espe -
+cial. 
+         Fig. 1.39.
+OSTENSIVO                                                     1- 20                                                         ORIGINAL
+
+
+--- PAGE 20 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Indicador de seleção de máquinas 
+Esse indicador é usado para apresentar para o operador o modo de propulsão em cada 
+bordo. Figura 1.40.
+Os modos de propulsão são: 
+ 
+-  2 MCP´s por bordo ( 1 e 3 ; 2 e 4); 
+-  1 MCP por bordo ( 1 e 2 ; 1 e  4;  3 e 2 ; 3 e 4); 
+-  1 TG por bordo; 
+-  Desselecionado (apresentado na figura acima). 
+ 
+O modo atual aparece no indicador sempre em fundo branco. Na mudança entre modo de propulsão,
+há uma alternância de cores do fundo : cinza para o modo que está sendo abandonado e branco para o
+qual está se passando. 
+Indicador de seleção de modo 
+Esse indicador apresenta para o operador o modo de propulsão. Figura 1.41.
+  Fig.1.41
+1.4.3.5 - Objetos da área de alarmes de todo o sistemas    
+Esta área da tela, que pode ser vista na tabela 1.3, apresenta uma lista parcial dos alarmes ocorridos
+(três últimos alarmes).  
+ 
+Tabela de Alarmes ( três linhas)  
+                                          Tabela 1.3. Área de Alarmes do Sistema 
+ 
+Se o alarme ainda não foi reconhecido, a cor do texto é vermelha. Se ele já foi reconhecido, a cor do
+texto é azul. 
+Os campos da lista de alarmes são: 
+ 
+- Ack: Se o campo estiver com uma marca (“tick”), o alarme já foi reconhecido; 
+- Nome da Tag: Apresenta a tag associada ao alarme; 
+- Descrição: Apresenta um texto, tipicamente informando o sistema onde ocorreu o alarme; 
+- Valor: Informa, para variáveis analógicas, o valor atual. Para variáveis digitais, o estado atual; 
+- Data: Informa a data da ocorrência do alarme; 
+- Hora: Informa a hora de ocorrência do alarme; 
+- Alarme: Apresenta o tipo do alarme (por exemplo, se foi alarme HI numa variável analógica); 
+- Buzina: Informa qual a buzina que foi acionada para o alarme em questão. 
+Menu da área de alarmes 
+ 
+Ao se clicar sobre a área de alarmes, com a tecla esquerda e depois com a tecla direita do trackball,
+abre-se o menu abaixo com os seguintes itens( figura 1.42):
+OSTENSIVO                                                     1- 21                                                         ORIGINAL
+
+
+--- PAGE 21 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Aceitar – reconhece o alarme marcado, voltando o texto da linha para a cor preta. 
+Aceitar todos – reconhece todos os alarmes, com o mesmo efeito acima. 
+Detalhar – mostra informações em forma de registros sobre o alarme marcado,
+mostrado mais abaixo. 
+Ir para Tela – apresenta a tela ou janela a que corresponde o alarme. 
+     Fig. 1.42.
+Obs: Se não houver alarme a ser reconhecido, o primeiro item do menu  acima, ou seja “Aceitar”,
+não vai ser apresentado. 
+  
+O botão ao lado(figura 1.43), ao ser clicado, exibe a lista completa de alarmes, como já foi
+dito na seção anterior.
+Fig. 1.43.
+1.4.3.6 - Objetos da área principal de dados e das janelas do sistema  
+ 
+Nesta seção, apresentam-se e descrevem-se o funcionamento dos objetos visuais que compõem as
+áreas principais das telas e as diversas janelas da IHM. Posteriormente, descreve-se cada tela e janela
+em particular e lista-se os objetos visuais que cada uma contém.  
+Relógio medidor analógico 
+Fornece a indicação numérica da variável analógica associada, tanto na for -
+ma analógica quanto na forma digital. Fornece também as seguintes infor -
+mações relacionadas( figura 1.44):  
+-  Faixa cinza: se o ponteiro estiver dentro desta faixa, a situação é normal. 
+-  Faixa vermelha: se o ponteiro estiver dentro desta faixa, a situação é de
+alarme; 
+-  Faixa verde claro:  o valor final da faixa verde indica o valor que o pon -
+teiro deve atingir (set-point). Essa faixa muda com o tempo; 
+-  Faixa verde escuro:  o valor final da faixa indica qual o valor que o set-
+point (faixa verde clara) deve atingir. 
+             Fig. 1.44.
+Quando em alarme, o fundo pisca em amarelo antes do reconhecimento. 
+Após esse evento, fica em  amarelo estático até cessar a causa do alarme.
+No mostrador digital o fundo é  preto  e o texto é branco, não havendo in -
+dicação de alarme neste campo. Figura 1.45.
+ 
+Quando esse objeto estiver associado a variáveis que não tem set-point, as
+faixas verdes não estão presentes. 
+              Fig. 1.45
+OSTENSIVO                                                     1- 22                                                         ORIGINAL
+
+
+--- PAGE 22 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Régua medidora analógica
+Esse objeto(figura 1.45) tem a mesma função do relógio medidor
+analógico, só que sua representação diferencia no formato. 
+Assim, a escala é mostrada de forma linear. 
+Figura 1.46. régua medidora analógica
+A barra azul indica o valor analógico, sendo que sua zona de alarme é representada por uma faixa
+vermelha. 
+A faixa amarela representa warning (valor está quase na faixa de alarme) e não há forma de se repre -
+sentar Set Point. 
+ 
+O fundo pisca em:  
+ -  vermelho, se o valor indicado estiver dentro da faixa vermelha;   
+-  amarelo, se o valor indicado estiver dentro da faixa amarela.  
+Ao se reconhecer o alarme, o indicador fica em vermelho ou amarelo estático, se a causa do alarme
+persistir. 
+Indicadores de temperatura 
+Esses objetos são usados para indicar temperaturas. Eles têm a propriedade de serem 
+sensitivos, ou seja, ao passar o cursor sobre eles, aparece uma legenda que, no caso, 
+descreve a origem da referida temperatura. Figura 1.47.
+    Fig. 1.47.
+No caso de alarme, a moldura pisca em amarelo. O processo de reconhecimento do alarme é o mesmo
+que dos outros objetos, ou seja: 
+ 
+-  Se a causa do alarme persistir após o reconhecimento, o fundo deixa de piscar e fica acesso conti -
+nuamente em amarelo, até a causa cessar; 
+-  Se a causa já tenha cessado após o reconhecimento do alarme, a lâmpada apaga. 
+  
+Indicador luminoso de múltiplos estados  
+Esse indicador mostra( figura 1.48), através de diferentes cores e textos, os estados do
+equipamento a que ele se refere. Usado somente na tela do passadiço.
+   Fig. 1.48.
+O código de cores é o seguinte: 
+ -  Indicador em vermelho claro : estado não ativo (desligado); 
+-  Indicador piscando em amarelo : estado de transição, que indica que foi solicitada mudança de es -
+tado, mas essa ainda não se iniciou; 
+-  Indicador piscando em verde : mudança de estado iniciada para estado ativo (ligado); 
+-  Indicador aceso em verde : estado ativo (ligado); 
+-  Indicador piscando em vermelho : mudança de estado iniciada para estado inativo (desligando); 
+OSTENSIVO                                                     1- 23                                                         ORIGINAL
+
+
+--- PAGE 23 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Lâmpada de estado ou alarme 
+Estes objetos são usados tanto para indicar o estado de algum equipamento (por exem -
+plo,ligado/desligado,  virando  ou  parado  )  quanto  para  sinalizar  algum  alarme  (neste
+caso,funcionam em conjunto com as buzinas Ag1 e Ag2). As cores de fundo e/ou do tex -
+to, assim como o próprio texto, dependem da utilização. Figuras 1.49 e 1.50 . 
+Quando se usa esta lâmpada como alarme, ela deve: 
+  Fig. 1.49.
+       Fig. 1.50.
+-  Piscar após a ocorrência do alarme e antes do reconhecimento; 
+-  Se a causa do alarme foi extinta, ela deve apagar após o reconhecimento; 
+-  Se a causa não foi extinta, ela deve ficar acesa continuamente na mesma cor que piscou.   
+Lâmpada redonda de estado ou alarme
+Sua função é a mesma das lâmpadas de estado ou alarme. As
+características visuais (animação, cores,...)depende de onde ela
+está sendo usada. Figuras 1.51 e 1.52.
+                      Figura 1.51
+                     Figura 1.52
+Os usos desta lâmpada são: 
+ 
+-  Indicação de interloques de partida: pisca em amarelo quando há interloque. Fica acesa em verde
+caso contrário. 
+-  Indicação de inibição de partida: pisca em vermelho quando há inibição. Fica acesa em verde caso 
+contrário. 
+-  Indicação de alarme: pisca em amarelo ou vermelho, dependendo do uso.  
+-  Indicação de estado: fica acesa em verde quando o estado está ativo. 
+ 
+Para alguns usos, ao se clicar sobre essa lâmpada, a janela apresentada na figura 1.53 é exibida. 
+ 
+ 
+                                     Figura 1.53. Janela de falha do equipamento
+OSTENSIVO                                                     1- 24                                                         ORIGINAL
+
+
+--- PAGE 24 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Botão de comando
+Botão utilizado em várias funções. Ao se clicar esse botão, dá-se início à ação in -
+dicada pelo texto do botão.  Figura 1.54.
+       Fig. 1.54.          As animações desse botão são dependentes da utilização. Em alguns casos ele
+                                pode piscar, em outros a cor do texto também pode mudar.  
+ 
+ Chave de comando  
+Ao acionar a chave de comando, abre-se uma janela com diversos botões de comando.
+O conjunto de botões depende o sistema de qual faz parte. Também estes botões podem
+estar habilitados ou não, dependendo do estado do sistema. 
+Estes botões são específicos para cada sistema comandado e são explicados com mais
+detalhes mais adiante . Figura 1.55.
+   Fig. 1.55.
+Indicador analógico de nível de tanque
+Esse objeto representa visualmente( figura 1.56.): 
+-  Nível analógico: régua medidora analógica e indicador numérico, provêm de um
+sensor analógico de nível;  
+-  Alarme de nível alto de primeiro nível : lâmpada redonda com a legenda “Alto”,
+que provêm de um sensor digital de nível alto e  pisca em amarelo; 
+-  Alarme de nível baixo de primeiro nível : lâmpada redonda com a legenda “Bai -
+xo”, que provêm de um sensor digital de nível baixo e pisca em amarelo; 
+    Fig. 1.56.
+-  Alarme de nível alto de segundo nível : o fundo do objeto (tanque) pisca em amarelo e ocorre
+quando o nível analógico assume um valor acima do limite (na régua, a barra verde entra na faixa ver -
+melha superior); 
+-  Alarme de nível baixo de segundo nível : o fundo do objeto (tanque) pisca em amarelo e ocorre
+quando o nível analógico assume um valor abaixo do limite (na régua, a barra verde entra na faixa
+vermelha inferior); 
+ 
+A diferença entre os alarmes de primeiro e segundo nível é que os primeiros, como já foi dito, são ge -
+rados com base em sensores digitais vindos diretamente do campo. No caso dos de segundo nível,
+eles são gerados com base no sensor analógico, não dependendo dos digitais. Desta forma, existe um
+mecanismo de redundância entre os alarmes. 
+ 
+Esse objeto é sensitivo, ou seja, ao passar o cursor sobre ele, aparece uma legenda quem no caso,
+apresenta o nome do tanque.  
+ Janela de detalhes do nível do tanque
+Esta janela é exibida quando se clica com o botão direito no obje-
+to visual acima. Ela apresenta informações adicionais sobre a indi -
+cação analógica de nível do tanque em questão. São estas(Figura
+1.57): 
+-  Nível do tanque em porcentagem; 
+-  Nível do tanque em metros; 
+-  Massa de OC (em toneladas); 
+-  Volume do tanque (em litros); 
+ 
+                   Figura 1.57.
+OSTENSIVO                                                     1- 25                                                         ORIGINAL
+
+
+--- PAGE 25 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+ Indicador de nível digital
+Esse objeto tem o mesmo fim e as mesmas funcionalidades do anterior, exceto pela
+indicação analógica, que não é utilizada.  Os alarmes são baseados em sensores digi -
+tais de nível alto ou baixo. Figura 1.58.
+       Fig. 1.58.
+ Indicador de alarme nas telas dos controladores  
+Este objeto(figura 1.59) aparece nas telas de controle dos MCPs e das Turbinas. Ao ser acio -
+nado, abre a respectiva tela. 
+Quando existir algum alarme nas telas dos controladores, este objeto acende em amarelo,
+chamando assim a atenção do operador para um eventual problema. 
+ Fig. 1.59.
+ Indicador de estado da válvula com comando  
+Esse objeto mostra os diversos estados de válvulas( figura 1.60) através de animação e das cores de
+fundo. Os estados que a válvula pode assumir são: fechada, aberta, abrindo, fechando, falha ao abrir,
+falha ao fechar e discrepante. 
+ As animações indicam qual o estado do par de sensores de fim de curso, se existe ou não falha (ao
+abrir, ao fechar ou de discrepância). 
+Válvula fechada: sensor de fim de curso que detecta válvula aberta está ativo.
+Válvula aberta: sensor de fim de curso que detecta válvula fechada está ativo. 
+Válvula fechando: ambos os sensores de fim de curso não estão ativos, mas o processo de fe -
+chamento está em curso.
+Válvula abrindo: Ambos os sensores de fim de curso não estão ativos, mas o processo de
+abertura está em curso.
+Válvula num estado indeterminado 
+Figura 1.60. Estado da válvula com comando
+Quando da ocorrência de uma falha, o fundo do objeto acima pisca em amarelo. Isso ocorre após um
+time- out, que começa a contar logo após a discrepância ter sido detectada. 
+Ao se levar o cursor sobre esse objeto, é exibido o nome da válvula em questão. 
+OSTENSIVO                                                     1- 26                                                         ORIGINAL
+
+
+--- PAGE 26 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Para mudar o estado da válvula, o operador deve clicar sobre o objeto acima com a tecla esquerda do 
+trackball, abrindo assim a janela de comando e verificação de status (mostrada na  figura 1.61), onde
+o operador pode dar o comando à válvula ou apenas observar seu status e sair sem ter dado um co -
+mando. Esta janela apresenta, além das informações do objeto anterior, informações adicionais úteis
+para o diagnóstico preciso da falha. 
+Ao se clicar em “Abrir” / “Fechar”, o processo de 
+abertura / fechamento se  inicia. Este botão passa
+então a ser exibido com fundo verde, indicando
+que ele foi pressionado. 
+ 
+Durante a fase de abertura / fechamento, a lâmpa -
+da “Abrindo” / “Fechando” pisca em verde. Após
+aberto / fechado, esta lâmpada deixa de piscar e a
+lâmpada “Aberto” / “Fechado” acende em verde. 
+        Figura 1.61. Janela de comando de status
+Se houver falha ao abrir / fechar, a lâmpada “Abrir” / “Fechar” pisca em vermelho.  
+A lâmpada “Discrepância” pisca em amarelo quando o estado atingido foi diferente do comandado.
+ Indicador de estado da válvula sem comando  
+ 
+Esses objetos(figura 1.62 e 1.63) servem somente para indicar estado de válvulas com comando local
+(sem controle pelo SCMPA). Existem somente duas válvulas deste tipo que são: 
+Válvula de emergência: 
+1. Fechada – cinza 
+2. Aberta – verde escuro 
+Fig. 1.62
+Válvula de dreno do filtro de água: 
+1. Fechada – cinza 
+2. Aberta – amarelo 
+Fig. 1.63
+ Indicador de estado de bomba 
+Esse objeto mostra, através de cores, os estados da bomba, ou seja( figura 1.64):
+1. Desligada – cinza 
+2. Ligada – verde 
+3. Emergência – vermelho 
+4. Falha Ligar/Desligar – pisca em amarelo
+Fig. 1.64.
+OSTENSIVO                                                     1- 27                                                         ORIGINAL
+
+
+--- PAGE 27 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+ Indicação analógica de temperatura 
+Esse objeto indica valores analógicos. São usados exclusivamente na tela de propulsão. Este
+objeto é sensitivo, isto é, ao se levar o cursor sobre ele, aparece uma legenda que indica a 
+origem da temperatura. 
+Fig. 1.65.
+ Alarme de pressão baixa  
+Esse objeto(figura 1.66) indica baixa pressão. São usados exclusivamente na tela de propul -
+são. Este objeto é sensitivo, isto é, ao se levar o cursor sobre ele, aparece uma legenda indi -
+cando a origem da pressão. 
+Fig. 1.66.
+ Controle das bombas e compressores de ar  
+Existem vários tipos de bombas e compressores nos diferentes subsistemas. Cada tipo de bomba tem 
+indicadores e controles próprios de seu funcionamento. Esses objetos de controle aparecem em asso -
+ciação com o indicador de estado da bomba apresentado no item anterior para representar a bomba
+como um todo. 
+ 
+ Bombas de recalque(figura 1.67)
+Aparecem no subsistema de Óleo Combustível. Dois objetos estão associados a esta bomba: 
+  
+Indicadores da bomba de recalque:Indicadores da bomba de recalque:  
+                                           Figura 1.67. Indicador da bomba de recalque
+Controle da bomba de recalque:  
+ 
+São duas as situações de controle da bomba de recalque: “Bomba em Automático” e “Bomba em Ma -
+nual”; Figura 1.68.
+ Bomba em manual: este estado é causado ao se clicar o botão “Manual” no controle da bomba. Neste
+caso, os botões “Ligar” e “Desligar” são exibidos (vide figura abaixo). 
+OSTENSIVO                                                     1- 28                                                         ORIGINAL
+
+
+--- PAGE 28 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Botão “Ligar” : fica ativo (texto em preto) somente se a bomba estiver desli -
+gada. 
+Ao se clicar nesse botão, são três as ocorrências possíveis: 
+-  a bomba liga antes do  timeout (a lâmpada “Virando” do indicador acima
+acende em verde); 
+-  a bomba ligar após ocorrido o timeout ( a lâmpada “Virando” acende em
+verde e a lâmpada redonda “Falha” pisca em amarelo); 
+-  a bomba não liga ( a lâmpada “Virando” permanece apagada e a lâmpada
+redonda “Falha” pisca em amarelo); 
+Para tentar ligar novamente, o operador deve reconhecer esse alarme. 
+Figura 1.68. Controle da bomba de recalque.
+Botão “Desligar”:   fica inativo (texto em cinza) quando a bomba estiver desligada. Ao se clicar nes -
+se botão, são três também as ocorrências possíveis: 
+ -  a bomba desliga antes de ocorrer timeout (a lâmpada ”Virando” apaga); 
+-  a bomba desliga após ocorrer timeout (a lâmpada “Virando” apaga e a lâmpada redonda “Falha”
+pisca em amarelo) 
+-  a bomba não desliga ( a lâmpada “Virando” permanece acesa em verde e a lâmpada redonda “Fa -
+lha” pisca em amarelo) 
+ Para tentar desligar novamente, o operador deve reconhecer esse alarme. 
+  
+Bomba em automático:  este estado(figura 1.69) é causado ao se clicar sobre o botão “Automático”
+(vide figura abaixo). 
+Neste caso, os botões a serem exibidos são “Prime” e “De-Prime”. Também a lâmpada “Aguardando
+Prime” acende em amarelo ao se clicar o botão “Automático”.
+Botão “Prime” : ao se clicar esse botão, o operador habilita o controlador lo -
+cal a ligar e desligar a bomba automaticamente. 
+ 
+Nota: se o botão “Prime” não for clicado antes de um certo intervalo configu -
+rável de tempo (timeout), que começa a contar tão logo o botão “Automático”
+seja pressionado, um alarme é gerado (a buzina toca e a lâmpada “Aguardan -
+do Prime” pisca em amarelo).  
+ Botão “De-Prime” :  ao se clicar neste botão, o operador desabilita o contro -
+lador local a ligar e desligar automaticamente a bomba.
+Figura 1.69. Bomba em automático.
+Falha da bomba de recalque 
+Caso ocorra uma falha ao ligar, ao desligar ou falha motor, a lâmpada “Falha” pisca em amarelo. Para
+saber qual dessas falhas ocorreu, deve-se clicar sobre a lâmpada referida, com o botão direito do
+trackball, e escolher a opção “Detalhar”. A janela apresentada na figura 1.70 é então exibida.
+       Figura 1.70. Janela de falha.
+OSTENSIVO                                                     1- 29                                                         ORIGINAL
+
+
+--- PAGE 29 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Bombas de transferência 
+Aparece nos subsistemas Óleo Combustível. 
+  Indicadores da bomba de transferência(figura 1.71): 
+                            Figura 1.71. Indicador da bomba de transferênçia
+Controle da bomba de transferência(figura 1.72): 
+ 
+Todos os botões ficam inativos (exceto o “Sair” ) se o controle do sistema estiver “LOCAL”. 
+Botão “Ligar”: ao se  clicar neste botão, três são as ocorrências possíveis:   
+-  a bomba liga antes do timeout (lâmpada “Virando” acende  em verde) ; 
+-  a bomba liga após o  timeout  ( lâmpada “Virando” acende em verde e a 
+lâmpada “Falha” pisca em amarelo); 
+-  a bomba não liga(lâmpada “Virando” permanece apagada e a lâmpada 
+“Falha” pisca em amarelo) 
+Fig. 1.72. Controle da bomba de transferência.
+Para tentar ligar novamente, o operador deverá reconhecer esse alarme, passando o texto do indicador
+para o estado atual do motor, no caso “Desligado”. 
+ Botão “Desligar”:  ao se clicar neste botão, três são as ocorrências possíveis: 
+ -  a bomba desliga antes do timeout (lâmpada “Virando” apaga); 
+-  a bomba desliga após o timeot  (lâmpada “Virando” apaga e a lâmpada “Falha” pisca em amarelo); 
+-  a bomba não desliga (lâmpada “Virando” permanece acesa e a lâmpada “Falha” pisca em amarelo);
+ 
+Falha da bomba de transferência 
+ Caso ocorra uma falha ao ligar, ao desligar ou falha motor, a lâmpada “Falha” pisca em amarelo.
+Para saber qual dessas falhas ocorreu, deve-se clicar sobre a lâmpada referida, com o botão direito do
+trackball, e escolher a opção “Detalhar”. A janela apresentada na figura 1.73 é então exibida. 
+      Figura 1.73. Janela de falha.
+OSTENSIVO                                                     1- 30                                                         ORIGINAL
+
+
+--- PAGE 30 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Bombas elétricas 
+Aparecem nos subsistemas Óleo Lubrificante e hidráulica do H.P.C ( figura 1.74).  
+ 
+Indicadores da bomba elétrica:  
+                                                Figura 1.74. Indicador da bomba elétrica
+Controle da bomba elétrica:  
+ Todos os botões ficam inativos (exceto o “Sair” ) se o controle do sistema estiver “LOCAL”( figura
+1.75).
+Botão “Ligar”: ao se  clicar neste botão, três são as ocorrências possíveis:   
+-  a bomba liga antes do timeout (lâmpada “Virando” acende  em verde) ; 
+-  a bomba liga após o  timeout  ( lâmpada “Virando” acende em verde e a
+lâmpada “Falha” pisca em amarelo); 
+-  a bomba não liga(lâmpada “Virando” permanece apagada e a lâmpada “Fa -
+lha” pisca em amarelo)  
+Figura 1.75. Controle da bomba elétrica.
+Para tentar ligar novamente, o operador deverá reconhecer esse alarme, passando o texto do indicador
+para o estado atual do motor, no caso “Desligado”. 
+  Botão “Desligar” :  ao se clicar neste botão, três são as ocorrências possíveis: 
+-  a bomba desliga antes do timeout (lâmpada “Virando” apaga); 
+-  a bomba desliga após o timeout  (lâmpada “Virando” apaga e a lâmpada “Falha” pisca em amare -
+lo); 
+-  a bomba não desliga (lâmpada “Virando” permanece acesa e a lâmpada “Falha” pisca em amarelo);
+ Indicadores da bomba de recalque:Falha da bomba elétrica  
+ Caso ocorra uma falha ao ligar, ao desligar ou falha motor, a lâmpada “Falha” pisca em amarelo.
+Para saber qual dessas falhas ocorreu, deve-se clicar sobre a lâmpada referida, com o botão direito do
+trackball, e escolher a opção “Detalhar”. A janela apresentada na figura 1.76 é então exibida. 
+       Figura 1.76. Janela de falha
+OSTENSIVO                                                     1- 31                                                         ORIGINAL
+
+
+--- PAGE 31 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Bombas da Rede de Incêndio  
+ Aparecem no subsistema Rede de Incêndio( figura 1.77).  
+ 
+Indicadores da bomba: 
+                                       Figura 1.77. Indicador da bomba de incêndio.
+Controle da bomba:  
+ 
+Todos os botões(figura 1.78) ficam inativos (exceto o “Sair” ) se o controle do sistema estiver “LO -
+CAL”.
+Botão “Ligar”: ao se  clicar neste botão, três são as ocorrências possíveis:  
+  
+-  a bomba liga antes do timeout (lâmpada “Virando” acende  em verde) ; 
+-  a bomba liga após o  timeout  ( lâmpada “Virando” acende em verde e a 
+lâmpada “Falha” pisca em amarelo); 
+-  a bomba não liga(lâmpada “Virando” permanece apagada e a lâmpada “Falha” pis-
+ca em amarelo) 
+   Figura 1.78.
+Para tentar ligar novamente, o operador deverá reconhecer esse alarme, passando o texto do indicador
+para o estado atual do motor, no caso “Desligado”. 
+Botão “Desligar” : ao se clicar neste botão, três são as ocorrências possíveis: 
+-  a bomba desliga antes do timeout (lâmpada “Virando” apaga); 
+-  a bomba desliga após o timeout  (lâmpada “Virando” apaga e a lâmpada “Falha” pisca em amare -
+lo); 
+-  a bomba não desliga (lâmpada “Virando” permanece acesa e a lâmpada “Falha” pisca em amarelo);
+ 
+Falha da bomba de rede de incêndio 
+Caso ocorra uma falha ao ligar, ao desligar ou falha motor, a lâmpada “Falha” pisca em amarelo. Para
+saber qual dessas falhas ocorreu, deve-se clicar sobre a lâmpada referida, com o botão direito do
+trackball, e escolher a opção “Detalhar”. A janela apresentada na figura 1.79 é então exibida. 
+       Figura 1.79. Janela de falha
+OSTENSIVO                                                     1- 32                                                         ORIGINAL
+
+
+--- PAGE 32 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Bombas de suplemento 
+ 
+Aparecem no subsistema hidráulica do H.P.C. Figura 1.80. 
+Indicadores da bomba de suplemento: 
+                                     Figura 1.80. Indicador da bomba de suplemento.
+Controle da bomba de suplemento: 
+ 
+São duas as situações de controle da bomba de recalque: “Bomba em Automático” e “Bomba em Ma -
+nual”. Figura 1.81. 
+  
+Bomba em manual:  este estado é causado ao se clicar o botão “Manual” no controle da bomba. Nes -
+te caso, os botões “Ligar” e “Desligar” são exibidos (vide figura abaixo). 
+Botão “Ligar” : fica ativo (texto em preto) somente se a bomba estiver desligada. 
+Ao se clicar nesse botão, são três as ocorrências possíveis: 
+-  a bomba liga antes do  timeout (a lâmpada “Virando” do indicador acima acende
+em verde); 
+-  a bomba ligar após ocorrido o timeout ( a lâmpada “Virando” acende em verde e
+a lâmpada redonda “Falha” pisca em amarelo); 
+-  a bomba não liga ( a lâmpada “Virando” permanece apagada e a lâmpada redonda
+“Falha” pisca em amarelo); 
+Para tentar ligar novamente, o operador deve reconhecer esse alarme. 
+Figura 1.81. Manual.
+Botão “Desligar”:  fica inativo (texto em cinza) quando a bomba estiver desligada. Ao se clicar nes -
+se botão, são três também as ocorrências possíveis: 
+ 
+-  a bomba desliga antes de ocorrer timeout (a lâmpada ”Virando” apaga); 
+-  a bomba desliga após ocorrer timeout (a lâmpada “Virando” apaga e a lâmpada redonda “Falha”
+pisca em amarelo) 
+-  a bomba não desliga ( a lâmpada “Virando” permanece acesa em verde e a lâmpada redonda “Fa -
+lha” pisca em amarelo) 
+ 
+Para tentar desligar novamente, o operador deve reconhecer esse alarme.
+Bomba em automático:  este estado é causado ao se clicar sobre o botão “Automático” (vide figura
+1.82). 
+Neste caso, os botões a serem exibidos são “Prime” e “De-Prime”. Também a lâmpada “Aguardando
+Prime” acende em amarelo ao se clicar o botão “Automático”.
+OSTENSIVO                                                     1- 33                                                         ORIGINAL
+
+
+--- PAGE 33 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Botão “Prime” : ao se clicar esse botão, o operador habilita o controlador local a 
+ligar e desligar a bomba automaticamente. 
+Nota: se o botão “Prime” não for clicado antes de um certo intervalo configurável 
+de tempo (timeout), que começa a contar tão logo o botão “Automático” seja 
+pressionado, um alarme é gerado (a buzina toca e a lâmpada “Aguardando Prime” 
+pisca em amarelo).  
+Botão “De-Prime” :   ao se clicar neste botão, o operador desabilita o controlador 
+local a ligar e desligar automaticamente a bomba.  
+Figura 1.82. Automático.
+Falha da bomba de suplemento 
+Caso ocorra uma falha ao ligar, ao desligar ou falha motor, a lâmpada “Falha” pisca em amarelo. Para
+saber qual dessas falhas ocorreu, deve-se clicar sobre a lâmpada referida, com o botão direito do
+trackball, e escolher a opção “Detalhar”. A janela apresentada na figura 1.83 é então exibida. 
+       Figura 1.83. Janela de falha
+Compressores 
+ Aparecem nos subsistemas Ar Comprimido de Alta Pressão e Agouti. Figura 1.84. 
+ 
+ Indicadores do compressor: 
+                                                Figura 1.84. Indicador do compressor.
+Controle do compressor: 
+ Todos os botões(figura 1.85) ficam inativos (exceto o “Sair” ) se o controle do sistema estiver “LO -
+CAL”. 
+Botão “Ligar”: ao se  clicar neste botão, três são as ocorrências possíveis:   
+-  a bomba liga antes do timeout (lâmpada “Virando” acende  em verde) ; 
+-  a bomba liga após o  timeout  ( lâmpada “Virando” acende em verde e a lâmpada
+“Falha” pisca em amarelo); 
+-  a bomba não liga(lâmpada “Virando” permanece apagada e a lâmpada “Falha” pis -
+ca em amarelo).
+Figura 1.85. Controle do compressor.
+OSTENSIVO                                                     1- 34                                                         ORIGINAL
+
+
+--- PAGE 34 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Para tentar ligar novamente, o operador deverá reconhecer esse alarme, passando o texto do indicador
+para o estado atual do motor, no caso “Desligado”. 
+ 
+Botão “Desligar” : ao se clicar neste botão, três são as ocorrências possíveis: 
+-  a bomba desliga antes do timeout (lâmpada “Virando” apaga); 
+-  a bomba desliga após o timeout  (lâmpada “Virando” apaga e a lâmpada “Falha” pisca em amare -
+lo); 
+-  a bomba não desliga (lâmpada “Virando” permanece acesa e a lâmpada “Falha” pisca em amarelo);
+ 
+Falha no compressor 
+Caso ocorra uma falha ao ligar, ao desligar ou falha motor, a lâmpada “Falha” pisca em amarelo. Para
+saber qual dessas falhas ocorreu, deve-se clicar sobre a lâmpada referida, com o botão direito do
+trackball, e escolher a opção “Detalhar”. A janela apresentada na figura 1.86 é então exibida. 
+      Figura 1.86. Janela de falha
+Janela de Falha de Discrepância 
+Ao se clicar em alguma lâmpada “Falha” nos controles das bombas e com -
+pressores apresentados anteriormente nesta seção, a janela ao lado aparece
+(no caso, tem-se a janela correspondente à bomba de recalque 2).  Figura
+1.87.
+Essas lâmpadas são alarmes que piscam em amarelo ou vermelho, depen -
+dendo do uso, quando da ocorrência do alarme e ficam acesas em amarelo
+após o reconhecimento sem ter sido extinta a causa do alarme. 
+Figura 1.87. Janela de falha de discrepância.
+As três lâmpadas desta janela são: 
+ 
+-  Falha Ligar: a máquina não ligou ou ligou após o timeout.; 
+-  Falha Desligar: a máquina não desligou ou que desligou após timeout; 
+-  Falha Motor: a máquina ligou ou desligou sem que um comando tenha sido dado. 
+ 
+Símbolo de Filtro Separador de Água / Óleo 
+Este símbolo representa o filtro separador de água / óleo. É usado somente na tela de óleo
+combustível. Ele pisca juntamente com a lâmpada de pressão diferencial alta neste filtro,
+quando esta condição ocorrer. Figura 1.88.
+Fig. 1.88.
+ Acoplamento Fluido
+Este símbolo representa o acoplamento fluido na tela de propulsão. Ele fica na cor verde
+quando o mesmo está ativo. O valor numérico representado é o deslizamento. Figura 1.89.
+Fig. 1.89.
+OSTENSIVO                                                     1- 35                                                         ORIGINAL
+
+
+--- PAGE 35 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+ Embreagem Travada
+Este símbolo, quando exibido, significa que a embreagem está travada. Quando a embrea -
+gem não está travada, exibe-se uma descontinuidade entre as partes móveis. Este objeto só
+aparece na tela de propulsão.  Figura 1.90.
+Fig. 1.90.
+ Botões da Tela de Propulsão 
+Aparece nos objetos que representam as TG´s 1 e 2 na tela de propulsão. Quando clicado,
+exibe a janela de alarmes da TG para a tela de propulsão. Este botão pisca quando surge um
+alarme relacionado a ele. Figura 1.91.
+Fig. 1.91.
+Botão de indicações e alarmes da alimentação da TG: Quando clicado, exibe a janela de indi -
+cações e alarmes relativos à alimentação da TG. Este botão pisca quando surge um alarme re -
+lacionado a ele. Figura 1.91.
+Fig. 1.92.
+Botão de catraca da TG: Quando clicado, exibe uma janela com comandos, alarmes e indica -
+ções relativos à TG. Este botão pisca quando surge um alarme relacionado a ele. Figura 1.93.
+Fig. 1.93.
+Botão de alarmes de incêndio da TG: Quando clicado, exibe uma janela com indicações de
+alarme de incêndio da TG. Este botão pisca quando surge um alarme relacionado a ele. Figu-
+ra 1.94.
+Fig. 1.94.
+Botão de ventilação da TG: Quando clicado, exibe uma janela com comandos, indicações e
+alarmes relativos à ventilação da TG. Este botão pisca quando surge um alarme relacionado a 
+ele. Figura 1.95.
+Fig. 1.95.
+Botão do 723 do MCP: Quando clicado, exibe a janela do 723, que é apresentado mais adian -
+te. Este botão pisca quando surge um alarme relacionado a ele. Figura 1.96.
+Fig. 1.96.
+Botão de alarmes do MCP:Quando clicado, apresenta uma tela com os alarmes do MCP em 
+questão. Este botão pisca quando surge um alarme relacionado a ele. Figura 1.97.
+Fig. 1.97.
+Menus adicionais  
+Os menus, que constituem uma outra classe de objetos visuais, têm a função de provêr informações 
+específicas de telas ou objetos e são acionados com o botão direito do trackball. 
+Existem menus específicos de telas ou de objetos e menus que aparecem em diversas telas, como é
+visto a seguir. 
+ Menu detalhar horímetro da TG
+Ao se clicar o botão direito do trackball sobre a tela de controle da turbina, aparece
+o menu ao lado. Figura 1.98.
+   Fig. 1.98.
+OSTENSIVO                                                     1- 36                                                         ORIGINAL
+
+
+--- PAGE 36 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Ao selecionar Detalhar Horímetro, aparece a janela abaixo ( Figura 1.99). 
+ 
+Nota: esse menu também pode ser acessado clicando-se sobre o indicador do horímetro.  
+As informações que essa janela fornece são: 
+Real:  Tempo que a turbina realmente ficou li-
+gada desde o último reset da base de dados. 
+ 
+Efetivo: Horas de uso efetivo da turbina. Esse
+valor é uma estimativa de desgaste e geralmen -
+te diferente do tempo que a turbina ficou liga -
+da. Valor usado para manutenção. 
+ 
+Condição  A, B, C e D:  Quanto tempo a turbi-
+na ficou ligada em cada uma das temperaturas
+(desde o último reset da base de dados). 
+ 
+Número  de  partidas:  Número total de parti-
+das da turbina (desde o último reset da base de
+dados). 
+ 
+Fator de vida: Calculado entre  tempo real e
+tempo efetivo. 
+                Figura 1.99 - Horímetros da turbina
+Menu informações gerais dos MCP´s 
+Ao se clicar o botão direito do trackball sobre o fundo da tela de controle dos 
+MCP´s aparece o menu ao lado. Figura 1.100.
+Fig. 1.100
+Ao selecionar Informações Gerais – MCPs, aparece a janela da figura 1.101 abaixo (essa janela tam -
+bém é exibida quando se pressiona o botão “Detalhar Horímetro”): 
+                                      Figura 1 .101. Informações gerais dos motores 
+OSTENSIVO                                                     1- 37                                                         ORIGINAL
+
+
+--- PAGE 37 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Esta janela apresenta informações de temperatura dos cilindros, dos gases na descarga, escorregamen -
+to e tempo de funcionamento dos motores. Os botões ‘Total Diário’ e ‘Total Mensal’ trazem telas se -
+melhantes as mostradas no horímetro da TG, apenas diferindo nas informações, pois nestas telas é
+apresentado apenas o tempo total de funcionamento dos motores (vide figura 1.102). 
+                                        Figura 1.102. Janela de totais mensais dos MCP´s 
+Menu inserir nota
+Este recurso é usado para se deixar uma mensagem. Para que se possa deixar
+essa mensagem, é necessário se clicar com o botão direito no fundo da tela, de
+modo que um menu como na figura ao lado ( que tenha o item inserir nota) apa -
+reça. Figura 1.103.
+Figura 1.103.
+Abre-se então uma janela, como na figura 1.104, onde se pode fazer anotações. Ao se fechar a janela,
+aparece o símbolo de um bilhete amarelo ( figura 1.105), que, ao ser clicado, torna a abrir a janela de
+anotação feita anteriormente. 
+Para apagar a nota, basta acionar o botão “Apagar”. 
+                                                 Figura 1.104.  Janela de nota
+                                  Figura 1.105. Símbolo de nota sobre o referido objeto.
+OSTENSIVO                                                     1- 38                                                         ORIGINAL
+
+
+--- PAGE 38 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.5 - DESCRIÇÃO FUNCIONAL DAS TELAS E JANELAS 
+Tendo-se descrito os objetos visuais que compõem as diversas telas e janelas do sistema, o próximo
+passo é descrever o funcionamento de cada uma das telas e janelas do sistema. 
+ Aqui são descritas as diversas características de cada tela, suas funções e comandos com suas respec -
+tivas janelas, inclusive as interações entre elas. 
+ 
+Observações: 
+- A aceitação de comandos é feita através do trackball ao se clicar uma vez com o botão esquerdo ou
+através do  teclado padrão, pressionando-se a tecla “ENTRA”. 
+ 
+- Para os alarmes existem 3 formas de reconhecimento: 
+1. Clicando-se uma vez  com a tecla do meio do trackball sobre a linha de alarme na área de alarmes 
+2. Clicando-se uma vez com a tecla do meio do trackball sobre o objeto que indica o alarme 
+3. Clicando-se com o botão da direita do trackball  tanto na linha de alarme como sobre o objeto,
+abre-se um menu com as opções “Aceitar” ou “Aceitar todos”, que será explicado mais abaixo. 
+ 
+- A ação de se clicar uma vez com a tecla do meio do trackball corresponde à mesma ação de se mar -
+car a linha ou objeto em questão com a tecla esquerda do trackball e pressionar-se a tecla “ENTRA”
+do teclado padrão. 
+1.5.1 -  Telégrafo e modos de controle do telégrafo
+Os telégrafos são as formas de transmissão de comandos de propulsão a partir do passadiço. Depen -
+dendo se o controle está no passadiço ou no CCM, os comandos transmitidos pelo passadiço podem
+ou não precisar de confirmação pelo CCM. Os telégrafos estão divididos em três categorias: 
+ - de partida e parada; 
+- de seleção de máquinas; 
+- de demanda de potência (de manobra e de DESSI). 
+ 
+Os comandos de telégrafo são passados ou através das teclas funcionais (vide Figura 3) ou do track -
+ball. A tela do passadiço, no modo diurno, é reapresentada na figura 1.106 e 1.107 . Pode-se identifi-
+car o telégrafo de manobra e de DESSI, os comandos de partida/parada e os de seleção de máquinas.
+ Figura 1.106. Tela “Informações de BB e BE” da estação do passadiço (QMC). Frag. Independência
+OSTENSIVO                                                     1- 39                                                         ORIGINAL
+
+
+--- PAGE 39 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                             Figura 1.107. Tela da estação do passadiço (QMC). Fragata Liberal.
+Associadas a cada categoria de telégrafo, estão uma série de janelas que são apresentadas e explicadas
+mais adiante. A seguir, detalham-se os modos de controle dos telégrafos.
+Modos de controle do telégrafo: 
+1. Controle pelo console do C.C.M. 
+- O operador do passadiço aciona comando do telégrafo através do seu teclado funcional ou do track -
+ball; 
+- O sistema abre a janela do telégrafo na tela do Passadiço. O item comandado aparece piscando. Essa
+janela permite ao operador do passadiço acompanhar a confirmação do comando.   
+- O sistema abre janela correspondente, de acordo com modo de operação e estado operacional das
+estações, no console do CCM, mostrando comando enviado piscando; 
+- O sistema dispara aviso sonoro no CCM identificando a ocorrência;
+- O operador do CCM confirma a execução do comando. A confirmação pode ser feita das seguintes
+formas na estação do CCM onde o telégrafo aparecer: pressionando a tecla “Entra”; ou através de
+click do  trackball sobre o item piscante; 
+- Após a confirmação do comando, a DESSI demandada é automaticamente enviada ao sistema de
+controle. 
+No caso das teclas equivalentes às  do antigo telégrafo de “Manobras”, os valores da DESSI deman -
+dada serão pré programados, sendo possível (para os usuários com autorização para tal) alterá-los.
+2. Controle pelo console do passadiço 
+- O operador do Passadiço aciona comando do telégrafo através do teclado de funções especiais; 
+- O sistema abre uma janela correspondente ao telégrafo na tela do Passadiço. O item comandado
+aparece piscando; 
+- O operador do Passadiço confirma a execução do comando pressionando a tecla “Entra”, ou através
+de click do trackball sobre o item piscante. A confirmação do comando já envia a DESSI demandada
+ao sistema de controle. 
+OSTENSIVO                                                     1- 40                                                         ORIGINAL
+
+
+--- PAGE 40 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.5.2 - Telégrafo nos diversos modos de operação  
+1. Apresentação do telégrafo no CCM – Modo D.E.M.  
+- Condição Normal – sem Falha: 
+Os comandos referentes aos equipamentos de Bombordo são visualizados e confirmados em janela
+específica que aparece na estação de Bombordo. O mesmo vale para Boreste. 
+- Falha na estação de Bombordo: 
+Os comandos de Bombordo passam a estar disponíveis na estação Central. 
+- Falha da estação de Boreste: 
+Os comandos de Boreste passam a ser visualizados na estação Central. 
+- Falha na estação do Passadiço 
+Os comandos serão enviados através do Sistema de Comunicações Interiores ao CCM que aciona co -
+mandos através do respectivo teclado funcional. 
+- Falha em mais de uma estação 
+Caso ocorra falha em mais de uma estação do CCM, os comandos passam a ser visualizados na esta -
+ção restante. Naturalmente, se ocorrer falha simultânea nas estações de Bombordo e Boreste – as duas
+estações tipo SCADA – todo o sistema de IHM fica inoperante. 
+ 
+2. Apresentação do telégrafo no CCM – Modo Cruzeiro:  
+- Condição Normal  – sem Falha 
+Os comandos dos telégrafos são enviados para a estação Central. 
+- Falha da estação Central 
+Os comandos serão divididos pelas estações laterais de forma semelhante ao especificado no item 1
+acima. 
+- Falha em mais de uma estação  
+Caso ocorra falha em mais de uma estação do CCM, os comandos passarão a ser visualizados na esta -
+ção restante. Naturalmente, se ocorrer falha simultânea nas estações de Bombordo e Boreste – as duas
+estações tipo SCADA – todo o sistema de IHM estará inoperante. 
+ 
+3. Apresentação do telégrafo no CCM  - Modo Combate  
+Este modo funciona como o modo D.E.M. com a diferença que os botões de emergência tem aciona -
+mento direto, isto é, não é necessário confirmação. 
+ 
+4. Apresentação do telégrafo no CCM – Modo Customizado: 
+O modo customizado pode ser utilizado para permitir outras configurações das funções a serem exe -
+cutadas por cada estação do CCM. 
+Nesse modo, o operador, desde que tenha privilégio para isso, pode escolher, por exemplo, em que
+estação o telégrafo de Bombordo é visualizado. Nesse caso, a seleção de operações é manual. 
+Não se pode alocar funções a estações que não estejam em funcionamento normal. 
+OSTENSIVO                                                     1- 41                                                         ORIGINAL
+
+--- PAGE 41 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.5.3 - Comandos de propulsão (partida ou parada) 
+Quando o operador no passadiço requisitar a partida de uma determinada máquina ao pressionar a te -
+cla correspondente no teclado funcional, abre-se na respectiva estação do CCM (BB ou BE) a janela
+de  “Parada/Partida” para partida da respectiva máquina ( figuras 1.108 e 1.109 ), que possibilita ao
+operador dessa estação dar o comando de partida desejado, monitorando o preenchimento das condi -
+ções que inibem a partida. 
+                                              Figura 1.108. Partida dos MCP'S – Findep.
+                                             Figura 1.109. Partida dos MCP'S – Fliber.
+O botão, que tem o texto modificável dependendo do comando possível (“Ligar” ou “Parar Motor”)
+começa a piscar em amarelo, indicando ao operador do CCM a requisição do comando. 
+Ao mesmo tempo o indicador luminoso, acima dele mostrará o estado atual da máquina: 
+-  “Parado” na cor vermelho estático ou “Ligado” na cor verde estático 
+ 
+O mesmo acontece no indicador luminoso correspondente no QMC. Esse procedimento de mudanças
+de cores ocorrerá sempre no QMC, para que o operador do passadiço acompanhe as diferentes etapas
+dos comandos, não sendo mais mencionado na descrição do telégrafo. 
+OSTENSIVO                                                     1- 42                                                         ORIGINAL
+
+
+--- PAGE 42 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+A parte da tela referente a partida dos motores no passadiço, é mostrada
+na figura 1.110 ao lado para efeito ilustrativo. 
+      Figura 1.110. MCP4
+Partida e parada dos motores  
+O operador só poderá acionar o botão de  comando
+caso as condições de partida estejam preenchidas. 
+ 
+Se alguma condição não estiver satisfeita, o indica-
+dor luminoso piscará em vermelho e caso o operador
+tente ligar o motor a mensagem ao lado aparecerá.
+Figura 1.111.
+Figura 1.111. Condições de partida não completas (MCP's)
+Se o operador quiser informações mais detalhadas
+sobre os interloques, poderá acionar o botão quadra -
+do ‘Interloques’, o qual irá para  verde  assim que es -
+tes forem preenchidos. 
+ 
+Ao acionar esse botão a janela ao lado se abre. Figu-
+ra 1.112.
+ Figura 1.112.Interloques (MCP'S)
+OSTENSIVO                                                     1- 43                                                         ORIGINAL
+
+
+--- PAGE 43 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Caso os interloques não estejam completos quando o ope-
+rador clicar o botão de comando ("Ligar"), uma janela para
+contornar os interloques ( figura 1.113 ao lado) é aberta na
+tela do CCM. 
+ 
+•  Botão “Contornar” interloques: 
+Os interloques serão contornados abrindo-se a  janela da
+fig. 16D (localizada mais abaixo), onde é mostrada a se -
+qüência de partida. 
+ 
+•  Botão “Cancelar” interloques: 
+A janela da figura 1.108 e figura 1.109  abrirá novamente,
+continuando o botão de comando a  piscar em amarelo, até
+que os interloques sejam realizados, tendo o operador que
+comandar novamente a partida do motor. 
+ Figura 1.113. Contorno dos interloques (MCP'S) 
+Na janela ao lado( figura 1.114) o botão de comando será
+desativado assumindo a cor  cinza, ativando o indicador lu -
+minoso, acima dele, que também tem seu texto modificável
+de acordo com a situação, ou seja: 
+•  “Parando”  piscando em vermelho após o  comando de
+Parar. 
+•  “Ligando”  piscando em verde até que a máquina com-
+plete a seqüência de partida (nosso caso). 
+ 
+Assim que a seqüência de partida estiver completa, abre-se
+a janela da figura 1.115, mostrando que o motor foi ligado
+e fornecendo informações sobre o mesmo. 
+         Figura 1.114. Motor ligando
+Após o comando de Ligar abre-se a janela abaixo( figura 1.115): 
+       
+              Figura 1.115. Motor ligado
+OSTENSIVO                                                     1- 44                                                         ORIGINAL
+
+
+--- PAGE 44 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Se mesmo com as condições satisfeitas e interloques completos, após um determinado tempo depois
+do comando de ligar, o motor não ligar, aparecerá a tela abaixo( figura 1.116), indicando algum pro -
+blema que não permitiu a partida do motor.
+                                  Figura 1.116. Excesso de tempo de partida (MCP'S)
+Basicamente o comando de Parada tem o mesmo procedimento que a Partida, mas sem os interloques.
+Dessa forma, mostraremos a título ilustrativo, a seqüência de janelas a partir da requisição de parada
+de um determinado motor. No nosso exemplo o motor no 4( figura 1.117): 
+ 
+    1. Requisição de comando de parada pelo QMC:             2. Comando de parar ativado: 
+                                           Figura 1.117. Sequência de parada do MCP4
+OSTENSIVO                                                     1- 45                                                         ORIGINAL
+
+
+--- PAGE 45 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+3. Motor parado, voltando à janela inicial da Figura 42, mas antes de nova requisição de partida (bo -
+tão de comando desativado, vide figura 1.118): 
+                                       Figura 1.118. Parado sem requisição de partida 
+ 
+Todos as condições de inibição de partida, interloques e seqüência de partida aplicadas para o MCP4
+são as mesmas para os outros motores diesel, ou seja MCP1, 2 e 3. 
+Partida e parada das turbinas  
+Apresentam-se aqui alguns exemplos de seqüência de partida e parada das turbinas. 
+ Nota: Para efeito de ilustração, apresenta-se a seqüência de partida e parada da TG 2, ressaltando-se
+que ela é idêntica para a TG 1.  
+Ao se pressionar a tecla de partida da TG (que está no
+teclado funcional da respectiva estação) a janela apre -
+sentada na figura ao lado é exibida na tela.  Figura
+1.119.
+ 
+Para se pode completar a partida, um dos tipos de par-
+tida devem ser selecionados, que são: partida normal,
+seca ou teste.  
+Na figura ao lado, o modo de partida  selecionado (e
+que é o default) é o modo normal (botões no topo da
+janela). 
+  
+Se nenhum modo for selecionado, aparece a  mensa-
+gem “ Nenhum modo de Partida está selecionado. A
+Turbina não irá partir.” como exibido na figura 1.120. 
+        Figura 1.119.  Janela de partida norma
+OSTENSIVO                                                     1- 46                                                         ORIGINAL
+
+
+--- PAGE 46 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                          Figura 1.120. Janela de nenhum modo de partida selecionado par TG 
+Partida normal        
+Tendo-se selecionado o modo de partida normal, é necessário que várias condições de partida estejam
+satisfeitas. 
+Essas condições podem ser agrupadas em dois tipos: inibições e interloques. A diferença básica entre
+essas condições é que os interloques podem ser contornados, ou seja, é possível, com a concordância
+do operador, que a partida ocorra assim mesmo. As inibições, por outro lado, não podem ser contor -
+nadas e a partida não ocorre (enquanto alguma inibição estiver ativa).  
+ 
+1.  Condições de inibição de partida:    
+As condições que devem ser satisfeitas para que a partida da turbina ocorra são: 
+ 
+-  Chave teste Normal 
+-  Alimentação 115V / 400 Hz 
+-  Reset Manual Desarme GG 
+-  Comandos Partida Liberados 
+-  MCP Selecionado ou Passo Zero 
+-  GTC operacional 
+Na figura 1.121 ao lado, apresenta-se a janela de
+partida normal no caso de uma inibição de partida
+estar ocorrendo (no caso, trata-se de falha na ali -
+mentação 115V / 400 Hz da TG). 
+ 
+A lâmpada em questão pisca em vermelho e  um
+alarme é gerado. Do contrário, ou seja, se não hou -
+ver a referida inibição, a lâmpada fica acesa em
+verde. 
+ 
+Ao se clicar no botão “Ligar Turbina” (parte de
+baixo da janela ao lado) a mensagem da f igura
+1.122 é apresentada na tela. 
+ 
+A partida só pode se concretizar após o problema
+que causou a inibição ter sido sanado. 
+    Figura 1.121. Janela de partida normal da TG
+OSTENSIVO                                                     1- 47                                                         ORIGINAL
+
+
+--- PAGE 47 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Nota: Qualquer que seja o modo de partida da TG (normal, seca ou teste), na ocorrência de uma con -
+dição de inibição, os efeitos são os mesmos, ou seja, ao se tentar ligar a turbina, isso não será possí -
+vel. A mensagem exibida também é a mesma.  
+                        Figura 1.122. Mensagem de condição de inibição não satisfeita 
+2.  Interloques de partida: 
+Ao se pressionar o botão de partir TG e haver algu-
+ma condição de interloque  condição de interloque
+não  satisfeita,  a  lâmpada  amarela  correspondente
+deve piscar (como se pode ver na  figura 1.123 ao
+lado). 
+ 
+Entretanto, ao se clicar sobre o botão de ligar TG (na
+parte de baixo da janela ao lado), a mensagem “Con -
+tornar interloques deve ser exibida (vide figura ao
+lado). 
+ 
+Se o operador decidir contornar o interloque, o pro-
+cesso de partida continua normalemte. Caso contrá -
+rio, ele é interrompido. 
+        Figura 1.123.  C ondição de interloques.
+3.  Turbina ligando, seqüência de partida:  
+Tendo-se iniciado a partida normal (mesmo no caso
+de interloque contornado), a janela exibida em segui -
+da é a que está apresentada na figura 1.124 ao lado.  
+ 
+Como se pode notar, todas as lâmpadas redondas es-
+tão acesar  em  verde, exceto  a última  “Velocidade
+mínima atingida”, que deve acender por último. 
+ 
+Após algum tempo, somente a primeira lâmpada (de
+cima para baixo) e a última permanecem acesas em
+verde. Todas as outras apagam.
+        Figura 1.124.  P artida normal da TG
+OSTENSIVO                                                     1- 48                                                         ORIGINAL
+
+
+--- PAGE 48 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+4.  Turbina ligada: 
+Após atingida a velocidade Ralenti, a turbina já
+está ligada. A janela que é apresentada na tela da
+estação é então a que está apresentada na figura
+1.125 ao lado. 
+ 
+Pode-se notar que a lâmpada ligada fica acesa
+em verde.  
+ 
+A lâmpada “Selecionada” acende em verde após
+ter sido selecionado o modo de propulsão turbina
+(processo que é descrito mais adiante).
+      Figura 1.125.  V elocidade ralenti da TG
+Parada normal 
+ 
+1.  Turbina desligando: 
+Estando a TG ligada, ao se pressionar o botão “Pa -
+rar TG2”, a janela da figura 1.126 ao lado é exibida
+na tela da estação em questão. 
+ 
+Ao se clicar no botão “Parar Tubina”, que pisca em 
+amarelo, o processo de parada da TG em questão se
+inicia. 
+ 
+Note que, nesta janela, o indicador analógico é de
+rotação, em vez de indicação de temperatura. 
+       Figura 1.126. Janela de parada da TG
+OSTENSIVO                                                     1- 49                                                         ORIGINAL
+
+
+--- PAGE 49 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+A janela da figura 1.127 ao lado é exibida durante
+o processo de desligamento da turbina em questão.
+ 
+Após o processo de parada ter sido concluído, a ja -
+nela da figura 1.128 é exibida. 
+  Figura 1.127. Processo de desligamento da TG
+2. Turbina desligada : 
+                                          Figura 1.128. Turbina desligada 
+Excesso de tempo de partida
+No caso de alguma etapa de partida levar mais tempo do que
+está previsto nos parâmetros do SCMPA, ou simplesmente
+não ocorrer a partida (ela for interrompida em alguma dessas
+etapas por qualquer razão) a janela da figura 1.129 ao lado é 
+apresentada.
+Figura 1.129. Janela com mensagem de excesso de tempo de partida.
+OSTENSIVO                                                     1- 50                                                         ORIGINAL
+
+
+--- PAGE 50 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Partida seca 
+A partida seca é um modo de partida onde não se
+injeta combustível na TG após a etapa de injeção
+de ar comprimido ter sido realizada. A tendência
+então é a turbina parar após algum tempo (de fato,
+após  45  segundos,  deve  aparecer  a  mensagem
+“Excesso  Tempo  de  Partida”,  como  na  figura
+1.130, e o gerador de gases deve girar e depois pa -
+rar. 
+ 
+Como a condição  default de partida é a normal, é
+necessário  clicar  sobre  o  botão  “Partida  Seca”
+para que se possa passar realizar essa partida.  
+ 
+Este botão passa então a ficar aceso em amarelo,
+tal como ocorre com uma lâmpada. O botão/lâm -
+pada   “Partida  Normal”  se  apaga  (vide  figura
+1.130 ao lado). 
+ 
+A sucessão de janelas é semelhante à partida nor-
+mal, exceto pelo fato de resultar em excesso de
+tempo de partida.
+     Figura 1.130. Janela de partida seca da TG.
+Partida teste 
+Ao se pressionar o botão “Partida da TG”, nova-
+mente  a  tela  que  deve  aparecer  é  a  da  figura
+1.119, onde a condição default é a partida normal.
+ 
+Para que se possa efetuar a partida teste, é neces-
+sário que a embreagem esteja desengrazada e tra -
+vada manualmente. Como é necessário se usar a
+chave da embreagem para isso, ela deve ser retira -
+da da caixa do 723, o que gera o interloque visto
+na figura ao lado.  
+ 
+Ao se clicar sobre o botão de “Partida teste”, a
+configuração da janela ao lado deve aparecer. Fi-
+gura 1.131.
+ 
+Ao se pressionar o botão “Ligar Turbina”, o resto
+se passa como se fosse a partida normal com con -
+torno de interloques  
+   Figura 1.131. Janela da partida de teste da TG.
+OSTENSIVO                                                     1- 51                                                         ORIGINAL
+
+
+--- PAGE 51 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.5.4 - Comandos de seleção de máquinas 
+A seleção de máquinas é uma etapa que deve ser feita para que se possa movimentar o navio. 
+Para que um modo (ou seja, 1 MCP, 2 MCP´s ou TG por bordo) possa ser selecionado, é necessário 
+primeiramente que as correspondentes máquinas estejam ligadas, caso contrário, o texto do botão fica
+em cinza, como se pode ver na figura 1.132. 
+ 
+A seleção de máquinas pode ser feita tanto no passadiço quanto no CCM. A seleção pelo passadiço
+pode precisar de confirmação do CCM, dependendo se o comando está no passadiço ou no CCM. 
+ 
+Comando no CCM 
+Estando o comando no CCM, a seleção de máquinas pode ser feita tanto a partir do Passadiço, com a 
+posterior confirmação do CCM, ou diretamente pelo CCM. 
+ 
+Ao se pressionar, no CCM, a tecla “Seleção Propulsão”, aparece a janela apresentada na figura 1.132
+abaixo (no caso, trata-se da janela para BB, que resulta do botão correspondente de BB, o que depen -
+de da configuração do sistema).  
+ 
+Pode-se notar as quatro possíveis seleções de modo por bordo e o modo desselecionado. Qualquer
+mudança de modo é permitida (desde que as respectivas máquinas estejam ligadas) e o processo de
+seleção, incluindo toda a sucessão de janelas exibidas na tela, é semelhante. 
+                                 Figura 1.132. Janela de seleção de máquinas
+Ao se pressionar a mesma tecla no passadiço, o botão
+MCP nº 2, apresentado na  figura 1.133 ao lado (que
+apresenta parte da tela do passadiço) pisca em amarelo,
+indicando que é preciso confirmação.
+         Figura 1.133. Janela selecionar.
+Para descrever o processo de seleção, mostra-se, como exemplo, a troca de máquinas de “Desselecio -
+nado” para “motor diesel n°2”, sendo a mesma descrição aplicável para qualquer troca de máquinas
+ou para desseleção de máquinas. 
+ 
+Ao se clicar sobre a tecla MCP n2 da figura 1.132, o processo de seleção se inicia. O sistema exibe
+então a janela da figura 1.134. Ao se clicar sobre a tecla “Selecionar MCP n2”, o sistema passa a ve -
+rificar se as condições necessárias para a seleção são satisfeitas ( a medida que vão sendo satisfeitas,
+as correspondentes lâmpadas da janela vão acendendo em verde). Ao final do processo, a janela apre -
+senta a configuração da figura 1.135. 
+OSTENSIVO                                                     1- 52                                                         ORIGINAL
+
+
+--- PAGE 52 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                              Figura 1.134. Janela inicial de seleção do MCP 2 
+                                   Figura 1.135. Janela final de seleção do MCP 2
+Durante o processo de seleção acima, onde se passa do estado de Desselecio-
+nado para MCP 2, a lâmpada “Desselecionado” ao lado, pisca em verde e exi -
+be o texto “Selecionando”. Figura 1.136.
+ 
+Após a conclusão do processo, a lâmpada anterior para a ficar acesa em verde
+e exibir o texto “Selecionado”. 
+Fig. 1.136. MCP2 selecionado.
+OSTENSIVO                                                     1- 53                                                         ORIGINAL
+
+
+--- PAGE 53 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Comando no Passadiço  
+Estando o comando no passadiço, ao se pressionar a tecla “Seleção Propulsão”, o botão “MCP n2” do
+campo “Selecionar” da tela do passadiço pisca em amarelo, e a janela da figura 1.134 aparece na es-
+tação do passadiço em vez do CCM. Daí em diante, toda a sucessão de janelas ocorrem na estação do
+passadiço.
+Comandos de demanda de potência (DESSI e manobra) 
+ 
+Novamente, o processo de demanda de potência depende se o comando está no CCM ou no passadi -
+ço. 
+Dessa forma, são quatro formas de se operar o telégrafo de potência: 
+ 
+•  Telégrafo de demanda de DESSI com comando no CCM; 
+•  Telégrafo de manobra com comando no CCM; 
+•  Telégrafo de demanda de DESSI com comando no CCM; 
+•  Telégrafo de manobra com comando no CCM. 
+ 
+A seguir, apresentam-se cada uma dessas formas de telégrafo. 
+  
+Telégrafo de demanda de DESSI com comando no CCM 
+ 
+Estando o comando no CCM, ainda existe a possibilidade do DESSI ser solicitado diretamente pelo
+CCM ou através do passadiço com posterior confirmação pelo CCM. 
+ 
+•  Solicitação pelo CCM
+Ao se pressionar, no CCM, o botão DESSI (no caso de BB ), a
+janela da figura 1.137 ao lado é exibida.  
+ 
+O DESSI desejado deve então ser digitado no campo correspon-
+dente, respeitando os limites de mínimo e máximo indicados na
+janela. 
+ Figura 1.137. Janela de entrada de DESSI de BB.
+A janela da figura 1.138, exibindo no botão de BB o valor do DESSI digitado e com o fundo piscado
+em amarelo,  deve ser exibida. Para se confirmar esse valor, o botão em questão deve ser clicado.
+Após isso ter sido feito, o botão fica aceso em amarelo e o processo termina nesse ponto. 
+ 
+Na tela do passadiço, as correspondentes indicações de DESSI apresentam o valor que o sistema acei -
+tou. 
+ 
+•  Solicitação pelo Passadiço com confirmação pelo CCM 
+ 
+Ao se pressionar, no passadiço, a tecla de DESSI (no caso do exemplo, de BB), a janela da figura
+1.137 acima é apresentada (onde se deve digitar o valor desejado, respeitando os limites). A janela da
+figura 1.138, com o valor de DESSI desejado apresentado no botão piscando em amarelo, é exibida
+no CCM.  
+ 
+Para que o operador do CCM confirme esse valor, basta clicar no botão piscando. Após isso, este para
+de piscar, ficando aceso em amarelo. 
+ 
+OSTENSIVO                                                     1- 54                                                         ORIGINAL
+
+
+--- PAGE 54 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Na tela do passadiço, as correspondentes indicações de DESSI apresentam o valor que o sistema acei -
+tou.
+Telégrafo de manobra com comando no CCM 
+ 
+•  Solicitação pelo CCM  
+ Ao se pressionar, no CCM, alguma das teclas do telégrafo de manobra (que são as teclas “Toda força
+atrás”, “2/3 atrás”, “1/3 atrás”, “Pára”, “1/3 adiante”, “2/3 adiante” e “Padrão Adiante”, a janela da fi-
+gura 1.138 deve ser exibida com o correspondente botão piscando em amarelo, no respectivo bordo. 
+ 
+Para se confirmar, basta clicar sobre esse botão, que passa então a ficar aceso em amarelo. No passa -
+diço, a lâmpada correspondente fica acesa em amarelo, no campo “Telégrafo de manobra”. 
+ 
+•  Solicitação pelo Passadiço com confirmação pelo CCM 
+ 
+Ao se pressionar, no teclado funcional do passadiço, alguma das teclas do telégrafo de manobra (as
+mesmas apresentadas acima), a janela da figura 1.138 aparece no CCM, com o botão correspondente
+piscando em amarelo, do respectivo bordo, para que haja confirmação. 
+ 
+Ao ser feita a confirmação, que consiste em clicar sobre esse botão, ele fica aceso em amarelo. No
+passadiço, a lâmpada correspondente fica acesa em amarelo, no campo “Telégrafo de manobra” . 
+ 
+ 
+Telégrafo de DESSI com comando no passadiço  
+Ao se pressionar, no passadiço, o botão DESSI (no caso de BB ), a janela da figura 1.137 é exibida.
+O DESSI desejado deve então ser digitado no campo correspondente, respeitando os limites de míni -
+mo e máximo indicados na janela. 
+ 
+A janela da figura 1.138, exibindo no botão de BB o valor do DESSI digitado e com o fundo piscado
+em amarelo, deve ser exibida na estação do passadiço. Para se confirmar esse valor, o botão em ques -
+tão deve ser clicado. Após isso ter sido feito, o botão fica aceso em amarelo e o processo termina nes -
+se ponto. Os indicações de DESSI apresentam o valor que o sistema aceitou. 
+ 
+ Telégrafo de manobra com comando no passadiço 
+Ao se pressionar, no passadiço, alguma das teclas do telégrafo de manobra (que são as teclas “Toda
+força atrás”, “2/3 atrás”, “1/3 atrás”, “Pára”, “1/3 adiante”, “2/3 adiante” e “Padrão Adiante”,a janela
+da figura 1.138 deve ser exibida, na própria estação do passadiço, com o correspondente botão pis -
+cando em amarelo, no respectivo bordo. 
+ 
+OSTENSIVO                                                     1- 55                                                         ORIGINAL
+
+--- PAGE 55 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Para se confirmar, o operador do passadiço deve clicar sobre esse botão, que passa então a ficar aceso
+em amarelo.  A lâmpada correspondente fica acesa em amarelo, no campo “Telégrafo de manobra” . 
+                  Figura 1.138. Janela de demanda de potência de máquinas da estação do CCM
+1.5.5 - Comandos de seleção do modo 
+Para se selecionar o modo de propulsão, é necessário que o operador, ou do passadiço ou do CCM,
+pressione o botão “Seleção Propulsão” do bordo que se deseja selecionar o modo.  
+ Ao fazer isso, a janela da figura 1.139 é exibida. Nesta, a seleção pode ser feita clicando-se no botão
+correspondente. O modo 1 é o modo padrão. Para que se possa selecionar o modo 2, é necessário que
+os dois MCP´s ou a TG estejam selecionados. 
+Figura 1.139.  Janela de seleção de máquinas e modo.
+OSTENSIVO                                                     1- 56                                                         ORIGINAL
+
+
+--- PAGE 56 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Ao se pressionar um dos botões de modo (aquele para o qual se deseja mudar), a janela anterior fe -
+cha-se e abre-se a janela  “Seleção do Modo” (vide figura 1.140 abaixo), onde o botão do modo para
+o qual se deseja mudar aparece piscando em amarelo (no caso, é o botão modo 1). Clicando- se sobre
+esse botão, a confirmação é feita e o sistema realiza a mudança de modo. 
+                                 Figura 1.140. Janela de seleção do modo 
+ 
+Nota: Se o comando estiver no CCM, a janela da figura 1.140, que é de confirmação aparece somen -
+te no CCM enquanto que a anterior aparece na estação onde o botão “Seleção Propulsão” foi pressio -
+nado. Se o comando estiver no passadiço, a janela de confirmação aparece também no passadiço. 
+1.5.6 – Informações, alarmes e comandos ao operador
+Telas que abrangem o controle e monitoração da propulsão 
+Neste capítulo serão tratadas as características específicas das telas que mostram os controles, as me -
+didas e os alarmes referentes a área de propulsão. Todos os dados e informações descritas para as te -
+las de Boreste podem ser aplicadas para Bombordo. 
+Controle dos MCP’s  
+                                       Figura 1.141. Tela “Controle dos MCP’s - Boreste” 
+OSTENSIVO                                                     1- 57                                                         ORIGINAL
+
+
+--- PAGE 57 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Esta tela mostra os valores dos parâmetros e indicações relativas ao Controle dos MCP’s de boreste.
+Os nomes desses parâmetros e indicações estão escritos acima e/ou dentro da área dos seus objetos de
+tela. Figura 1.141.
+A tela “Controle dos MCP’s - Bombordo” é estruturalmente idêntica à de BE. 
+ 
+Acessibilidade 
+Quando a estação de BE estiver exibindo outra tela diferente, a tela “Controle dos MCP’s - Boreste”
+pode ser chamada pelo seu operador através do botão (ou item do menu) Boreste /M.C.P., na região
+direita da tela, na área destinada aos comandos de navegação entre telas. 
+Se a estação de trabalho boreste (ou bombordo) estiver em operação normal, as estações de trabalho
+de BB e central não têm permissão de acesso à tela “Controle dos MCP’s - Boreste”. Os operadores
+das estações de BB e central só podem chamar esta tela se a estação de BE estiver fora de operação,
+ou operando em outras configurações. 
+•  Informações gerais: 
+ 
+-  Horímetro do MCP 3 / 1  
+-  Leitura da pressão do óleo de resfriamento dos pistões do MCP 3 / 1 
+-  Leitura da pressão do óleo lubrificante do MCP 3 / 1 
+-  Leitura da rotação do motor MCP 3 / 1 
+-  Leitura do valor do passo do hélice 
+-  Leitura da rotação do eixo do hélice 
+-  Indicação da velocidade efetiva desejada do eixo do hélice (DESSI)  
+-  Aviso de existência de inibições de partida 
+-  Indicação dos interloques para a partida do MCP 3 / 1 
+-  Indicação da seleção do MCP 3 / 1 
+-  Indicação de MCP 3 / 1 virando 
+-  Indicação do controle do acoplamento fluido do motor MCP 3 / 1 no CCM ou LOCAL 
+-  Indicação de acoplamento fluido vazio do MCP 3 / 1 
+-  Indicação de acoplamento fluido cheio do MCP 3 / 1 
+-  Indicação de 723 pronto para operar 
+-  Indicação de PGA  pronto para operar 
+-  Indicação de embreagem dos MCP 3 e 1 desengrazada 
+-  Indicação de embreagem dos MCP 3 e 1 engrazada travada 
+-  Indicação do modo de operação do HPC  
+-  Indicação de utilização do moderador de passo no HPC 
+ 
+•  Alarmes: 
+ 
+-  Alarme de Sub velocidade 
+-  Alarme de desarme do motor pelo Controlador  723  
+-  Alarme de outras falhas indicadas pelo 723 (“Secund.723”) 
+-  Alarme de desarme dos flaps de sucção 
+-  Pressão baixa da água salgada de resfriamento do MCP 3 / 1 
+-  Excesso de velocidade real do MCP 3 / 1 detectado pela SSU (Unidade sensora de velocidade) ou 
+provocada pelo teste de excesso de velocidade do MCP 3 / 1 
+-  Nível baixo do tanque de expansão do MCP 3 / 1 
+-  Alarme sobre o desligamento automático do MCP 3 / 1 devido ao 2o nível de pressão baixa do óleo
+de resfriamento dos pistões (Desarme) 
+-  Pressão baixa do óleo de resfriamento dos pistões do MCP 3 / 1 
+-  Alarme sobre o desligamento automático do MCP 3 / 1 devido ao 2o nível de pressão baixa do O.L.
+(Desarme)
+OSTENSIVO                                                     1- 58                                                         ORIGINAL
+
+--- PAGE 58 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+-  Pressão baixa do óleo de lubrificação 
+-  Pressão baixa do ar de comando 
+-  Indicação de ocorrência na tela dos controladores (ver item 3.2.9.12) 
+-  Indicação de ativação do "moderador de cremalheira"1 
+-  Indicação de limite de DBR atingido 
+-  Alarme de “Controle Falhas” (fail set) MCP 3 / 1 
+-  Alarme de “Controle Falhas” (fail set) HPC 
+ 
+•  Comandos: 
+-  Acionamento do teste de velocidade 
+-  Reset do excesso de velocidade para liberar o procedimento de partida 
+Áreas de dados da tela 
+ 
+A tela “Controle dos MCP’s - Boreste” possui 6 áreas de dados, a saber: 
+-  “M.C.P. No 3” 
+-  “M.C.P. No 1” 
+-  “Embreagem M.C.P.” 
+-  “H.P.C.” 
+-  “Rotação do Eixo” 
+-  “DESSI” 
+Objetos de tela (figura 1.142)
+                              Figura 1.42. Objetos da tela “Controle dos MCP’s - Boreste” 
+OSTENSIVO                                                     1- 59                                                         ORIGINAL
+
+
+--- PAGE 59 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Área de “M.C.P. No 3” e “M.C.P. No 1”      
+ 
+ 5→ Lâmpada de estado ou alarme: 
+-  Alarme: “Desarme 723”. Indicador acende em vermelho.  
+-  Alarme: “Secund.723”. Indicador acende em amarelo. 
+-  Alarme: “Desarme Flaps Sucção” . Indicador acende em vermelho. 
+-  Alarme: “Pr. Baixa Água Salgada” de resfriamento do MCP 3 / 1. Indicador acende em amarelo. 
+-  Alarme: “Excesso Velocid.” indica excesso de velocidade real ou teste de excesso de velocidade do
+MCP 3/1. Indicador acende em vermelho. 
+-  Alarme: “Sub Veloc.” Indicador acende em vermelho. 
+-  Alarme: “Nív. Baixo Tanque Expansão” do MCP 3 / 1. Indicador acende em amarelo. 
+-  Alarme: “Pr. Baixa Ar de Controle” do MCP 3 / 1. Indicador acende em amarelo. 
+-  Alarme: “Desarme” do MCP 3 / 1 devido ao 2º nível de pressão baixa do óleo de resfriamento dos
+pistões. Indicador acende em vermelho. 
+-  Alarme: “Baixa” pressão do óleo de resfriamento dos pistões. Indicador acende em amarelo. 
+-  Alarme: “Desarme” do MCP 3 / 1 devido ao 2º nível de pressão baixa do óleo  lubrificante. Indica -
+dor acende em vermelho.
+-  Alarme: “Baixa” pressão do óleo de lubrificação. Indicador acende em amarelo. 
+-  Estado: controle do acoplamento fluido está  “Local”. Indicador acende em vermelho. Quando o
+controle encontra-se no CCM, o indicador acende em verde “Remoto”. 
+-  Estado: acoplamento fluido está “Vazio”. Indicador acende em verde. 
+-  Estado: acoplamento fluido está “Cheio”. Indicador acende em verde. 
+-  Estado / Alarme controlador: 
+       o   “Local”. Indicador acende em vermelho. 
+       o  “PGA Remoto”. Indicador acende em amarelo.  
+       o  “723 Manual”. Indicador acende em amarelo. 
+       o  “723 Auto”. Indicador acende em verde. 
+-  Estado: “723” pronto para operar. Indicador acende em verde. 
+-  Estado: “PGA” pronto para operar. Indicador acende em verde. 
+Teste de excesso de velocidade: 
+Ao clicar com o botão direito do trackball sobre este objeto( figura 1.143) aparece o menu
+abaixo. Ao selecionar “Teste Sobre-Velocidade” o operador receberá mensagens de aviso
+e/ou pedidos de confirmação. Figura 1.144.
+ Fig. 1.143
+ Figura 1.144. Confirmação
+Vejamos abaixo as situações possíveis:  
+Esta mensagem aparecerá caso o operador tente executar o teste
+com o motor desligado. Figura 1.145.
+ Figura 1.145. Motor desligado
+OSTENSIVO                                                     1- 60                                                         ORIGINAL
+
+
+--- PAGE 60 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Esta mensagem alerta que o motor não atingiu a ve -
+locidade necessária para executar o teste. Se o botão
+"Sim" for escolhido a mensagem ao lado aparece. Fi-
+gura 1.146.
+ Figura 1.146. Motor não atingiu a velocidade
+Confirma teste e alerta para desarme do motor. Fi-
+gura 1.147.
+Para poder liberar o motor para uma partida normal,
+o operador terá que clicar sobre o item “Reset”, que 
+aparece na figura 1.144 acima, o sinal de alarme do
+objeto em questão será apagado. 
+ Figura 1.147. Confirma teste e alerta para desarme
+15 → Régua medidora analógica: 
+-  Pressão Óleo Resfr. Pistões do MCP 3/ 1. 
+-  Pressão Óleo Resfr. Lubrificação do MCP 3/ 1. 
+ 
+ 7 → Lâmpada redonda de estado ou alarme: 
+-  Motor MCP 3/ 1 “Selecionado”. Indicador acende em verde. 
+-  Motor MCP 3/ 1 “Virando”. Indicador acende em verde. 
+-  Alarme: “Controle Falhas” (fail set) MCP 3 / 1. Indicador acende em vermelho. 
+ 
+ 6 → Relógio medidor analógico: 
+-  Rotação (RPM) do MCP 3 / 1.  
+  
+17 → Condições de partida: Figuras 1.148 e 1.149.
+Indicação de: ‘Condições de partida OK’. 
+           Figura 1.148.
+Indicação de: ‘Condições de partida não OK’. 
+          Figura 1.149.
+- Inibições: ao clicar sobre este botão abre-se a janela que possibilita a visualização das inibições de
+partida. Caso alguma das inibições esteja ativa, o motor não poderá partir e tanto o botão quanto às
+lâmpadas indicativas sinalizarão isto mudando de verde para vermelho. Figura 1.150.
+                                    Figura 1.150.  Visualização das inibições
+OSTENSIVO                                                     1- 61                                                         ORIGINAL
+
+
+--- PAGE 61 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+- Interloques: ao clicar sobre este botão abre-se a janela que possibilita a visualização dos interlo -
+ques(figura 1.151), se algum deles não foi cumprido, a máquina poderá partir desde que seja contor -
+nado pelo operador. Tanto o botão quanto as lâmpadas indicativas sinalizarão isto, mudando de verde
+para amarelo.
+                                      Figura 1.151.  Visualização dos interloques
+18 → Horímetro: 
+Indica tempo de uso dos motores. 
+ 
+4 → Indicador de alarme nas telas dos controladores: 
+Ao ser pressionado abre a tela dos ‘Controladores dos Motores’ e acende em  amarelo quando há al -
+gum alarme. 
+  
+Área de “Embreagem M.C.P”  
+ 
+5 → Lâmpada de estado ou alarme: 
+Esses indicadores são comuns ao MCP 3 e MCP 1 (indicadores acendem em verde). 
+-  “Desengrazada”, indica que a embreagem dos motores está desengrazada. 
+-  “Engrazada Travada”, indica que a embreagem dos motores está engrazada e travada. 
+  
+Área de “H.P.C” 
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Alarme: “Controle Falhas” (fail set) HPC. Indicador acende em vermelho. 
+-  Estado / alarme: 
+            o  “AUTO”. Indicador acende em verde. 
+            o  “Remoto Manual”. Indicador acende em amarelo. 
+            o  “LOCAL”. Indicador acende em vermelho.  
+-  Indicador: “Moderador de passo”. Indica que o mesmo está sendo utilizado e acende em amarelo. 
+-  Estado: “Passo Zero”. Indicador acende em verde. 
+ 
+6 → Relógio medidor analógico: 
+-  Passo do Hélice. 
+-  Rotação do Eixo (rpm) do hélice. 
+-  DESSI (Velocidade do eixo do hélice). 
+ 
+4 → Indicador de alarme nas telas dos controladores: 
+Ao ser pressionado abre a ela dos ‘Controladores do HPC’ e acende em amarelo quando há algum
+alarme. 
+OSTENSIVO                                                     1- 62                                                         ORIGINAL
+
+
+--- PAGE 62 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Controladores dos MCP's nº1 e  nº3 (BE) e nº2 e nº4 (BB). Figura 1.152
+           
+                                               Figura 1.152. Controlador do MCP.
+Apresenta-se a janela referente aos motores de boreste (nº1 e nº3). A janela de bombordo é estrutural -
+mente idêntica. 
+Esta janela mostra os valores dos parâmetros e indicações relativas aos Controladores 723 e PGA dos
+MCPs 1 e 3, os nomes desses parâmetros e indicações estão escritos acima e/ou dentro da área dos
+seus objetos de tela. 
+Acessibilidade 
+O acesso as janelas dos controladores é feito através da área de navegação, pelo botão "Con -
+troladores" ou através dos ícones  nas áreas referentes a eles nas telas de controle dos MCP´s e
+das Turbinas. Figura 1.153.
+Fig.1.153.
+OSTENSIVO                                                     1- 63                                                         ORIGINAL
+
+
+--- PAGE 63 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+A estação de trabalho de BB terá acesso apenas aos equipamentos de BB e o mesmo ocorre para Bo -
+reste, a estação central terá acesso dependendo da configuração da estações. 
+Em alguns casos as informações estão apresentadas em janelas de Detalhes. Esses detalhes estão indi -
+cados abaixo. 
+Síntese das informações, alarmes e comandos disponibilizados ao operador nessa tela  
+As informações, alarmes e comandos estão apresentados abaixo. Em alguns casos as informações es -
+tão apresentadas em janelas de Detalhes. 
+ 
+•  Informações do 723 e Painel do 723:  
+-  Leitura da rotação do motor. Janela de Detalhes, acessível por duplo clique ou pelo botão direito do
+mouse seguido da opção "Detalhar". Figura 1.154. 
+                                     Figura 1.154. Sensores de rotação
+                        o  Indicação analógica da rotação M.P.U². 
+                        o  Indicação analógica da rotação do taco³ 
+                        o  Indicação de desvio entre sinais de rotação 
+ 
+-  Indicação de Controlador 723 ligado (indicado pela chave Liga /Desl do 723-4) 
+-  Indicação de Controlador PGA ligado (indicado pela chave Liga /Desl do PGA-5)6 
+-  Indicação de Controlador 723 Auto/Manual (comum aos dois motores do bordo) 
+-  Comando remoto de "Rearme do Modo Analógico" (botão "Rearme" no painel do 723-7) 
+-  Alarme de “Falha 24V”8 
+-  Indicação analógica do retorno da rotação do Controlador 723 (mostrador analógico) 
+-  Indicação de diferença entre set point de rotação enviado ao 723 (no mostrador analógico) 
+___________________________________________________________________________
+2 - A rotação mostrada na tela de Controladores é a do MPU quando o motor está sendo controlado
+pelo 723. 
+3 - A rotação mostrada na tela de Controladores é a do tacogerador quando o motor está sendo con -
+trolado pelo PGA. 
+4 - A chave apenas pode ser modificada no painel do 723, não sendo admitido comando remoto. 
+5 - Ver nota 4. 
+6 - A chave do PGA não provoca diretamente o "desligamento" do PGA (corte do sinal enviado ao
+conversor I/P). A posição da chave é lida pelo software do SCMPA, que comanda, através da remota,
+o "desligamento". 
+7 - O rearme pode ser feito automaticamente por software, quando aplicável. Pode ser feito manual -
+mente, localmente no painel do 723 ou remotamente através do botão apropriado desta tela. O rearme
+do modo analógico deve ser realizado sempre que houver fail set. 
+8 - O sinal de "Falha 24V" do painel é caracterizado pela posição da chave de manutenção desligada,
+falha de 24V do navio ou falha no fusível do painel. 
+OSTENSIVO                                                     1- 64                                                         ORIGINAL
+
+
+--- PAGE 64 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+-  Botão de Detalhe do 723, indicado pela figura 1.155. 
+                                                                                                 Fig. 1.155.
+                                      Figura 1.155. Controlador 723
+             o  Indicação de Controlador 723 ligado 
+             o  Indicação analógica da rotação M.P.U. 
+             o  Indicação de motor Desarmado pelo 723 ("Major Alarm / Shutdown") 
+             o  Indicação de falha secundária ("Minor Alarm") 
+             o  Indicação de diferença entre set point de rotação enviado ao 723 e valor retornado (Desvio)
+             o  Indicação de 723 em modo Manual 
+             o  Indicação de limite máximo de combustível atingido para rotação atual (“Máx. Comb.”)9 
+             o  Comando para alterar limite de combustível10 
+-  Indicação de Controlador 723 desacoplado. Esta "lâmpada" indicativa permite, através do botão di -
+reito do mouse mais a opção "Comandar" os seguintes comandos: 
+            o  Desacoplar manualmente o 723, se este estiver acoplado( figura 1.156) e
+                                                 Figura 1.156. PGA acoplado
+            o  Acoplar ("Rearmar") manualmente o 723, se este estiver desacoplado( figura 1.157)
+                                               Figura 1.157 PGA desacoplado
+OSTENSIVO                                                     1- 65                                                         ORIGINAL
+
+
+--- PAGE 65 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+•  Informações do PGA:
+___________________________________________________________________________
+9 - Indicação que a posição da cremalheira atingiu o valor limite para a rotação atual (curva de DBR).
+10 - Este comando libera a posição da cremalheira além do valor estipulado da curva limite aplicada
+ao 723. 
+-  Indicação analógica do retorno da rotação do Controlador PGA (mostrador analógico) 
+-  Indicação de diferença entre set point de rotação enviado ao 723 (no mostrador analógico) 
+-  Indicação de Controlador 723 desacoplado. Da mesma forma que no 723, esta "lâmpada" indicativa
+permite, através do botão direito do mouse mais a opção "Comandar" os seguintes comandos: 
+          o  Desacoplar manualmente o PGA, se este estiver acoplado e 
+          o  Acoplar ("Rearmar") manualmente o PGA, se este estiver desacoplado 
+ 
+•  Informações da Cremalheira:  
+-  Indicação analógica da posição da cremalheira 
+-  Indicação de "Moderador da cremalheira". Janela de Detalhes, acessível pelo botão direito do mou -
+se seguido da opção "Detalhar". Figura 1.158. 
+                                                Figura 1.158. Janela da cremalheira
+         o  Indicação analógica da temperatura do ar de carga "LBG" (mostrador analógico) 
+         o  Alarme temperatura alta de ar de carga (no mostrador analógico)11 
+         o  Alarme de pressão diferencial alta do filtro de óleo lubrificante12 
+ 
+•  Informações da Remota: 
+-  Alarme de “Controle Falhas” (fail set) 
+-  Set point de rotação enviado pela remota ao 723 (indicação digital) 
+-  Indicação de rotação retornada pelo 723 à remota (indicação digital) 
+-  Set point de rotação enviado pela remota ao conversor I / P do PGA (indicação digital) 
+-  Indicação de rotação retornada pelo conversor P / I do PGA à remota (indicação digital) 
+-  Set point de posição da cremalheira calculado pelo 723 e retornado à remota - idêntico valor envia -
+do pelo 723 ao atuador (indicação digital) 
+-  Indicação de posição da cremalheira retornada pelo potenciômetro à remota (indicação digital) 
+-  Indicação de ativação do "moderador de cremalheira"13 
+-  Indicação de saída do 723 desacoplada 
+-  Indicação de saída do PGA desacoplada  
+___________________________________________________________________________
+11 - Quando o ar de carga do motor atingir um valor especificado, o sistema limitará a posição da cre -
+malheira, sendo gerado um "warning". Ver nota 1. 
+12 Este evento faz com que a posição da cremalheira seja limitada, gerando um "warning".Ver nota 1.
+13 - Ver nota 1. 
+OSTENSIVO                                                     1- 66                                                         ORIGINAL
+
+
+--- PAGE 66 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Áreas de dados da janela 
+A janela “Controladores - MCP de Boreste” possui 4 áreas de dados, a saber: 
+-  Informações do 723 e Painel do 723 
+-  Informações do PGA 
+-  Informações da Cremalheira 
+-  Informações da Remota 
+ 
+ Objetos da janela
+                              Figura 1.159. Objetos da janela “Controladores - MCP de Boreste” 
+Área de “Informações do 723 e Painel do 723” 
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Alarme: “Falha 24V”. Indicador acende em vermelho. 
+OSTENSIVO                                                     1- 67                                                         ORIGINAL
+
+
+--- PAGE 67 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+-  Alarme: “Desacoplado”, indica saída do 723 desacoplada. Indicador acende em amarelo. Acessan -
+do, através do botão direito do mouse, obtêm-se:  
+           o  8→ Botão de comando para "desacoplar"( figura 1.160) o 723, se este estiver acoplado e 
+          o  8→ Botão de comando para “acoplar” ("rearmar") manualmente o 723, se este estiver desa -
+coplado. Figura 1.161.
+                Figura 1.160. Janela desacoplar                                Figura 1.161. Janela rearmar
+6 → Relógio medidor analógico simplificado(14): 
+-  Rotação do motor (rpm). Acessando a janela de detalhes( figura 1.162): 
+                                             Figura 1.162. Rotação do motor
+        o   6 → Relógio medidor analógico, para a indicação de rotação do motor pelo MPU 
+        o   6 → Relógio medidor analógico, para a indicação de rotação do motor pelo Tacogerador 
+        o   23→ Equipamento selecionado:   Quando o título for alterado da cor cinza escuro para verde,
+significa que este equipamento está selecionado. 
+        o   6 → Indicador luminoso de alarme, para indicação de “Desvio”, indica desvio entre leituras
+de Rotação. Indicador acende em amarelo. 
+ 
+6 → Relógio medidor analógico: 
+-  Retorno do set point enviado ao 723 (rpm) 
+ 
+ 8 → Botão de comando: 
+-  Rearme do modo analógico 
+ 
+ 21 → Indicadores específicos para o painel do 723 para indicação de: 
+_________________________________________________________________________
+14 - Sem indicação digital e sem faixa de alarme. 
+-  Indicação de Controlador 723 ligado.
+                                                                  Fig. 1.163.
+Indica 723 (chave) ligado em verde escuro e desligado em vermelho escuro. Figura 1.163.
+OSTENSIVO                                                     1- 68                                                         ORIGINAL
+
+
+--- PAGE 68 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+-  Indicação de Controlador PGA ligado.
+                                                       
+                                                                   Fig. 1.164.
+Indica PGA (chave) ligado em verde escuro e desligado em vermelho escuro. Figura 1.164.
+-  Indicação de Controlador 723 em modo Auto /Manual (comum aos dois motores do bordo).
+Indica modo Automático em azul escuro e Manual em vermelho escuro. Fig. 1.165.
+                                                                                                                      Fig. 1.165.
+-  Botão de Detalhe do 723 .
+                                                 Fig. 1.166.
+Acende em amarelo quando há alarme na janela de Detalhes do 723. Figura 1.166.
+As informações na janela de detalhes( figura 1.167) são:
+                                                       Figura 1.167. Janela de detalhes
+      o  6 → Relógio medidor analógico, para a indicação de rotação do motor pelo MPU 
+      o   5 → Lâmpada de estado ou alarme, para indicação de  “Desarmado”, indica desarme do motor
+pelo 723. Indicador acende em vermelho. 
+      o   5 → Lâmpada de estado ou alarme, para indicação de “Desvio”, indica desvio set point de ro -
+tação e valor retornado pelo 723. Indicador acende em amarelo. 
+      o   5  → Lâmpada de estado ou alarme, para indicação de  “Falha secundária”, indica sinal "minor
+alarm" indicado pelo 723. Indicador acende em amarelo. 
+      o  5 → Lâmpada de estado ou alarme, para indicação  “Manual”,  indica modo de operação do
+723. Indicador acende em amarelo. 
+      o  5 → Lâmpada de estado ou alarme, para indicação de “Ligado”, indica 723 ligado (chave na
+posição Ligada). Indicador acende em verde. 
+      o  5 → Lâmpada de estado ou alarme, para indicação de “Combustível - Máximo”, indica que a
+posição solicitada para a cremalheira atingiu a posição equivalente à curva limite do motor. Indicador
+acende em amarelo. 
+      o  8 → Botão de comando de "Alterar Limite", libera a posição da cremalheira além da curva li -
+mite imposta ao 723. 
+OSTENSIVO                                                     1- 69                                                         ORIGINAL
+
+
+--- PAGE 69 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Ao clicar no botão "Altera Limite" a janela abaixo( figura 1.168) se abre e o operador pode selecio -
+nar: 
+- "Sim": controlador libera limite de combustível (posição da
+cremalheira) quando necessário. 
+- "Não": valor do limite de combustível não será alterado.
+         Figura 1.168. Altera limite
+Enquanto "Sim" estiver selecionado, o botão "Combustível - Altera Limite" ficará na cor amarela. 
+  
+Área de “Informações do PGA” 
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Alarme:  “Desacopl”, indica saída do PGA desacoplada. Indicador acende em  amarelo. Acessando,
+através do botão direito do mouse, obtêm-se: 
+      o  8 → Botão de comando para "Desacoplar" o PGA, se este estiver acoplado e 
+      o  8  → Botão de comando para acoplar ("Rearmar") manualmente o PGA, se este estiver desaco -
+plado. 
+ 
+6 → Relógio medidor analógico: 
+-  Retorno do set point enviado ao PGA (rpm) 
+  
+Área de “Informações da Cremalheira” 
+ 
+6 → Relógio medidor analógico: 
+-  Posição da Cremalheira (mm), lida pelo potenciômetro. 
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Alarme: “Moderador de Crem.”( figura 1.169),  indica estados das proteções do motor de tempera -
+tura ar de carga e de filtro de óleo lubrificante obstruído. Indicador acende em amarelo. Acessando,
+através do botão direito do mouse, obtêm-se:
+                                              Figura 1.169. Moderador da cremalheira
+          o  6 → Relógio medidor analógico, para a indicação do ar de carga do motor. Faixa de alarme
+parametrizada (normalmente 40ºC); 
+         o  5 → Lâmpada de Estado ou Alarme, para indicação de “Filtro de Óleo Obstr.”, indica filtro
+obstruído. Indicador acende em amarelo. 
+OSTENSIVO                                                     1- 70                                                         ORIGINAL
+
+
+--- PAGE 70 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Área de “Informações da Remota” 
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Alarme: “Controle Falhas”, indica fail set ativado. Indicador acende em vermelho. 
+-  Alarme:  “Desacopl”, indica saída do 723 desacoplada. 
+Indicador acende em amarelo. 
+-  Alarme:  “Desacopl”, indica saída do PGA desacoplada (mesmo indicador da Área de dados do
+PGA). 
+Indicador acende em amarelo.
+22 → Indicadores luminosos de estado, para indicação de: 
+-  Indicação digital de set point de rotação enviado pela remota ao 723. Indicador acende em branco
+em condições normais da remota. Em caso de falha, permanece "apagado" (fundo cinza); 
+-  Indicação digital de rotação retornada pelo 723 à remota. Indicador acende em branco em condi -
+ções normais do 723. Em caso de falha, permanece "apagado" (fundo cinza); 
+-  Indicação digital de set point de rotação enviado pela remota ao conversor I / P do PGA. Indicador
+acende em branco em condições normais da remota. Em caso de falha, permanece "apagado" (fundo
+cinza); 
+-  Indicação digital de rotação retornada pelo conversor P / I do PGA à remota. Indicador acende em
+branco em condições normais do PGA. Em caso de falha, permanece "apagado" (fundo cinza); 
+-  Indicação digital de set point de posição da cremalheira calculado pelo 723 e retornado à remota -
+idêntico valor enviado pelo 723 ao atuador. Indicador acende em branco em condições normais do
+723. Em caso de falha, permanece "apagado" (fundo cinza); 
+-  Indicação digital de posição da cremalheira retornada pelo potenciômetro à remota. Indicador acen -
+de em branco em condições normais da cremalheira. Em caso de falha, permanece "apagado" (fundo
+cinza); 
+Controle da turbina a gás(figura 1.170)
+                               Figura 1.170.  Tela “Controle da turbina a gás - BB” 
+OSTENSIVO                                                     1- 71                                                         ORIGINAL
+
+
+--- PAGE 71 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Esta tela mostra os valores dos parâmetros e indicações relativas ao Controle da turbina a gás de bom -
+bordo. 
+Os nomes desses parâmetros e indicações estão escritos acima e/ou dentro da área dos seus objetos de
+tela.  
+A tela “Controle da turbina a gás - Boreste” é estruturalmente idêntica à de BB. 
+Objetos de tela (figura 1.171).
+                                Figura 1.171. Objetos da tela “Controle da turbina a gás - Boreste”
+Área de “Módulo TP nº2” 
+ 6 → Relógio medidor analógico: 
+- Rotação da turbina de potência nº2 
+- Temperatura Entrada TP nº2. 
+ 
+7 → Lâmpada redonda de estado ou alarme: 
+- “Selecionada”. Indicador acende em verde. 
+- “Virando”. Indicador acende em verde. 
+ 
+5 → Lâmpada de estado ou alarme: 
+- Alarme: “Excesso Velocid”. Indica excesso de velocidade na turbina. Indicador pisca em vermelho. 
+- Alarme:  “Sub Velocid.”. Indica sub velocidade na turbina. Indicador pisca em vermelho. 
+- Alarme: “Temp Alta” na entrada da TP nº2. Indicador pisca em vermelho. 
+- Alarme: “Vibração Alta” na TP nº2. Indicador pisca em amarelo. 
+- Alarme: “Pressão Baixa” do óleo na TP nº2. Indicador pisca em amarelo. 
+- Alarme:  “Desarme”. Desarme da TP nº1 por baixa pressão de óleo lubrificante. Indicador pisca em 
+vermelho. 
+OSTENSIVO                                                     1- 72                                                         ORIGINAL
+
+
+--- PAGE 72 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+15 → Régua medidora analógica: 
+- “Vibração” 
+ 
+18 → Horímetro: 
+- Indica tempo de uso da turbina. 
+ 
+Área de “Condições de partida” : Figuras 1.171 e 1.173.
+ Indicação de: ‘Condições de partida OK’.
+                   Figura 1.172. Partida ok.
+Indicação de: ‘Condições de partida não OK’.
+              Figura 1.173. Partida não ok
+- Inibições: ao se clicar sobre este botão, abre-se a janela que possibilita a visualização das inibições
+de partida. Caso alguma das inibições esteja ativa, a turbina não pode partir. Figura 1.174. 
+                                       Figura 1.174. Inibições de partida
+- Interloques: ao se clicar sobre este botão, abre-se a janela que possibilita a visualização dos interlo -
+ques. Se algum deles não foi cumprido, a máquina pode partir desde que o interloque seja contornado.
+Figura 1.175. 
+                                        Figura 1.175. Interloques de partida
+Área de “Embreagem T.G.” 
+ 
+5 → Indicadores luminosos de estado: 
+Indicadores acendem em verde. 
+OSTENSIVO                                                     1- 73                                                         ORIGINAL
+
+
+--- PAGE 73 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+- “Desengraza. Travada Manual”, indica que a embreagem da turbina de potência foi travada manual -
+mente e desengrazada. Indicador acende em vermelho. 
+- “Desengrazada”., indica que a embreagem da turbina de potência foi desengrazada automaticamen -
+te. 
+Indicador acende em verde. 
+- “Engrazada e Travada “., indica que a embreagem da turbina de potência foi engrazada e travada 
+automaticamente.  Indicador acende em verde. 
+ 
+ 
+Área de “Módulo GG nº1” 
+ 
+6 → Relógio medidor analógico: 
+- Queda de pressão do conduto de admissão da turbina a gás nº2 
+- Rotação do compressor de baixa pressão do gerador a gás nº2 
+ 
+5 → Indicadores luminosos de estado ou alarme: 
+- Alarme: Queda de pressão “Alta” no conduto admissão. Indicador pisca em amarelo.  
+- Alarme: “Pressão Baixa” admissão bomba O.C. Indicador pisca em amarelo.  
+- Alarme: “Desarme manual acionado”. Indicador pisca em vermelho.  
+- Alarme: “Controle Falhas” (fail set) TG 2. Indicador pisca em vermelho. 
+- Estado: “Remoto”, comandos do acelerador em Remoto. Indicador acende em verde. 
+- Estado: “Local Mínimo”, comandos em Local. Aceleração Pos. Mínimo. Indicador acende em ver -
+melho. 
+- Estado: “Virando”, funcionamento da catraca do GG nº2. Indicador acende na cor verde. 
+- Estado/Alarme: “Manual”. Indicador acende em vermelho. 
+-  Estado: “Auto”. Catraca em automático. Indicador acende em verde. 
+- Alarme: “Falha Ligar/Desligar” catraca do GG nº2. Indicador pisca em amarelo. 
+- Alarme: “Vibração Alta” no gerador a gás nº2. Indicador pisca em amarelo. 
+- Alarme: “Pressão Baixa” do óleo lubrificante do gerador a gás nº2. Indicador pisca em amarelo. 
+- Alarme: “Desarme Acionado” do gerador a gás devido a falhas. Indicador pisca em vermelho. 
+- Alarme: “Nível Baixo” no tanque de óleo lubrificante do gerador a gás nº2. Indicador pisca em ama -
+relo. 
+ 
+15 → Régua medidora analógica: 
+- “Vibração” na GG nº2 
+- “Pressão OL” na GG nº2 
+1 → Chave de comando: 
+Ao clicar na chave de comando da Catraca GG( figura 1.176), abre-se a janela abaixo, através da qual
+o operador pode:
+- Desligar a catraca ou passar para o modo Automático. 
+- Quando a Catraca é desligada, automaticamente ela passa para Manual. 
+                                                 Figura 1.176. Catraca GG
+OSTENSIVO                                                     1- 74                                                         ORIGINAL
+
+
+--- PAGE 74 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+4 → Controladores: 
+Ao ser pressionado abre a tela dos ‘Controladores da Turbina’ e acende em amarelo quando há algum
+alarme. 
+  
+Área de “Proteção Incêndio” 
+ 
+5 → Indicadores luminosos de estado ou alarme: 
+- Alarme: “Temp. Alta” no compartimento da turbina a gás. Indicador pisca em amarelo. 
+- Alarme: “Detetor Iniciado” indicando o acionamento do detetor de fogo. Indicador pisca em amare -
+lo. 
+- Alarme: “Extintor Disparou” indicando o acionamento do extintor de incêndio na engrenagem da
+TG. Indicador pisca em amarelo. 
+- Alarme: “Extintor Desarm.” indicando o desligamento do extintor de incêndio devido a falhas. Indi -
+cador pisca em amarelo. 
+ 
+Área de “Ventilação Módulo nº1” 
+ 
+5 → Indicadores luminosos de estado ou alarme: 
+- Funcionamento da Ventilação Módulo nº1 que, ao ligar, faz o objeto acender-se na cor verde exibin -
+do texto o fixo de estado “Virando”. 
+- Informa se o controle da Ventilação Módulo nº1, está sendo feito no CCM ou no Local (Campo). 
+Controle no CCM: indicador acende na cor verde exibindo o texto “CCM”. 
+Controle no Campo: indicador acende em vermelho exibindo o texto “Local”, neste caso todos os co -
+mandos e informações sobre a ventilação módulo nº1 ficam desabilitados. 
+- Alarme: “Falha Ligar/Desligar” catraca do GG nº1. Indicador acende na cor amarela. 
+ 
+1 → Chave de comando: 
+Ao clicar  nesta chave abre-se a janela de controle já explicada. 
+ 
+Área de “Falha Alimentação” 
+ 
+5 → Indicadores luminosos de estado ou alarme: 
+- Alarme: “Circuito Controle” falta alimentação no circuito de controle. Indicador pisca em amarelo. 
+- Alarme: “115 Volts400 Hz” falta alimentação. Indicador pisca em amarelo. 
+6 → Relógio medidor analógico: 
+- DESSI (Velocidade do eixo do hélice). 
+- Rotação do Eixo (rpm) do hélice. 
+- Valor do HPC (passo do hélice). 
+ 
+5 → Indicadores luminosos de estado ou alarme: 
+- Alarme: “Controle Falhas” (fail set) HPC. Indicador pisca em vermelho. 
+- Estado/alarme: “AUTO”. Indicador acende em verde. 
+“MANUAL REMOTO”. Indicador acende em amarelo. 
+“LOCAL”. Indicador acende em vermelho..  
+- “Passo Zero”. Indicador acende em verde. 
+- “Moderad. do passo” sendo utilizado. Indicador acende em amarelo. 
+ 
+4 → Controladores: 
+Ao ser pressionado abre a ela dos ‘Controladores dos Motores’ e acende em  amarelo quando há al -
+gum alarme. 
+OSTENSIVO                                                     1- 75                                                         ORIGINAL
+
+--- PAGE 75 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Controladores das Turbinas TG nº1 e TG nº2 
+ 
+A janela da Figura 1.177 mostra os valores de parâmetros e indicações relativas ao Controlador da
+turbina. Os nomes desses parâmetros e indicações estão escritos acima e/ou dentro da área dos seus
+objetos de tela. 
+                                              Figura 1.177 Controladores das turbinas 
+Áreas da janela 
+A janela “Controlador TG 2” possui 4 áreas de dados, a saber: 
+ 
+- “Alarmes”: parte superior da janela  
+- “Controlador  TG” 
+- “Rotação” 
+- “Informações TG ”: Parte inferior da janela
+OSTENSIVO                                                     1- 76                                                         ORIGINAL
+
+
+--- PAGE 76 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Objetos da janela. Figura 1.178.
+                                    Figura 1.178. Objetos da janela “Controlador TG 2”
+Área de “Alarmes” 
+ 
+5 → Lâmpadas de estado ou alarme: 
+ 
+- Alarme: “Controle Falhas”, indica fail set ativado. Indicador pisca em vermelho. 
+- Alarme: “Sentinela” . indica falha na remota de Bombordo (para TGnº2). Indicador pisca em verme -
+lho. 
+- Alarme: “Falha Alimentação”. Indicador pisca em vermelho. 
+Área de “Controlador TG” 
+ 
+6 → Relógio medidor analógico: 
+- Retorno do set point de vazão de combustível enviado ao controlador  
+OSTENSIVO                                                     1- 77                                                         ORIGINAL
+
+
+--- PAGE 77 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+ 5 → Lâmpadas de estado ou alarme: 
+- Alarme:  “Desvio”,  indica desvio entre retorno do  set point do controlador e o  set point enviado ao
+mesmo. 
+Indicador pisca em vermelho. 
+  
+Área de “Rotação” 
+ 
+5 → Lâmpadas de estado ou alarme: 
+- Alarme:  “Desvio”,  indica desvio entre leituras dos sensores de rotação MT1 e MT2. Indicador pis -
+ca em amarelo. 
+ 
+6 → Relógio medidor analógico, para a indicação de: 
+- Rotação da TG 1 pelo sensor MT1 (rpm) 
+- Rotação da TG 1 pelo sensor MT2 (rpm) 
+ 
+Confiável: Figura 1.179
+Ao clicar nesta caixa de seleção, o operador informa o sistema que o sensor está confiável.
+Figura 1.179.
+Equipamento selecionado: 
+Quando o título for alterado da cor cinza escuro para verde, significa que
+este equipamento está selecionado. Figura 1.180. 
+            Fig. 1.180
+Nota: Os sensores de rotação MT1 e MT2 são redundantes e ambos podem ser usados para efeito de
+controle. Se ambos estiverem confiáveis (com “tick” na caixa de seleção) o sensor usado para efeito
+de controle pelo SCMPA é o MT1 (portanto, o título fica verde).  
+ 
+Quando o MT1 não está confiável (sem “tick”) e o MT2 está, o segundo fica ativo e é usado pelo
+SCMPA. 
+Quando o MT2 não está confiável e o MT1 está, ele obrigatoriamente é utilizado. 
+ 
+Área de “Informações TG”  
+ 
+5 → Lâmpadas de estado ou alarme: 
+- Estado: “Aceler. Remoto”, indica que o set-point de rotação da TG2 é fornecido pelo SCMPA (do
+contrário, seria fornecido pelo painel local). Indicador acende em verde. 
+             
+6 → Relógio medidor analógico: 
+- Rotação da TG 2 (rpm). Sua indicação é igual à do sensor que está sendo usado (MT1 ou MT2). 
+ 
+7 → Lâmpada redonda de estado ou alarme: 
+- TG 2 “Ligada”. Indicador acende em verde. 
+- TG 2 “Selecionada”. Indicador acende em verde. 
+- “Moderador de passo”. Indica que o mesmo está sendo utilizado e acende em amarelo.
+Controladores dos H.P.C. de Bombordo e Boreste
+Esta janela mostra os valores dos parâmetros e indicações relativas ao Controlador SCA do “HPC
+BB”; os nomes desses parâmetros e indicações estão escritos acima e/ou dentro da área dos seus  ob -
+jetos de tela. A tela e operação para o Controlador SCA e BE é idêntica. Figura 1.181.
+OSTENSIVO                                                     1- 78                                                         ORIGINAL
+
+
+--- PAGE 78 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                                              Figura 1.181.  Controladores dos HPC'S 
+Áreas de dados da janela  
+A janela “HPC Boreste” possui 4 áreas de dados, a saber: 
+ 
+- “Alarmes”: Parte superior da janela 
+- “Controlador SCA-HPC” 
+- “Sensores (Pitch Feedback Unit”) 
+- “Informações HPC”: parte inferior da janela 
+OSTENSIVO                                                     1- 79                                                         ORIGINAL
+
+
+--- PAGE 79 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Objetos da janela: Figura 1.182.
+                                     Figura 1.182. Objetos da janela “HPC Boreste”
+Área de “Alarmes” 
+ 
+5 → Indicadores luminosos de estado ou alarme, para indicação de: 
+ 
+- Alarme: “Controle Falhas”, indica fail set ativado. Indicador pisca em vermelho. 
+- Alarme: “Sentinela” indica falha na remota a qual o HPC está se referindo. Indicador pisca em ver -
+melho. 
+- Alarme: “Falha Alimentação”. Indicador pisca em vermelho. 
+Área de “Informações HPC” 
+5 → Lâmpada de estado ou alarme, para indicação de: 
+“Auto”. Indicador acende em verde. 
+ 
+6 → Relógio medidor analógico, para a indicação de: 
+- Passo do hélice (graus). Valor igual ao do sensor ativo. 
+OSTENSIVO                                                     1- 80                                                         ORIGINAL
+
+
+--- PAGE 80 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+7 → Lâmpada de estado ou alarme, para indicação de: 
+- “Passo Zero”. Indicador acende em verde. 
+- “Moderador de passo”. Indica que o mesmo está sendo utilizado e acende em amarelo. 
+ 
+Ajuste de Passo: é utilizado para se mudar o valor do passo sem ter que alterar o DESSI (e, por conse -
+guinte, a rotação). Os incrementos de passo são sempre de 0.5 grau.  
+ 
+Sempre que for feita alguma alteração do passo, qualquer que seja a forma (por exemplo, mudando o
+DESSI), a alteração feita pelo Ajuste de Passo é zerada. 
+ 
+Recomenda-se que este recurso seja utilizado após ter sido fornecido um DESSI e os respectivos va -
+lores de regime de passo e rotação, correspondentes a esse DESSI, já tenham sido alcançados. 
+ 
+Área de “Sensores (Pitch Feedback Unit)” 
+ 
+5 → Lâmpada de estado ou alarme (descrito no item 3.2.9.5), para indicação de: 
+- Alarme: “Desvio”, indica desvio entre leituras de P8A e P8B. Indicador pisca em amarelo. 
+ 
+6 → Relógio medidor analógico (descrito no item 3.2.9.1), para a indicação de: 
+- Passo lido pelo P8A (graus). 
+- Passo lido pelo P8B (graus). 
+ 
+Confiável:
+Ao clicar nesta caixa de seleção, o operador informa ao SCMPA que este sensor é con -
+fiável. Figura 1.183.
+Fig. 1.183.
+Equipamento selecionado: Figura 1.184.
+Quando o título for alterado da cor cinza escuro para verde, signifi -
+ca que este sensor está selecionado para ser usado no controle. 
+Figura 1.184. Sensor selecionado.
+Nota: Os sensores de rotação P8A e P8B são redundantes e ambos podem ser usados para efeito de
+controle. 
+Se ambos estiverem confiáveis (com “tick” na caixa de seleção) o sensor usado para efeito de contro -
+le pelo SCMPA é o P8A (portanto, o título fica verde).  
+ 
+Quando o P8A não está confiável (sem “tick”) e o P8B está, o segundo fica ativo e é usado pelo
+SCMPA. 
+Quando o P8B não está confiável e o P8A está, obrigatoriamente ele é  utilizado. 
+ 
+Área de “Controlador SCA” 
+ 
+6 → Relógio medidor analógico, para a indicação de: 
+- Retorno do set point enviado ao SCA (graus) 
+ 
+7 → Lâmpada de estado ou alarme, para indicação de: 
+- “Desvio” entre set-point e retorno do controlador SCA. Indicador pisca em amarelo. 
+OSTENSIVO                                                     1- 81                                                         ORIGINAL
+
+
+--- PAGE 81 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Monitoração de temperaturas do sistema de propulsão 
+Nessa tela, também conhecida como tela do ROTRACO e que é apresentada na figura 1.185, estão 
+representadas diversas temperaturas do sistema. 
+Os indicadores de temperatura que fazem parte desta tela já foram descritos. 
+              Figura 1.185. Tela “Monitoração de temperaturas sistema de propulsão - Bombordo” 
+A tela “Monitoração de temperaturas sistema de propulsão - Boreste” é estruturalmente idêntica à de
+BB. 
+Acessibilidade 
+Quando a estação de BB estiver exibindo outra tela diferente, a tela “Monitoração de temperaturas
+sistema de propulsão - Bombordo” pode ser chamada pelo seu operador através do botão (ou item do
+menu) Bombordo/Temperaturas. 
+Quando a estação de trabalho bombordo (ou boreste) estiver em operação normal, as estações de tra -
+balho de BE e central não têm permissão de acesso à tela “Monitoração de temperaturas sistema de
+propulsão - Bombordo”. Os operadores das estações de BE e central só podem chamar esta tela se a
+estação de BB estiver fora de operação, ou operando em outras configurações. 
+ 
+Nota:  Quando a turbina ou os motores são selecionados, o eixo passa da cor cinza claro para verde.
+OSTENSIVO                                                     1- 82                                                         ORIGINAL
+
+
+--- PAGE 82 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Síntese das informações e alarmes disponibilizados ao operador nessa tela 
+ 
+Alguns indicadores de temperatura aparecem numerados. Para identificar a temperatura que eles apre -
+sentam, basta o operador posicionar o cursor do trackball sobre o indicador desejado, aparecendo as -
+sim uma legenda descritiva da temperatura ( Figura 1.186). 
+Para visualizar os limites de temperatura, posiciona-se o trackball sobre a barra que fica ao lado do
+objeto e a respectiva legenda aparecerá ( Figura 1.187). 
+          Figura 1.187. limite de temperatura.
+            Figura 1.186. Valor da temperatura.
+1.6 -  TELAS QUE ABRANGEM A MONITORAÇÃO, A PARTIDA E A PARADA DAS 
+          AUXILIARES. 
+Neste capítulo, a IHM referente aos sistemas auxiliares é tratada. Todas as telas e janelas são apresen -
+tadas e analisadas. Descreve-se como os objetos visuais que compõem as diversas telas, e que já fo -
+ram apresentados.    
+ 
+A apresentação das telas dos sistemas auxiliares segue a seguinte estrutura: 
+ 
+-  Acessibilidade: onde se descrevem as diversas formas da IHM apresentar a tela em questão, para as
+diversas configurações e modos de operação (normal e degradado); 
+-  Lista de indicações, alarmes e comandos:  onde se fornece uma lista de todas as indicações, alarmes
+e comandos que a tela apresenta; 
+-  Área de dados da tela: onde se apresentam as subdivisões da tela; 
+-  Objetos de tela: onde se apresentam os diversos objetos visuais da tela, agrupados segundo a classe
+a qual pertencem. Para maior facilidade de visualização, a tela é reapresentada com sinalizações e le -
+gendas de fácil compreensão.
+1.6.1 - Sistema de óleo lubrificante
+A figura 1.188 apresenta a tela do Sistema de Óleo Lubrificante. Note-se que, exceto pelo alarme
+“Nível alto do tanque de Borra” e os indicadores e alarmes da Bomba  de transferência de Óleo Lu -
+brificante dos MCP´s e MCA´s, todos os objetos visuais aparecem duas vezes (BB e BE). De fato, a
+tela está dividida em duas partes: Sistema de lubrificação principal de Bombordo e de Boreste.  
+OSTENSIVO                                                     1- 83                                                         ORIGINAL
+
+
+--- PAGE 83 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                         Figura 1.188. Tela “Sistema de Óleo Lubrificante” de BB e BE
+Áreas de dados da tela  
+A tela “Sistema de Óleo Lubrificante” possui 2 áreas básicas de dados: 
+- “Bombordo” 
+- “Boreste” 
+Cada uma dessas áreas é subdividida em outras 4 sub-áreas, a saber: 
+- “Sistema lubrificação principal” 
+- “Purificador óleo lubrificante” 
+- “Óleo lub. M.C.P. - M.C.A.”, indicação única para BB e BE 
+- “Purificador tanque de borra”, indicação única para BB e BE 
+ 
+Objetos visuais 
+A seguir, apresentam-se todos os objetos visuais das telas. Para maiores detalhes sobre seu funciona -
+mento. Os objetos são apresentados agrupados nas diversas sub-áreas citadas na seção anterior. Figu-
+ra 1.189. 
+Área de “Sistema lubrificação principal” de BB e BE  
+ 
+6 → Relógio medidor analógico: 
+-  Pressão de Óleo Lubrificante 
+OSTENSIVO                                                     1- 84                                                         ORIGINAL
+
+
+--- PAGE 84 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                            Figura 1.189. Objetos da tela “Sistema de Óleo Lubrificante” (BB, BE) 
+13 → Indicadores de temperatura: 
+-  Temperatura da Saída O.L. Resfr. Redutora Principal  
+-  Temperatura da Saída O.L. de Redutora Principal  
+-  Temperatura da Saída O.L. Redutora M.C.P. nº2 e nº4 
+-  Temperatura da Saída O.L. Redutora M.C.P. nº1 e nº3 
+-  Temperatura da Saída Mancal av  
+-  Temperatura da Saída Mancal ar
+5 → Lâmpada de estado ou alarme: 
+-  Alarme: “Pressão baixa” do mecanismo da Elevadora do M.C.P. Lâmpada pisca em amarelo. 
+-  Alarme: “Pressão baixa” do mecanismo da caixa Redutora Principal. Lâmpada pisca em amarelo 
+-  Alarme: “Pressão baixa” na Turbina de Potência. Lâmpada pisca em amarelo 
+-  Alarme: “Pressão baixa” do sistema de Resfriamento de Água Salgada. Lâmpada pisca em amarelo.
+-  Alarme: “Nível baixo” do Tanque de Serviço. Lâmpada pisca em amarelo. 
+-  Alarme: “Falta Ar” na Turbina Ar OL. Lâmpada pisca em amarelo. 
+-  Estado: Indicação de Turbina Ar OL funcionando (texto “Virando” e acende em verde) ou não fun -
+cionando (texto “Virando” e apagada).
+B. El. → Bomba elétrica: 
+ 
+Usada para representar as bombas elétricas de BB e BE do sistema de óleo lubrificante 
+ 
+Área de “Purificador óleo lubrificante” de BB e BE 
+ 
+OSTENSIVO                                                     1- 85                                                         ORIGINAL
+
+
+--- PAGE 85 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+5 → Lâmpada de estado ou alarme: 
+-  Estado: purificador funcionando (texto “Virando” e acende verde)  ou não-funcionamento (texto
+“Virando” e apagada); 
+-  Estado: “Emergência” no purificador. Lâmpada acende em vermelho. 
+-  Alarme: “Desarmado”, desligamento automático do Purificador  no1 (ou nº2) devido a falhas. Lâm -
+pada pisca em vermelho. 
+ 
+Área de “Óleo lub. M.C.P.- M.C.A.”  
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Estado: Bomba de transf.  funcionando ( texto “Virando” e acende em verde) ou não funcionando
+(texto “Virando” e apagada). 
+-  Estado: “Emergência”, Purificadores em emergência. Lâmpada acende em vermelho. 
+ 
+Área “Purificador tanque de borra”  
+ 
+5 → Lâmpada de estado ou alarme: 
+–Alarme: “Nível alto” do Tanque de Borra. Lâmpada pisca em amarelo.
+–
+1.6.2 - Turbina a Ar de Óleo Lubrificante
+A figura 1.190 apresenta um exemplo de janela do sistema de turbina a ar (no caso, de BE). Esta ja -
+nela mostra indicações relativas a Turbina a Ar de Óleo Lubrificante, os nomes desses parâmetros e
+indicações estão escritos acima e/ou dentro da área dos seus objetos de tela. 
+                                        Figura 1.190. janela da turbina a ar de BE 
+Lista de indicações, alarmes e comandos 
+ •  Informações gerais: 
+-  Turbina a ar “Virando”  
+ •  Alarmes: 
+-  Pressão “Baixa” na redutora principal 
+-  Pressão “Baixa” na elevadora MCP 
+-  Pressão “Baixa” na turbina de potência 
+-  “Falta ar” na Turbina a ar 
+-  Aviso para “Partir Turbina a Ar” após algum dos alarmes 
+ 
+Áreas de dados da tela 
+A janela “Turbina a Ar de Óleo Lubrificante” possui 2 áreas de dados, a saber: 
+ 
+-  “Pressão de Óleo Lubrificante” 
+-  “Turbina a ar” 
+OSTENSIVO                                                     1- 86                                                         ORIGINAL
+
+
+--- PAGE 86 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Objetos visuais 
+ O primeiro objeto visual a ser descrito é a própria janela. Quando ocorrer alguns dos alarmes de pres -
+são baixa, deve se comportar da seguinte forma: 
+-  O fundo da janela deve piscar em amarelo; 
+-  A mensagem “ Partir turbina a ar” deve ser exibida. 
+ 
+Esta situação é exibida na figura 1.191.  
+ 
+Nota: Para se partir a turbina a ar de BB (BE), deve-se acionar a alavanca preta na asa de BB (BE). 
+ 
+Ao se extinguir a condição de alarme, o fundo pára de piscar e mensagem não é mais exibida. Porém,
+a lâmpada correspondente ao alarme que causou a solicitação de partida vai se comportar como qual -
+quer outra lâmpada de alarme. 
+                               Figura 1.191. janela da turbina a ar em situação de alarme.
+5 → Lâmpada de estado ou alarme:  
+ -  Estado: turbina a ar funcionando (texto “Virando” e acende verde) ou não funcionando (texto “Vi -
+rando” e apagada);  
+-  Alarme: “Falta Ar”  na turbina a ar. Lâmpada pisca em amarelo. 
+-  Alarme: Pressão “Baixa” na redutora principal. Lâmpada pisca em amarelo. 
+-  Alarme: Pressão “Baixa” na elevadora MCP. Lâmpada pisca em amarelo. 
+-  Alarme: Pressão “Baixa” na turbina de potência turbina. Lâmpada pisca em amarelo. 
+1.6.3 - Sistema de óleo combustível 
+A figura 1.192 apresenta a tela do sistema de Óleo Combustível. Além dos objetos visuais descritos
+na seção anterior, esta tela também fornece uma representação esquemática da planta de óleo com -
+bustível. 
+Acessibilidade 
+ 
+Em condições normais de operação, esta tela só pode ser exibida pelo console central. Quando a esta -
+ção central estiver exibindo outra tela diferente, esta tela pode ser chamada pelo seu operador através
+do botão (e depois menu) Auxiliares/Óleo de Lubrificação, na região direita da tela, na área destinada
+aos comandos de navegação entre telas. As estações de trabalho de BB e BE não têm permissão de
+acesso à tela “Sistema de Óleo Combustível”.  
+ 
+OSTENSIVO                                                     1- 87                                                         ORIGINAL
+
+
+--- PAGE 87 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+No caso da estação central estar fora de operação, ou se a configuração das estações for diferente da
+normal, os operadores das estações de BB e BE podem chamar esta tela. 
+                                    Figura 1.192. Tela “Sistema de óleo combustível” 
+Área de dados da tela 
+A tela “Sistema de óleo combustível” possui uma única área de dados, ocupando todo o espaço da
+própria tela, a saber: 
+- “Sistema de óleo combustível” 
+ 
+OSTENSIVO                                                     1- 88                                                         ORIGINAL
+
+
+--- PAGE 88 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Objetos visuais. Figura 1.193.
+                                  Figura 1.193. Objetos da tela “Sistema de óleo combustível” 
+Área de “Sistema de óleo combustível”  
+ 
+BT → Bombas de Transferência: 
+ 
+Bombas de transferência 1 e 2 
+ 
+BR→ Bombas de Recalque: 
+ 
+Bombas de recalque 1 e 2 
+ 
+5 →  Lâmpadas de estado ou alarme: 
+ 
+-  Alarme: “Pressão diferencial alta” do filtro separador de água/óleo (BB/BE). Lâmpada e símbolo
+do filtro piscam em amarelo.  
+-  Alarme: “Válvula aberta” do dreno do filtro separador de água/óleo (BB/BE). Lâmpada pisca em
+amarelo.  
+-  Alarme: “Pressão baixa” da rede de recalque (BB/BE). Lâmpada pisca em amarelo. 
+OSTENSIVO                                                     1- 89                                                         ORIGINAL
+
+
+--- PAGE 89 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+14 → Indicador de nível digital: 
+ 
+-  Alarme: “Nível alto/baixo” do Tanque de Gravidade av. (BB/BE). As respectivas lâmpadas piscam
+em amarelo. 
+-  Alarme: “Nível alto” do Tanque de Transbordo ar. Lâmpada pisca em amarelo. 
+-  Alarme: “Nível alto” do Tanque de Transbordo av. Lâmpada pisca em amarelo. 
+ 
+9 → Indicador de nível analógico: 
+ 
+-  Nível dos Tanques de Serviço nº1, 2, 3 e 4. 
+-  Nível dos Tanques de Gravidade nº 3 e 4. 
+ 
+10 → Indicador de estado de válvula com comando: 
+ 
+-  Estado das válvulas das tubulações de entrada dos Tanques de Serviço n°1 / n°2 / n°3 / n°4 (tubula -
+ções que vêm das Bombas de Transferência n°1 / n°2) 
+-  Estado das válvulas das tubulações de saída dos Tanques de Serviço n°1 / n°2 / n°3 / n°4  (tubula -
+ções que vão para as Bombas de Recalque n°1 / n°2) 
+-  Estado das válvulas das tubulações de entrada dos Tanques de Gravidade ar. n°3 / n°4 (tubulações
+que vêm das Bombas de Recalque n°1 / n°2) 
+-  Estado das válvulas das tubulações de saída dos Tanques Gravidade av.  (BB/BE)  (tubulações que
+vão para os M.C.A.’s n°1 e n°2 e para as caldeirinhas n°1 e n°2) 
+-  Estado da válvula da tubulação de saída do  Tanque de Gravidade av.  (BE) (tubulação que vai para
+a Caldeirinha n°1) 
+-  Estado da válvula da tubulação de saída do  Tanque de Gravidade av.  (BB)  (tubulação que vai
+para a Caldeirinha n°2) 
+-  Estado das válvulas das tubulações de saída dos Tanques de Gravidade ar. n°3 / n°4 (tubulações
+que vão para os M.C.A.’s n°3 e n°4) 
+-  Estado das válvulas das tubulações de saída dos Tanques de Gravidade ar. n°3 / n°4 (tubulações
+que vão para os M.C.P.’s  n°1, n°2, n°3 e n°4) 
+ 
+Nota: O menu de controle das válvulas foi explicado também no item anterior. 
+ 
+12 → Indicador de estado de válvula sem comando: 
+ 
+-  Estado das válvulas das tubulações de saída de dreno dos Tanques de Gravidade av. (BB/BE)  
+-  Estado das válvulas de emergência (BB/BE) 
+ 
+11 → Indicador de estado das bomba:  
+-  Estado das bombas de transferência nº1 e 2  
+-  Estado das bombas de recalque nº1 e 2 
+OSTENSIVO                                                     1- 90                                                         ORIGINAL
+
+--- PAGE 90 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.6.4 - Sistema hidráulico do H.P.C.  
+ 
+A figura 1.194 apresenta a tela do sistema hidráulico do HPC. A simetria da tela (direita e esquerda)
+é devida ao fato do subsistema de BB ser idêntico ao de BE. 
+                                     Figura 1.194. Tela “Sistema hidráulico do H.P.C.”
+Áreas de dados da tela 
+ 
+A tela “Sistema Hidráulico do HPC” possui 2 áreas básicas de dados: 
+-  “Bombordo” 
+-  “Boreste” 
+ 
+Cada uma dessas áreas é subdividida em outras 6 sub-áreas, a saber: 
+-  “Pressão sistema H.P.C.” 
+-  “Tanque de Gravidade” 
+-  “Tanque de Dreno” 
+-  “Bomba Elétrica - Sistema HPC” 
+-  “Bomba Suplemento - Tanque Gravidade” 
+-  “Caixa Comando HPC” 
+OSTENSIVO                                                     1- 91                                                         ORIGINAL
+
+
+--- PAGE 91 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Objetos visuais: Figura 1.195.
+                                13
+                               Figura 1.195. Objetos da tela “Sistema de hidráulico do HPC”
+Área de “Pressão sistema H.P.C.” de BB e BE  
+ 
+6 → Relógio medidor analógico: 
+-  Pressão sistema H.P.C. (BE /BB) 
+ 
+Área de “Tanque de Gravidade” de BB e BE  
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Alarme: “Nível Alto” do tanque de gravidade.  
+-  Alarme: “Nível Baixo” do tanque de gravidade. 
+ 
+Área de “Tanque de Dreno” de BB e BE 
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Alarme: “Nível Baixo” do tanque de dreno. 
+Área de “Bomba Elétrica” de BB e BE 
+ 
+B. El.→ Bomba Elétrica: 
+ 
+Usadas para representar as bombas elétricas de BB e BE do sistema hidráulico do HPC. 
+ 
+OSTENSIVO                                                     1- 92                                                         ORIGINAL
+
+
+--- PAGE 92 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Área de “Bomba Suplemento” de BB e BE  
+ 
+BS → Bomba de Suplemento: 
+Usadas para representar as bombas de suplemento do sistema hidráulico do HPC. 
+ 
+Área de “Temperaturas” de BB e BE  
+ 
+13 → Indicadores de temperatura: 
+-  Temperatura de Óleo retorno caixa comando H.P.C. 
+-  Temperatura de Óleo adm. caixa comando H.P.C.
+1.6.5 - Rede de incêndio, Aguada, Grupos de Osmose Reversa e Ar Condicionado 
+A figura 1.196 apresenta a tela dos sistemas auxiliares “Rede de incêndio”, “Aguada”, “Grupos de
+Osmose Reversa” e “Ar Condicionado”.
+          Figura 1.196. Tela do sub-sistemas “Rede de Incêndio”, “Aguada”, “Osmose Reversa” e 
+                                “Ar Condicionado” 
+Áreas de dados da tela 
+ 
+A tela “Rede de incêndio, Aguada, Grupos de Osmose Reversa e Ar Condicionado” possui 5 áreas de
+dados, a saber: 
+-  “Ar condicionado” 
+-  “Aguada” 
+-  “Água Reserva” 
+-  “Rede de incêndio” 
+-  “Grupos de Osmose Reversa” 
+OSTENSIVO                                                     1- 93                                                         ORIGINAL
+
+
+--- PAGE 93 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Objetos visuais: Figura 1.197. 
+              Figura 1.197. Objetos da tela “Rede de incêndio, Aguada, Grupos de Osmose Reversa e 
+                                    Ar Condicionado” 
+Área de “Ar condicionado” 
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Estado: Compressores nº1 (ou nº2,nº3, nº4) funcionando (texto “Virando”, acende em  verde) ou
+não funcionando (“Virando”, apagado). 
+-  Alarme: desarme do Compressor nº1 (ou nº2, nº3, nº4) devido a falhas, a lâmpada pisca em verme -
+lho indicando o alarme com o  texto “Desarmado”. 
+ 
+OSTENSIVO                                                     1- 94                                                         ORIGINAL
+
+
+--- PAGE 94 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Área de “Aguada” 
+5 → Lâmpada de estado ou alarme: 
+ 
+Água Fria 
+-  Estado: Bomba de água fria nº1 / nº2 no estado de aguardando prime (texto “Aguardando Prime” ,
+acende em  amarelo) ou não aguardando (texto “Aguardando Prime”, apagado). 
+-  Alarme: “Pressão Baixa” do sistema de água fria. Lâmpada pisca em amarelo. 
+ 
+Água quente 
+-  Estado: bombas nº1 / nº2  funcionando (texto “Virando”, acende em verde  ) ou não funcionando
+(texto “Virando”, apagado). 
+Área de “Água Reserva”  
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Estado: Bomba de transferência nº1 (ou nº2)  funcionando (texto “Virando”, acende em  verde) ou
+não funcionando ( texto “Virando”, apagado). 
+ 
+Área de “Rede de incêndio”  
+ 
+B → Bomba de rede de incêndio: 
+ 
+Bombas 1, 2, 3 e 4. Usadas na rede de incêndio. 
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Alarme: “Pressão Baixa” dos sistemas de água salgada (CAV 68½). Lâmpada pisca em amarelo. 
+-  Alarme: “Pressão Baixa” dos sistemas de água salgada (CAV 8). Lâmpada pisca em amarelo. 
+ 
+6 → Relógio medidor analógico, para a indicação de: 
+-  Pressão principal da água salgada da rede de incêndio. 
+ 
+Área de “Grupos de Osmose Reversa”  
+ 
+5 → Lâmpada de estado ou alarme: 
+-  Estado: Grupo de Osmose Reversa funcionando (texto “ Virando”, acende em verde) ou não funci -
+onando (texto ”Virando” apagado). 
+-  Alarme: alta salinidade. Lâmpada “Salgando” pisca em amarela.  
+-  Alarme: desarme do grupo de osmose reversa. Lâmpada “Desarmado” pisca em vermelho. 
+-  Estado: grupo de osmose reversa em estado de “Emergência”. Lâmpada acende em vermelho. 
+OSTENSIVO                                                     1- 95                                                         ORIGINAL
+
+--- PAGE 95 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.6.6 - Tela Geral de Propulsão 
+ Na figura 1.198, apresenta-se a tela da propulsão. A função desta tela é apresentar um panorama ge -
+ral do sistema de propulsão e de alguns sistemas auxiliares relevantes diretamente envolvidos na pro -
+pulsão. 
+                                                     Figura 1.198. Tela de Propulsão 
+Esta janela apresenta uma representação esquemática do sistema de propulsão completo, juntamente
+com alguns subsistemas auxiliares. Pode-se notar objetos visuais que representam: 
+ 
+-  Turbinas 1 e 2; 
+-  MCP´s 1, 2, 3 e 4; 
+-  Engrenagens Redutoras e Elevadoras e Embreagens; 
+-  Acoplamentos Fluidos; 
+-  Parte do Sistema de Óleo Combustível; 
+-  Parte do Sistema de Óleo Lubrificante; 
+-  Parte do Sistema Hidráulico do HPC; 
+-  Tubulações de Descarga de Gases; 
+ 
+Quando TG´s, MCP´s, eixos e engrenagens estão rodando, a cor passa de cinza para verde, com ani -
+mação que sugere movimento de rotação dos eixos.  
+ 
+No caso da figura 1.198 acima, pode-se notar que a TG e os MCP´s de BE estão funcionando. Tam -
+bém se pode notar que eixos e engrenagens desse bordo estão girando. 
+O engrazamento das embreagens é representado pelo sistema. Quando não estão engrazadas, aparece
+uma descontinuidade entre os eixos. Como exemplo, na figura 1.198 tem-se que os MCP´s de BE es -
+tão engrazados ao eixo, enquanto que a TG de BE não está. 
+OSTENSIVO                                                     1- 96                                                         ORIGINAL
+
+
+--- PAGE 96 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Acessibilidade 
+ 
+Esta janela pode ser acessada clicando-se nos botões “Bombordo” ou “Boreste”, escolhendo-se o item
+“Propulsão” em qualquer um dos menus. A tela da Figura 1.198 é então exibida. As permissões e pri -
+oridades são as mesmas das outras telas de propulsão. 
+ 
+Áreas de dados da tela  
+ As áreas de dados da tela são:  
+ 
+-  Turbinas 1 e 2; 
+-  MCP´s 1, 2, 3 e 4; 
+-  Engrenagens Redutoras e Elevadoras e Embreagens; 
+-  Acoplamentos Fluidos; 
+-  Parte do Sistema de Óleo Combustível; 
+-  Parte do Sistema de Óleo Lubrificante; 
+-  Parte do Sistema Hidráulico do HPC; 
+-  Tubulações de Descarga de Gases; 
+ 
+Objetos visuais 
+A seguir, detalham-se os demais objetos separadamente.
+Módulo da TG 
+O objeto apresentado na figura ao lado( fig. 1.199) 
+representa uma TG. Pode-se notar, na tela da figu -
+ra 1.198 acima, que existe um módulo para cada
+bordo.
+                  Figura 1.199. Módulo TG.
+15 → Régua medidora analógica: 
+ 
+-  Vibração da TP; 
+-  Temperatura entrada TP; 
+-  Rotação TP; 
+-  Queda de pressão no conduto de admissão; 
+-  Vibração GG; 
+-  Pressão de OL da GG; 
+-  Rotação GG; 
+ 
+5 → Lâmpada de estado ou alarme: 
+ 
+-  indicação de controle remoto / local; 
+ 
+OSTENSIVO                                                     1- 97                                                         ORIGINAL
+
+
+--- PAGE 97 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+7 → Lâmpada redonda de estado ou alarme: 
+-  Alarme: ocorrência de fail-set; 
+ 
+Botões da tela de propulsão: 
+-  “Alarme” : exibe janela de alarmes da TG (descrita mais adiante); 
+-  “Incêndio” : exibe janela de incêndio da TG (descrita mais adiante); 
+-  “Catraca” :  exibe janela de catraca da TG (descrita mais adiante); 
+-  “Ventil” : exibe janela de ventilação da TG (descrita mais adiante); 
+-  “Aliment” : exibe janela de alimentação da TG (descrita mais adiante); 
+Módulo MCP
+Este objeto representa um MCP. Pode-se notar, na tela da figura
+1.198 acima, que existem quatro destes módulos. Figura 1.200
+        Figura 1.200. Módulo MCP
+15 → Régua medidora analógica: 
+-  Pressão de OL dos pistões; 
+-  Pressão de OL 
+-  Rotação; 
+ 
+5 → Lâmpada de estado ou alarme: 
+ 
+-  indicação: moderador de cremalheira atuando (ascende em amarelo quando atuando);  
+-  723: acende em verde quando 723 operacional, acende em amarelo quando está ligado, mas não
+está pronto para atuar; apagado quando está desacoplado.  
+-  PGA: acende em verde quando PGA operacional, acende em amarelo quando está ligado, mas não
+está pronto para atuar; apagado quando está desacoplado.  
+ 
+7 → Lâmpada redonda de estado ou alarme: 
+ 
+-  Alarme: ocorrência de fail-set; 
+ 
+A → Indicação analógica de temperatura: 
+ 
+-  Máxima temperatura dentre todos os cilindros; 
+-  Mínima temperatura dentre todos os cilindros; 
+ 
+Botões da tela de propulsão: 
+ 
+-  “Alarme”: exibe a janela de alarmes do MCP (descrito mais adiante); 
+-  “723” : exibe a janela do 723 (descrito mais adiante); 
+OSTENSIVO                                                     1- 98                                                         ORIGINAL
+
+
+--- PAGE 98 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Janela de alarmes TG: Figura 1.201.
+                                                      Figura 1.201. Alarmes da TG
+15 → Régua medidora analógica: 
+ -  Vibração da TP; 
+-  Vibração do GG; 
+-  Queda de Pressão no Conduto de Admissão; 
+-  Pressão de OL no GG; 
+-  Temperatura de Entrada TP; 
+ 
+5 → Lâmpada de estado ou alarme: 
+- Alarme: “Temp Alta” na entrada da TP. Indicador pisca em vermelho. 
+- Alarme: “Vibração Alta” na TP. Indicador pisca em amarelo. 
+- Alarme: “Pressão Baixa” do óleo na TP. Indicador pisca em amarelo. 
+- Alarme:  “Desarme”. Desarme da TP por baixa pressão de óleo lubrificante. Indicador pisca em ver -
+melho. 
+- Alarme: Queda de pressão “Alta” no conduto admissão. Indicador pisca em amarelo.  
+- Alarme: “Pressão Baixa” admissão bomba O.C. Indicador pisca em amarelo.  
+- Alarme: “Desarme manual acionado”. Indicador pisca em vermelho.  
+- Alarme: “Vibração Alta” no GG. Indicador pisca em amarelo. 
+- Alarme: “Desarme Acionado” do gerador a gás devido a falhas. Indicador pisca em vermelho. 
+- Alarme: “Nível Baixo” no tanque de OL. Indicador pisca em amarelo. 
+ 
+Janela de Incêndio da TG
+                                         Figura 1.202. Incêndio da TG
+OSTENSIVO                                                     1- 99                                                         ORIGINAL
+
+
+--- PAGE 99 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+5 → Lâmpada de estado ou alarme: Figura 1.202.
+- Alarme: “Temp. Alta” no compartimento da turbina a gás. Indicador pisca em amarelo. 
+- Alarme: “Detetor Iniciado” indicando o acionamento do detetor de fogo. Indicador pisca em amare -
+lo. 
+- Alarme: “Extintor Disparou” indicando o acionamento do extintor de incêndio na engrenagem da
+TG. Indicador pisca em amarelo. 
+- Alarme: “Extintor Desarm.” indicando o desligamento do extintor de incêndio devido a falhas. Indi -
+cador pisca em amarelo. 
+ 
+Janela de Catraca da TG 
+                                                 Figura 1.203. Catraca GG
+5 → Lâmpada de estado ou alarme: Figura 1.203. 
+-  Estado: “Virando”, funcionamento da catraca do GG nº2. Indicador acende na cor verde. 
+-  Estado/Alarme: “Manual”. Indicador acende em vermelho. 
+-  Estado: “Auto”. Catraca em automático. Indicador acende em verde. 
+ 
+7 → Lâmpada redonda de estado ou alarme: 
+-  Falha ao ligar, desligar ou motor; 
+ 
+8 → Chave de Comando: 
+ 
+Janela de Ventilação
+                                            Figura 1.204. Ventilação
+5→ Indicadores luminosos de estado ou alarme: Figura 1.204. 
+- Funcionamento da Ventilação Módulo nº1 que, ao ligar, faz o objeto acender-se na cor verde exibin -
+do texto o fixo de estado “Virando”. 
+- Informa se o controle da Ventilação Módulo nº1, está sendo feito no CCM ou no Local (Campo). 
+Controle no CCM: indicador acende na cor verde exibindo o texto “CCM”. 
+Controle no Campo: indicador acende em vermelho exibindo o texto “Local”, neste caso todos os co -
+mandos e informações sobre a ventilação módulo nº1 ficam desabilitados. 
+- Alarme: “Falha Ligar/Desligar” catraca do GG nº1. Indicador acende na cor amarela. 
+ 
+8 → Chave de comando: 
+Ao clicar  nesta chave abre-se a janela de controle já explicada. 
+ 
+7 → Lâmpada redonda de estado ou alarme: 
+-  Falha ao ligar, desligar ou motor; 
+OSTENSIVO                                                     1- 100                                                         ORIGINAL
+
+
+--- PAGE 100 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Janela de Alimentação
+                                        Figura 1.205. Alimentação
+5 → Indicadores luminosos de estado ou alarme: Figura 1.205.
+- Alarme: “Circuito Controle” falta alimentação no circuito de controle. Indicador pisca em amarelo. 
+- Alarme: “115 Volts400 Hz” falta alimentação. Indicador pisca em amarelo. 
+ 
+Janela de Alarmes do MCP 
+                                                  Figura 1.206. Alarmes MCP2
+5 → Lâmpada de estado ou alarme: Figura 1.206. 
+-  Alarme: “Desarme 723”. Indicador acende em vermelho.  
+-  Alarme: “Secund.723”. Indicador acende em amarelo. 
+-  Alarme: “Desarme Flaps Sucção” . Indicador acende em vermelho. 
+-  Alarme: “Pr. Baixa Água Salgada” de resfriamento do MCP 3 / 1. Indicador acende em amarelo. 
+-  Alarme: “Excesso Velocid.” indica excesso de velocidade real ou teste de excesso de velocidade do
+MCP 3/1. Indicador acende em vermelho. 
+-  Alarme: “Sub Veloc.” Indicador acende em vermelho. 
+-  Alarme: “Nív. Baixo Tanque Expansão” do MCP 3 / 1. Indicador acende em amarelo. 
+-  Alarme: “Pr. Baixa Ar de Controle” do MCP 3 / 1. Indicador acende em amarelo.
+-  Alarme: “Desarme” do MCP 3 / 1 devido ao 2o nível de pressão baixa do óleo de resfriamento dos
+pistões. Indicador acende em vermelho. 
+-  Alarme: “Baixa” pressão do óleo de resfriamento dos pistões. Indicador acende em amarelo. 
+-  Alarme: “Desarme” do MCP 3 / 1 devido ao 2o nível de pressão baixa do óleo  lubrificante. Indica -
+dor acende em vermelho. 
+-  Alarme: “Baixa” pressão do óleo de lubrificação. Indicador acende em amarelo. 
+OSTENSIVO                                                     1- 101                                                         ORIGINAL
+
+
+--- PAGE 101 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+15 → Régua medidora analógica: 
+-  Pressão de óleo de resfriamento dos pistões; 
+-  Pressão do óleo de lubrificação; 
+ 
+Janela do 723 
+Esta janela é exatamente a mesma que é descrita anteriormente.
+1.7 - CHAVES DE EMERGÊNCIA 
+Estas chaves no SCMPA da fragata Independência estão localizadas na parte de trás do Painel das
+Remotas e sua função é colocar o equipamento desejado em estado de emergência.  Isso faz com que
+todos os comandos para esse equipamento fiquem desabilitados (inclusive os comandos locais).  
+Estas chaves no SCMPA da fragata Liberal estão localizadas no painel frontal das remotas e sua fun -
+ção é colocar o equipamento desejado em estado de emergência.  Isso faz com que todos os coman -
+dos para esse equipamento fiquem desabilitados (inclusive os comandos locais).   Figura 1.207.
+                                         Figura 1.207. Painel da Remota (Fragata Liberal)
+Quando um equipamento passar para esse estado, a lâmpada de emergência passa a ficar acesa em
+vermelho (sem piscar). Todos os botões de comando na IHM ficam desabilitados. Figura 1.208.
+                                          Figura 1.208. Lâmpada de emergência
+São dois os painéis de chaves de emergência: bombordo e boreste, respectivamente nas remotas de 
+bombordo e boreste. 
+  
+As seguintes chaves de emergência estão presentes no painel de bombordo: 
+ 
+-  Bomba Elétrica HPC n° 2; 
+-  Bomba de Lubrificação Principal n° 2; 
+-  Bomba de Transferência de Óleo Combustível n° 2; 
+-  Bomba de Purificação de Óleo Lubrificante n° 2; 
+-  Bomba de Suplemento n° 2; 
+-  Bomba de Recalque de Óleo Combustível n° 2; 
+-  Bomba de Transferência de Óleo Lubrificante; 
+-  Caldeira n° 1; 
+-  Caldeira n° 2; 
+-  Grupo de Osmose Reversa n° 1; 
+-  Grupo de Osmose Reversa n° 2; 
+OSTENSIVO                                                     1- 102                                                         ORIGINAL
+
+
+--- PAGE 102 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+As seguintes chaves de emergência estão presentes no painel de bombordo: 
+ 
+-  Bomba de Lubrificação Principal n° 1; 
+-  Bomba Elétrica HPC n° 1; 
+-  Bomba de Transferência Óleo Combustível n° 1; 
+-  Bomba de Purificação de Óleo Lubrificante n° 1; 
+-  Bomba de Suplemento n° 1; 
+-  Bomba de Recalque de Óleo Combustível n° 1; 
+ 
+Para cada chave, existe uma lâmpada no respectivo painel que acende em vermelho quando a chave
+for acionada.
+1.7.2 - geração de relatórios de operação  
+Nesta seção, apresentam-se as facilidades do SCMPA para geração de relatórios sobre a operação.
+Existe um conjunto de relatórios pré definidos que registram alarmes, eventos e variáveis analógicas e
+que podem ser solicitados através de consulta por data e hora. 
+Acessibilidade 
+Os relatórios são acessados através do botão “Utilitários” na área de navegação, no canto direito da 
+tela. 
+Funcionamento 
+Quando o item ‘Relatórios’ (do menu “Utilitários”) é
+pressionado, aparece uma janela exibindo uma “árvore”
+de pastas, que contém os diversos relatórios (como se
+pode ver na figura ao lado). Figura 1.209.
+                   Figura 1.209. Relatórios
+Ao se clicar uma vez com o botão central do trackball
+sobre a pasta desejada ou clicar uma vez no sinal de +
+ou clicar duas vezes com o botão esquerdo sobre a cor -
+respondente pasta, aparecem os relatórios para a corres -
+pondente pasta (vide figura ao lado). Figura 1.210.
+             Figura 1.210. Relatórios
+OSTENSIVO                                                     1- 103                                                         ORIGINAL
+
+
+--- PAGE 103 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Relatórios de Informações Analógicas 
+Esses relatórios, que estão contidos nas pastas Bombordo, Boreste e Auxiliares, trazem todas as infor -
+mações sobre as variáveis analógicas dos itens selecionados e podem ser filtrados por data e hora de
+ocorrência. 
+ 
+Filtro por data e hora 
+Qualquer um dos relatórios citados acima pode ser filtrado
+por data e hora, bastando para isso que o operador clique
+no relatório desejado. Aparece então uma janela para sele -
+ção de data/hora (vide figura 1.211 ao lado). 
+Por  default, os campos de Início e Final mostram sempre a
+data atual.
+           Figura 1.211. Relatório data/hora
+Para alteração da data, existem duas formas:  
+ 
+1)  Clicar sobre o botão, (mostrado na figura acima) o que faz que o calendário apareça.  Basta então 
+posicionar o cursor sobre a data desejada no calendário e clicar uma vez. Pode-se usar os botões nos 
+cantos superiores do calendário para se mudar o mês. 
+2)  Posicionar diretamente o cursor sobre a mesma e digitar o novo valor.  
+      
+Uma vez que a nova data já está no campo desejado, basta então confirmar através do botão OK.  
+ 
+Para alteração da hora, basta posicionar o cursor no campo de hora e digitar o novo horário. Caso ne -
+nhum horário seja selecionado, o relatório apresenta informações das 00:00:00hs às 23:59:59hs do
+dias selecionado 
+ 
+Impressão do relatório na tela  
+ 
+Nas figura 1.212 e figura 1.213, apresentam-se trechos de um do relatório Propulsão BB.  
+ 
+Pode-se notar que são apresentadas as variáveis e os valores que elas assumem em diversos horários. 
+Algumas dessas variáveis também possuem limites, que também são apresentados. 
+OSTENSIVO                                                     1- 104                                                         ORIGINAL
+
+
+--- PAGE 104 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+                                   Figura 1.212. Exemplo de relatório impresso na tela 1 
+                                Figura 1.213. Exemplo de relatório impresso na tela 2 
+OSTENSIVO                                                     1- 105                                                         ORIGINAL
+
+
+--- PAGE 105 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+A barra de botões, localizada na parte superior da tela, possui as seguintes funções: Figura 1.214.
+ 
+ 
+ 
+                                              Figura 1.214. Funções da barra superior
+1.7.3 - Relatórios de Alarmes    
+Esses relatórios trazem informações sobre alarmes do sistema sendo filtrados por bordo, sistema  ou
+eventos e posteriormente por data e hora.  
+ 
+Relatórios dos alarmes por Bordo 
+Selecionando Bombordo, Boreste ou Auxiliares (a
+partir da janela da  figura 1.215 ao lado), abre-se
+uma janela para escolha de data e hora. 
+ 
+O relatório final mostra todos os alarmes do Bordo
+selecionado no período solicitado pelo operador. 
+            Figura 1.215. Relatórios por bordo.
+Relatórios dos alarmes por Sistema 
+Selecionando qualquer um dos sistemas (como se 
+pode ver na figura 1.216 ao lado), abre-se uma ja -
+nela para escolha de data e hora, não sendo neces -
+sário repeti-las. 
+ 
+O relatório final mostrará todos os alarmes do Sis -
+tema selecionado no período solicitado pelo opera -
+dor. 
+           Figura 1.216. Relatórios por sistema
+OSTENSIVO                                                     1- 106                                                         ORIGINAL
+
+
+--- PAGE 106 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Relatório de Eventos
+Ao se selecionar qual relatório de eventos deve ser
+exibido na tela, (geral, login de usuário e comandos
+e  telégrafos),  abre-se  uma  janela  ( figura  1.217)
+para escolha de data e hora  
+ 
+O relatório final mostra todos os alarmes do Evento
+selecionado no período solicitado pelo operador. 
+          Figura 1.217. Relatórios de eventos
+Na figura 1.218, apresenta-se parte de um relatório de alarmes impresso na tela. Pode-se notar que se
+registram datas de reconhecimento e usuários.
+ 
+                               Figura 1.218. Relatório de Alarmes “Auxiliares” 
+OSTENSIVO                                                     1- 107                                                         ORIGINAL
+
+
+--- PAGE 107 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Relatório de Horímetros 
+Esse conjunto de relatórios apresenta basicamente
+as mesmas informações que são exibidas ao se cli -
+car nos objetos de horímetros para o caso de TG´s e
+MCP´s). A forma que são apresentadas é, entretan -
+to, semelhante ao outros relatórios e podem ser im -
+pressos em papel. Figura 1.219.
+ 
+O processo de seleção do período dos alarmes é
+igual aos outros casos. 
+           Figura 1.219. Relatório de horímetros.
+ Erros na consulta 
+ Os erros na consulta poderiam gerar situações inconsistentes e por este motivo foram colocadas men -
+sagens, explicadas abaixo, para alertar o operador. 
+Falta de dados 
+Caso não existam informações para o período selecionado
+pelo operador, aparece a caixa de mensagens exibida na fi-
+gura 1.220 ao lado. 
+ 
+O relatório é exibido assim mesmo, porém em branco. 
+        Figura 1.220. Sem informações
+Ao se clicar no botão OK, esta janela é fechada, retornando para a janela de principal de relatórios
+(penúltima figura apresentada). 
+ 
+Data inválida
+Se a data escolhida for maior que a data atual, a  janela de mensa -
+gem da figura 1.221 ao lado deve ser exibida.
+     Figura 1.221. Data inválida
+Caso a data final seja menor que a data inicial, a janela de men -
+sagem de erro apresentada na figura 1.222 ao lao é exibida.  
+    Figura 1.222. Mensagem de erro
+Ao se clicar no botão OK,  em qualquer uma das duas janelas,  esta se fecha, retornando para a janela
+de relatórios. 
+OSTENSIVO                                                     1- 108                                                         ORIGINAL
+
+
+--- PAGE 108 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.8 - FUNÇÕES ADICIONAIS 
+As funções adicionais têm por finalidade fornecer informações para auxiliar o operador na tomada de
+decisões ou consulta apurada do estado do sistema. A seguir, descrevem-se essas funções.  
+ 
+1.8.1 - Tabela de DESSI 
+Como já foi dito, ao se comandar um DESSI ao SCMPA por via de telégrafos, o sistema fornece um
+par de set-points de rotação e passo às máquinas que estão selecionadas. Os valores desse par depen -
+dem se o modo de operação atual do sistema é o modo 1 ou o modo 2.  
+Entretanto,  para um dado valor de DESSI, existem infinitos pares de set-points rotação X passo que
+poderiam ser fornecidos às máquinas. Para que se fornecer esses valores de set-point via SCMPA, é
+preciso inserir manualmente. 
+A função “Tabela de DESSI” é útil justamente para se saber, para cada DESSI, todos os pares de set-
+points possíveis.  
+Sua utilização se dá da seguinte forma: Ao se clicar sobre o botão “Utilitário”,  item “Tabela de DES -
+SI” , a janela da figura 1.224 é exibida. 
+Para se determinar o par rotação X passo, deve-se informar se a seleção de máquinas é 1 Diesel por
+eixo, dois Diesel por eixo ou Turbina e também qual é o DESSI desejado (nos campos corresponden -
+tes da janela). 
+A janela apresenta então uma curva vermelha, que é o lugar geométrico de todos os pares de  set-
+points correspondentes àquele DESSI e um ou dois pontos azuis, que são os pares que correspondem
+aos modos 1 e 2 que o SCMPA está configurado (o ponto correspondente ao modo 1 é sempre o de
+rotação menor). 
+Ao se posicionar o cursor em algum ponto da curva e manter botão esquerda do
+trackball pressionado, aparecem, dentro da janela, os valores correspondentes de pas -
+so e rotação, para aquela configuração de máquinas (1 Diesel, 2 Diesel ou turbina)
+como mostrado na figura 1.223 ao lado. 
+ Figura 1.223.
+Nota: No exemplo abaixo, como o modo de operação escolhido é com 1 diesel, só é mostrado na cur -
+va um ponto em azul representando o Modo 1. 
+                                                       Figura 1.224. Curva de DESSI 
+OSTENSIVO                                                     1- 109                                                         ORIGINAL
+
+
+--- PAGE 109 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+Para alterar o valor de dessi, deve-se clicar com o botão esquerdo
+do trackball sobre o valor atual e a janela ao lado( figura 1.225)
+aparece. Para confirmar o valor, pressionar o botão OK. 
+        Figura 1.225. Dessi
+1.8.2 -  Estado geral das máquinas 
+ 
+Esta janela mostra informações detalhadas sobre o estado das máquinas e é chamada através do Botão
+Utilitários. Figura 1.226.
+                                      Figura 1.226. Estado geral das máquinas 
+ 
+•  O fundo do valor real das máquinas assume a cor que indica estados diferentes, ou seja: 
+vermelho: desligado verde escuro: ligado e não selecionado 
+verde claro: ligado e selecionado 
+ 
+•  No gráfico do DESSI a curva azul representa o valor real e a curva vermelha representa o valor de
+set point. 
+ 
+•  Todos os valores mostrados nos displays são sensitivos e ao clicar com o botão direito do trackball
+sobre eles, abre-se um menu com as opções “Detalhar” e “Histórico”. 
+OSTENSIVO                                                     1- 110                                                         ORIGINAL
+
+
+--- PAGE 110 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.8.3 -  Teste de teclado 
+ 
+Esta tela é chamada através do Botão Utilitários e representa os teclados funcional e padrão, confor -
+me mostra a figura 1.228 abaixo, onde o operador pode testar o funcionamento das teclas. 
+Pressionando qualquer tecla nos teclados, acende-se na tela a tecla correspondente, indicando o bom
+funcionamento da mesma, caso contrário a tecla continua apagada. Para fechar a tela basta pressionar
+a tecla “Esc” (Escape) do teclado padrão. 
+No Passadiço é utilizado este ícone para chamar a tela. Figura 1.227.
+ Fig. 1.227.
+                                            Figura 1.228. Tela de testes dos teclados 
+OSTENSIVO                                                     1- 111                                                         ORIGINAL
+
+
+--- PAGE 111 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.8.4 -  Transferência de carga leve 
+Ao se clicar neste botão( figura 1.229), que só aparece nas telas do Passadiço Diurno e No -
+turno, é exibida, também somente nestas telas, a janela apresentada na figura 1.230 abaixo. 
+Fig. 1.229.
+A utilidade desta janela é fazer pequenos mudanças no valor de DESSI (ajuste fino). Sua utilidade
+principal é durante uma transferência de carga leve entre dois navios. 
+                                          Figura 1.230. Transferência de Carga Leve 
+Caso o controle esteja com o CCM, quando esta janela aparecer, os botões ficam todos desabilitados
+e, no centro da janela, é exibida uma mensagem informando que o comando esta sendo solicitado ao
+CCM. Ao mesmo tempo, surge no CCM uma caixa de mensagens conforme figura 1.231 abaixo. Ao
+clicar no botão “OK” no CCM, esta janela se fecha e o operador do CCM passa o controle para o Pas -
+sadiço. 
+                            Figura 1.231 Solicitação de comando para o passadiço
+OSTENSIVO                                                     1- 112                                                         ORIGINAL
+
+
+--- PAGE 112 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.8.5 -  Condições para troca de máquinas
+Na área de informações gerais do sistema, ao se clicar, com o botão esquerdo do track -
+ball, sobre o label (circulado na figura 1.232 ao lado) de um dos mostradores de rotação,
+abre-se uma janela contendo informações sobre o estado atual de seleção da respectiva
+máquina.
+ Fig. 1.232.
+Com isso, o operador pode saber se as pré-condições para seleção de uma máquina foram cumpridas
+ou que condição está faltando para selecionar/trocar máquinas. Na figura 1.233, apresenta-se a janela
+citada acima para o caso da TG 1 (a janela da TG 2 é igual). Na figura 1.234, apresenta-se a corres -
+pondente janela para o caso do MCP 1 (para os outros MCP´s, a janela é igual). 
+                            Figura 1.233. Condições para troca de máquinas Turbinas nº1
+                         Figura 1.234. Condições para troca de máquinas MCPs nº1, 2, 3 e 4 
+OSTENSIVO                                                     1- 113                                                         ORIGINAL
+
+
+--- PAGE 113 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
+1.8.6 -  Correio 
+O acesso ao correio é feito através do Botão Utilitários e permite a comunicação entre Passadiço e
+uma das estações do CCM (a que estiver habilitada para receber esta função). 
+No Passadiço é utilizado este ícone( figura 1.235) para chamar a tela. 
+ Fig. 1.235.
+                                                   Figura 1.236. Janela do correio
+Para usá-la basta digitar a mensagem e selecionar o botão “Enviar”, automaticamente a mensagem vai
+para o CCM ou Passadiço (dependendo de quem enviou). Figura 1.236.
+Para apagar todo o texto, deve-se utilizar o botão “Limpar Texto” e o botão “Sair” fecha a janela.
+OSTENSIVO                                                     1- 114                                                         ORIGINAL
+
+
+--- PAGE 114 --- 
+OSTENSIVO                                                                                                                   CIAA-117/025
