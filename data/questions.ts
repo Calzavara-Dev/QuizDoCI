@@ -15,6 +15,7 @@ import { governoP1Questions } from "./governo_p1";
 import { governoP2Questions } from "./governo_p2";
 import { scmpaQuestions } from "./scmpa";
 import { partidaEParadaQuestions } from "./partida_e_parada";
+import { partidaEParadaP2Questions } from "./partida_e_parada_p2";
 import { scmpaP2Questions } from "./scmpa_p2";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
@@ -3163,5 +3164,6 @@ quizzes["governo-p2"] = governoP2Questions;
 quizzes["scmpa"] = scmpaQuestions;
 quizzes["scmpa_p2"] = scmpaP2Questions;
 quizzes["partida_e_parada"] = partidaEParadaQuestions;
+quizzes["partida_e_parada_p2"] = partidaEParadaP2Questions;
 
 export const questions: Question[] = quizzes.telefonia;
