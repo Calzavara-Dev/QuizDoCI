@@ -17,6 +17,7 @@ import { scmpaQuestions } from "./scmpa";
 import { partidaEParadaQuestions } from "./partida_e_parada";
 import { partidaEParadaP2Questions } from "./partida_e_parada_p2";
 import { scmpaP2Questions } from "./scmpa_p2";
+import { scmpaP3Questions } from "./scmpa_p3";
 import type { Question } from "../types/question";
 import circuito100 from "../assets/circuitos/100.jpg";
 import circuito102 from "../assets/circuitos/102.jpg";
@@ -2101,6 +2102,7 @@ export const quizTitles: Record<string, string> = {
   "governo-p2": "GOVERNO P2",
   "scmpa": "SCMPA",
   "scmpa_p2": "SCAMPA P2",
+  "scmpa_p3": "SCAMPA P3",
 };
 
 // Quiz de Eletrônica Digital II
@@ -3163,6 +3165,7 @@ quizzes["governo-p1"] = governoP1Questions;
 quizzes["governo-p2"] = governoP2Questions;
 quizzes["scmpa"] = scmpaQuestions;
 quizzes["scmpa_p2"] = scmpaP2Questions;
+quizzes["scmpa_p3"] = scmpaP3Questions;
 quizzes["partida_e_parada"] = partidaEParadaQuestions;
 quizzes["partida_e_parada_p2"] = partidaEParadaP2Questions;
 
